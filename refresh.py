@@ -31,4 +31,9 @@ start = (datetime.date.today() - datetime.timedelta(days=400)).isoformat()
 
 save("prices_daily", lambda: rows(obb.equity.price.historical(INDEX + SECTORS, start_date=start, provider="yfinance")))
 save("gainers", lambda: rows(obb.equity.discovery.gainers(provider="yfinance")))
-save("losers", lambda: rows(obb.equity.discovery.losers(provider="y
+save("losers", lambda: rows(obb.equity.discovery.losers(provider="yfinance")))
+save("most_active", lambda: rows(obb.equity.discovery.active(provider="yfinance")))
+save("treasury_rates", lambda: rows(obb.fixedincome.government.treasury_rates(provider="federal_reserve")))
+
+(OUT / "status.json").write_text(json.dumps(status, indent=2))
+print(json.dumps(status, indent=2))
