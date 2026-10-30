@@ -1,40 +1,15 @@
 {
-  "updated": "2026-10-30T21:52:09Z",
+  "updated": "2026-10-30T22:17:31Z",
   "ok": {
-    "prices_daily": 7988,
-    "gainers": 50,
-    "losers": 50,
-    "most_active": 50,
+    "quotes": 55,
+    "intraday_5m": 6014,
+    "gainers": 100,
+    "losers": 100,
+    "most_active": 100,
+    "prices_daily": 21706,
+    "sector_board": 11,
     "treasury_rates": 260
   },
   "failed": {},
-  "openbb": {
-    "version": "unknown",
-    "routes": [
-      "bls",
-      "cboe",
-      "cftc",
-      "coverage",
-      "deribit",
-      "ecb",
-      "eia",
-      "famafrench",
-      "federal_reserve",
-      "finra",
-      "fred",
-      "imf",
-      "jodi",
-      "nasdaq",
-      "news",
-      "oecd",
-      "reference",
-      "sec",
-      "system",
-      "tmx",
-      "uscongress",
-      "usda",
-      "user",
-      "ustreasury"
-    ]
-  }
+  "slow_last": "2026-10-30T22:17:31Z"
 }
