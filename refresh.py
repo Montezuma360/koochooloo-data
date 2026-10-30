@@ -1,18 +1,18 @@
-"""Koochooloo brain refresh. Pulls market data with OpenBB and writes JSON files into data/.
-Every pull is wrapped so one failure never stops the rest. status.json says what worked."""
-import json, datetime, pathlib, traceback
+"""Koochooloo brain refresh v2. Writes JSON files into data/. Every pull is wrapped so one
+failure never stops the rest. data/status.json says what worked and what did not."""
+import json, datetime, pathlib, subprocess, sys, traceback
 
-from openbb import obb
+try:
+    import yfinance as yf
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "yfinance"])
+    import yfinance as yf
+import pandas as pd
 
 OUT = pathlib.Path("data")
 OUT.mkdir(exist_ok=True)
 now = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
-status = {"updated": now, "ok": {}, "failed": {}}
-
-
-def rows(result):
-    df = result.to_df().reset_index()
-    return json.loads(df.to_json(orient="records", date_format="iso"))
+status = {"updated": now, "ok": {}, "failed": {}, "openbb": None}
 
 
 def save(name, fn):
@@ -25,15 +25,52 @@ def save(name, fn):
         traceback.print_exc()
 
 
-INDEX = ["SPY", "QQQ", "IWM", "DIA", "GLD", "TLT", "BTC-USD", "ETH-USD", "^VIX"]
-SECTORS = ["XLK", "XLF", "XLE", "XLV", "XLY", "XLP", "XLI", "XLU", "XLB", "XLRE", "XLC"]
-start = (datetime.date.today() - datetime.timedelta(days=400)).isoformat()
+TICKERS = ["SPY", "QQQ", "IWM", "DIA", "GLD", "TLT", "BTC-USD", "ETH-USD", "^VIX",
+           "XLK", "XLF", "XLE", "XLV", "XLY", "XLP", "XLI", "XLU", "XLB", "XLRE", "XLC"]
 
-save("prices_daily", lambda: rows(obb.equity.price.historical(INDEX + SECTORS, start_date=start, provider="yfinance")))
-save("gainers", lambda: rows(obb.equity.discovery.gainers(provider="yfinance")))
-save("losers", lambda: rows(obb.equity.discovery.losers(provider="yfinance")))
-save("most_active", lambda: rows(obb.equity.discovery.active(provider="yfinance")))
-save("treasury_rates", lambda: rows(obb.fixedincome.government.treasury_rates(provider="federal_reserve")))
+
+def prices():
+    df = yf.download(TICKERS, period="400d", interval="1d", auto_adjust=True, progress=False)
+    out = []
+    close, vol = df["Close"], df["Volume"]
+    for sym in close.columns:
+        for ts, c in close[sym].dropna().items():
+            v = vol[sym].get(ts)
+            out.append({"symbol": sym, "date": ts.strftime("%Y-%m-%d"), "close": round(float(c), 4),
+                        "volume": None if pd.isna(v) else int(v)})
+    return out
+
+
+def movers(kind):
+    def run():
+        res = yf.screen(kind, count=50)
+        keep = ["symbol", "shortName", "regularMarketPrice", "regularMarketChangePercent",
+                "regularMarketVolume", "marketCap", "fiftyTwoWeekChangePercent"]
+        return [{k: q.get(k) for k in keep} for q in res.get("quotes", [])]
+    return run
+
+
+def treasury():
+    url = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3MO,DGS2,DGS5,DGS10,DGS30"
+    df = pd.read_csv(url).tail(260)
+    df = df.rename(columns={df.columns[0]: "date"})
+    return json.loads(df.to_json(orient="records"))
+
+
+save("prices_daily", prices)
+save("gainers", movers("day_gainers"))
+save("losers", movers("day_losers"))
+save("most_active", movers("most_actives"))
+save("treasury_rates", treasury)
+
+# OpenBB probe: records whether OpenBB is installed and what it offers, so we can wire it in next.
+try:
+    import openbb
+    from openbb import obb
+    status["openbb"] = {"version": getattr(openbb, "__version__", "unknown"),
+                        "routes": sorted(a for a in dir(obb) if not a.startswith("_"))[:40]}
+except Exception as e:
+    status["openbb"] = f"not available: {type(e).__name__}"
 
 (OUT / "status.json").write_text(json.dumps(status, indent=2))
 print(json.dumps(status, indent=2))
