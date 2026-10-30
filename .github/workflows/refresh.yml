@@ -2,23 +2,29 @@ name: Refresh brain data
 
 on:
   schedule:
-    - cron: "20 * * * 1-5"   # hourly at 20 past, Monday to Friday (UTC)
-  workflow_dispatch: {}       # lets you press "Run workflow" by hand
+    - cron: "*/5 13-21 * * 1-5"   # every 5 minutes, 13:00-21:59 UTC on weekdays (covers US market hours)
+    - cron: "20 * * * *"          # hourly at 20 past, every day (crypto, FX and overnight markets)
+  workflow_dispatch: {}
 
 permissions:
   contents: write
 
+concurrency:
+  group: prices
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install OpenBB
-        run: pip install openbb
+          cache: pip
+      - name: Install
+        run: pip install -q yfinance pandas
       - name: Pull data
         run: python refresh.py
       - name: Commit changes
@@ -26,4 +32,4 @@ jobs:
           git config user.name "koochooloo-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data
-          git diff --staged --quiet || (git commit -m "Data refresh $(date -u +%Y-%m-%dT%H:%MZ)" && git push)
+          git diff --staged --quiet || (git commit -m "Price refresh $(date -u +%Y-%m-%dT%H:%MZ)" && git pull --rebase -q && git push)
