@@ -1,9 +1,9 @@
 """Koochooloo SEC insider layer. Reads the newest Form 4 filings from SEC EDGAR (free, no key),
 keeps open-market insider buys and sells for 90 days, and flags clusters of insider buying.
 Writes data/insider_trades.json, data/insider_clusters.json and data/sec_status.json."""
-import json, re, time, pathlib, datetime, urllib.request, xml.etree.ElementTree as ET
+import json, os, re, time, pathlib, datetime, urllib.request, xml.etree.ElementTree as ET
 
-UA = "KoochoolooResearch github.com/Montezuma360/koochooloo-data"
+UA = os.environ.get("SEC_CONTACT") or "KoochoolooResearch github.com/Montezuma360/koochooloo-data"
 OUT = pathlib.Path("data")
 OUT.mkdir(exist_ok=True)
 now = datetime.datetime.utcnow()
