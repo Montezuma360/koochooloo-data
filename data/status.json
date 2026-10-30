@@ -1,0 +1,11 @@
+{
+  "updated": "2026-10-30T20:04:25Z",
+  "ok": {},
+  "failed": {
+    "prices_daily": "AttributeError: 'App' object has no attribute 'equity'",
+    "gainers": "AttributeError: 'App' object has no attribute 'equity'",
+    "losers": "AttributeError: 'App' object has no attribute 'equity'",
+    "most_active": "AttributeError: 'App' object has no attribute 'equity'",
+    "treasury_rates": "AttributeError: 'App' object has no attribute 'fixedincome'"
+  }
+}
