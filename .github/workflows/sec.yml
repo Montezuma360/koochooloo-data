@@ -1,0 +1,31 @@
+name: Refresh SEC insider data
+
+on:
+  schedule:
+    - cron: "*/5 * * * 1-5"   # every 5 minutes, Monday to Friday (UTC), GitHub's fastest
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sec-insiders
+  cancel-in-progress: false
+
+jobs:
+  insiders:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Pull SEC Form 4 filings
+        run: python refresh_sec.py
+      - name: Commit changes
+        run: |
+          git config user.name "koochooloo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git diff --staged --quiet || (git commit -m "SEC insider refresh $(date -u +%Y-%m-%dT%H:%MZ)" && git pull --rebase -q && git push)
