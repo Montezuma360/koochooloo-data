@@ -1,7 +1,7 @@
 """Koochooloo signals + dashboard layer (v2). Runs every 5 minutes.
 1. Pulls the latest Congress trades (kadoa-org/congress-trading-monitor, refreshed daily by its owners).
 2. Merges every layer in data/ into one ranked watchlist (signals.json).
-3. Builds data/dashboard.json: one small file holding everything Koochooloo Constellation shows live.
+3. Builds data/dashboard.json (and data/dash/ parts): everything Koochooloo Constellation shows live.
 The signal score is a transparent tally of who is buying, NOT a tested prediction. Backtest before trusting it."""
 import json, re, pathlib, datetime, urllib.request
 
@@ -148,54 +148,4 @@ for t in insiders:
         r = row(t["symbol"], t.get("issuer")); r["score"] += 2
         r["reasons"].append(f"{t.get('role') or 'Insider'} {t.get('insider')} bought ${t['value']:,} on {t['date']}")
 for c in cclusters:
-    r = row(c["symbol"], c.get("asset")); r["score"] += 2 * c["n"]
-    r["reasons"].append(f"{c['n']} politicians bought (~${c['value']:,}, last filed {c['last_filed']})")
-gainers = {q["symbol"]: q for q in load("gainers") if q.get("symbol")}
-active = {q["symbol"]: q for q in load("most_active") if q.get("symbol")}
-for sym, r in sig.items():
-    if sym in gainers:
-        r["score"] += 1
-        r["reasons"].append(f"top gainer today: {gainers[sym].get('regularMarketChangePercent') or 0:+.1f}%")
-    elif sym in active:
-        r["reasons"].append(f"heavy trading today: {active[sym].get('regularMarketChangePercent') or 0:+.1f}%")
-signals = sorted((r for r in sig.values() if r["score"] >= 3), key=lambda r: -r["score"])[:100]
-save_rows("signals", signals, note="Tally of buying activity, not a tested prediction.")
-status["ok"]["signals"] = len(signals)
-
-# ---------- 4. Dashboard: everything the Constellation shows live ----------
-def slim(q):
-    return {"s": q.get("symbol"), "n": (q.get("shortName") or "")[:32], "p": q.get("regularMarketPrice"),
-            "c": round(q.get("regularMarketChangePercent") or 0, 2), "v": q.get("regularMarketVolume"), "mc": q.get("marketCap")}
-
-px_status, sec_status = load_doc("status"), load_doc("sec_status")
-treas = load("treasury_rates")
-ibuys = sorted((r for r in insiders if r["side"] == "buy"), key=lambda r: (r.get("date") or "", r.get("value") or 0), reverse=True)[:40]
-isells = sorted((r for r in insiders if r["side"] == "sell" and (r.get("date") or "") >= days_ago(14)), key=lambda r: -(r.get("value") or 0))[:20]
-dash = {
-    "generated": now,
-    "layers": {
-        "prices": px_status.get("updated"), "history": px_status.get("slow_last"), "insiders": sec_status.get("updated"),
-        "congress_fetched": now if raw else load_doc("dashboard").get("layers", {}).get("congress_fetched"),
-        "congress_latest_filing": max((r["filed"] or "" for r in congress), default=None),
-    },
-    "quotes": load("quotes"),
-    "sectors": load("sector_board"),
-    "gainers": [slim(q) for q in load("gainers")[:25]],
-    "losers": [slim(q) for q in load("losers")[:25]],
-    "active": [slim(q) for q in load("most_active")[:25]],
-    "treasury": {"latest": treas[-1] if treas else None, "month_ago": treas[-22] if len(treas) > 22 else None},
-    "insider": {"buys": ibuys, "sells": isells, "clusters": iclusters[:30], "total": len(insiders)},
-    "congress": {"latest": congress[:40], "clusters": cclusters[:30], "hot": hot, "hot_end": hot_end},
-    "signals": signals[:40],
-}
-prev = load_doc("dashboard")
-strip = lambda d: {k: v for k, v in d.items() if k != "generated"} | {"layers": {k: v for k, v in d.get("layers", {}).items() if k != "congress_fetched"}}
-if strip(prev) != strip(dash):
-    (OUT / "dashboard.json").write_text(json.dumps(dash, separators=(",", ":")))
-    status["dashboard_changed"] = True
-status["ok"]["dashboard_bytes"] = (OUT / "dashboard.json").stat().st_size
-status["layers"] = {k: len(load(k)) for k in ("gainers", "most_active", "quotes", "sector_board")}
-status["layers"]["insider_trades_unique"] = len(insiders)
-if status.get("dashboard_changed") or status["failed"]:
-    (OUT / "signals_status.json").write_text(json.dumps(status, indent=2))
-print(json.dumps(status, indent=2))
+    r =
