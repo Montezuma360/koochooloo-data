@@ -1,0 +1,36 @@
+name: Paper trading
+
+on:
+  schedule:
+    - cron: "40 21 * * 1-5"   # after the US close
+    - cron: "15 23 * * 1-5"   # backup run, because GitHub sometimes skips scheduled runs
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paper
+  cancel-in-progress: false
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: pip install -q yfinance pandas
+      - name: Run the virtual trades
+        run: python paper.py
+      - name: Commit results
+        run: |
+          git config user.name "koochooloo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/paper
+          git diff --staged --quiet && exit 0
+          git commit -m "Paper trading $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push && break; sleep 10; done
