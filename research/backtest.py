@@ -128,36 +128,57 @@ def cluster_events(rows, n_needed, window, refire=60, min_value=0):
 
 
 # ---------------- prices ----------------
+def _batch(chunk, start):
+    """Download one batch. SPY rides along as a canary: if even SPY fails, Yahoo is rate-limiting us."""
+    ys = [c.replace(".", "-") for c in chunk]
+    req = ys if "SPY" in ys else ys + ["SPY"]
+    df = yf.download(req, start=start, interval="1d", auto_adjust=True, group_by="ticker", threads=True, progress=False)
+    if not isinstance(df.columns, pd.MultiIndex):
+        df.columns = pd.MultiIndex.from_product([[req[0]], df.columns])
+
+    def frame(y):
+        s = df[y][["Open", "Close", "Volume"]].dropna()
+        s.index = pd.DatetimeIndex(s.index).tz_localize(None)
+        return s
+    try:
+        ok = len(frame("SPY")) > 0
+    except Exception:
+        ok = False
+    got, miss = {}, []
+    for c, y in zip(chunk, ys):
+        try:
+            s = frame(y)
+            if len(s):
+                got[c] = s
+            else:
+                miss.append(c)
+        except Exception:
+            miss.append(c)
+    return got, miss, ok
+
+
 def prices(tickers, start="2013-11-01"):
-    px, todo = {}, sorted(set(tickers))
-    for attempt in range(2):
-        failed = []
-        for i in range(0, len(todo), 150):
-            chunk = todo[i:i + 150]
-            ys = [c.replace(".", "-") for c in chunk]
-            try:
-                df = yf.download(ys, start=start, interval="1d", auto_adjust=True, group_by="ticker",
-                                 threads=True, progress=False)
-            except Exception as e:
-                log("price batch failed", repr(e)[:100])
-                failed += chunk
-                continue
-            for c, y in zip(chunk, ys):
-                try:
-                    s = (df[y] if len(ys) > 1 else df)[["Open", "Close", "Volume"]].dropna()
-                    s.index = pd.DatetimeIndex(s.index).tz_localize(None)
-                    if len(s):
-                        px[c] = s
-                    else:
-                        failed.append(c)
-                except Exception:
-                    failed.append(c)
-            time.sleep(1.5)
-        todo = failed
-        if not todo:
-            break
-        time.sleep(20)
-    log("prices", len(px), "of", len(set(tickers)), "tickers")
+    todo = ["SPY"] + SECTORS + sorted(set(tickers) - {"SPY"} - set(SECTORS))
+    px, failed, i, waits = {}, [], 0, 0
+    while i < len(todo):
+        chunk = todo[i:i + 60]
+        try:
+            got, miss, ok = _batch(chunk, start)
+        except Exception as e:
+            log("price batch error", repr(e)[:100])
+            got, miss, ok = {}, chunk, False
+        if not ok and waits < 30:
+            waits += 1
+            log("rate limited at ticker", i, "of", len(todo), "- pausing 3 minutes")
+            time.sleep(180)
+            continue
+        px.update(got)
+        failed += miss
+        i += len(chunk)
+        time.sleep(8)
+    log("prices", len(px), "of", len(todo), "tickers;", len(failed), "without data;", waits, "rate-limit pauses")
+    if "SPY" not in px:
+        raise SystemExit("No SPY prices: Yahoo blocked the download. Run again later.")
     return px
 
 
