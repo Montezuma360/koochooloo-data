@@ -1,0 +1,162 @@
+{
+ "updated": "2026-11-01T23:04:15+00:00",
+ "priced_to": "2026-10-30",
+ "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 20 equal slots per strategy. When all slots are full, new signals are skipped.\nWrites data/paper/state.json, data/paper/summary.json and appends closed trades to data/paper/trades.csv.",
+ "strategies": {
+  "insider_cluster3": {
+   "label": "3+ company insiders buy the same stock within 30 days",
+   "hold_days": 60,
+   "started": "2026-11-01",
+   "value": 100000.0,
+   "return_pct": 0.0,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ]
+   ],
+   "events": []
+  },
+  "insider_big_250k": {
+   "label": "A director or officer buys $250k+ on the open market",
+   "hold_days": 60,
+   "started": "2026-11-01",
+   "value": 100000.0,
+   "return_pct": 0.0,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [
+    "RAPP"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ]
+   ],
+   "events": []
+  },
+  "congress_cluster3": {
+   "label": "3+ members of Congress disclose buying the same stock within 60 days",
+   "hold_days": 60,
+   "started": "2026-11-01",
+   "value": 100000.0,
+   "return_pct": 0.0,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [
+    "T"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ]
+   ],
+   "events": []
+  },
+  "congress_big_100k": {
+   "label": "A member of Congress discloses a $100k+ purchase",
+   "hold_days": 60,
+   "started": "2026-11-01",
+   "value": 100000.0,
+   "return_pct": 0.0,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ]
+   ],
+   "events": []
+  },
+  "terminal_top_signals": {
+   "label": "The terminal's own signal score reaches 8+",
+   "hold_days": 20,
+   "started": "2026-11-01",
+   "value": 100000.0,
+   "return_pct": 0.0,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [
+    "MSFT",
+    "ACN",
+    "NVDA",
+    "NFLX",
+    "PG",
+    "AVGO",
+    "BRK.B",
+    "HD",
+    "CSCO"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ]
+   ],
+   "events": []
+  },
+  "spy_benchmark": {
+   "label": "Buy and hold the S&P 500 (SPY), the bar to beat",
+   "hold_days": null,
+   "started": "2026-11-01",
+   "value": 100000.0,
+   "return_pct": 0.0,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [
+    "SPY"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ]
+   ],
+   "events": []
+  }
+ },
+ "spy_since_start_pct": 0.0
+}
