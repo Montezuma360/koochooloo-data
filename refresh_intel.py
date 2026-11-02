@@ -2,10 +2,10 @@
 
 Run it as often as you like (every 5-minute live tick and every hourly backup run). Every source has its own minimum
 gap, so slow sources are not over-polled, and one failing source never stops the rest. Sources that need a free API key
-switch on by themselves when the key is added as a GitHub secret (FINNHUB_KEY, ETHERSCAN_KEY).
+switch on by themselves when the key is added as a GitHub secret (FINNHUB_KEY, ETHERSCAN_KEY; COINGECKO_KEY is optional).
 
 Sources (all free; news is stored as headline + link only, never article text):
-- Crypto: CoinGecko (top 100, global market, trending), exchange prices from Kraken, Coinbase and Binance's
+- Crypto: CoinGecko (top 100, global market, trending, sector performance), exchange prices from Kraken, Coinbase and Binance's
   market-data API, Kraken perpetual futures (funding rates, open interest), Alternative.me crypto fear & greed
 - Bitcoin on-chain: mempool.space (fees, mempool, hashrate, difficulty), blockchain.com charts; Ethereum via Etherscan (key)
 - Futures and FX quotes via Yahoo (oil, gold, silver, copper, grains, index and bond futures, major currency pairs)
@@ -35,6 +35,7 @@ UA = {"User-Agent": "KoochoolooResearch github.com/Montezuma360/koochooloo-data"
 SEC_UA = {"User-Agent": os.environ.get("SEC_CONTACT") or "KoochoolooResearch github.com/Montezuma360/koochooloo-data"}
 FINNHUB_KEY = os.environ.get("FINNHUB_KEY")
 ETHERSCAN_KEY = os.environ.get("ETHERSCAN_KEY")
+COINGECKO_KEY = os.environ.get("COINGECKO_KEY")  # optional free "Demo" key: higher, steadier rate limit
 MEGA = {"AAPL": "Apple", "MSFT": "Microsoft", "NVDA": "Nvidia", "AMZN": "Amazon", "GOOGL": "Alphabet|Google", "META": "Meta Platforms|Meta",
         "TSLA": "Tesla", "AVGO": "Broadcom", "BRK.B": "Berkshire", "JPM": "JPMorgan", "LLY": "Eli Lilly|Lilly", "V": "Visa",
         "XOM": "Exxon", "UNH": "UnitedHealth", "MA": "Mastercard", "COST": "Costco", "NFLX": "Netflix", "AMD": "AMD",
@@ -54,6 +55,9 @@ def get(url, headers=None, data=None, tries=2, timeout=40):
         except urllib.error.HTTPError as e:
             if e.code in (400, 401, 403, 404, 451) or i == tries - 1:
                 raise
+            if e.code == 429:  # rate limited (CoinGecko's free tier is shared by everyone on GitHub's servers): wait, then retry once
+                time.sleep(15)
+                continue
         except Exception:
             if i == tries - 1:
                 raise
@@ -106,19 +110,23 @@ def strip_tags(s):
 
 
 # ---------- crypto ----------
+def cg(path):
+    """CoinGecko public API; uses the free Demo key when the COINGECKO_KEY secret exists."""
+    return jget("https://api.coingecko.com/api/v3" + path, headers={"x-cg-demo-api-key": COINGECKO_KEY} if COINGECKO_KEY else None)
+
+
 def crypto():
-    mk = jget("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1"
-              "&price_change_percentage=1h,24h,7d")
+    mk = cg("/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&price_change_percentage=1h,24h,7d")
     top = [{"rank": c.get("market_cap_rank"), "symbol": (c.get("symbol") or "").upper(), "name": c.get("name"), "price": c.get("current_price"),
             "market_cap": c.get("market_cap"), "volume_24h": c.get("total_volume"),
             "change_1h_pct": fnum(c.get("price_change_percentage_1h_in_currency"), 2),
             "change_24h_pct": fnum(c.get("price_change_percentage_24h_in_currency"), 2),
             "change_7d_pct": fnum(c.get("price_change_percentage_7d_in_currency"), 2)} for c in mk]
-    g = jget("https://api.coingecko.com/api/v3/global")["data"]
+    g = cg("/global")["data"]
     glob = {"total_market_cap_usd": fnum(g["total_market_cap"]["usd"], 0), "total_volume_usd": fnum(g["total_volume"]["usd"], 0),
             "btc_dominance_pct": fnum(g["market_cap_percentage"].get("btc"), 2), "eth_dominance_pct": fnum(g["market_cap_percentage"].get("eth"), 2),
             "market_cap_change_24h_pct": fnum(g.get("market_cap_change_percentage_24h_usd"), 2)}
-    tr = jget("https://api.coingecko.com/api/v3/search/trending").get("coins", [])
+    tr = cg("/search/trending").get("coins", [])
     trending = [{"symbol": c["item"].get("symbol"), "name": c["item"].get("name"), "rank": c["item"].get("market_cap_rank")} for c in tr[:15]]
     ex = {}
     for name, fn in (("kraken", _kraken), ("coinbase", _coinbase), ("binance", _binance)):
@@ -155,6 +163,21 @@ def _coinbase():
 def _binance():
     r = jget("https://data-api.binance.vision/api/v3/ticker/price?symbols=%5B%22BTCUSDT%22,%22ETHUSDT%22,%22SOLUSDT%22%5D")
     return {x["symbol"][:-4]: float(x["price"]) for x in r}
+
+
+def crypto_sectors():
+    """CoinGecko categories: how each crypto sector or narrative (DeFi, Layer 1, AI, memes, real-world assets...) is doing."""
+    c = cg("/coins/categories?order=market_cap_desc")
+    rows = [{"id": x.get("id"), "name": x.get("name"), "market_cap": fnum(x.get("market_cap"), 0),
+             "change_24h_pct": fnum(x.get("market_cap_change_24h"), 2), "volume_24h": fnum(x.get("volume_24h"), 0),
+             "top_coins": x.get("top_3_coins_id") or []} for x in c if x.get("market_cap")]
+    big = [r for r in rows if (r["market_cap"] or 0) >= 500e6 and r["change_24h_pct"] is not None]  # ignore tiny, noisy sectors
+    by_move = sorted(big, key=lambda r: r["change_24h_pct"])
+    save("crypto_sectors", {"source": "CoinGecko categories (sectors and narratives)", "largest": rows[:40],
+                            "best_24h": by_move[::-1][:15], "worst_24h": by_move[:15], "sectors_counted": len(rows)})
+    history("crypto_sectors", [{"t": STAMP, **{r["id"]: [r["market_cap"], r["change_24h_pct"]] for r in rows[:40]}}])
+    return "%d sectors; best %s %+.1f%%, worst %s %+.1f%%" % (len(rows), by_move[-1]["name"], by_move[-1]["change_24h_pct"],
+                                                           by_move[0]["name"], by_move[0]["change_24h_pct"])
 
 
 def crypto_derivatives():
@@ -693,6 +716,7 @@ def finnhub():
 # name: (function, minimum minutes between fetches when the US market is open, ... when it is closed)
 SOURCES = {
     "crypto": (crypto, 5, 5),
+    "crypto_sectors": (crypto_sectors, 30, 30),
     "crypto_derivatives": (crypto_derivatives, 5, 5),
     "crypto_fear_greed": (crypto_fear_greed, 60, 60),
     "onchain": (onchain, 10, 10),

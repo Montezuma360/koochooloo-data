@@ -43,6 +43,7 @@ jobs:
           SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
           FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
           ETHERSCAN_KEY: ${{ secrets.ETHERSCAN_KEY }}
+          COINGECKO_KEY: ${{ secrets.COINGECKO_KEY }}
         run: python refresh_intel.py
       - name: Signals and dashboard
         if: always()
