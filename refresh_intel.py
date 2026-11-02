@@ -649,7 +649,10 @@ def fear_greed():
     daily = {}
     for f in hist_opt[-90:]:
         for line in f.read_text().splitlines():
-            r = json.loads(line)
+            try:  # the options source may be appending to this file at the same moment
+                r = json.loads(line)
+            except ValueError:
+                continue
             if r.get("pc"):
                 daily[r["t"][:10]] = r["pc"]
     if len(daily) >= 20:
@@ -751,12 +754,10 @@ def main():
     st = load(OUT / "status.json", None) or {}
     src = st.get("sources", {})
     is_open = market_open()
-    for name, (fn, gap_open, gap_closed) in SOURCES.items():
-        s = src.setdefault(name, {})
-        gap = gap_open if is_open else gap_closed
-        last = s.get("last_try")
-        if name not in force and last and (NOW - dt.datetime.fromisoformat(last.replace("Z", "+00:00"))).total_seconds() < gap * 60 - 45:
-            continue
+    t_all = time.time()
+
+    def run(name, fn, gap):
+        s = src[name]
         t0 = time.time()
         s["last_try"] = STAMP
         try:
@@ -769,6 +770,25 @@ def main():
         s["seconds"] = round(time.time() - t0, 1)
         s["every_minutes"] = gap
         print("%-20s %5.1fs  %s" % (name, s["seconds"], s.get("error") or s.get("result")), flush=True)
+
+    due = []
+    for name, (fn, gap_open, gap_closed) in SOURCES.items():
+        s = src.setdefault(name, {})
+        gap = gap_open if is_open else gap_closed
+        last = s.get("last_try")
+        if name not in force and last and (NOW - dt.datetime.fromisoformat(last.replace("Z", "+00:00"))).total_seconds() < gap * 60 - 45:
+            continue
+        due.append((name, fn, gap))
+    # Yahoo (yfinance is not thread-safe) and CoinGecko (tight shared rate limit) run one at a time; the rest in parallel
+    one_at_a_time = {"crypto", "crypto_sectors", "futures_fx", "fear_greed"}
+    import concurrent.futures
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
+        futs = [ex.submit(run, *d) for d in due if d[0] not in one_at_a_time]
+        for d in due:
+            if d[0] in one_at_a_time:
+                run(*d)
+        concurrent.futures.wait(futs)
+    print("intelligence: %d sources due, %.1fs" % (len(due), time.time() - t_all))
     failed = {k: v["error"] for k, v in src.items() if v.get("error")}
     (OUT / "status.json").write_text(json.dumps({"updated": STAMP, "market_open": is_open, "failed": failed, "sources": src}, indent=1))
 

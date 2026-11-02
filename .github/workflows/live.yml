@@ -1,7 +1,7 @@
 name: Live market refresh
 
 # One short run every 5 minutes in US market hours: prices, SEC insider filings, Reddit mentions (at most hourly),
-# the intelligence feeds (each at its own pace), signals/dashboard and the health check, then one commit. Started by an outside timer (cron-job.org) calling GitHub's
+# the intelligence feeds (each at its own pace), signals/dashboard, the health check and the brain, then one commit. Started by an outside timer (cron-job.org) calling GitHub's
 # workflow_dispatch API, because GitHub's own 5-minute schedules ran only about once an hour (measured 2 Nov 2026).
 # The older scheduled workflows stay on as a backup and for the hours outside the market.
 on:
@@ -53,6 +53,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python health.py
+      - name: Brain (one consolidated file for the terminal and Setareh)
+        if: always()
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python brain.py
       - name: Commit changes
         if: always()
         run: |

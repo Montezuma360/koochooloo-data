@@ -1,0 +1,47 @@
+name: Backfill SEC insider history
+
+# Reads EDGAR's official daily index for past business days and fetches every Form 4 the live feed has not processed,
+# then merges it into the insider feed. Nightly it reconciles the last 5 days (catches anything the live feed missed);
+# a manual run can read further back (45 days fills the 30-day insider-cluster window from scratch).
+on:
+  schedule:
+    - cron: "40 3 * * 2-6"   # 03:40 UTC Tuesday-Saturday, after EDGAR has published the previous day's index
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Calendar days to read back"
+        default: "45"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sec-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Read EDGAR's daily index and fetch missing Form 4 filings
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python backfill_insiders.py ${{ github.event.inputs.days || '5' }}
+      - name: Merge into the insider feed
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python refresh_sec.py
+      - name: Commit changes
+        run: |
+          git config user.name "koochooloo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git diff --staged --quiet && exit 0
+          git commit -q -m "Insider backfill $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs -q && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep 5; done
+          exit 1

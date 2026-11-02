@@ -25,6 +25,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Install
+        run: pip install -q yfinance pandas
       - name: Build Congress, signals and dashboard
         run: python refresh_signals.py
       - name: Data health check
@@ -32,6 +34,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python health.py
+      - name: Brain (one consolidated file for the terminal and Setareh)
+        if: always()
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python brain.py
       - name: Commit changes
         if: always()
         run: |
