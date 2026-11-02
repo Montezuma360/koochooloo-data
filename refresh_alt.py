@@ -439,7 +439,9 @@ def cusip_map():
 
 
 def holdings_13f(url):
-    """Sum every fund's 13F stock holdings (not options) by CUSIP for one SEC data-set file."""
+    """Sum every fund's 13F stock holdings (not options) by CUSIP for one SEC data-set file.
+    Filer mistakes are common (e.g. billions of shares reported with a $0 value), so a line only counts when its
+    implied price (value / shares) is within 3x of that security's median across all funds."""
     z = zipfile.ZipFile(io.BytesIO(get(url, headers=SEC_UA, timeout=600)))
     names = {n.split("/")[-1].upper(): n for n in z.namelist()}
     sub = {}
@@ -455,20 +457,35 @@ def holdings_13f(url):
         if per == period:
             latest[cik] = acc
     keep = set(latest.values())
-    agg = {}
-    with z.open(names["INFOTABLE.TSV"]) as fh:
-        for r in csv.DictReader(io.TextIOWrapper(fh, "latin-1"), delimiter="\t"):
-            acc = r.get("ACCESSION_NUMBER")
-            if acc not in keep or (r.get("PUTCALL") or "").strip() or (r.get("SSHPRNAMTTYPE") or "SH").strip() != "SH":
-                continue
-            try:
-                v, sh = float(r.get("VALUE") or 0), float(r.get("SSHPRNAMT") or 0)
-            except ValueError:
-                continue
-            a = agg.setdefault(r["CUSIP"].upper(), [set(), 0.0, 0.0])
-            a[0].add(sub[acc][0])
-            a[1] += sh
-            a[2] += v
+
+    def lines():
+        with z.open(names["INFOTABLE.TSV"]) as fh:
+            for r in csv.DictReader(io.TextIOWrapper(fh, "latin-1"), delimiter="\t"):
+                acc = r.get("ACCESSION_NUMBER")
+                if acc not in keep or (r.get("PUTCALL") or "").strip() or (r.get("SSHPRNAMTTYPE") or "SH").strip() != "SH":
+                    continue
+                try:
+                    v, sh = float(r.get("VALUE") or 0), float(r.get("SSHPRNAMT") or 0)
+                except ValueError:
+                    continue
+                if v > 0 and sh > 0:
+                    yield r["CUSIP"].upper(), sub[acc][0], sh, v
+    prices = collections.defaultdict(list)
+    for c, _, sh, v in lines():
+        prices[c].append(v / sh)
+    med = {c: sorted(p)[len(p) // 2] for c, p in prices.items()}
+    del prices
+    agg, dropped = {}, 0
+    for c, cik, sh, v in lines():
+        m = med[c]
+        if not (m / 3 <= v / sh <= m * 3):
+            dropped += 1
+            continue
+        a = agg.setdefault(c, [set(), 0.0, 0.0])
+        a[0].add(cik)
+        a[1] += sh
+        a[2] += v
+    print("13F", period, "funds", len(keep), "lines dropped as filer errors:", dropped)
     return period, len(keep), {c: (len(a[0]), a[1], a[2]) for c, a in agg.items()}
 
 
@@ -495,7 +512,7 @@ def fund_holdings(watch):
     if not links:
         raise RuntimeError("no 13F data-set links found")
     order = sorted(links, key=label_key)
-    arch = HIST / "13f"
+    arch = HIST / "13f" / "v2"  # v2: filer-error lines removed
     cur_lbl, prev_lbl = order[-1], order[-2] if len(order) > 1 else None
     if (arch / (cur_lbl + ".csv.gz")).exists() and (ALT / "fund_holdings_13f.json").exists():
         return "no new file (latest %s)" % cur_lbl
@@ -516,8 +533,9 @@ def fund_holdings(watch):
         if not t:
             continue
         h0, s0, v0 = old.get(c, (0, 0.0, 0.0))
-        rows.append({"symbol": t, "cusip": c, "funds": h, "funds_change": h - h0 if old else None, "shares": int(s),
-                     "shares_change_pct": round(100 * (s / s0 - 1), 1) if s0 else None, "value_usd": int(v)})
+        new = bool(old) and c not in old  # new CUSIP: IPO, spin-off or a company that changed its share code
+        rows.append({"symbol": t, "cusip": c, "funds": h, "funds_change": h - h0 if old and not new else None, "new_cusip": new,
+                     "shares": int(s), "shares_change_pct": round(100 * (s / s0 - 1), 1) if s0 else None, "value_usd": int(v)})
     by = {}
     for r in rows:  # a ticker can have several CUSIPs (share classes); keep the most widely held
         if r["symbol"] not in by or r["funds"] > by[r["symbol"]]["funds"]:
@@ -528,6 +546,7 @@ def fund_holdings(watch):
                                     "note": "Form 13F: every US fund manager with $100M+ must report its stock holdings 45 days after each quarter. Shows what big money owned, not what it is doing today.",
                                     "most_funds_added": sorted(big, key=lambda r: -r["funds_change"])[:25],
                                     "most_funds_cut": sorted(big, key=lambda r: r["funds_change"])[:25],
+                                    "new_listings_most_held": sorted([r for r in by.values() if r["new_cusip"]], key=lambda r: -r["funds"])[:25],
                                     "watch": {s: by[s] for s in sorted(watch) if s in by}})
     return "%s: %d securities, %d mapped to tickers" % (cur_lbl, len(cur), len(by))
 
