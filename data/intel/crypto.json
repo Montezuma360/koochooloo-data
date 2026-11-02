@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T22:57:58Z",
+ "updated": "2026-11-02T22:58:03Z",
  "source": "CoinGecko, Kraken, Coinbase, Binance (market-data API)",
  "global": {
   "total_market_cap_usd": 2600113633108.0,
@@ -1189,24 +1189,24 @@
  ],
  "exchange_prices": {
   "kraken": {
-   "ETH": 2252.3,
+   "ETH": 2252.2,
    "SOL": 91.97,
-   "BTC": 76766.3
+   "BTC": 76763.3
   },
   "coinbase": {
-   "BTC": 76758.59,
+   "BTC": 76758.2,
    "ETH": 2252.3,
-   "SOL": 91.98
+   "SOL": 91.99
   },
   "binance": {
    "BTC": 76904.54,
-   "ETH": 2256.15,
-   "SOL": 92.14
+   "ETH": 2256.16,
+   "SOL": 92.13
   }
  },
  "exchange_spread_pct": {
-  "BTC": 0.19,
-  "ETH": 0.171,
-  "SOL": 0.185
+  "BTC": 0.191,
+  "ETH": 0.176,
+  "SOL": 0.174
  }
 }
