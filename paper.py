@@ -13,6 +13,9 @@ Each strategy starts with $100,000 and follows fixed rules:
   below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the
   data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its
   reason in plain language in data/paper/decisions.csv.
+- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies
+  are ranked by their margin over the S&P 500; summary.json "goal" shows what GBP 100 has become in each and how long
+  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.
 Writes data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv."""
 import collections, csv, datetime as dt, json, os, pathlib, re, time, urllib.request
 import pandas as pd
@@ -233,6 +236,52 @@ def data_doubts():
     return ("stale feeds: " + ", ".join(bad)) if bad else None
 
 
+# The owner's goal (2 Nov 2026): beat the S&P 500 by the largest possible margin after costs, and turn a virtual
+# GBP 100 into GBP 10,000 (100x). The risk rules above still apply: the margin is widened by backing whichever strategy
+# proves best on live data, never by betting more than 2% on one trade.
+GOAL_START, GOAL_TARGET = 100.0, 10_000.0
+LIVE_MIN_DAYS = 90       # a yearly pace from fewer days is noise, so it is not shown
+# Yearly returns measured in research (round 3), used to show how long the target takes at a known pace
+REFERENCE_PACE = {
+    "S&P 500, long-run average": 0.10,
+    "S&P 500, 2023-2026": 0.211,
+    "Small-company insider buying, 2014-2022": 0.091,
+    "Small-company insider buying, 2023-2026": 0.257,
+}
+
+
+def years_to_target(pace):
+    import math
+    return round(math.log(GOAL_TARGET / GOAL_START) / math.log(1 + pace), 1) if pace and pace > 0 else None
+
+
+def goal_block(summ):
+    """Leaderboard by margin over the S&P 500, what GBP 100 has become in each strategy, and the honest time to GBP 10,000."""
+    spy = summ.get("spy_since_start_pct")
+    board = []
+    for k, v in summ["strategies"].items():
+        days = (TODAY - dt.date.fromisoformat(str(v["started"])[:10])).days
+        mult = v["value"] / START_CASH
+        pace = mult ** (365 / days) - 1 if days >= LIVE_MIN_DAYS and mult > 0 else None
+        v["margin_vs_spy_pct"] = round(v["return_pct"] - spy, 2) if spy is not None and k != "spy_benchmark" else None
+        v["gbp100_now"] = round(GOAL_START * mult, 2)
+        v["yearly_pace_pct"] = round(100 * pace, 1) if pace is not None else None
+        v["years_to_10000_at_pace"] = years_to_target(pace)
+        if k != "spy_benchmark":
+            board.append({"strategy": k, "margin_vs_spy_pct": v["margin_vs_spy_pct"], "gbp100_now": v["gbp100_now"], "days_live": days})
+    board.sort(key=lambda r: -(r["margin_vs_spy_pct"] if r["margin_vs_spy_pct"] is not None else -1e9))
+    best = board[0] if board else None
+    return {
+        "aim": "Beat the S&P 500 by the largest possible margin after costs; turn GBP 100 into GBP 10,000 (100x)",
+        "leaderboard": board,
+        "leader": best["strategy"] if best else None,
+        "leader_is_meaningful": bool(best and best["days_live"] >= LIVE_MIN_DAYS),
+        "years_to_10000_at_reference_pace": {n: years_to_target(p) for n, p in REFERENCE_PACE.items()},
+        "yearly_return_needed": {"%d years" % y: round(100 * ((GOAL_TARGET / GOAL_START) ** (1 / y) - 1), 1) for y in (3, 5, 10, 20)},
+        "note": "Virtual money only. Rankings mean little before %d days of live trading. Not financial advice." % LIVE_MIN_DAYS,
+    }
+
+
 def max_dd(eq):
     peak, worst = START_CASH, 0.0
     for _, v in eq:
@@ -436,6 +485,7 @@ def main():
             "recent_trades": C[-10:], "equity": s["equity"][-400:], "events": s["events"][-15:],
         }
     summ["spy_since_start_pct"] = round(100 * (S["spy_benchmark"]["equity"][-1][1] / START_CASH - 1), 2) if S["spy_benchmark"]["equity"] else None
+    summ["goal"] = goal_block(summ)
     (P / "state.json").write_text(json.dumps(st, indent=1, default=str))
     (P / "summary.json").write_text(json.dumps(summ, indent=1, default=str))
     dfile = P / "decisions.csv"
