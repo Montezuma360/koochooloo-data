@@ -173,7 +173,9 @@ def crypto_sectors():
              "top_coins": x.get("top_3_coins_id") or []} for x in c if x.get("market_cap")]
     big = [r for r in rows if (r["market_cap"] or 0) >= 500e6 and r["change_24h_pct"] is not None]  # ignore tiny, noisy sectors
     by_move = sorted(big, key=lambda r: r["change_24h_pct"])
-    save("crypto_sectors", {"source": "CoinGecko categories (sectors and narratives)", "largest": rows[:40],
+    save("crypto_sectors", {"source": "CoinGecko categories (sectors and narratives)", "note": "A very large one-day jump can mean "
+                            "CoinGecko added coins to the category rather than a real move; check the top coins before reading much into it.",
+                            "largest": rows[:40],
                             "best_24h": by_move[::-1][:15], "worst_24h": by_move[:15], "sectors_counted": len(rows)})
     history("crypto_sectors", [{"t": STAMP, **{r["id"]: [r["market_cap"], r["change_24h_pct"]] for r in rows[:40]}}])
     return "%d sectors; best %s %+.1f%%, worst %s %+.1f%%" % (len(rows), by_move[-1]["name"], by_move[-1]["change_24h_pct"],
@@ -451,7 +453,10 @@ def _parse_feed(src, raw):
 def news():
     prev = load(OUT / "news.json", {}) or {}
     old = prev.get("items", [])
-    seen = {i["link"] for i in old} | {i["title"] for i in old}
+    # 7-day memory of headlines already stored, so feeds that list weeks of items never count them as new twice
+    memo = {k: v for k, v in (load(OUT / "news_seen.json", {}) or {}).get("seen", {}).items()
+            if v >= (NOW - dt.timedelta(days=7)).strftime("%Y-%m-%d")}
+    seen = {i["link"] for i in old} | {i["title"] for i in old} | set(memo)
     got, errs, per = [], {}, {}
     for src, url in FEEDS.items():
         try:
@@ -461,11 +466,17 @@ def news():
         except Exception as e:
             errs[src] = repr(e)[:100]
     new = []
+    week_ago = (NOW - dt.timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ")
     for i in sorted(got, key=lambda i: i["time"]):
-        if i["link"] in seen or i["title"] in seen:
+        if i["time"] < week_ago or i["link"] in seen or i["title"] in seen:
             continue
         seen |= {i["link"], i["title"]}
         new.append(i)
+    today = NOW.strftime("%Y-%m-%d")
+    memo.update({i["link"]: today for i in new})
+    for i in old:
+        memo.setdefault(i["link"], today)
+    (OUT / "news_seen.json").write_text(json.dumps({"seen": memo}, separators=(",", ":")))
     keep_from = (NOW - dt.timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")  # older headlines live on in the history files
     items = sorted([i for i in old + new if i["time"] >= keep_from], key=lambda i: i["time"], reverse=True)[:400]
     tagcount = {}
@@ -513,7 +524,7 @@ def sec_filings():
     new = []
     for form, n in FORMS.items():
         x = get("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=%s&company=&dateb=&owner=include&start=0&count=%d&output=atom"
-                % (form.replace(" ", "+"), n), headers=SEC_UA).decode("latin-1")
+                % (form.replace(" ", "+"), n), headers=SEC_UA, timeout=20).decode("latin-1")
         for e in re.findall(r"<entry>(.*?)</entry>", x, re.S):
             m = re.search(r"<title>(.*?) - (.*?) \((\d{10})\) \((\w[\w ]*)\)</title>", e)
             acc = re.search(r"accession-number=([\d-]+)", e)
