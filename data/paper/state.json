@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 3,
+ "runs": 4,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -57,13 +57,20 @@
      "signal": "2026-11-02",
      "event": "2026-10-30",
      "note": "Demski David M (Director) bought $408,600"
+    },
+    {
+     "sym": "ENPH",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "Kothandaraman Badrinarayanan (President & CEO) bought $267,514"
     }
    ],
    "closed": [],
    "seen": {
     "RAPP": "2026-11-01",
     "LSTR": "2026-11-02",
-    "ATEC": "2026-11-02"
+    "ATEC": "2026-11-02",
+    "ENPH": "2026-11-02"
    },
    "events": [
     {
@@ -83,7 +90,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.01,
    "paused": false
   },
   "congress_cluster3": {
@@ -169,7 +176,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.0,
    "paused": false
   },
   "congress_big_100k": {
@@ -502,7 +509,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.15,
    "paused": false
   },
   "spy_benchmark": {
@@ -546,7 +553,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -1.12,
    "paused": false
   },
   "insider_cluster2_smallcap": {
@@ -573,7 +580,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-02T21:48:49+00:00",
+ "updated": "2026-11-02T22:23:03+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -624,6 +631,10 @@
    "name": "Services-Video Tape Rental"
   },
   "AVGO": {
+   "sic": "36",
+   "name": "Semiconductors & Related Devices"
+  },
+  "ENPH": {
    "sic": "36",
    "name": "Semiconductors & Related Devices"
   }

@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-02T21:48:49+00:00",
+ "updated": "2026-11-02T22:23:03+00:00",
  "priced_to": "2026-11-02",
- "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
+ "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\n- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies\n  are ranked by their margin over the S&P 500; summary.json \"goal\" shows what GBP 100 has become in each and how long\n  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
  "market_stress": false,
  "market_note": "calm (VIX 19.42, high-yield spread 3.44)",
  "strategies": {
@@ -34,7 +34,11 @@
      100000.0
     ]
    ],
-   "events": []
+   "events": [],
+   "margin_vs_spy_pct": 1.12,
+   "gbp100_now": 100.0,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
   },
   "insider_big_250k": {
    "label": "A director or officer buys $250k+ on the open market",
@@ -42,7 +46,7 @@
    "started": "2026-11-01",
    "value": 99994.62,
    "paused": false,
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.01,
    "max_drawdown_pct": -0.01,
    "stops_hit": 0,
    "return_pct": -0.01,
@@ -61,7 +65,8 @@
    ],
    "pending": [
     "LSTR",
-    "ATEC"
+    "ATEC",
+    "ENPH"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -85,7 +90,11 @@
      "sym": "RAPP",
      "what": "TRADE: HEALY JAMES (Director) bought $19,999,980. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 25.16; RSI 38 is neutral"
     }
-   ]
+   ],
+   "margin_vs_spy_pct": 1.11,
+   "gbp100_now": 99.99,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
   },
   "congress_cluster3": {
    "label": "3+ members of Congress disclose buying the same stock within 60 days",
@@ -93,7 +102,7 @@
    "started": "2026-11-01",
    "value": 100029.18,
    "paused": false,
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.0,
    "max_drawdown_pct": 0.0,
    "stops_hit": 0,
    "return_pct": 0.03,
@@ -133,7 +142,11 @@
      "sym": "T",
      "what": "TRADE: 3 members bought within 60 days. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 21.10; RSI 39 is neutral"
     }
-   ]
+   ],
+   "margin_vs_spy_pct": 1.15,
+   "gbp100_now": 100.03,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
   },
   "congress_big_100k": {
    "label": "A member of Congress discloses a $100k+ purchase",
@@ -164,7 +177,11 @@
      100000.0
     ]
    ],
-   "events": []
+   "events": [],
+   "margin_vs_spy_pct": 1.12,
+   "gbp100_now": 100.0,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
   },
   "terminal_top_signals": {
    "label": "The terminal's own signal score reaches 8+",
@@ -172,7 +189,7 @@
    "started": "2026-11-01",
    "value": 99851.9,
    "paused": false,
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.15,
    "max_drawdown_pct": -0.15,
    "stops_hit": 0,
    "return_pct": -0.15,
@@ -322,7 +339,11 @@
      "sym": "CSCO",
      "what": "TRADE: score 8: 4 politicians bought (~$423,500, last filed 2026-10-27); heavy trading today: -3.8%. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 105.42; RSI 40 is neutral"
     }
-   ]
+   ],
+   "margin_vs_spy_pct": 0.97,
+   "gbp100_now": 99.85,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
   },
   "spy_benchmark": {
    "label": "Buy and hold the S&P 500 (SPY), the bar to beat",
@@ -330,7 +351,7 @@
    "started": "2026-11-01",
    "value": 98883.64,
    "paused": false,
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -1.12,
    "max_drawdown_pct": -1.12,
    "stops_hit": 0,
    "return_pct": -1.12,
@@ -370,7 +391,11 @@
      "sym": "SPY",
      "what": "TRADE: benchmark: buy and hold the S&P 500 at 759.45 on 2026-11-02"
     }
-   ]
+   ],
+   "margin_vs_spy_pct": null,
+   "gbp100_now": 98.88,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
   },
   "insider_cluster2_smallcap": {
    "label": "2+ insiders each buy $25k+ within 30 days in a smaller company ($1M-$20M traded a day)",
@@ -401,106 +426,69 @@
      100000.0
     ]
    ],
-   "events": []
+   "events": [],
+   "margin_vs_spy_pct": 1.12,
+   "gbp100_now": 100.0,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
   }
  },
  "spy_since_start_pct": -1.12,
- "latest_decisions": [
-  {
-   "date": "2026-11-02",
-   "strategy": "insider_big_250k",
-   "symbol": "RAPP",
-   "decision": "TRADE",
-   "rsi": 37.5,
-   "reason": "HEALY JAMES (Director) bought $19,999,980. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 25.16; RSI 38 is neutral"
+ "goal": {
+  "aim": "Beat the S&P 500 by the largest possible margin after costs; turn GBP 100 into GBP 10,000 (100x)",
+  "leaderboard": [
+   {
+    "strategy": "congress_cluster3",
+    "margin_vs_spy_pct": 1.15,
+    "gbp100_now": 100.03,
+    "days_live": 1
+   },
+   {
+    "strategy": "insider_cluster3",
+    "margin_vs_spy_pct": 1.12,
+    "gbp100_now": 100.0,
+    "days_live": 1
+   },
+   {
+    "strategy": "congress_big_100k",
+    "margin_vs_spy_pct": 1.12,
+    "gbp100_now": 100.0,
+    "days_live": 1
+   },
+   {
+    "strategy": "insider_cluster2_smallcap",
+    "margin_vs_spy_pct": 1.12,
+    "gbp100_now": 100.0,
+    "days_live": 0
+   },
+   {
+    "strategy": "insider_big_250k",
+    "margin_vs_spy_pct": 1.11,
+    "gbp100_now": 99.99,
+    "days_live": 1
+   },
+   {
+    "strategy": "terminal_top_signals",
+    "margin_vs_spy_pct": 0.97,
+    "gbp100_now": 99.85,
+    "days_live": 1
+   }
+  ],
+  "leader": "congress_cluster3",
+  "leader_is_meaningful": false,
+  "years_to_10000_at_reference_pace": {
+   "S&P 500, long-run average": 48.3,
+   "S&P 500, 2023-2026": 24.1,
+   "Small-company insider buying, 2014-2022": 52.9,
+   "Small-company insider buying, 2023-2026": 20.1
   },
-  {
-   "date": "2026-11-02",
-   "strategy": "congress_cluster3",
-   "symbol": "T",
-   "decision": "TRADE",
-   "rsi": 38.6,
-   "reason": "3 members bought within 60 days. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 21.10; RSI 39 is neutral"
+  "yearly_return_needed": {
+   "3 years": 364.2,
+   "5 years": 151.2,
+   "10 years": 58.5,
+   "20 years": 25.9
   },
-  {
-   "date": "2026-11-02",
-   "strategy": "terminal_top_signals",
-   "symbol": "MSFT",
-   "decision": "TRADE",
-   "rsi": 49.0,
-   "reason": "score 12: 6 politicians bought (~$5,561,500, last filed 2026-10-12); heavy trading today: -1.6%. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 524.10; RSI 49 is neutral"
-  },
-  {
-   "date": "2026-11-02",
-   "strategy": "terminal_top_signals",
-   "symbol": "ACN",
-   "decision": "NO_TRADE",
-   "rsi": 70.6,
-   "reason": "RSI 71 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-02",
-   "strategy": "terminal_top_signals",
-   "symbol": "NVDA",
-   "decision": "TRADE",
-   "rsi": 35.1,
-   "reason": "score 10: 5 politicians bought (~$1,955,500, last filed 2026-10-22); heavy trading today: -4.2%. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 207.59; RSI 35 is neutral"
-  },
-  {
-   "date": "2026-11-02",
-   "strategy": "terminal_top_signals",
-   "symbol": "NFLX",
-   "decision": "TRADE",
-   "rsi": 30.6,
-   "reason": "score 8: 4 politicians bought (~$3,306,000, last filed 2026-10-08); heavy trading today: +0.0%. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 62.20; RSI 31 is neutral"
-  },
-  {
-   "date": "2026-11-02",
-   "strategy": "terminal_top_signals",
-   "symbol": "PG",
-   "decision": "TRADE",
-   "rsi": 64.4,
-   "reason": "score 8: 4 politicians bought (~$504,000, last filed 2026-10-08). Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 162.24; RSI 64 is neutral"
-  },
-  {
-   "date": "2026-11-02",
-   "strategy": "terminal_top_signals",
-   "symbol": "AVGO",
-   "decision": "TRADE",
-   "rsi": 40.8,
-   "reason": "score 8: 4 politicians bought (~$464,000, last filed 2026-10-08); heavy trading today: -5.5%. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 328.44; RSI 41 is neutral"
-  },
-  {
-   "date": "2026-11-02",
-   "strategy": "terminal_top_signals",
-   "symbol": "BRK.B",
-   "decision": "TRADE",
-   "rsi": 66.8,
-   "reason": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-14). Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 545.00; RSI 67 is neutral"
-  },
-  {
-   "date": "2026-11-02",
-   "strategy": "terminal_top_signals",
-   "symbol": "HD",
-   "decision": "TRADE",
-   "rsi": 67.8,
-   "reason": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-07). Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 334.08; RSI 68 is neutral"
-  },
-  {
-   "date": "2026-11-02",
-   "strategy": "terminal_top_signals",
-   "symbol": "CSCO",
-   "decision": "TRADE",
-   "rsi": 39.7,
-   "reason": "score 8: 4 politicians bought (~$423,500, last filed 2026-10-27); heavy trading today: -3.8%. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 105.42; RSI 40 is neutral"
-  },
-  {
-   "date": "2026-11-02",
-   "strategy": "spy_benchmark",
-   "symbol": "SPY",
-   "decision": "TRADE",
-   "rsi": 40.4,
-   "reason": "benchmark: buy and hold the S&P 500 at 759.45 on 2026-11-02"
-  }
- ]
+  "note": "Virtual money only. Rankings mean little before 90 days of live trading. Not financial advice."
+ },
+ "latest_decisions": []
 }
