@@ -1,15 +1,70 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 4,
+ "runs": 5,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
    "hold": 60,
    "cash": 100000.0,
    "open": [],
-   "pending": [],
+   "pending": [
+    {
+     "sym": "BBT",
+     "signal": "2026-11-02",
+     "event": "2026-10-30",
+     "note": "6 insiders bought within 30 days"
+    },
+    {
+     "sym": "ANIX",
+     "signal": "2026-11-02",
+     "event": "2026-10-30",
+     "note": "3 insiders bought within 30 days"
+    }
+   ],
    "closed": [],
-   "seen": {},
+   "seen": {
+    "BBT": "2026-11-02",
+    "ANIX": "2026-11-02",
+    "NPB": "2026-11-02",
+    "BPRE": "2026-11-02",
+    "NVA": "2026-11-02",
+    "RAPP": "2026-11-02",
+    "PDI": "2026-11-02",
+    "STC": "2026-11-02",
+    "CRAFX": "2026-11-02",
+    "CHCO": "2026-11-02",
+    "AGMB": "2026-11-02",
+    "DX": "2026-11-02",
+    "FUL": "2026-11-02",
+    "GABC": "2026-11-02",
+    "PAM": "2026-11-02",
+    "BORR": "2026-11-02",
+    "KWY": "2026-11-02",
+    "BBD": "2026-11-02",
+    "IMSR": "2026-11-02",
+    "HEI": "2026-11-02",
+    "SWZ": "2026-11-02",
+    "WVVI": "2026-11-02",
+    "GME": "2026-11-02",
+    "AHRT": "2026-11-02",
+    "TSM": "2026-11-02",
+    "ACCV": "2026-11-02",
+    "MPB": "2026-11-02",
+    "AUBN": "2026-11-02",
+    "RGCO": "2026-11-02",
+    "SPG": "2026-11-02",
+    "DKS": "2026-11-02",
+    "CTM": "2026-11-02",
+    "PRHI": "2026-11-02",
+    "PHIO": "2026-11-02",
+    "DTIL": "2026-11-02",
+    "ADRX": "2026-11-02",
+    "FNWD": "2026-11-02",
+    "ATCH": "2026-11-02",
+    "GAM": "2026-11-02",
+    "RWT": "2026-11-02",
+    "KRMN": "2026-11-02"
+   },
    "events": [],
    "equity": [
     [
@@ -63,6 +118,24 @@
      "signal": "2026-11-02",
      "event": "2026-11-02",
      "note": "Kothandaraman Badrinarayanan (President & CEO) bought $267,514"
+    },
+    {
+     "sym": "XYL",
+     "signal": "2026-11-02",
+     "event": "2026-10-29",
+     "note": "KOCH D CHRISTIAN (Director) bought $985,600"
+    },
+    {
+     "sym": "DINO",
+     "signal": "2026-11-02",
+     "event": "2026-10-29",
+     "note": "MYERS FRANKLIN (CEO) bought $1,108,000"
+    },
+    {
+     "sym": "JBLU",
+     "signal": "2026-11-02",
+     "event": "2026-10-29",
+     "note": "BONEPARTH PETER (Director) bought $300,000"
     }
    ],
    "closed": [],
@@ -70,7 +143,89 @@
     "RAPP": "2026-11-01",
     "LSTR": "2026-11-02",
     "ATEC": "2026-11-02",
-    "ENPH": "2026-11-02"
+    "ENPH": "2026-11-02",
+    "TFC": "2026-11-02",
+    "XYL": "2026-11-02",
+    "PNFP": "2026-11-02",
+    "DINO": "2026-11-02",
+    "SCQCU": "2026-11-02",
+    "JBLU": "2026-11-02",
+    "RCT": "2026-11-02",
+    "ACN": "2026-11-02",
+    "BPRE": "2026-11-02",
+    "TTMI": "2026-11-02",
+    "XBIT": "2026-11-02",
+    "TIPT": "2026-11-02",
+    "NPB": "2026-11-02",
+    "SRRK": "2026-11-02",
+    "LRN": "2026-11-02",
+    "PLUR": "2026-11-02",
+    "AIOK": "2026-11-02",
+    "MSM": "2026-11-02",
+    "THRM": "2026-11-02",
+    "CITR": "2026-11-02",
+    "CRAFX": "2026-11-02",
+    "RENT": "2026-11-02",
+    "FBK": "2026-11-02",
+    "IAM": "2026-11-02",
+    "CNXU": "2026-11-02",
+    "APLD": "2026-11-02",
+    "CTY": "2026-11-02",
+    "PAM": "2026-11-02",
+    "BORR": "2026-11-02",
+    "PEP": "2026-11-02",
+    "BBD": "2026-11-02",
+    "FLSC": "2026-11-02",
+    "CXM": "2026-11-02",
+    "TDIC": "2026-11-02",
+    "AVO": "2026-11-02",
+    "ONMD": "2026-11-02",
+    "GME": "2026-11-02",
+    "IIPR": "2026-11-02",
+    "VDTA": "2026-11-02",
+    "GGR": "2026-11-02",
+    "COE": "2026-11-02",
+    "FUL": "2026-11-02",
+    "PSUS": "2026-11-02",
+    "NXH": "2026-11-02",
+    "ACCV": "2026-11-02",
+    "VCIG": "2026-11-02",
+    "NYAX": "2026-11-02",
+    "FGBI": "2026-11-02",
+    "PORT.U": "2026-11-02",
+    "DKS": "2026-11-02",
+    "ORCL": "2026-11-02",
+    "UUU": "2026-11-02",
+    "GPUS": "2026-11-02",
+    "TKLF": "2026-11-02",
+    "FUND": "2026-11-02",
+    "XENE": "2026-11-02",
+    "SLBT": "2026-11-02",
+    "KOD": "2026-11-02",
+    "TSI": "2026-11-02",
+    "KBDC": "2026-11-02",
+    "MNSO": "2026-11-02",
+    "ADRX": "2026-11-02",
+    "HGBL": "2026-11-02",
+    "INR": "2026-11-02",
+    "AOMR": "2026-11-02",
+    "INBX": "2026-11-02",
+    "DMRA": "2026-11-02",
+    "CX": "2026-11-02",
+    "NCT": "2026-11-02",
+    "HRGN": "2026-11-02",
+    "HHH": "2026-11-02",
+    "UXIN": "2026-11-02",
+    "ETRA": "2026-11-02",
+    "TPVG": "2026-11-02",
+    "BCBP": "2026-11-02",
+    "GRAB": "2026-11-02",
+    "GSAT": "2026-11-02",
+    "ENHA": "2026-11-02",
+    "CRM": "2026-11-02",
+    "CYBN": "2026-11-02",
+    "KRMN": "2026-11-02",
+    "RWT": "2026-11-02"
    },
    "events": [
     {
@@ -438,7 +593,194 @@
      "last_value": 1923.421460977268
     }
    ],
-   "pending": [],
+   "pending": [
+    {
+     "sym": "TSM",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 96: 30 insiders bought $121,468 in 30 days (last 2026-10-07); 3 politicians bought (~$24,000, last filed 2026-10-22)"
+    },
+    {
+     "sym": "GPI",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 48: 10% owner Conifer Management, L.L.C. bought $119,117 on 2026-10-22; 10% owner Conifer Management, L.L.C. bought $452,783 on 2026-10-22"
+    },
+    {
+     "sym": "RAPP",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 33: 7 insiders bought $22,023,905 in 30 days (last 2026-10-28); Director HEALY JAMES bought $145,593 on 2026-10-28"
+    },
+    {
+     "sym": "HEI",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 24: 8 insiders bought $1,400,595 in 30 days (last 2026-10-08)"
+    },
+    {
+     "sym": "BPRE",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 23: 3 insiders bought $25,364,808 in 30 days (last 2026-10-27); Director KAMFAR RAMIN bought $869,506 on 2026-10-27"
+    },
+    {
+     "sym": "BBT",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 20: 6 insiders bought $274,327 in 30 days (last 2026-10-30); Director Hollister Thomas J bought $104,984 on 2026-10-26"
+    },
+    {
+     "sym": "NPB",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 18: 4 insiders bought $1,819,350 in 30 days (last 2026-10-28); Director Boer Carrie L bought $184,762 on 2026-10-23"
+    },
+    {
+     "sym": "LYCA",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 18: 10% owner Venrock Healthcare Capital Partners III, L.P. bought $231,281 on 2026-10-30; 10% owner Venrock Healthcare Capital Partners III, L.P. bought $115,047 on 2026-10-28"
+    },
+    {
+     "sym": "CRBG",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 18: 10% owner NIPPON LIFE INSURANCE CO bought $8,671,495 on 2026-10-28; 10% owner NIPPON LIFE INSURANCE CO bought $6,259,186 on 2026-10-27"
+    },
+    {
+     "sym": "STC",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 17: 5 insiders bought $460,970 in 30 days (last 2026-10-26); Chief Executive Officer EPPINGER FREDERICK H bought $133,350 on 2026-10-26"
+    },
+    {
+     "sym": "RENT",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 15: 3 insiders bought $6,120,516 in 30 days (last 2026-10-21); Director STORY3 Capital Partners, LLC bought $2,246,873 on 2026-10-21"
+    },
+    {
+     "sym": "NMCO",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 14: 4 insiders bought $279,675 in 30 days (last 2026-10-23); Insider Robert Young L bought $248,883 on 2026-10-23"
+    },
+    {
+     "sym": "CHCO",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 12: 4 insiders bought $68,222 in 30 days (last 2026-10-23)"
+    },
+    {
+     "sym": "MSM",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 12: 2 insiders bought $29,034,300 in 30 days (last 2026-10-23); Director JACOBSON MITCHELL bought $6,348,018 on 2026-10-23"
+    },
+    {
+     "sym": "DSM",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 12: 2 insiders bought $1,555,905 in 30 days (last 2026-10-28); 10% owner Saba Capital Management, L.P. bought $111,326 on 2026-10-26"
+    },
+    {
+     "sym": "TTMI",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 12: 2 insiders bought $1,342,811 in 30 days (last 2026-10-28); President and CEO Roks Edwin bought $440,350 on 2026-10-28"
+    },
+    {
+     "sym": "NXG",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 11: 3 insiders bought $525,575 in 30 days (last 2026-10-23); See Remarks Swank Jerry V bought $439,493 on 2026-10-23"
+    },
+    {
+     "sym": "DX",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 11: 3 insiders bought $267,230 in 30 days (last 2026-10-20); Co-CEO and President Popenoe Smriti Laxman bought $106,200 on 2026-10-20"
+    },
+    {
+     "sym": "ROL",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 10: 2 insiders bought $99,913,330 in 30 days (last 2026-10-29); 10% owner R. Randall Rollins Voting Trust U/A dated August 25, 1994 bought $49,956,665 on 2026-10-29"
+    },
+    {
+     "sym": "CTY",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 10: 2 insiders bought $6,120,000 in 30 days (last 2026-10-19); 10% owner ARCH Venture Partners XII, LLC bought $3,060,000 on 2026-10-19"
+    },
+    {
+     "sym": "LEO",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 10: 2 insiders bought $2,661,149 in 30 days (last 2026-10-26); 10% owner Saba Capital Management, L.P. bought $369,200 on 2026-10-23"
+    },
+    {
+     "sym": "THRM",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 10: 2 insiders bought $662,600 in 30 days (last 2026-10-23); Director MASCARENAS PAUL ANTHONY bought $532,600 on 2026-10-23"
+    },
+    {
+     "sym": "HBAN",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 10: 2 insiders bought $453,554 in 30 days (last 2026-10-27); Director TORGOW GARY bought $199,834 on 2026-10-27"
+    },
+    {
+     "sym": "AGMB",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 9: 3 insiders bought $399,970 in 30 days (last 2026-10-21)"
+    },
+    {
+     "sym": "IMSR",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 9: 3 insiders bought $112,279 in 30 days (last 2026-10-14)"
+    },
+    {
+     "sym": "NVA",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 9: 3 insiders bought $46,934 in 30 days (last 2026-10-26)"
+    },
+    {
+     "sym": "WVVI",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 9: 3 insiders bought $31,865 in 30 days (last 2026-10-12)"
+    },
+    {
+     "sym": "GABC",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 9: 3 insiders bought $17,300 in 30 days (last 2026-10-15)"
+    },
+    {
+     "sym": "NRXS",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 9: 3 insiders bought $12,260 in 30 days (last 2026-10-08)"
+    },
+    {
+     "sym": "OCFC",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 8: 2 insiders bought $267,777 in 30 days (last 2026-10-30); Director Katsoulis Nicos bought $178,277 on 2026-10-30"
+    },
+    {
+     "sym": "SRRK",
+     "signal": "2026-11-02",
+     "event": "2026-11-02",
+     "note": "score 8: Director AKKARAJU SRINIVAS bought $4,075,071 on 2026-10-26; Director AKKARAJU SRINIVAS bought $2,037,411 on 2026-10-26"
+    }
+   ],
    "closed": [],
    "seen": {
     "MSFT": "2026-11-01",
@@ -449,7 +791,38 @@
     "AVGO": "2026-11-01",
     "BRK.B": "2026-11-01",
     "HD": "2026-11-01",
-    "CSCO": "2026-11-01"
+    "CSCO": "2026-11-01",
+    "TSM": "2026-11-02",
+    "GPI": "2026-11-02",
+    "RAPP": "2026-11-02",
+    "HEI": "2026-11-02",
+    "BPRE": "2026-11-02",
+    "BBT": "2026-11-02",
+    "NPB": "2026-11-02",
+    "LYCA": "2026-11-02",
+    "CRBG": "2026-11-02",
+    "STC": "2026-11-02",
+    "RENT": "2026-11-02",
+    "NMCO": "2026-11-02",
+    "CHCO": "2026-11-02",
+    "MSM": "2026-11-02",
+    "DSM": "2026-11-02",
+    "TTMI": "2026-11-02",
+    "NXG": "2026-11-02",
+    "DX": "2026-11-02",
+    "ROL": "2026-11-02",
+    "CTY": "2026-11-02",
+    "LEO": "2026-11-02",
+    "THRM": "2026-11-02",
+    "HBAN": "2026-11-02",
+    "AGMB": "2026-11-02",
+    "IMSR": "2026-11-02",
+    "NVA": "2026-11-02",
+    "WVVI": "2026-11-02",
+    "GABC": "2026-11-02",
+    "NRXS": "2026-11-02",
+    "OCFC": "2026-11-02",
+    "SRRK": "2026-11-02"
    },
    "events": [
     {
@@ -561,9 +934,62 @@
    "hold": 60,
    "cash": 100000.0,
    "open": [],
-   "pending": [],
+   "pending": [
+    {
+     "sym": "OCFC",
+     "signal": "2026-11-02",
+     "event": "2026-10-30",
+     "note": "2 insiders each bought $25k+ within 30 days"
+    }
+   ],
    "closed": [],
-   "seen": {},
+   "seen": {
+    "BBT": "2026-11-02",
+    "OCFC": "2026-11-02",
+    "NPB": "2026-11-02",
+    "HBAN": "2026-11-02",
+    "ACN": "2026-11-02",
+    "BPRE": "2026-11-02",
+    "TTMI": "2026-11-02",
+    "RAPP": "2026-11-02",
+    "PDI": "2026-11-02",
+    "STC": "2026-11-02",
+    "MSM": "2026-11-02",
+    "THRM": "2026-11-02",
+    "CRAFX": "2026-11-02",
+    "RENT": "2026-11-02",
+    "AGMB": "2026-11-02",
+    "DX": "2026-11-02",
+    "APLD": "2026-11-02",
+    "FUL": "2026-11-02",
+    "PAM": "2026-11-02",
+    "BORR": "2026-11-02",
+    "BBD": "2026-11-02",
+    "IMSR": "2026-11-02",
+    "DUOT": "2026-11-02",
+    "INBX": "2026-11-02",
+    "HEI": "2026-11-02",
+    "ONMD": "2026-11-02",
+    "SWZ": "2026-11-02",
+    "RTSN": "2026-11-02",
+    "GME": "2026-11-02",
+    "ACCV": "2026-11-02",
+    "SPG": "2026-11-02",
+    "DKS": "2026-11-02",
+    "PRHI": "2026-11-02",
+    "XENE": "2026-11-02",
+    "CLPR": "2026-11-02",
+    "ADRX": "2026-11-02",
+    "INR": "2026-11-02",
+    "HHH": "2026-11-02",
+    "GAM": "2026-11-02",
+    "ETRA": "2026-11-02",
+    "FLNC": "2026-11-02",
+    "BFRG": "2026-11-02",
+    "VFF": "2026-11-02",
+    "BCBP": "2026-11-02",
+    "GRAB": "2026-11-02"
+   },
    "events": [],
    "equity": [
     [
@@ -580,7 +1006,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-02T22:23:03+00:00",
+ "updated": "2026-11-02T23:45:10+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -637,6 +1063,142 @@
   "ENPH": {
    "sic": "36",
    "name": "Semiconductors & Related Devices"
+  },
+  "GPI": {
+   "sic": "55",
+   "name": "Retail-Auto Dealers & Gasoline Stations"
+  },
+  "STC": {
+   "sic": "63",
+   "name": "Title Insurance"
+  },
+  "DINO": {
+   "sic": "46",
+   "name": "Pipe Lines (No Natural Gas)"
+  },
+  "XYL": {
+   "sic": "35",
+   "name": "Pumps & Pumping Equipment"
+  },
+  "HBAN": {
+   "sic": "60",
+   "name": "National Commercial Banks"
+  },
+  "THRM": {
+   "sic": "37",
+   "name": "Motor Vehicle Parts & Accessories"
+  },
+  "TTMI": {
+   "sic": "36",
+   "name": "Printed Circuit Boards"
+  },
+  "NVA": {
+   "sic": "10",
+   "name": "Gold and Silver Ores"
+  },
+  "TSM": {
+   "sic": "36",
+   "name": "Semiconductors & Related Devices"
+  },
+  "SRRK": {
+   "sic": "28",
+   "name": "Biological Products, (No Diagnostic Substances)"
+  },
+  "RENT": {
+   "sic": "59",
+   "name": "Retail-Retail Stores, NEC"
+  },
+  "LEO": {
+   "sic": "00",
+   "name": ""
+  },
+  "ANIX": {
+   "sic": "28",
+   "name": "Pharmaceutical Preparations"
+  },
+  "DSM": {
+   "sic": null,
+   "name": ""
+  },
+  "BPRE": {
+   "sic": null,
+   "name": ""
+  },
+  "NRXS": {
+   "sic": "38",
+   "name": "Electromedical & Electrotherapeutic Apparatus"
+  },
+  "CHCO": {
+   "sic": "60",
+   "name": "National Commercial Banks"
+  },
+  "NXG": {
+   "sic": null,
+   "name": ""
+  },
+  "BBT": {
+   "sic": "60",
+   "name": "Savings Institutions, Not Federally Chartered"
+  },
+  "ROL": {
+   "sic": "73",
+   "name": "Services-To Dwellings & Other Buildings"
+  },
+  "CRBG": {
+   "sic": "63",
+   "name": "Life Insurance"
+  },
+  "LYCA": {
+   "sic": "28",
+   "name": "Biological Products, (No Diagnostic Substances)"
+  },
+  "AGMB": {
+   "sic": "28",
+   "name": "Biological Products, (No Diagnostic Substances)"
+  },
+  "JBLU": {
+   "sic": "45",
+   "name": "Air Transportation, Scheduled"
+  },
+  "MSM": {
+   "sic": "50",
+   "name": "Wholesale-Industrial Machinery & Equipment"
+  },
+  "WVVI": {
+   "sic": "20",
+   "name": "Beverages"
+  },
+  "CTY": {
+   "sic": "28",
+   "name": "Pharmaceutical Preparations"
+  },
+  "NMCO": {
+   "sic": null,
+   "name": ""
+  },
+  "HEI": {
+   "sic": "37",
+   "name": "Aircraft Engines & Engine Parts"
+  },
+  "DX": {
+   "sic": "67",
+   "name": "Real Estate Investment Trusts"
+  },
+  "OCFC": {
+   "sic": "60",
+   "name": "National Commercial Banks"
+  },
+  "IMSR": {
+   "sic": "34",
+   "name": "Fabricated Plate Work (Boiler Shops)"
+  },
+  "GABC": {
+   "sic": "60",
+   "name": "State Commercial Banks"
+  },
+  "NPB": {
+   "sic": "60",
+   "name": "State Commercial Banks"
   }
  }
 }
