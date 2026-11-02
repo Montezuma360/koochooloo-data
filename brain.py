@@ -273,7 +273,7 @@ def cash_vs_profit(symbols, cache):
                 out[s] = c["data"]
             continue
         cik = cikmap.get(s)
-        if not cik or calls >= 30:
+        if not cik or calls >= 100:  # up to 50 stocks a run (about 15 seconds at the SEC's pace); results are cached a week
             continue
         data = None
         try:
