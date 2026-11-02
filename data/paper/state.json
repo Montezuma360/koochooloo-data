@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 1,
+ "runs": 2,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -351,7 +351,24 @@
     ]
    ],
    "started": "2026-11-01"
+  },
+  "insider_cluster2_smallcap": {
+   "label": "2+ insiders each buy $25k+ within 30 days in a smaller company ($1M-$20M traded a day)",
+   "hold": 60,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [],
+   "closed": [],
+   "seen": {},
+   "events": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ]
+   ],
+   "started": "2026-11-02"
   }
  },
- "updated": "2026-11-01T23:04:15+00:00"
+ "updated": "2026-11-02T01:47:13+00:00"
 }
