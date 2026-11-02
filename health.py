@@ -15,10 +15,11 @@ FEEDS = {
     "treasury_rates": ("status.json", "slow_last", 26, False),
     "alt_data": ("alt/status.json", "updated", 30, True),     # after each US close
     "paper_trading": ("paper/summary.json", "updated", 30, True),
+    "intelligence": ("intel/status.json", "updated", 2, False),  # crypto, news, SEC filings, options, macro, sentiment
 }
 # While the US market is open these feeds should be no more than this many minutes old (a 5-minute refresh plus run time).
 # Missing the target is a warning, not "stale": stale data stops the paper engine trading, a slow refresh should not.
-TARGET_MIN = {"prices": 10, "sec_insiders": 10, "signals": 10}
+TARGET_MIN = {"prices": 10, "sec_insiders": 10, "signals": 10, "intelligence": 10}
 
 
 def market_open():
@@ -66,6 +67,18 @@ def runs():
     return out
 
 
+def repo_size_mb():
+    """Size of the data store on GitHub, so its growth can be watched (GitHub suggests staying under about 5 GB)."""
+    tok, repo = os.environ.get("GITHUB_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
+    if not (tok and repo):
+        return None
+    try:
+        req = urllib.request.Request("https://api.github.com/repos/" + repo, headers={"Authorization": "Bearer " + tok})
+        return round(json.loads(urllib.request.urlopen(req, timeout=30).read())["size"] / 1024, 1)
+    except Exception:
+        return None
+
+
 def main():
     feeds, problems, warnings = {}, [], []
     is_open = market_open()
@@ -98,7 +111,7 @@ def main():
         if isinstance(r, dict) and r.get("last") == "failure":
             problems.append("workflow '%s' failed last run" % n)
     out = {"updated": NOW.strftime("%Y-%m-%dT%H:%M:%SZ"), "healthy": not problems, "problems": problems,
-           "market_open": is_open, "warnings": warnings, "feeds": feeds, "workflows": wf}
+           "market_open": is_open, "warnings": warnings, "repo_size_mb": repo_size_mb(), "feeds": feeds, "workflows": wf}
     (D / "health.json").write_text(json.dumps(out, indent=1))
     h = D / "history" / "health"
     h.mkdir(parents=True, exist_ok=True)
