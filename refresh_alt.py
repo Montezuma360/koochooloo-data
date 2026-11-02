@@ -8,9 +8,11 @@ Sources (all free and public):
 - congress-legislators (open source): which committees each member of Congress sits on
 - USAspending: the largest new federal contract awards, matched to stock tickers where possible
 - ApeWisdom: how often each stock is mentioned on Reddit's investing forums
+- SEC XBRL frames (weekly): revenue, profit, cash flow and debt for every listed company, with a 0-5 quality score
+- SEC Form 13F data sets (quarterly): how many big funds hold each stock and how that changed
 
 Writes compact files to data/alt/ and keeps a permanent history under data/history/ (the brain's memory)."""
-import csv, datetime as dt, gzip, io, json, os, pathlib, re, time, urllib.error, urllib.parse, urllib.request, zipfile
+import collections, csv, datetime as dt, gzip, io, json, os, pathlib, re, time, urllib.error, urllib.parse, urllib.request, zipfile
 
 D = pathlib.Path("data")
 ALT = D / "alt"
@@ -329,10 +331,212 @@ def reddit():
     return "%d stocks" % len(clean)
 
 
+# ---------- SEC company financials (XBRL frames), weekly ----------
+def sec_tickers():
+    raw = jget("https://www.sec.gov/files/company_tickers.json", headers=SEC_UA)
+    t2c, c2t = {}, {}
+    for r in raw.values():
+        t2c.setdefault(r["ticker"].upper().replace("-", "."), int(r["cik_str"]))
+        c2t.setdefault(int(r["cik_str"]), r["ticker"].upper().replace("-", "."))
+    return t2c, c2t
+
+
+def frame(concept, period, unit="USD"):
+    try:
+        return jget("https://data.sec.gov/api/xbrl/frames/us-gaap/%s/%s/%s.json" % (concept, unit, period), headers=SEC_UA).get("data", [])
+    except urllib.error.HTTPError:
+        return []
+
+
+def fundamentals(watch):
+    prev = load(ALT / "fundamentals.json", {}) or {}
+    if prev.get("updated", "")[:10] >= str(TODAY - dt.timedelta(days=6)):
+        return "fresh (weekly)"
+    t2c, c2t = sec_tickers()
+    years = [TODAY.year - 3, TODAY.year - 2, TODAY.year - 1]
+    flows = {"revenue": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax", "SalesRevenueNet"],
+             "net_income": ["NetIncomeLoss"], "op_cash_flow": ["NetCashProvidedByUsedInOperatingActivities"]}
+    stocks = {"assets": ["Assets"], "liabilities": ["Liabilities"], "equity": ["StockholdersEquity"]}
+    F = {}  # (cik, year) -> {field: value}
+    for field, concepts in list(flows.items()) + list(stocks.items()):
+        for y in years:
+            period = "CY%d" % y if field in flows else "CY%dQ4I" % y
+            for c in concepts:  # first concept wins; later ones only fill gaps
+                for r in frame(c, period):
+                    d = F.setdefault((int(r["cik"]), y), {})
+                    d.setdefault(field, float(r["val"]))
+                time.sleep(0.12)
+    by = {}
+    for (cik, y), v in F.items():
+        by.setdefault(cik, {})[y] = v
+    rows, out = [], {}
+    for cik, yrs in by.items():
+        ys = sorted(y for y in yrs if "net_income" in yrs[y] or "revenue" in yrs[y])
+        if not ys:
+            continue
+        y = ys[-1]
+        cur, old = yrs[y], yrs.get(y - 1, {})
+        rev, ni, ocf = cur.get("revenue"), cur.get("net_income"), cur.get("op_cash_flow")
+        a, l = cur.get("assets"), cur.get("liabilities")
+        rec = {"cik": cik, "ticker": c2t.get(cik), "year": y, "revenue": rev, "net_income": ni, "op_cash_flow": ocf, "assets": a,
+               "liabilities": l, "equity": cur.get("equity"),
+               "revenue_growth_pct": round(100 * (rev / old["revenue"] - 1), 1) if rev and old.get("revenue") else None,
+               "net_margin_pct": round(100 * ni / rev, 1) if rev and ni is not None and rev > 0 else None,
+               "cash_backed": (ocf > ni) if ocf is not None and ni is not None else None,
+               "liabilities_to_assets": round(l / a, 2) if a and l is not None else None}
+        checks = [ni is not None and ni > 0, ocf is not None and ocf > 0, rec["cash_backed"] is True,
+                  (rec["revenue_growth_pct"] or -1) > 0, rec["liabilities_to_assets"] is not None and rec["liabilities_to_assets"] < 0.8]
+        rec["quality_score"] = sum(bool(x) for x in checks)  # 0-5: profit, cash flow, cash-backed, growing, not over-borrowed
+        rows.append(rec)
+        if rec["ticker"]:
+            out[rec["ticker"]] = rec
+    f = HIST / "fundamentals" / (TODAY.strftime("%Y-%m") + ".csv.gz")
+    f.parent.mkdir(parents=True, exist_ok=True)
+    cols = ["cik", "ticker", "year", "revenue", "net_income", "op_cash_flow", "assets", "liabilities", "equity", "quality_score"]
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(cols)
+    for r in rows:
+        w.writerow([r[c] for c in cols])
+    f.write_bytes(gzip.compress(buf.getvalue().encode()))
+    save("fundamentals.json", {"updated": STAMP, "source": "SEC XBRL frames (company annual reports)", "companies": len(rows),
+                               "note": "Latest full year each company reported. quality_score 0-5 = profitable, positive operating cash flow, cash flow above profit, revenue growing, liabilities under 80% of assets.",
+                               "watch": {s: out[s] for s in sorted(watch) if s in out},
+                               "top_quality_watch": sorted([s for s in watch if s in out and out[s]["quality_score"] == 5])})
+    return "%d companies, %d watched" % (len(rows), sum(1 for s in watch if s in out))
+
+
+# ---------- SEC Form 13F: what big funds hold, quarterly ----------
+MON = {m: i for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
+
+
+def label_key(lbl):
+    m = re.match(r"(\d{2})([a-z]{3})(\d{4})-(\d{2})([a-z]{3})(\d{4})$", lbl)
+    if m:
+        return "%s-%02d-%s" % (m.group(6), MON.get(m.group(5), 0), m.group(4))
+    m = re.match(r"(\d{4})q(\d)$", lbl)
+    return "%s-%02d-99" % (m.group(1), 3 * int(m.group(2))) if m else lbl
+
+
+def cusip_map():
+    """CUSIP -> ticker from the last three months of SEC fails-to-deliver files (they list both)."""
+    prev = load(ALT / "cusip_map.json", {}) or {}
+    if prev.get("updated", "")[:10] >= str(TODAY - dt.timedelta(days=25)):
+        return prev["map"]
+    page = get("https://www.sec.gov/data-research/sec-markets-data/fails-deliver-data", headers=SEC_UA).decode("utf-8", "ignore")
+    links = {m.group(2): m.group(1) for m in re.finditer(r'href="([^"]*?cnsfails(\d{6}[ab])\.zip)"', page)}
+    mp = dict(prev.get("map", {}))
+    for p in sorted(links)[-6:]:
+        url = links[p] if links[p].startswith("http") else "https://www.sec.gov" + links[p]
+        z = zipfile.ZipFile(io.BytesIO(get(url, headers=SEC_UA)))
+        for line in z.open(z.namelist()[0]).read().decode("latin-1").splitlines()[1:]:
+            q = line.split("|")
+            if len(q) >= 3 and len(q[1]) == 9 and q[2]:
+                mp[q[1]] = q[2]
+        time.sleep(0.3)
+    save("cusip_map.json", {"updated": STAMP, "source": "SEC fails-to-deliver files", "map": mp})
+    return mp
+
+
+def holdings_13f(url):
+    """Sum every fund's 13F stock holdings (not options) by CUSIP for one SEC data-set file."""
+    z = zipfile.ZipFile(io.BytesIO(get(url, headers=SEC_UA, timeout=600)))
+    names = {n.split("/")[-1].upper(): n for n in z.namelist()}
+    sub = {}
+    periods = collections.Counter()
+    with z.open(names["SUBMISSION.TSV"]) as fh:
+        for r in csv.DictReader(io.TextIOWrapper(fh, "latin-1"), delimiter="\t"):
+            if r.get("SUBMISSIONTYPE") == "13F-HR":
+                sub[r["ACCESSION_NUMBER"]] = (r.get("CIK"), r.get("PERIODOFREPORT"))
+                periods[r.get("PERIODOFREPORT")] += 1
+    period = periods.most_common(1)[0][0]
+    latest = {}  # one filing per fund for the period
+    for acc, (cik, per) in sorted(sub.items()):
+        if per == period:
+            latest[cik] = acc
+    keep = set(latest.values())
+    agg = {}
+    with z.open(names["INFOTABLE.TSV"]) as fh:
+        for r in csv.DictReader(io.TextIOWrapper(fh, "latin-1"), delimiter="\t"):
+            acc = r.get("ACCESSION_NUMBER")
+            if acc not in keep or (r.get("PUTCALL") or "").strip() or (r.get("SSHPRNAMTTYPE") or "SH").strip() != "SH":
+                continue
+            try:
+                v, sh = float(r.get("VALUE") or 0), float(r.get("SSHPRNAMT") or 0)
+            except ValueError:
+                continue
+            a = agg.setdefault(r["CUSIP"].upper(), [set(), 0.0, 0.0])
+            a[0].add(sub[acc][0])
+            a[1] += sh
+            a[2] += v
+    return period, len(keep), {c: (len(a[0]), a[1], a[2]) for c, a in agg.items()}
+
+
+def read_13f(f):
+    with gzip.open(f, "rt") as fh:
+        return {r["cusip"]: (int(r["holders"]), float(r["shares"]), float(r["value"])) for r in csv.DictReader(fh)}
+
+
+def write_13f(f, agg):
+    f.parent.mkdir(parents=True, exist_ok=True)
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(["cusip", "holders", "shares", "value"])
+    for c, (h, s, v) in sorted(agg.items()):
+        w.writerow([c, h, int(s), int(v)])
+    f.write_bytes(gzip.compress(buf.getvalue().encode()))
+
+
+def fund_holdings(watch):
+    page = get("https://www.sec.gov/data-research/sec-markets-data/form-13f-data-sets", headers=SEC_UA).decode("utf-8", "ignore")
+    links = {}
+    for m in re.finditer(r'href="([^"]*?/([0-9a-z\-]+)_form13f\.zip)"', page, re.I):
+        links[m.group(2).lower()] = m.group(1) if m.group(1).startswith("http") else "https://www.sec.gov" + m.group(1)
+    if not links:
+        raise RuntimeError("no 13F data-set links found")
+    order = sorted(links, key=label_key)
+    arch = HIST / "13f"
+    cur_lbl, prev_lbl = order[-1], order[-2] if len(order) > 1 else None
+    if (arch / (cur_lbl + ".csv.gz")).exists() and (ALT / "fund_holdings_13f.json").exists():
+        return "no new file (latest %s)" % cur_lbl
+    meta = load(arch / "periods.json", {}) or {}
+    for lbl in [x for x in (prev_lbl, cur_lbl) if x]:
+        f = arch / (lbl + ".csv.gz")
+        if not f.exists():
+            period, funds, agg = holdings_13f(links[lbl])
+            write_13f(f, agg)
+            meta[lbl] = {"period": period, "funds": funds, "securities": len(agg)}
+            arch.mkdir(parents=True, exist_ok=True)
+            (arch / "periods.json").write_text(json.dumps(meta, indent=1))
+    cur, old = read_13f(arch / (cur_lbl + ".csv.gz")), read_13f(arch / (prev_lbl + ".csv.gz")) if prev_lbl else {}
+    mp = cusip_map()
+    rows = []
+    for c, (h, s, v) in cur.items():
+        t = mp.get(c)
+        if not t:
+            continue
+        h0, s0, v0 = old.get(c, (0, 0.0, 0.0))
+        rows.append({"symbol": t, "cusip": c, "funds": h, "funds_change": h - h0 if old else None, "shares": int(s),
+                     "shares_change_pct": round(100 * (s / s0 - 1), 1) if s0 else None, "value_usd": int(v)})
+    by = {}
+    for r in rows:  # a ticker can have several CUSIPs (share classes); keep the most widely held
+        if r["symbol"] not in by or r["funds"] > by[r["symbol"]]["funds"]:
+            by[r["symbol"]] = r
+    big = [r for r in by.values() if r["funds"] >= 50 and r["funds_change"] is not None]
+    save("fund_holdings_13f.json", {"updated": STAMP, "file": cur_lbl, "compared_with": prev_lbl, "period": meta.get(cur_lbl, {}).get("period"),
+                                    "funds_reporting": meta.get(cur_lbl, {}).get("funds"),
+                                    "note": "Form 13F: every US fund manager with $100M+ must report its stock holdings 45 days after each quarter. Shows what big money owned, not what it is doing today.",
+                                    "most_funds_added": sorted(big, key=lambda r: -r["funds_change"])[:25],
+                                    "most_funds_cut": sorted(big, key=lambda r: r["funds_change"])[:25],
+                                    "watch": {s: by[s] for s in sorted(watch) if s in by}})
+    return "%s: %d securities, %d mapped to tickers" % (cur_lbl, len(cur), len(by))
+
+
 def main():
     watch = watchlist()
     for name, fn in (("short_volume", lambda: short_volume(watch)), ("fails_to_deliver", lambda: fails_to_deliver(watch)), ("cot", cot),
-                     ("macro", macro), ("committees", committees), ("gov_contracts", contracts), ("reddit", reddit)):
+                     ("macro", macro), ("committees", committees), ("gov_contracts", contracts), ("reddit", reddit),
+                     ("fundamentals", lambda: fundamentals(watch)), ("fund_holdings_13f", lambda: fund_holdings(watch))):
         try:
             STATUS["ok"][name] = fn()
         except Exception as e:
