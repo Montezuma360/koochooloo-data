@@ -4,12 +4,16 @@ Each strategy starts with $100,000 and follows fixed rules:
 - A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).
 - Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.
 - Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.
-- 20 equal slots per strategy. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded
+- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded
   for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility
   sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.
 - No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).
 - At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.
-Writes data/paper/state.json, data/paper/summary.json and appends closed trades to data/paper/trades.csv."""
+- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or
+  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the
+  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its
+  reason in plain language in data/paper/decisions.csv.
+Writes data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv."""
 import collections, csv, datetime as dt, json, os, pathlib, re, time, urllib.request
 import pandas as pd
 import yfinance as yf
@@ -20,7 +24,8 @@ P.mkdir(parents=True, exist_ok=True)
 NOW = dt.datetime.now(dt.timezone.utc)
 TODAY = NOW.date()
 START_CASH = 100_000.0
-SLOTS = 20
+SLOTS = 50              # 50 slots of 2% each: even a total loss on one trade costs at most 2% of the portfolio
+MAX_RISK = 0.02         # rule: never risk more than 2% of total portfolio value on a single trade
 FRESH_DAYS = 4
 TICK = re.compile(r"^[A-Z]{1,5}(\.[A-Z])?$")
 EXEC = re.compile(r"director|officer|chief|president|ceo|cfo|coo|chair|vp|vice|counsel|treasurer|secretary", re.I)
@@ -199,6 +204,35 @@ def value(p, b, at=None):
     return p["alloc"] * (1 - p["c"]) * closes.iloc[-1] / pin
 
 
+def rsi(closes, n=14):
+    """Wilder's 14-day RSI from closing prices (None if there is too little history)."""
+    d = closes.diff().dropna()
+    if len(d) < 2 * n:
+        return None
+    up = d.clip(lower=0).ewm(alpha=1 / n, adjust=False).mean().iloc[-1]
+    dn = (-d.clip(upper=0)).ewm(alpha=1 / n, adjust=False).mean().iloc[-1]
+    return 100.0 if dn == 0 else float(100 - 100 / (1 + up / dn))
+
+
+DECISIONS = []
+
+
+def decide(s, k, p, decision, why, r=None):
+    s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "%s: %s" % (decision, why)})
+    DECISIONS.append({"date": TODAY.isoformat(), "strategy": k, "symbol": p["sym"], "decision": decision,
+                      "rsi": round(r, 1) if r is not None else "", "reason": why})
+
+
+def data_doubts():
+    """Plain-language reason to doubt the data (stale prices, insider or signal feeds), or None."""
+    try:
+        h = json.loads((D / "health.json").read_text())
+    except Exception:
+        return None
+    bad = [n for n in ("prices", "sec_insiders", "signals") if (h.get("feeds", {}).get(n) or {}).get("stale")]
+    return ("stale feeds: " + ", ".join(bad)) if bad else None
+
+
 def max_dd(eq):
     peak, worst = START_CASH, 0.0
     for _, v in eq:
@@ -208,6 +242,7 @@ def max_dd(eq):
 
 
 def main():
+    DECISIONS.clear()
     try:
         st = json.loads((P / "state.json").read_text())
     except Exception:
@@ -246,6 +281,7 @@ def main():
     mark_day = spy.index[-1]
     new_trades = []
     stressed, stress_why = market_stress()
+    data_doubt = data_doubts()
     sic = industries(st, {p["sym"] for s in S.values() for p in s["pending"]} | {p["sym"] for s in S.values() for p in s["open"]})
 
     for k, s in S.items():
@@ -301,7 +337,7 @@ def main():
             elif stressed:
                 gate = "skipped: market stress (%s)" % stress_why
 
-        # 3. fill pending orders at the next session's open
+        # 3. decide on each pending order: TRADE (fill at the regular-session open, 9:30 ET) or NO_TRADE, with the reason
         still = []
         for p in s["pending"]:
             b = bars.get(p["sym"])
@@ -309,7 +345,7 @@ def main():
             nxt = [d for d in (b.index if b is not None else []) if d > sd]
             if not nxt:
                 if (TODAY - sd).days > 7:
-                    s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "dropped: no price data"})
+                    decide(s, k, p, "NO_TRADE", "no price data for a week, so the order was dropped")
                 else:
                     still.append(p)
                 continue
@@ -317,37 +353,51 @@ def main():
             i = list(b.index).index(d0)
             pin = float(b.Open.iloc[i])
             liq = float((b.Close.iloc[max(0, i - 20):i] * b.Volume.iloc[max(0, i - 20):i]).mean()) if i > 0 else 0
+            r = rsi(b.Close.iloc[:i])  # momentum as known at the close before the fill
+            why = None
             if k != "spy_benchmark" and not (pin >= 1 and liq >= 1e6):
-                s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: penny stock or too illiquid"})
-                continue
-            if STRATS[k].get("max_liq") and liq > STRATS[k]["max_liq"]:
-                s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: not a smaller company"})
-                continue
-            if gate:
-                s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": gate})
-                continue
-            if len(s["open"]) >= SLOTS:
-                s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: all 20 slots full"})
+                why = "penny stock or too thinly traded (under $1 or under $1M a day)"
+            elif STRATS[k].get("max_liq") and liq > STRATS[k]["max_liq"]:
+                why = "not a smaller company (trades $%.0fM a day)" % (liq / 1e6)
+            elif gate:
+                why = gate
+            elif k != "spy_benchmark" and data_doubt:
+                why = "uncertain data (%s), so the default is no trade" % data_doubt
+            elif k != "spy_benchmark" and r is None:
+                why = "not enough price history to judge momentum, so the default is no trade"
+            elif k != "spy_benchmark" and r > 70:
+                why = "RSI %.0f is above 70: overbought, buying now risks chasing a spike" % r
+            elif k != "spy_benchmark" and r < 30 and not k.startswith("insider_"):
+                why = "RSI %.0f is below 30: oversold with no strong contrarian reason" % r
+            elif len(s["open"]) >= SLOTS:
+                why = "all %d slots are full" % SLOTS
+            if why:
+                decide(s, k, p, "NO_TRADE", why, r)
                 continue
             ind = (sic.get(p["sym"]) or {}).get("sic")
             if k != "spy_benchmark" and ind and sum(q.get("industry") == ind for q in s["open"]) >= MAX_PER_INDUSTRY:
-                s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: already %d positions in industry %s (%s)" % (MAX_PER_INDUSTRY, ind, sic[p["sym"]].get("name", ""))})
+                decide(s, k, p, "NO_TRADE", "already %d positions in the same industry (%s)" % (MAX_PER_INDUSTRY, sic[p["sym"]].get("name", "")), r)
                 continue
             size_x, stop_pct = risk_numbers(b, i) if k != "spy_benchmark" else (1.0, 1.0)
             vol_note = size_x
             if not USE_VOL_SIZE:
                 size_x = 1.0
             equity = s["cash"] + sum(q.get("last_value", q["alloc"]) for q in s["open"])
-            alloc = s["cash"] if k == "spy_benchmark" else min(s["cash"], equity / SLOTS * size_x)
+            alloc = s["cash"] if k == "spy_benchmark" else min(s["cash"], equity / SLOTS * size_x, equity * MAX_RISK)
             if alloc < (equity / SLOTS) * 0.4 and k != "spy_benchmark":
-                s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: not enough cash"})
+                decide(s, k, p, "NO_TRADE", "not enough cash left", r)
                 continue
             s["cash"] -= alloc
             q = {"sym": p["sym"], "signal": p["signal"], "note": p.get("note", ""), "entry_date": d0, "alloc": alloc, "c": cost(pin),
-                 "size_x": size_x, "vol_size_x": vol_note, "stop_pct": stop_pct, "industry": ind}
+                 "size_x": size_x, "vol_size_x": vol_note, "stop_pct": stop_pct, "industry": ind, "rsi": round(r, 1) if r is not None else None}
             q["last_value"] = float(value(q, b))
             s["open"].append(q)
-            s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "bought at %.2f on %s" % (pin, d0)})
+            if k == "spy_benchmark":
+                decide(s, k, p, "TRADE", "benchmark: buy and hold the S&P 500 at %.2f on %s" % (pin, d0), r)
+            else:
+                contra = "; RSI %.0f is oversold, but insiders buying with their own money is the contrarian reason" % r if r < 30 else "; RSI %.0f is neutral" % r
+                decide(s, k, p, "TRADE", "%s. Bought $%s (%.1f%% of the portfolio, the 2%% cap) at the %s open, %.2f%s" % (
+                    p.get("note", "signal"), format(int(alloc), ","), 100 * alloc / equity, d0, pin, contra), r)
         s["pending"] = still
 
         # 4. mark to market
@@ -387,6 +437,15 @@ def main():
         }
     summ["spy_since_start_pct"] = round(100 * (S["spy_benchmark"]["equity"][-1][1] / START_CASH - 1), 2) if S["spy_benchmark"]["equity"] else None
     (P / "state.json").write_text(json.dumps(st, indent=1, default=str))
+    (P / "summary.json").write_text(json.dumps(summ, indent=1, default=str))
+    dfile = P / "decisions.csv"
+    newd = not dfile.exists()
+    with dfile.open("a", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["date", "strategy", "symbol", "decision", "rsi", "reason"])
+        if newd:
+            w.writeheader()
+        w.writerows(DECISIONS)
+    summ["latest_decisions"] = DECISIONS[-60:]
     (P / "summary.json").write_text(json.dumps(summ, indent=1, default=str))
     tf = P / "trades.csv"
     if tf.exists():  # upgrade an old file to the current columns
