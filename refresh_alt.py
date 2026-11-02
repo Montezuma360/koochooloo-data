@@ -551,7 +551,34 @@ def fund_holdings(watch):
     return "%s: %d securities, %d mapped to tickers" % (cur_lbl, len(cur), len(by))
 
 
+QUICK = {"reddit": reddit}  # light sources that also refresh during the day: python refresh_alt.py reddit
+QUICK_MIN_GAP = 55 * 60      # at most hourly, however often the caller runs
+
+
+def quick(names):
+    """Refresh only these light sources and their lines in status.json; the nightly run's timestamp is left alone."""
+    st = load(ALT / "status.json", None) or {"updated": None, "ok": {}, "failed": {}}
+    done = st.setdefault("quick_updated", {})
+    for name in names:
+        last = done.get(name)
+        if last and (NOW - dt.datetime.fromisoformat(last.replace("Z", "+00:00"))).total_seconds() < QUICK_MIN_GAP:
+            print(name, "refreshed at", last, "- skipped")
+            continue
+        try:
+            st["ok"][name] = QUICK[name]()
+            st["failed"].pop(name, None)
+        except Exception as e:
+            st["failed"][name] = repr(e)[:200]
+        done[name] = STAMP
+    save("status.json", st)
+    print(json.dumps({n: st["ok"].get(n) for n in names}))
+
+
 def main():
+    import sys
+    names = [a for a in sys.argv[1:] if a in QUICK]
+    if names:
+        return quick(names)
     watch = watchlist()
     for name, fn in (("short_volume", lambda: short_volume(watch)), ("fails_to_deliver", lambda: fails_to_deliver(watch)), ("cot", cot),
                      ("macro", macro), ("committees", committees), ("gov_contracts", contracts), ("reddit", reddit),

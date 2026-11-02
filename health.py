@@ -16,6 +16,15 @@ FEEDS = {
     "alt_data": ("alt/status.json", "updated", 30, True),     # after each US close
     "paper_trading": ("paper/summary.json", "updated", 30, True),
 }
+# While the US market is open these feeds should be no more than this many minutes old (a 5-minute refresh plus run time).
+# Missing the target is a warning, not "stale": stale data stops the paper engine trading, a slow refresh should not.
+TARGET_MIN = {"prices": 10, "sec_insiders": 10, "signals": 10}
+
+
+def market_open():
+    from zoneinfo import ZoneInfo
+    et = NOW.astimezone(ZoneInfo("America/New_York"))
+    return et.weekday() < 5 and dt.time(9, 40) <= et.time() <= dt.time(16, 0)
 
 
 def ts(s):
@@ -58,7 +67,8 @@ def runs():
 
 
 def main():
-    feeds, problems = {}, []
+    feeds, problems, warnings = {}, [], []
+    is_open = market_open()
     for name, (f, key, limit, weekdays) in FEEDS.items():
         try:
             j = json.loads((D / f).read_text())
@@ -73,6 +83,12 @@ def main():
         stale = age is None or age > allowed
         feeds[name] = {"updated": j.get(key), "age_hours": age, "stale_after_hours": allowed, "stale": stale,
                        "failed_parts": failed, "ok": not stale and not failed}
+        if name in TARGET_MIN:
+            on_target = None if not is_open else (age is not None and age * 60 <= TARGET_MIN[name])
+            feeds[name].update({"target_minutes_when_market_open": TARGET_MIN[name], "on_target": on_target})
+            if on_target is False:
+                warnings.append("%s: %s min since last update, target %d (refresh running slow)" % (
+                    name, round(age * 60) if age is not None else "?", TARGET_MIN[name]))
         if stale:
             problems.append("%s: %s hours old" % (name, age))
         if failed:
@@ -82,7 +98,7 @@ def main():
         if isinstance(r, dict) and r.get("last") == "failure":
             problems.append("workflow '%s' failed last run" % n)
     out = {"updated": NOW.strftime("%Y-%m-%dT%H:%M:%SZ"), "healthy": not problems, "problems": problems,
-           "feeds": feeds, "workflows": wf}
+           "market_open": is_open, "warnings": warnings, "feeds": feeds, "workflows": wf}
     (D / "health.json").write_text(json.dumps(out, indent=1))
     h = D / "history" / "health"
     h.mkdir(parents=True, exist_ok=True)
@@ -93,7 +109,7 @@ def main():
             fh.write("time,healthy,stale_feeds,problems\n")
         fh.write('%s,%d,%d,"%s"\n' % (out["updated"], out["healthy"], sum(v.get("stale", True) for v in feeds.values()),
                                        "; ".join(problems).replace('"', "'")))
-    print(json.dumps({"healthy": out["healthy"], "problems": problems}, indent=1))
+    print(json.dumps({"healthy": out["healthy"], "problems": problems, "warnings": warnings}, indent=1))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,57 @@
+name: Live market refresh
+
+# One short run every 5 minutes in US market hours: prices, SEC insider filings, Reddit mentions (at most hourly),
+# signals/dashboard and the health check, then one commit. Started by an outside timer (cron-job.org) calling GitHub's
+# workflow_dispatch API, because GitHub's own 5-minute schedules ran only about once an hour (measured 2 Nov 2026).
+# The older scheduled workflows stay on as a backup and for the hours outside the market.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: live
+  cancel-in-progress: false
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: pip install -q yfinance pandas
+      - name: Prices
+        run: python refresh.py
+      - name: SEC insider filings
+        if: always()
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python refresh_sec.py
+      - name: Reddit mentions (at most hourly)
+        if: always()
+        run: python refresh_alt.py reddit
+      - name: Signals and dashboard
+        if: always()
+        run: python refresh_signals.py
+      - name: Data health check
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python health.py
+      - name: Commit changes
+        if: always()
+        run: |
+          git config user.name "koochooloo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git diff --staged --quiet && exit 0
+          git commit -q -m "Live refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs -q && git push -q && exit 0; git rebase --abort 2>/dev/null; sleep 5; done
+          exit 1
