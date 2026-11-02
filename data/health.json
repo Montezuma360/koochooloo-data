@@ -1,0 +1,99 @@
+{
+ "updated": "2026-11-02T21:19:15Z",
+ "healthy": true,
+ "problems": [],
+ "feeds": {
+  "prices": {
+   "updated": "2026-11-02T21:18:38Z",
+   "age_hours": 0.01,
+   "stale_after_hours": 2,
+   "stale": false,
+   "failed_parts": {},
+   "ok": true
+  },
+  "sec_insiders": {
+   "updated": "2026-11-02T21:02:22Z",
+   "age_hours": 0.28,
+   "stale_after_hours": 73,
+   "stale": false,
+   "failed_parts": {},
+   "ok": true
+  },
+  "signals": {
+   "updated": "2026-11-02T21:19:14Z",
+   "age_hours": 0.0,
+   "stale_after_hours": 3,
+   "stale": false,
+   "failed_parts": {},
+   "ok": true
+  },
+  "treasury_rates": {
+   "updated": "2026-11-02T21:18:38Z",
+   "age_hours": 0.01,
+   "stale_after_hours": 26,
+   "stale": false,
+   "failed_parts": {},
+   "ok": true
+  },
+  "alt_data": {
+   "updated": "2026-11-02T17:44:47Z",
+   "age_hours": 3.57,
+   "stale_after_hours": 102,
+   "stale": false,
+   "failed_parts": {},
+   "ok": true
+  },
+  "paper_trading": {
+   "updated": "2026-11-02T01:47:13+00:00",
+   "age_hours": 19.53,
+   "stale_after_hours": 102,
+   "stale": false,
+   "failed_parts": {},
+   "ok": true
+  }
+ },
+ "workflows": {
+  "Refresh brain data": {
+   "last": "success",
+   "at": "2026-11-02T21:19:03Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 32
+  },
+  "Refresh SEC insider data": {
+   "last": "success",
+   "at": "2026-11-02T21:03:15Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 24
+  },
+  "Refresh signals and dashboard": {
+   "last": "success",
+   "at": "2026-11-02T20:51:52Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 33
+  },
+  "Refresh alternative data": {
+   "last": "success",
+   "at": "2026-11-02T17:45:13Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 2
+  },
+  "Paper trading": {
+   "last": "success",
+   "at": "2026-11-02T01:47:19Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 2
+  },
+  "Research round 2": {
+   "last": "success",
+   "at": "2026-11-02T01:44:07Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 1
+  },
+  "Research backtest": {
+   "last": "success",
+   "at": "2026-11-01T23:47:21Z",
+   "failures_in_last_100": 1,
+   "runs_in_last_100": 3
+  }
+ }
+}
