@@ -10,7 +10,7 @@ Sources (all free and public):
 - ApeWisdom: how often each stock is mentioned on Reddit's investing forums
 
 Writes compact files to data/alt/ and keeps a permanent history under data/history/ (the brain's memory)."""
-import csv, datetime as dt, gzip, io, json, pathlib, re, time, urllib.error, urllib.parse, urllib.request, zipfile
+import csv, datetime as dt, gzip, io, json, os, pathlib, re, time, urllib.error, urllib.parse, urllib.request, zipfile
 
 D = pathlib.Path("data")
 ALT = D / "alt"
@@ -20,6 +20,7 @@ NOW = dt.datetime.now(dt.timezone.utc)
 TODAY = NOW.date()
 STAMP = NOW.strftime("%Y-%m-%dT%H:%M:%SZ")
 UA = {"User-Agent": "KoochoolooResearch github.com/Montezuma360/koochooloo-data"}
+SEC_UA = {"User-Agent": os.environ.get("SEC_CONTACT") or "KoochoolooResearch github.com/Montezuma360/koochooloo-data"}  # the SEC requires a contact email
 STATUS = {"updated": STAMP, "ok": {}, "failed": {}}
 
 
@@ -135,14 +136,14 @@ def short_volume(watch):
 
 # ---------- SEC fails-to-deliver ----------
 def fails_to_deliver(watch):
-    page = get("https://www.sec.gov/data-research/sec-markets-data/fails-deliver-data", headers={"User-Agent": "KoochoolooResearch research contact via github.com/Montezuma360"}).decode("utf-8", "ignore")
+    page = get("https://www.sec.gov/data-research/sec-markets-data/fails-deliver-data", headers=SEC_UA).decode("utf-8", "ignore")
     links = {m.group(2): m.group(1) for m in re.finditer(r'href="([^"]*?cnsfails(\d{6}[ab])\.zip)"', page)}
     period = max(links)
     prev = load(ALT / "fails_to_deliver.json", {}) or {}
     if prev.get("period") == period:
         return "no new file (latest %s)" % period
     url = links[period] if links[period].startswith("http") else "https://www.sec.gov" + links[period]
-    z = zipfile.ZipFile(io.BytesIO(get(url)))
+    z = zipfile.ZipFile(io.BytesIO(get(url, headers=SEC_UA)))
     txt = z.open(z.namelist()[0]).read().decode("latin-1")
     agg = {}
     keep = []
@@ -293,7 +294,7 @@ def norm(s):
 def contracts():
     tick = load(ALT / "company_tickers.json")
     if not tick or tick.get("updated", "")[:10] < str(TODAY - dt.timedelta(days=7)):
-        raw = jget("https://www.sec.gov/files/company_tickers.json")
+        raw = jget("https://www.sec.gov/files/company_tickers.json", headers=SEC_UA)
         tick = {"updated": STAMP, "by_name": {}}
         for r in raw.values():
             tick["by_name"].setdefault(norm(r["title"]), r["ticker"])

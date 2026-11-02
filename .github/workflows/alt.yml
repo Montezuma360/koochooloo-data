@@ -23,6 +23,8 @@ jobs:
         with:
           python-version: "3.11"
       - name: Collect free public data
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
         run: python refresh_alt.py
       - name: Commit changes
         run: |
