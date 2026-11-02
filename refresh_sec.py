@@ -48,6 +48,18 @@ def get(url, tries=3, timeout=20):
             time.sleep(2 * (i + 1))
 
 
+BAD_SYMBOLS = {"NONE", "N/A", "NA", "NULL", "NOT", "TBD"}
+
+
+def clean_symbol(s):
+    """Filers type the ticker by hand: 'HEI, HEI.A' -> 'HEI', 'brk-b' -> 'BRK.B', 'NONE' or 'N/A' -> None."""
+    t = re.split(r"[,;\s]+", (s or "").upper().strip())[0]
+    if t in BAD_SYMBOLS:
+        return None
+    t = t.replace("-", ".").replace("/", ".").strip(".")
+    return t if t not in BAD_SYMBOLS and re.fullmatch(r"[A-Z]{1,5}(\.[A-Z]{1,2})?", t) else None
+
+
 def txt(node, path):
     el = node.find(path)
     return el.text.strip() if el is not None and el.text else None
@@ -57,7 +69,7 @@ def parse_form4(xml, accession, filed=None):
     xml = re.sub(r"^\s*<\?xml[^>]*\?>", "", xml)
     root = ET.fromstring(xml)
     issuer = txt(root, "issuer/issuerName")
-    sym = (txt(root, "issuer/issuerTradingSymbol") or "").upper().replace("-", ".") or None
+    sym = clean_symbol(txt(root, "issuer/issuerTradingSymbol"))
     rows = []
     owners = root.findall("reportingOwner")
     owner = txt(owners[0], "reportingOwnerId/rptOwnerName") if owners else None
@@ -186,6 +198,8 @@ def main():
     back = load("insider_backfill.json", {}).get("rows", [])
     cut = (NOW - datetime.timedelta(days=KEEP_DAYS)).strftime("%Y-%m-%d")
     window = [r for r in old + new + back if r.get("date") and r["date"] >= cut]
+    for r in window:  # re-clean stored rows too, so older entries follow the same ticker rules
+        r["symbol"] = clean_symbol(r.get("symbol"))
     rows = unique(window)
     rows.sort(key=lambda r: (r.get("filed") or r["date"], r["id"]), reverse=True)
     status["new_rows"] = len(new)
