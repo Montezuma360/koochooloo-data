@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 2,
+ "runs": 3,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -15,49 +15,98 @@
     [
      "2026-10-30",
      100000.0
+    ],
+    [
+     "2026-11-02",
+     100000.0
     ]
    ],
-   "started": "2026-11-01"
+   "started": "2026-11-01",
+   "drawdown_pct": 0.0,
+   "paused": false
   },
   "insider_big_250k": {
    "label": "A director or officer buys $250k+ on the open market",
    "hold": 60,
-   "cash": 100000.0,
-   "open": [],
-   "pending": [
+   "cash": 98000.0,
+   "open": [
     {
      "sym": "RAPP",
      "signal": "2026-11-01",
-     "event": "2026-10-28",
-     "note": "HEALY JAMES (Director) bought $19,999,980"
+     "note": "HEALY JAMES (Director) bought $19,999,980",
+     "entry_date": "2026-11-02",
+     "alloc": 2000.0,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 0.5,
+     "stop_pct": 0.25,
+     "industry": "28",
+     "rsi": 37.5,
+     "last_value": 1994.6187849127812
+    }
+   ],
+   "pending": [
+    {
+     "sym": "LSTR",
+     "signal": "2026-11-02",
+     "event": "2026-10-30",
+     "note": "Lonegro Frank A (President & CEO) bought $714,619"
+    },
+    {
+     "sym": "ATEC",
+     "signal": "2026-11-02",
+     "event": "2026-10-30",
+     "note": "Demski David M (Director) bought $408,600"
     }
    ],
    "closed": [],
    "seen": {
-    "RAPP": "2026-11-01"
+    "RAPP": "2026-11-01",
+    "LSTR": "2026-11-02",
+    "ATEC": "2026-11-02"
    },
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-02",
+     "sym": "RAPP",
+     "what": "TRADE: HEALY JAMES (Director) bought $19,999,980. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 25.16; RSI 38 is neutral"
+    }
+   ],
    "equity": [
     [
      "2026-10-30",
      100000.0
+    ],
+    [
+     "2026-11-02",
+     99994.62
     ]
    ],
-   "started": "2026-11-01"
+   "started": "2026-11-01",
+   "drawdown_pct": 0.0,
+   "paused": false
   },
   "congress_cluster3": {
    "label": "3+ members of Congress disclose buying the same stock within 60 days",
    "hold": 60,
-   "cash": 100000.0,
-   "open": [],
-   "pending": [
+   "cash": 98000.0,
+   "open": [
     {
      "sym": "T",
      "signal": "2026-11-01",
-     "event": "2026-10-29",
-     "note": "3 members bought within 60 days"
+     "note": "3 members bought within 60 days",
+     "entry_date": "2026-11-02",
+     "alloc": 2000.0,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 0.571,
+     "stop_pct": 0.0903,
+     "industry": "48",
+     "rsi": 38.6,
+     "last_value": 2029.179160779272
     }
    ],
+   "pending": [],
    "closed": [],
    "seen": {
     "T": "2026-11-01",
@@ -102,14 +151,26 @@
     "CRWD": "2026-11-01",
     "PYPL": "2026-11-01"
    },
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-02",
+     "sym": "T",
+     "what": "TRADE: 3 members bought within 60 days. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 21.10; RSI 39 is neutral"
+    }
+   ],
    "equity": [
     [
      "2026-10-30",
      100000.0
+    ],
+    [
+     "2026-11-02",
+     100029.18
     ]
    ],
-   "started": "2026-11-01"
+   "started": "2026-11-01",
+   "drawdown_pct": 0.0,
+   "paused": false
   },
   "congress_big_100k": {
    "label": "A member of Congress discloses a $100k+ purchase",
@@ -242,71 +303,135 @@
     [
      "2026-10-30",
      100000.0
+    ],
+    [
+     "2026-11-02",
+     100000.0
     ]
    ],
-   "started": "2026-11-01"
+   "started": "2026-11-01",
+   "drawdown_pct": 0.0,
+   "paused": false
   },
   "terminal_top_signals": {
    "label": "The terminal's own signal score reaches 8+",
    "hold": 20,
-   "cash": 100000.0,
-   "open": [],
-   "pending": [
+   "cash": 84015.16169358161,
+   "open": [
     {
      "sym": "MSFT",
      "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "score 12: 6 politicians bought (~$5,561,500, last filed 2026-10-12); heavy trading today: -1.6%"
-    },
-    {
-     "sym": "ACN",
-     "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "score 11: 5 politicians bought (~$305,500, last filed 2026-10-14); top gainer today: +4.5%"
+     "note": "score 12: 6 politicians bought (~$5,561,500, last filed 2026-10-12); heavy trading today: -1.6%",
+     "entry_date": "2026-11-02",
+     "alloc": 2000.0,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 1.5,
+     "stop_pct": 0.06,
+     "industry": "73",
+     "rsi": 49.0,
+     "last_value": 1932.3004720937377
     },
     {
      "sym": "NVDA",
      "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "score 10: 5 politicians bought (~$1,955,500, last filed 2026-10-22); heavy trading today: -4.2%"
+     "note": "score 10: 5 politicians bought (~$1,955,500, last filed 2026-10-22); heavy trading today: -4.2%",
+     "entry_date": "2026-11-02",
+     "alloc": 1998.6460094418746,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 0.986,
+     "stop_pct": 0.0799,
+     "industry": "36",
+     "rsi": 35.1,
+     "last_value": 1942.4858870380638
     },
     {
      "sym": "NFLX",
      "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "score 8: 4 politicians bought (~$3,306,000, last filed 2026-10-08); heavy trading today: +0.0%"
+     "note": "score 8: 4 politicians bought (~$3,306,000, last filed 2026-10-08); heavy trading today: +0.0%",
+     "entry_date": "2026-11-02",
+     "alloc": 1997.5228069937987,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 0.924,
+     "stop_pct": 0.0851,
+     "industry": "78",
+     "rsi": 30.6,
+     "last_value": 1999.0157911499036
     },
     {
      "sym": "PG",
      "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "score 8: 4 politicians bought (~$504,000, last filed 2026-10-08)"
+     "note": "score 8: 4 politicians bought (~$504,000, last filed 2026-10-08)",
+     "entry_date": "2026-11-02",
+     "alloc": 1997.5526666769206,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 1.197,
+     "stop_pct": 0.06,
+     "industry": "28",
+     "rsi": 64.4,
+     "last_value": 2010.784138778015
     },
     {
      "sym": "AVGO",
      "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "score 8: 4 politicians bought (~$464,000, last filed 2026-10-08); heavy trading today: -5.5%"
+     "note": "score 8: 4 politicians bought (~$464,000, last filed 2026-10-08); heavy trading today: -5.5%",
+     "entry_date": "2026-11-02",
+     "alloc": 1997.8172961189425,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 0.702,
+     "stop_pct": 0.0995,
+     "industry": "36",
+     "rsi": 40.8,
+     "last_value": 1957.1034266991935
     },
     {
      "sym": "BRK.B",
      "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-14)"
+     "note": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-14)",
+     "entry_date": "2026-11-02",
+     "alloc": 1997.0030187305476,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 1.5,
+     "stop_pct": 0.06,
+     "industry": "63",
+     "rsi": 66.8,
+     "last_value": 2034.6559440624421
     },
     {
      "sym": "HD",
      "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-07)"
+     "note": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-07)",
+     "entry_date": "2026-11-02",
+     "alloc": 1997.7560772371853,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 1.063,
+     "stop_pct": 0.06,
+     "industry": "52",
+     "rsi": 67.8,
+     "last_value": 2036.9737763342282
     },
     {
      "sym": "CSCO",
      "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "score 8: 4 politicians bought (~$423,500, last filed 2026-10-27); heavy trading today: -3.8%"
+     "note": "score 8: 4 politicians bought (~$423,500, last filed 2026-10-27); heavy trading today: -3.8%",
+     "entry_date": "2026-11-02",
+     "alloc": 1998.5404312191263,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 0.889,
+     "stop_pct": 0.0758,
+     "industry": "35",
+     "rsi": 39.7,
+     "last_value": 1923.421460977268
     }
    ],
+   "pending": [],
    "closed": [],
    "seen": {
     "MSFT": "2026-11-01",
@@ -319,38 +444,110 @@
     "HD": "2026-11-01",
     "CSCO": "2026-11-01"
    },
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-02",
+     "sym": "MSFT",
+     "what": "TRADE: score 12: 6 politicians bought (~$5,561,500, last filed 2026-10-12); heavy trading today: -1.6%. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 524.10; RSI 49 is neutral"
+    },
+    {
+     "date": "2026-11-02",
+     "sym": "ACN",
+     "what": "NO_TRADE: RSI 71 is above 70: overbought, buying now risks chasing a spike"
+    },
+    {
+     "date": "2026-11-02",
+     "sym": "NVDA",
+     "what": "TRADE: score 10: 5 politicians bought (~$1,955,500, last filed 2026-10-22); heavy trading today: -4.2%. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 207.59; RSI 35 is neutral"
+    },
+    {
+     "date": "2026-11-02",
+     "sym": "NFLX",
+     "what": "TRADE: score 8: 4 politicians bought (~$3,306,000, last filed 2026-10-08); heavy trading today: +0.0%. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 62.20; RSI 31 is neutral"
+    },
+    {
+     "date": "2026-11-02",
+     "sym": "PG",
+     "what": "TRADE: score 8: 4 politicians bought (~$504,000, last filed 2026-10-08). Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 162.24; RSI 64 is neutral"
+    },
+    {
+     "date": "2026-11-02",
+     "sym": "AVGO",
+     "what": "TRADE: score 8: 4 politicians bought (~$464,000, last filed 2026-10-08); heavy trading today: -5.5%. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 328.44; RSI 41 is neutral"
+    },
+    {
+     "date": "2026-11-02",
+     "sym": "BRK.B",
+     "what": "TRADE: score 8: 4 politicians bought (~$439,500, last filed 2026-10-14). Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 545.00; RSI 67 is neutral"
+    },
+    {
+     "date": "2026-11-02",
+     "sym": "HD",
+     "what": "TRADE: score 8: 4 politicians bought (~$439,500, last filed 2026-10-07). Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 334.08; RSI 68 is neutral"
+    },
+    {
+     "date": "2026-11-02",
+     "sym": "CSCO",
+     "what": "TRADE: score 8: 4 politicians bought (~$423,500, last filed 2026-10-27); heavy trading today: -3.8%. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 105.42; RSI 40 is neutral"
+    }
+   ],
    "equity": [
     [
      "2026-10-30",
      100000.0
+    ],
+    [
+     "2026-11-02",
+     99851.9
     ]
    ],
-   "started": "2026-11-01"
+   "started": "2026-11-01",
+   "drawdown_pct": 0.0,
+   "paused": false
   },
   "spy_benchmark": {
    "label": "Buy and hold the S&P 500 (SPY), the bar to beat",
    "hold": null,
-   "cash": 100000.0,
-   "open": [],
-   "pending": [
+   "cash": 0.0,
+   "open": [
     {
      "sym": "SPY",
      "signal": "2026-11-01",
-     "event": "2026-11-01",
-     "note": "benchmark"
+     "note": "benchmark",
+     "entry_date": "2026-11-02",
+     "alloc": 100000.0,
+     "c": 0.0015,
+     "size_x": 1.0,
+     "vol_size_x": 1.0,
+     "stop_pct": 1.0,
+     "industry": null,
+     "rsi": 40.4,
+     "last_value": 98883.64126035968
     }
    ],
+   "pending": [],
    "closed": [],
    "seen": {},
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-02",
+     "sym": "SPY",
+     "what": "TRADE: benchmark: buy and hold the S&P 500 at 759.45 on 2026-11-02"
+    }
+   ],
    "equity": [
     [
      "2026-10-30",
      100000.0
+    ],
+    [
+     "2026-11-02",
+     98883.64
     ]
    ],
-   "started": "2026-11-01"
+   "started": "2026-11-01",
+   "drawdown_pct": 0.0,
+   "paused": false
   },
   "insider_cluster2_smallcap": {
    "label": "2+ insiders each buy $25k+ within 30 days in a smaller company ($1M-$20M traded a day)",
@@ -365,10 +562,70 @@
     [
      "2026-10-30",
      100000.0
+    ],
+    [
+     "2026-11-02",
+     100000.0
     ]
    ],
-   "started": "2026-11-02"
+   "started": "2026-11-02",
+   "drawdown_pct": 0.0,
+   "paused": false
   }
  },
- "updated": "2026-11-02T01:47:13+00:00"
+ "updated": "2026-11-02T21:48:49+00:00",
+ "sic": {
+  "NVDA": {
+   "sic": "36",
+   "name": "Semiconductors & Related Devices"
+  },
+  "RAPP": {
+   "sic": "28",
+   "name": "Pharmaceutical Preparations"
+  },
+  "HD": {
+   "sic": "52",
+   "name": "Retail-Lumber & Other Building Materials Dealers"
+  },
+  "T": {
+   "sic": "48",
+   "name": "Telephone Communications (No Radiotelephone)"
+  },
+  "LSTR": {
+   "sic": "42",
+   "name": "Trucking (No Local)"
+  },
+  "ATEC": {
+   "sic": "38",
+   "name": "Surgical & Medical Instruments & Apparatus"
+  },
+  "ACN": {
+   "sic": "73",
+   "name": "Services-Business Services, NEC"
+  },
+  "BRK.B": {
+   "sic": "63",
+   "name": "Fire, Marine & Casualty Insurance"
+  },
+  "MSFT": {
+   "sic": "73",
+   "name": "Services-Prepackaged Software"
+  },
+  "PG": {
+   "sic": "28",
+   "name": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
+  },
+  "CSCO": {
+   "sic": "35",
+   "name": "Computer Communications Equipment"
+  },
+  "NFLX": {
+   "sic": "78",
+   "name": "Services-Video Tape Rental"
+  },
+  "AVGO": {
+   "sic": "36",
+   "name": "Semiconductors & Related Devices"
+  }
+ }
 }
