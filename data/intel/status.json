@@ -1,0 +1,119 @@
+{
+ "updated": "2026-11-02T22:26:42Z",
+ "market_open": false,
+ "failed": {},
+ "sources": {
+  "crypto": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "100 coins, 15 trending, 3 exchanges",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 1.1,
+   "every_minutes": 5
+  },
+  "crypto_derivatives": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "3 perpetuals",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 0.3,
+   "every_minutes": 5
+  },
+  "crypto_fear_greed": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "37 (Fear)",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 0.4,
+   "every_minutes": 60
+  },
+  "onchain": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "block 974308, 1 sat/vB",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 1.2,
+   "every_minutes": 10
+  },
+  "onchain_daily": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "5 charts",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 2.6,
+   "every_minutes": 360
+  },
+  "futures_fx": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "31 quotes",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 1.6,
+   "every_minutes": 15
+  },
+  "ecb_fx": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "2026-11-02, 30 currencies",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 1.1,
+   "every_minutes": 120
+  },
+  "macro_global": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "11 series",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 3.4,
+   "every_minutes": 360
+  },
+  "calendar": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "115 events, 19 high-impact still to come",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 0.1,
+   "every_minutes": 120
+  },
+  "news": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "351 new headlines from 15 feeds",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 2.5,
+   "every_minutes": 10
+  },
+  "sec_filings": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "187 new filings (2 with a red flag)",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 7.8,
+   "every_minutes": 15
+  },
+  "options": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "12 chains, put/call 1.078, 261 unusual",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 4.6,
+   "every_minutes": 720
+  },
+  "fear_greed": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "17.2 (Extreme fear), 6 parts",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 0.8,
+   "every_minutes": 120
+  },
+  "stocktwits": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "30 trending",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 0.1,
+   "every_minutes": 30
+  },
+  "reddit_forums": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "5 forums",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 1.6,
+   "every_minutes": 60
+  },
+  "finnhub": {
+   "last_try": "2026-11-02T22:26:42Z",
+   "result": "skipped: add FINNHUB_KEY secret to switch on",
+   "last_ok": "2026-11-02T22:26:42Z",
+   "seconds": 0.0,
+   "every_minutes": 360
+  }
+ }
+}
