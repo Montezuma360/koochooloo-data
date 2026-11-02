@@ -1,14 +1,13 @@
 {
- "updated": "2026-11-02T17:42:20Z",
+ "updated": "2026-11-02T17:44:47Z",
  "ok": {
   "short_volume": "2026-10-30, 12304 stocks, 153 watched",
+  "fails_to_deliver": "202610a, 12598 stocks",
   "cot": "2026-10-27, 15 markets",
   "macro": "12 series",
-  "committees": "539 members",
+  "committees": "fresh (weekly)",
+  "gov_contracts": "100 awards, 13 matched to tickers",
   "reddit": "200 stocks"
  },
- "failed": {
-  "fails_to_deliver": "<HTTPError 403: 'Forbidden'>",
-  "gov_contracts": "<HTTPError 403: 'Forbidden'>"
- }
+ "failed": {}
 }
