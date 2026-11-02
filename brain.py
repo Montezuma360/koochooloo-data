@@ -319,7 +319,18 @@ def stocks_block(ev, cache):
             e.insert(0, {"type": "research_setup", "tested": TESTED["research_setup"], "detail": NOTES["research_setup"], "date": str(TODAY)})
         types = sorted({x["type"] for x in e})
         r = p.get("rsi14")
-        out.append({"symbol": s, "research_setup": setup, "evidence_types": types,
+        missing = None  # why a stock with an insider cluster is not the research setup, in plain words
+        if not setup and any(x["type"] == "insider_cluster" for x in e):
+            missing = []
+            if not cl:
+                missing.append("fewer than 2 officers or directors each bought $25k+")
+            if not size.startswith("smaller"):
+                missing.append("not a smaller company (%s)" % (size or "size unknown"))
+            if not f:
+                missing.append("no cash-flow figures at the SEC (funds and some foreign or new companies do not file them)")
+            elif not f.get("cash_backed"):
+                missing.append("operating cash flow below reported profit")
+        out.append({"symbol": s, "research_setup": setup, "setup_missing": missing, "evidence_types": types,
                     "warnings": [x["detail"] for x in e if x["tested"] == "warning"],
                     "price": p, "fundamentals": f,
                     "rsi_rule": None if r is None else ("ok (30-70)" if 30 <= r <= 70 else "above 70: overbought" if r > 70 else "below 30: oversold"),
@@ -399,11 +410,13 @@ def main():
     sf = load("intel/sec_filings.json")
     op = load("intel/options.json")
     setups = [s["symbol"] for s in stocks if s["research_setup"]]
+    near = [s for s in stocks if s.get("setup_missing") and len(s["setup_missing"]) == 1][:6]  # one condition short
     summary = [
         "Market: %s. %s." % (reg["level"], "; ".join(reg["why"])),
         "Fear & Greed %s (%s); VIX %s; high-yield spread %s (%+.2f in a month)." % (
             reg["fear_greed"], reg["fear_greed_label"], reg["vix"], reg["high_yield_spread"], reg["high_yield_change_1m"] or 0),
         "Research-backed setups right now: %s." % (", ".join(setups) if setups else "none"),
+        "One condition short: %s." % ("; ".join("%s (%s)" % (s["symbol"], s["setup_missing"][0]) for s in near) if near else "none"),
         "%d stocks have evidence today; %d carry a warning from their own SEC filing." % (len(stocks), sum(1 for s in stocks if s["warnings"])),
     ]
     brain = {
