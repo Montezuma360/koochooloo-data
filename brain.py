@@ -246,7 +246,7 @@ def price_facts(symbols, cache):
             have[s] = {"price": num(c[-1]), "change_1d_pct": num(100 * (c[-1] / c[-2] - 1)),
                        "change_1m_pct": num(100 * (c[-1] / c[-22] - 1)) if len(c) >= 22 else None, "rsi14": rsi(c),
                        "vs_200d_pct": num(100 * (c[-1] / statistics.mean(c[-200:]) - 1)) if len(c) >= 200 else None,
-                       "below_52w_high_pct": num(100 * (c[-1] / max(c) - 1)), "avg_dollar_volume_20d": round(dollar), "size": size,
+                       "below_1y_high_close_pct": num(100 * (c[-1] / max(c) - 1)), "avg_dollar_volume_20d": round(dollar), "size": size,
                        "as_of": str(b.index[-1].date())}
         except Exception:
             continue
