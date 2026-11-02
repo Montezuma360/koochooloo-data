@@ -23,6 +23,7 @@ EXEC = re.compile(r"director|officer|chief|president|ceo|cfo|coo|chair|vp|vice|c
 STRATS = {
     "insider_cluster3": {"label": "3+ company insiders buy the same stock within 30 days", "hold": 60},
     "insider_big_250k": {"label": "A director or officer buys $250k+ on the open market", "hold": 60},
+    "insider_cluster2_smallcap": {"label": "2+ insiders each buy $25k+ within 30 days in a smaller company ($1M-$20M traded a day)", "hold": 60, "max_liq": 20e6},
     "congress_cluster3": {"label": "3+ members of Congress disclose buying the same stock within 60 days", "hold": 60},
     "congress_big_100k": {"label": "A member of Congress discloses a $100k+ purchase", "hold": 60},
     "terminal_top_signals": {"label": "The terminal's own signal score reaches 8+", "hold": 20},
@@ -70,6 +71,9 @@ def find_signals():
         c = latest_cluster(L, "date", "insider", 3, 30)
         if c:
             out["insider_cluster3"].append((sym, c[0], "%d insiders bought within 30 days" % c[1]))
+        c2 = latest_cluster([r for r in L if (r.get("value") or 0) >= 25_000], "date", "insider", 2, 30)
+        if c2:
+            out["insider_cluster2_smallcap"].append((sym, c2[0], "%d insiders each bought $25k+ within 30 days" % c2[1]))
     con = [r for r in load_rows("congress_trades.json") if r.get("side") == "buy" and TICK.match(str(r.get("symbol", ""))) and day(r.get("filed"))]
     byc = collections.defaultdict(list)
     for r in con:
@@ -204,6 +208,9 @@ def main():
             liq = float((b.Close.iloc[max(0, i - 20):i] * b.Volume.iloc[max(0, i - 20):i]).mean()) if i > 0 else 0
             if k != "spy_benchmark" and not (pin >= 1 and liq >= 1e6):
                 s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: penny stock or too illiquid"})
+                continue
+            if STRATS[k].get("max_liq") and liq > STRATS[k]["max_liq"]:
+                s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: not a smaller company"})
                 continue
             if len(s["open"]) >= SLOTS:
                 s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: all 20 slots full"})
