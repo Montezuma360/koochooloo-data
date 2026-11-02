@@ -4,8 +4,9 @@ Each strategy starts with $100,000 and follows fixed rules:
 - A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).
 - Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.
 - Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.
-- 20 slots per strategy. Position size is scaled by volatility: calmer stocks get up to 1.5x a normal slot, wilder ones down to 0.5x.
-- Every position has a stop-loss set at 2.5x its average daily range (between 6% and 25% below the entry price); it is sold at the close that breaks it.
+- 20 equal slots per strategy. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded
+  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility
+  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.
 - No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).
 - At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.
 Writes data/paper/state.json, data/paper/summary.json and appends closed trades to data/paper/trades.csv."""
@@ -35,6 +36,8 @@ STRATS = {
 TRADE_COLS = ["strategy", "symbol", "signal_date", "entry_date", "exit_date", "entry", "exit", "return_pct", "spy_return_pct", "excess_pct", "exit_reason", "size_x", "stop_pct", "industry", "note"]
 DD_PAUSE = 0.15          # pause new entries 15% below the strategy's peak
 MAX_PER_INDUSTRY = 4
+USE_STOP = False         # round 3: stop-loss cut 60-day insider returns roughly in half (2014-2022 and 2023-2026)
+USE_VOL_SIZE = False     # round 3: lower drawdowns but lower returns and no better risk-adjusted return out of sample
 SEC_UA = {"User-Agent": os.environ.get("SEC_CONTACT") or "KoochoolooResearch github.com/Montezuma360/koochooloo-data"}
 
 
@@ -258,7 +261,7 @@ def main():
                 pin = float(b.Open.iloc[i])
                 last_j = min(len(b) - 1, i + hold - 1) if hold else len(b) - 1
                 j, why = None, None
-                if k != "spy_benchmark":
+                if USE_STOP and k != "spy_benchmark":
                     for jj in range(i, last_j + 1):
                         if b.Close.iloc[jj] <= pin * (1 - p["stop_pct"]):
                             j, why = jj, "stop-loss %.1f%%" % (100 * p["stop_pct"])
@@ -331,6 +334,9 @@ def main():
                 s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: already %d positions in industry %s (%s)" % (MAX_PER_INDUSTRY, ind, sic[p["sym"]].get("name", ""))})
                 continue
             size_x, stop_pct = risk_numbers(b, i) if k != "spy_benchmark" else (1.0, 1.0)
+            vol_note = size_x
+            if not USE_VOL_SIZE:
+                size_x = 1.0
             equity = s["cash"] + sum(q.get("last_value", q["alloc"]) for q in s["open"])
             alloc = s["cash"] if k == "spy_benchmark" else min(s["cash"], equity / SLOTS * size_x)
             if alloc < (equity / SLOTS) * 0.4 and k != "spy_benchmark":
@@ -338,10 +344,10 @@ def main():
                 continue
             s["cash"] -= alloc
             q = {"sym": p["sym"], "signal": p["signal"], "note": p.get("note", ""), "entry_date": d0, "alloc": alloc, "c": cost(pin),
-                 "size_x": size_x, "stop_pct": stop_pct, "industry": ind}
+                 "size_x": size_x, "vol_size_x": vol_note, "stop_pct": stop_pct, "industry": ind}
             q["last_value"] = float(value(q, b))
             s["open"].append(q)
-            s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "bought at %.2f on %s (size %.2fx, stop %.0f%% below)" % (pin, d0, size_x, 100 * stop_pct) if k != "spy_benchmark" else "bought at %.2f on %s" % (pin, d0)})
+            s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "bought at %.2f on %s" % (pin, d0)})
         s["pending"] = still
 
         # 4. mark to market
