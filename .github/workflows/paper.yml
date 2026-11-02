@@ -25,6 +25,8 @@ jobs:
       - name: Install
         run: pip install -q yfinance pandas
       - name: Run the virtual trades
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
         run: python paper.py
       - name: Commit results
         run: |

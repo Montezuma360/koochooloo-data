@@ -4,9 +4,12 @@ Each strategy starts with $100,000 and follows fixed rules:
 - A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).
 - Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.
 - Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.
-- 20 equal slots per strategy. When all slots are full, new signals are skipped.
+- 20 slots per strategy. Position size is scaled by volatility: calmer stocks get up to 1.5x a normal slot, wilder ones down to 0.5x.
+- Every position has a stop-loss set at 2.5x its average daily range (between 6% and 25% below the entry price); it is sold at the close that breaks it.
+- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).
+- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.
 Writes data/paper/state.json, data/paper/summary.json and appends closed trades to data/paper/trades.csv."""
-import collections, csv, datetime as dt, json, pathlib, re
+import collections, csv, datetime as dt, json, os, pathlib, re, time, urllib.request
 import pandas as pd
 import yfinance as yf
 
@@ -29,7 +32,77 @@ STRATS = {
     "terminal_top_signals": {"label": "The terminal's own signal score reaches 8+", "hold": 20},
     "spy_benchmark": {"label": "Buy and hold the S&P 500 (SPY), the bar to beat", "hold": None},
 }
-TRADE_COLS = ["strategy", "symbol", "signal_date", "entry_date", "exit_date", "entry", "exit", "return_pct", "spy_return_pct", "excess_pct", "note"]
+TRADE_COLS = ["strategy", "symbol", "signal_date", "entry_date", "exit_date", "entry", "exit", "return_pct", "spy_return_pct", "excess_pct", "exit_reason", "size_x", "stop_pct", "industry", "note"]
+DD_PAUSE = 0.15          # pause new entries 15% below the strategy's peak
+MAX_PER_INDUSTRY = 4
+SEC_UA = {"User-Agent": os.environ.get("SEC_CONTACT") or "KoochoolooResearch github.com/Montezuma360/koochooloo-data"}
+
+
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def risk_numbers(b, i):
+    """Volatility size multiplier and stop distance from the 20 sessions before bar i (no look-ahead)."""
+    h = b.iloc[max(0, i - 21):i]
+    if len(h) < 10:
+        return 1.0, 0.15
+    vol = float(h.Close.pct_change().dropna().std())
+    prev = h.Close.shift(1)
+    tr = pd.concat([h.High - h.Low, (h.High - prev).abs(), (h.Low - prev).abs()], axis=1).max(axis=1).dropna().tail(14)
+    atr = float(tr.mean()) if len(tr) else 0
+    px = float(h.Close.iloc[-1])
+    size = clamp(0.02 / vol, 0.5, 1.5) if vol > 0 else 1.0
+    stop = clamp(2.5 * atr / px, 0.06, 0.25) if px > 0 and atr > 0 else 0.15
+    return round(size, 3), round(stop, 4)
+
+
+def market_stress():
+    """True when the fear gauge or credit markets say stay out. Reads data/alt/macro.json (FRED)."""
+    try:
+        m = json.loads((D / "alt" / "macro.json").read_text())["series"]
+    except Exception:
+        return False, "no macro data"
+    why = []
+    v = m.get("VIXCLS", {})
+    if (v.get("value") or 0) > 30:
+        why.append("VIX %.1f above 30" % v["value"])
+    h = m.get("BAMLH0A0HYM2", {})
+    if (h.get("change_1m") or 0) > 1.0:
+        why.append("high-yield spread up %.2f points in a month" % h["change_1m"])
+    return bool(why), "; ".join(why) or "calm (VIX %s, high-yield spread %s)" % (v.get("value"), h.get("value"))
+
+
+def sec_json(url):
+    req = urllib.request.Request(url, headers=SEC_UA)
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read())
+
+
+def industries(st, syms):
+    """2-digit SEC SIC industry for each symbol, cached in state forever."""
+    cache = st.setdefault("sic", {})
+    todo = [s for s in syms if s not in cache and s != "SPY"]
+    if not todo:
+        return cache
+    try:
+        tick = {v["ticker"].upper(): v["cik_str"] for v in sec_json("https://www.sec.gov/files/company_tickers.json").values()}
+    except Exception as e:
+        print("SEC ticker map unavailable:", repr(e)[:100])
+        return cache
+    for s in todo[:60]:
+        cik = tick.get(s.upper()) or tick.get(s.upper().replace(".", "-"))
+        if not cik:
+            cache[s] = {"sic": None, "name": "unknown"}
+            continue
+        try:
+            j = sec_json("https://data.sec.gov/submissions/CIK%010d.json" % int(cik))
+            sic = str(j.get("sic") or "")
+            cache[s] = {"sic": sic[:2] or None, "name": j.get("sicDescription") or ""}
+        except Exception:
+            pass
+        time.sleep(0.15)  # SEC fair-access limit is 10 requests a second
+    return cache
 
 
 def load_rows(name):
@@ -99,7 +172,7 @@ def fetch(symbols):
     df = yf.download(ys, period="9mo", interval="1d", auto_adjust=True, group_by="ticker", threads=True, progress=False)
     for s, y in zip(syms, ys):
         try:
-            b = (df[y] if len(ys) > 1 else df)[["Open", "Close", "Volume"]].dropna()
+            b = (df[y] if len(ys) > 1 else df)[["Open", "High", "Low", "Close", "Volume"]].dropna()
             b.index = [pd.Timestamp(x).date() for x in b.index]
             if len(b) and b.index[-1] == TODAY and NOW.hour < 21:
                 b = b.iloc[:-1]  # today's session is not finished yet
@@ -121,6 +194,14 @@ def value(p, b, at=None):
     pin = b.at[p["entry_date"], "Open"]
     closes = b.Close[[d <= (at or b.index[-1]) for d in b.index]]
     return p["alloc"] * (1 - p["c"]) * closes.iloc[-1] / pin
+
+
+def max_dd(eq):
+    peak, worst = START_CASH, 0.0
+    for _, v in eq:
+        peak = max(peak, v)
+        worst = min(worst, v / peak - 1)
+    return round(100 * worst, 2)
 
 
 def main():
@@ -161,18 +242,31 @@ def main():
         return
     mark_day = spy.index[-1]
     new_trades = []
+    stressed, stress_why = market_stress()
+    sic = industries(st, {p["sym"] for s in S.values() for p in s["pending"]} | {p["sym"] for s in S.values() for p in s["open"]})
 
     for k, s in S.items():
         hold = STRATS[k]["hold"]
-        # 2. exits after the holding period
+        # 2. exits: stop-loss first (sold at the close that breaks it), then the end of the holding period
         keep = []
         for p in s["open"]:
             b = bars.get(p["sym"])
             if b is not None and p["entry_date"] in b.index:
                 i = list(b.index).index(p["entry_date"])
-                if hold and len(b) - i >= hold:
-                    j = i + hold - 1
-                    pin, pout = b.Open.iloc[i], b.Close.iloc[j]
+                if "stop_pct" not in p:  # positions opened before the risk rules existed
+                    p["size_x"], p["stop_pct"] = risk_numbers(b, i)
+                pin = float(b.Open.iloc[i])
+                last_j = min(len(b) - 1, i + hold - 1) if hold else len(b) - 1
+                j, why = None, None
+                if k != "spy_benchmark":
+                    for jj in range(i, last_j + 1):
+                        if b.Close.iloc[jj] <= pin * (1 - p["stop_pct"]):
+                            j, why = jj, "stop-loss %.1f%%" % (100 * p["stop_pct"])
+                            break
+                if j is None and hold and len(b) - i >= hold:
+                    j, why = i + hold - 1, "held %d days" % hold
+                if j is not None:
+                    pout = float(b.Close.iloc[j])
                     proceeds = p["alloc"] * (1 - p["c"]) * pout / pin * (1 - p["c"])
                     s["cash"] += proceeds
                     r = proceeds / p["alloc"] - 1
@@ -180,15 +274,29 @@ def main():
                     z = spy.Close[[d <= b.index[j] for d in spy.index]]
                     sr = (z.iloc[-1] / a - 1) if a else None
                     t = {"strategy": k, "symbol": p["sym"], "signal_date": p["signal"], "entry_date": str(b.index[i]), "exit_date": str(b.index[j]),
-                         "entry": round(float(pin), 4), "exit": round(float(pout), 4), "return_pct": round(100 * r, 2),
+                         "entry": round(pin, 4), "exit": round(pout, 4), "return_pct": round(100 * r, 2),
                          "spy_return_pct": round(100 * sr, 2) if sr is not None else None,
-                         "excess_pct": round(100 * (r - sr), 2) if sr is not None else None, "note": p.get("note", "")}
+                         "excess_pct": round(100 * (r - sr), 2) if sr is not None else None, "exit_reason": why,
+                         "size_x": p.get("size_x"), "stop_pct": round(100 * p["stop_pct"], 1), "industry": p.get("industry"), "note": p.get("note", "")}
                     s["closed"].append(t)
                     new_trades.append(t)
+                    s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "sold at %.2f on %s (%s)" % (pout, b.index[j], why)})
                     continue
                 p["last_value"] = float(value(p, b))
             keep.append(p)
         s["open"] = keep
+
+        # risk gates for new entries
+        eq_now = s["cash"] + sum(q.get("last_value", q["alloc"]) for q in s["open"])
+        peak = max([e[1] for e in s["equity"]] + [START_CASH, eq_now])
+        s["drawdown_pct"] = round(100 * (eq_now / peak - 1), 2)
+        s["paused"] = k != "spy_benchmark" and eq_now < peak * (1 - DD_PAUSE)
+        gate = None
+        if k != "spy_benchmark":
+            if s["paused"]:
+                gate = "skipped: strategy is %.1f%% below its peak (pause at 15%%)" % -s["drawdown_pct"]
+            elif stressed:
+                gate = "skipped: market stress (%s)" % stress_why
 
         # 3. fill pending orders at the next session's open
         still = []
@@ -212,19 +320,28 @@ def main():
             if STRATS[k].get("max_liq") and liq > STRATS[k]["max_liq"]:
                 s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: not a smaller company"})
                 continue
+            if gate:
+                s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": gate})
+                continue
             if len(s["open"]) >= SLOTS:
                 s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: all 20 slots full"})
                 continue
+            ind = (sic.get(p["sym"]) or {}).get("sic")
+            if k != "spy_benchmark" and ind and sum(q.get("industry") == ind for q in s["open"]) >= MAX_PER_INDUSTRY:
+                s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: already %d positions in industry %s (%s)" % (MAX_PER_INDUSTRY, ind, sic[p["sym"]].get("name", ""))})
+                continue
+            size_x, stop_pct = risk_numbers(b, i) if k != "spy_benchmark" else (1.0, 1.0)
             equity = s["cash"] + sum(q.get("last_value", q["alloc"]) for q in s["open"])
-            alloc = s["cash"] if k == "spy_benchmark" else min(s["cash"], equity / SLOTS)
-            if alloc < (equity / SLOTS) * 0.5 and k != "spy_benchmark":
+            alloc = s["cash"] if k == "spy_benchmark" else min(s["cash"], equity / SLOTS * size_x)
+            if alloc < (equity / SLOTS) * 0.4 and k != "spy_benchmark":
                 s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "skipped: not enough cash"})
                 continue
             s["cash"] -= alloc
-            q = {"sym": p["sym"], "signal": p["signal"], "note": p.get("note", ""), "entry_date": d0, "alloc": alloc, "c": cost(pin)}
+            q = {"sym": p["sym"], "signal": p["signal"], "note": p.get("note", ""), "entry_date": d0, "alloc": alloc, "c": cost(pin),
+                 "size_x": size_x, "stop_pct": stop_pct, "industry": ind}
             q["last_value"] = float(value(q, b))
             s["open"].append(q)
-            s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "bought at %.2f on %s" % (pin, d0)})
+            s["events"].append({"date": TODAY.isoformat(), "sym": p["sym"], "what": "bought at %.2f on %s (size %.2fx, stop %.0f%% below)" % (pin, d0, size_x, 100 * stop_pct) if k != "spy_benchmark" else "bought at %.2f on %s" % (pin, d0)})
         s["pending"] = still
 
         # 4. mark to market
@@ -239,16 +356,21 @@ def main():
     st["runs"] += 1
     st["updated"] = NOW.isoformat(timespec="seconds")
     spy_start = S["spy_benchmark"]["equity"][0][1] if S["spy_benchmark"]["equity"] else START_CASH
-    summ = {"updated": st["updated"], "priced_to": str(mark_day), "rules": __doc__.split("\n\n", 1)[1].strip(), "strategies": {}}
+    summ = {"updated": st["updated"], "priced_to": str(mark_day), "rules": __doc__.split("\n\n", 1)[1].strip(),
+            "market_stress": stressed, "market_note": stress_why, "strategies": {}}
     for k, s in S.items():
         eq = s["equity"][-1][1] if s["equity"] else START_CASH
         C = s["closed"]
         x = [t["excess_pct"] for t in C if t.get("excess_pct") is not None]
         summ["strategies"][k] = {
             "label": s["label"], "hold_days": s["hold"], "started": s["started"], "value": round(eq, 2),
+            "paused": s.get("paused", False), "drawdown_pct": s.get("drawdown_pct"),
+            "max_drawdown_pct": max_dd(s["equity"]),
+            "stops_hit": sum(1 for t in C if str(t.get("exit_reason", "")).startswith("stop")),
             "return_pct": round(100 * (eq / START_CASH - 1), 2), "cash": round(s["cash"], 2),
             "open": [{"symbol": q["sym"], "since": q["entry_date"], "value": round(q["last_value"], 2),
-                      "return_pct": round(100 * (q["last_value"] / q["alloc"] - 1), 2), "why": q.get("note", "")} for q in s["open"]],
+                      "return_pct": round(100 * (q["last_value"] / q["alloc"] - 1), 2), "why": q.get("note", ""),
+                      "size_x": q.get("size_x"), "stop_pct": round(100 * q.get("stop_pct", 0), 1), "industry": (sic.get(q["sym"]) or {}).get("name")} for q in s["open"]],
             "pending": [p["sym"] for p in s["pending"]],
             "closed_trades": len(C),
             "win_pct": round(100 * sum(t["return_pct"] > 0 for t in C) / len(C), 1) if C else None,
@@ -261,14 +383,24 @@ def main():
     (P / "state.json").write_text(json.dumps(st, indent=1, default=str))
     (P / "summary.json").write_text(json.dumps(summ, indent=1, default=str))
     tf = P / "trades.csv"
+    if tf.exists():  # upgrade an old file to the current columns
+        with tf.open() as f:
+            r = csv.DictReader(f)
+            if r.fieldnames != TRADE_COLS:
+                rows = list(r)
+                with tf.open("w", newline="") as g:
+                    w = csv.DictWriter(g, fieldnames=TRADE_COLS, extrasaction="ignore")
+                    w.writeheader()
+                    w.writerows(rows)
     new_file = not tf.exists()
     with tf.open("a", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=TRADE_COLS)
+        w = csv.DictWriter(f, fieldnames=TRADE_COLS, extrasaction="ignore")
         if new_file:
             w.writeheader()
         for t in new_trades:
             w.writerow(t)
-    print(json.dumps({k: (v["value"], len(v["open"]), v["pending"], v["closed_trades"]) for k, v in summ["strategies"].items()}, indent=1))
+    print("market:", stress_why)
+    print(json.dumps({k: (v["value"], len(v["open"]), v["pending"], v["closed_trades"], v["stops_hit"], v["paused"]) for k, v in summ["strategies"].items()}, indent=1))
 
 
 if __name__ == "__main__":
