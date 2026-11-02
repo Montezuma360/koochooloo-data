@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-02T22:26:42Z",
+ "updated": "2026-11-02T22:37:12Z",
  "market_open": false,
  "failed": {},
  "sources": {
   "crypto": {
-   "last_try": "2026-11-02T22:26:42Z",
+   "last_try": "2026-11-02T22:37:12Z",
    "result": "100 coins, 15 trending, 3 exchanges",
-   "last_ok": "2026-11-02T22:26:42Z",
-   "seconds": 1.1,
+   "last_ok": "2026-11-02T22:37:12Z",
+   "seconds": 1.2,
    "every_minutes": 5
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-02T22:26:42Z",
+   "last_try": "2026-11-02T22:37:12Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-02T22:26:42Z",
-   "seconds": 0.3,
+   "last_ok": "2026-11-02T22:37:12Z",
+   "seconds": 0.2,
    "every_minutes": 5
   },
   "crypto_fear_greed": {
@@ -25,10 +25,10 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-02T22:26:42Z",
-   "result": "block 974308, 1 sat/vB",
-   "last_ok": "2026-11-02T22:26:42Z",
-   "seconds": 1.2,
+   "last_try": "2026-11-02T22:37:12Z",
+   "result": "block 974309, 1 sat/vB",
+   "last_ok": "2026-11-02T22:37:12Z",
+   "seconds": 1.6,
    "every_minutes": 10
   },
   "onchain_daily": {
@@ -67,10 +67,10 @@
    "every_minutes": 120
   },
   "news": {
-   "last_try": "2026-11-02T22:26:42Z",
-   "result": "351 new headlines from 15 feeds",
-   "last_ok": "2026-11-02T22:26:42Z",
-   "seconds": 2.5,
+   "last_try": "2026-11-02T22:37:12Z",
+   "result": "193 new headlines from 15 feeds",
+   "last_ok": "2026-11-02T22:37:12Z",
+   "seconds": 3.8,
    "every_minutes": 10
   },
   "sec_filings": {
@@ -114,6 +114,13 @@
    "last_ok": "2026-11-02T22:26:42Z",
    "seconds": 0.0,
    "every_minutes": 360
+  },
+  "crypto_sectors": {
+   "last_try": "2026-11-02T22:37:12Z",
+   "result": "382 sectors; best Tokenized Assets +124.4%, worst Data Availability -8.2%",
+   "last_ok": "2026-11-02T22:37:12Z",
+   "seconds": 0.1,
+   "every_minutes": 30
   }
  }
 }
