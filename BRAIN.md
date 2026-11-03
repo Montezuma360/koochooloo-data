@@ -18,6 +18,12 @@ One consolidated file (about 150 KB), rebuilt after every refresh by `brain.py`.
 | `paper` | Paper-trading results vs the S&P 500, the GBP 100 to GBP 10,000 tracker, latest TRADE / NO_TRADE decisions |
 | `health` | Age and status of every feed, warnings, repository size |
 
+The same brain is also split into small topic files in `data/brain/` for the terminal, which reads them through a connector
+that only returns files up to about 16 KB: `core` (summary, regime, fear & greed, research setups, near misses, evidence notes,
+health), `markets`, `macro`, `crypto`, `news`, `sec`, `options`, `sentiment`, `paper`, `list_N` (one compact row per stock)
+and `stocks_N` (full stock cards). `data/brain/index.json` lists every part with a short hash, so the terminal fetches only
+the parts that changed. Unchanged parts are not rewritten.
+
 The one research-backed setup (`research_setup: true`): a smaller company ($1M-$20M traded a day) where 2 or more officers or
 directors each bought $25k+ within 30 days and operating cash flow is above reported profit. In tests it averaged about +2.4%
 (2014-2022) and +2.7% (2023-2026) per trade above the S&P 500 over 60 days. It is not a guarantee; many trades still lose.
