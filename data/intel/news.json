@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T18:06:11Z",
+ "updated": "2026-11-03T18:22:40Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 19,
+  "Yahoo Finance": 20,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 37,
@@ -22,43 +22,43 @@
  "most_mentioned_24h": [
   [
    "AAPL",
-   40
-  ],
-  [
-   "GOOGL",
-   14
+   37
   ],
   [
    "PLTR",
    13
   ],
   [
-   "MSFT",
-   13
+   "AMZN",
+   11
   ],
   [
-   "AMZN",
-   12
+   "MSFT",
+   11
   ],
   [
    "NVDA",
    10
   ],
   [
-   "TSLA",
-   9
-  ],
-  [
-   "META",
-   8
+   "GOOGL",
+   10
   ],
   [
    "BTC",
+   9
+  ],
+  [
+   "TSLA",
    8
   ],
   [
    "AMD",
-   6
+   7
+  ],
+  [
+   "META",
+   7
   ],
   [
    "ETH",
@@ -70,14 +70,10 @@
   ],
   [
    "NFLX",
-   3
-  ],
-  [
-   "COST",
    2
   ],
   [
-   "JPM",
+   "COST",
    2
   ],
   [
@@ -91,9 +87,257 @@
   [
    "ORCL",
    1
+  ],
+  [
+   "JPM",
+   1
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-03T18:17:45Z",
+   "source": "Yahoo Finance",
+   "title": "What does it mean for the AI trade that Apple is the priciest 'Mag 7' stock?",
+   "link": "https://finance.yahoo.com/video/what-does-it-mean-for-the-ai-trade-that-apple-is-the-priciest-mag-7-stock-181745077.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-03T18:16:03Z",
+   "source": "Decrypt",
+   "title": "Brazil's Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack",
+   "link": "https://decrypt.co/382459/brazil-mercado-bitcoin-will-refund-users-40-million-hack",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-03T18:12:20Z",
+   "source": "Yahoo Finance",
+   "title": "Why Shopify Stock Dove Today",
+   "link": "https://www.fool.com/investing/2026/11/03/why-shopify-stock-dove-today/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:12:00Z",
+   "source": "Yahoo Finance",
+   "title": "Amazon's Earnings Just Hit a Record. So Why Is the Stock Down 11% From Its Peak?",
+   "link": "https://www.fool.com/investing/2026/11/03/amazons-earnings-just-hit-a-record-high-so-why-is/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMZN"
+   ]
+  },
+  {
+   "time": "2026-11-03T18:10:52Z",
+   "source": "Yahoo Finance",
+   "title": "Exchange-Traded Funds Higher, US Equities Mixed After Midday",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-us-181052694.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:09:41Z",
+   "source": "Yahoo Finance",
+   "title": "Chegg, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-chegg-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:08:58Z",
+   "source": "Yahoo Finance",
+   "title": "Apple Just Stockpiled $10 Billion of Parts While Warning Memory Prices Are 'Unprecedented.' Should Investors Worry?",
+   "link": "https://www.fool.com/investing/2026/11/03/apple-just-stockpiled-usd10-billion-of-parts-while-warning-memory-prices-are-unprecedented-should-investors-worry/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-03T18:08:55Z",
+   "source": "Yahoo Finance",
+   "title": "Apple Stock Fell After a Record iPhone Quarter. Here\u2019s the Margin Problem Investors Shouldn\u2019t Ignore.",
+   "link": "https://www.fool.com/investing/2026/11/03/apple-stock-fell-after-a-record-iphone-quarter-heres-the-margin-problem-investors-shouldnt-ignore/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-03T18:07:01Z",
+   "source": "Yahoo Finance",
+   "title": "Why Isn't Realty Income's Stock Taking Off After Strong Earnings Results?",
+   "link": "https://www.fool.com/investing/2026/11/03/why-isn-t-realty-income-s-stock-taking-off-after-strong-earnings-results/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:06:54Z",
+   "source": "Yahoo Finance",
+   "title": "Nebius Group (NBIS) Unveils Live GPU Pricing And Builder Grants In Europe",
+   "link": "https://finance.yahoo.com/technology/ai/articles/nebius-group-nbis-unveils-live-180654082.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:06:51Z",
+   "source": "Yahoo Finance",
+   "title": "Why Is Advanced Micro Devices (AMD) Backing A $6 Billion AI Assistant Startup?",
+   "link": "https://finance.yahoo.com/technology/ai/articles/why-advanced-micro-devices-amd-180651035.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMD"
+   ]
+  },
+  {
+   "time": "2026-11-03T18:06:43Z",
+   "source": "Yahoo Finance",
+   "title": "Henry Schein, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-henry-schein-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:05:50Z",
+   "source": "Investing.com",
+   "title": "Shopify earnings analysis: questions answered and next catalysts",
+   "link": "https://www.investing.com/news/stock-market-news/shopify-earnings-analysis-questions-answered-and-next-catalysts-93CH-4996167",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:05:28Z",
+   "source": "Investing.com",
+   "title": "Viridien Q3 2026 slides: cash generation strong amid revenue decline",
+   "link": "https://www.investing.com/news/company-news/viridien-q3-2026-slides-cash-generation-strong-amid-revenue-decline-93CH-4996166",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:05:17Z",
+   "source": "Yahoo Finance",
+   "title": "Yum China Holdings, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-yum-china-holdings-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:04:00Z",
+   "source": "Yahoo Finance",
+   "title": "AI Data Center Jitters Aren\u2019t Slowing Williams\u2019 Power Generation Ambitions",
+   "link": "https://finance.yahoo.com/m/e0991a1b-93f8-36ac-ac31-fbf3376db76f/ai-data-center-jitters-aren%E2%80%99t.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:03:02Z",
+   "source": "Yahoo Finance",
+   "title": "Hyperscalers Face \u201c$1.5 Trillion Gap\u201d Between AI Spending and Cash",
+   "link": "https://www.tikr.com/blog/hyperscalers-face-1-5-trillion-gap-between-ai-spending-and-cash?ref=yahoofinance&tlnk=yf-261103-r3v7pv77&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:02:41Z",
+   "source": "Yahoo Finance",
+   "title": "Madrigal Pharmaceuticals, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-madrigal-pharmaceuticals-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:01:23Z",
+   "source": "Yahoo Finance",
+   "title": "Columbus McKinnon Corporation Q2 2027 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-columbus-mckinnon-corporation-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:01:03Z",
+   "source": "Investing.com",
+   "title": "DA Davidson cuts Shopify stock price target on valuation concerns",
+   "link": "https://www.investing.com/news/analyst-ratings/da-davidson-cuts-shopify-stock-price-target-on-valuation-concerns-93CH-4996165",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:00:49Z",
+   "source": "Yahoo Finance",
+   "title": "Leidos Holdings, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-leidos-holdings-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:00:38Z",
+   "source": "Investing.com",
+   "title": "Yum Brands earnings analysis: questions answered and next catalysts",
+   "link": "https://www.investing.com/news/stock-market-news/yum-brands-earnings-analysis-questions-answered-and-next-catalysts-93CH-4996163",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:00:32Z",
+   "source": "Investing.com",
+   "title": "Pfizer earnings analysis: questions answered and next catalysts",
+   "link": "https://www.investing.com/news/stock-market-news/pfizer-earnings-analysis-questions-answered-and-next-catalysts-93CH-4996162",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:00:01Z",
+   "source": "CNBC",
+   "title": "Ghosted after a job interview? There's a website for that\u2014and thousands of frustrated job seekers have weighed in",
+   "link": "https://www.cnbc.com/make-it/2026/11/03/employer-ghosting-job-interviews.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:00:01Z",
+   "source": "Yahoo Finance",
+   "title": "Shopify Stock Just Plunged. Here's Why I'm Not Selling",
+   "link": "https://www.fool.com/investing/2026/11/03/shopify-stock-just-plunged-here-s-why-i-m-not-selling/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T18:00:00Z",
+   "source": "Yahoo Finance",
+   "title": "Aecon Completes Purchase of Preferred Shares of Aecon Utilities",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/aecon-completes-purchase-preferred-shares-180000126.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T17:59:58Z",
+   "source": "Investing.com",
+   "title": "Ferrari earnings analysis: questions answered and next catalysts",
+   "link": "https://www.investing.com/news/stock-market-news/ferrari-earnings-analysis-questions-answered-and-next-catalysts-93CH-4996157",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T17:59:35Z",
+   "source": "Investing.com",
+   "title": "Eaton earnings analysis: questions answered and next catalysts",
+   "link": "https://www.investing.com/news/stock-market-news/eaton-earnings-analysis-questions-answered-and-next-catalysts-93CH-4996156",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T17:59:12Z",
+   "source": "Investing.com",
+   "title": "Allison Transmission earnings analysis: questions answered and next catalysts",
+   "link": "https://www.investing.com/news/stock-market-news/allison-transmission-earnings-analysis-questions-answered-and-next-catalysts-93CH-4996155",
+   "kind": "markets",
+   "tags": []
+  },
   {
    "time": "2026-11-03T17:55:18Z",
    "source": "CNBC",
@@ -105,6 +349,22 @@
     "NVDA",
     "PLTR"
    ]
+  },
+  {
+   "time": "2026-11-03T17:54:52Z",
+   "source": "Investing.com",
+   "title": "Vertex Pharmaceuticals earnings analysis: questions answered and next catalysts",
+   "link": "https://www.investing.com/news/stock-market-news/vertex-pharmaceuticals-earnings-analysis-questions-answered-and-next-catalysts-93CH-4996153",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T17:54:43Z",
+   "source": "Investing.com",
+   "title": "ESRT Q3 2026 slides: office strength offsets observation deck woes",
+   "link": "https://www.investing.com/news/company-news/esrt-q3-2026-slides-office-strength-offsets-observation-deck-woes-93CH-4996152",
+   "kind": "markets",
+   "tags": []
   },
   {
    "time": "2026-11-03T17:53:59Z",
@@ -3286,284 +3546,6 @@
    "source": "Benzinga",
    "title": "Best AI Stocks",
    "link": "https://www.benzinga.com/money/best-artificial-intelligence-stocks",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T11:12:20Z",
-   "source": "Benzinga",
-   "title": "Top Performing Stocks",
-   "link": "https://www.benzinga.com/money/stocks-to-buy-now",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T11:12:12Z",
-   "source": "CoinDesk",
-   "title": "Liquid\u2019s bitcoin IOUs are fully backed again after a $320 million exploit",
-   "link": "https://www.coindesk.com/markets/2026/11/03/liquid-s-bitcoin-ious-are-fully-backed-again-after-a-usd320-million-exploit",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T11:10:14Z",
-   "source": "Yahoo Finance",
-   "title": "Why Williams-Sonoma Stock Gained 11% in October",
-   "link": "https://www.fool.com/investing/2026/11/03/why-williams-sonoma-stock-gained-11-in-october/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T11:00:00Z",
-   "source": "Yahoo Finance",
-   "title": "Apple just made twice as much free cash as Microsoft, Meta, Alphabet and Amazon combined: Chart of the Day",
-   "link": "https://finance.yahoo.com/markets/article/apple-just-made-twice-as-much-free-cash-as-microsoft-meta-alphabet-and-amazon-combined-chart-of-the-day-110000928.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AAPL",
-    "AMZN",
-    "GOOGL",
-    "META",
-    "MSFT"
-   ]
-  },
-  {
-   "time": "2026-11-03T11:00:00Z",
-   "source": "Yahoo Finance",
-   "title": "Apple showed once again that consumers will complain \u2014 but still tap to pay",
-   "link": "https://finance.yahoo.com/technology/article/apple-showed-once-again-that-consumers-will-complain--but-still-tap-to-pay-110000651.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AAPL"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:54:53Z",
-   "source": "Investing.com",
-   "title": "US stock futures mixed as Apple slides, midterms loom",
-   "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-mixed-as-apple-slides-midterms-loom-4994306",
-   "kind": "markets",
-   "tags": [
-    "AAPL"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:54:41Z",
-   "source": "Investing.com",
-   "title": "Roundup settlement expected before Christmas, Bayer CEO says",
-   "link": "https://www.investing.com/news/stock-market-news/roundup-settlement-expected-before-christmas-bayer-ceo-says-4994305",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:54:26Z",
-   "source": "Investing.com",
-   "title": "Google AI chatbot\u2019s use of press items may infringe copyright rules, EU court adviser says",
-   "link": "https://www.investing.com/news/stock-market-news/googles-use-of-press-by-ai-chatbot-may-infringe-copyright-rules-eu-court-adviser-says-4994030",
-   "kind": "markets",
-   "tags": [
-    "GOOGL"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:54:00Z",
-   "source": "MarketWatch",
-   "title": "Oil has had a massive run, but a prominent bull sees a turning point on midterm eve",
-   "link": "https://www.marketwatch.com/story/oil-has-had-a-massive-run-but-a-prominent-bull-sees-a-turning-point-on-midterm-eve-be2c5fa7?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:53:49Z",
-   "source": "Yahoo Finance",
-   "title": "Apple\u2019s 2027 iPhone Growth To Come Almost Entirely From Higher Prices, Morningstar Says \u2014 Sees Flat Unit Sales",
-   "link": "https://stocktwits.com/news-articles/markets/equity/apple-s-2027-i-phone-growth-to-come-almost-entirely-from-higher-prices-morningstar-says-sees-flat-unit-sales/cNGXbavR95j?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AAPL"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:51:50Z",
-   "source": "Investing.com",
-   "title": "Why is Arthur J Gallagher stock sliding today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-arthur-j-gallagher-stock-sliding-today-93CH-4994304",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:51:23Z",
-   "source": "Yahoo Finance",
-   "title": "Apple Q3 Report Damps Asian Stock Markets in Holiday-Thinned Trading",
-   "link": "https://finance.yahoo.com/markets/world-indices/articles/apple-q3-report-damps-asian-105123959.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AAPL"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:50:59Z",
-   "source": "Investing.com",
-   "title": "Wells Fargo cuts ON Semiconductor stock price target on valuation",
-   "link": "https://www.investing.com/news/analyst-ratings/wells-fargo-cuts-on-semiconductor-stock-price-target-on-valuation-93CH-4994302",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:50:59Z",
-   "source": "Investing.com",
-   "title": "JPMorgan initiates TRex Bio stock coverage with overweight rating",
-   "link": "https://www.investing.com/news/analyst-ratings/jpmorgan-initiates-trex-bio-stock-coverage-with-overweight-rating-93CH-4994303",
-   "kind": "markets",
-   "tags": [
-    "JPM"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:50:56Z",
-   "source": "Investing.com",
-   "title": "Needham cuts Marvell stock price target on valuation concerns",
-   "link": "https://www.investing.com/news/analyst-ratings/needham-cuts-marvell-stock-price-target-on-valuation-concerns-93CH-4994300",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:50:56Z",
-   "source": "Investing.com",
-   "title": "Wells Fargo raises Hinge Health stock price target on strong yield",
-   "link": "https://www.investing.com/news/analyst-ratings/wells-fargo-raises-hinge-health-stock-price-target-on-strong-yield-93CH-4994301",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:50:52Z",
-   "source": "Investing.com",
-   "title": "Wells Fargo lowers Advanced Energy price target on valuation",
-   "link": "https://www.investing.com/news/analyst-ratings/wells-fargo-lowers-advanced-energy-price-target-on-valuation-93CH-4994298",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:50:52Z",
-   "source": "Investing.com",
-   "title": "Wells Fargo raises Hinge Health stock price target on yield strength",
-   "link": "https://www.investing.com/news/analyst-ratings/wells-fargo-raises-hinge-health-stock-price-target-on-yield-strength-93CH-4994299",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:50:00Z",
-   "source": "Yahoo Finance",
-   "title": "Prediction: Netflix Will Become the Coca-Cola of Streaming",
-   "link": "https://www.fool.com/investing/2026/11/03/prediction-netflix-will-become-the-coca-cola-of-st/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NFLX"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:49:26Z",
-   "source": "Cointelegraph",
-   "title": "France postpones 2027 budget vote, crypto exit-tax proposals scrapped",
-   "link": "https://cointelegraph.com/news/france-postpones-2027-budget-vote-reject-crypto-exit-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:44:07Z",
-   "source": "Yahoo Finance",
-   "title": "Early Uber Investor: Tesla and Uber Will \u201cSplit 80%\u201d of the Robotaxi Market",
-   "link": "https://www.tikr.com/blog/early-uber-investor-tesla-and-uber-will-split-80-of-the-robotaxi-market?ref=yahoofinance&tlnk=yf-261103-3xr55j98&.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:36:00Z",
-   "source": "MarketWatch",
-   "title": "Thousands of Disney job cuts may be coming. Investors are asking what comes next.",
-   "link": "https://www.marketwatch.com/story/thousands-of-disney-job-cuts-may-be-coming-investors-are-asking-what-comes-next-19cc0662?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:35:00Z",
-   "source": "Yahoo Finance",
-   "title": "Here's Exactly How Much $5,000 in Procter & Gamble Has Paid Out in Dividends Since 2020",
-   "link": "https://www.fool.com/investing/2026/11/03/heres-exactly-how-much-5000-in-procter-and-gamble/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:34:20Z",
-   "source": "Yahoo Finance",
-   "title": "Amazon, Google and Microsoft Are \u201cAbsolute Jokes\u201d at Building Next to SpaceX, Says Sequoia Partner",
-   "link": "https://www.tikr.com/blog/amazon-google-and-microsoft-are-absolute-jokes-at-building-next-to-spacex-says-sequoia-partner?ref=yahoofinance&tlnk=yf-261103-ppjxxxh2&.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMZN",
-    "GOOGL",
-    "MSFT"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:31:00Z",
-   "source": "MarketWatch",
-   "title": "This signal from the corporate bond market has historically preceded big drawdowns for the S&P 500",
-   "link": "https://www.marketwatch.com/story/this-signal-from-the-corporate-bond-market-has-historically-preceded-big-drawdowns-for-the-s-p-500-8c1a3d25?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:28:02Z",
-   "source": "Yahoo Finance",
-   "title": "Could Investing in Moderna's Stock Double Your Money?",
-   "link": "https://www.fool.com/investing/2026/11/03/could-investing-in-moderna-s-stock-double-your-money/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:28:00Z",
-   "source": "Yahoo Finance",
-   "title": "The Next Generation of Dividend Kings: 3 Stocks to Watch",
-   "link": "https://www.fool.com/investing/2026/11/03/the-next-generation-of-dividend-kings-3-stocks-to/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:26:01Z",
-   "source": "Yahoo Finance",
-   "title": "Google Parent Alphabet Just Hit a Major Milestone, and It Has Nothing to Do With Its $482 Billion Single-Session Loss",
-   "link": "https://www.fool.com/investing/2026/11/03/google-parent-alphabet-just-hit-major-milestone-nothing-to-do-with-482-billion-single-session-loss/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "GOOGL"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:20:00Z",
-   "source": "MarketWatch",
-   "title": "What analysts are saying as Apple\u2019s stock falls after earnings report",
-   "link": "https://www.marketwatch.com/story/what-analysts-are-saying-as-apples-stock-falls-after-earnings-report-f0afa357?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": [
-    "AAPL"
-   ]
-  },
-  {
-   "time": "2026-11-03T10:20:00Z",
-   "source": "Yahoo Finance",
-   "title": "Clean Sweep for Seven Companies in Extel\u2019s 2026 U.S. Corporates Survey",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/clean-sweep-seven-companies-extel-102000621.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T10:20:00Z",
-   "source": "Yahoo Finance",
-   "title": "The Company Behind the New York Stock Exchange Is Now Building on Hyperliquid. Here's What It Means for Investors.",
-   "link": "https://www.fool.com/investing/2026/11/03/the-company-behind-the-new-york-stock-exchange-is/?.tsrc=rss",
    "kind": "markets",
    "tags": []
   }

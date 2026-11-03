@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T18:06:11Z",
+ "updated": "2026-11-03T18:22:40Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -117,6 +117,27 @@
   }
  ],
  "results_announced_3d": [
+  {
+   "time": "2026-11-03T18:08:52Z",
+   "form": "8-K",
+   "company": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC",
+   "cik": 746515,
+   "ticker": "EXPD",
+   "role": "Filer",
+   "accession": "0001193125-26-444872",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/746515/000119312526444872/0001193125-26-444872-index.htm"
+  },
   {
    "time": "2026-11-03T15:28:59Z",
    "form": "8-K",
@@ -2329,31 +2350,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1984060/000119312526443818/0001193125-26-443818-index.htm"
-  },
-  {
-   "time": "2026-11-02T21:50:38Z",
-   "form": "8-K",
-   "company": "INNOVATIVE INDUSTRIAL PROPERTIES INC",
-   "cik": 1677576,
-   "ticker": "IIPR",
-   "role": "Filer",
-   "accession": "0001677576-26-000005",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1677576/000167757626000005/0001677576-26-000005-index.htm"
   }
  ],
  "activist_stakes_3d": [
@@ -2623,6 +2619,39 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-03T18:14:21Z",
+   "form": "10-Q",
+   "company": "Metallus Inc.",
+   "cik": 1598428,
+   "ticker": "MTUS",
+   "role": "Filer",
+   "accession": "0001193125-26-444884",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1598428/000119312526444884/0001193125-26-444884-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:08:52Z",
+   "form": "8-K",
+   "company": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC",
+   "cik": 746515,
+   "ticker": "EXPD",
+   "role": "Filer",
+   "accession": "0001193125-26-444872",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/746515/000119312526444872/0001193125-26-444872-index.htm"
+  },
   {
    "time": "2026-11-03T18:03:45Z",
    "form": "10-Q",

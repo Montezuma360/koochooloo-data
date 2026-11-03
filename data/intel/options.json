@@ -1,115 +1,115 @@
 {
- "updated": "2026-11-03T18:06:11Z",
+ "updated": "2026-11-03T18:22:40Z",
  "source": "Cboe delayed quotes (15-minute delay; personal use, licence needed before charging)",
- "aggregate_put_call_volume": 0.908,
+ "aggregate_put_call_volume": 0.912,
  "symbols": {
   "SPY": {
-   "spot": 755.88,
-   "call_volume": 2751546,
-   "put_volume": 2616962,
-   "put_call_volume": 0.951,
+   "spot": 756.07,
+   "call_volume": 2905413,
+   "put_volume": 2793139,
+   "put_call_volume": 0.961,
    "put_call_open_interest": 2.078,
-   "near_term_atm_iv_pct": 18.7,
-   "iv30": 16.075
+   "near_term_atm_iv_pct": 18.5,
+   "iv30": 16.021
   },
   "QQQ": {
-   "spot": 686.97,
-   "call_volume": 1941198,
-   "put_volume": 2039785,
-   "put_call_volume": 1.051,
+   "spot": 687.56,
+   "call_volume": 2033744,
+   "put_volume": 2165858,
+   "put_call_volume": 1.065,
    "put_call_open_interest": 1.263,
-   "near_term_atm_iv_pct": 32.9,
-   "iv30": 26.599
+   "near_term_atm_iv_pct": 32.7,
+   "iv30": 26.577
   },
   "IWM": {
-   "spot": 280.5401,
-   "call_volume": 461577,
-   "put_volume": 429955,
-   "put_call_volume": 0.931,
+   "spot": 280.95,
+   "call_volume": 483726,
+   "put_volume": 449660,
+   "put_call_volume": 0.93,
    "put_call_open_interest": 2.456,
-   "near_term_atm_iv_pct": 24.7,
-   "iv30": 20.667
+   "near_term_atm_iv_pct": 24.6,
+   "iv30": 20.537
   },
   "AAPL": {
-   "spot": 332.765,
-   "call_volume": 617231,
-   "put_volume": 566970,
-   "put_call_volume": 0.919,
+   "spot": 330.69,
+   "call_volume": 638824,
+   "put_volume": 584832,
+   "put_call_volume": 0.915,
    "put_call_open_interest": 0.948,
-   "near_term_atm_iv_pct": 28.9,
-   "iv30": 24.954
+   "near_term_atm_iv_pct": 28.6,
+   "iv30": 25.017
   },
   "NVDA": {
-   "spot": 208.25,
-   "call_volume": 604665,
-   "put_volume": 443182,
-   "put_call_volume": 0.733,
+   "spot": 208.475,
+   "call_volume": 630269,
+   "put_volume": 452174,
+   "put_call_volume": 0.717,
    "put_call_open_interest": 1.013,
-   "near_term_atm_iv_pct": 45.2,
-   "iv30": 46.231
+   "near_term_atm_iv_pct": 44.8,
+   "iv30": 46.123
   },
   "TSLA": {
-   "spot": 397.93,
-   "call_volume": 301687,
-   "put_volume": 295255,
-   "put_call_volume": 0.979,
+   "spot": 397.7,
+   "call_volume": 312267,
+   "put_volume": 303230,
+   "put_call_volume": 0.971,
    "put_call_open_interest": 0.808,
-   "near_term_atm_iv_pct": 50.4,
-   "iv30": 45.135
+   "near_term_atm_iv_pct": 50.5,
+   "iv30": 44.987
   },
   "MSFT": {
-   "spot": 519.32,
-   "call_volume": 179336,
-   "put_volume": 64402,
-   "put_call_volume": 0.359,
+   "spot": 520.6,
+   "call_volume": 191653,
+   "put_volume": 69072,
+   "put_call_volume": 0.36,
    "put_call_open_interest": 0.605,
-   "near_term_atm_iv_pct": 33.2,
-   "iv30": 29.122
+   "near_term_atm_iv_pct": 32.5,
+   "iv30": 28.825
   },
   "AMZN": {
-   "spot": 249.16,
-   "call_volume": 162603,
-   "put_volume": 81922,
-   "put_call_volume": 0.504,
+   "spot": 250.095,
+   "call_volume": 179343,
+   "put_volume": 87233,
+   "put_call_volume": 0.486,
    "put_call_open_interest": 0.768,
-   "near_term_atm_iv_pct": 36.1,
-   "iv30": 32.698
+   "near_term_atm_iv_pct": 36.8,
+   "iv30": 32.672
   },
   "META": {
-   "spot": 623.1601,
-   "call_volume": 151650,
-   "put_volume": 61927,
-   "put_call_volume": 0.408,
+   "spot": 623.315,
+   "call_volume": 155610,
+   "put_volume": 63588,
+   "put_call_volume": 0.409,
    "put_call_open_interest": 0.486,
    "near_term_atm_iv_pct": 43.9,
-   "iv30": 40.089
+   "iv30": 40.002
   },
   "AMD": {
-   "spot": 490.42,
-   "call_volume": 148478,
-   "put_volume": 152589,
-   "put_call_volume": 1.028,
+   "spot": 491.88,
+   "call_volume": 154650,
+   "put_volume": 157886,
+   "put_call_volume": 1.021,
    "put_call_open_interest": 1.093,
-   "near_term_atm_iv_pct": 89.1,
-   "iv30": 66.513
+   "near_term_atm_iv_pct": 88.8,
+   "iv30": 65.929
   },
   "GOOGL": {
    "spot": 280.73,
-   "call_volume": 156918,
-   "put_volume": 74721,
-   "put_call_volume": 0.476,
+   "call_volume": 163217,
+   "put_volume": 78400,
+   "put_call_volume": 0.48,
    "put_call_open_interest": 0.675,
-   "near_term_atm_iv_pct": 34.1,
-   "iv30": 31.256
+   "near_term_atm_iv_pct": 34.5,
+   "iv30": 31.219
   },
   "PLTR": {
-   "spot": 174.03,
-   "call_volume": 310459,
-   "put_volume": 242459,
-   "put_call_volume": 0.781,
+   "spot": 175.4955,
+   "call_volume": 317684,
+   "put_volume": 246101,
+   "put_call_volume": 0.775,
    "put_call_open_interest": 1.149,
-   "near_term_atm_iv_pct": 60.2,
-   "iv30": 52.254
+   "near_term_atm_iv_pct": 60.4,
+   "iv30": 52.449
   }
  },
  "unusual": [
@@ -119,11 +119,11 @@
    "type": "call",
    "strike": 685.0,
    "expiry": "2027-09-17",
-   "volume": 4393,
+   "volume": 4395,
    "open_interest": 267,
-   "last": 76.09,
-   "notional_usd": 33426337,
-   "iv": 0.246
+   "last": 76.25,
+   "notional_usd": 33511875,
+   "iv": 0.245
   },
   {
    "symbol": "MSFT",
@@ -131,11 +131,11 @@
    "type": "call",
    "strike": 565.0,
    "expiry": "2027-02-19",
-   "volume": 17060,
+   "volume": 17063,
    "open_interest": 138,
-   "last": 17.6,
-   "notional_usd": 30025600,
-   "iv": 0.292
+   "last": 18.28,
+   "notional_usd": 31191164,
+   "iv": 0.293
   },
   {
    "symbol": "AAPL",
@@ -143,11 +143,11 @@
    "type": "call",
    "strike": 330.0,
    "expiry": "2028-03-17",
-   "volume": 4284,
+   "volume": 4285,
    "open_interest": 691,
-   "last": 52.6,
-   "notional_usd": 22533840,
-   "iv": 0.276
+   "last": 53.24,
+   "notional_usd": 22813340,
+   "iv": 0.282
   },
   {
    "symbol": "SPY",
@@ -159,7 +159,7 @@
    "open_interest": 385,
    "last": 12.52,
    "notional_usd": 13035824,
-   "iv": 0.234
+   "iv": 0.254
   },
   {
    "symbol": "PLTR",
@@ -167,23 +167,11 @@
    "type": "call",
    "strike": 180.0,
    "expiry": "2026-11-06",
-   "volume": 28890,
+   "volume": 29958,
    "open_interest": 1584,
-   "last": 2.64,
-   "notional_usd": 7626960,
-   "iv": 0.761
-  },
-  {
-   "symbol": "PLTR",
-   "contract": "PLTR261106C00170000",
-   "type": "call",
-   "strike": 170.0,
-   "expiry": "2026-11-06",
-   "volume": 9977,
-   "open_interest": 415,
-   "last": 7.12,
-   "notional_usd": 7103624,
-   "iv": 0.76
+   "last": 3.15,
+   "notional_usd": 9436770,
+   "iv": 0.766
   },
   {
    "symbol": "PLTR",
@@ -191,11 +179,23 @@
    "type": "call",
    "strike": 175.0,
    "expiry": "2026-11-06",
-   "volume": 15599,
+   "volume": 16711,
    "open_interest": 862,
-   "last": 4.5,
-   "notional_usd": 7019550,
-   "iv": 0.761
+   "last": 5.29,
+   "notional_usd": 8840119,
+   "iv": 0.769
+  },
+  {
+   "symbol": "PLTR",
+   "contract": "PLTR261106C00170000",
+   "type": "call",
+   "strike": 170.0,
+   "expiry": "2026-11-06",
+   "volume": 10213,
+   "open_interest": 415,
+   "last": 8.23,
+   "notional_usd": 8405299,
+   "iv": 0.769
   },
   {
    "symbol": "PLTR",
@@ -203,11 +203,11 @@
    "type": "call",
    "strike": 172.5,
    "expiry": "2026-11-06",
-   "volume": 9739,
+   "volume": 9902,
    "open_interest": 460,
-   "last": 5.63,
-   "notional_usd": 5483057,
-   "iv": 0.753
+   "last": 6.6,
+   "notional_usd": 6535320,
+   "iv": 0.771
   },
   {
    "symbol": "AMD",
@@ -215,11 +215,23 @@
    "type": "call",
    "strike": 490.0,
    "expiry": "2026-11-06",
-   "volume": 2193,
+   "volume": 2316,
    "open_interest": 355,
-   "last": 23.5,
-   "notional_usd": 5153550,
-   "iv": 1.268
+   "last": 24.02,
+   "notional_usd": 5563032,
+   "iv": 1.246
+  },
+  {
+   "symbol": "QQQ",
+   "contract": "QQQ261130C00705000",
+   "type": "call",
+   "strike": 705.0,
+   "expiry": "2026-11-30",
+   "volume": 4056,
+   "open_interest": 748,
+   "last": 12.06,
+   "notional_usd": 4891536,
+   "iv": 0.249
   },
   {
    "symbol": "QQQ",
@@ -231,7 +243,7 @@
    "open_interest": 0,
    "last": 4.15,
    "notional_usd": 4884550,
-   "iv": 0.442
+   "iv": 0.443
   },
   {
    "symbol": "IWM",
@@ -255,7 +267,7 @@
    "open_interest": 0,
    "last": 28.03,
    "notional_usd": 4361468,
-   "iv": 0.777
+   "iv": 0.773
   },
   {
    "symbol": "AMD",
@@ -263,23 +275,23 @@
    "type": "put",
    "strike": 490.0,
    "expiry": "2026-11-13",
-   "volume": 1487,
+   "volume": 1537,
    "open_interest": 285,
-   "last": 27.88,
-   "notional_usd": 4145756,
-   "iv": 0.851
+   "last": 27.2,
+   "notional_usd": 4180640,
+   "iv": 0.849
   },
   {
-   "symbol": "AAPL",
-   "contract": "AAPL261106C00330000",
+   "symbol": "MSFT",
+   "contract": "MSFT261106C00515000",
    "type": "call",
-   "strike": 330.0,
+   "strike": 515.0,
    "expiry": "2026-11-06",
-   "volume": 6186,
-   "open_interest": 834,
-   "last": 6.0,
-   "notional_usd": 3711600,
-   "iv": 0.359
+   "volume": 3447,
+   "open_interest": 417,
+   "last": 11.0,
+   "notional_usd": 3791700,
+   "iv": 0.403
   },
   {
    "symbol": "QQQ",
@@ -287,11 +299,11 @@
    "type": "put",
    "strike": 672.0,
    "expiry": "2026-11-06",
-   "volume": 7145,
+   "volume": 7154,
    "open_interest": 0,
-   "last": 5.11,
-   "notional_usd": 3651095,
-   "iv": 0.435
+   "last": 4.89,
+   "notional_usd": 3498306,
+   "iv": 0.436
   },
   {
    "symbol": "NVDA",
@@ -303,7 +315,7 @@
    "open_interest": 238,
    "last": 16.41,
    "notional_usd": 3493689,
-   "iv": 0.66
+   "iv": 0.648
   },
   {
    "symbol": "GOOGL",
@@ -311,23 +323,11 @@
    "type": "call",
    "strike": 280.0,
    "expiry": "2026-11-06",
-   "volume": 7133,
+   "volume": 7263,
    "open_interest": 1166,
-   "last": 4.75,
-   "notional_usd": 3388175,
+   "last": 4.72,
+   "notional_usd": 3428136,
    "iv": 0.409
-  },
-  {
-   "symbol": "MSFT",
-   "contract": "MSFT261106C00515000",
-   "type": "call",
-   "strike": 515.0,
-   "expiry": "2026-11-06",
-   "volume": 3361,
-   "open_interest": 417,
-   "last": 10.0,
-   "notional_usd": 3361000,
-   "iv": 0.405
   },
   {
    "symbol": "MSFT",
@@ -335,83 +335,23 @@
    "type": "call",
    "strike": 670.0,
    "expiry": "2027-02-19",
-   "volume": 17222,
+   "volume": 17225,
    "open_interest": 33,
-   "last": 1.77,
-   "notional_usd": 3048294,
-   "iv": 0.275
+   "last": 1.9,
+   "notional_usd": 3272750,
+   "iv": 0.276
   },
   {
    "symbol": "AAPL",
-   "contract": "AAPL261106C00335000",
+   "contract": "AAPL261106C00330000",
    "type": "call",
-   "strike": 335.0,
+   "strike": 330.0,
    "expiry": "2026-11-06",
-   "volume": 8261,
-   "open_interest": 1501,
-   "last": 3.25,
-   "notional_usd": 2684825,
-   "iv": 0.349
-  },
-  {
-   "symbol": "PLTR",
-   "contract": "PLTR261113C00175000",
-   "type": "call",
-   "strike": 175.0,
-   "expiry": "2026-11-13",
-   "volume": 3091,
-   "open_interest": 129,
-   "last": 6.65,
-   "notional_usd": 2055515,
-   "iv": 0.596
-  },
-  {
-   "symbol": "QQQ",
-   "contract": "QQQ261106P00664000",
-   "type": "put",
-   "strike": 664.0,
-   "expiry": "2026-11-06",
-   "volume": 6220,
-   "open_interest": 0,
-   "last": 3.29,
-   "notional_usd": 2046380,
-   "iv": 0.448
-  },
-  {
-   "symbol": "AAPL",
-   "contract": "AAPL261106C00332500",
-   "type": "call",
-   "strike": 332.5,
-   "expiry": "2026-11-06",
-   "volume": 4371,
-   "open_interest": 522,
-   "last": 4.6,
-   "notional_usd": 2010660,
-   "iv": 0.352
-  },
-  {
-   "symbol": "NVDA",
-   "contract": "NVDA270319P00100000",
-   "type": "put",
-   "strike": 100.0,
-   "expiry": "2027-03-19",
-   "volume": 37677,
-   "open_interest": 6264,
-   "last": 0.52,
-   "notional_usd": 1959204,
-   "iv": 0.626
-  },
-  {
-   "symbol": "NVDA",
-   "contract": "NVDA261109P00207500",
-   "type": "put",
-   "strike": 207.5,
-   "expiry": "2026-11-09",
-   "volume": 4499,
-   "open_interest": 396,
-   "last": 4.35,
-   "notional_usd": 1957065,
-   "iv": 0.45
+   "volume": 6409,
+   "open_interest": 834,
+   "last": 4.88,
+   "notional_usd": 3127592,
+   "iv": 0.361
   },
   {
    "symbol": "PLTR",
@@ -419,11 +359,71 @@
    "type": "call",
    "strike": 177.5,
    "expiry": "2026-11-06",
-   "volume": 5561,
+   "volume": 5774,
    "open_interest": 390,
-   "last": 3.49,
-   "notional_usd": 1940789,
-   "iv": 0.754
+   "last": 4.13,
+   "notional_usd": 2384662,
+   "iv": 0.771
+  },
+  {
+   "symbol": "PLTR",
+   "contract": "PLTR261113C00175000",
+   "type": "call",
+   "strike": 175.0,
+   "expiry": "2026-11-13",
+   "volume": 3151,
+   "open_interest": 129,
+   "last": 7.45,
+   "notional_usd": 2347495,
+   "iv": 0.605
+  },
+  {
+   "symbol": "AAPL",
+   "contract": "AAPL261106C00335000",
+   "type": "call",
+   "strike": 335.0,
+   "expiry": "2026-11-06",
+   "volume": 8627,
+   "open_interest": 1501,
+   "last": 2.6,
+   "notional_usd": 2243020,
+   "iv": 0.355
+  },
+  {
+   "symbol": "NVDA",
+   "contract": "NVDA270319P00100000",
+   "type": "put",
+   "strike": 100.0,
+   "expiry": "2027-03-19",
+   "volume": 37678,
+   "open_interest": 6264,
+   "last": 0.53,
+   "notional_usd": 1996934,
+   "iv": 0.628
+  },
+  {
+   "symbol": "QQQ",
+   "contract": "QQQ261106P00664000",
+   "type": "put",
+   "strike": 664.0,
+   "expiry": "2026-11-06",
+   "volume": 6240,
+   "open_interest": 0,
+   "last": 3.16,
+   "notional_usd": 1971840,
+   "iv": 0.449
+  },
+  {
+   "symbol": "NVDA",
+   "contract": "NVDA261109P00207500",
+   "type": "put",
+   "strike": 207.5,
+   "expiry": "2026-11-09",
+   "volume": 4544,
+   "open_interest": 396,
+   "last": 4.2,
+   "notional_usd": 1908480,
+   "iv": 0.446
   },
   {
    "symbol": "PLTR",
@@ -431,11 +431,23 @@
    "type": "call",
    "strike": 167.5,
    "expiry": "2026-11-06",
-   "volume": 1866,
+   "volume": 1877,
    "open_interest": 103,
-   "last": 8.45,
-   "notional_usd": 1576770,
-   "iv": 0.755
+   "last": 10.0,
+   "notional_usd": 1877000,
+   "iv": 0.779
+  },
+  {
+   "symbol": "AAPL",
+   "contract": "AAPL261106C00332500",
+   "type": "call",
+   "strike": 332.5,
+   "expiry": "2026-11-06",
+   "volume": 4671,
+   "open_interest": 522,
+   "last": 3.63,
+   "notional_usd": 1695573,
+   "iv": 0.359
   },
   {
    "symbol": "SPY",
@@ -443,23 +455,11 @@
    "type": "call",
    "strike": 756.0,
    "expiry": "2026-11-05",
-   "volume": 2934,
+   "volume": 3072,
    "open_interest": 0,
-   "last": 5.34,
-   "notional_usd": 1566756,
+   "last": 5.43,
+   "notional_usd": 1668096,
    "iv": 0.229
-  },
-  {
-   "symbol": "PLTR",
-   "contract": "PLTR261106C00165000",
-   "type": "call",
-   "strike": 165.0,
-   "expiry": "2026-11-06",
-   "volume": 1302,
-   "open_interest": 155,
-   "last": 11.14,
-   "notional_usd": 1450428,
-   "iv": 0.757
   },
   {
    "symbol": "QQQ",
@@ -467,23 +467,23 @@
    "type": "call",
    "strike": 686.0,
    "expiry": "2026-11-05",
-   "volume": 1556,
+   "volume": 1588,
    "open_interest": 0,
-   "last": 9.29,
-   "notional_usd": 1445524,
-   "iv": 0.423
+   "last": 9.84,
+   "notional_usd": 1562592,
+   "iv": 0.425
   },
   {
-   "symbol": "QQQ",
-   "contract": "QQQ261110P00686000",
-   "type": "put",
-   "strike": 686.0,
-   "expiry": "2026-11-10",
-   "volume": 1142,
-   "open_interest": 0,
-   "last": 11.98,
-   "notional_usd": 1368116,
-   "iv": 0.329
+   "symbol": "PLTR",
+   "contract": "PLTR261106C00182500",
+   "type": "call",
+   "strike": 182.5,
+   "expiry": "2026-11-06",
+   "volume": 6315,
+   "open_interest": 876,
+   "last": 2.36,
+   "notional_usd": 1490340,
+   "iv": 0.767
   },
   {
    "symbol": "SPY",
@@ -491,11 +491,35 @@
    "type": "call",
    "strike": 756.0,
    "expiry": "2026-11-09",
-   "volume": 1890,
+   "volume": 1902,
    "open_interest": 0,
-   "last": 7.19,
-   "notional_usd": 1358910,
+   "last": 7.45,
+   "notional_usd": 1416990,
    "iv": 0.182
+  },
+  {
+   "symbol": "QQQ",
+   "contract": "QQQ261110P00686000",
+   "type": "put",
+   "strike": 686.0,
+   "expiry": "2026-11-10",
+   "volume": 1182,
+   "open_interest": 0,
+   "last": 11.98,
+   "notional_usd": 1416036,
+   "iv": 0.329
+  },
+  {
+   "symbol": "PLTR",
+   "contract": "PLTR261106C00165000",
+   "type": "call",
+   "strike": 165.0,
+   "expiry": "2026-11-06",
+   "volume": 1303,
+   "open_interest": 155,
+   "last": 10.61,
+   "notional_usd": 1382483,
+   "iv": 0.789
   },
   {
    "symbol": "SPY",
@@ -510,27 +534,15 @@
    "iv": 0.184
   },
   {
-   "symbol": "PLTR",
-   "contract": "PLTR261106C00182500",
-   "type": "call",
-   "strike": 182.5,
-   "expiry": "2026-11-06",
-   "volume": 6009,
-   "open_interest": 876,
-   "last": 1.92,
-   "notional_usd": 1153728,
-   "iv": 0.763
-  },
-  {
    "symbol": "SPY",
    "contract": "SPY261109C00757000",
    "type": "call",
    "strike": 757.0,
    "expiry": "2026-11-09",
-   "volume": 1715,
+   "volume": 1718,
    "open_interest": 0,
-   "last": 6.53,
-   "notional_usd": 1119895,
+   "last": 6.86,
+   "notional_usd": 1178548,
    "iv": 0.18
   },
   {
@@ -539,23 +551,11 @@
    "type": "call",
    "strike": 754.0,
    "expiry": "2026-11-05",
-   "volume": 1689,
+   "volume": 1758,
    "open_interest": 0,
-   "last": 6.27,
-   "notional_usd": 1059003,
-   "iv": 0.234
-  },
-  {
-   "symbol": "AAPL",
-   "contract": "AAPL261204C00345000",
-   "type": "call",
-   "strike": 345.0,
-   "expiry": "2026-12-04",
-   "volume": 2466,
-   "open_interest": 231,
-   "last": 4.25,
-   "notional_usd": 1048050,
-   "iv": 0.229
+   "last": 6.6,
+   "notional_usd": 1160280,
+   "iv": 0.233
   },
   {
    "symbol": "QQQ",
@@ -563,23 +563,11 @@
    "type": "call",
    "strike": 699.0,
    "expiry": "2026-11-05",
-   "volume": 2785,
+   "volume": 2852,
    "open_interest": 0,
-   "last": 3.65,
-   "notional_usd": 1016525,
-   "iv": 0.393
-  },
-  {
-   "symbol": "PLTR",
-   "contract": "PLTR261211C00180000",
-   "type": "call",
-   "strike": 180.0,
-   "expiry": "2026-12-11",
-   "volume": 1041,
-   "open_interest": 15,
-   "last": 9.1,
-   "notional_usd": 947310,
-   "iv": 0.517
+   "last": 3.7,
+   "notional_usd": 1055240,
+   "iv": 0.394
   },
   {
    "symbol": "PLTR",
@@ -587,11 +575,23 @@
    "type": "call",
    "strike": 170.0,
    "expiry": "2026-11-13",
-   "volume": 1023,
+   "volume": 1028,
    "open_interest": 137,
-   "last": 9.15,
-   "notional_usd": 936045,
-   "iv": 0.608
+   "last": 10.1,
+   "notional_usd": 1038280,
+   "iv": 0.615
+  },
+  {
+   "symbol": "AAPL",
+   "contract": "AAPL261204C00345000",
+   "type": "call",
+   "strike": 345.0,
+   "expiry": "2026-12-04",
+   "volume": 2467,
+   "open_interest": 231,
+   "last": 4.1,
+   "notional_usd": 1011470,
+   "iv": 0.241
   }
  ],
  "failed": {}
