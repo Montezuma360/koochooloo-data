@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T15:08:40Z",
+ "updated": "2026-11-03T15:49:48Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -117,6 +117,27 @@
   }
  ],
  "results_announced_3d": [
+  {
+   "time": "2026-11-03T15:28:59Z",
+   "form": "8-K",
+   "company": "AMETEK INC/",
+   "cik": 1037868,
+   "ticker": "AME",
+   "role": "Filer",
+   "accession": "0001037868-26-000194",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/0001037868-26-000194-index.htm"
+  },
   {
    "time": "2026-11-03T14:39:29Z",
    "form": "8-K",
@@ -2333,31 +2354,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1677576/000167757626000005/0001677576-26-000005-index.htm"
-  },
-  {
-   "time": "2026-11-02T21:45:28Z",
-   "form": "8-K",
-   "company": "UMH PROPERTIES, INC.",
-   "cik": 752642,
-   "ticker": "UMH",
-   "role": "Filer",
-   "accession": "0001493152-26-049634",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/752642/000149315226049634/0001493152-26-049634-index.htm"
   }
  ],
  "activist_stakes_3d": [
@@ -2615,6 +2611,44 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-03T15:28:59Z",
+   "form": "8-K",
+   "company": "AMETEK INC/",
+   "cik": 1037868,
+   "ticker": "AME",
+   "role": "Filer",
+   "accession": "0001037868-26-000194",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/0001037868-26-000194-index.htm"
+  },
+  {
+   "time": "2026-11-03T15:10:10Z",
+   "form": "8-K",
+   "company": "Federal Home Loan Bank of Indianapolis",
+   "cik": 1331754,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001331754-26-000215",
+   "items": [
+    {
+     "item": "2.03",
+     "meaning": "New debt"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1331754/000133175426000215/0001331754-26-000215-index.htm"
+  },
   {
    "time": "2026-11-03T14:53:43Z",
    "form": "10-Q",
