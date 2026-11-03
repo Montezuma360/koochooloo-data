@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T22:31:40Z",
+ "updated": "2026-11-03T23:02:43Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2410,6 +2410,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-03T22:49:33Z",
+   "form": "SCHEDULE 13D",
+   "company": "ADM TRONICS UNLIMITED, INC.",
+   "cik": 849401,
+   "ticker": "ADMT",
+   "role": "Subject",
+   "accession": "0001140361-26-041845",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/849401/000114036126041845/0001140361-26-041845-index.htm"
+  },
+  {
    "time": "2026-11-03T22:30:02Z",
    "form": "SCHEDULE 13D/A",
    "company": "Playboy, Inc.",
@@ -2816,21 +2828,33 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1821159/000110465926120924/0001104659-26-120924-index.htm"
-  },
-  {
-   "time": "2026-11-02T11:12:28Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Penguin Solutions, Inc.",
-   "cik": 1616533,
-   "ticker": "PENG",
-   "role": "Subject",
-   "accession": "0001193125-26-442534",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1616533/000119312526442534/0001193125-26-442534-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-03T22:49:33Z",
+   "form": "SCHEDULE 13D",
+   "company": "WASSON GREGORY D",
+   "cik": 1188827,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001140361-26-041845",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1188827/000114036126041845/0001140361-26-041845-index.htm"
+  },
+  {
+   "time": "2026-11-03T22:49:33Z",
+   "form": "SCHEDULE 13D",
+   "company": "ADM TRONICS UNLIMITED, INC.",
+   "cik": 849401,
+   "ticker": "ADMT",
+   "role": "Subject",
+   "accession": "0001140361-26-041845",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/849401/000114036126041845/0001140361-26-041845-index.htm"
+  },
   {
    "time": "2026-11-03T22:30:02Z",
    "form": "SCHEDULE 13D/A",
@@ -17451,30 +17475,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1287098/000154420426000010/0001544204-26-000010-index.htm"
-  },
-  {
-   "time": "2026-11-02T12:32:50Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "EVgo Member Holdings, LLC",
-   "cik": 2041483,
-   "ticker": null,
-   "role": "Filed by",
-   "accession": "0001104659-26-120924",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2041483/000110465926120924/0001104659-26-120924-index.htm"
-  },
-  {
-   "time": "2026-11-02T12:32:50Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "EVgo Inc.",
-   "cik": 1821159,
-   "ticker": "EVGO",
-   "role": "Subject",
-   "accession": "0001104659-26-120924",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1821159/000110465926120924/0001104659-26-120924-index.htm"
   }
  ]
 }
