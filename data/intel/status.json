@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-03T17:33:35Z",
+ "updated": "2026-11-03T18:06:11Z",
  "market_open": true,
  "failed": {},
  "sources": {
   "crypto": {
-   "last_try": "2026-11-03T17:33:35Z",
+   "last_try": "2026-11-03T18:06:11Z",
    "result": "100 coins, 15 trending, 3 exchanges",
-   "last_ok": "2026-11-03T17:33:35Z",
-   "seconds": 2.0,
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 1.9,
    "every_minutes": 5
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-03T17:33:35Z",
+   "last_try": "2026-11-03T18:06:11Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-03T17:33:35Z",
+   "last_ok": "2026-11-03T18:06:11Z",
    "seconds": 0.3,
    "every_minutes": 5
   },
@@ -25,38 +25,38 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-03T17:33:35Z",
-   "result": "block 974417, 1 sat/vB",
-   "last_ok": "2026-11-03T17:33:35Z",
-   "seconds": 1.4,
+   "last_try": "2026-11-03T18:06:11Z",
+   "result": "block 974420, 1 sat/vB",
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 1.8,
    "every_minutes": 10
   },
   "onchain_daily": {
-   "last_try": "2026-11-03T12:03:19Z",
+   "last_try": "2026-11-03T18:06:11Z",
    "result": "5 charts",
-   "last_ok": "2026-11-03T12:03:19Z",
-   "seconds": 2.9,
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 2.1,
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-03T17:33:35Z",
+   "last_try": "2026-11-03T18:06:11Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-03T17:33:35Z",
-   "seconds": 3.4,
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 4.7,
    "every_minutes": 5
   },
   "ecb_fx": {
-   "last_try": "2026-11-03T15:49:48Z",
+   "last_try": "2026-11-03T18:06:11Z",
    "result": "2026-11-03, 30 currencies",
-   "last_ok": "2026-11-03T15:49:48Z",
-   "seconds": 1.0,
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 0.6,
    "every_minutes": 120
   },
   "macro_global": {
-   "last_try": "2026-11-03T12:03:19Z",
+   "last_try": "2026-11-03T18:06:11Z",
    "result": "11 series",
-   "last_ok": "2026-11-03T12:03:19Z",
-   "seconds": 89.1,
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 3.5,
    "every_minutes": 360
   },
   "calendar": {
@@ -67,38 +67,38 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-03T17:33:35Z",
-   "result": "15 new headlines from 15 feeds",
-   "last_ok": "2026-11-03T17:33:35Z",
-   "seconds": 4.5,
+   "last_try": "2026-11-03T18:06:11Z",
+   "result": "28 new headlines from 15 feeds",
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 3.4,
    "every_minutes": 5
   },
   "sec_filings": {
-   "last_try": "2026-11-03T17:33:35Z",
-   "result": "8 new filings (0 with a red flag)",
-   "last_ok": "2026-11-03T17:33:35Z",
-   "seconds": 2.3,
+   "last_try": "2026-11-03T18:06:11Z",
+   "result": "13 new filings (0 with a red flag)",
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 1.9,
    "every_minutes": 5
   },
   "options": {
-   "last_try": "2026-11-03T17:33:35Z",
-   "result": "12 chains, put/call 0.898, 44 unusual",
-   "last_ok": "2026-11-03T17:33:35Z",
-   "seconds": 3.7,
+   "last_try": "2026-11-03T18:06:11Z",
+   "result": "12 chains, put/call 0.908, 51 unusual",
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 3.9,
    "every_minutes": 15
   },
   "fear_greed": {
-   "last_try": "2026-11-03T17:33:35Z",
-   "result": "20.4 (Extreme fear), 6 parts",
-   "last_ok": "2026-11-03T17:33:35Z",
-   "seconds": 2.4,
+   "last_try": "2026-11-03T18:06:11Z",
+   "result": "20.8 (Extreme fear), 6 parts",
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 1.8,
    "every_minutes": 15
   },
   "stocktwits": {
-   "last_try": "2026-11-03T17:33:35Z",
+   "last_try": "2026-11-03T18:06:11Z",
    "result": "30 trending",
-   "last_ok": "2026-11-03T17:33:35Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-03T18:06:11Z",
+   "seconds": 0.1,
    "every_minutes": 15
   },
   "reddit_forums": {
@@ -109,16 +109,16 @@
    "every_minutes": 60
   },
   "finnhub": {
-   "last_try": "2026-11-03T12:03:19Z",
+   "last_try": "2026-11-03T18:06:11Z",
    "result": "skipped: add FINNHUB_KEY secret to switch on",
-   "last_ok": "2026-11-03T12:03:19Z",
+   "last_ok": "2026-11-03T18:06:11Z",
    "seconds": 0.0,
    "every_minutes": 360
   },
   "crypto_sectors": {
-   "last_try": "2026-11-03T17:17:44Z",
-   "result": "381 sectors; best bStocks Ecosystem +25.0%, worst Decentralized Identifier (DID) -4.8%",
-   "last_ok": "2026-11-03T17:17:44Z",
+   "last_try": "2026-11-03T18:06:11Z",
+   "result": "381 sectors; best bStocks Ecosystem +21.7%, worst Decentralized Identifier (DID) -4.2%",
+   "last_ok": "2026-11-03T18:06:11Z",
    "seconds": 0.1,
    "every_minutes": 30
   }
