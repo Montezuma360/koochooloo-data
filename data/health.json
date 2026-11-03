@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T14:05:40Z",
+ "updated": "2026-11-03T14:27:00Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -8,7 +8,7 @@
  "feeds": {
   "prices": {
    "updated": "2026-11-03T14:05:03Z",
-   "age_hours": 0.01,
+   "age_hours": 0.37,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -18,7 +18,7 @@
   },
   "sec_insiders": {
    "updated": "2026-11-03T13:39:23Z",
-   "age_hours": 0.44,
+   "age_hours": 0.79,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
@@ -28,7 +28,7 @@
   },
   "signals": {
    "updated": "2026-11-03T14:05:39Z",
-   "age_hours": 0.0,
+   "age_hours": 0.36,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-03T13:28:42Z",
-   "age_hours": 0.62,
+   "age_hours": 0.97,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-03T00:00:02Z",
-   "age_hours": 14.09,
+   "age_hours": 14.45,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -54,7 +54,7 @@
   },
   "paper_trading": {
    "updated": "2026-11-02T23:45:10+00:00",
-   "age_hours": 14.34,
+   "age_hours": 14.7,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -62,7 +62,7 @@
   },
   "intelligence": {
    "updated": "2026-11-03T14:05:09Z",
-   "age_hours": 0.01,
+   "age_hours": 0.36,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -72,17 +72,17 @@
   }
  },
  "workflows": {
+  "Refresh signals and dashboard": {
+   "last": "success",
+   "at": "2026-11-03T14:06:03Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 52
+  },
   "Refresh brain data": {
    "last": "success",
    "at": "2026-11-03T14:05:18Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 15
-  },
-  "Refresh signals and dashboard": {
-   "last": "success",
-   "at": "2026-11-03T13:40:26Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 51
+   "runs_in_last_100": 14
   },
   "Refresh SEC insider data": {
    "last": "success",
