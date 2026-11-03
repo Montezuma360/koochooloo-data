@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T01:26:20Z",
+ "updated": "2026-11-03T01:28:18Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,8 +7,8 @@
  "repo_size_mb": 10.1,
  "feeds": {
   "prices": {
-   "updated": "2026-11-02T23:52:27Z",
-   "age_hours": 1.56,
+   "updated": "2026-11-03T01:27:35Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -18,7 +18,7 @@
   },
   "sec_insiders": {
    "updated": "2026-11-03T00:29:15Z",
-   "age_hours": 0.95,
+   "age_hours": 0.98,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
@@ -27,8 +27,8 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-03T00:29:40Z",
-   "age_hours": 0.94,
+   "updated": "2026-11-03T01:28:18Z",
+   "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -37,8 +37,8 @@
    "on_target": null
   },
   "treasury_rates": {
-   "updated": "2026-11-02T23:26:14Z",
-   "age_hours": 2.0,
+   "updated": "2026-11-03T01:27:35Z",
+   "age_hours": 0.01,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-03T00:00:02Z",
-   "age_hours": 1.44,
+   "age_hours": 1.47,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -54,15 +54,15 @@
   },
   "paper_trading": {
    "updated": "2026-11-02T23:45:10+00:00",
-   "age_hours": 1.69,
+   "age_hours": 1.72,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-02T23:52:35Z",
-   "age_hours": 1.56,
+   "updated": "2026-11-03T01:27:50Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -72,9 +72,15 @@
   }
  },
  "workflows": {
+  "Refresh brain data": {
+   "last": "success",
+   "at": "2026-11-03T01:28:01Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 25
+  },
   "Refresh signals and dashboard": {
    "last": "success",
-   "at": "2026-11-03T00:30:08Z",
+   "at": "2026-11-03T01:26:41Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 32
   },
@@ -89,12 +95,6 @@
    "at": "2026-11-03T00:00:25Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 5
-  },
-  "Refresh brain data": {
-   "last": "success",
-   "at": "2026-11-02T23:52:45Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 25
   },
   "Paper trading": {
    "last": "success",
