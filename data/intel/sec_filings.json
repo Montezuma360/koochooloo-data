@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T16:39:39Z",
+ "updated": "2026-11-03T17:17:44Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2358,6 +2358,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-03T17:11:50Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Masonglory Ltd",
+   "cik": 2020228,
+   "ticker": "FFTT",
+   "role": "Subject",
+   "accession": "0001185185-26-005128",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2020228/000118518526005128/0001185185-26-005128-index.htm"
+  },
+  {
    "time": "2026-11-03T13:10:32Z",
    "form": "SCHEDULE 13D",
    "company": "Penguin Solutions, Inc.",
@@ -2611,6 +2623,130 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-03T17:11:50Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Fung & Tun Ltd",
+   "cik": 2108417,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001185185-26-005128",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2108417/000118518526005128/0001185185-26-005128-index.htm"
+  },
+  {
+   "time": "2026-11-03T17:11:50Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Masonglory Ltd",
+   "cik": 2020228,
+   "ticker": "FFTT",
+   "role": "Subject",
+   "accession": "0001185185-26-005128",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2020228/000118518526005128/0001185185-26-005128-index.htm"
+  },
+  {
+   "time": "2026-11-03T17:07:52Z",
+   "form": "10-Q",
+   "company": "Eaton Corp plc",
+   "cik": 1551182,
+   "ticker": "ETN",
+   "role": "Filer",
+   "accession": "0001551182-26-000040",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000040/0001551182-26-000040-index.htm"
+  },
+  {
+   "time": "2026-11-03T17:05:46Z",
+   "form": "8-K",
+   "company": "Federal Home Loan Bank of Dallas",
+   "cik": 1331757,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001331757-26-000197",
+   "items": [
+    {
+     "item": "2.03",
+     "meaning": "New debt"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1331757/000133175726000197/0001331757-26-000197-index.htm"
+  },
+  {
+   "time": "2026-11-03T16:58:29Z",
+   "form": "8-K",
+   "company": "Macquarie Infrastructure Income Opportunities Fund",
+   "cik": 2050809,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001193125-26-444733",
+   "items": [
+    {
+     "item": "3.02",
+     "meaning": "Unregistered share sale"
+    },
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2050809/000119312526444733/0001193125-26-444733-index.htm"
+  },
+  {
+   "time": "2026-11-03T16:50:36Z",
+   "form": "8-K",
+   "company": "Kairos Pharma, LTD.",
+   "cik": 1962011,
+   "ticker": "KAPA",
+   "role": "Filer",
+   "accession": "0001493152-26-049744",
+   "items": [
+    {
+     "item": "1.01",
+     "meaning": "Major agreement signed"
+    },
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1962011/000149315226049744/0001493152-26-049744-index.htm"
+  },
+  {
+   "time": "2026-11-03T16:40:30Z",
+   "form": "8-K",
+   "company": "22nd Century Group, Inc.",
+   "cik": 1347858,
+   "ticker": "XXII",
+   "role": "Filer",
+   "accession": "0001493152-26-049743",
+   "items": [
+    {
+     "item": "3.03",
+     "meaning": "Shareholder rights changed"
+    },
+    {
+     "item": "5.03",
+     "meaning": "Bylaws changed"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1347858/000149315226049743/0001493152-26-049743-index.htm"
+  },
   {
    "time": "2026-11-03T16:34:37Z",
    "form": "8-K",
