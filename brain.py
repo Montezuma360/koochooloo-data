@@ -396,6 +396,57 @@ def health_block():
             "feeds": feeds, "intelligence_sources": intel, "checked": h.get("updated")}
 
 
+PART_MAX = 15000  # the terminal reads through a connector that returns files up to about 16 KB whole
+
+
+def write_parts(brain):
+    """Split the brain into small topic files for the terminal: data/brain/<part>.json plus index.json, which lists
+    every part with a short hash so the terminal fetches only the parts that changed. Unchanged parts are not rewritten."""
+    import hashlib
+    out = D / "brain"
+    out.mkdir(exist_ok=True)
+    dump = lambda o: json.dumps(o, separators=(",", ":"), default=str)
+    parts = {"core": {k: brain.get(k) for k in ("updated", "summary", "regime", "fear_greed", "evidence_notes", "health")},
+             "markets": brain["markets"], "macro": brain["macro"], "crypto": brain["crypto"], "news": brain["news"],
+             "sec": brain["sec"], "options": brain["options"], "sentiment": brain["sentiment"], "paper": brain["paper"]}
+
+    def chunk(items):
+        groups, cur = [], []
+        for it in items:
+            if cur and len(dump(cur + [it])) > PART_MAX:
+                groups.append(cur)
+                cur = []
+            cur.append(it)
+        return groups + ([cur] if cur else [])
+    cards = chunk(brain["stocks"])   # full stock cards, fetched when someone asks about a stock
+    rows = []                        # one compact row per stock, always fetched
+    for i, group in enumerate(cards):
+        parts["stocks_%d" % i] = group
+        for s in group:
+            p = s.get("price") or {}
+            rows.append([s["symbol"], int(s["research_setup"]), ",".join(s["evidence_types"]), len(s.get("warnings") or []),
+                         p.get("price"), p.get("change_1d_pct"), p.get("rsi14"), (p.get("size") or "").split(" ")[0], i,
+                         (s.get("setup_missing") or [None])[0]])
+    lists = chunk(rows)
+    for i, group in enumerate(lists):
+        parts["list_%d" % i] = group
+    hashes = {}
+    for name, obj in parts.items():
+        txt = dump(obj)
+        hashes[name] = hashlib.sha1(txt.encode()).hexdigest()[:10]
+        f = out / (name + ".json")
+        if not f.exists() or f.read_text() != txt:
+            f.write_text(txt)
+    for f in out.glob("*.json"):  # parts that no longer exist (fewer stocks than before)
+        if f.stem != "index" and f.stem not in parts:
+            f.unlink()
+    index = {"g": brain["updated"], "parts": hashes, "stock_parts": len(cards), "list_parts": len(lists),
+             "list_fields": ["symbol", "research_setup", "evidence_types", "warnings", "price", "change_1d_pct", "rsi14", "size",
+                             "stock_part", "setup_missing"]}
+    (out / "index.json").write_text(dump(index))
+    return len(parts)
+
+
 def main():
     t0 = time.time()
     cache = load("brain_cache.json") or {}
@@ -438,6 +489,7 @@ def main():
     }
     brain["seconds_to_build"] = round(time.time() - t0, 1)
     (D / "brain.json").write_text(json.dumps(brain, separators=(",", ":"), default=str))
+    n_parts = write_parts(brain)
     (D / "brain_cache.json").write_text(json.dumps(cache, separators=(",", ":"), default=str))
     print("\n".join(summary))
     print("stocks %d, research setups %d, %.0f KB, %.1fs" % (len(stocks), len(setups), (D / "brain.json").stat().st_size / 1024, time.time() - t0))
