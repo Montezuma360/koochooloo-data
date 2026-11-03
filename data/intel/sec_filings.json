@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T18:22:40Z",
+ "updated": "2026-11-03T19:15:41Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -117,6 +117,27 @@
   }
  ],
  "results_announced_3d": [
+  {
+   "time": "2026-11-03T18:22:34Z",
+   "form": "8-K",
+   "company": "PAMT CORP",
+   "cik": 798287,
+   "ticker": "PAMT",
+   "role": "Filer",
+   "accession": "0001437749-26-034598",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/798287/000143774926034598/0001437749-26-034598-index.htm"
+  },
   {
    "time": "2026-11-03T18:08:52Z",
    "form": "8-K",
@@ -2325,34 +2346,21 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/784539/000110465926121453/0001104659-26-121453-index.htm"
-  },
-  {
-   "time": "2026-11-02T21:52:40Z",
-   "form": "8-K",
-   "company": "Atlas Energy Solutions Inc.",
-   "cik": 1984060,
-   "ticker": "AESI",
-   "role": "Filer",
-   "accession": "0001193125-26-443818",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1984060/000119312526443818/0001193125-26-443818-index.htm"
   }
  ],
  "activist_stakes_3d": [
+  {
+   "time": "2026-11-03T19:01:43Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "XCF Global, Inc.",
+   "cik": 2019793,
+   "ticker": "SAFX",
+   "role": "Subject",
+   "accession": "0002106572-26-000006",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2019793/000210657226000006/0002106572-26-000006-index.htm"
+  },
   {
    "time": "2026-11-03T17:11:50Z",
    "form": "SCHEDULE 13D/A",
@@ -2619,6 +2627,294 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-03T19:13:43Z",
+   "form": "8-K",
+   "company": "Federal Home Loan Bank of New York",
+   "cik": 1329842,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001654954-26-009475",
+   "items": [
+    {
+     "item": "2.03",
+     "meaning": "New debt"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1329842/000165495426009475/0001654954-26-009475-index.htm"
+  },
+  {
+   "time": "2026-11-03T19:11:34Z",
+   "form": "8-K",
+   "company": "Federal Home Loan Bank of Cincinnati",
+   "cik": 1326771,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001326771-26-000177",
+   "items": [
+    {
+     "item": "2.03",
+     "meaning": "New debt"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1326771/000132677126000177/0001326771-26-000177-index.htm"
+  },
+  {
+   "time": "2026-11-03T19:10:35Z",
+   "form": "8-K",
+   "company": "Federal Home Loan Bank of Topeka",
+   "cik": 1325878,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001325878-26-000228",
+   "items": [
+    {
+     "item": "5.02",
+     "meaning": "Director or executive change"
+    },
+    {
+     "item": "5.07",
+     "meaning": "Shareholder vote results"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1325878/000132587826000228/0001325878-26-000228-index.htm"
+  },
+  {
+   "time": "2026-11-03T19:01:43Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "EEME Energy SPV I, LLC",
+   "cik": 2106572,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0002106572-26-000006",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2106572/000210657226000006/0002106572-26-000006-index.htm"
+  },
+  {
+   "time": "2026-11-03T19:01:43Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "XCF Global, Inc.",
+   "cik": 2019793,
+   "ticker": "SAFX",
+   "role": "Subject",
+   "accession": "0002106572-26-000006",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2019793/000210657226000006/0002106572-26-000006-index.htm"
+  },
+  {
+   "time": "2026-11-03T19:00:16Z",
+   "form": "8-K",
+   "company": "NATIONAL BANKSHARES INC",
+   "cik": 796534,
+   "ticker": "NKSH",
+   "role": "Filer",
+   "accession": "0001193125-26-445014",
+   "items": [
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/796534/000119312526445014/0001193125-26-445014-index.htm"
+  },
+  {
+   "time": "2026-11-03T19:00:16Z",
+   "form": "8-K",
+   "company": "NATIONAL BANKSHARES INC",
+   "cik": 796534,
+   "ticker": "NKSH",
+   "role": "Filer",
+   "accession": "0001193125-26-445013",
+   "items": [
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/796534/000119312526445013/0001193125-26-445013-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:57:05Z",
+   "form": "8-K",
+   "company": "SAFETY INSURANCE GROUP INC",
+   "cik": 1172052,
+   "ticker": "SAFT",
+   "role": "Filer",
+   "accession": "0001172052-26-000026",
+   "items": [
+    {
+     "item": "5.07",
+     "meaning": "Shareholder vote results"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1172052/000117205226000026/0001172052-26-000026-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:53:20Z",
+   "form": "8-K",
+   "company": "Federal Home Loan Bank of Boston",
+   "cik": 1331463,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001331463-26-000213",
+   "items": [
+    {
+     "item": "2.03",
+     "meaning": "New debt"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1331463/000133146326000213/0001331463-26-000213-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:50:42Z",
+   "form": "8-K",
+   "company": "TRIMBLE INC.",
+   "cik": 864749,
+   "ticker": "TRMB",
+   "role": "Filer",
+   "accession": "0000864749-26-000115",
+   "items": [
+    {
+     "item": "5.02",
+     "meaning": "Director or executive change"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000115/0000864749-26-000115-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:48:34Z",
+   "form": "10-Q",
+   "company": "AMETEK INC/",
+   "cik": 1037868,
+   "ticker": "AME",
+   "role": "Filer",
+   "accession": "0001037868-26-000196",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/0001037868-26-000196-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:43:40Z",
+   "form": "10-Q",
+   "company": "AbbVie Inc.",
+   "cik": 1551152,
+   "ticker": "ABBV",
+   "role": "Filer",
+   "accession": "0001551152-26-000037",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000037/0001551152-26-000037-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:35:22Z",
+   "form": "8-K",
+   "company": "COMMERCE BANCSHARES INC /MO/",
+   "cik": 22356,
+   "ticker": "CBSH",
+   "role": "Filer",
+   "accession": "0000022356-26-000211",
+   "items": [
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/22356/000002235626000211/0000022356-26-000211-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:29:50Z",
+   "form": "8-K",
+   "company": "VISTA CREDIT STRATEGIC LENDING CORP.",
+   "cik": 1919369,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001193125-26-444927",
+   "items": [
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1919369/000119312526444927/0001193125-26-444927-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:28:53Z",
+   "form": "8-K",
+   "company": "Federal Home Loan Bank of Des Moines",
+   "cik": 1325814,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001325814-26-000173",
+   "items": [
+    {
+     "item": "2.03",
+     "meaning": "New debt"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1325814/000132581426000173/0001325814-26-000173-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:23:48Z",
+   "form": "10-Q",
+   "company": "Palisades Venture Inc.",
+   "cik": 2010982,
+   "ticker": "PVIT",
+   "role": "Filer",
+   "accession": "0001683168-26-008258",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2010982/000168316826008258/0001683168-26-008258-index.htm"
+  },
+  {
+   "time": "2026-11-03T18:22:34Z",
+   "form": "8-K",
+   "company": "PAMT CORP",
+   "cik": 798287,
+   "ticker": "PAMT",
+   "role": "Filer",
+   "accession": "0001437749-26-034598",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/798287/000143774926034598/0001437749-26-034598-index.htm"
+  },
   {
    "time": "2026-11-03T18:14:21Z",
    "form": "10-Q",
