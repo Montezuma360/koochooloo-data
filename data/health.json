@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T09:21:22Z",
+ "updated": "2026-11-03T09:25:30Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
@@ -10,7 +10,7 @@
  "feeds": {
   "prices": {
    "updated": "2026-11-03T09:10:56Z",
-   "age_hours": 0.17,
+   "age_hours": 0.24,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -20,7 +20,7 @@
   },
   "sec_insiders": {
    "updated": "2026-11-03T09:20:59Z",
-   "age_hours": 0.01,
+   "age_hours": 0.08,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
@@ -30,7 +30,7 @@
   },
   "signals": {
    "updated": "2026-11-03T09:21:22Z",
-   "age_hours": 0.0,
+   "age_hours": 0.07,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -40,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-03T09:10:56Z",
-   "age_hours": 0.17,
+   "age_hours": 0.24,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-03T00:00:02Z",
-   "age_hours": 9.36,
+   "age_hours": 9.42,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -56,7 +56,7 @@
   },
   "paper_trading": {
    "updated": "2026-11-02T23:45:10+00:00",
-   "age_hours": 9.6,
+   "age_hours": 9.67,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -64,7 +64,7 @@
   },
   "intelligence": {
    "updated": "2026-11-03T09:11:07Z",
-   "age_hours": 0.17,
+   "age_hours": 0.24,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -76,17 +76,17 @@
   }
  },
  "workflows": {
+  "Refresh signals and dashboard": {
+   "last": "success",
+   "at": "2026-11-03T09:21:33Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 44
+  },
   "Refresh SEC insider data": {
    "last": "success",
    "at": "2026-11-03T09:21:03Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 20
-  },
-  "Refresh signals and dashboard": {
-   "last": "success",
-   "at": "2026-11-03T09:11:49Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 44
   },
   "Refresh brain data": {
    "last": "success",
