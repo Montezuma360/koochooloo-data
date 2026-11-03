@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T23:02:43Z",
+ "updated": "2026-11-03T23:54:57Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2410,6 +2410,30 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-03T23:16:18Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Blackstone Long-Short Credit Income Fund",
+   "cik": 1504234,
+   "ticker": "BGX",
+   "role": "Subject",
+   "accession": "0001062993-26-005729",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1504234/000106299326005729/0001062993-26-005729-index.htm"
+  },
+  {
+   "time": "2026-11-03T23:10:48Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "CARVANA CO.",
+   "cik": 1690820,
+   "ticker": "CVNA",
+   "role": "Subject",
+   "accession": "0001193125-26-445725",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1690820/000119312526445725/0001193125-26-445725-index.htm"
+  },
+  {
    "time": "2026-11-03T22:49:33Z",
    "form": "SCHEDULE 13D",
    "company": "ADM TRONICS UNLIMITED, INC.",
@@ -2816,21 +2840,57 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1287098/000154420426000010/0001544204-26-000010-index.htm"
-  },
-  {
-   "time": "2026-11-02T12:32:50Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "EVgo Inc.",
-   "cik": 1821159,
-   "ticker": "EVGO",
-   "role": "Subject",
-   "accession": "0001104659-26-120924",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1821159/000110465926120924/0001104659-26-120924-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-03T23:16:18Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Saba Capital Management, L.P.",
+   "cik": 1510281,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001062993-26-005729",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1510281/000106299326005729/0001062993-26-005729-index.htm"
+  },
+  {
+   "time": "2026-11-03T23:16:18Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Blackstone Long-Short Credit Income Fund",
+   "cik": 1504234,
+   "ticker": "BGX",
+   "role": "Subject",
+   "accession": "0001062993-26-005729",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1504234/000106299326005729/0001062993-26-005729-index.htm"
+  },
+  {
+   "time": "2026-11-03T23:10:48Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "CARVANA CO.",
+   "cik": 1690820,
+   "ticker": "CVNA",
+   "role": "Subject",
+   "accession": "0001193125-26-445725",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1690820/000119312526445725/0001193125-26-445725-index.htm"
+  },
+  {
+   "time": "2026-11-03T23:10:48Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "GARCIA ERNEST C. II",
+   "cik": 1017608,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001193125-26-445725",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1017608/000119312526445725/0001193125-26-445725-index.htm"
+  },
   {
    "time": "2026-11-03T22:49:33Z",
    "form": "SCHEDULE 13D",
@@ -17427,54 +17487,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/10329/000181306526000002/0001813065-26-000002-index.htm"
-  },
-  {
-   "time": "2026-11-02T15:40:23Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "AMG BBH Asset-Backed Credit Fund, LLC",
-   "cik": 2097545,
-   "ticker": null,
-   "role": "Subject",
-   "accession": "0000929638-26-004179",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2097545/000092963826004179/0000929638-26-004179-index.htm"
-  },
-  {
-   "time": "2026-11-02T15:40:23Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "BROWN BROTHERS HARRIMAN & CO",
-   "cik": 14661,
-   "ticker": null,
-   "role": "Filed by",
-   "accession": "0000929638-26-004179",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/14661/000092963826004179/0000929638-26-004179-index.htm"
-  },
-  {
-   "time": "2026-11-02T15:19:12Z",
-   "form": "SCHEDULE 13D",
-   "company": "Liontrust Investment Partners LLP",
-   "cik": 1544204,
-   "ticker": null,
-   "role": "Filed by",
-   "accession": "0001544204-26-000010",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1544204/000154420426000010/0001544204-26-000010-index.htm"
-  },
-  {
-   "time": "2026-11-02T15:19:12Z",
-   "form": "SCHEDULE 13D",
-   "company": "MAXCYTE, INC.",
-   "cik": 1287098,
-   "ticker": "MXCT",
-   "role": "Subject",
-   "accession": "0001544204-26-000010",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1287098/000154420426000010/0001544204-26-000010-index.htm"
   }
  ]
 }
