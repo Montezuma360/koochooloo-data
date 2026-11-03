@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T20:56:14Z",
+ "updated": "2026-11-03T21:05:58Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -26,7 +26,7 @@
   ],
   [
    "AMZN",
-   12
+   13
   ],
   [
    "MSFT",
@@ -49,16 +49,20 @@
    8
   ],
   [
-   "PLTR",
-   7
-  ],
-  [
    "AVGO",
    6
   ],
   [
-   "TSLA",
+   "PLTR",
    6
+  ],
+  [
+   "TSLA",
+   5
+  ],
+  [
+   "ETH",
+   3
   ],
   [
    "BTC",
@@ -73,8 +77,8 @@
    2
   ],
   [
-   "ETH",
-   2
+   "SOL",
+   1
   ],
   [
    "UNH",
@@ -99,10 +103,40 @@
  ],
  "items": [
   {
+   "time": "2026-11-03T21:00:00Z",
+   "source": "Yahoo Finance",
+   "title": "Tesla, Amazon, and SpaceX among companies snubbing tokenized stocks",
+   "link": "https://finance.yahoo.com/video/tesla-amazon-spacex-among-companies-210000505.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMZN",
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-03T20:57:07Z",
+   "source": "Yahoo Finance",
+   "title": "Aptos joins Solana and Ethereum in Bullish\u2019s tokenized stock plan",
+   "link": "https://www.thestreet.com/crypto/innovation/aptos-joins-solana-and-ethereum-in-bullishs-tokenized-stock-plan?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "ETH",
+    "SOL"
+   ]
+  },
+  {
    "time": "2026-11-03T20:52:14Z",
    "source": "CNBC",
    "title": "Fannie Mae, Freddie Mac rally as Ackman presses for conservatorship exit",
    "link": "https://www.cnbc.com/2026/11/03/ackman-fannie-mae-freddie-mac-conservatorship.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T20:50:58Z",
+   "source": "Yahoo Finance",
+   "title": "Gartner Stock Crashed Despite Raised Guidance. Here's What Spooked Investors",
+   "link": "https://www.fool.com/investing/2026/11/03/gartner-stock-crashed-despite-raised-guidance-here-s-what-spooked-investors/?.tsrc=rss",
    "kind": "markets",
    "tags": []
   },
@@ -159,6 +193,14 @@
    "source": "Investing.com",
    "title": "Dorman Products at 50th annual automotive symposium: margin path steady",
    "link": "https://www.investing.com/news/transcripts/dorman-products-at-50th-annual-automotive-symposium-margin-path-steady-93CH-4996330",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T20:42:30Z",
+   "source": "Yahoo Finance",
+   "title": "Oman Wants to Turn War Profits into Long-term Economic Gains",
+   "link": "https://app.moby.co/home/news/news-oman-wants-to-turn-war-profits-into-longterm-economic-gains?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
    "kind": "markets",
    "tags": []
   },
@@ -3480,44 +3522,6 @@
    "link": "https://247wallst.com/investing/2026/11/03/ive-been-adding-celestica-because-it-appears-to-be-a-hidden-ai-gem/?.tsrc=rss",
    "kind": "markets",
    "tags": []
-  },
-  {
-   "time": "2026-11-03T13:45:39Z",
-   "source": "Yahoo Finance",
-   "title": "SpaceX Vs. Tesla: Both Troubled, But SpaceX Faces The Tougher Q4",
-   "link": "https://247wallst.com/investing/2026/11/03/spacex-vs-tesla-both-troubled-but-spacex-faces-the-tougher-q4/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-03T13:44:25Z",
-   "source": "Yahoo Finance",
-   "title": "Palantir Falls 6% Despite Earnings Beat and Raised Outlook; Datadog Drops 3%, Snowflake Slides 2%",
-   "link": "https://247wallst.com/investing/2026/11/03/palantir-falls-6-despite-earnings-beat-and-raised-outlook-datadog-drops-3-snowflake-slides-2/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "PLTR"
-   ]
-  },
-  {
-   "time": "2026-11-03T13:43:56Z",
-   "source": "Yahoo Finance",
-   "title": "AI Spending Has Gone From $140 Billion to $740 Billion in 3 Years, and Ackman Is Buying",
-   "link": "https://247wallst.com/investing/2026/11/03/ai-spending-has-gone-from-140-billion-to-740-billion-in-3-years-and-ackman-is-buying/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T13:43:55Z",
-   "source": "Yahoo Finance",
-   "title": "Tesla China Brushes Off Weak October, Still Up 21% In 2026",
-   "link": "https://finance.yahoo.com/m/c170891e-a2a9-3a19-9c03-21c31d035761/tesla-china-brushes-off-weak.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
   }
  ]
 }
