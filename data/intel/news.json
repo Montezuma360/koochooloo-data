@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T11:13:39Z",
+ "updated": "2026-11-03T12:03:19Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,10 +7,10 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 20,
+  "Yahoo Finance": 18,
   "CoinDesk": 25,
   "Cointelegraph": 30,
-  "Decrypt": 39,
+  "Decrypt": 38,
   "The Block": 20,
   "Federal Reserve": 20,
   "SEC": 25,
@@ -22,27 +22,31 @@
  "most_mentioned_24h": [
   [
    "AAPL",
-   46
+   51
   ],
   [
    "BTC",
-   15
+   14
   ],
   [
    "AMZN",
-   10
+   11
   ],
   [
    "PLTR",
-   9
-  ],
-  [
-   "NVDA",
-   8
+   10
   ],
   [
    "GOOGL",
+   8
+  ],
+  [
+   "NVDA",
    7
+  ],
+  [
+   "TSLA",
+   4
   ],
   [
    "MSFT",
@@ -65,8 +69,8 @@
    2
   ],
   [
-   "TSLA",
-   2
+   "ETH",
+   1
   ],
   [
    "META",
@@ -83,17 +87,327 @@
   [
    "SOL",
    1
-  ],
-  [
-   "ETH",
-   1
-  ],
-  [
-   "COST",
-   1
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-03T12:01:12Z",
+   "source": "CNBC",
+   "title": "Yum Brands earnings beat estimates, but cyclospora outbreak weighs on Taco Bell",
+   "link": "https://www.cnbc.com/2026/11/03/yum-brands-yum-q3-2026-earnings.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T12:01:05Z",
+   "source": "CoinDesk",
+   "title": "ETHGas wants to bring Wall Street to public Ethereum by selling advance block reservations",
+   "link": "https://www.coindesk.com/business/2026/11/03/ethgas-courts-wall-street-with-ethereum-blockspace-but-compensation-for-missed-trades-is-zero",
+   "kind": "crypto",
+   "tags": [
+    "ETH"
+   ]
+  },
+  {
+   "time": "2026-11-03T12:00:58Z",
+   "source": "CNBC",
+   "title": "Versant earnings beat expectations as digital platforms drive growth",
+   "link": "https://www.cnbc.com/2026/11/03/versant-vsnt-q3-2026-earnings.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T12:00:54Z",
+   "source": "CNBC",
+   "title": "Pfizer hikes full-year outlook, taps company veteran as new CFO",
+   "link": "https://www.cnbc.com/2026/11/03/pfizer-pfe-earnings-q3-2026.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:59:53Z",
+   "source": "CNBC",
+   "title": "Apple is falling on its latest earnings report. Why most analysts still like the stock",
+   "link": "https://www.cnbc.com/2026/11/03/apple-earnings-analysts-margin-outlook.html",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:54:28Z",
+   "source": "CNBC",
+   "title": "Midterm elections could jolt stocks if Democrats sweep Congress",
+   "link": "https://www.cnbc.com/2026/11/03/midterm-election-stock-market.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:53:51Z",
+   "source": "Investing.com",
+   "title": "Pfizer earnings beat by $0.14, revenue topped estimates",
+   "link": "https://www.investing.com/news/earnings/pfizer-earnings-beat-by-014-revenue-topped-estimates-4994584",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:53:38Z",
+   "source": "Investing.com",
+   "title": "Sophia Genetics earnings missed by $0.06, revenue topped estimates",
+   "link": "https://www.investing.com/news/earnings/sophia-genetics-earnings-missed-by-006-revenue-topped-estimates-4994583",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:52:58Z",
+   "source": "Investing.com",
+   "title": "Canaccord raises Waystar stock price target on strong margins",
+   "link": "https://www.investing.com/news/analyst-ratings/canaccord-raises-waystar-stock-price-target-on-strong-margins-93CH-4994582",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:52:54Z",
+   "source": "Investing.com",
+   "title": "Canaccord raises Hinge Health stock price target on strong billings",
+   "link": "https://www.investing.com/news/analyst-ratings/canaccord-raises-hinge-health-stock-price-target-on-strong-billings-93CH-4994581",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:52:51Z",
+   "source": "Investing.com",
+   "title": "Adeia stock price target maintained at $35 by Rosenblatt on IP strength",
+   "link": "https://www.investing.com/news/analyst-ratings/adeia-stock-price-target-maintained-at-35-by-rosenblatt-on-ip-strength-93CH-4994580",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:52:38Z",
+   "source": "Investing.com",
+   "title": "Dynatrace shares tumble 16% on disappointing guidance outlook",
+   "link": "https://www.investing.com/news/earnings/dynatrace-shares-tumble-16-on-disappointing-guidance-outlook-93CH-4994579",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:52:27Z",
+   "source": "Investing.com",
+   "title": "Lufthansa Q3 2026 slides: yields surge, cargo triples profit",
+   "link": "https://www.investing.com/news/company-news/lufthansa-q3-2026-slides-yields-surge-cargo-triples-profit-93CH-4994578",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:52:19Z",
+   "source": "Investing.com",
+   "title": "Pfizer increases annual profit forecast amid solid demand for blood thinner drug",
+   "link": "https://www.investing.com/news/earnings/pfizer-increases-annual-profit-forecast-amid-solid-demand-for-blood-thinner-drug-4994577",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:52:16Z",
+   "source": "Investing.com",
+   "title": "Earnings call transcript: Bharat Electronics beats Q2 2026 estimates on strong sales",
+   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-bharat-electronics-beats-q2-2026-estimates-on-strong-sales-93CH-4994576",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:52:02Z",
+   "source": "Investing.com",
+   "title": "Marathon Petroleum earnings beat by $1.55, revenue topped estimates",
+   "link": "https://www.investing.com/news/earnings/marathon-petroleum-earnings-beat-by-155-revenue-topped-estimates-4994574",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:49:20Z",
+   "source": "The Block",
+   "title": "Liquid Network restores full bitcoin backing following $320 million exploit",
+   "link": "https://www.theblock.co/news/ecosystems/2026-11-03-liquid-network-restores-full-bitcoin-backing-following-exploit-432387",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:46:06Z",
+   "source": "Yahoo Finance",
+   "title": "Apple Stock Slides After CEO John Ternus Issues Stark Holiday Quarter Outlook",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/apple-stock-slides-ceo-john-114606048.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:41:51Z",
+   "source": "Yahoo Finance",
+   "title": "CaixaBank enables Apple Pay instalments for in-store purchases",
+   "link": "https://www.electronicpaymentsinternational.com/news/caixabank-enables-apple-pay-instalments-for-in-store-purchases/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:40:00Z",
+   "source": "Yahoo Finance",
+   "title": "The S&P 500's Record Profits Are Hiding a Problem Investors Haven't Seen Before",
+   "link": "https://www.fool.com/investing/2026/11/03/sp-500-record-profits-hiding-problem-not-seen/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:39:43Z",
+   "source": "Yahoo Finance",
+   "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Tuesday; Intel to Advance, Palantir Technologies to Decline",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/social-buzz-wallstreetbets-stocks-mixed-113943051.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "PLTR"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:36:58Z",
+   "source": "Yahoo Finance",
+   "title": "Energy Transition Today - Australia's Wind Energy Surge Driven By Coal Phase-Out",
+   "link": "https://finance.yahoo.com/energy/articles/energy-transition-today-australias-wind-113658958.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:35:13Z",
+   "source": "Yahoo Finance",
+   "title": "Prediction: At 1.6 Million Robots, Optimus Is \u201cGreater Than the Revenue From Tesla.\u201d Musk Sees 625x That",
+   "link": "https://www.tikr.com/blog/prediction-at-1-6-million-robots-optimus-is-greater-than-the-revenue-from-tesla-musk-sees-625x-that?ref=yahoofinance&tlnk=yf-261103-wqr6j629&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:35:00Z",
+   "source": "Yahoo Finance",
+   "title": "Google Recently Warned That Quantum Computers Could Crack Bitcoin. Now It's Selling Protection.",
+   "link": "https://www.fool.com/investing/2026/11/03/google-recently-warned-that-quantum-computers-coul/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "BTC",
+    "GOOGL"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:32:02Z",
+   "source": "Cointelegraph",
+   "title": "Binance\u2019s net inflows turn positive at $2.3B as withdrawals expand",
+   "link": "https://cointelegraph.com/news/binances-daily-inflows-positive-18b-withdrawals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:31:19Z",
+   "source": "Yahoo Finance",
+   "title": "Amazon Stock Gets Stunning Price Target Hike on AWS Growth",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-stock-gets-stunning-price-113119265.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMZN"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:30:39Z",
+   "source": "Yahoo Finance",
+   "title": "Baird Raises Apple Target to $340 Despite Post-Earnings Drop",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/baird-raises-apple-target-340-113039092.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:30:00Z",
+   "source": "Yahoo Finance",
+   "title": "A Once-in-a-Decade Opportunity: 1 Artificial Intelligence (AI) Stock to Buy Before It Soars 60%, According to Wall Street",
+   "link": "https://www.fool.com/investing/2026/11/03/a-once-in-a-decade-opportunity-1-artificial-intell/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:28:00Z",
+   "source": "CoinDesk",
+   "title": "Bitcoin steadies after dip to $76,300 as ETF outflows and midterm elections weigh on crypto",
+   "link": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:25:52Z",
+   "source": "Yahoo Finance",
+   "title": "Nvidia Reportedly Restricts Chinese Access to AI Computing Through Overseas Data Centers",
+   "link": "https://investorshub.advfn.com/market-news/article/39126/nvidia-reportedly-restricts-chinese-access-to-ai-computing-through-overseas-data-centers?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:25:00Z",
+   "source": "Yahoo Finance",
+   "title": "Prediction: Rigetti Computing Stock Is Going to Sink After Nov. 10",
+   "link": "https://www.fool.com/investing/2026/11/03/prediction-rigetti-computing-stock-to-sink-nov-10/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:22:59Z",
+   "source": "Yahoo Finance",
+   "title": "Investors Are Fleeing to Apple and Selling NVIDIA and Tesla: Here\u2019s Why It\u2019s the Only Magnificent 7 Stock to Outperform in 2026",
+   "link": "https://247wallst.com/videos/investors-are-fleeing-to-apple-and-selling-nvidia-and-tesla-heres-why-its-the-only-magnificent-7-stock-to-outperform-in-2026/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL",
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:22:10Z",
+   "source": "Decrypt",
+   "title": "Liquid Network Restores Full Bitcoin Backing Two Months After $320M Exploit",
+   "link": "https://decrypt.co/382397/liquid-network-restores-full-bitcoin-backing-two-months-after-320m-exploit",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:22:09Z",
+   "source": "Yahoo Finance",
+   "title": "Apple Beats Q4 Earnings Forecasts but Warns Rising Memory Costs Will Pressure Holiday Margins",
+   "link": "https://investorshub.advfn.com/market-news/article/39122/apple-beats-q4-earnings-forecasts-but-warns-rising-memory-costs-will-pressure-holiday-margins?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-03T11:20:00Z",
+   "source": "Yahoo Finance",
+   "title": "Coca-Cola Has Paid Investors a Growing Dividend for 64 Straight Years. Here's the Yearly Passive Income That $2,500 Starts You With.",
+   "link": "https://www.fool.com/investing/2026/11/03/coca-cola-has-paid-investors-a-growing-dividend-fo/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:18:06Z",
+   "source": "Yahoo Finance",
+   "title": "Alstom shares fall 6% as J.P. Morgan, Citi flag prolonged margin pressure",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/alstom-shares-fall-6-j-111806017.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
   {
    "time": "2026-11-03T11:12:20Z",
    "source": "Benzinga",
@@ -180,6 +494,14 @@
    "title": "Liquid\u2019s bitcoin IOUs are fully backed again after a $320 million exploit",
    "link": "https://www.coindesk.com/markets/2026/11/03/liquid-s-bitcoin-ious-are-fully-backed-again-after-a-usd320-million-exploit",
    "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T11:10:14Z",
+   "source": "Yahoo Finance",
+   "title": "Why Williams-Sonoma Stock Gained 11% in October",
+   "link": "https://www.fool.com/investing/2026/11/03/why-williams-sonoma-stock-gained-11-in-october/?.tsrc=rss",
+   "kind": "markets",
    "tags": []
   },
   {
@@ -3199,319 +3521,6 @@
    "tags": [
     "BTC"
    ]
-  },
-  {
-   "time": "2026-11-02T19:27:00Z",
-   "source": "MarketWatch",
-   "title": "How soon gas prices could go down now that oil is tumbling",
-   "link": "https://www.marketwatch.com/story/how-soon-gas-prices-could-go-down-now-that-oil-is-tumbling-a1140dc2?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T19:21:15Z",
-   "source": "CNBC",
-   "title": "Fed will vote on rates less often. What that could mean for borrowers",
-   "link": "https://www.cnbc.com/2026/11/02/fed-rate-votes-consumer-borrowing-costs.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T19:19:17Z",
-   "source": "CNBC",
-   "title": "Judge tosses DOJ case against ex-FBI officials accused of lying about Hunter Biden probe",
-   "link": "https://www.cnbc.com/2026/11/02/fbi-hunter-biden-doj-case-dismissed.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T19:15:48Z",
-   "source": "The Block",
-   "title": "DTCC\u2019s tokenization launch could accelerate adoption and boost Securitize, StoneX says",
-   "link": "https://www.theblock.co/news/markets/2026-11-02-stonex-dtcc-tokenization-validates-securitize-secz-432331",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T19:05:35Z",
-   "source": "Cointelegraph",
-   "title": "Mercado Bitcoin wallets show post-hack transfers after $46M theft",
-   "link": "https://cointelegraph.com/news/mercado-bitcoin-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-02T18:59:48Z",
-   "source": "CNBC",
-   "title": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks",
-   "link": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T18:46:31Z",
-   "source": "CNBC",
-   "title": "Social Security may have to cut retirement benefits in six years. Here's how much money is at stake for beneficiaries",
-   "link": "https://www.cnbc.com/2026/11/01/social-security-benefit-cuts-2032.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T18:46:03Z",
-   "source": "Decrypt",
-   "title": "North Korea Is Laundering Binance Hack Loot at One New Wallet Every 25 Seconds",
-   "link": "https://decrypt.co/382355/north-korea-laundering-binance-hack-loot-new-wallet-every-25-seconds",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T18:16:02Z",
-   "source": "Decrypt",
-   "title": "Proton Users Revolt After CEO Calls Security Caution 'Loser Thinking' Amid AI Push",
-   "link": "https://decrypt.co/382353/proton-users-revolt-ceo-calls-security-caution-loser-thinking-ai",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T18:16:00Z",
-   "source": "MarketWatch",
-   "title": "It may take weeks to tally the midterm election results. Here\u2019s why Wall Street isn\u2019t worried.",
-   "link": "https://www.marketwatch.com/story/it-may-take-weeks-to-tally-the-midterm-election-results-heres-why-wall-street-isnt-worried-ed9313fd?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T18:13:57Z",
-   "source": "CoinDesk",
-   "title": "Bitcoin traders eye post-election rally as exchange outflows point to supply squeeze",
-   "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-02T18:07:53Z",
-   "source": "CNBC",
-   "title": "Investors are giving up on CoreWeave. I see a potential triple",
-   "link": "https://www.cnbc.com/2026/11/02/wall-street-sees-a-debt-disaster-in-coreweave-i-see-a-stock-that-could-triple.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T18:00:16Z",
-   "source": "Cointelegraph",
-   "title": "Animoca Brands clears final hurdle for Abu Dhabi fund management",
-   "link": "https://cointelegraph.com/news/animoca-brands-expands-asset-management-business-with-abu-dhabi-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T17:57:35Z",
-   "source": "CNBC",
-   "title": "Stock market after midterm elections: What S&P 500 history shows",
-   "link": "https://www.cnbc.com/2026/11/02/stock-market-after-midterm-elections-sp-500-history.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T17:52:01Z",
-   "source": "CNBC",
-   "title": "Anthropic reports $17 billion in Q3 revenue, purchase commitments of $895.4 billion in revised S-1",
-   "link": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T17:36:03Z",
-   "source": "Decrypt",
-   "title": "Nvidia and Nike Lead Biggest Wave Yet of Tokenized Stock Objections",
-   "link": "https://decrypt.co/382348/nvidia-nike-biggest-wave-yet-tokenized-stock-objections",
-   "kind": "crypto",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-02T17:28:16Z",
-   "source": "CNBC",
-   "title": "Fanatics takes bigger NHL design role with all-32 team Hometown Remix jerseys",
-   "link": "https://www.cnbc.com/2026/11/02/fanatics-nhl-hometown-remix-jerseys.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T17:21:04Z",
-   "source": "CoinDesk",
-   "title": "EU entity suspected of losing $106 million from crypto exchange accounts, ZachXBT says",
-   "link": "https://www.coindesk.com/tech/2026/11/02/eu-entity-suspected-of-losing-usd106-million-from-crypto-exchange-accounts-zachxbt-says",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T17:07:28Z",
-   "source": "Decrypt",
-   "title": "Elon Musk Mocks Sam Altman Over Claim Home PCs Are Wasting RAM",
-   "link": "https://decrypt.co/382345/elon-musk-mocks-sam-altman-over-claim-home-pcs-are-wasting-ram",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T17:04:34Z",
-   "source": "CNBC",
-   "title": "CrowdStrike lands an upgrade, and Jim Cramer's advice on Apple ahead of earnings",
-   "link": "https://www.cnbc.com/investingclub/2026/11/02/crowdstrike-lands-an-upgrade-and-jim-cramers-advice-on-apple-ahead-of-earnings.html",
-   "kind": "markets",
-   "tags": [
-    "AAPL"
-   ]
-  },
-  {
-   "time": "2026-11-02T16:52:55Z",
-   "source": "The Block",
-   "title": "Binance completes latest proof of reserves as it works to restore assets, withdrawals after record hack",
-   "link": "https://www.theblock.co/news/business/2026-11-02-binance-zero-knowledge-proof-of-reserves-snapshot-hack-recovery-432321",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T16:46:03Z",
-   "source": "Decrypt",
-   "title": "Brazil's Largest Exchange Mercado Bitcoin Halts Withdrawals After $40 Million Hack",
-   "link": "https://decrypt.co/382341/mercado-bitcoin-halts-withdrawals-40-million-hack",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-02T16:41:46Z",
-   "source": "CoinDesk",
-   "title": "NYSE tokenized stock plans take shape as four more transfer agents join",
-   "link": "https://www.coindesk.com/business/2026/11/02/nyse-taps-wall-street-giant-broadridge-to-bring-shareholder-voting-onto-blockchain-rails",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T16:23:24Z",
-   "source": "Decrypt",
-   "title": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish",
-   "link": "https://decrypt.co/382340/bitmine-buys-more-ethereum-tom-lee-binance-hack-bullish",
-   "kind": "crypto",
-   "tags": [
-    "ETH"
-   ]
-  },
-  {
-   "time": "2026-11-02T15:53:29Z",
-   "source": "CoinDesk",
-   "title": "Brazil\u2019s Mercado Bitcoin halts withdrawals after $40 million drained across 10 chains",
-   "link": "https://www.coindesk.com/business/2026/11/02/brazil-s-mercado-bitcoin-halts-withdrawals-after-usd40-million-drained-across-10-chains",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-02T15:30:41Z",
-   "source": "CNBC",
-   "title": "Wall Street's Fear Index is doing something strange. Here's what it means for stocks",
-   "link": "https://www.cnbc.com/2026/11/02/wall-streets-fear-index-is-doing-something-strange-heres-what-it-means-for-stocks.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:26:43Z",
-   "source": "CoinDesk",
-   "title": "Nvidia, Costco and Nike join pushback against OKX\u2013ICE tokenized stock plans",
-   "link": "https://www.coindesk.com/business/2026/11/02/nvidia-costco-and-nike-join-pushback-against-okx-ice-tokenized-stock-plans",
-   "kind": "crypto",
-   "tags": [
-    "COST",
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-02T15:18:55Z",
-   "source": "CoinDesk",
-   "title": "Anthropic swings to third quarter operating loss as compute costs surge ahead of IPO",
-   "link": "https://www.coindesk.com/markets/2026/11/02/anthropic-swings-to-third-quarter-operating-loss-as-compute-costs-surge-ahead-of-ipo",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:13:38Z",
-   "source": "Benzinga",
-   "title": "Toncoin (TON) Price Prediction 2025, 2026, 2027-2030",
-   "link": "https://www.benzinga.com/money/toncoin-ton-price-prediction",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:13:37Z",
-   "source": "Benzinga",
-   "title": "Myro (MYRO) Price Prediction: 2025, 2026, 2030",
-   "link": "https://www.benzinga.com/money/myro-price-prediction",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:13:36Z",
-   "source": "Benzinga",
-   "title": "PancakeSwap (CAKE) Price Prediction: 2025, 2026, 2030",
-   "link": "https://www.benzinga.com/money/pancakeswap-cake-price-prediction",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:13:35Z",
-   "source": "Benzinga",
-   "title": "Algorand (ALGO) Price Prediction: 2025, 2026, 2030",
-   "link": "https://www.benzinga.com/money/algorand-price-prediction",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:13:34Z",
-   "source": "Benzinga",
-   "title": "Hedera Hashgraph (HBAR) Price Prediction: 2025, 2026, 2030",
-   "link": "https://www.benzinga.com/money/hedera-hashgraph-hbar-price-prediction",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:13:30Z",
-   "source": "Benzinga",
-   "title": "Arweave (AR) Price Prediction: 2025, 2026, 2030",
-   "link": "https://www.benzinga.com/money/arweave-ar-price-prediction",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:13:29Z",
-   "source": "Benzinga",
-   "title": "Bittensor (TAO) Price Prediction: 2025, 2026, 2030",
-   "link": "https://www.benzinga.com/money/bittensor-tao-price-prediction",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:13:28Z",
-   "source": "Benzinga",
-   "title": "Uniswap (UNI) Price Prediction: 2025, 2026, 2030",
-   "link": "https://www.benzinga.com/money/uniswap-uni-price-prediction",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-02T15:13:27Z",
-   "source": "Benzinga",
-   "title": "Polkadot (DOT) Price Prediction: 2025, 2026, 2030",
-   "link": "https://www.benzinga.com/money/polkadot-price-prediction",
-   "kind": "markets",
-   "tags": []
   }
  ]
 }
