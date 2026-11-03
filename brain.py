@@ -406,7 +406,11 @@ def write_parts(brain):
     out = D / "brain"
     out.mkdir(exist_ok=True)
     dump = lambda o: json.dumps(o, separators=(",", ":"), default=str)
-    parts = {"core": {k: brain.get(k) for k in ("updated", "summary", "regime", "fear_greed", "evidence_notes", "health")},
+    core = {k: brain.get(k) for k in ("updated", "summary", "regime", "fear_greed", "evidence_notes", "health")}
+    core["setups"] = [s["symbol"] for s in brain["stocks"] if s.get("research_setup")]
+    core["near_misses"] = [{"symbol": s["symbol"], "missing": s["setup_missing"][0]} for s in brain["stocks"]
+                           if s.get("setup_missing") and len(s["setup_missing"]) == 1][:8]
+    parts = {"core": core,
              "markets": brain["markets"], "macro": brain["macro"], "crypto": brain["crypto"], "news": brain["news"],
              "sec": brain["sec"], "options": brain["options"], "sentiment": brain["sentiment"], "paper": brain["paper"]}
 
@@ -426,7 +430,7 @@ def write_parts(brain):
             p = s.get("price") or {}
             rows.append([s["symbol"], int(s["research_setup"]), ",".join(s["evidence_types"]), len(s.get("warnings") or []),
                          p.get("price"), p.get("change_1d_pct"), p.get("rsi14"), (p.get("size") or "").split(" ")[0], i,
-                         (s.get("setup_missing") or [None])[0]])
+                         (s.get("setup_missing") or [None])[0], len(s.get("setup_missing") or [])])
     lists = chunk(rows)
     for i, group in enumerate(lists):
         parts["list_%d" % i] = group
@@ -442,7 +446,7 @@ def write_parts(brain):
             f.unlink()
     index = {"g": brain["updated"], "parts": hashes, "stock_parts": len(cards), "list_parts": len(lists),
              "list_fields": ["symbol", "research_setup", "evidence_types", "warnings", "price", "change_1d_pct", "rsi14", "size",
-                             "stock_part", "setup_missing"]}
+                             "stock_part", "setup_missing", "conditions_missing"]}
     (out / "index.json").write_text(dump(index))
     return len(parts)
 
