@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T22:22:42+00:00",
+ "updated": "2026-11-03T23:47:00+00:00",
  "priced_to": "2026-11-03",
  "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\n- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies\n  are ranked by their margin over the S&P 500; summary.json \"goal\" shows what GBP 100 has become in each and how long\n  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
  "market_stress": false,
@@ -148,7 +148,8 @@
     "TRTX",
     "CAT",
     "MGM",
-    "BBTX"
+    "BBTX",
+    "PLBY"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -313,7 +314,7 @@
    "started": "2026-11-01",
    "value": 99960.49,
    "paused": false,
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.04,
    "max_drawdown_pct": -0.15,
    "stops_hit": 0,
    "return_pct": -0.04,
@@ -657,7 +658,8 @@
     "BBTX",
     "LKQ",
     "FFIN",
-    "SYNX"
+    "SYNX",
+    "ENPH"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -834,7 +836,9 @@
     "LKQ",
     "SYNX",
     "TRTX",
-    "SEVN"
+    "SEVN",
+    "ENPH",
+    "BBTX"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -926,326 +930,5 @@
   },
   "note": "Virtual money only. Rankings mean little before 90 days of live trading. Not financial advice."
  },
- "latest_decisions": [
-  {
-   "date": "2026-11-03",
-   "strategy": "insider_cluster3",
-   "symbol": "BBT",
-   "decision": "NO_TRADE",
-   "rsi": 72.0,
-   "reason": "RSI 72 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "insider_cluster3",
-   "symbol": "ANIX",
-   "decision": "NO_TRADE",
-   "rsi": 51.3,
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "insider_big_250k",
-   "symbol": "LSTR",
-   "decision": "TRADE",
-   "rsi": 34.4,
-   "reason": "Lonegro Frank A (President & CEO) bought $714,619. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 147.38; RSI 34 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "insider_big_250k",
-   "symbol": "ATEC",
-   "decision": "TRADE",
-   "rsi": 29.7,
-   "reason": "Demski David M (Director) bought $408,600. Bought $2,001 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 7.40; RSI 30 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "insider_big_250k",
-   "symbol": "ENPH",
-   "decision": "TRADE",
-   "rsi": 39.6,
-   "reason": "Kothandaraman Badrinarayanan (President & CEO) bought $267,514. Bought $2,001 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 28.27; RSI 40 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "insider_big_250k",
-   "symbol": "XYL",
-   "decision": "TRADE",
-   "rsi": 43.2,
-   "reason": "KOCH D CHRISTIAN (Director) bought $985,600. Bought $2,004 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 97.21; RSI 43 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "insider_big_250k",
-   "symbol": "DINO",
-   "decision": "TRADE",
-   "rsi": 42.5,
-   "reason": "MYERS FRANKLIN (CEO) bought $1,108,000. Bought $2,004 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 111.17; RSI 43 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "insider_big_250k",
-   "symbol": "JBLU",
-   "decision": "TRADE",
-   "rsi": 45.6,
-   "reason": "BONEPARTH PETER (Director) bought $300,000. Bought $2,004 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 3.28; RSI 46 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "TSM",
-   "decision": "TRADE",
-   "rsi": 36.1,
-   "reason": "score 96: 30 insiders bought $121,468 in 30 days (last 2026-10-07); 3 politicians bought (~$24,000, last filed 2026-10-22). Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 404.99; RSI 36 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "GPI",
-   "decision": "TRADE",
-   "rsi": 62.2,
-   "reason": "score 48: 10% owner Conifer Management, L.L.C. bought $119,117 on 2026-10-22; 10% owner Conifer Management, L.L.C. bought $452,783 on 2026-10-22. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 269.77; RSI 62 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "RAPP",
-   "decision": "TRADE",
-   "rsi": 37.8,
-   "reason": "score 33: 7 insiders bought $22,023,905 in 30 days (last 2026-10-28); Director HEALY JAMES bought $145,593 on 2026-10-28. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 25.39; RSI 38 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "HEI",
-   "decision": "TRADE",
-   "rsi": 69.1,
-   "reason": "score 24: 8 insiders bought $1,400,595 in 30 days (last 2026-10-08). Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 338.96; RSI 69 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "BPRE",
-   "decision": "TRADE",
-   "rsi": 52.3,
-   "reason": "score 23: 3 insiders bought $25,364,808 in 30 days (last 2026-10-27); Director KAMFAR RAMIN bought $869,506 on 2026-10-27. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 12.44; RSI 52 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "BBT",
-   "decision": "NO_TRADE",
-   "rsi": 72.0,
-   "reason": "RSI 72 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "NPB",
-   "decision": "TRADE",
-   "rsi": 52.1,
-   "reason": "score 18: 4 insiders bought $1,819,350 in 30 days (last 2026-10-28); Director Boer Carrie L bought $184,762 on 2026-10-23. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 15.94; RSI 52 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "LYCA",
-   "decision": "NO_TRADE",
-   "rsi": "",
-   "reason": "not enough price history to judge momentum, so the default is no trade"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "CRBG",
-   "decision": "TRADE",
-   "rsi": 54.2,
-   "reason": "score 18: 10% owner NIPPON LIFE INSURANCE CO bought $8,671,495 on 2026-10-28; 10% owner NIPPON LIFE INSURANCE CO bought $6,259,186 on 2026-10-27. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 35.57; RSI 54 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "STC",
-   "decision": "TRADE",
-   "rsi": 34.4,
-   "reason": "score 17: 5 insiders bought $460,970 in 30 days (last 2026-10-26); Chief Executive Officer EPPINGER FREDERICK H bought $133,350 on 2026-10-26. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 45.60; RSI 34 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "RENT",
-   "decision": "TRADE",
-   "rsi": 49.2,
-   "reason": "score 15: 3 insiders bought $6,120,516 in 30 days (last 2026-10-21); Director STORY3 Capital Partners, LLC bought $2,246,873 on 2026-10-21. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 2.18; RSI 49 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "NMCO",
-   "decision": "TRADE",
-   "rsi": 49.7,
-   "reason": "score 14: 4 insiders bought $279,675 in 30 days (last 2026-10-23); Insider Robert Young L bought $248,883 on 2026-10-23. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 8.88; RSI 50 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "CHCO",
-   "decision": "TRADE",
-   "rsi": 62.0,
-   "reason": "score 12: 4 insiders bought $68,222 in 30 days (last 2026-10-23). Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 145.20; RSI 62 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "MSM",
-   "decision": "TRADE",
-   "rsi": 43.7,
-   "reason": "score 12: 2 insiders bought $29,034,300 in 30 days (last 2026-10-23); Director JACOBSON MITCHELL bought $6,348,018 on 2026-10-23. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 120.18; RSI 44 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "DSM",
-   "decision": "TRADE",
-   "rsi": 64.6,
-   "reason": "score 12: 2 insiders bought $1,555,905 in 30 days (last 2026-10-28); 10% owner Saba Capital Management, L.P. bought $111,326 on 2026-10-26. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 5.55; RSI 65 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "TTMI",
-   "decision": "TRADE",
-   "rsi": 34.1,
-   "reason": "score 12: 2 insiders bought $1,342,811 in 30 days (last 2026-10-28); President and CEO Roks Edwin bought $440,350 on 2026-10-28. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 79.15; RSI 34 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "NXG",
-   "decision": "TRADE",
-   "rsi": 38.9,
-   "reason": "score 11: 3 insiders bought $525,575 in 30 days (last 2026-10-23); See Remarks Swank Jerry V bought $439,493 on 2026-10-23. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 47.10; RSI 39 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "DX",
-   "decision": "TRADE",
-   "rsi": 38.6,
-   "reason": "score 11: 3 insiders bought $267,230 in 30 days (last 2026-10-20); Co-CEO and President Popenoe Smriti Laxman bought $106,200 on 2026-10-20. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 10.55; RSI 39 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "ROL",
-   "decision": "TRADE",
-   "rsi": 64.5,
-   "reason": "score 10: 2 insiders bought $99,913,330 in 30 days (last 2026-10-29); 10% owner R. Randall Rollins Voting Trust U/A dated August 25, 1994 bought $49,956,665 on 2026-10-29. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 36.50; RSI 64 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "CTY",
-   "decision": "NO_TRADE",
-   "rsi": "",
-   "reason": "not enough price history to judge momentum, so the default is no trade"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "LEO",
-   "decision": "TRADE",
-   "rsi": 64.5,
-   "reason": "score 10: 2 insiders bought $2,661,149 in 30 days (last 2026-10-26); 10% owner Saba Capital Management, L.P. bought $369,200 on 2026-10-23. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 5.96; RSI 65 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "THRM",
-   "decision": "TRADE",
-   "rsi": 50.9,
-   "reason": "score 10: 2 insiders bought $662,600 in 30 days (last 2026-10-23); Director MASCARENAS PAUL ANTHONY bought $532,600 on 2026-10-23. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 31.55; RSI 51 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "HBAN",
-   "decision": "TRADE",
-   "rsi": 58.8,
-   "reason": "score 10: 2 insiders bought $453,554 in 30 days (last 2026-10-27); Director TORGOW GARY bought $199,834 on 2026-10-27. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 16.01; RSI 59 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "AGMB",
-   "decision": "NO_TRADE",
-   "rsi": 24.6,
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "IMSR",
-   "decision": "TRADE",
-   "rsi": 39.9,
-   "reason": "score 9: 3 insiders bought $112,279 in 30 days (last 2026-10-14). Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 2.96; RSI 40 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "NVA",
-   "decision": "TRADE",
-   "rsi": 57.5,
-   "reason": "score 9: 3 insiders bought $46,934 in 30 days (last 2026-10-26). Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 4.70; RSI 58 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "WVVI",
-   "decision": "NO_TRADE",
-   "rsi": 42.7,
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "GABC",
-   "decision": "TRADE",
-   "rsi": 54.5,
-   "reason": "score 9: 3 insiders bought $17,300 in 30 days (last 2026-10-15). Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 50.25; RSI 55 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "NRXS",
-   "decision": "TRADE",
-   "rsi": 40.2,
-   "reason": "score 9: 3 insiders bought $12,260 in 30 days (last 2026-10-08). Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 6.63; RSI 40 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "OCFC",
-   "decision": "NO_TRADE",
-   "rsi": 72.5,
-   "reason": "RSI 72 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "terminal_top_signals",
-   "symbol": "SRRK",
-   "decision": "TRADE",
-   "rsi": 45.3,
-   "reason": "score 8: Director AKKARAJU SRINIVAS bought $4,075,071 on 2026-10-26; Director AKKARAJU SRINIVAS bought $2,037,411 on 2026-10-26. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-03 open, 43.37; RSI 45 is neutral"
-  },
-  {
-   "date": "2026-11-03",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "OCFC",
-   "decision": "NO_TRADE",
-   "rsi": 72.5,
-   "reason": "not a smaller company (trades $22M a day)"
-  }
- ]
+ "latest_decisions": []
 }

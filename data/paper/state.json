@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 6,
+ "runs": 7,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -245,6 +245,12 @@
      "signal": "2026-11-03",
      "event": "2026-11-02",
      "note": "Jeggle Helmut Wolfgang (Director) bought $6,000,000"
+    },
+    {
+     "sym": "PLBY",
+     "signal": "2026-11-03",
+     "event": "2026-10-30",
+     "note": "Docler Holding S.a r.l. (Director) bought $5,000,000"
     }
    ],
    "closed": [],
@@ -339,7 +345,8 @@
     "TRTX": "2026-11-03",
     "CAT": "2026-11-03",
     "MGM": "2026-11-03",
-    "BBTX": "2026-11-03"
+    "BBTX": "2026-11-03",
+    "PLBY": "2026-11-03"
    },
    "events": [
     {
@@ -1141,6 +1148,12 @@
      "signal": "2026-11-03",
      "event": "2026-11-03",
      "note": "score 9: 3 insiders bought $118,017 in 30 days (last 2026-11-02)"
+    },
+    {
+     "sym": "ENPH",
+     "signal": "2026-11-03",
+     "event": "2026-11-03",
+     "note": "score 9: 2 insiders bought $298,104 in 30 days (last 2026-11-03); President & CEO Kothandaraman Badrinarayanan bought $267,514 on 2026-11-02"
     }
    ],
    "closed": [],
@@ -1191,7 +1204,8 @@
     "BBTX": "2026-11-03",
     "LKQ": "2026-11-03",
     "FFIN": "2026-11-03",
-    "SYNX": "2026-11-03"
+    "SYNX": "2026-11-03",
+    "ENPH": "2026-11-03"
    },
    "events": [
     {
@@ -1410,7 +1424,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.04,
    "paused": false
   },
   "spy_benchmark": {
@@ -1496,6 +1510,18 @@
      "signal": "2026-11-03",
      "event": "2026-10-30",
      "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "ENPH",
+     "signal": "2026-11-03",
+     "event": "2026-11-03",
+     "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "BBTX",
+     "signal": "2026-11-03",
+     "event": "2026-11-02",
+     "note": "2 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -1549,7 +1575,9 @@
     "LKQ": "2026-11-03",
     "SYNX": "2026-11-03",
     "TRTX": "2026-11-03",
-    "SEVN": "2026-11-03"
+    "SEVN": "2026-11-03",
+    "ENPH": "2026-11-03",
+    "BBTX": "2026-11-03"
    },
    "events": [
     {
@@ -1577,7 +1605,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-03T22:22:42+00:00",
+ "updated": "2026-11-03T23:47:00+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -1810,6 +1838,10 @@
   "MGM": {
    "sic": "70",
    "name": "Hotels & Motels"
+  },
+  "PLBY": {
+   "sic": "59",
+   "name": "Retail-Miscellaneous Retail"
   }
  }
 }
