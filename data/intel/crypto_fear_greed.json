@@ -1,23 +1,28 @@
 {
- "updated": "2026-11-02T23:26:27Z",
+ "updated": "2026-11-03T01:27:50Z",
  "source": "alternative.me Crypto Fear & Greed Index",
  "now": {
+  "date": "2026-11-03",
+  "value": 26,
+  "label": "Fear"
+ },
+ "yesterday": {
   "date": "2026-11-02",
   "value": 37,
   "label": "Fear"
  },
- "yesterday": {
-  "date": "2026-11-01",
-  "value": 34,
-  "label": "Fear"
- },
  "week_ago": {
-  "date": "2026-10-26",
-  "value": 50,
+  "date": "2026-10-27",
+  "value": 48,
   "label": "Neutral"
  },
- "month_avg": 55.7,
+ "month_avg": 54.4,
  "history": [
+  {
+   "date": "2026-11-03",
+   "value": 26,
+   "label": "Fear"
+  },
   {
    "date": "2026-11-02",
    "value": 37,
@@ -166,11 +171,6 @@
   {
    "date": "2026-10-04",
    "value": 65,
-   "label": "Greed"
-  },
-  {
-   "date": "2026-10-03",
-   "value": 67,
    "label": "Greed"
   }
  ]
