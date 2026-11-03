@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T17:17:44Z",
+ "updated": "2026-11-03T17:33:35Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2623,6 +2623,92 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-03T17:31:22Z",
+   "form": "10-Q",
+   "company": "BALL Corp",
+   "cik": 9389,
+   "ticker": "BALL",
+   "role": "Filer",
+   "accession": "0001104659-26-121838",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/9389/000110465926121838/0001104659-26-121838-index.htm"
+  },
+  {
+   "time": "2026-11-03T17:31:13Z",
+   "form": "8-K",
+   "company": "CMS ENERGY CORP",
+   "cik": 811156,
+   "ticker": "CMS",
+   "role": "Filer",
+   "accession": "0001104659-26-121839",
+   "items": [
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/811156/000110465926121839/0001104659-26-121839-index.htm"
+  },
+  {
+   "time": "2026-11-03T17:28:51Z",
+   "form": "10-Q",
+   "company": "Ryman Hospitality Properties, Inc.",
+   "cik": 1040829,
+   "ticker": "RHP",
+   "role": "Filer",
+   "accession": "0001104659-26-121837",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1040829/000110465926121837/0001104659-26-121837-index.htm"
+  },
+  {
+   "time": "2026-11-03T17:28:49Z",
+   "form": "10-Q",
+   "company": "Universal Token",
+   "cik": 1919182,
+   "ticker": "UTKN",
+   "role": "Filer",
+   "accession": "0001171520-26-000320",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1919182/000117152026000320/0001171520-26-000320-index.htm"
+  },
+  {
+   "time": "2026-11-03T17:28:31Z",
+   "form": "10-Q",
+   "company": "MAGELLAN COPPER & GOLD Corp",
+   "cik": 1515317,
+   "ticker": "MAGE",
+   "role": "Filer",
+   "accession": "0001683168-26-008254",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1515317/000168316826008254/0001683168-26-008254-index.htm"
+  },
+  {
+   "time": "2026-11-03T17:28:03Z",
+   "form": "8-K",
+   "company": "Federal Home Loan Bank of Chicago",
+   "cik": 1331451,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001331451-26-000209",
+   "items": [
+    {
+     "item": "2.03",
+     "meaning": "New debt"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1331451/000133145126000209/0001331451-26-000209-index.htm"
+  },
   {
    "time": "2026-11-03T17:11:50Z",
    "form": "SCHEDULE 13D/A",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T17:17:44Z",
+ "updated": "2026-11-03T17:33:35Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -25,20 +25,20 @@
    37
   ],
   [
-   "PLTR",
-   15
-  ],
-  [
-   "AMZN",
+   "GOOGL",
    13
   ],
   [
-   "GOOGL",
-   12
+   "PLTR",
+   13
   ],
   [
    "MSFT",
-   11
+   12
+  ],
+  [
+   "AMZN",
+   12
   ],
   [
    "BTC",
@@ -49,6 +49,14 @@
    8
   ],
   [
+   "META",
+   7
+  ],
+  [
+   "NVDA",
+   6
+  ],
+  [
    "AMD",
    6
   ],
@@ -57,12 +65,8 @@
    5
   ],
   [
-   "META",
-   4
-  ],
-  [
-   "NVDA",
-   4
+   "NFLX",
+   3
   ],
   [
    "COST",
@@ -77,8 +81,12 @@
    2
   ],
   [
-   "NFLX",
-   2
+   "LLY",
+   1
+  ],
+  [
+   "BRK.B",
+   1
   ],
   [
    "ORCL",
@@ -86,6 +94,101 @@
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-03T17:30:54Z",
+   "source": "Decrypt",
+   "title": "Five Ways North Korea Breaks Into Crypto Firms\u2014and How Binance Was Hacked",
+   "link": "https://decrypt.co/382420/five-ways-north-korea-breaks-into-crypto-firms-and-how-binance-was-hacked",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T17:30:00Z",
+   "source": "MarketWatch",
+   "title": "My father has Alzheimer\u2019s and his caregiver is using his debit card for DoorDash. Should I intervene?",
+   "link": "https://www.marketwatch.com/story/theres-a-lot-of-hurt-between-us-my-fathers-caregiver-is-using-his-debit-card-for-doordash-orders-what-can-i-do-714de7a5?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T17:21:50Z",
+   "source": "Yahoo Finance",
+   "title": "Nvidia Stocks Rebound 2.84% Before November 17 AI Earnings Check",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-rebound-2-84-172150506.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-03T17:17:19Z",
+   "source": "Yahoo Finance",
+   "title": "Forget Nvidia: Eli Lilly Will Become \u201cthe Most Valuable Company in the World,\u201d Says Macro Investor",
+   "link": "https://www.tikr.com/blog/forget-nvidia-eli-lilly-will-become-the-most-valuable-company-in-the-world-says-macro-investor?ref=yahoofinance&tlnk=yf-261103-3q4hj2qq&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "LLY",
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-03T17:16:03Z",
+   "source": "Yahoo Finance",
+   "title": "Top VC Warns: \u201cDepreciation Is Going to Start Hitting\u201d Microsoft, Google and Meta. Here\u2019s Where Things Get Ugly",
+   "link": "https://www.tikr.com/blog/top-vc-warns-depreciation-is-going-to-start-hitting-microsoft-google-and-meta-heres-where-things-get-ugly?ref=yahoofinance&tlnk=yf-261103-w443592j&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "GOOGL",
+    "META",
+    "MSFT"
+   ]
+  },
+  {
+   "time": "2026-11-03T17:15:00Z",
+   "source": "Yahoo Finance",
+   "title": "CoreWeave's 15% Bond Yield Is a Warning for AI Debt. Here Are the Stocks Most Exposed.",
+   "link": "https://www.fool.com/investing/2026/11/03/coreweaves-bond-yield-is-a-warning-for-ai-debt/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T17:13:44Z",
+   "source": "Yahoo Finance",
+   "title": "Meta Stocks Gain as Preferred Issue Implies $812.5 Million Annual Dividends",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/meta-stocks-gain-preferred-issue-171344081.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "META"
+   ]
+  },
+  {
+   "time": "2026-11-03T17:13:00Z",
+   "source": "Yahoo Finance",
+   "title": "Netflix Trades at a Discount to the S&P 500's Valuation. Is It Deserved?",
+   "link": "https://www.fool.com/investing/2026/11/03/netflix-trades-at-a-discount-to-the-sp-500s-valuat/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NFLX"
+   ]
+  },
+  {
+   "time": "2026-11-03T17:12:19Z",
+   "source": "Yahoo Finance",
+   "title": "Berkshire Hathaway (BRK.A) Gets Bigger Annual Dividends From A 64th Straight Raise",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-brk-gets-bigger-171219358.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "BRK.B"
+   ]
+  },
+  {
+   "time": "2026-11-03T17:10:28Z",
+   "source": "Yahoo Finance",
+   "title": "Bayer\u2019s Comeback Is Starting to Look Like More Than a Lawsuit Story",
+   "link": "https://app.moby.co/home/news/news-bayers-comeback-is-starting-to-look-like-more-than-a-lawsuit-story?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
   {
    "time": "2026-11-03T17:10:22Z",
    "source": "Investing.com",
@@ -103,6 +206,17 @@
    "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-nexpoint-residential-trust-cuts-outlook-in-q3-2026-93CH-4996095",
    "kind": "markets",
    "tags": []
+  },
+  {
+   "time": "2026-11-03T17:09:56Z",
+   "source": "Yahoo Finance",
+   "title": "Top Midday Stories: Apple Fiscal Q4 EPS, Revenue Top Estimates, Shares Fall; Meta Reportedly Targeting Up to $25 Billion in Bond Sale",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-apple-fiscal-170956313.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL",
+    "META"
+   ]
   },
   {
    "time": "2026-11-03T17:09:46Z",
@@ -177,6 +291,24 @@
    "tags": []
   },
   {
+   "time": "2026-11-03T17:06:02Z",
+   "source": "Yahoo Finance",
+   "title": "Apple Stocks Slide 3.66% as Memory Costs Pressure Holiday Margins",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/apple-stocks-slide-3-66-170602724.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-03T17:05:27Z",
+   "source": "CNBC",
+   "title": "This casino stock has fallen for 17 weeks in a row. Katie Stockton says it could be due for a bounce",
+   "link": "https://www.cnbc.com/2026/11/03/mgm-resorts-stock-rebound-technical-analysis.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-03T17:05:15Z",
    "source": "Yahoo Finance",
    "title": "Update: Apple, Amazon Face Sanction Proceedings From Spanish Regulator",
@@ -228,6 +360,24 @@
    "source": "Yahoo Finance",
    "title": "Intel Has Lost More Than Half Its Value Since Its Peak",
    "link": "https://247wallst.com/investing/2026/11/03/intel-has-lost-more-than-half-its-value-since-its-peak/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-03T17:00:28Z",
+   "source": "Yahoo Finance",
+   "title": "Amazon Is Sending Prime Refunds of Up to $200. Here\u2019s Why You Might Not Qualify",
+   "link": "https://moneylion.com/trending/money/amazon-prime-refunds-200-dollars-why-might-not-qualify?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMZN"
+   ]
+  },
+  {
+   "time": "2026-11-03T17:00:00Z",
+   "source": "Yahoo Finance",
+   "title": "Binance deposits overtake withdrawals, and the SEC creates crypto FAQs on governance",
+   "link": "https://finance.yahoo.com/video/binance-deposits-overtake-withdrawals-sec-170000882.html?.tsrc=rss",
    "kind": "markets",
    "tags": []
   },
@@ -3396,136 +3546,6 @@
    "source": "Yahoo Finance",
    "title": "CME Group's Market Data Revenue Hit a Record $243 Million Last Quarter. Can It Carry the Stock When Trading Slows?",
    "link": "https://www.fool.com/investing/2026/11/03/cme-group-market-data-revenue-record-stock/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:49:36Z",
-   "source": "Yahoo Finance",
-   "title": "3 growth stocks with all-star potential",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/3-growth-stocks-star-potential-094936719.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:48:33Z",
-   "source": "CNBC",
-   "title": "Apple and Palantir shares slide in premarket trading following post-bell earnings",
-   "link": "https://www.cnbc.com/2026/11/03/apple-palantir-stock-earnings.html",
-   "kind": "markets",
-   "tags": [
-    "AAPL",
-    "PLTR"
-   ]
-  },
-  {
-   "time": "2026-11-03T09:42:29Z",
-   "source": "CNBC",
-   "title": "Trump is going to get 'trounced' in the midterms \u2014 and knows it, Anthony Scaramucci tells CNBC",
-   "link": "https://www.cnbc.com/2026/11/03/scaramucci-trump-midterms-election.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:40:46Z",
-   "source": "Yahoo Finance",
-   "title": "German yields hover near August lows on tech rout",
-   "link": "https://finance.yahoo.com/markets/currencies/articles/german-yields-hover-near-august-094046247.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:40:32Z",
-   "source": "CoinDesk",
-   "title": "North Korea denies role in $6.4 billion Binance hack after FBI points to TraderTraitor",
-   "link": "https://www.coindesk.com/business/2026/11/03/north-korea-denies-role-in-usd6-4-billion-binance-hack-after-fbi-points-to-tradertraitor",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:39:20Z",
-   "source": "Yahoo Finance",
-   "title": "Amazon-Backed Anthropic Plans Retail Share Offerings in Six International Markets",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-backed-anthropic-plans-retail-093920998.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMZN"
-   ]
-  },
-  {
-   "time": "2026-11-03T09:35:47Z",
-   "source": "CNBC",
-   "title": "A little-known biotech\u2019s high-stakes cancer bet just paid off and its shares doubled",
-   "link": "https://www.cnbc.com/2026/11/03/genmab-cancer-drugs-petosemtamab.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:35:00Z",
-   "source": "Yahoo Finance",
-   "title": "Here's How Many Shares of Coca-Cola You'd Need for $1,000 in Monthly Dividend Income",
-   "link": "https://www.fool.com/investing/2026/11/03/how-many-shares-coca-cola-need-1k-dividend/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:29:30Z",
-   "source": "Yahoo Finance",
-   "title": "Apple, Palantir report; U.S. midterm elections ahead - what\u2019s moving markets",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/apple-palantir-report-u-midterm-092930372.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AAPL",
-    "PLTR"
-   ]
-  },
-  {
-   "time": "2026-11-03T09:26:01Z",
-   "source": "Yahoo Finance",
-   "title": "Fed Chair Kevin Warsh Just Drove a Dagger Through Wall Street's AI-Driven Rally With 6 Blunt Words",
-   "link": "https://www.fool.com/investing/2026/11/03/fed-chair-kevin-warsh-just-drove-dagger-through-wall-street-ai-driven-rally-6-words/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:20:01Z",
-   "source": "Yahoo Finance",
-   "title": "Is SpaceX Stock Worth Buying While It's Below $140?",
-   "link": "https://www.fool.com/investing/2026/11/03/is-spacex-stock-worth-buying-while-it-s-below-140/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:19:41Z",
-   "source": "The Block",
-   "title": "NEAR governance approves proposal to cut token issuance ceiling to 1.6%",
-   "link": "https://www.theblock.co/news/defi/2026-11-03-near-governance-approves-proposal-to-cut-token-issuance-432378",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:15:17Z",
-   "source": "Yahoo Finance",
-   "title": "Rivian Soars 15% in a Week on R2 Beat and Two Upgrades: \u201cInitial R2 Demand Looks Solid\u201d",
-   "link": "https://www.tikr.com/blog/rivian-soars-15-in-a-week-on-r2-beat-and-two-upgrades-initial-r2-demand-looks-solid?ref=yahoofinance&tlnk=yf-261103-f56hjh2m&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T09:07:33Z",
-   "source": "Yahoo Finance",
-   "title": "Amazon Lines Up \u201c$80 Billion of Supplier Financing\u201d as Chamath Warns AI Debt Rivals Treasuries",
-   "link": "https://www.tikr.com/blog/amazon-lines-up-80-billion-of-supplier-financing-as-chamath-warns-ai-debt-rivals-treasuries?ref=yahoofinance&tlnk=yf-261103-qmrrj4mq&.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMZN"
-   ]
-  },
-  {
-   "time": "2026-11-03T09:07:18Z",
-   "source": "Yahoo Finance",
-   "title": "Snowflake Just Dropped 13% in a Week. Is It Time to Sell, or Load Up?",
-   "link": "https://www.tikr.com/blog/snowflake-just-dropped-13-in-a-week-is-it-time-to-sell-or-load-up?ref=yahoofinance&tlnk=yf-261103-82mg46pr&.tsrc=rss",
    "kind": "markets",
    "tags": []
   }
