@@ -1,6 +1,6 @@
 name: Live market refresh
 
-# One short run every 5 minutes in US market hours: prices, SEC insider filings, Reddit mentions (at most hourly),
+# One short run per timer tick (every minute in the extended US day, every 5 minutes otherwise): prices, SEC insider filings, Reddit mentions (at most hourly),
 # the intelligence feeds (each at its own pace), signals/dashboard, the health check and the brain, then one commit. Started by an outside timer (cron-job.org) calling GitHub's
 # workflow_dispatch API, because GitHub's own 5-minute schedules ran only about once an hour (measured 2 Nov 2026).
 # The older scheduled workflows stay on as a backup and for the hours outside the market.
@@ -25,8 +25,10 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - name: Install
-        run: pip install -q yfinance pandas
+      - name: Install (uv is a faster installer)
+        run: |
+          python -m pip install -q uv
+          uv pip install --system -q yfinance pandas
       - name: Prices
         run: python refresh.py
       - name: SEC insider filings

@@ -76,8 +76,13 @@ def load(path, default=None):
 
 
 def save(name, obj):
+    """Write only when the content changed, so a 1-minute timer does not create a commit for every unchanged file."""
+    p = OUT / (name + ".json")
+    old = load(p, None)
+    if isinstance(old, dict) and {k: v for k, v in old.items() if k != "updated"} == json.loads(json.dumps(obj, default=str)):
+        return
     obj = dict({"updated": STAMP}, **obj)
-    (OUT / (name + ".json")).write_text(json.dumps(obj, indent=1, default=str))
+    p.write_text(json.dumps(obj, indent=1, default=str))
 
 
 def history(name, rows):
@@ -729,23 +734,24 @@ def finnhub():
 # ---------- runner ----------
 # name: (function, minimum minutes between fetches when the US market is open, ... when it is closed)
 SOURCES = {
-    "crypto": (crypto, 5, 5),
-    "crypto_sectors": (crypto_sectors, 30, 30),
-    "crypto_derivatives": (crypto_derivatives, 5, 5),
-    "crypto_fear_greed": (crypto_fear_greed, 60, 60),
-    "onchain": (onchain, 10, 10),
-    "onchain_daily": (onchain_daily, 360, 360),
-    "futures_fx": (futures_fx, 5, 15),
-    "ecb_fx": (ecb_fx, 120, 120),
-    "macro_global": (macro_global, 360, 360),
-    "calendar": (calendar, 60, 120),
-    "news": (news, 5, 10),
-    "sec_filings": (sec_filings, 5, 15),
-    "options": (options, 15, 720),
-    "fear_greed": (fear_greed, 15, 120),
-    "stocktwits": (stocktwits, 15, 30),
-    "reddit_forums": (reddit_forums, 60, 60),
-    "finnhub": (finnhub, 360, 360),
+    # Set to how often each source itself changes (3 Nov 2026): with a 1-minute timer, the fast sources refresh every run.
+    "crypto": (crypto, 1, 5),                    # exchanges are live; CoinGecko updates about every minute
+    "crypto_sectors": (crypto_sectors, 10, 30),
+    "crypto_derivatives": (crypto_derivatives, 1, 5),
+    "crypto_fear_greed": (crypto_fear_greed, 60, 60),  # published once a day
+    "onchain": (onchain, 2, 5),                  # a Bitcoin block every ~10 minutes; fees move between blocks
+    "onchain_daily": (onchain_daily, 360, 360),  # daily charts
+    "futures_fx": (futures_fx, 1, 5),            # Yahoo; CME futures are 10 minutes delayed at source
+    "ecb_fx": (ecb_fx, 60, 120),                 # set once a day at about 16:00 CET
+    "macro_global": (macro_global, 30, 360),     # release-driven; BLS's keyless limit is 25 requests a day
+    "calendar": (calendar, 15, 60),              # Forex Factory fills in actual figures at release time
+    "news": (news, 1, 5),
+    "sec_filings": (sec_filings, 1, 5),          # EDGAR is live
+    "options": (options, 5, 720),                # Cboe's free quotes are 15 minutes delayed at source
+    "fear_greed": (fear_greed, 5, 60),
+    "stocktwits": (stocktwits, 5, 15),
+    "reddit_forums": (reddit_forums, 15, 30),
+    "finnhub": (finnhub, 60, 360),
 }
 
 

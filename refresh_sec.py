@@ -206,10 +206,13 @@ def main():
     status["total_rows"] = len(rows)
     status["repeats_dropped"] = len(window) - len(rows)  # rows met more than once (stored, backfilled, amended)
     status["history_from"] = min((r["date"] for r in rows), default=None)
-    (OUT / "insider_trades.json").write_text(json.dumps({"updated": STAMP, "rows": rows}))
+    # big files are rewritten only when their rows change, so frequent runs do not bloat the repository
+    if load("insider_trades.json", {}).get("rows") != rows:
+        (OUT / "insider_trades.json").write_text(json.dumps({"updated": STAMP, "rows": rows}))
     (OUT / "sec_seen.json").write_text(json.dumps({"seen": seen}, separators=(",", ":")))
     cl = clusters_of(rows)
-    (OUT / "insider_clusters.json").write_text(json.dumps({"updated": STAMP, "rows": cl}))
+    if load("insider_clusters.json", {}).get("rows") != json.loads(json.dumps(cl)):
+        (OUT / "insider_clusters.json").write_text(json.dumps({"updated": STAMP, "rows": cl}))
     status["clusters"] = len(cl)
     status["errors"] = status["errors"][:20]
     status["filing_errors"] = status.get("filing_errors", [])[:20]

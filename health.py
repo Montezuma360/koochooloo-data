@@ -17,9 +17,9 @@ FEEDS = {
     "paper_trading": ("paper/summary.json", "updated", 30, True),
     "intelligence": ("intel/status.json", "updated", 2, False),  # crypto, news, SEC filings, options, macro, sentiment
 }
-# While the US market is open these feeds should be no more than this many minutes old (a 5-minute refresh plus run time).
+# While the US market is open these feeds should be no more than this many minutes old.
 # Missing the target is a warning, not "stale": stale data stops the paper engine trading, a slow refresh should not.
-TARGET_MIN = {"prices": 10, "sec_insiders": 10, "signals": 10, "intelligence": 10}
+TARGET_MIN = {"prices": 3, "sec_insiders": 3, "signals": 3, "intelligence": 3}  # a 1-minute timer plus run time
 
 
 def market_open():

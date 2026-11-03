@@ -20,7 +20,7 @@ TODAY = NOW.date()
 SEC_UA = {"User-Agent": os.environ.get("SEC_CONTACT") or "KoochoolooResearch github.com/Montezuma360/koochooloo-data"}
 TICK = re.compile(r"^[A-Z]{1,5}(\.[A-Z])?$")
 EXEC = re.compile(r"director|officer|chief|president|ceo|cfo|coo|chair|vp|vice|counsel|treasurer|secretary", re.I)  # as paper.py
-PRICE_MAX_AGE_MIN = 10       # stock-level prices for the listed stocks are refetched at most this often
+PRICE_MAX_AGE_MIN = 5        # stock-level prices for the listed stocks are refetched at most this often
 FUND_MAX_AGE_DAYS = 7        # SEC company facts (cash flow vs profit) per stock
 
 NOTES = {
