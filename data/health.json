@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T20:56:18Z",
+ "updated": "2026-11-03T20:57:43Z",
  "healthy": true,
  "problems": [],
  "market_open": true,
@@ -7,7 +7,7 @@
  "repo_size_mb": 14.2,
  "feeds": {
   "prices": {
-   "updated": "2026-11-03T20:56:07Z",
+   "updated": "2026-11-03T20:57:28Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -17,7 +17,7 @@
    "on_target": true
   },
   "sec_insiders": {
-   "updated": "2026-11-03T20:56:12Z",
+   "updated": "2026-11-03T20:57:33Z",
    "age_hours": 0.0,
    "stale_after_hours": 1,
    "stale": false,
@@ -27,7 +27,7 @@
    "on_target": true
   },
   "signals": {
-   "updated": "2026-11-03T20:56:18Z",
+   "updated": "2026-11-03T20:57:42Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-03T20:54:42Z",
-   "age_hours": 0.03,
+   "age_hours": 0.05,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-03T00:00:02Z",
-   "age_hours": 20.94,
+   "age_hours": 20.96,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -54,14 +54,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-02T23:45:10+00:00",
-   "age_hours": 21.19,
+   "age_hours": 21.21,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-03T20:56:14Z",
+   "updated": "2026-11-03T20:57:38Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -74,9 +74,9 @@
  "workflows": {
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-03T20:55:39Z",
+   "at": "2026-11-03T20:56:37Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 1
+   "runs_in_last_100": 2
   },
   "Refresh signals and dashboard": {
    "last": "success",
@@ -94,7 +94,7 @@
    "last": "success",
    "at": "2026-11-03T20:17:36Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 22
+   "runs_in_last_100": 21
   }
  }
 }
