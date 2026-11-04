@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T04:16:41Z",
+ "updated": "2026-11-04T05:20:14Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -26,22 +26,22 @@
   ],
   [
    "AAPL",
-   17
-  ],
-  [
-   "META",
-   9
-  ],
-  [
-   "GOOGL",
-   9
+   16
   ],
   [
    "NVDA",
-   9
+   8
   ],
   [
-   "MSFT",
+   "GOOGL",
+   8
+  ],
+  [
+   "AMZN",
+   6
+  ],
+  [
+   "META",
    6
   ],
   [
@@ -49,16 +49,16 @@
    6
   ],
   [
+   "MSFT",
+   5
+  ],
+  [
    "AVGO",
    5
   ],
   [
-   "AMZN",
-   5
-  ],
-  [
    "BTC",
-   3
+   4
   ],
   [
    "TSLA",
@@ -79,21 +79,167 @@
   [
    "UNH",
    1
-  ],
-  [
-   "LLY",
-   1
-  ],
-  [
-   "NFLX",
-   1
-  ],
-  [
-   "BRK.B",
-   1
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-04T05:14:12Z",
+   "source": "CoinDesk",
+   "title": "U.S.-sanctioned Moscow Exchange to list bitcoin and Tether\u2019s USDT in December",
+   "link": "https://www.coindesk.com/markets/2026/11/04/u-s-sanctioned-moscow-exchange-to-list-bitcoin-and-tether-s-usdt-in-december",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T05:13:33Z",
+   "source": "Investing.com",
+   "title": "Air traffic controller poaching exposes global staffing shortage risks, officials say",
+   "link": "https://www.investing.com/news/stock-market-news/air-traffic-controller-poaching-exposes-global-staffing-shortage-risks-officials-say-4997335",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T05:11:53Z",
+   "source": "Investing.com",
+   "title": "India services sector growth picks up in October",
+   "link": "https://www.investing.com/news/economic-indicators/india-services-sector-growth-picks-up-in-october-93CH-4997333",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T05:09:40Z",
+   "source": "CoinDesk",
+   "title": "South Korea's ruling party wants to delay its crypto tax again",
+   "link": "https://www.coindesk.com/policy/2026/11/04/south-korea-s-ruling-party-wants-to-put-off-its-crypto-tax-again",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T05:06:59Z",
+   "source": "Investing.com",
+   "title": "Asia stocks tumble as tech shares slide on U.S. election results",
+   "link": "https://www.investing.com/news/stock-market-news/asia-stocks-tumble-as-tech-shares-slide-on-us-election-results-4997331",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T05:06:23Z",
+   "source": "Investing.com",
+   "title": "India services growth hits 4-month high as domestic demand improves, PMI shows",
+   "link": "https://www.investing.com/news/economic-indicators/india-services-growth-hits-4month-high-as-domestic-demand-improves-pmi-shows-4997330",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T05:05:32Z",
+   "source": "Investing.com",
+   "title": "Carvana (CVNA) director Ira Platt sells $2.15M in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/carvana-cvna-director-ira-platt-sells-215m-in-stock-93CH-4997329",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T05:03:11Z",
+   "source": "Investing.com",
+   "title": "Metropolis Q2 FY27 slides: margins expand, volume-led growth shines",
+   "link": "https://www.investing.com/news/company-news/metropolis-q2-fy27-slides-margins-expand-volumeled-growth-shines-93CH-4997322",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T05:01:12Z",
+   "source": "Investing.com",
+   "title": "Verisk analytics CEO Lee Shavel sells $688,405 in company stock",
+   "link": "https://www.investing.com/news/insider-trading-news/verisk-analytics-ceo-lee-shavel-sells-688405-in-company-stock-93CH-4997320",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T05:01:11Z",
+   "source": "Investing.com",
+   "title": "Nvidia China clients to get 1% of $70 bln RTX chips ordered- Bloomberg",
+   "link": "https://www.investing.com/news/stock-market-news/nvidia-china-clients-to-get-1-of-70-bln-rtx-chips-ordered-bloomberg-4997319",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-04T04:58:01Z",
+   "source": "Yahoo Finance",
+   "title": "Apple Says It Will Keep Paying More for Memory Chips After December. That's Good News for Micron Stock.",
+   "link": "https://www.fool.com/investing/2026/11/03/apple-says-it-will-keep-paying-more-for-memory-chips-after-december-that-s-good-news-for-micron-stock/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-04T04:57:41Z",
+   "source": "The Block",
+   "title": "French bank Cr\u00e9dit Mutuel Ark\u00e9a exploited for over $133 million, ZachXBT says",
+   "link": "https://www.theblock.co/news/web3/2026-11-03-french-bank-credit-mutuel-arkea-exploited-zachxbt-432607",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T04:55:11Z",
+   "source": "CoinDesk",
+   "title": "Democrats surge toward Senate, House majorities, with crypto braced for new direction",
+   "link": "https://www.coindesk.com/policy/2026/11/03/democrats-surge-toward-senate-house-majorities-with-crypto-braced-for-new-direction",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T04:48:16Z",
+   "source": "CoinDesk",
+   "title": "Bitcoin briefly sinks to $75,700 as bets on a Democratic sweep rattle markets",
+   "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-briefly-sinks-to-usd75-700-as-bets-on-a-democratic-sweep-rattle-markets",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-04T04:46:00Z",
+   "source": "MarketWatch",
+   "title": "Democrats win the Senate but control of the House is still up in the air. Here\u2019s what it means for your finances.",
+   "link": "https://www.marketwatch.com/story/democrats-win-the-senate-but-control-of-the-house-is-still-up-in-the-air-heres-what-it-means-for-your-finances-ed78cd6e?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T04:40:44Z",
+   "source": "Cointelegraph",
+   "title": "Democrats claim control of the US Senate",
+   "link": "https://cointelegraph.com/news/democrats-flip-us-senate-as-crypto-industry-faces-policy-reset?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T04:35:48Z",
+   "source": "The Block",
+   "title": "Former Sen. Sherrod Brown defeats Jon Husted, dealing a blow to crypto PAC Fairshake",
+   "link": "https://www.theblock.co/news/regulation/2026-11-03-sherrod-brown-defeats-jon-husted-432495",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T04:35:01Z",
+   "source": "Yahoo Finance",
+   "title": "Why Shake Shack Stock Jumped 20% in October",
+   "link": "https://www.fool.com/investing/2026/11/03/why-shake-shack-stock-jumped-20-in-october/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T04:21:02Z",
+   "source": "Yahoo Finance",
+   "title": "History Shows a Worst-Case Scenario Unfolding for Stocks on Election Night, as Well as a Silver Lining That Isn't Getting Enough Attention",
+   "link": "https://www.fool.com/investing/2026/11/03/history-shows-worst-case-scenario-unfolding-stocks-election-night-silver-lining-isnt-getting-enough-attention/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
   {
    "time": "2026-11-04T04:13:20Z",
    "source": "Investing.com",
@@ -127,6 +273,16 @@
    "tags": []
   },
   {
+   "time": "2026-11-04T04:07:00Z",
+   "source": "Yahoo Finance",
+   "title": "Amazon cuts more jobs as CEO touts record margins, retail gains",
+   "link": "https://www.thestreet.com/employment/amazon-cuts-more-jobs-as-jassy-touts-record-margins-retail-gains?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMZN"
+   ]
+  },
+  {
    "time": "2026-11-04T04:06:37Z",
    "source": "Investing.com",
    "title": "World Bank urges Kenya to curb graft, raises 2026 growth forecast",
@@ -139,6 +295,14 @@
    "source": "Investing.com",
    "title": "Gift Nifty 50 surges overbought near Upper BB: Live levels",
    "link": "https://www.investing.com/news/stock-market-news/gift-nifty-50-vbottom-rally-hits-overbought-zone-live-levels-93CH-4990309",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T04:01:01Z",
+   "source": "Yahoo Finance",
+   "title": "Schwab's Dividend ETF Keeps Hitting Records. I'd Still Buy It Now.",
+   "link": "https://www.fool.com/investing/2026/11/03/schwab-s-dividend-etf-keeps-hitting-records-i-d-still-buy-it-now/?.tsrc=rss",
    "kind": "markets",
    "tags": []
   },
@@ -188,6 +352,14 @@
    "title": "ZachXBT identifies French bank as alleged victim of $133M crypto theft",
    "link": "https://cointelegraph.com/news/zachxbt-french-bank-credit-mutuel-arkea-133m-crypto-theft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T03:30:04Z",
+   "source": "Yahoo Finance",
+   "title": "Elon Musk Slams \u2018Banal\u2019 Cars and Fashion of Today, Calls For a \u2018Total Reset\u2019: \u2018The Future Should Look Like\u2026\u2019",
+   "link": "https://finance.yahoo.com/technology/articles/elon-musk-slams-banal-cars-033004668.html?.tsrc=rss",
+   "kind": "markets",
    "tags": []
   },
   {
@@ -3272,202 +3444,6 @@
    "source": "Investing.com",
    "title": "Eaton Q3 2026 slides: record results drive third guidance raise",
    "link": "https://www.investing.com/news/company-news/eaton-q3-2026-slides-record-results-drive-third-guidance-raise-93CH-4996113",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:27:43Z",
-   "source": "Investing.com",
-   "title": "Knife River Q3 2026 slides: aggregates shine amid margin pressure",
-   "link": "https://www.investing.com/news/company-news/knife-river-q3-2026-slides-aggregates-shine-amid-margin-pressure-93CH-4996112",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:24:36Z",
-   "source": "Investing.com",
-   "title": "Perma-Pipe subsidiary to acquire 51% stake in Indian coating venture",
-   "link": "https://www.investing.com/news/company-news/permapipe-subsidiary-to-acquire-51-stake-in-indian-coating-venture-93CH-4996111",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:21:50Z",
-   "source": "Yahoo Finance",
-   "title": "Nvidia Stocks Rebound 2.84% Before November 17 AI Earnings Check",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-rebound-2-84-172150506.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-03T17:17:19Z",
-   "source": "Yahoo Finance",
-   "title": "Forget Nvidia: Eli Lilly Will Become \u201cthe Most Valuable Company in the World,\u201d Says Macro Investor",
-   "link": "https://www.tikr.com/blog/forget-nvidia-eli-lilly-will-become-the-most-valuable-company-in-the-world-says-macro-investor?ref=yahoofinance&tlnk=yf-261103-3q4hj2qq&.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "LLY",
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-03T17:16:03Z",
-   "source": "Yahoo Finance",
-   "title": "Top VC Warns: \u201cDepreciation Is Going to Start Hitting\u201d Microsoft, Google and Meta. Here\u2019s Where Things Get Ugly",
-   "link": "https://www.tikr.com/blog/top-vc-warns-depreciation-is-going-to-start-hitting-microsoft-google-and-meta-heres-where-things-get-ugly?ref=yahoofinance&tlnk=yf-261103-w443592j&.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "GOOGL",
-    "META",
-    "MSFT"
-   ]
-  },
-  {
-   "time": "2026-11-03T17:15:00Z",
-   "source": "Yahoo Finance",
-   "title": "CoreWeave's 15% Bond Yield Is a Warning for AI Debt. Here Are the Stocks Most Exposed.",
-   "link": "https://www.fool.com/investing/2026/11/03/coreweaves-bond-yield-is-a-warning-for-ai-debt/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:13:44Z",
-   "source": "Yahoo Finance",
-   "title": "Meta Stocks Gain as Preferred Issue Implies $812.5 Million Annual Dividends",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/meta-stocks-gain-preferred-issue-171344081.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "META"
-   ]
-  },
-  {
-   "time": "2026-11-03T17:13:00Z",
-   "source": "Yahoo Finance",
-   "title": "Netflix Trades at a Discount to the S&P 500's Valuation. Is It Deserved?",
-   "link": "https://www.fool.com/investing/2026/11/03/netflix-trades-at-a-discount-to-the-sp-500s-valuat/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NFLX"
-   ]
-  },
-  {
-   "time": "2026-11-03T17:12:19Z",
-   "source": "Yahoo Finance",
-   "title": "Berkshire Hathaway (BRK.A) Gets Bigger Annual Dividends From A 64th Straight Raise",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-brk-gets-bigger-171219358.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "BRK.B"
-   ]
-  },
-  {
-   "time": "2026-11-03T17:10:28Z",
-   "source": "Yahoo Finance",
-   "title": "Bayer\u2019s Comeback Is Starting to Look Like More Than a Lawsuit Story",
-   "link": "https://app.moby.co/home/news/news-bayers-comeback-is-starting-to-look-like-more-than-a-lawsuit-story?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:10:22Z",
-   "source": "Investing.com",
-   "title": "European shares falls as Apple margin warning triggers global tech rout",
-   "link": "https://www.investing.com/news/stock-market-news/european-shares-slide-as-apple-margin-warning-trigger-global-tech-rout-4993704",
-   "kind": "markets",
-   "tags": [
-    "AAPL"
-   ]
-  },
-  {
-   "time": "2026-11-03T17:09:56Z",
-   "source": "Investing.com",
-   "title": "Earnings call transcript: NexPoint Residential Trust cuts outlook in Q3 2026",
-   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-nexpoint-residential-trust-cuts-outlook-in-q3-2026-93CH-4996095",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:09:56Z",
-   "source": "Yahoo Finance",
-   "title": "Top Midday Stories: Apple Fiscal Q4 EPS, Revenue Top Estimates, Shares Fall; Meta Reportedly Targeting Up to $25 Billion in Bond Sale",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-apple-fiscal-170956313.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AAPL",
-    "META"
-   ]
-  },
-  {
-   "time": "2026-11-03T17:09:46Z",
-   "source": "CNBC",
-   "title": "Midterm elections 2026 live updates: Economy, inflation and voter concerns",
-   "link": "https://www.cnbc.com/2026/11/03/midterm-elections-2026-live-updates.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:09:24Z",
-   "source": "Investing.com",
-   "title": "Waters Q3 2026 slides: double-digit growth, raised outlook",
-   "link": "https://www.investing.com/news/company-news/waters-q3-2026-slides-doubledigit-growth-raised-outlook-93CH-4996094",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:08:51Z",
-   "source": "Investing.com",
-   "title": "Earnings call transcript: Louisiana-Pacific tops Q3 2026 estimates as siding shines",
-   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-louisianapacific-tops-q3-2026-estimates-as-siding-shines-93CH-4996093",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:08:46Z",
-   "source": "Investing.com",
-   "title": "U.K. stocks lower at close of trade; Investing.com United Kingdom 100 down 1.22%",
-   "link": "https://www.investing.com/news/stock-market-news/uk-stocks-lower-at-close-of-trade-investingcom-united-kingdom-100-down-122-4996092",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:08:22Z",
-   "source": "Investing.com",
-   "title": "Spain stocks lower at close of trade; IBEX 35 down 0.79%",
-   "link": "https://www.investing.com/news/stock-market-news/spain-stocks-lower-at-close-of-trade-ibex-35-down-079-4996091",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:08:15Z",
-   "source": "Investing.com",
-   "title": "Earnings call transcript: Capital Southwest posts mixed Q2 2026 results",
-   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-capital-southwest-posts-mixed-q2-2026-results-93CH-4996090",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:08:10Z",
-   "source": "Investing.com",
-   "title": "Arista Networks earnings on deck: Can growth momentum hold?",
-   "link": "https://www.investing.com/news/earnings/arista-networks-earnings-on-deck-can-growth-momentum-hold-93CH-4996089",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:08:03Z",
-   "source": "Investing.com",
-   "title": "Earnings call transcript: Crescent Energy tops Q3 2026 estimates as cash flow jumps",
-   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-crescent-energy-tops-q3-2026-estimates-as-cash-flow-jumps-93CH-4996088",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T17:07:56Z",
-   "source": "Investing.com",
-   "title": "Portugal stocks lower at close of trade; PSI down 0.31%",
-   "link": "https://www.investing.com/news/stock-market-news/portugal-stocks-lower-at-close-of-trade-psi-down-031-4996087",
    "kind": "markets",
    "tags": []
   }
