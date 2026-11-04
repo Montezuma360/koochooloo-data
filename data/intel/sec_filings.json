@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T16:13:37Z",
+ "updated": "2026-11-04T16:48:35Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -54,6 +54,27 @@
   }
  ],
  "results_announced_3d": [
+  {
+   "time": "2026-11-04T16:42:09Z",
+   "form": "8-K",
+   "company": "CHS INC",
+   "cik": 823277,
+   "ticker": "CHSCP",
+   "role": "Filer",
+   "accession": "0000823277-26-000040",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/823277/000082327726000040/0000823277-26-000040-index.htm"
+  },
   {
    "time": "2026-11-04T14:37:51Z",
    "form": "8-K",
@@ -2236,31 +2257,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1082554/000108255426000036/0001082554-26-000036-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:31:36Z",
-   "form": "8-K",
-   "company": "AdvanSix Inc.",
-   "cik": 1673985,
-   "ticker": "ASIX",
-   "role": "Filer",
-   "accession": "0001673985-26-000056",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1673985/000167398526000056/0001673985-26-000056-index.htm"
   }
  ],
  "activist_stakes_3d": [
@@ -2554,6 +2550,84 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T16:44:21Z",
+   "form": "10-Q",
+   "company": "UFP INDUSTRIES INC",
+   "cik": 912767,
+   "ticker": "UFPI",
+   "role": "Filer",
+   "accession": "0001104659-26-122507",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/912767/000110465926122507/0001104659-26-122507-index.htm"
+  },
+  {
+   "time": "2026-11-04T16:44:10Z",
+   "form": "10-Q",
+   "company": "NABORS INDUSTRIES LTD",
+   "cik": 1163739,
+   "ticker": "NBR",
+   "role": "Filer",
+   "accession": "0001104659-26-122505",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1163739/000110465926122505/0001104659-26-122505-index.htm"
+  },
+  {
+   "time": "2026-11-04T16:43:55Z",
+   "form": "8-K",
+   "company": "1ST SOURCE CORP",
+   "cik": 34782,
+   "ticker": "SRCE",
+   "role": "Filer",
+   "accession": "0000034782-26-000057",
+   "items": [
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/34782/000003478226000057/0000034782-26-000057-index.htm"
+  },
+  {
+   "time": "2026-11-04T16:42:09Z",
+   "form": "8-K",
+   "company": "CHS INC",
+   "cik": 823277,
+   "ticker": "CHSCP",
+   "role": "Filer",
+   "accession": "0000823277-26-000040",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/823277/000082327726000040/0000823277-26-000040-index.htm"
+  },
+  {
+   "time": "2026-11-04T16:35:17Z",
+   "form": "10-K",
+   "company": "CHS INC",
+   "cik": 823277,
+   "ticker": "CHSCP",
+   "role": "Filer",
+   "accession": "0000823277-26-000039",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/823277/000082327726000039/0000823277-26-000039-index.htm"
+  },
   {
    "time": "2026-11-04T16:04:08Z",
    "form": "8-K",
@@ -16806,127 +16880,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1582961/000162828026069125/0001628280-26-069125-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:18:09Z",
-   "form": "8-K",
-   "company": "EchoStar CORP",
-   "cik": 1415404,
-   "ticker": "ECHO",
-   "role": "Filer",
-   "accession": "0001415404-26-000057",
-   "items": [
-    {
-     "item": "5.07",
-     "meaning": "Shareholder vote results"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1415404/000141540426000057/0001415404-26-000057-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:16:32Z",
-   "form": "8-K",
-   "company": "Our Bond, Inc.",
-   "cik": 1756064,
-   "ticker": "OBAI",
-   "role": "Filer",
-   "accession": "0001493152-26-049711",
-   "items": [
-    {
-     "item": "1.01",
-     "meaning": "Major agreement signed"
-    },
-    {
-     "item": "3.02",
-     "meaning": "Unregistered share sale"
-    },
-    {
-     "item": "5.03",
-     "meaning": "Bylaws changed"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226049711/0001493152-26-049711-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:16:25Z",
-   "form": "8-K",
-   "company": "PINNACLE WEST CAPITAL CORP",
-   "cik": 764622,
-   "ticker": "PNW",
-   "role": "Filer",
-   "accession": "0000764622-26-000051",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000051/0000764622-26-000051-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:16:22Z",
-   "form": "8-K",
-   "company": "REVVITY, INC.",
-   "cik": 31791,
-   "ticker": "RVTY",
-   "role": "Filer",
-   "accession": "0000031791-26-000031",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/31791/000003179126000031/0000031791-26-000031-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:16:05Z",
-   "form": "8-K",
-   "company": "Ocean Capital Acquisition Corp",
-   "cik": 1926314,
-   "ticker": "OCAC",
-   "role": "Filer",
-   "accession": "0001493152-26-049710",
-   "items": [
-    {
-     "item": "5.02",
-     "meaning": "Director or executive change"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1926314/000149315226049710/0001493152-26-049710-index.htm"
   }
  ]
 }

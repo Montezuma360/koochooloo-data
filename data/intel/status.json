@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-04T16:13:37Z",
+ "updated": "2026-11-04T16:48:35Z",
  "market_open": true,
  "failed": {},
  "sources": {
   "crypto": {
-   "last_try": "2026-11-04T16:13:37Z",
+   "last_try": "2026-11-04T16:48:35Z",
    "result": "100 coins, 15 trending, 3 exchanges",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 1.5,
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 2.0,
    "every_minutes": 1
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-04T16:13:37Z",
+   "last_try": "2026-11-04T16:48:35Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-04T16:13:37Z",
+   "last_ok": "2026-11-04T16:48:35Z",
    "seconds": 0.5,
    "every_minutes": 1
   },
@@ -25,10 +25,10 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-04T16:13:37Z",
-   "result": "block 974544, 1 sat/vB",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 1.6,
+   "last_try": "2026-11-04T16:48:35Z",
+   "result": "block 974550, 1 sat/vB",
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 2.1,
    "every_minutes": 2
   },
   "onchain_daily": {
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-04T16:13:37Z",
+   "last_try": "2026-11-04T16:48:35Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 2.2,
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 2.0,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -53,59 +53,59 @@
    "every_minutes": 60
   },
   "macro_global": {
-   "last_try": "2026-11-04T15:54:33Z",
-   "result": "11 series",
-   "last_ok": "2026-11-04T15:54:33Z",
-   "seconds": 3.5,
+   "last_try": "2026-11-04T16:48:35Z",
+   "result": "10 series, 1 failed",
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 64.8,
    "every_minutes": 30
   },
   "calendar": {
-   "last_try": "2026-11-04T16:13:37Z",
+   "last_try": "2026-11-04T16:48:35Z",
    "result": "115 events, 12 high-impact still to come",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 0.3,
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 0.1,
    "every_minutes": 15
   },
   "news": {
-   "last_try": "2026-11-04T16:13:37Z",
-   "result": "20 new headlines from 15 feeds",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 4.0,
-   "every_minutes": 1
-  },
-  "sec_filings": {
-   "last_try": "2026-11-04T16:13:37Z",
-   "result": "9 new filings (0 with a red flag)",
-   "last_ok": "2026-11-04T16:13:37Z",
+   "last_try": "2026-11-04T16:48:35Z",
+   "result": "32 new headlines from 15 feeds",
+   "last_ok": "2026-11-04T16:48:35Z",
    "seconds": 2.8,
    "every_minutes": 1
   },
+  "sec_filings": {
+   "last_try": "2026-11-04T16:48:35Z",
+   "result": "8 new filings (0 with a red flag)",
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 2.3,
+   "every_minutes": 1
+  },
   "options": {
-   "last_try": "2026-11-04T16:13:37Z",
-   "result": "12 chains, put/call 0.851, 53 unusual",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 5.2,
+   "last_try": "2026-11-04T16:48:35Z",
+   "result": "12 chains, put/call 0.918, 77 unusual",
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 3.5,
    "every_minutes": 5
   },
   "fear_greed": {
-   "last_try": "2026-11-04T16:13:37Z",
-   "result": "22.0 (Extreme fear), 6 parts",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 1.2,
+   "last_try": "2026-11-04T16:48:35Z",
+   "result": "21.4 (Extreme fear), 6 parts",
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 1.4,
    "every_minutes": 5
   },
   "stocktwits": {
-   "last_try": "2026-11-04T16:13:37Z",
+   "last_try": "2026-11-04T16:48:35Z",
    "result": "30 trending",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 0.4,
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 0.1,
    "every_minutes": 5
   },
   "reddit_forums": {
-   "last_try": "2026-11-04T16:13:37Z",
+   "last_try": "2026-11-04T16:48:35Z",
    "result": "5 forums",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 1.8,
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 2.3,
    "every_minutes": 15
   },
   "finnhub": {
@@ -116,10 +116,10 @@
    "every_minutes": 60
   },
   "crypto_sectors": {
-   "last_try": "2026-11-04T16:13:37Z",
-   "result": "382 sectors; best Quantum-Resistant +9.3%, worst PolitiFi -9.0%",
-   "last_ok": "2026-11-04T16:13:37Z",
-   "seconds": 0.2,
+   "last_try": "2026-11-04T16:48:35Z",
+   "result": "382 sectors; best Quantum-Resistant +9.6%, worst PolitiFi -9.5%",
+   "last_ok": "2026-11-04T16:48:35Z",
+   "seconds": 0.1,
    "every_minutes": 10
   }
  }
