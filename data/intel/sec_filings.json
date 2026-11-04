@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T13:30:37Z",
+ "updated": "2026-11-04T14:06:19Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -78,35 +78,63 @@
     "4.02"
    ],
    "link": "https://www.sec.gov/Archives/edgar/data/1804745/000162828026069090/0001628280-26-069090-index.htm"
-  },
+  }
+ ],
+ "results_announced_3d": [
   {
-   "time": "2026-11-03T02:58:15Z",
+   "time": "2026-11-04T13:46:30Z",
    "form": "8-K",
-   "company": "Karyopharm Therapeutics Inc.",
-   "cik": 1503802,
-   "ticker": "KPTI",
+   "company": "MFA FINANCIAL, INC.",
+   "cik": 1055160,
+   "ticker": "MFA",
    "role": "Filer",
-   "accession": "0001193125-26-444164",
+   "accession": "0001055160-26-000021",
    "items": [
     {
-     "item": "1.01",
-     "meaning": "Major agreement signed"
-    },
-    {
-     "item": "1.03",
-     "meaning": "Bankruptcy"
-    },
-    {
-     "item": "2.03",
-     "meaning": "New debt"
-    },
-    {
-     "item": "2.04",
-     "meaning": "Debt acceleration"
+     "item": "2.02",
+     "meaning": "Results announced"
     },
     {
      "item": "7.01",
      "meaning": "Regulation FD disclosure"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1055160/000105516026000021/0001055160-26-000021-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:41:04Z",
+   "form": "8-K",
+   "company": "MGE ENERGY INC",
+   "cik": 1161728,
+   "ticker": "MGEE",
+   "role": "Filer",
+   "accession": "0001193125-26-446285",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1161728/000119312526446285/0001193125-26-446285-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:35:50Z",
+   "form": "8-K",
+   "company": "Aprea Therapeutics, Inc.",
+   "cik": 1781983,
+   "ticker": "APRE",
+   "role": "Filer",
+   "accession": "0001104659-26-122403",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
     },
     {
      "item": "8.01",
@@ -117,37 +145,122 @@
      "meaning": "Financial statements and exhibits"
     }
    ],
-   "red_flag": [
-    "1.03",
-    "2.04"
-   ],
-   "link": "https://www.sec.gov/Archives/edgar/data/1503802/000119312526444164/0001193125-26-444164-index.htm"
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1781983/000110465926122403/0001104659-26-122403-index.htm"
   },
   {
-   "time": "2026-11-02T22:25:24Z",
+   "time": "2026-11-04T13:35:33Z",
    "form": "8-K",
-   "company": "Ribbon Acquisition Corp.",
-   "cik": 2035016,
-   "ticker": "RIBB",
+   "company": "RAND CAPITAL CORP",
+   "cik": 81955,
+   "ticker": "RAND",
    "role": "Filer",
-   "accession": "0001213900-26-115030",
+   "accession": "0001493152-26-049886",
    "items": [
     {
-     "item": "3.01",
-     "meaning": "Delisting warning"
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
     },
     {
      "item": "9.01",
      "meaning": "Financial statements and exhibits"
     }
    ],
-   "red_flag": [
-    "3.01"
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/81955/000149315226049886/0001493152-26-049886-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:35:25Z",
+   "form": "8-K",
+   "company": "Clene Inc.",
+   "cik": 1822791,
+   "ticker": "CLNN",
+   "role": "Filer",
+   "accession": "0001437749-26-034775",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
    ],
-   "link": "https://www.sec.gov/Archives/edgar/data/2035016/000121390026115030/0001213900-26-115030-index.htm"
-  }
- ],
- "results_announced_3d": [
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1822791/000143774926034775/0001437749-26-034775-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:30:51Z",
+   "form": "8-K",
+   "company": "TWIN DISC INC",
+   "cik": 100378,
+   "ticker": "TWIN",
+   "role": "Filer",
+   "accession": "0001437749-26-034773",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/100378/000143774926034773/0001437749-26-034773-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:30:15Z",
+   "form": "8-K",
+   "company": "MARINEMAX INC",
+   "cik": 1057060,
+   "ticker": "HZO",
+   "role": "Filer",
+   "accession": "0001193125-26-446269",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1057060/000119312526446269/0001193125-26-446269-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:30:15Z",
+   "form": "8-K",
+   "company": "NNN REIT, INC.",
+   "cik": 751364,
+   "ticker": "NNN",
+   "role": "Filer",
+   "accession": "0000751364-26-000002",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/751364/000075136426000002/0000751364-26-000002-index.htm"
+  },
   {
    "time": "2026-11-04T13:28:39Z",
    "form": "8-K",
@@ -2175,189 +2288,45 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1514281/000162828026069770/0001628280-26-069770-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:30:24Z",
-   "form": "8-K",
-   "company": "Ridgepost Capital, Inc.",
-   "cik": 1841968,
-   "ticker": "RPC",
-   "role": "Filer",
-   "accession": "0001193125-26-446147",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1841968/000119312526446147/0001193125-26-446147-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:30:18Z",
-   "form": "8-K",
-   "company": "ZIMMER BIOMET HOLDINGS, INC.",
-   "cik": 1136869,
-   "ticker": "ZBH",
-   "role": "Filer",
-   "accession": "0001193125-26-446145",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1136869/000119312526446145/0001193125-26-446145-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:30:15Z",
-   "form": "8-K",
-   "company": "TREX CO INC",
-   "cik": 1069878,
-   "ticker": "TREX",
-   "role": "Filer",
-   "accession": "0001193125-26-446144",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1069878/000119312526446144/0001193125-26-446144-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:26:24Z",
-   "form": "8-K",
-   "company": "Circle Internet Group, Inc.",
-   "cik": 1876042,
-   "ticker": "CRCL",
-   "role": "Filer",
-   "accession": "0001876042-26-000309",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000309/0001876042-26-000309-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:15:18Z",
-   "form": "8-K",
-   "company": "Flowco Holdings Inc.",
-   "cik": 2035149,
-   "ticker": "FLOC",
-   "role": "Filer",
-   "accession": "0001193125-26-446133",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2035149/000119312526446133/0001193125-26-446133-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:08:40Z",
-   "form": "8-K",
-   "company": "STANLEY BLACK & DECKER, INC.",
-   "cik": 93556,
-   "ticker": "SWK",
-   "role": "Filer",
-   "accession": "0000093556-26-000036",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000036/0000093556-26-000036-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:05:23Z",
-   "form": "8-K",
-   "company": "Qnity Electronics, Inc.",
-   "cik": 2058873,
-   "ticker": "Q",
-   "role": "Filer",
-   "accession": "0002058873-26-000039",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2058873/000205887326000039/0002058873-26-000039-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:03:09Z",
-   "form": "8-K",
-   "company": "Solstice Advanced Materials Inc.",
-   "cik": 2064953,
-   "ticker": "SOLS",
-   "role": "Filer",
-   "accession": "0002064953-26-000098",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2064953/000206495326000098/0002064953-26-000098-index.htm"
   }
  ],
  "activist_stakes_3d": [
+  {
+   "time": "2026-11-04T14:00:24Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "GameSquare Holdings, Inc.",
+   "cik": 1714562,
+   "ticker": "GAME",
+   "role": "Subject",
+   "accession": "0001493152-26-049888",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1714562/000149315226049888/0001493152-26-049888-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:32:40Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "NAM TAI PROPERTY INC.",
+   "cik": 829365,
+   "ticker": "NTPIF",
+   "role": "Subject",
+   "accession": "0000902664-26-004360",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/829365/000090266426004360/0000902664-26-004360-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:32:10Z",
+   "form": "SCHEDULE 13D",
+   "company": "Invesco Senior Income Trust",
+   "cik": 1059386,
+   "ticker": "VVR",
+   "role": "Subject",
+   "accession": "0001062993-26-005733",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1059386/000106299326005733/0001062993-26-005733-index.htm"
+  },
   {
    "time": "2026-11-04T02:57:23Z",
    "form": "SCHEDULE 13D/A",
@@ -2621,105 +2590,701 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1616533/000119312526444399/0001193125-26-444399-index.htm"
-  },
-  {
-   "time": "2026-11-03T01:55:34Z",
-   "form": "SCHEDULE 13D",
-   "company": "Dine Brands Global, Inc.",
-   "cik": 49754,
-   "ticker": "DIN",
-   "role": "Subject",
-   "accession": "0001213900-26-115110",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/49754/000121390026115110/0001213900-26-115110-index.htm"
-  },
-  {
-   "time": "2026-11-03T01:46:27Z",
-   "form": "SCHEDULE 13D",
-   "company": "Dine Brands Global, Inc.",
-   "cik": 49754,
-   "ticker": "DIN",
-   "role": "Subject",
-   "accession": "0001104659-26-121599",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/49754/000110465926121599/0001104659-26-121599-index.htm"
-  },
-  {
-   "time": "2026-11-03T01:45:39Z",
-   "form": "SCHEDULE 13D",
-   "company": "Hamilton Lane Venture Capital & Growth Fund",
-   "cik": 2047692,
-   "ticker": null,
-   "role": "Subject",
-   "accession": "0001213900-26-115108",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2047692/000121390026115108/0001213900-26-115108-index.htm"
-  },
-  {
-   "time": "2026-11-03T01:36:33Z",
-   "form": "SCHEDULE 13D",
-   "company": "MSG Rangers Corp.",
-   "cik": 2132873,
-   "ticker": "MSGR",
-   "role": "Subject",
-   "accession": "0001104659-26-121596",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2132873/000110465926121596/0001104659-26-121596-index.htm"
-  },
-  {
-   "time": "2026-11-02T22:52:29Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Icon Energy Corp",
-   "cik": 1995574,
-   "ticker": "ICON",
-   "role": "Subject",
-   "accession": "0001104659-26-121505",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1995574/000110465926121505/0001104659-26-121505-index.htm"
-  },
-  {
-   "time": "2026-11-02T22:45:50Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "LENZ Therapeutics, Inc.",
-   "cik": 1815776,
-   "ticker": "LENZ",
-   "role": "Subject",
-   "accession": "0001346824-26-000251",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1815776/000134682426000251/0001346824-26-000251-index.htm"
-  },
-  {
-   "time": "2026-11-02T22:14:27Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "JEWETT CAMERON TRADING CO LTD",
-   "cik": 885307,
-   "ticker": "JCTC",
-   "role": "Subject",
-   "accession": "0001536588-26-000045",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/885307/000153658826000045/0001536588-26-000045-index.htm"
-  },
-  {
-   "time": "2026-11-02T22:10:00Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Graham Holdings Co",
-   "cik": 104889,
-   "ticker": "GHC",
-   "role": "Subject",
-   "accession": "0000950157-26-001154",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/104889/000095015726001154/0000950157-26-001154-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T14:05:07Z",
+   "form": "8-K",
+   "company": "Lyell Immunopharma, Inc.",
+   "cik": 1806952,
+   "ticker": "LYEL",
+   "role": "Filer",
+   "accession": "0001193125-26-446317",
+   "items": [
+    {
+     "item": "3.02",
+     "meaning": "Unregistered share sale"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1806952/000119312526446317/0001193125-26-446317-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:03:27Z",
+   "form": "10-Q",
+   "company": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
+   "cik": 1100682,
+   "ticker": "CRL",
+   "role": "Filer",
+   "accession": "0001100682-26-000157",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1100682/000110068226000157/0001100682-26-000157-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:03:11Z",
+   "form": "10-Q",
+   "company": "Royalty Pharma plc",
+   "cik": 1802768,
+   "ticker": "RPRX",
+   "role": "Filer",
+   "accession": "0001802768-26-000028",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1802768/000180276826000028/0001802768-26-000028-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:00:50Z",
+   "form": "10-Q",
+   "company": "PLUMAS BANCORP",
+   "cik": 1168455,
+   "ticker": "PLBC",
+   "role": "Filer",
+   "accession": "0001437749-26-034778",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1168455/000143774926034778/0001437749-26-034778-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:00:36Z",
+   "form": "8-K",
+   "company": "CDT Equity Inc.",
+   "cik": 1896212,
+   "ticker": "CDT",
+   "role": "Filer",
+   "accession": "0001493152-26-049889",
+   "items": [
+    {
+     "item": "3.03",
+     "meaning": "Shareholder rights changed"
+    },
+    {
+     "item": "5.03",
+     "meaning": "Bylaws changed"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1896212/000149315226049889/0001493152-26-049889-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:00:36Z",
+   "form": "8-K",
+   "company": "LASE Corp.",
+   "cik": 1807887,
+   "ticker": "LASE",
+   "role": "Filer",
+   "accession": "0001493152-26-049890",
+   "items": [
+    {
+     "item": "5.03",
+     "meaning": "Bylaws changed"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1807887/000149315226049890/0001493152-26-049890-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:00:32Z",
+   "form": "8-K",
+   "company": "SIERRA BANCORP",
+   "cik": 1130144,
+   "ticker": "BSRR",
+   "role": "Filer",
+   "accession": "0001437749-26-034779",
+   "items": [
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1130144/000143774926034779/0001437749-26-034779-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:00:24Z",
+   "form": "8-K",
+   "company": "Royale Energy, Inc.",
+   "cik": 1694617,
+   "ticker": "ROYL",
+   "role": "Filer",
+   "accession": "0001171843-26-007101",
+   "items": [
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1694617/000117184326007101/0001171843-26-007101-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:00:24Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Blue & Silver Ventures, Ltd.",
+   "cik": 1972219,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001493152-26-049888",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1972219/000149315226049888/0001493152-26-049888-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:00:24Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "GameSquare Holdings, Inc.",
+   "cik": 1714562,
+   "ticker": "GAME",
+   "role": "Subject",
+   "accession": "0001493152-26-049888",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1714562/000149315226049888/0001493152-26-049888-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:00:07Z",
+   "form": "8-K",
+   "company": "HarbourVest Private Equity Secondaries Fund (TE) L.P.",
+   "cik": 2117580,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001193125-26-446307",
+   "items": [
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2117580/000119312526446307/0001193125-26-446307-index.htm"
+  },
+  {
+   "time": "2026-11-04T14:00:07Z",
+   "form": "8-K",
+   "company": "HarbourVest Private Equity Secondaries Fund L.P.",
+   "cik": 2097887,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001193125-26-446306",
+   "items": [
+    {
+     "item": "3.02",
+     "meaning": "Unregistered share sale"
+    },
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2097887/000119312526446306/0001193125-26-446306-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:59:37Z",
+   "form": "8-K",
+   "company": "Archrock, Inc.",
+   "cik": 1389050,
+   "ticker": "AROC",
+   "role": "Filer",
+   "accession": "0001389050-26-000041",
+   "items": [
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1389050/000138905026000041/0001389050-26-000041-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:55:51Z",
+   "form": "10-Q",
+   "company": "SM Energy Co",
+   "cik": 893538,
+   "ticker": "SM",
+   "role": "Filer",
+   "accession": "0000893538-26-000147",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/893538/000089353826000147/0000893538-26-000147-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:52:25Z",
+   "form": "8-K",
+   "company": "WEC ENERGY GROUP, INC.",
+   "cik": 783325,
+   "ticker": "WEC",
+   "role": "Filer",
+   "accession": "0001104659-26-122408",
+   "items": [
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/783325/000110465926122408/0001104659-26-122408-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:46:30Z",
+   "form": "8-K",
+   "company": "MFA FINANCIAL, INC.",
+   "cik": 1055160,
+   "ticker": "MFA",
+   "role": "Filer",
+   "accession": "0001055160-26-000021",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1055160/000105516026000021/0001055160-26-000021-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:45:47Z",
+   "form": "10-Q",
+   "company": "Aprea Therapeutics, Inc.",
+   "cik": 1781983,
+   "ticker": "APRE",
+   "role": "Filer",
+   "accession": "0001104659-26-122405",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1781983/000110465926122405/0001104659-26-122405-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:45:42Z",
+   "form": "10-Q",
+   "company": "RAND CAPITAL CORP",
+   "cik": 81955,
+   "ticker": "RAND",
+   "role": "Filer",
+   "accession": "0001193125-26-446291",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/81955/000119312526446291/0001193125-26-446291-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:44:25Z",
+   "form": "10-Q",
+   "company": "CS Disco, Inc.",
+   "cik": 1625641,
+   "ticker": "LAW",
+   "role": "Filer",
+   "accession": "0001625641-26-000193",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1625641/000162564126000193/0001625641-26-000193-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:41:30Z",
+   "form": "10-Q",
+   "company": "Versigent PLC",
+   "cik": 2078008,
+   "ticker": "VGNT",
+   "role": "Filer",
+   "accession": "0002078008-26-000027",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2078008/000207800826000027/0002078008-26-000027-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:41:04Z",
+   "form": "8-K",
+   "company": "MGE ENERGY INC",
+   "cik": 1161728,
+   "ticker": "MGEE",
+   "role": "Filer",
+   "accession": "0001193125-26-446285",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1161728/000119312526446285/0001193125-26-446285-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:40:18Z",
+   "form": "8-K",
+   "company": "reAlpha Tech Corp.",
+   "cik": 1859199,
+   "ticker": "AIRE",
+   "role": "Filer",
+   "accession": "0001213900-26-115759",
+   "items": [
+    {
+     "item": "1.01",
+     "meaning": "Major agreement signed"
+    },
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1859199/000121390026115759/0001213900-26-115759-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:40:07Z",
+   "form": "10-Q",
+   "company": "FIRST FINANCIAL CORP /IN/",
+   "cik": 714562,
+   "ticker": "THFF",
+   "role": "Filer",
+   "accession": "0000714562-26-000071",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/714562/000071456226000071/0000714562-26-000071-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:38:00Z",
+   "form": "10-Q",
+   "company": "MGE ENERGY INC",
+   "cik": 1161728,
+   "ticker": "MGEE",
+   "role": "Filer",
+   "accession": "0001193125-26-446283",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1161728/000119312526446283/0001193125-26-446283-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:36:23Z",
+   "form": "10-Q",
+   "company": "Clene Inc.",
+   "cik": 1822791,
+   "ticker": "CLNN",
+   "role": "Filer",
+   "accession": "0001437749-26-034776",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1822791/000143774926034776/0001437749-26-034776-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:35:50Z",
+   "form": "8-K",
+   "company": "Aprea Therapeutics, Inc.",
+   "cik": 1781983,
+   "ticker": "APRE",
+   "role": "Filer",
+   "accession": "0001104659-26-122403",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "8.01",
+     "meaning": "Other events"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1781983/000110465926122403/0001104659-26-122403-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:35:33Z",
+   "form": "8-K",
+   "company": "RAND CAPITAL CORP",
+   "cik": 81955,
+   "ticker": "RAND",
+   "role": "Filer",
+   "accession": "0001493152-26-049886",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/81955/000149315226049886/0001493152-26-049886-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:35:25Z",
+   "form": "8-K",
+   "company": "Clene Inc.",
+   "cik": 1822791,
+   "ticker": "CLNN",
+   "role": "Filer",
+   "accession": "0001437749-26-034775",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1822791/000143774926034775/0001437749-26-034775-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:35:08Z",
+   "form": "10-Q",
+   "company": "Clear Secure, Inc.",
+   "cik": 1856314,
+   "ticker": "YOU",
+   "role": "Filer",
+   "accession": "0001856314-26-000055",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1856314/000185631426000055/0001856314-26-000055-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:34:24Z",
+   "form": "10-Q",
+   "company": "Southwest Gas Holdings, Inc.",
+   "cik": 1692115,
+   "ticker": "SWX",
+   "role": "Filer",
+   "accession": "0001692115-26-000123",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1692115/000169211526000123/0001692115-26-000123-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:33:32Z",
+   "form": "10-Q",
+   "company": "NNN REIT, INC.",
+   "cik": 751364,
+   "ticker": "NNN",
+   "role": "Filer",
+   "accession": "0001193125-26-446273",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/751364/000119312526446273/0001193125-26-446273-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:32:40Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Oasis Management Co Ltd.",
+   "cik": 1317904,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000902664-26-004360",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1317904/000090266426004360/0000902664-26-004360-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:32:40Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "NAM TAI PROPERTY INC.",
+   "cik": 829365,
+   "ticker": "NTPIF",
+   "role": "Subject",
+   "accession": "0000902664-26-004360",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/829365/000090266426004360/0000902664-26-004360-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:32:10Z",
+   "form": "SCHEDULE 13D",
+   "company": "Saba Capital Management, L.P.",
+   "cik": 1510281,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001062993-26-005733",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1510281/000106299326005733/0001062993-26-005733-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:32:10Z",
+   "form": "SCHEDULE 13D",
+   "company": "Invesco Senior Income Trust",
+   "cik": 1059386,
+   "ticker": "VVR",
+   "role": "Subject",
+   "accession": "0001062993-26-005733",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1059386/000106299326005733/0001062993-26-005733-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:31:07Z",
+   "form": "8-K",
+   "company": "TWIN DISC INC",
+   "cik": 100378,
+   "ticker": "TWIN",
+   "role": "Filer",
+   "accession": "0001437749-26-034774",
+   "items": [
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/100378/000143774926034774/0001437749-26-034774-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:30:59Z",
+   "form": "10-Q",
+   "company": "Vishay Precision Group, Inc.",
+   "cik": 1487952,
+   "ticker": "VPG",
+   "role": "Filer",
+   "accession": "0001437749-26-034772",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1487952/000143774926034772/0001437749-26-034772-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:30:52Z",
+   "form": "8-K",
+   "company": "FEDERATED HERMES, INC.",
+   "cik": 1056288,
+   "ticker": "FHI",
+   "role": "Filer",
+   "accession": "0001056288-26-000033",
+   "items": [
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1056288/000105628826000033/0001056288-26-000033-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:30:51Z",
+   "form": "8-K",
+   "company": "TWIN DISC INC",
+   "cik": 100378,
+   "ticker": "TWIN",
+   "role": "Filer",
+   "accession": "0001437749-26-034773",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/100378/000143774926034773/0001437749-26-034773-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:30:49Z",
+   "form": "10-Q",
+   "company": "TWIN DISC INC",
+   "cik": 100378,
+   "ticker": "TWIN",
+   "role": "Filer",
+   "accession": "0001437749-26-034771",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/100378/000143774926034771/0001437749-26-034771-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:30:15Z",
+   "form": "8-K",
+   "company": "MARINEMAX INC",
+   "cik": 1057060,
+   "ticker": "HZO",
+   "role": "Filer",
+   "accession": "0001193125-26-446269",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1057060/000119312526446269/0001193125-26-446269-index.htm"
+  },
+  {
+   "time": "2026-11-04T13:30:15Z",
+   "form": "8-K",
+   "company": "NNN REIT, INC.",
+   "cik": 751364,
+   "ticker": "NNN",
+   "role": "Filer",
+   "accession": "0000751364-26-000002",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/751364/000075136426000002/0000751364-26-000002-index.htm"
+  },
   {
    "time": "2026-11-04T13:29:27Z",
    "form": "10-Q",
@@ -16537,866 +17102,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000064/0001418135-26-000064-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:48Z",
-   "form": "8-K",
-   "company": "InfuSystem Holdings, Inc",
-   "cik": 1337013,
-   "ticker": "INFU",
-   "role": "Filer",
-   "accession": "0001628280-26-069113",
-   "items": [
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1337013/000162828026069113/0001628280-26-069113-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:45Z",
-   "form": "8-K",
-   "company": "Expro Ltd",
-   "cik": 2126198,
-   "ticker": "XPRO",
-   "role": "Filer",
-   "accession": "0001437749-26-034515",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2126198/000143774926034515/0001437749-26-034515-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:41Z",
-   "form": "8-K",
-   "company": "Archer-Daniels-Midland Co",
-   "cik": 7084,
-   "ticker": "ADM",
-   "role": "Filer",
-   "accession": "0000007084-26-000054",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/7084/000000708426000054/0000007084-26-000054-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:34Z",
-   "form": "10-Q",
-   "company": "MARZETTI CO",
-   "cik": 57515,
-   "ticker": "MZTI",
-   "role": "Filer",
-   "accession": "0000057515-26-000030",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/57515/000005751526000030/0000057515-26-000030-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:33Z",
-   "form": "8-K",
-   "company": "SYSCO CORP",
-   "cik": 96021,
-   "ticker": "SYY",
-   "role": "Filer",
-   "accession": "0000096021-26-000046",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "5.02",
-     "meaning": "Director or executive change"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000046/0000096021-26-000046-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:32Z",
-   "form": "SCHEDULE 13D",
-   "company": "SK hynix Inc.",
-   "cik": 2120882,
-   "ticker": "SKHY",
-   "role": "Filed by",
-   "accession": "0001193125-26-444399",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526444399/0001193125-26-444399-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:32Z",
-   "form": "SCHEDULE 13D",
-   "company": "Penguin Solutions, Inc.",
-   "cik": 1616533,
-   "ticker": "PENG",
-   "role": "Subject",
-   "accession": "0001193125-26-444399",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1616533/000119312526444399/0001193125-26-444399-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:32Z",
-   "form": "10-Q",
-   "company": "Vital Farms, Inc.",
-   "cik": 1579733,
-   "ticker": "VITL",
-   "role": "Filer",
-   "accession": "0001193125-26-444385",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1579733/000119312526444385/0001193125-26-444385-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:31Z",
-   "form": "8-K",
-   "company": "BROADRIDGE FINANCIAL SOLUTIONS, INC.",
-   "cik": 1383312,
-   "ticker": "BR",
-   "role": "Filer",
-   "accession": "0001383312-26-000030",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000030/0001383312-26-000030-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:30Z",
-   "form": "8-K",
-   "company": "Zeo ScientifiX, Inc.",
-   "cik": 1557376,
-   "ticker": "ZEOX",
-   "role": "Filer",
-   "accession": "0001829126-26-011913",
-   "items": [
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1557376/000182912626011913/0001829126-26-011913-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:22Z",
-   "form": "8-K",
-   "company": "Nuveen Churchill Direct Lending Corp.",
-   "cik": 1737924,
-   "ticker": "NCDL",
-   "role": "Filer",
-   "accession": "0001737924-26-000092",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000092/0001737924-26-000092-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:09Z",
-   "form": "10-Q",
-   "company": "Faeth Therapeutics, Inc.",
-   "cik": 1829802,
-   "ticker": "FTH",
-   "role": "Filer",
-   "accession": "0001193125-26-444376",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1829802/000119312526444376/0001193125-26-444376-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:02Z",
-   "form": "8-K",
-   "company": "RHYTHM PHARMACEUTICALS, INC.",
-   "cik": 1649904,
-   "ticker": "RYTM",
-   "role": "Filer",
-   "accession": "0001628280-26-069106",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1649904/000162828026069106/0001628280-26-069106-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:10:01Z",
-   "form": "8-K",
-   "company": "MARZETTI CO",
-   "cik": 57515,
-   "ticker": "MZTI",
-   "role": "Filer",
-   "accession": "0000057515-26-000029",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/57515/000005751526000029/0000057515-26-000029-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:09:52Z",
-   "form": "8-K",
-   "company": "Alkermes plc.",
-   "cik": 1520262,
-   "ticker": "ALKS",
-   "role": "Filer",
-   "accession": "0001193125-26-444381",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1520262/000119312526444381/0001193125-26-444381-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:09:41Z",
-   "form": "8-K",
-   "company": "XPLR Infrastructure, LP",
-   "cik": 1603145,
-   "ticker": "XIFR",
-   "role": "Filer",
-   "accession": "0001603145-26-000037",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1603145/000160314526000037/0001603145-26-000037-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:09:30Z",
-   "form": "8-K",
-   "company": "ARVINAS, INC.",
-   "cik": 1655759,
-   "ticker": "ARVN",
-   "role": "Filer",
-   "accession": "0001628280-26-069101",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1655759/000162828026069101/0001628280-26-069101-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:09:30Z",
-   "form": "10-Q",
-   "company": "PRECISION BIOSCIENCES INC",
-   "cik": 1357874,
-   "ticker": "DTIL",
-   "role": "Filer",
-   "accession": "0001628280-26-069092",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1357874/000162828026069092/0001628280-26-069092-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:09:25Z",
-   "form": "8-K",
-   "company": "COLUMBUS MCKINNON CORP",
-   "cik": 1005229,
-   "ticker": "CMCO",
-   "role": "Filer",
-   "accession": "0001005229-26-000065",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1005229/000100522926000065/0001005229-26-000065-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:09:19Z",
-   "form": "10-Q",
-   "company": "Dynatrace, Inc.",
-   "cik": 1773383,
-   "ticker": "DT",
-   "role": "Filer",
-   "accession": "0001773383-26-000070",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1773383/000177338326000070/0001773383-26-000070-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:09:04Z",
-   "form": "8-K",
-   "company": "UL Solutions Inc.",
-   "cik": 1901440,
-   "ticker": "ULS",
-   "role": "Filer",
-   "accession": "0001901440-26-000029",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1901440/000190144026000029/0001901440-26-000029-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:09:03Z",
-   "form": "10-Q",
-   "company": "SHOPIFY INC.",
-   "cik": 1594805,
-   "ticker": "SHOP",
-   "role": "Filer",
-   "accession": "0001594805-26-000068",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000068/0001594805-26-000068-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:58Z",
-   "form": "8-K",
-   "company": "MADRIGAL PHARMACEUTICALS, INC.",
-   "cik": 1157601,
-   "ticker": "MDGL",
-   "role": "Filer",
-   "accession": "0001628280-26-069093",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1157601/000162828026069093/0001628280-26-069093-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:41Z",
-   "form": "8-K",
-   "company": "Dynatrace, Inc.",
-   "cik": 1773383,
-   "ticker": "DT",
-   "role": "Filer",
-   "accession": "0001773383-26-000069",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1773383/000177338326000069/0001773383-26-000069-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:35Z",
-   "form": "8-K",
-   "company": "Xometry, Inc.",
-   "cik": 1657573,
-   "ticker": "XMTR",
-   "role": "Filer",
-   "accession": "0001193125-26-444354",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1657573/000119312526444354/0001193125-26-444354-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:28Z",
-   "form": "8-K",
-   "company": "Driven Brands Holdings Inc.",
-   "cik": 1804745,
-   "ticker": "DRVN",
-   "role": "Filer",
-   "accession": "0001628280-26-069090",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "4.02",
-     "meaning": "Past results no longer reliable"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [
-    "4.02"
-   ],
-   "link": "https://www.sec.gov/Archives/edgar/data/1804745/000162828026069090/0001628280-26-069090-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:28Z",
-   "form": "8-K",
-   "company": "ANAVEX LIFE SCIENCES CORP.",
-   "cik": 1314052,
-   "ticker": "AVXL",
-   "role": "Filer",
-   "accession": "0001731122-26-001395",
-   "items": [
-    {
-     "item": "5.02",
-     "meaning": "Director or executive change"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1314052/000173112226001395/0001731122-26-001395-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:26Z",
-   "form": "8-K",
-   "company": "Versant Media Group, Inc.",
-   "cik": 2067876,
-   "ticker": "VSNT",
-   "role": "Filer",
-   "accession": "0002067876-26-000050",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2067876/000206787626000050/0002067876-26-000050-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:22Z",
-   "form": "8-K",
-   "company": "Vital Farms, Inc.",
-   "cik": 1579733,
-   "ticker": "VITL",
-   "role": "Filer",
-   "accession": "0001193125-26-444348",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1579733/000119312526444348/0001193125-26-444348-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:14Z",
-   "form": "8-K",
-   "company": "First Watch Restaurant Group, Inc.",
-   "cik": 1789940,
-   "ticker": "FWRG",
-   "role": "Filer",
-   "accession": "0001789940-26-000098",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1789940/000178994026000098/0001789940-26-000098-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:14Z",
-   "form": "8-K",
-   "company": "SHOPIFY INC.",
-   "cik": 1594805,
-   "ticker": "SHOP",
-   "role": "Filer",
-   "accession": "0001594805-26-000067",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000067/0001594805-26-000067-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:11Z",
-   "form": "8-K",
-   "company": "Talen Energy Corp",
-   "cik": 1622536,
-   "ticker": "TLN",
-   "role": "Filer",
-   "accession": "0001622536-26-000084",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000084/0001622536-26-000084-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:05Z",
-   "form": "8-K",
-   "company": "TEVA PHARMACEUTICAL INDUSTRIES LTD",
-   "cik": 818686,
-   "ticker": "TEVA",
-   "role": "Filer",
-   "accession": "0001171843-26-007054",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/818686/000117184326007054/0001171843-26-007054-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:03Z",
-   "form": "8-K",
-   "company": "Eaton Corp plc",
-   "cik": 1551182,
-   "ticker": "ETN",
-   "role": "Filer",
-   "accession": "0001551182-26-000037",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000037/0001551182-26-000037-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:08:01Z",
-   "form": "8-K",
-   "company": "Bowhead Specialty Holdings Inc.",
-   "cik": 2002473,
-   "ticker": "BOW",
-   "role": "Filer",
-   "accession": "0001628280-26-069082",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2002473/000162828026069082/0001628280-26-069082-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:07:58Z",
-   "form": "8-K",
-   "company": "YUM BRANDS INC",
-   "cik": 1041061,
-   "ticker": "YUM",
-   "role": "Filer",
-   "accession": "0001041061-26-000195",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000195/0001041061-26-000195-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:07:57Z",
-   "form": "8-K",
-   "company": "Hamilton Lane INC",
-   "cik": 1433642,
-   "ticker": "HLNE",
-   "role": "Filer",
-   "accession": "0001433642-26-000053",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1433642/000143364226000053/0001433642-26-000053-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:07:57Z",
-   "form": "8-K",
-   "company": "HENRY SCHEIN INC",
-   "cik": 1000228,
-   "ticker": "HSIC",
-   "role": "Filer",
-   "accession": "0001000228-26-000059",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1000228/000100022826000059/0001000228-26-000059-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:07:53Z",
-   "form": "8-K",
-   "company": "CARMAX INC",
-   "cik": 1170010,
-   "ticker": "KMX",
-   "role": "Filer",
-   "accession": "0001170010-26-000110",
-   "items": [
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1170010/000117001026000110/0001170010-26-000110-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:07:42Z",
-   "form": "8-K",
-   "company": "PJT Partners Inc.",
-   "cik": 1626115,
-   "ticker": "PJT",
-   "role": "Filer",
-   "accession": "0001193125-26-444344",
-   "items": [
-    {
-     "item": "1.01",
-     "meaning": "Major agreement signed"
-    },
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "2.03",
-     "meaning": "New debt"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1626115/000119312526444344/0001193125-26-444344-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:07:34Z",
-   "form": "8-K",
-   "company": "PFIZER INC",
-   "cik": 78003,
-   "ticker": "PFE",
-   "role": "Filer",
-   "accession": "0000078003-26-000125",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000125/0000078003-26-000125-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:07:31Z",
-   "form": "8-K",
-   "company": "MPLX LP",
-   "cik": 1552000,
-   "ticker": "MPLX",
-   "role": "Filer",
-   "accession": "0001552000-26-000045",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1552000/000155200026000045/0001552000-26-000045-index.htm"
   }
  ]
 }

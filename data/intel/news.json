@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T13:30:37Z",
+ "updated": "2026-11-04T14:06:19Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 20,
+  "Yahoo Finance": 19,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 36,
@@ -22,23 +22,23 @@
  "most_mentioned_24h": [
   [
    "AMD",
-   23
-  ],
-  [
-   "GOOGL",
-   12
+   19
   ],
   [
    "TSLA",
-   11
+   16
   ],
   [
    "BTC",
-   10
+   11
+  ],
+  [
+   "GOOGL",
+   11
   ],
   [
    "AAPL",
-   8
+   7
   ],
   [
    "NVDA",
@@ -46,11 +46,11 @@
   ],
   [
    "AMZN",
-   5
+   6
   ],
   [
-   "PLTR",
-   4
+   "MSFT",
+   3
   ],
   [
    "META",
@@ -61,12 +61,16 @@
    2
   ],
   [
-   "MSFT",
+   "AVGO",
    2
   ],
   [
-   "AVGO",
+   "PLTR",
    2
+  ],
+  [
+   "XOM",
+   1
   ],
   [
    "ORCL",
@@ -78,6 +82,282 @@
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-04T14:00:53Z",
+   "source": "CoinDesk",
+   "title": "Live updates: Bitcoin and stocks reverse overnight plunge following Blue Wave landslide",
+   "link": "https://www.coindesk.com/tech/2026/11/04/live-updates-bitcoin-and-stocks-reverse-overnight-plunge-following-blue-wave-landslide",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-04T14:00:00Z",
+   "source": "Yahoo Finance",
+   "title": "AI Automation Market Growth 2027: Microsoft, AWS, Accenture, ServiceNow and Salesforce Race to Scale Agentic Automation",
+   "link": "https://finance.yahoo.com/technology/ai/articles/ai-automation-market-growth-2027-140000612.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "MSFT"
+   ]
+  },
+  {
+   "time": "2026-11-04T13:58:00Z",
+   "source": "Yahoo Finance",
+   "title": "ModelOp Unveils Industry-First Full-Stack AI Policy Enforcement With NVIDIA OpenShell",
+   "link": "https://finance.yahoo.com/technology/ai/articles/modelop-unveils-industry-first-full-135800127.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:55:43Z",
+   "source": "Investing.com",
+   "title": "Earnings call transcript: Fresenius lifts 2026 outlook after strong Q3 results",
+   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-fresenius-lifts-2026-outlook-after-strong-q3-results-93CH-4999578",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:55:38Z",
+   "source": "Investing.com",
+   "title": "Earnings call transcript: Nomad Foods posts Q3 2026 beat as organic growth returns",
+   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-nomad-foods-posts-q3-2026-beat-as-organic-growth-returns-93CH-4999576",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:55:17Z",
+   "source": "Investing.com",
+   "title": "Why is Ouster stock surging today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-ouster-stock-surging-today-93CH-4999574",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:55:13Z",
+   "source": "Investing.com",
+   "title": "Why is Denali Therapeutics stock surging today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-denali-therapeutics-stock-surging-today-93CH-4999573",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:55:11Z",
+   "source": "Investing.com",
+   "title": "JELD-WEN Q3 2026 slides: margin expansion amid revenue headwinds",
+   "link": "https://www.investing.com/news/company-news/jeldwen-q3-2026-slides-margin-expansion-amid-revenue-headwinds-93CH-4999572",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:55:00Z",
+   "source": "MarketWatch",
+   "title": "ADP says businesses added 86,000 jobs in October. The labor market shows small signs of improvement.",
+   "link": "https://www.marketwatch.com/story/adp-says-businesses-add-86-000-jobs-in-october-labor-market-shows-small-signs-of-improvement-64c89fd3?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:54:54Z",
+   "source": "Investing.com",
+   "title": "Earnings call transcript: LATAM Airlines beats Q3 2026 EPS forecast",
+   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-latam-airlines-beats-q3-2026-eps-forecast-93CH-4999570",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:54:53Z",
+   "source": "Investing.com",
+   "title": "Truist raises Amgen stock price target on earnings beat",
+   "link": "https://www.investing.com/news/analyst-ratings/truist-raises-amgen-stock-price-target-on-earnings-beat-93CH-4999569",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:54:52Z",
+   "source": "Investing.com",
+   "title": "Truist reiterates Buy on Ovintiv stock, keeps $77 price target",
+   "link": "https://www.investing.com/news/analyst-ratings/truist-reiterates-buy-on-ovintiv-stock-keeps-77-price-target-93CH-4999568",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:54:49Z",
+   "source": "Investing.com",
+   "title": "Truist raises Arista Networks stock price target on AI growth",
+   "link": "https://www.investing.com/news/analyst-ratings/truist-raises-arista-networks-stock-price-target-on-ai-growth-93CH-4999567",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:54:43Z",
+   "source": "Investing.com",
+   "title": "Why is Cipher Digital stock sliding today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-cipher-digital-stock-sliding-today-93CH-4999566",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:53:54Z",
+   "source": "CNBC",
+   "title": "SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service",
+   "link": "https://www.cnbc.com/2026/11/04/spacex-strikes-deal-with-qualcomm-for-mobile-network-infrastructure.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:51:38Z",
+   "source": "Yahoo Finance",
+   "title": "SpaceX, Tesla stocks sink as analyst warns Democrats' victory will create 'major hurdles' for AI build-out",
+   "link": "https://finance.yahoo.com/markets/stocks/article/spacex-tesla-stocks-sink-as-analyst-warns-democrats-victory-will-create-major-hurdles-for-ai-build-out-135511616.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-04T13:50:00Z",
+   "source": "Yahoo Finance",
+   "title": "Meet the Only \"Magnificent Seven\" Stock That's Outperforming the S&P 500 and Nasdaq This Year (Hint: It's Not Nvidia)",
+   "link": "https://www.fool.com/investing/2026/11/04/meet-the-only-magnificent-seven-stock-thats-outper/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-04T13:49:49Z",
+   "source": "Yahoo Finance",
+   "title": "SpaceX Declines 6%, Tesla Falls 5% as Democratic Sweep Raises Merger and Regulatory Risks; General Motors Rises 2%",
+   "link": "https://247wallst.com/investing/2026/11/04/spacex-declines-6-tesla-falls-5-as-democratic-sweep-raises-merger-and-regulatory-risks-general-motors-rises-2/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-04T13:45:37Z",
+   "source": "Yahoo Finance",
+   "title": "Marvell Slipped Over The Last Month and Then Crashed Massively on the Lumentum Announcement: This Wall Street Desk Doubled Down on Its 130% Gains Prediction",
+   "link": "https://247wallst.com/investing/2026/11/04/marvell-slipped-over-the-last-month-and-then-crashed-massively-on-the-lumentum-announcement-this-wall-street-desk-doubled-down-on-its-130-gains-prediction/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:45:36Z",
+   "source": "Yahoo Finance",
+   "title": "Amazon\u2019s Good Problems to Have Keep Me Hitting The Buy Button",
+   "link": "https://247wallst.com/investing/2026/11/04/amazons-good-problems-to-have-keep-me-hitting-the-buy-button/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMZN"
+   ]
+  },
+  {
+   "time": "2026-11-04T13:45:27Z",
+   "source": "Yahoo Finance",
+   "title": "Tesla Has Cash But It Won\u2019t Matter for The Rest of 2026",
+   "link": "https://247wallst.com/investing/2026/11/04/tesla-has-cash-but-it-wont-matter-for-the-rest-of-2026/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-04T13:45:13Z",
+   "source": "Yahoo Finance",
+   "title": "BYD Does Many Things Better Than Tesla But It Doesn\u2019t Matter",
+   "link": "https://247wallst.com/investing/2026/11/04/byd-does-many-things-better-than-tesla-but-it-doesnt-matter/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-04T13:44:52Z",
+   "source": "Cointelegraph",
+   "title": "France backs reporting for self-custodied crypto worth 100K euros or more",
+   "link": "https://cointelegraph.com/news/france-approves-amendment-self-custodied-crypto-wallets-100k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:43:54Z",
+   "source": "Yahoo Finance",
+   "title": "Why Elon Musk will keep funding Grok, no matter the cost",
+   "link": "https://finance.yahoo.com/video/why-elon-musk-will-keep-funding-grok-no-matter-the-cost-134354511.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:41:42Z",
+   "source": "Yahoo Finance",
+   "title": "This Is How the Stock Market Typically Performs After Midterm Elections",
+   "link": "https://www.fool.com/investing/2026/11/04/this-is-how-the-stock-market-typically-performs-af/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:41:00Z",
+   "source": "MarketWatch",
+   "title": "Tesla and SpaceX shares slide as Musk\u2019s political push falls flat",
+   "link": "https://www.marketwatch.com/story/tesla-and-spacex-shares-slide-as-musks-political-push-falls-flat-c15d29a3?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-04T13:37:50Z",
+   "source": "Yahoo Finance",
+   "title": "Exxon Mobil Just Raised Its Dividend for the 44th Year. Here Are 3 More Wall Street Favorites",
+   "link": "https://247wallst.com/investing/2026/11/04/exxon-mobil-just-raised-its-dividend-for-the-44th-year-here-are-3-more-wall-street-favorites/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "XOM"
+   ]
+  },
+  {
+   "time": "2026-11-04T13:35:00Z",
+   "source": "Yahoo Finance",
+   "title": "If You Invested $10,000 in Intel Stock at Its Dot-Com-Era Peak, Here's How Much You'd Have Today",
+   "link": "https://www.fool.com/investing/2026/11/04/if-you-invested-10000-in-intel-stock-at-the-peak-o/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:35:00Z",
+   "source": "Yahoo Finance",
+   "title": "5 Dividend Stocks to Buy in 2027 and Hold for the Next 5 Years",
+   "link": "https://www.fool.com/investing/2026/11/04/5-dividend-stocks-buy-2027-hold-next-five-years/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:32:00Z",
+   "source": "MarketWatch",
+   "title": "Treasury opens the door to changes in how it finances the growing U.S. debt. Here\u2019s what you need to know.",
+   "link": "https://www.marketwatch.com/story/treasury-opens-the-door-to-changes-in-how-it-finances-the-growing-u-s-debt-heres-what-you-need-to-know-6001f7e1?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:30:00Z",
+   "source": "Yahoo Finance",
+   "title": "Global X Launches Magnificent Six ETF",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/global-x-launches-magnificent-six-133000809.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:28:28Z",
+   "source": "Yahoo Finance",
+   "title": "60% of S&P 500 Stocks Are in a Bear Market, With the Index Near a Record",
+   "link": "https://247wallst.com/investing/2026/11/04/60-of-sp-500-stocks-are-in-a-bear-market-with-the-index-near-a-record/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
   {
    "time": "2026-11-04T13:27:06Z",
    "source": "CNBC",
@@ -92,6 +372,14 @@
    "title": "Morning Minute: CFTC Clears Stock Perps, Gets Sued the Same Day",
    "link": "https://decrypt.co/382497/morning-minute-cftc-clears-stock-perps-gets-sued-the-same-day",
    "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T13:25:01Z",
+   "source": "Yahoo Finance",
+   "title": "Docusign vs. Okta: Which Tech Stock Is a Better Buy for 2027?",
+   "link": "https://www.fool.com/coverage/better-buy/2026/11/04/docusign-vs-okta-which-tech-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+   "kind": "markets",
    "tags": []
   },
   {
@@ -3169,286 +3457,6 @@
    "tags": [
     "AMD"
    ]
-  },
-  {
-   "time": "2026-11-03T21:47:20Z",
-   "source": "Cointelegraph",
-   "title": "SpaceX blocks tokenized stock listing on OKXICE despite offshore trading boom",
-   "link": "https://cointelegraph.com/news/spacex-tokenization-okxice?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:38:00Z",
-   "source": "Yahoo Finance",
-   "title": "Here's What SpaceX Stock Will Be Worth by 2027 if Elon Musk's $1 Trillion Revenue Call Is Correct",
-   "link": "https://www.fool.com/investing/2026/11/03/heres-what-spacex-stock-will-be-worth-by-2027-if-e/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:33:00Z",
-   "source": "Yahoo Finance",
-   "title": "Jeff Bezos has simple advice for retirees watching the AI market",
-   "link": "https://www.thestreet.com/investing/jeff-bezos-has-simple-advice-for-retirees-watching-the-ai-market?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:31:29Z",
-   "source": "Yahoo Finance",
-   "title": "The Midterm Trade is Waiting For The Senate Count",
-   "link": "https://app.moby.co/home/news/news-the-midterm-trade-is-waiting-for-the-senate-count?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:30:00Z",
-   "source": "MarketWatch",
-   "title": "S&P 500 is looking over the edge of a technical cliff \u2014 what happens if it falls off?",
-   "link": "https://www.marketwatch.com/story/s-p-500-is-looking-over-the-edge-of-a-technical-cliff-what-happens-if-it-falls-off-be97ebd9?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:30:00Z",
-   "source": "Yahoo Finance",
-   "title": "AMD Changes the Mood With Big Earnings Beat",
-   "link": "https://finance.yahoo.com/m/464f29a2-b094-3735-af07-154189326e16/amd-changes-the-mood-with-big.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-03T21:29:00Z",
-   "source": "Yahoo Finance",
-   "title": "Alphabet's Free Cash Flow Just Turned Negative. Should Investors Sell the Stock Now?",
-   "link": "https://www.fool.com/investing/2026/11/03/alphabets-free-cash-flow-just-turned-negative/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "GOOGL"
-   ]
-  },
-  {
-   "time": "2026-11-03T21:27:00Z",
-   "source": "MarketWatch",
-   "title": "Depressing, but true: If you want to get ahead at work, embrace virtue signaling",
-   "link": "https://www.marketwatch.com/story/depressing-but-true-if-you-want-to-get-ahead-at-work-embrace-virtue-signaling-b4e72f0a?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:25:00Z",
-   "source": "Yahoo Finance",
-   "title": "JPMorganChase Files Form 10-Q for the Quarter Ended September 30, 2026",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorganchase-files-form-10-q-212500439.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:21:01Z",
-   "source": "Investing.com",
-   "title": "Intl Flavors earnings beat by $0.02, revenue topped estimates",
-   "link": "https://www.investing.com/news/earnings/intl-flavors-earnings-beat-by-002-revenue-topped-estimates-4996483",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:21:00Z",
-   "source": "Investing.com",
-   "title": "USANA Health Sciences earnings missed by $0.54, revenue fell short of estimates",
-   "link": "https://www.investing.com/news/earnings/usana-health-sciences-earnings-missed-by-054-revenue-fell-short-of-estimates-4996482",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:20:46Z",
-   "source": "Investing.com",
-   "title": "EagleRock expands Midland Basin footprint with new dedication",
-   "link": "https://www.investing.com/news/company-news/eaglerock-expands-midland-basin-footprint-with-new-dedication-93CH-4996481",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:20:38Z",
-   "source": "Investing.com",
-   "title": "Navigator Holdings declares $0.08 dividend, plans $22.6M buyback",
-   "link": "https://www.investing.com/news/company-news/navigator-holdings-declares-008-dividend-plans-226m-buyback-93CH-4996478",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:20:38Z",
-   "source": "Investing.com",
-   "title": "Redwood Trust plans conversion to C-corporation from REIT",
-   "link": "https://www.investing.com/news/company-news/redwood-trust-plans-conversion-to-ccorporation-from-reit-93CH-4996479",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:20:35Z",
-   "source": "Investing.com",
-   "title": "Amdocs expands partnership with Globe for platform modernization",
-   "link": "https://www.investing.com/news/company-news/amdocs-expands-partnership-with-globe-for-platform-modernization-93CH-4996476",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:20:34Z",
-   "source": "Investing.com",
-   "title": "Jackson Financial declares $0.90 dividend, adds $1B buyback",
-   "link": "https://www.investing.com/news/company-news/jackson-financial-declares-090-dividend-adds-1b-buyback-93CH-4996475",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:20:33Z",
-   "source": "Investing.com",
-   "title": "AMD stock jumps after hours as quarterly results, revenue guidance beat estimates",
-   "link": "https://www.investing.com/news/earnings/amd-stock-jumps-after-hours-as-quarterly-results-revenue-guidance-beat-estimates-4996344",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-03T21:20:32Z",
-   "source": "Investing.com",
-   "title": "First American Financial adds Pacific Life CEO to board",
-   "link": "https://www.investing.com/news/company-news/first-american-financial-adds-pacific-life-ceo-to-board-93CH-4996474",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:20:31Z",
-   "source": "Investing.com",
-   "title": "Global Engine Group regains Nasdaq compliance with bid price",
-   "link": "https://www.investing.com/news/company-news/global-engine-group-regains-nasdaq-compliance-with-bid-price-93CH-4996473",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:20:14Z",
-   "source": "CNBC",
-   "title": "AMD stock jumps 7% on earnings as data center revenue nearly doubles",
-   "link": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-03T21:19:24Z",
-   "source": "Yahoo Finance",
-   "title": "US Equity Markets Mixed Ahead of US Midterm Election Results",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-mixed-ahead-211924945.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:16:43Z",
-   "source": "Yahoo Finance",
-   "title": "Nvidia vs. SK Hynix: Comparing Quarterly Revenue Trajectories",
-   "link": "https://www.fool.com/coverage/charts/2026/11/03/nvidia-vs-sk-hynix-comparing-quarterly-revenue-trajectories/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-03T21:16:03Z",
-   "source": "Decrypt",
-   "title": "CrowdStrike Launches AI Agent 'Kill Switch,' Plans to Acquire Fiddler AI",
-   "link": "https://decrypt.co/382467/crowdstrike-ai-agent-kill-switch-acquire-fiddler-ai",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:16:00Z",
-   "source": "Yahoo Finance",
-   "title": "Apple, Palantir, Pfizer, Marvell, AMD, Bloom Energy, Gartner, and More Stocks That Explain Today\u2019s Market",
-   "link": "https://finance.yahoo.com/m/128f1048-6ad1-33df-9ddf-897d7e346cbb/apple%2C-palantir%2C-pfizer%2C.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AAPL",
-    "AMD",
-    "PLTR"
-   ]
-  },
-  {
-   "time": "2026-11-03T21:15:00Z",
-   "source": "Yahoo Finance",
-   "title": "The Best Blue Chip Stock to Buy in November and Hold for 10 Years",
-   "link": "https://www.fool.com/investing/2026/11/03/the-best-blue-chip-stock-to-buy-in-november-and-ho/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:14:37Z",
-   "source": "Yahoo Finance",
-   "title": "How major US stock indexes fared Tuesday 11/3/2026",
-   "link": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-211437939.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:13:00Z",
-   "source": "MarketWatch",
-   "title": "Super Micro\u2019s stock pops as earnings show booming demand for AI servers",
-   "link": "https://www.marketwatch.com/story/super-micros-stock-pops-as-earnings-show-booming-demand-for-ai-servers-2d179658?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:12:01Z",
-   "source": "Yahoo Finance",
-   "title": "Moderna's Cancer Vaccine Is Incredibly Promising, but This Could Be a Major Obstacle to Its Success",
-   "link": "https://www.fool.com/investing/2026/11/03/moderna-s-cancer-vaccine-is-incredibly-promising-but-this-could-be-a-major-obstacle-to-its-success/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:10:40Z",
-   "source": "Yahoo Finance",
-   "title": "Super Micro Computer (SMCI) Stock Dropped, So What Is Driving Attention Now?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-smci-stock-211040745.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:07:01Z",
-   "source": "Yahoo Finance",
-   "title": "Palantir's Report Moved My Buy Price for the Stock. Here's the New Number.",
-   "link": "https://www.fool.com/investing/2026/11/03/palantir-s-report-moved-my-buy-price-for-the-stock-here-s-the-new-number/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "PLTR"
-   ]
-  },
-  {
-   "time": "2026-11-03T21:05:00Z",
-   "source": "Yahoo Finance",
-   "title": "JFrog Closes the Patching Gap with Universal Zero-Touch Remediation, Bringing Leading Patching Vendors into One Source of Truth",
-   "link": "https://finance.yahoo.com/technology/ai/articles/jfrog-closes-patching-gap-universal-210500790.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:05:00Z",
-   "source": "Yahoo Finance",
-   "title": "Arista Networks, Inc. Reports Third Quarter 2026 Financial Results",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/arista-networks-inc-reports-third-210500149.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-03T21:05:00Z",
-   "source": "Yahoo Finance",
-   "title": "Home Depot Has Raised Its Dividend 17 Straight Years. Here's What $10,000 Invested Pays Annually.",
-   "link": "https://www.fool.com/investing/2026/11/03/home-depot-has-raised-its-dividend-x-straight-year/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
   }
  ]
 }
