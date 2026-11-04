@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 8,
+ "runs": 9,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -179,7 +179,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.0,
    "paused": false
   },
   "insider_big_250k": {
@@ -1347,6 +1347,36 @@
      "signal": "2026-11-04",
      "event": "2026-11-04",
      "note": "score 9: 3 insiders bought $6,938 in 30 days (last 2026-11-02)"
+    },
+    {
+     "sym": "JBLU",
+     "signal": "2026-11-04",
+     "event": "2026-11-04",
+     "note": "score 12: 2 insiders bought $623,844 in 30 days (last 2026-11-03); Director Mittal Nik bought $222,588 on 2026-11-03"
+    },
+    {
+     "sym": "HGV",
+     "signal": "2026-11-04",
+     "event": "2026-11-04",
+     "note": "score 10: 2 insiders bought $603,099 in 30 days (last 2026-11-03); Director Potter Leonard bought $103,875 on 2026-11-03"
+    },
+    {
+     "sym": "PAM",
+     "signal": "2026-11-04",
+     "event": "2026-11-04",
+     "note": "score 8: 2 insiders bought $35,346,621 in 30 days (last 2026-11-04); Chief Financial Officer Zuberbuhler Adolfo Fernando bought $207,321 on 2026-11-04"
+    },
+    {
+     "sym": "MXF",
+     "signal": "2026-11-04",
+     "event": "2026-11-04",
+     "note": "score 8: 10% owner Saba Capital Management, L.P. bought $283,534 on 2026-11-03; 10% owner Saba Capital Management, L.P. bought $306,646 on 2026-10-30"
+    },
+    {
+     "sym": "DOLE",
+     "signal": "2026-11-04",
+     "event": "2026-11-04",
+     "note": "score 8: 10% owner Pale Fire Capital SE bought $9,832,264 on 2026-11-03; 10% owner Pale Fire Capital SE bought $3,053,054 on 2026-11-02"
     }
    ],
    "closed": [],
@@ -1404,7 +1434,12 @@
     "BA": "2026-11-04",
     "TBBK": "2026-11-04",
     "UMH": "2026-11-04",
-    "FUNC": "2026-11-04"
+    "FUNC": "2026-11-04",
+    "JBLU": "2026-11-04",
+    "HGV": "2026-11-04",
+    "PAM": "2026-11-04",
+    "MXF": "2026-11-04",
+    "DOLE": "2026-11-04"
    },
    "events": [
     {
@@ -1667,7 +1702,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.0,
    "paused": false
   },
   "spy_benchmark": {
@@ -1719,7 +1754,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.0,
    "paused": false
   },
   "insider_cluster2_smallcap": {
@@ -1788,6 +1823,18 @@
      "signal": "2026-11-04",
      "event": "2026-11-02",
      "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "LRN",
+     "signal": "2026-11-04",
+     "event": "2026-11-03",
+     "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "JBLU",
+     "signal": "2026-11-04",
+     "event": "2026-11-03",
+     "note": "2 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -1847,7 +1894,9 @@
     "PRLB": "2026-11-04",
     "UPBD": "2026-11-04",
     "UMBF": "2026-11-04",
-    "BA": "2026-11-04"
+    "BA": "2026-11-04",
+    "LRN": "2026-11-04",
+    "JBLU": "2026-11-04"
    },
    "events": [
     {
@@ -1912,9 +1961,51 @@
    "started": "2026-11-02",
    "drawdown_pct": 0.0,
    "paused": false
+  },
+  "research_setup": {
+   "label": "Research setup: a smaller company, 2+ insiders each buying $25k+ within 30 days, operating cash flow above profit (added 4 Nov 2026)",
+   "hold": 60,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [],
+   "closed": [],
+   "seen": {
+    "IMSR": "2026-11-04"
+   },
+   "events": [],
+   "equity": [
+    [
+     "2026-11-04",
+     100000.0
+    ]
+   ],
+   "started": "2026-11-04",
+   "drawdown_pct": 0.0,
+   "paused": false
+  },
+  "research_setup_trend": {
+   "label": "Research setup, but no new entries while the S&P 500 is below its 200-day average (added 4 Nov 2026)",
+   "hold": 60,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [],
+   "closed": [],
+   "seen": {
+    "IMSR": "2026-11-04"
+   },
+   "events": [],
+   "equity": [
+    [
+     "2026-11-04",
+     100000.0
+    ]
+   ],
+   "started": "2026-11-04",
+   "drawdown_pct": 0.0,
+   "paused": false
   }
  },
- "updated": "2026-11-04T22:27:17+00:00",
+ "updated": "2026-11-04T23:10:05+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -2195,6 +2286,22 @@
   "LSCC": {
    "sic": "36",
    "name": "Semiconductors & Related Devices"
+  },
+  "MXF": {
+   "sic": null,
+   "name": ""
+  },
+  "DOLE": {
+   "sic": "01",
+   "name": "Agricultural Production-Crops"
+  },
+  "PAM": {
+   "sic": "49",
+   "name": "Electric Services"
+  },
+  "HGV": {
+   "sic": "70",
+   "name": "Hotels, Rooming Houses, Camps & Other Lodging Places"
   }
  }
 }
