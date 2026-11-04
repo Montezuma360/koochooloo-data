@@ -1,34 +1,34 @@
 {
- "updated": "2026-11-04T18:07:27Z",
+ "updated": "2026-11-04T18:33:11Z",
  "source": "ApeWisdom (counts of mentions on Reddit forums)",
  "forums": {
   "r/wallstreetbets": [
    {
     "symbol": "AMD",
     "name": "AMD",
-    "mentions": 248,
-    "mentions_24h_ago": 168,
-    "upvotes": 6142
+    "mentions": 246,
+    "mentions_24h_ago": 165,
+    "upvotes": 6138
    },
    {
     "symbol": "SPY",
     "name": "SPDR S&P 500 ETF Trust",
-    "mentions": 39,
-    "mentions_24h_ago": 94,
-    "upvotes": 368
+    "mentions": 38,
+    "mentions_24h_ago": 90,
+    "upvotes": 365
    },
    {
     "symbol": "SMCI",
     "name": "Supermicro",
     "mentions": 34,
-    "mentions_24h_ago": 13,
+    "mentions_24h_ago": 14,
     "upvotes": 106
    },
    {
     "symbol": "MU",
     "name": "Micron Technology",
     "mentions": 30,
-    "mentions_24h_ago": 120,
+    "mentions_24h_ago": 116,
     "upvotes": 120
    },
    {
@@ -49,15 +49,8 @@
     "symbol": "QQQ",
     "name": "Invesco QQQ ETF",
     "mentions": 26,
-    "mentions_24h_ago": 103,
+    "mentions_24h_ago": 102,
     "upvotes": 144
-   },
-   {
-    "symbol": "INTC",
-    "name": "Intel",
-    "mentions": 17,
-    "mentions_24h_ago": 65,
-    "upvotes": 424
    },
    {
     "symbol": "DTE",
@@ -67,31 +60,38 @@
     "upvotes": 2136
    },
    {
+    "symbol": "INTC",
+    "name": "Intel",
+    "mentions": 16,
+    "mentions_24h_ago": 63,
+    "upvotes": 423
+   },
+   {
     "symbol": "GOOG",
     "name": "Alphabet (Google)",
     "mentions": 15,
-    "mentions_24h_ago": 43,
+    "mentions_24h_ago": 44,
     "upvotes": 241
    },
    {
     "symbol": "NVDA",
     "name": "NVIDIA",
     "mentions": 15,
-    "mentions_24h_ago": 38,
+    "mentions_24h_ago": 37,
     "upvotes": 72
    },
    {
     "symbol": "NBIS",
     "name": "Nebius Group",
     "mentions": 12,
-    "mentions_24h_ago": 16,
+    "mentions_24h_ago": 14,
     "upvotes": 43
    },
    {
     "symbol": "GOOGL",
     "name": "Alphabet (Google)",
     "mentions": 11,
-    "mentions_24h_ago": 40,
+    "mentions_24h_ago": 41,
     "upvotes": 46
    },
    {
@@ -105,7 +105,7 @@
     "symbol": "RDDT",
     "name": "Reddit",
     "mentions": 9,
-    "mentions_24h_ago": 43,
+    "mentions_24h_ago": 44,
     "upvotes": 25
    },
    {
@@ -154,14 +154,14 @@
     "symbol": "RKLB",
     "name": "Rocket Lab USA",
     "mentions": 6,
-    "mentions_24h_ago": 11,
+    "mentions_24h_ago": 10,
     "upvotes": 32
    },
    {
     "symbol": "AAPL",
     "name": "Apple",
     "mentions": 5,
-    "mentions_24h_ago": 193,
+    "mentions_24h_ago": 191,
     "upvotes": 9
    },
    {
@@ -183,58 +183,72 @@
    {
     "symbol": "AMD",
     "name": "AMD",
-    "mentions": 46,
+    "mentions": 48,
     "mentions_24h_ago": 14,
-    "upvotes": 1749
+    "upvotes": 1827
    },
    {
     "symbol": "QQQ",
     "name": "Invesco QQQ ETF",
     "mentions": 10,
     "mentions_24h_ago": 4,
-    "upvotes": 349
+    "upvotes": 347
    },
    {
     "symbol": "RDDT",
     "name": "Reddit",
     "mentions": 5,
     "mentions_24h_ago": 7,
-    "upvotes": 7
+    "upvotes": 9
    },
    {
     "symbol": "MSFT",
     "name": "Microsoft",
     "mentions": 4,
     "mentions_24h_ago": 2,
-    "upvotes": 18
+    "upvotes": 16
    },
    {
     "symbol": "AAPL",
     "name": "Apple",
     "mentions": 4,
     "mentions_24h_ago": 7,
-    "upvotes": 11
+    "upvotes": 17
+   },
+   {
+    "symbol": "INTC",
+    "name": "Intel",
+    "mentions": 4,
+    "mentions_24h_ago": 1,
+    "upvotes": 30
+   },
+   {
+    "symbol": "NVDA",
+    "name": "NVIDIA",
+    "mentions": 4,
+    "mentions_24h_ago": 8,
+    "upvotes": 5
    },
    {
     "symbol": "SMCI",
     "name": "Supermicro",
     "mentions": 4,
     "mentions_24h_ago": null,
-    "upvotes": 1200
+    "upvotes": 1236
    },
    {
     "symbol": "UBER",
     "name": "Uber",
     "mentions": 4,
     "mentions_24h_ago": null,
-    "upvotes": 17
+    "upvotes": 18
    },
    {
     "symbol": "SOXX",
     "name": "BlackRock Institutional Trust Company N.A. - BTC iShares PHLX Semicond",
     "mentions": 4,
     "mentions_24h_ago": 1,
-    "upvotes": 25
+    "upvotes": 26
    },
    {
     "symbol": "SPY",
@@ -244,25 +258,18 @@
     "upvotes": 10
    },
    {
+    "symbol": "DC",
+    "name": "Dakota Gold",
+    "mentions": 4,
+    "mentions_24h_ago": 1,
+    "upvotes": 1233
+   },
+   {
     "symbol": "GOOG",
     "name": "Alphabet (Google)",
     "mentions": 3,
     "mentions_24h_ago": 3,
     "upvotes": 13
-   },
-   {
-    "symbol": "INTC",
-    "name": "Intel",
-    "mentions": 3,
-    "mentions_24h_ago": 1,
-    "upvotes": 32
-   },
-   {
-    "symbol": "NVDA",
-    "name": "NVIDIA",
-    "mentions": 3,
-    "mentions_24h_ago": 8,
-    "upvotes": 8
    },
    {
     "symbol": "MCD",
@@ -276,7 +283,7 @@
     "name": "Kimberly-Clark",
     "mentions": 3,
     "mentions_24h_ago": 1,
-    "upvotes": 6
+    "upvotes": 7
    },
    {
     "symbol": "VST",
@@ -286,18 +293,25 @@
     "upvotes": 8
    },
    {
-    "symbol": "DC",
-    "name": "Dakota Gold",
+    "symbol": "STRL",
+    "name": "Sterling Construction",
     "mentions": 3,
-    "mentions_24h_ago": 1,
-    "upvotes": 1194
+    "mentions_24h_ago": null,
+    "upvotes": 9
+   },
+   {
+    "symbol": "IREN",
+    "name": "Iris Energy",
+    "mentions": 3,
+    "mentions_24h_ago": null,
+    "upvotes": 9
    },
    {
     "symbol": "SNDK",
     "name": "Sandisk",
     "mentions": 3,
     "mentions_24h_ago": 1,
-    "upvotes": 19
+    "upvotes": 18
    },
    {
     "symbol": "ALL",
@@ -311,14 +325,14 @@
     "name": "Arista Networks",
     "mentions": 2,
     "mentions_24h_ago": null,
-    "upvotes": 72
+    "upvotes": 67
    },
    {
     "symbol": "ACA",
     "name": "Arcosa",
     "mentions": 2,
     "mentions_24h_ago": null,
-    "upvotes": 4
+    "upvotes": 6
    },
    {
     "symbol": "ICLN",
@@ -332,28 +346,14 @@
     "name": "VanEck Vectors ETF Trust - VanEck Vectors Semiconductor ETF",
     "mentions": 2,
     "mentions_24h_ago": 1,
-    "upvotes": 6
+    "upvotes": 5
    },
    {
     "symbol": "MAGA",
     "name": "ETF Series Solutions Trust - Point Bridge GOP Stock Tracker ETF",
     "mentions": 2,
     "mentions_24h_ago": null,
-    "upvotes": 28
-   },
-   {
-    "symbol": "VTI",
-    "name": "Vanguard Total Stock Market ETF",
-    "mentions": 2,
-    "mentions_24h_ago": 1,
-    "upvotes": 4
-   },
-   {
-    "symbol": "FCF",
-    "name": "First Commonwealth Financial Corp",
-    "mentions": 2,
-    "mentions_24h_ago": 3,
-    "upvotes": 9
+    "upvotes": 31
    }
   ],
   "r/options": [
@@ -377,13 +377,6 @@
     "mentions": 1,
     "mentions_24h_ago": null,
     "upvotes": 10
-   },
-   {
-    "symbol": "HOOD",
-    "name": "Robinhood",
-    "mentions": 1,
-    "mentions_24h_ago": null,
-    "upvotes": 1
    },
    {
     "symbol": "GME",
@@ -419,6 +412,13 @@
     "mentions": 1,
     "mentions_24h_ago": null,
     "upvotes": 2
+   },
+   {
+    "symbol": "FOR",
+    "name": "Forestar Group",
+    "mentions": 1,
+    "mentions_24h_ago": null,
+    "upvotes": 1
    },
    {
     "symbol": "TLT",
@@ -463,11 +463,11 @@
     "upvotes": 1
    },
    {
-    "symbol": "API",
-    "name": "Agora.io",
+    "symbol": "PR",
+    "name": "Permian Resources",
     "mentions": 1,
     "mentions_24h_ago": null,
-    "upvotes": 2
+    "upvotes": 1
    },
    {
     "symbol": "SNDK",
@@ -519,18 +519,18 @@
     "upvotes": 1
    },
    {
-    "symbol": "PR",
-    "name": "Permian Resources",
-    "mentions": 1,
-    "mentions_24h_ago": null,
-    "upvotes": 1
-   },
-   {
     "symbol": "SOXX",
     "name": "BlackRock Institutional Trust Company N.A. - BTC iShares PHLX Semicond",
     "mentions": 1,
     "mentions_24h_ago": null,
     "upvotes": 1
+   },
+   {
+    "symbol": "API",
+    "name": "Agora.io",
+    "mentions": 1,
+    "mentions_24h_ago": null,
+    "upvotes": 2
    }
   ],
   "r/investing": [
@@ -539,21 +539,28 @@
     "name": "Vanguard Total Stock Market ETF",
     "mentions": 21,
     "mentions_24h_ago": 1,
-    "upvotes": 111
+    "upvotes": 114
    },
    {
     "symbol": "VOO",
     "name": "Vanguard S&P 500 ETF",
     "mentions": 8,
     "mentions_24h_ago": 3,
-    "upvotes": 30
+    "upvotes": 39
    },
    {
     "symbol": "MPLX",
     "name": "MPLX",
     "mentions": 3,
     "mentions_24h_ago": null,
-    "upvotes": 9
+    "upvotes": 10
+   },
+   {
+    "symbol": "VT",
+    "name": "Vanguard Group, Inc. - Vanguard Total World Stock ETF",
+    "mentions": 3,
+    "mentions_24h_ago": 2,
+    "upvotes": 4
    },
    {
     "symbol": "SGOV",
@@ -568,13 +575,6 @@
     "mentions": 2,
     "mentions_24h_ago": 1,
     "upvotes": 5
-   },
-   {
-    "symbol": "VT",
-    "name": "Vanguard Group, Inc. - Vanguard Total World Stock ETF",
-    "mentions": 2,
-    "mentions_24h_ago": 2,
-    "upvotes": 4
    },
    {
     "symbol": "QQQM",
@@ -602,7 +602,7 @@
     "name": "Amazon",
     "mentions": 1,
     "mentions_24h_ago": null,
-    "upvotes": 3
+    "upvotes": 4
    },
    {
     "symbol": "GOOG",

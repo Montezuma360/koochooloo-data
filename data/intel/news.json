@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T18:07:27Z",
+ "updated": "2026-11-04T18:33:11Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 18,
+  "Yahoo Finance": 20,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 35,
@@ -26,14 +26,14 @@
   ],
   [
    "AMD",
-   18
+   16
   ],
   [
    "GOOGL",
    15
   ],
   [
-   "AMZN",
+   "AAPL",
    11
   ],
   [
@@ -41,7 +41,7 @@
    10
   ],
   [
-   "AAPL",
+   "AMZN",
    10
   ],
   [
@@ -50,23 +50,23 @@
   ],
   [
    "NVDA",
-   7
+   8
+  ],
+  [
+   "ORCL",
+   4
   ],
   [
    "META",
    4
   ],
   [
-   "SOL",
-   3
-  ],
-  [
-   "ORCL",
-   3
-  ],
-  [
    "AVGO",
    3
+  ],
+  [
+   "SOL",
+   2
   ],
   [
    "BRK.B",
@@ -83,11 +83,165 @@
  ],
  "items": [
   {
+   "time": "2026-11-04T18:29:00Z",
+   "source": "MarketWatch",
+   "title": "These stocks have soared the most today after the Democrats trounced Trump",
+   "link": "https://www.marketwatch.com/story/these-stocks-have-soared-the-most-today-after-the-democrats-trounced-trump-9d785314?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:16:02Z",
+   "source": "Decrypt",
+   "title": "Canton Coin Gets SEC Nod as Wall Street Tokenization Heats Up",
+   "link": "https://decrypt.co/382554/canton-coin-sec-no-action-wall-street-tokenization",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:14:43Z",
+   "source": "Investing.com",
+   "title": "Saul Centers set to report earnings amid 52-week low",
+   "link": "https://www.investing.com/news/earnings/saul-centers-set-to-report-earnings-amid-52week-low-93CH-5000937",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:14:34Z",
+   "source": "Investing.com",
+   "title": "AC Immune earnings beat by CHF0.03, revenue topped estimates",
+   "link": "https://www.investing.com/news/earnings/ac-immune-earnings-beat-by-chf003-revenue-topped-estimates-5000936",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:13:49Z",
+   "source": "Investing.com",
+   "title": "Liberty Formula One earnings on deck amid geopolitical concerns",
+   "link": "https://www.investing.com/news/earnings/liberty-formula-one-earnings-on-deck-amid-geopolitical-concerns-93CH-5000935",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:13:32Z",
+   "source": "Investing.com",
+   "title": "Explainer-How the Democratic sweep could change US energy policy",
+   "link": "https://www.investing.com/news/commodities-news/explainerhow-the-democratic-sweep-could-change-us-energy-policy-5000934",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:12:56Z",
+   "source": "Investing.com",
+   "title": "ITT earnings on deck: Can industrial giant sustain growth momentum?",
+   "link": "https://www.investing.com/news/earnings/itt-earnings-on-deck-can-industrial-giant-sustain-growth-momentum-93CH-5000933",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:12:02Z",
+   "source": "Investing.com",
+   "title": "Cullinan Therapeutics earnings up next as zipalertinib nears finish line",
+   "link": "https://www.investing.com/news/earnings/cullinan-therapeutics-earnings-up-next-as-zipalertinib-nears-finish-line-93CH-5000931",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:11:08Z",
+   "source": "Investing.com",
+   "title": "Western Midstream earnings under scrutiny as gas demand surges",
+   "link": "https://www.investing.com/news/earnings/western-midstream-earnings-under-scrutiny-as-gas-demand-surges-93CH-5000930",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:10:30Z",
+   "source": "Investing.com",
+   "title": "Genesis Energy LP stock hits 52-week low at 13.55 USD",
+   "link": "https://www.investing.com/news/company-news/genesis-energy-lp-stock-hits-52week-low-at-1355-usd-93CH-5000929",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:10:14Z",
+   "source": "Investing.com",
+   "title": "Ralph Lauren in the spotlight: Margins test earnings growth",
+   "link": "https://www.investing.com/news/earnings/ralph-lauren-in-the-spotlight-margins-test-earnings-growth-93CH-5000928",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:10:05Z",
+   "source": "Yahoo Finance",
+   "title": "Alphabet (GOOGL) Is Spending $15 Billion On Malaysia Data Centers",
+   "link": "https://finance.yahoo.com/technology/ai/articles/alphabet-googl-spending-15-billion-181005178.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "GOOGL"
+   ]
+  },
+  {
+   "time": "2026-11-04T18:09:43Z",
+   "source": "Yahoo Finance",
+   "title": "Cenovus Energy Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-cenovus-energy-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:09:20Z",
+   "source": "Investing.com",
+   "title": "Host Hotels earnings in the spotlight as seasonal headwinds loom",
+   "link": "https://www.investing.com/news/earnings/host-hotels-earnings-in-the-spotlight-as-seasonal-headwinds-loom-93CH-5000927",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:09:15Z",
+   "source": "Yahoo Finance",
+   "title": "The Scotts Miracle-Gro Company Q4 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-the-scotts-miracle-gro-company-q4-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:07:00Z",
+   "source": "Yahoo Finance",
+   "title": "Nexxus Capital Strengthens Market Position with Latest E-Commerce Acquisition",
+   "link": "https://finance.yahoo.com/small-business/articles/nexxus-capital-strengthens-market-position-180700737.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:05:00Z",
+   "source": "Yahoo Finance",
+   "title": "Ford's EV Losses Narrowed. Is the Turnaround Fool's Gold?",
+   "link": "https://www.fool.com/investing/2026/11/04/ford-ev-losses-narrowed-is-turnaround-fools-gold/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:03:24Z",
+   "source": "Yahoo Finance",
+   "title": "This Magnificent 7 Stock Is Quietly Building an AI Empire",
+   "link": "https://247wallst.com/investing/2026/11/04/this-magnificent-7-stock-is-quietly-building-an-ai-empire/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-04T18:03:00Z",
    "source": "MarketWatch",
    "title": "These 12 stocks are good bets to beat the 10-year Treasury over the next decade",
    "link": "https://www.marketwatch.com/story/these-12-stocks-are-good-bets-to-beat-the-10-year-treasury-over-the-next-decade-cc4f308b?mod=mw_rss_topstories",
    "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T18:02:42Z",
+   "source": "Cointelegraph",
+   "title": "Circle\u2019s ARC token sale lifts earnings as lower yields weigh on USDC income",
+   "link": "https://cointelegraph.com/news/circles-arc-token-sale-earnings-yields-usdc-income?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "kind": "crypto",
    "tags": []
   },
   {
@@ -98,6 +252,16 @@
    "kind": "markets",
    "tags": [
     "AMD"
+   ]
+  },
+  {
+   "time": "2026-11-04T18:00:24Z",
+   "source": "Yahoo Finance",
+   "title": "Nvidia\u2019s Chinese Clients Will Get Just 1% of $70 Billion in RTX Chip Orders",
+   "link": "https://www.tikr.com/blog/nvidias-chinese-clients-will-get-just-1-of-70-billion-in-rtx-chip-orders?ref=yahoofinance&tlnk=yf-261104-68jvw2gc&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
    ]
   },
   {
@@ -125,6 +289,16 @@
    "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-aquestive-therapeutics-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
    "kind": "markets",
    "tags": []
+  },
+  {
+   "time": "2026-11-04T17:57:46Z",
+   "source": "Yahoo Finance",
+   "title": "Cramer\u2019s Blue Wave Call: \u201cApple Winner\u201d as Slower Data Center Builds Ease the Memory Squeeze",
+   "link": "https://www.tikr.com/blog/cramers-blue-wave-call-apple-winner-as-slower-data-center-builds-ease-the-memory-squeeze?ref=yahoofinance&tlnk=yf-261104-xx6r3h9c&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
   },
   {
    "time": "2026-11-04T17:57:14Z",
@@ -167,6 +341,16 @@
    "link": "https://www.investing.com/news/earnings/carlyle-earnings-up-next-can-credit-growth-offset-pe-slowdown-93CH-5000885",
    "kind": "markets",
    "tags": []
+  },
+  {
+   "time": "2026-11-04T17:55:56Z",
+   "source": "Yahoo Finance",
+   "title": "Trump Pressure Kills Oracle\u2019s $7 Billion Tencent AI Deal Days After Its $20 Billion Raise",
+   "link": "https://www.tikr.com/blog/trump-pressure-kills-oracles-7-billion-tencent-ai-deal-days-after-its-20-billion-raise?ref=yahoofinance&tlnk=yf-261104-qm89h8cx&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "ORCL"
+   ]
   },
   {
    "time": "2026-11-04T17:55:09Z",
@@ -240,6 +424,14 @@
    "source": "Investing.com",
    "title": "SiTime faces earnings test on AI timing demand, acquisition gains",
    "link": "https://www.investing.com/news/earnings/sitime-faces-earnings-test-on-ai-timing-demand-acquisition-gains-93CH-5000880",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T17:53:06Z",
+   "source": "Yahoo Finance",
+   "title": "Why Did Enphase Stock Jump?",
+   "link": "https://www.trefis.com/stock/enph/articles/622645/why-did-enphase-stock-jump/2026-11-04?.tsrc=rss",
    "kind": "markets",
    "tags": []
   },
@@ -3314,200 +3506,6 @@
    "title": "Morgan Stanley among first banks to tokenize US equities, Treasurys through DTCC\u2019s service",
    "link": "https://www.theblock.co/news/markets/2026-11-04-morgan-stanley-among-first-banks-to-tokenize-us-equities-treasurys-through-dtccs-service-432633",
    "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T09:35:00Z",
-   "source": "Yahoo Finance",
-   "title": "Down 38%, Is MercadoLibre Stock a Better Buy than SpaceX and the \"Magnificent Seven\" Stocks in November?",
-   "link": "https://www.fool.com/investing/2026/11/04/down-38-is-mercadolibre-stock-a-better-buy-than-sp/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T09:30:25Z",
-   "source": "Yahoo Finance",
-   "title": "Google unveils $15 bn data centre investment in Malaysia",
-   "link": "https://finance.yahoo.com/technology/ai/articles/google-unveils-15-bn-data-093025850.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "GOOGL"
-   ]
-  },
-  {
-   "time": "2026-11-04T09:22:58Z",
-   "source": "CoinDesk",
-   "title": "Morgan Stanley says it is among the first banks to tokenize real world assets",
-   "link": "https://www.coindesk.com/markets/2026/11/04/morgan-stanley-says-it-is-among-the-first-banks-to-put-u-s-stocks-and-treasuries-on-a-blockchain",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T09:22:00Z",
-   "source": "Yahoo Finance",
-   "title": "Where Will Amazon Be in 5 Years?",
-   "link": "https://www.fool.com/investing/2026/11/04/where-will-amazon-be-in-5-years/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMZN"
-   ]
-  },
-  {
-   "time": "2026-11-04T09:20:04Z",
-   "source": "Yahoo Finance",
-   "title": "3 Artificial Intelligence (AI) Stocks That Are Better and Safer Buys Than Anthropic",
-   "link": "https://www.fool.com/investing/2026/11/04/3-artificial-intelligence-ai-stocks-that-are-better-and-safer-buys-than-anthropic/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T09:20:02Z",
-   "source": "Yahoo Finance",
-   "title": "How I'd Invest $10,000 Right Now",
-   "link": "https://www.fool.com/investing/2026/11/04/how-i-d-invest-usd10-000-right-now/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T09:15:55Z",
-   "source": "Cointelegraph",
-   "title": "Binance hackers move 81% of stolen Solana, route funds via THORChain",
-   "link": "https://cointelegraph.com/news/binance-hackers-move-81-stolen-solana-route-thorchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": [
-    "SOL"
-   ]
-  },
-  {
-   "time": "2026-11-04T08:18:21Z",
-   "source": "Investing.com",
-   "title": "Bottler Coca-Cola Europacific Partners flags cost pressures, keeps outlook",
-   "link": "https://www.investing.com/news/stock-market-news/bottler-cocacolaeuropacific-partners-flags-cost-pressures-keeps-outlook-4993745",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:17:02Z",
-   "source": "Investing.com",
-   "title": "Bernstein reiterates AMD stock rating on datacenter strength",
-   "link": "https://www.investing.com/news/analyst-ratings/bernstein-reiterates-amd-stock-rating-on-datacenter-strength-93CH-4997649",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-04T08:16:55Z",
-   "source": "Investing.com",
-   "title": "Baird reiterates Outperform on AMD stock on server revenue outlook",
-   "link": "https://www.investing.com/news/analyst-ratings/baird-reiterates-outperform-on-amd-stock-on-server-revenue-outlook-93CH-4997648",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-04T08:15:58Z",
-   "source": "Investing.com",
-   "title": "Earnings call transcript: Itera Q3 2025 shows transition quarter, shares flat",
-   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-itera-q3-2025-shows-transition-quarter-shares-flat-93CH-4997646",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:15:41Z",
-   "source": "Investing.com",
-   "title": "Why is Pandora stock surging today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-pandora-stock-surging-today-93CH-4997645",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:15:13Z",
-   "source": "Investing.com",
-   "title": "BMW Q3 2026 slides: EV sales rise as China sales plunge 25%",
-   "link": "https://www.investing.com/news/company-news/bmw-q3-2026-slides-ev-sales-rise-as-china-sales-plunge-25-93CH-4997643",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:14:28Z",
-   "source": "Investing.com",
-   "title": "GSFC Q2 2026 slides: revenue jumps 50% as margins compress",
-   "link": "https://www.investing.com/news/company-news/gsfc-q2-2026-slides-revenue-jumps-50-as-margins-compress-93CH-4997638",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:13:16Z",
-   "source": "Investing.com",
-   "title": "Why is Weir stock sliding today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-weir-stock-sliding-today-93CH-4997636",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:11:57Z",
-   "source": "Investing.com",
-   "title": "Why is Continental AG stock surging today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-continental-ag-stock-surging-today-93CH-4997635",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:10:56Z",
-   "source": "Investing.com",
-   "title": "European shares gain on Novo\u2019s results; markets weigh U.S. midterms",
-   "link": "https://www.investing.com/news/stock-market-news/european-shares-gain-on-novos-results-markets-weigh-us-midterms-4997607",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:10:53Z",
-   "source": "CNBC",
-   "title": "What Trump losing power over Congress means for Iran, Ukraine and foreign policy",
-   "link": "https://www.cnbc.com/2026/11/04/democrats-congress-trump-foreign-policy.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:06:50Z",
-   "source": "CNBC",
-   "title": "Novo shares jump 6% as Wegovy pill sales impress, drugmaker hikes outlook",
-   "link": "https://www.cnbc.com/2026/11/04/novo-q3-earnings-wegovy-sales.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T08:04:04Z",
-   "source": "CoinDesk",
-   "title": "Zcash grants committee drops plan to redirect 98,000 ZEC to future mining rewards",
-   "link": "https://www.coindesk.com/markets/2026/11/04/zcash-grants-committee-drops-plan-to-redirect-98-000-zec-to-future-mining-rewards",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T07:50:27Z",
-   "source": "Cointelegraph",
-   "title": "Democrats win US House to secure control of Congress in midterms",
-   "link": "https://cointelegraph.com/news/democrats-win-us-house-congress-control?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T07:50:00Z",
-   "source": "Yahoo Finance",
-   "title": "Could Buying This 1 Cryptocurrency Make You Rich?",
-   "link": "https://www.fool.com/investing/2026/11/04/could-buying-this-1-cryptocurrency-make-you-rich/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T07:50:00Z",
-   "source": "Yahoo Finance",
-   "title": "Zcash Is Getting a Major Upgrade in November. Could This Be a Catalyst for Further ZEC Price Gains?",
-   "link": "https://www.fool.com/investing/2026/11/04/zcash-is-getting-a-major-upgrade-in-november-could/?.tsrc=rss",
-   "kind": "markets",
    "tags": []
   }
  ]

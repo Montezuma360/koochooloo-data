@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T18:07:27Z",
+ "updated": "2026-11-04T18:33:11Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2261,6 +2261,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-04T18:17:26Z",
+   "form": "SCHEDULE 13D",
+   "company": "Constitution Capital Access Fund, LLC",
+   "cik": 1918767,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0000919574-26-007374",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1918767/000091957426007374/0000919574-26-007374-index.htm"
+  },
+  {
    "time": "2026-11-04T17:24:00Z",
    "form": "SCHEDULE 13D/A",
    "company": "Clarion Partners Real Estate Income Fund Inc.",
@@ -2562,6 +2574,88 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T18:28:36Z",
+   "form": "8-K",
+   "company": "CaliberCos Inc.",
+   "cik": 1627282,
+   "ticker": "CWD",
+   "role": "Filer",
+   "accession": "0001627282-26-000078",
+   "items": [
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1627282/000162728226000078/0001627282-26-000078-index.htm"
+  },
+  {
+   "time": "2026-11-04T18:17:26Z",
+   "form": "SCHEDULE 13D",
+   "company": "Constitution Capital Access Fund, LLC",
+   "cik": 1918767,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0000919574-26-007374",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1918767/000091957426007374/0000919574-26-007374-index.htm"
+  },
+  {
+   "time": "2026-11-04T18:17:26Z",
+   "form": "SCHEDULE 13D",
+   "company": "Universities Superannuation Scheme Ltd as sole corporate trustee for Universities Superannuation Scheme",
+   "cik": 1523591,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000919574-26-007374",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1523591/000091957426007374/0000919574-26-007374-index.htm"
+  },
+  {
+   "time": "2026-11-04T18:13:01Z",
+   "form": "8-K",
+   "company": "Creatd, Inc.",
+   "cik": 1357671,
+   "ticker": "CRTD",
+   "role": "Filer",
+   "accession": "0001628280-26-069949",
+   "items": [
+    {
+     "item": "5.02",
+     "meaning": "Director or executive change"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1357671/000162828026069949/0001628280-26-069949-index.htm"
+  },
+  {
+   "time": "2026-11-04T18:09:07Z",
+   "form": "10-Q",
+   "company": "PARKE BANCORP, INC.",
+   "cik": 1315399,
+   "ticker": "PKBK",
+   "role": "Filer",
+   "accession": "0001437749-26-034834",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1315399/000143774926034834/0001437749-26-034834-index.htm"
+  },
   {
    "time": "2026-11-04T17:59:49Z",
    "form": "10-Q",
@@ -16653,98 +16747,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1789940/000178994026000102/0001789940-26-000102-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:31:59Z",
-   "form": "8-K",
-   "company": "Guerrilla RF, Inc.",
-   "cik": 1832487,
-   "ticker": "GUER",
-   "role": "Filer",
-   "accession": "0001437749-26-034532",
-   "items": [
-    {
-     "item": "5.02",
-     "meaning": "Director or executive change"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1832487/000143774926034532/0001437749-26-034532-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:30:47Z",
-   "form": "10-Q",
-   "company": "Valaris Ltd",
-   "cik": 314808,
-   "ticker": "VAL",
-   "role": "Filer",
-   "accession": "0000314808-26-000155",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/314808/000031480826000155/0000314808-26-000155-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:30:35Z",
-   "form": "8-K",
-   "company": "SeaStar Medical Holding Corp",
-   "cik": 1831868,
-   "ticker": "ICU",
-   "role": "Filer",
-   "accession": "0001437749-26-034531",
-   "items": [
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1831868/000143774926034531/0001437749-26-034531-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:30:33Z",
-   "form": "8-K",
-   "company": "CVR ENERGY INC",
-   "cik": 1376139,
-   "ticker": "CVI",
-   "role": "Filer",
-   "accession": "0001193125-26-444445",
-   "items": [
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1376139/000119312526444445/0001193125-26-444445-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:30:22Z",
-   "form": "8-K",
-   "company": "Federal Home Loan Bank of Topeka",
-   "cik": 1325878,
-   "ticker": null,
-   "role": "Filer",
-   "accession": "0001325878-26-000226",
-   "items": [
-    {
-     "item": "2.03",
-     "meaning": "New debt"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1325878/000132587826000226/0001325878-26-000226-index.htm"
   }
  ]
 }
