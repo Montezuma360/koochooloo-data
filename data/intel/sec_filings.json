@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T14:58:46Z",
+ "updated": "2026-11-04T15:10:42Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2554,6 +2554,30 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T15:02:33Z",
+   "form": "10-Q",
+   "company": "CITY HOLDING CO",
+   "cik": 726854,
+   "ticker": "CHCO",
+   "role": "Filer",
+   "accession": "0000726854-26-000194",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/726854/000072685426000194/0000726854-26-000194-index.htm"
+  },
+  {
+   "time": "2026-11-04T15:00:36Z",
+   "form": "10-Q",
+   "company": "Seres Therapeutics, Inc.",
+   "cik": 1609809,
+   "ticker": "MCRB",
+   "role": "Filer",
+   "accession": "0001193125-26-446427",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1609809/000119312526446427/0001193125-26-446427-index.htm"
+  },
   {
    "time": "2026-11-04T14:43:33Z",
    "form": "10-Q",
@@ -16908,52 +16932,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1647639/000164763926000084/0001647639-26-000084-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:13:07Z",
-   "form": "8-K",
-   "company": "ELITE PHARMACEUTICALS INC /NV/",
-   "cik": 1053369,
-   "ticker": "ELTP",
-   "role": "Filer",
-   "accession": "0001493152-26-049707",
-   "items": [
-    {
-     "item": "5.02",
-     "meaning": "Director or executive change"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1053369/000149315226049707/0001493152-26-049707-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:13:02Z",
-   "form": "8-K",
-   "company": "BETA Technologies, Inc.",
-   "cik": 1784570,
-   "ticker": "BETA",
-   "role": "Filer",
-   "accession": "0001628280-26-069120",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1784570/000162828026069120/0001628280-26-069120-index.htm"
   }
  ]
 }
