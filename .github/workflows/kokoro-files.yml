@@ -1,0 +1,36 @@
+name: Voice files for the Claude terminal
+
+# Downloads Caesar's free voice (Kokoro-82M, Apache 2.0) and its WebAssembly runtime, split into pieces small enough
+# to publish with the Claude terminal page, and stores them on the branch kokoro-files. Run by hand when the voice changes.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  files:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Download and split
+        run: |
+          set -e
+          mkdir kk && cd kk
+          HF=https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/main
+          curl -sSfL -o onnx__model_quantized.onnx $HF/onnx/model_quantized.onnx
+          curl -sSfL -o config.json $HF/config.json
+          curl -sSfL -o tokenizer.json $HF/tokenizer.json
+          curl -sSfL -o tokenizer_config.json $HF/tokenizer_config.json
+          for v in bm_george bm_fable bm_lewis bm_daniel; do curl -sSfL -o voices__$v.bin $HF/voices/$v.bin; done
+          curl -sSfL -o ort-wasm-simd-threaded.jsep.wasm https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.5.1/dist/ort-wasm-simd-threaded.jsep.wasm
+          for f in onnx__model_quantized.onnx ort-wasm-simd-threaded.jsep.wasm; do split -b 14000000 -d -a 1 $f $f. && rm $f; done
+          ls -la
+      - name: Store on the kokoro-files branch
+        run: |
+          cd kk
+          git init -q -b kokoro-files
+          git config user.name "koochooloo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add . && git commit -q -m "Kokoro voice files"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" kokoro-files
