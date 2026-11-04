@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T19:21:40Z",
+ "updated": "2026-11-04T19:37:37Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2590,6 +2590,42 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T19:35:44Z",
+   "form": "10-Q",
+   "company": "Intrepid Potash, Inc.",
+   "cik": 1421461,
+   "ticker": "IPI",
+   "role": "Filer",
+   "accession": "0001421461-26-000028",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1421461/000142146126000028/0001421461-26-000028-index.htm"
+  },
+  {
+   "time": "2026-11-04T19:32:34Z",
+   "form": "10-Q",
+   "company": "Sealy Industrial Partners IV, LP",
+   "cik": 1929017,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001929017-26-000018",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1929017/000192901726000018/0001929017-26-000018-index.htm"
+  },
+  {
+   "time": "2026-11-04T19:31:17Z",
+   "form": "10-Q",
+   "company": "MOSAIC CO",
+   "cik": 1285785,
+   "ticker": "MOS",
+   "role": "Filer",
+   "accession": "0001285785-26-000147",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000147/0001285785-26-000147-index.htm"
+  },
   {
    "time": "2026-11-04T19:17:12Z",
    "form": "8-K",
@@ -16613,77 +16649,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1364954/000143774926034534/0001437749-26-034534-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:42:41Z",
-   "form": "8-K",
-   "company": "Aptiv PLC",
-   "cik": 1521332,
-   "ticker": "APTV",
-   "role": "Filer",
-   "accession": "0001521332-26-000071",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1521332/000152133226000071/0001521332-26-000071-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:42:00Z",
-   "form": "8-K",
-   "company": "AEON Biopharma, Inc.",
-   "cik": 1837607,
-   "ticker": "AEON",
-   "role": "Filer",
-   "accession": "0001837607-26-000081",
-   "items": [
-    {
-     "item": "1.01",
-     "meaning": "Major agreement signed"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1837607/000183760726000081/0001837607-26-000081-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:39:39Z",
-   "form": "8-K",
-   "company": "Viking Global Technologies, Inc.",
-   "cik": 1309082,
-   "ticker": "VGTK",
-   "role": "Filer",
-   "accession": "0001477932-26-006598",
-   "items": [
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1309082/000147793226006598/0001477932-26-006598-index.htm"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T19:21:40Z",
+ "updated": "2026-11-04T19:37:37Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,39 +7,38 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 19,
+  "Yahoo Finance": 18,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 35,
+  "The Block": 20,
   "Federal Reserve": 20,
   "SEC": 25,
   "ECB": 15,
   "Bank of England": 50,
   "FCA": 20
  },
- "feeds_failed": {
-  "The Block": "TimeoutError('The read operation timed out')"
- },
+ "feeds_failed": {},
  "most_mentioned_24h": [
   [
    "TSLA",
-   25
+   24
   ],
   [
    "GOOGL",
-   16
+   17
   ],
   [
    "AMD",
-   16
+   14
   ],
   [
    "AMZN",
-   11
+   10
   ],
   [
    "MSFT",
-   11
+   10
   ],
   [
    "AAPL",
@@ -47,7 +46,7 @@
   ],
   [
    "BTC",
-   8
+   7
   ],
   [
    "NVDA",
@@ -66,6 +65,10 @@
    3
   ],
   [
+   "PLTR",
+   2
+  ],
+  [
    "SOL",
    2
   ],
@@ -74,15 +77,210 @@
    2
   ],
   [
-   "PLTR",
-   1
-  ],
-  [
    "XOM",
    1
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-04T19:33:51Z",
+   "source": "Investing.com",
+   "title": "Why is Alaska Air stock surging today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-alaska-air-stock-surging-today-93CH-5001083",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:33:27Z",
+   "source": "Investing.com",
+   "title": "US airline stocks climb as crude oil prices drop over $3",
+   "link": "https://www.investing.com/news/stock-market-news/us-airline-stocks-climb-as-crude-oil-prices-drop-over-3-93CH-5001082",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:32:16Z",
+   "source": "Yahoo Finance",
+   "title": "Google Is Telling Schools to Take Its AI or Lose Its Search Engine",
+   "link": "https://247wallst.com/investing/2026/11/04/google-is-telling-schools-to-take-its-ai-or-lose-its-search-engine/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "GOOGL"
+   ]
+  },
+  {
+   "time": "2026-11-04T19:31:25Z",
+   "source": "Investing.com",
+   "title": "Crypto tracks stocks higher after Democrat midterm wins",
+   "link": "https://www.investing.com/news/forex-news/crypto-dips-on-democrat-midterm-wins-binance-hack-dent-optimism-4997586",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:31:11Z",
+   "source": "Investing.com",
+   "title": "US large-cap dividend hike watch: 10 stocks with the longest growth streaks",
+   "link": "https://www.investing.com/news/stock-market-news/us-largecap-dividend-hike-watch-10-stocks-with-the-longest-growth-streaks-93CH-5001080",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:30:55Z",
+   "source": "Investing.com",
+   "title": "Defense firms fall as Democratic victory stokes fears of tighter Pentagon budget",
+   "link": "https://www.investing.com/news/stock-market-news/defense-firms-fall-as-democratic-victory-stokes-fears-of-tighter-pentagon-budget-5000702",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:30:10Z",
+   "source": "Investing.com",
+   "title": "Ethan Allen shareholders vote to remove CEO Kathwari from board",
+   "link": "https://www.investing.com/news/company-news/ethan-allen-shareholders-vote-to-remove-ceo-kathwari-from-board-93CH-5001074",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:29:29Z",
+   "source": "Investing.com",
+   "title": "Why is JetBlue Airways stock surging today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-jetblue-airways-stock-surging-today-93CH-5001068",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:29:00Z",
+   "source": "Yahoo Finance",
+   "title": "Fermaca Unveils NVIDIA-Powered AI Factory Platform to Power Mexico and Latin America",
+   "link": "https://finance.yahoo.com/technology/ai/articles/fermaca-unveils-nvidia-powered-ai-192900033.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:27:42Z",
+   "source": "Investing.com",
+   "title": "Latam Airlines shares rise on pricing power strategy",
+   "link": "https://www.investing.com/news/stock-market-news/latam-airlines-shares-rise-on-pricing-power-strategy-93CH-5001067",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:27:39Z",
+   "source": "CNBC",
+   "title": "Top stocks to own now after Democrats sweep the midterms, according to CIBC",
+   "link": "https://www.cnbc.com/2026/11/04/top-stocks-to-own-now-after-democrats-sweep-the-midterms-according-to-cibc.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:24:23Z",
+   "source": "Investing.com",
+   "title": "Analysis-Trump\u2019s midterm drubbing demonstrates the power of data center opponents",
+   "link": "https://www.investing.com/news/stock-market-news/analysistrumps-midterm-drubbing-demonstrates-the-power-of-datacentre-opponents-4998061",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:20:37Z",
+   "source": "Yahoo Finance",
+   "title": "Cathie Wood Picks a Side Between Palantir and Google",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-picks-side-between-192037247.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "GOOGL",
+    "PLTR"
+   ]
+  },
+  {
+   "time": "2026-11-04T19:19:00Z",
+   "source": "Yahoo Finance",
+   "title": "Uber Technologies, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-uber-technologies-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:18:51Z",
+   "source": "Yahoo Finance",
+   "title": "How Much It Takes to Collect $3,000 a Month From Covered Call Funds GPIX, RYLD, and BST",
+   "link": "https://247wallst.com/personal-finance/2026/11/04/how-much-it-takes-to-collect-3000-a-month-from-covered-call-funds-gpix-ryld-and-bst/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:18:19Z",
+   "source": "Yahoo Finance",
+   "title": "Strategy Gains 7% as Bitcoin Rallies After Midterms, CEO Touts \u201cBitcoin Capital Cycle\u201d",
+   "link": "https://www.tikr.com/blog/strategy-gains-7-as-bitcoin-rallies-after-midterms-ceo-touts-bitcoin-capital-cycle?ref=yahoofinance&tlnk=yf-261104-vpqgwxm8&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-04T19:17:44Z",
+   "source": "Yahoo Finance",
+   "title": "Micron Sinks 6% as Democratic Sweep Stokes Fears of an AI \u201cSlowdown in Build\u201d",
+   "link": "https://www.tikr.com/blog/micron-sinks-6-as-democratic-sweep-stokes-fears-of-an-ai-slowdown-in-build?ref=yahoofinance&tlnk=yf-261104-99f4g74r&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:17:40Z",
+   "source": "Yahoo Finance",
+   "title": "If You Invested $1,000 in Uber at Its IPO, Here\u2019s What You\u2019d Have Now",
+   "link": "https://247wallst.com/investing/2026/11/04/if-you-invested-1000-in-uber-at-its-ipo-heres-what-youd-have-now/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:17:22Z",
+   "source": "Yahoo Finance",
+   "title": "Townsquare Media, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-townsquare-media-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:15:39Z",
+   "source": "Cointelegraph",
+   "title": "Trump-linked tokens lead crypto losses after Democrats sweep in the US midterms",
+   "link": "https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:15:25Z",
+   "source": "Yahoo Finance",
+   "title": "Nomad Foods Limited Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-nomad-foods-limited-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:15:20Z",
+   "source": "Yahoo Finance",
+   "title": "The Kraft Heinz Company Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-the-kraft-heinz-company-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:15:16Z",
+   "source": "Yahoo Finance",
+   "title": "Kyndryl Holdings, Inc. Q2 2027 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-kyndryl-holdings-inc-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:14:48Z",
+   "source": "Yahoo Finance",
+   "title": "Wayfair Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-wayfair-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
   {
    "time": "2026-11-04T19:12:00Z",
    "source": "MarketWatch",
@@ -207,6 +405,14 @@
    "tags": []
   },
   {
+   "time": "2026-11-04T19:06:00Z",
+   "source": "Yahoo Finance",
+   "title": "Credo Sinks 10% as Democratic Sweep Hits AI Data Center Stocks: \u201cBiggest Worry\u201d",
+   "link": "https://www.tikr.com/blog/credo-sinks-10-as-democratic-sweep-hits-ai-data-center-stocks-biggest-worry?ref=yahoofinance&tlnk=yf-261104-q6q34365&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-04T19:05:37Z",
    "source": "Yahoo Finance",
    "title": "CPI Card Group Inc. Q3 2026 Earnings Call Summary",
@@ -248,6 +454,14 @@
    "title": "Acushnet Holdings Corp. Q3 2026 Earnings Call Summary",
    "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-acushnet-holdings-corp-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
    "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T19:02:05Z",
+   "source": "The Block",
+   "title": "French Hill\u2019s race still too close to call as House flips, changing the direction of crypto legislation",
+   "link": "https://www.theblock.co/news/regulation/2026-11-04-french-hill-too-close-to-call-house-flips-changing-crypto-legislation-432572",
+   "kind": "crypto",
    "tags": []
   },
   {
@@ -3283,230 +3497,6 @@
    "tags": [
     "NVDA"
    ]
-  },
-  {
-   "time": "2026-11-04T11:48:50Z",
-   "source": "Decrypt",
-   "title": "Midterms Blue Wave Makes $917K for One Polymarket Trader, If Alaska Doesn\u2019t Flip",
-   "link": "https://decrypt.co/382489/midterms-blue-wave-makes-917k-for-one-polymarket-trader-if-alaska-doesnt-flip",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:47:17Z",
-   "source": "Yahoo Finance",
-   "title": "UPS Has Paid the Same $1.64 Dividend for 7 Quarters. Should Retirees Worry?",
-   "link": "https://247wallst.com/investing/2026/11/04/ups-has-paid-the-same-1-64-dividend-for-7-quarters-should-retirees-worry/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:46:17Z",
-   "source": "CNBC",
-   "title": "CVS to split off drugstore business in major breakup of healthcare giant",
-   "link": "https://www.cnbc.com/2026/11/04/cvs-to-split-off-drugstore-business.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:41:00Z",
-   "source": "Yahoo Finance",
-   "title": "Tesla, SpaceX Stocks Are Down. It\u2019s the Midterms.",
-   "link": "https://finance.yahoo.com/m/04e06d67-ec16-37a7-9d3f-5114954b5d68/tesla%2C-spacex-stocks-are.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-04T11:37:33Z",
-   "source": "Yahoo Finance",
-   "title": "This Week In AI Chips - Unlocking North America's AI-Driven Semiconductor Potential",
-   "link": "https://finance.yahoo.com/technology/ai/articles/week-ai-chips-unlocking-north-113733067.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:35:00Z",
-   "source": "Yahoo Finance",
-   "title": "Prediction: These Will Be 3 of the Best-Performing Financial Stocks of 2027",
-   "link": "https://www.fool.com/investing/2026/11/04/prediction-these-will-be-the-number-best-performin/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:32:26Z",
-   "source": "Yahoo Finance",
-   "title": "Social Buzz: Wallstreetbets Stocks Mostly Higher Premarket Wednesday; Super Micro Computer, AMD to Advance",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/social-buzz-wallstreetbets-stocks-mostly-113226126.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-04T11:32:00Z",
-   "source": "Yahoo Finance",
-   "title": "Andy Jassy Just Delivered Magnificent News for Amazon Investors",
-   "link": "https://www.fool.com/investing/2026/11/04/andy-jassy-just-delivered-news-amazon-investors/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMZN"
-   ]
-  },
-  {
-   "time": "2026-11-04T11:32:00Z",
-   "source": "Yahoo Finance",
-   "title": "AMD Earnings Show Big Tech Can\u2019t Get Enough AI Chips",
-   "link": "https://finance.yahoo.com/m/464f29a2-b094-3735-af07-154189326e16/amd-earnings-show-big-tech.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-04T11:29:06Z",
-   "source": "Yahoo Finance",
-   "title": "Exclusive: OpenAI targets Microsoft's GitHub with deal for startup",
-   "link": "https://www.axios.com/2026/11/04/openai-pierre-computer-github#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-AI?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "MSFT"
-   ]
-  },
-  {
-   "time": "2026-11-04T11:28:29Z",
-   "source": "Yahoo Finance",
-   "title": "Classrooms face tech nightmare as Google holds basic search hostage over AI backlash",
-   "link": "https://www.independent.co.uk/tech/google-schools-ai-search-gemini-b3078985.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "GOOGL"
-   ]
-  },
-  {
-   "time": "2026-11-04T11:21:06Z",
-   "source": "Yahoo Finance",
-   "title": "Market Chatter: US Stock Futures Rally as Democrats Take Control of Congress",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-us-stock-futures-112106398.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:20:31Z",
-   "source": "Decrypt",
-   "title": "ZachXBT Names French Bank Cr\u00e9dit Mutuel Ark\u00e9a as Alleged Victim of $133M Crypto Theft",
-   "link": "https://decrypt.co/382486/zachxbt-names-french-bank-credit-mutuel-arkea-as-alleged-victim-of-133m-crypto-theft",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:20:00Z",
-   "source": "Yahoo Finance",
-   "title": "Prediction: This Will Be SpaceX's Stock Price by the End of 2027",
-   "link": "https://www.fool.com/investing/2026/11/04/prediction-this-will-be-spacexs-stock-price-by-the/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:20:00Z",
-   "source": "Yahoo Finance",
-   "title": "Following the Crowd: Investing and Social Media",
-   "link": "https://www.fool.com/retirement/2026/11/04/following-the-crowd-investing-and-social-media/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:14:02Z",
-   "source": "Yahoo Finance",
-   "title": "SK Telecom Q3 Earnings Call Highlights",
-   "link": "https://www.marketbeat.com/instant-alerts/transcript-sk-telecom-q3-earnings-call-highlights-2026-11-04/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:12:22Z",
-   "source": "Benzinga",
-   "title": "Top Performing Monthly Dividend ETFs",
-   "link": "https://www.benzinga.com/money/best-monthly-dividend-etfs",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:11:57Z",
-   "source": "Cointelegraph",
-   "title": "Binance hack may be \u2018temporary setback\u2019 for crypto, Grayscale\u2019s Pandl says",
-   "link": "https://cointelegraph.com/markets/crypto-market-recovery-grayscale-binance-hack-temporary-setback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:10:00Z",
-   "source": "MarketWatch",
-   "title": "The AI trade has been \u2018sold to death\u2019 but Goldman strategist highlights silver lining from Democratic sweep",
-   "link": "https://www.marketwatch.com/story/the-ai-trade-has-been-sold-to-death-but-goldman-strategist-highlights-silver-lining-from-democratic-sweep-3d1d6f07?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T11:05:30Z",
-   "source": "The Block",
-   "title": "DeFi Explained",
-   "link": "https://www.theblock.co/learn/defi/defi-explained-432391",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T10:54:53Z",
-   "source": "CNBC",
-   "title": "Elon Musk\u2019s record election bet backfired. The backlash may reach beyond one billionaire",
-   "link": "https://www.cnbc.com/2026/11/04/elon-musk-midterms-ai-data-centers.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T10:47:30Z",
-   "source": "CNBC",
-   "title": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
-   "link": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T10:38:58Z",
-   "source": "CoinDesk",
-   "title": "Bitcoin rebounds from midterm dip as DeFi leads gains",
-   "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-rebounds-from-midterm-dip-as-defi-leads-gains",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-04T10:35:01Z",
-   "source": "Decrypt",
-   "title": "Judge Orders Bitcoin Wallet Returned to Family of Convicted Canadian Killer",
-   "link": "https://decrypt.co/382484/judge-orders-bitcoin-wallet-returned-to-family-of-convicted-canadian-killer",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-04T10:30:42Z",
-   "source": "Cointelegraph",
-   "title": "Justin Sun seeks $264K sanctions over World Liberty\u2019s UAE disclosure",
-   "link": "https://cointelegraph.com/news/justin-sun-world-liberty-264k-sanctions-uae-disclosure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T10:25:11Z",
-   "source": "Yahoo Finance",
-   "title": "Wall Street reacts to the stunning election day Blue Wave: winners, losers and those in between",
-   "link": "https://finance.yahoo.com/economy/policy/article/wall-street-reacts-to-the-stunning-election-day-blue-wave-winners-losers-and-those-in-between-102511437.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
   }
  ]
 }

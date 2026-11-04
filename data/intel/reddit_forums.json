@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-04T19:21:40Z",
+ "updated": "2026-11-04T19:37:37Z",
  "source": "ApeWisdom (counts of mentions on Reddit forums)",
  "forums": {
   "r/wallstreetbets": [
    {
     "symbol": "AMD",
     "name": "AMD",
-    "mentions": 242,
-    "mentions_24h_ago": 160,
-    "upvotes": 6174
+    "mentions": 241,
+    "mentions_24h_ago": 167,
+    "upvotes": 6170
    },
    {
     "symbol": "SPY",
     "name": "SPDR S&P 500 ETF Trust",
     "mentions": 41,
-    "mentions_24h_ago": 88,
+    "mentions_24h_ago": 91,
     "upvotes": 366
    },
    {
@@ -28,7 +28,7 @@
     "symbol": "SMCI",
     "name": "Supermicro",
     "mentions": 32,
-    "mentions_24h_ago": 12,
+    "mentions_24h_ago": 14,
     "upvotes": 102
    },
    {
@@ -42,14 +42,14 @@
     "symbol": "QQQ",
     "name": "Invesco QQQ ETF",
     "mentions": 27,
-    "mentions_24h_ago": 102,
+    "mentions_24h_ago": 101,
     "upvotes": 150
    },
    {
     "symbol": "SPCX",
     "name": "SpaceX",
     "mentions": 26,
-    "mentions_24h_ago": 14,
+    "mentions_24h_ago": 15,
     "upvotes": 199
    },
    {
@@ -77,14 +77,14 @@
     "symbol": "NVDA",
     "name": "NVIDIA",
     "mentions": 15,
-    "mentions_24h_ago": 32,
+    "mentions_24h_ago": 33,
     "upvotes": 168
    },
    {
     "symbol": "NBIS",
     "name": "Nebius Group",
     "mentions": 13,
-    "mentions_24h_ago": 12,
+    "mentions_24h_ago": 13,
     "upvotes": 141
    },
    {
@@ -133,7 +133,7 @@
     "symbol": "MRVL",
     "name": "Marvell Technology Group",
     "mentions": 7,
-    "mentions_24h_ago": 21,
+    "mentions_24h_ago": 20,
     "upvotes": 77
    },
    {
@@ -142,13 +142,6 @@
     "mentions": 7,
     "mentions_24h_ago": 6,
     "upvotes": 36
-   },
-   {
-    "symbol": "ASTS",
-    "name": "AST SpaceMobile",
-    "mentions": 7,
-    "mentions_24h_ago": 25,
-    "upvotes": 23
    },
    {
     "symbol": "META",
@@ -161,7 +154,7 @@
     "symbol": "AMZN",
     "name": "Amazon",
     "mentions": 6,
-    "mentions_24h_ago": 14,
+    "mentions_24h_ago": 13,
     "upvotes": 118
    },
    {
@@ -170,6 +163,13 @@
     "mentions": 6,
     "mentions_24h_ago": 17,
     "upvotes": 72
+   },
+   {
+    "symbol": "ASTS",
+    "name": "AST SpaceMobile",
+    "mentions": 6,
+    "mentions_24h_ago": 25,
+    "upvotes": 28
    },
    {
     "symbol": "RKLB",
@@ -183,16 +183,23 @@
    {
     "symbol": "AMD",
     "name": "AMD",
-    "mentions": 48,
+    "mentions": 49,
     "mentions_24h_ago": 14,
-    "upvotes": 1827
+    "upvotes": 1870
    },
    {
     "symbol": "QQQ",
     "name": "Invesco QQQ ETF",
-    "mentions": 10,
+    "mentions": 9,
     "mentions_24h_ago": 4,
-    "upvotes": 347
+    "upvotes": 344
+   },
+   {
+    "symbol": "NVDA",
+    "name": "NVIDIA",
+    "mentions": 5,
+    "mentions_24h_ago": 8,
+    "upvotes": 9
    },
    {
     "symbol": "MSFT",
@@ -206,77 +213,70 @@
     "name": "Apple",
     "mentions": 4,
     "mentions_24h_ago": 6,
-    "upvotes": 17
+    "upvotes": 14
    },
    {
     "symbol": "INTC",
     "name": "Intel",
     "mentions": 4,
     "mentions_24h_ago": 1,
-    "upvotes": 30
-   },
-   {
-    "symbol": "NVDA",
-    "name": "NVIDIA",
-    "mentions": 4,
-    "mentions_24h_ago": 8,
-    "upvotes": 5
+    "upvotes": 34
    },
    {
     "symbol": "SMCI",
     "name": "Supermicro",
     "mentions": 4,
     "mentions_24h_ago": null,
-    "upvotes": 1236
+    "upvotes": 1251
+   },
+   {
+    "symbol": "VST",
+    "name": "Vistra",
+    "mentions": 4,
+    "mentions_24h_ago": null,
+    "upvotes": 9
    },
    {
     "symbol": "UBER",
     "name": "Uber",
     "mentions": 4,
     "mentions_24h_ago": null,
-    "upvotes": 18
+    "upvotes": 21
    },
    {
     "symbol": "SOXX",
     "name": "BlackRock Institutional Trust Company N.A. - BTC iShares PHLX Semicond",
     "mentions": 4,
     "mentions_24h_ago": 1,
-    "upvotes": 26
+    "upvotes": 25
    },
    {
     "symbol": "SPY",
     "name": "SPDR S&P 500 ETF Trust",
     "mentions": 4,
     "mentions_24h_ago": 5,
-    "upvotes": 10
+    "upvotes": 11
+   },
+   {
+    "symbol": "IREN",
+    "name": "Iris Energy",
+    "mentions": 4,
+    "mentions_24h_ago": null,
+    "upvotes": 18
    },
    {
     "symbol": "DC",
     "name": "Dakota Gold",
     "mentions": 4,
     "mentions_24h_ago": 1,
-    "upvotes": 1233
-   },
-   {
-    "symbol": "RDDT",
-    "name": "Reddit",
-    "mentions": 4,
-    "mentions_24h_ago": 7,
-    "upvotes": 9
+    "upvotes": 1253
    },
    {
     "symbol": "GOOG",
     "name": "Alphabet (Google)",
     "mentions": 3,
     "mentions_24h_ago": 3,
-    "upvotes": 13
-   },
-   {
-    "symbol": "MCD",
-    "name": "McDonald",
-    "mentions": 3,
-    "mentions_24h_ago": 1,
-    "upvotes": 6
+    "upvotes": 12
    },
    {
     "symbol": "KMB",
@@ -286,13 +286,6 @@
     "upvotes": 7
    },
    {
-    "symbol": "VST",
-    "name": "Vistra",
-    "mentions": 3,
-    "mentions_24h_ago": null,
-    "upvotes": 8
-   },
-   {
     "symbol": "STRL",
     "name": "Sterling Construction",
     "mentions": 3,
@@ -300,11 +293,18 @@
     "upvotes": 9
    },
    {
-    "symbol": "IREN",
-    "name": "Iris Energy",
+    "symbol": "RDDT",
+    "name": "Reddit",
     "mentions": 3,
-    "mentions_24h_ago": null,
-    "upvotes": 9
+    "mentions_24h_ago": 7,
+    "upvotes": 6
+   },
+   {
+    "symbol": "NBIS",
+    "name": "Nebius Group",
+    "mentions": 3,
+    "mentions_24h_ago": 1,
+    "upvotes": 13
    },
    {
     "symbol": "SNDK",
@@ -314,46 +314,46 @@
     "upvotes": 18
    },
    {
+    "symbol": "MCD",
+    "name": "McDonald",
+    "mentions": 2,
+    "mentions_24h_ago": 1,
+    "upvotes": 4
+   },
+   {
     "symbol": "ALL",
     "name": "Allstate",
     "mentions": 2,
     "mentions_24h_ago": null,
-    "upvotes": 5
+    "upvotes": 8
    },
    {
     "symbol": "ANET",
     "name": "Arista Networks",
     "mentions": 2,
     "mentions_24h_ago": null,
-    "upvotes": 67
+    "upvotes": 66
    },
    {
     "symbol": "ACA",
     "name": "Arcosa",
     "mentions": 2,
     "mentions_24h_ago": null,
-    "upvotes": 6
+    "upvotes": 5
    },
    {
     "symbol": "SMH",
     "name": "VanEck Vectors ETF Trust - VanEck Vectors Semiconductor ETF",
     "mentions": 2,
     "mentions_24h_ago": 1,
-    "upvotes": 5
+    "upvotes": 4
    },
    {
     "symbol": "MAGA",
     "name": "ETF Series Solutions Trust - Point Bridge GOP Stock Tracker ETF",
     "mentions": 2,
     "mentions_24h_ago": null,
-    "upvotes": 31
-   },
-   {
-    "symbol": "VTI",
-    "name": "Vanguard Total Stock Market ETF",
-    "mentions": 2,
-    "mentions_24h_ago": 1,
-    "upvotes": 4
+    "upvotes": 29
    }
   ],
   "r/options": [
@@ -537,37 +537,30 @@
    {
     "symbol": "VTI",
     "name": "Vanguard Total Stock Market ETF",
-    "mentions": 20,
+    "mentions": 17,
     "mentions_24h_ago": 2,
-    "upvotes": 112
+    "upvotes": 59
    },
    {
     "symbol": "VOO",
     "name": "Vanguard S&P 500 ETF",
     "mentions": 8,
     "mentions_24h_ago": 3,
-    "upvotes": 39
+    "upvotes": 46
    },
    {
     "symbol": "MPLX",
     "name": "MPLX",
     "mentions": 3,
     "mentions_24h_ago": null,
-    "upvotes": 10
+    "upvotes": 9
    },
    {
     "symbol": "VT",
     "name": "Vanguard Group, Inc. - Vanguard Total World Stock ETF",
-    "mentions": 3,
-    "mentions_24h_ago": 2,
-    "upvotes": 4
-   },
-   {
-    "symbol": "SGOV",
-    "name": "iShares Trust - iShares 0-3 Month Treasury Bond ETF",
     "mentions": 2,
-    "mentions_24h_ago": 5,
-    "upvotes": 4
+    "mentions_24h_ago": 2,
+    "upvotes": 3
    },
    {
     "symbol": "QQQM",
@@ -708,6 +701,13 @@
     "mentions": 1,
     "mentions_24h_ago": null,
     "upvotes": 1
+   },
+   {
+    "symbol": "CAT",
+    "name": "Caterpillar",
+    "mentions": 1,
+    "mentions_24h_ago": 1,
+    "upvotes": 0
    }
   ],
   "r/CryptoCurrency": [
