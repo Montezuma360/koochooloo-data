@@ -462,7 +462,7 @@ def main():
                 why = "not enough price history to judge momentum, so the default is no trade"
             elif k != "spy_benchmark" and r > 70:
                 why = "RSI %.0f is above 70: overbought, buying now risks chasing a spike" % r
-            elif k != "spy_benchmark" and r < 30 and not k.startswith("insider_"):
+            elif k != "spy_benchmark" and r < 30 and not k.startswith(("insider_", "research_setup")):  # insider buying is the one accepted contrarian reason
                 why = "RSI %.0f is below 30: oversold with no strong contrarian reason" % r
             elif len(s["open"]) >= SLOTS:
                 why = "all %d slots are full" % SLOTS
