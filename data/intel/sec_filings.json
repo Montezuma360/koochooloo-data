@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T23:02:59Z",
+ "updated": "2026-11-04T23:57:28Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2335,6 +2335,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-04T23:11:58Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Metalla Royalty & Streaming Ltd.",
+   "cik": 1722606,
+   "ticker": "MTA",
+   "role": "Subject",
+   "accession": "0001104659-26-122850",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1722606/000110465926122850/0001104659-26-122850-index.htm"
+  },
+  {
    "time": "2026-11-04T22:15:23Z",
    "form": "SCHEDULE 13D",
    "company": "MSC INCOME FUND, INC.",
@@ -2561,21 +2573,33 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/849401/000114036126041845/0001140361-26-041845-index.htm"
-  },
-  {
-   "time": "2026-11-03T22:30:02Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Playboy, Inc.",
-   "cik": 1803914,
-   "ticker": "PLBY",
-   "role": "Subject",
-   "accession": "0001193125-26-445654",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1803914/000119312526445654/0001193125-26-445654-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T23:11:58Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Tether Global Investments Fund, S.I.C.A.F., S.A.",
+   "cik": 2025889,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001104659-26-122850",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2025889/000110465926122850/0001104659-26-122850-index.htm"
+  },
+  {
+   "time": "2026-11-04T23:11:58Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Metalla Royalty & Streaming Ltd.",
+   "cik": 1722606,
+   "ticker": "MTA",
+   "role": "Subject",
+   "accession": "0001104659-26-122850",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1722606/000110465926122850/0001104659-26-122850-index.htm"
+  },
   {
    "time": "2026-11-04T22:30:51Z",
    "form": "8-K",
@@ -17322,43 +17346,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1499832/000162828026069765/0001628280-26-069765-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:08:40Z",
-   "form": "8-K",
-   "company": "STANLEY BLACK & DECKER, INC.",
-   "cik": 93556,
-   "ticker": "SWK",
-   "role": "Filer",
-   "accession": "0000093556-26-000036",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000036/0000093556-26-000036-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:07:45Z",
-   "form": "10-Q",
-   "company": "Taboola.com Ltd.",
-   "cik": 1840502,
-   "ticker": "TBLA",
-   "role": "Filer",
-   "accession": "0001840502-26-000018",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1840502/000184050226000018/0001840502-26-000018-index.htm"
   }
  ]
 }
