@@ -24,6 +24,8 @@ jobs:
           curl -sSfL -o tokenizer_config.json $HF/tokenizer_config.json
           for v in bm_george bm_fable bm_lewis bm_daniel; do curl -sSfL -o voices__$v.bin $HF/voices/$v.bin; done
           curl -sSfL -o ort-wasm-simd-threaded.jsep.wasm https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.5.1/dist/ort-wasm-simd-threaded.jsep.wasm
+          curl -sSfL -o test__kokoro.web.js https://cdn.jsdelivr.net/npm/kokoro-js@1.2.1/dist/kokoro.web.js
+          curl -sSfL -o test__ort.jsep.mjs https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.5.1/dist/ort-wasm-simd-threaded.jsep.mjs
           for f in onnx__model_quantized.onnx ort-wasm-simd-threaded.jsep.wasm; do split -b 14000000 -d -a 1 $f $f. && rm $f; done
           ls -la
       - name: Store on the kokoro-files branch
