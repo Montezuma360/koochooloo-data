@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 9,
+ "runs": 10,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -1967,10 +1967,19 @@
    "hold": 60,
    "cash": 100000.0,
    "open": [],
-   "pending": [],
+   "pending": [
+    {
+     "sym": "PRLB",
+     "signal": "2026-11-04",
+     "event": "2026-11-03",
+     "note": "research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+"
+    }
+   ],
    "closed": [],
    "seen": {
-    "IMSR": "2026-11-04"
+    "IMSR": "2026-11-04",
+    "TRTX": "2026-11-04",
+    "PRLB": "2026-11-04"
    },
    "events": [],
    "equity": [
@@ -1988,10 +1997,19 @@
    "hold": 60,
    "cash": 100000.0,
    "open": [],
-   "pending": [],
+   "pending": [
+    {
+     "sym": "PRLB",
+     "signal": "2026-11-04",
+     "event": "2026-11-03",
+     "note": "research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+"
+    }
+   ],
    "closed": [],
    "seen": {
-    "IMSR": "2026-11-04"
+    "IMSR": "2026-11-04",
+    "TRTX": "2026-11-04",
+    "PRLB": "2026-11-04"
    },
    "events": [],
    "equity": [
@@ -2005,7 +2023,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-04T23:10:05+00:00",
+ "updated": "2026-11-04T23:50:35+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
