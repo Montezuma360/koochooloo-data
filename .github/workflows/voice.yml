@@ -1,7 +1,7 @@
 name: Caesar's voice
 
-# After each brain refresh, records Caesar's briefing and any new critical alert in Jerry B.'s voice (ElevenLabs),
-# for the terminal and the website to play. Needs the ELEVENLABS_API_KEY secret; without it the run ends at once.
+# After each brain refresh, records Caesar's briefing and any new critical alert in a free British voice (Kokoro, open source; no key needed),
+# for the terminal and the website to play. Set the repository variable VOICE_ENGINE=elevenlabs (and the ELEVENLABS_API_KEY secret) to use ElevenLabs instead.
 # Optional repository variables: VOICE_MONTHLY_CHARS (default 8000), VOICE_BRIEF_SLOTS (UK times, default "07:30"),
 # VOICE_MODEL (default eleven_multilingual_v2).
 on:
@@ -20,7 +20,7 @@ concurrency:
 jobs:
   voice:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
@@ -28,9 +28,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/kokoro
+          key: kokoro-v1
+      - name: Install the free voice
+        run: pip install -q kokoro-onnx numpy
       - name: Record new clips
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          VOICE_ENGINE: ${{ vars.VOICE_ENGINE }}
           VOICE_MONTHLY_CHARS: ${{ vars.VOICE_MONTHLY_CHARS }}
           VOICE_BRIEF_SLOTS: ${{ vars.VOICE_BRIEF_SLOTS }}
           VOICE_MODEL: ${{ vars.VOICE_MODEL }}

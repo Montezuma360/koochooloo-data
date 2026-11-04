@@ -1,4 +1,7 @@
-"""Caesar's recorded voice: Jerry B. (British RP) reads the briefing and critical alerts.
+"""Caesar's recorded voice reads the briefing and critical alerts.
+
+Default engine: Kokoro (free, open source, Apache 2.0) with the British male voice bm_george, run right here on the GitHub runner:
+no account, no key, no tokens. Set VOICE_ENGINE=elevenlabs (plus the ELEVENLABS_API_KEY secret) to use ElevenLabs instead.
 
 The terminal (inside Claude and on the website) and the landing page play these clips; no other voice is used anywhere.
 Live conversations use the same voice through the ElevenLabs agent.
@@ -27,9 +30,11 @@ from zoneinfo import ZoneInfo
 
 KEY = os.environ.get("ELEVENLABS_API_KEY", "").strip()
 VOICE_ID = os.environ.get("VOICE_ID", "").strip() or "nPvIP7YzPX8Whz6ZKp2R"  # Jerry B. - British RP | Posh & Refined
-VOICE_NAME = "Jerry B. (British RP)"
+ENGINE = (os.environ.get("VOICE_ENGINE", "").strip() or "kokoro").lower()
+KOKORO_VOICE = os.environ.get("KOKORO_VOICE", "").strip() or "bm_george"
+VOICE_NAME = "Jerry B. (British RP)" if ENGINE == "elevenlabs" else "Caesar \u00b7 British (%s)" % KOKORO_VOICE
 MODEL = os.environ.get("VOICE_MODEL", "").strip() or "eleven_multilingual_v2"
-CAP = int(os.environ.get("VOICE_MONTHLY_CHARS", "").strip() or 8000)
+CAP = int(os.environ.get("VOICE_MONTHLY_CHARS", "").strip() or (8000 if ENGINE == "elevenlabs" else 200000))
 SLOTS = [s.strip() for s in (os.environ.get("VOICE_BRIEF_SLOTS", "").strip() or "07:30").split(",") if s.strip()]
 OUT = "data/voice"
 CHUNK = 14000
@@ -120,7 +125,38 @@ def alerts_for(core, sec, tracked, state, today):
     return [(k, spoken(t)) for k, t in out]
 
 
+_KOKORO = None
+
+
+def kokoro_tts(text):
+    """Free local speech: Kokoro-82M (ONNX) -> WAV -> MP3 with ffmpeg."""
+    global _KOKORO
+    import subprocess
+    import wave
+    import numpy as np
+    d = os.path.expanduser("~/.cache/kokoro")
+    os.makedirs(d, exist_ok=True)
+    base = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+    for fn in ("kokoro-v1.0.int8.onnx", "voices-v1.0.bin"):
+        if not os.path.exists(os.path.join(d, fn)):
+            urllib.request.urlretrieve(base + fn, os.path.join(d, fn))
+    if _KOKORO is None:
+        from kokoro_onnx import Kokoro
+        _KOKORO = Kokoro(os.path.join(d, "kokoro-v1.0.int8.onnx"), os.path.join(d, "voices-v1.0.bin"))
+    samples, sr = _KOKORO.create(text, voice=KOKORO_VOICE, speed=0.92, lang="en-gb")
+    pcm = (np.clip(samples, -1, 1) * 32767).astype("<i2")
+    wav = os.path.join(d, "out.wav")
+    with wave.open(wav, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes(pcm.tobytes())
+    return subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", wav, "-ac", "1", "-ar", "24000", "-b:a", "32k", "-f", "mp3", "-"], check=True, capture_output=True).stdout
+
+
 def tts(text):
+    if ENGINE != "elevenlabs":
+        return kokoro_tts(text)
     req = urllib.request.Request(
         "https://api.elevenlabs.io/v1/text-to-speech/%s?output_format=mp3_22050_32" % VOICE_ID,
         data=json.dumps({"text": text, "model_id": MODEL, "voice_settings": {"stability": 0.55, "similarity_boost": 0.8, "style": 0.15, "use_speaker_boost": True}}).encode(),
@@ -174,9 +210,9 @@ def main():
             hh, mm = (int(x) for x in s.split(":"))
             if (now.hour, now.minute) >= (hh, mm) and (today + " " + s) not in state.get("slots_done", []):
                 due = s
-    index.update({"voice": VOICE_NAME, "voice_id": VOICE_ID, "model": MODEL, "brain_updated": core.get("updated")})
+    index.update({"voice": VOICE_NAME, "voice_id": VOICE_ID if ENGINE == "elevenlabs" else KOKORO_VOICE, "model": MODEL if ENGINE == "elevenlabs" else "kokoro-82m", "brain_updated": core.get("updated")})
     error = None
-    if not KEY:
+    if ENGINE == "elevenlabs" and not KEY:
         error = "No ELEVENLABS_API_KEY secret yet, so nothing is recorded."
     else:
         jobs = [("alert", k, t) for k, t in pending]
