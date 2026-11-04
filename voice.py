@@ -228,7 +228,7 @@ def main():
                 error = "ElevenLabs answered %d: %s" % (e.code, e.read()[:200].decode("utf-8", "replace"))
                 break
             except Exception as e:  # network trouble: try again next run
-                error = "ElevenLabs could not be reached: %s" % e
+                error = "The voice engine failed: %s" % e
                 break
             state["chars"] += len(text)
             cid = "%s-%s-%s" % (kind, now.strftime("%Y%m%d%H%M"), hashlib.sha1(text.encode()).hexdigest()[:6])

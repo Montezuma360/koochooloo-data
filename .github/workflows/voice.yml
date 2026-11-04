@@ -33,7 +33,9 @@ jobs:
           path: ~/.cache/kokoro
           key: kokoro-v1
       - name: Install the free voice
-        run: pip install -q kokoro-onnx numpy
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q kokoro-onnx numpy
       - name: Record new clips
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
