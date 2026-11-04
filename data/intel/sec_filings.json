@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T01:27:39Z",
+ "updated": "2026-11-04T03:09:08Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2410,6 +2410,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-04T02:57:23Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "CVR ENERGY INC",
+   "cik": 1376139,
+   "ticker": "CVI",
+   "role": "Subject",
+   "accession": "0001193125-26-445965",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1376139/000119312526445965/0001193125-26-445965-index.htm"
+  },
+  {
    "time": "2026-11-04T01:20:54Z",
    "form": "SCHEDULE 13D/A",
    "company": "Pelthos Therapeutics Inc.",
@@ -2816,45 +2828,33 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1783183/000123191926001523/0001231919-26-001523-index.htm"
-  },
-  {
-   "time": "2026-11-02T21:04:38Z",
-   "form": "SCHEDULE 13D",
-   "company": "Narragansett Bancorp, Inc.",
-   "cik": 2138186,
-   "ticker": "NARA",
-   "role": "Subject",
-   "accession": "0000943374-26-000480",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2138186/000094337426000480/0000943374-26-000480-index.htm"
-  },
-  {
-   "time": "2026-11-02T19:08:07Z",
-   "form": "SCHEDULE 13D",
-   "company": "Seer, Inc.",
-   "cik": 1726445,
-   "ticker": "SEER",
-   "role": "Subject",
-   "accession": "0001373604-26-000071",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1726445/000137360426000071/0001373604-26-000071-index.htm"
-  },
-  {
-   "time": "2026-11-02T17:15:06Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "BASSETT FURNITURE INDUSTRIES INC",
-   "cik": 10329,
-   "ticker": "BSET",
-   "role": "Subject",
-   "accession": "0001813065-26-000002",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/10329/000181306526000002/0001813065-26-000002-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T02:57:23Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "CVR ENERGY INC",
+   "cik": 1376139,
+   "ticker": "CVI",
+   "role": "Subject",
+   "accession": "0001193125-26-445965",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1376139/000119312526445965/0001193125-26-445965-index.htm"
+  },
+  {
+   "time": "2026-11-04T02:57:23Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "ICAHN CARL C",
+   "cik": 921669,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001193125-26-445965",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/921669/000119312526445965/0001193125-26-445965-index.htm"
+  },
   {
    "time": "2026-11-04T01:20:54Z",
    "form": "SCHEDULE 13D/A",
@@ -17466,39 +17466,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1535929/000153592926000185/0001535929-26-000185-index.htm"
-  },
-  {
-   "time": "2026-11-02T21:16:07Z",
-   "form": "10-Q",
-   "company": "VORNADO REALTY LP",
-   "cik": 1040765,
-   "ticker": null,
-   "role": "Filer",
-   "accession": "0000899689-26-000053",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1040765/000089968926000053/0000899689-26-000053-index.htm"
-  },
-  {
-   "time": "2026-11-02T21:15:58Z",
-   "form": "8-K",
-   "company": "Voyager Technologies, Inc./TX",
-   "cik": 1788060,
-   "ticker": "VOYG",
-   "role": "Filer",
-   "accession": "0001628280-26-068886",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1788060/000162828026068886/0001628280-26-068886-index.htm"
   }
  ]
 }
