@@ -13,6 +13,8 @@ Each strategy starts with $100,000 and follows fixed rules:
   below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the
   data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its
   reason in plain language in data/paper/decisions.csv.
+- Two strategies were added on 4 Nov 2026 and follow every rule above: "research_setup" (smaller company, 2+ insiders at $25k+, cash flow above
+  profit) and "research_setup_trend" (the same, but no new entries while the S&P 500 is below its 200-day average). The older strategies are unchanged.
 - Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies
   are ranked by their margin over the S&P 500; summary.json "goal" shows what GBP 100 has become in each and how long
   GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.
@@ -39,6 +41,8 @@ STRATS = {
     "congress_cluster3": {"label": "3+ members of Congress disclose buying the same stock within 60 days", "hold": 60},
     "congress_big_100k": {"label": "A member of Congress discloses a $100k+ purchase", "hold": 60},
     "terminal_top_signals": {"label": "The terminal's own signal score reaches 8+", "hold": 20},
+    "research_setup": {"label": "Research setup: a smaller company, 2+ insiders each buying $25k+ within 30 days, operating cash flow above profit (added 4 Nov 2026)", "hold": 60, "max_liq": 20e6},
+    "research_setup_trend": {"label": "Research setup, but no new entries while the S&P 500 is below its 200-day average (added 4 Nov 2026)", "hold": 60, "max_liq": 20e6, "trend": True},
     "spy_benchmark": {"label": "Buy and hold the S&P 500 (SPY), the bar to beat", "hold": None},
 }
 TRADE_COLS = ["strategy", "symbol", "signal_date", "entry_date", "exit_date", "entry", "exit", "return_pct", "spy_return_pct", "excess_pct", "exit_reason", "size_x", "stop_pct", "industry", "note"]
@@ -171,6 +175,16 @@ def find_signals():
     for r in load_rows("signals.json"):
         if (r.get("score") or 0) >= 8 and TICK.match(str(r.get("symbol", ""))):
             out["terminal_top_signals"].append((r["symbol"], TODAY, "score %s: %s" % (r["score"], "; ".join(r.get("reasons", [])[:2]))))
+    try:  # the brain's research setup: smaller company + 2 insiders at $25k+ + cash flow above profit (current figures only)
+        for st_ in json.loads((D / "brain.json").read_text()).get("stocks", []):
+            if st_.get("research_setup") and TICK.match(str(st_.get("symbol", ""))):
+                cl = [e for e in st_.get("evidence", []) if e.get("type") == "insider_cluster"]
+                d = day(cl[0].get("date")) if cl else None
+                if d:
+                    for k in ("research_setup", "research_setup_trend"):
+                        out[k].append((st_["symbol"], d, "research setup: " + str(cl[0].get("detail", ""))[:140]))
+    except Exception as e:
+        print("brain research setups unavailable:", repr(e)[:100])
     return out
 
 
@@ -215,6 +229,34 @@ def rsi(closes, n=14):
     up = d.clip(lower=0).ewm(alpha=1 / n, adjust=False).mean().iloc[-1]
     dn = (-d.clip(upper=0)).ewm(alpha=1 / n, adjust=False).mean().iloc[-1]
     return 100.0 if dn == 0 else float(100 - 100 / (1 + up / dn))
+
+
+def spy_long():
+    """About two years of SPY closes, enough for a 200-day average (None if Yahoo fails)."""
+    try:
+        df = yf.download("SPY", period="2y", interval="1d", auto_adjust=True, progress=False)
+        c = df["Close"]
+        if hasattr(c, "columns"):
+            c = c.iloc[:, 0]
+        c = c.dropna()
+        c.index = [pd.Timestamp(x).date() for x in c.index]
+        return c
+    except Exception as e:
+        print("SPY history unavailable:", repr(e)[:100])
+        return None
+
+
+def trend_gate(closes, d0):
+    """None when the S&P 500 closed at or above its 200-day average before the fill day; otherwise the reason to wait."""
+    if closes is None:
+        return "no long S&P 500 history, so the default is no trade"
+    h = closes[[d < d0 for d in closes.index]]
+    if len(h) < 200:
+        return "under 200 sessions of S&P 500 history, so the default is no trade"
+    avg, last = float(h.tail(200).mean()), float(h.iloc[-1])
+    if last >= avg:
+        return None
+    return "trend brake: the S&P 500 (%.0f) is below its 200-day average (%.0f), so no new entries" % (last, avg)
 
 
 DECISIONS = []
@@ -331,6 +373,7 @@ def main():
     new_trades = []
     stressed, stress_why = market_stress()
     data_doubt = data_doubts()
+    spy_hist = spy_long() if any(STRATS[k].get("trend") for k in S) else None
     sic = industries(st, {p["sym"] for s in S.values() for p in s["pending"]} | {p["sym"] for s in S.values() for p in s["open"]})
 
     for k, s in S.items():
@@ -403,6 +446,7 @@ def main():
             pin = float(b.Open.iloc[i])
             liq = float((b.Close.iloc[max(0, i - 20):i] * b.Volume.iloc[max(0, i - 20):i]).mean()) if i > 0 else 0
             r = rsi(b.Close.iloc[:i])  # momentum as known at the close before the fill
+            tg = trend_gate(spy_hist, d0) if STRATS[k].get("trend") else None
             why = None
             if k != "spy_benchmark" and not (pin >= 1 and liq >= 1e6):
                 why = "penny stock or too thinly traded (under $1 or under $1M a day)"
@@ -412,6 +456,8 @@ def main():
                 why = gate
             elif k != "spy_benchmark" and data_doubt:
                 why = "uncertain data (%s), so the default is no trade" % data_doubt
+            elif tg:
+                why = tg
             elif k != "spy_benchmark" and r is None:
                 why = "not enough price history to judge momentum, so the default is no trade"
             elif k != "spy_benchmark" and r > 70:

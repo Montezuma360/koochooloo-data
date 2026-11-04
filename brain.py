@@ -22,6 +22,31 @@ TICK = re.compile(r"^[A-Z]{1,5}(\.[A-Z])?$")
 EXEC = re.compile(r"director|officer|chief|president|ceo|cfo|coo|chair|vp|vice|counsel|treasurer|secretary", re.I)  # as paper.py
 PRICE_MAX_AGE_MIN = 5        # stock-level prices for the listed stocks are refetched at most this often
 FUND_MAX_AGE_DAYS = 7        # SEC company facts (cash flow vs profit) per stock
+FUND_STALE_DAYS = 548        # annual figures older than 18 months are not current enough to confirm the research setup
+
+
+def fund_age_days(f):
+    """Days since the fiscal year the cash-flow figures describe (None if unknown)."""
+    try:
+        end = dt.date.fromisoformat(f["period_end"]) if f.get("period_end") else dt.date(int(str(f["year"])[:4]), 12, 31)
+        return (TODAY - end).days
+    except Exception:
+        return None
+
+
+def annual_facts(j):
+    """Full-year figures by fiscal-year end from an SEC companyconcept reply; works for any fiscal year end, not only December."""
+    out = {}
+    for u in j.get("units", {}).get("USD", []):
+        if u.get("form") not in ("10-K", "10-K/A", "20-F", "40-F") or u.get("fp") != "FY":
+            continue
+        try:
+            a, b = dt.date.fromisoformat(u["start"]), dt.date.fromisoformat(u["end"])
+        except Exception:
+            continue
+        if 340 <= (b - a).days <= 380 and (u["end"] not in out or str(u.get("filed", "")) >= out[u["end"]][1]):
+            out[u["end"]] = (u["val"], str(u.get("filed", "")))
+    return out
 
 NOTES = {
     "research_setup": "Smaller company ($1M-$20M traded a day) + 2 or more insiders each buying $25k+ within 30 days + operating "
@@ -256,7 +281,7 @@ def price_facts(symbols, cache):
 
 def cash_vs_profit(symbols, cache):
     """Latest annual operating cash flow and profit from SEC company facts (cached a week)."""
-    fc = cache.setdefault("fund", {})
+    fc = cache.setdefault("fund2", {})
     fund = load("alt/fundamentals.json").get("watch") or {}
     cikmap = {v: int(k) for k, v in (load("intel/cik_tickers.json").get("map") or {}).items()}
     out, calls = {}, 0
@@ -281,15 +306,13 @@ def cash_vs_profit(symbols, cache):
             for concept in ("NetCashProvidedByUsedInOperatingActivities", "NetIncomeLoss"):
                 calls += 1
                 j = sec_get("https://data.sec.gov/api/xbrl/companyconcept/CIK%010d/us-gaap/%s.json" % (cik, concept))
-                fy = [u for u in j.get("units", {}).get("USD", []) if u.get("form") in ("10-K", "20-F", "40-F") and u.get("fp") == "FY"
-                      and str(u.get("frame", "")).startswith("CY") and len(str(u.get("frame", ""))) == 6]
-                if fy:
-                    last = max(fy, key=lambda u: u["frame"])
-                    vals[concept] = (last["frame"], last["val"])
-            ocf, ni = vals.get("NetCashProvidedByUsedInOperatingActivities"), vals.get("NetIncomeLoss")
-            if ocf and ni and ocf[0] == ni[0]:
-                data = {"year": ocf[0][2:], "op_cash_flow": ocf[1], "net_income": ni[1], "cash_backed": ocf[1] > ni[1],
-                        "source": "SEC company facts"}
+                vals[concept] = annual_facts(j)
+            ocf, ni = vals.get("NetCashProvidedByUsedInOperatingActivities") or {}, vals.get("NetIncomeLoss") or {}
+            both = sorted(set(ocf) & set(ni))
+            if both:  # the latest fiscal year for which both figures were filed
+                end = both[-1]
+                data = {"year": end[:4], "period_end": end, "op_cash_flow": ocf[end][0], "net_income": ni[end][0],
+                        "cash_backed": ocf[end][0] > ni[end][0], "source": "SEC company facts"}
         except Exception:
             data = None
         fc[s] = {"at": STAMP, "data": data}
@@ -307,6 +330,8 @@ def stocks_block(ev, cache):
         e = ev[s]["evidence"]
         p = px.get(s, {})
         f = cf.get(s)
+        if f and (fund_age_days(f) is None or fund_age_days(f) > FUND_STALE_DAYS):
+            f = dict(f, stale=True, cash_backed=False)  # too old to confirm today's setup; kept so the terminal can show why
         size = p.get("size", "")
         for x in e:  # the cluster edge was found in smaller companies only, so label it by this company's actual size
             if x["type"] == "insider_cluster":
@@ -328,6 +353,8 @@ def stocks_block(ev, cache):
                 missing.append("not a smaller company (%s)" % (size or "size unknown"))
             if not f:
                 missing.append("no cash-flow figures at the SEC (funds and some foreign or new companies do not file them)")
+            elif f.get("stale"):
+                missing.append("cash-flow figures are out of date (fiscal year %s), so the setup cannot be confirmed" % f.get("year"))
             elif not f.get("cash_backed"):
                 missing.append("operating cash flow below reported profit")
         out.append({"symbol": s, "research_setup": setup, "setup_missing": missing, "evidence_types": types,
