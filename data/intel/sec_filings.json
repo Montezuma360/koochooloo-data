@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T23:54:57Z",
+ "updated": "2026-11-04T01:27:39Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2410,6 +2410,42 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-04T01:20:54Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Pelthos Therapeutics Inc.",
+   "cik": 1919246,
+   "ticker": "PTHS",
+   "role": "Subject",
+   "accession": "0001193125-26-445875",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1919246/000119312526445875/0001193125-26-445875-index.htm"
+  },
+  {
+   "time": "2026-11-04T00:16:27Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "PIMCO Flexible Real Estate Income Fund",
+   "cik": 1896329,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0001201895-26-000005",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1896329/000120189526000005/0001201895-26-000005-index.htm"
+  },
+  {
+   "time": "2026-11-03T23:58:11Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Priority Technology Holdings, Inc.",
+   "cik": 1653558,
+   "ticker": "PRTH",
+   "role": "Subject",
+   "accession": "0001213900-26-115672",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1653558/000121390026115672/0001213900-26-115672-index.htm"
+  },
+  {
    "time": "2026-11-03T23:16:18Z",
    "form": "SCHEDULE 13D/A",
    "company": "Blackstone Long-Short Credit Income Fund",
@@ -2816,33 +2852,81 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/10329/000181306526000002/0001813065-26-000002-index.htm"
-  },
-  {
-   "time": "2026-11-02T15:40:23Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "AMG BBH Asset-Backed Credit Fund, LLC",
-   "cik": 2097545,
-   "ticker": null,
-   "role": "Subject",
-   "accession": "0000929638-26-004179",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2097545/000092963826004179/0000929638-26-004179-index.htm"
-  },
-  {
-   "time": "2026-11-02T15:19:12Z",
-   "form": "SCHEDULE 13D",
-   "company": "MAXCYTE, INC.",
-   "cik": 1287098,
-   "ticker": "MXCT",
-   "role": "Subject",
-   "accession": "0001544204-26-000010",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1287098/000154420426000010/0001544204-26-000010-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T01:20:54Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Pelthos Therapeutics Inc.",
+   "cik": 1919246,
+   "ticker": "PTHS",
+   "role": "Subject",
+   "accession": "0001193125-26-445875",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1919246/000119312526445875/0001193125-26-445875-index.htm"
+  },
+  {
+   "time": "2026-11-04T01:20:54Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "LIGAND PHARMACEUTICALS INC",
+   "cik": 886163,
+   "ticker": "LGND",
+   "role": "Filed by",
+   "accession": "0001193125-26-445875",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/886163/000119312526445875/0001193125-26-445875-index.htm"
+  },
+  {
+   "time": "2026-11-04T00:16:27Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "PIMCO Flexible Real Estate Income Fund",
+   "cik": 1896329,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0001201895-26-000005",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1896329/000120189526000005/0001201895-26-000005-index.htm"
+  },
+  {
+   "time": "2026-11-04T00:16:27Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "IVASCYN DANIEL J",
+   "cik": 1201895,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001201895-26-000005",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1201895/000120189526000005/0001201895-26-000005-index.htm"
+  },
+  {
+   "time": "2026-11-03T23:58:11Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Priore Thomas Charles",
+   "cik": 1746475,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001213900-26-115672",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1746475/000121390026115672/0001213900-26-115672-index.htm"
+  },
+  {
+   "time": "2026-11-03T23:58:11Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Priority Technology Holdings, Inc.",
+   "cik": 1653558,
+   "ticker": "PRTH",
+   "role": "Subject",
+   "accession": "0001213900-26-115672",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1653558/000121390026115672/0001213900-26-115672-index.htm"
+  },
   {
    "time": "2026-11-03T23:16:18Z",
    "form": "SCHEDULE 13D/A",
@@ -17415,78 +17499,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1788060/000162828026068886/0001628280-26-068886-index.htm"
-  },
-  {
-   "time": "2026-11-02T21:04:38Z",
-   "form": "SCHEDULE 13D",
-   "company": "Narragansett Bancorp, Inc.",
-   "cik": 2138186,
-   "ticker": "NARA",
-   "role": "Subject",
-   "accession": "0000943374-26-000480",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2138186/000094337426000480/0000943374-26-000480-index.htm"
-  },
-  {
-   "time": "2026-11-02T21:04:38Z",
-   "form": "SCHEDULE 13D",
-   "company": "NARRAGANSETT FINANCIAL CORP",
-   "cik": 1861869,
-   "ticker": null,
-   "role": "Filed by",
-   "accession": "0000943374-26-000480",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1861869/000094337426000480/0000943374-26-000480-index.htm"
-  },
-  {
-   "time": "2026-11-02T19:08:07Z",
-   "form": "SCHEDULE 13D",
-   "company": "Seer, Inc.",
-   "cik": 1726445,
-   "ticker": "SEER",
-   "role": "Subject",
-   "accession": "0001373604-26-000071",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1726445/000137360426000071/0001373604-26-000071-index.htm"
-  },
-  {
-   "time": "2026-11-02T19:08:07Z",
-   "form": "SCHEDULE 13D",
-   "company": "BML Investment Partners, L.P.",
-   "cik": 1373604,
-   "ticker": null,
-   "role": "Filed by",
-   "accession": "0001373604-26-000071",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1373604/000137360426000071/0001373604-26-000071-index.htm"
-  },
-  {
-   "time": "2026-11-02T17:15:06Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Auto Services Company, Inc.",
-   "cik": 1813065,
-   "ticker": null,
-   "role": "Filed by",
-   "accession": "0001813065-26-000002",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1813065/000181306526000002/0001813065-26-000002-index.htm"
-  },
-  {
-   "time": "2026-11-02T17:15:06Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "BASSETT FURNITURE INDUSTRIES INC",
-   "cik": 10329,
-   "ticker": "BSET",
-   "role": "Subject",
-   "accession": "0001813065-26-000002",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/10329/000181306526000002/0001813065-26-000002-index.htm"
   }
  ]
 }
