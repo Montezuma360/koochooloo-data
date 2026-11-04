@@ -1,0 +1,46 @@
+name: Caesar's voice
+
+# After each brain refresh, records Caesar's briefing and any new critical alert in Jerry B.'s voice (ElevenLabs),
+# for the terminal and the website to play. Needs the ELEVENLABS_API_KEY secret; without it the run ends at once.
+# Optional repository variables: VOICE_MONTHLY_CHARS (default 8000), VOICE_BRIEF_SLOTS (UK times, default "07:30"),
+# VOICE_MODEL (default eleven_multilingual_v2).
+on:
+  workflow_run:
+    workflows: ["Refresh signals and dashboard", "Live market refresh"]
+    types: [completed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: voice
+  cancel-in-progress: false
+
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Record new clips
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          VOICE_MONTHLY_CHARS: ${{ vars.VOICE_MONTHLY_CHARS }}
+          VOICE_BRIEF_SLOTS: ${{ vars.VOICE_BRIEF_SLOTS }}
+          VOICE_MODEL: ${{ vars.VOICE_MODEL }}
+        run: python voice.py
+      - name: Commit changes
+        run: |
+          git config user.name "koochooloo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/voice
+          git diff --staged --quiet && exit 0
+          git commit -q -m "Caesar's voice $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs -q && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep 4; done
+          exit 1

@@ -28,6 +28,12 @@ The one research-backed setup (`research_setup: true`): a smaller company ($1M-$
 directors each bought $25k+ within 30 days and operating cash flow is above reported profit. In tests it averaged about +2.4%
 (2014-2022) and +2.7% (2023-2026) per trade above the S&P 500 over 60 days. It is not a guarantee; many trades still lose.
 
+## Caesar's voice: `data/voice/`
+`voice.py` (workflow `voice.yml`, after each brain refresh) records Caesar's briefing and new critical alerts in Jerry B.'s
+voice (ElevenLabs, British RP): `index.json` lists the latest briefing and the last 8 alerts with their text, time and MP3
+pieces (`<clip>-<n>.bin`, 14,000 bytes each, joined in order). It needs the `ELEVENLABS_API_KEY` secret and stays inside
+`VOICE_MONTHLY_CHARS` characters a month. The terminal and the website play these clips; no other voice is used.
+
 ## Refresh
 - `live.yml`: one run per tick (an outside timer calls it every 5 minutes in US market hours): prices, SEC insider filings,
   Reddit, intelligence feeds, signals, health, brain, one commit. About 1-2 minutes per run.
