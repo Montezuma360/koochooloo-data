@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T17:14:50Z",
+ "updated": "2026-11-04T17:38:17Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2261,6 +2261,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-04T17:24:00Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Clarion Partners Real Estate Income Fund Inc.",
+   "cik": 1762562,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0000038777-26-000284",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1762562/000003877726000284/0000038777-26-000284-index.htm"
+  },
+  {
    "time": "2026-11-04T14:00:24Z",
    "form": "SCHEDULE 13D/A",
    "company": "GameSquare Holdings, Inc.",
@@ -2550,6 +2562,66 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T17:33:12Z",
+   "form": "10-Q",
+   "company": "MODINE MANUFACTURING CO",
+   "cik": 67347,
+   "ticker": "MOD",
+   "role": "Filer",
+   "accession": "0001104659-26-122523",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/67347/000110465926122523/0001104659-26-122523-index.htm"
+  },
+  {
+   "time": "2026-11-04T17:24:00Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Clarion Partners Real Estate Income Fund Inc.",
+   "cik": 1762562,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0000038777-26-000284",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1762562/000003877726000284/0000038777-26-000284-index.htm"
+  },
+  {
+   "time": "2026-11-04T17:24:00Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "FRANKLIN TEMPLETON INC",
+   "cik": 38777,
+   "ticker": "BEN",
+   "role": "Filed by",
+   "accession": "0000038777-26-000284",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/38777/000003877726000284/0000038777-26-000284-index.htm"
+  },
+  {
+   "time": "2026-11-04T17:23:57Z",
+   "form": "10-Q",
+   "company": "HOME BANCORP, INC.",
+   "cik": 1436425,
+   "ticker": "HBCP",
+   "role": "Filer",
+   "accession": "0001628280-26-069912",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1436425/000162828026069912/0001628280-26-069912-index.htm"
+  },
+  {
+   "time": "2026-11-04T17:23:15Z",
+   "form": "10-Q",
+   "company": "AMERICAN INTERNATIONAL GROUP, INC.",
+   "cik": 5272,
+   "ticker": "AIG",
+   "role": "Filer",
+   "accession": "0000005272-26-000104",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/5272/000000527226000104/0000005272-26-000104-index.htm"
+  },
   {
    "time": "2026-11-04T17:12:48Z",
    "form": "10-Q",
@@ -16750,89 +16822,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1552275/000155227526000090/0001552275-26-000090-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:22:18Z",
-   "form": "8-K",
-   "company": "COMPASS Pathways plc",
-   "cik": 1816590,
-   "ticker": "CMPS",
-   "role": "Filer",
-   "accession": "0001816590-26-000078",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1816590/000181659026000078/0001816590-26-000078-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:22:06Z",
-   "form": "10-Q",
-   "company": "CVR PARTNERS, LP",
-   "cik": 1425292,
-   "ticker": "UAN",
-   "role": "Filer",
-   "accession": "0001425292-26-000033",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1425292/000142529226000033/0001425292-26-000033-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:21:42Z",
-   "form": "10-Q",
-   "company": "Hillman Solutions Corp.",
-   "cik": 1822492,
-   "ticker": "HLMN",
-   "role": "Filer",
-   "accession": "0001822492-26-000161",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1822492/000182249226000161/0001822492-26-000161-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:20:29Z",
-   "form": "8-K",
-   "company": "XMax Inc.",
-   "cik": 1473334,
-   "ticker": "XMAX",
-   "role": "Filer",
-   "accession": "0001493152-26-049714",
-   "items": [
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1473334/000149315226049714/0001493152-26-049714-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:20:29Z",
-   "form": "8-K",
-   "company": "Western Union CO",
-   "cik": 1365135,
-   "ticker": "WU",
-   "role": "Filer",
-   "accession": "0001193125-26-444420",
-   "items": [
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1365135/000119312526444420/0001193125-26-444420-index.htm"
   }
  ]
 }
