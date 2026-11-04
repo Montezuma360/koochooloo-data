@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-04T13:30:37Z",
+ "updated": "2026-11-04T14:58:46Z",
  "source": "Koochooloo Fear & Greed, built the way CNN's index is built, from public data (Yahoo, FRED, Cboe)",
- "value": 28.6,
- "label": "Fear",
+ "value": 23.5,
+ "label": "Extreme fear",
  "components_0_to_100": {
-  "momentum": 9.1,
-  "breadth": 91.3,
-  "volatility": 22.6,
-  "vix_term": 45.6,
-  "safe_haven": 1.2,
-  "junk_bonds": 2.0
+  "momentum": 15.9,
+  "breadth": 52.4,
+  "volatility": 35.3,
+  "vix_term": 32.9,
+  "safe_haven": 1.6,
+  "junk_bonds": 2.8
  },
  "week_ago": 32.9,
  "month_ago": 46.6,
@@ -368,11 +368,11 @@
   ],
   [
    "2026-11-03",
-   20.2
+   20.3
   ],
   [
    "2026-11-04",
-   28.6
+   23.5
   ]
  ],
  "how": "Each part is ranked against its own past year: 0 = most fearful reading, 100 = most greedy. Put/call joins once 20 days of our own options history exist."
