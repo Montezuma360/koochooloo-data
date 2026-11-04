@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T18:33:11Z",
+ "updated": "2026-11-04T19:21:40Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -54,6 +54,31 @@
   }
  ],
  "results_announced_3d": [
+  {
+   "time": "2026-11-04T19:13:10Z",
+   "form": "8-K",
+   "company": "Freshpet, Inc.",
+   "cik": 1611647,
+   "ticker": "FRPT",
+   "role": "Filer",
+   "accession": "0001611647-26-000026",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1611647/000161164726000026/0001611647-26-000026-index.htm"
+  },
   {
    "time": "2026-11-04T16:42:09Z",
    "form": "8-K",
@@ -2236,30 +2261,21 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/64803/000006480326000107/0000064803-26-000107-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:31:39Z",
-   "form": "8-K",
-   "company": "UNITED THERAPEUTICS Corp",
-   "cik": 1082554,
-   "ticker": "UTHR",
-   "role": "Filer",
-   "accession": "0001082554-26-000036",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1082554/000108255426000036/0001082554-26-000036-index.htm"
   }
  ],
  "activist_stakes_3d": [
+  {
+   "time": "2026-11-04T18:43:23Z",
+   "form": "SCHEDULE 13D",
+   "company": "SDR Drone, Inc.",
+   "cik": 1331421,
+   "ticker": "SDCO",
+   "role": "Subject",
+   "accession": "0001493152-26-049923",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1331421/000149315226049923/0001493152-26-049923-index.htm"
+  },
   {
    "time": "2026-11-04T18:17:26Z",
    "form": "SCHEDULE 13D",
@@ -2574,6 +2590,160 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-04T19:17:12Z",
+   "form": "8-K",
+   "company": "GERMAN AMERICAN BANCORP, INC.",
+   "cik": 714395,
+   "ticker": "GABC",
+   "role": "Filer",
+   "accession": "0000714395-26-000043",
+   "items": [
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/714395/000071439526000043/0000714395-26-000043-index.htm"
+  },
+  {
+   "time": "2026-11-04T19:14:58Z",
+   "form": "10-Q",
+   "company": "NEW YORK TIMES CO",
+   "cik": 71691,
+   "ticker": "NYT",
+   "role": "Filer",
+   "accession": "0000071691-26-000041",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/71691/000007169126000041/0000071691-26-000041-index.htm"
+  },
+  {
+   "time": "2026-11-04T19:13:10Z",
+   "form": "8-K",
+   "company": "Freshpet, Inc.",
+   "cik": 1611647,
+   "ticker": "FRPT",
+   "role": "Filer",
+   "accession": "0001611647-26-000026",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "7.01",
+     "meaning": "Regulation FD disclosure"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1611647/000161164726000026/0001611647-26-000026-index.htm"
+  },
+  {
+   "time": "2026-11-04T19:12:48Z",
+   "form": "10-Q",
+   "company": "Bankwell Financial Group, Inc.",
+   "cik": 1505732,
+   "ticker": "BWFG",
+   "role": "Filer",
+   "accession": "0001628280-26-069998",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1505732/000162828026069998/0001628280-26-069998-index.htm"
+  },
+  {
+   "time": "2026-11-04T19:10:45Z",
+   "form": "10-Q",
+   "company": "KENNAMETAL INC",
+   "cik": 55242,
+   "ticker": "KMT",
+   "role": "Filer",
+   "accession": "0001628280-26-069995",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/55242/000162828026069995/0001628280-26-069995-index.htm"
+  },
+  {
+   "time": "2026-11-04T19:02:43Z",
+   "form": "10-Q",
+   "company": "AtriCure, Inc.",
+   "cik": 1323885,
+   "ticker": "ATRC",
+   "role": "Filer",
+   "accession": "0001323885-26-000040",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1323885/000132388526000040/0001323885-26-000040-index.htm"
+  },
+  {
+   "time": "2026-11-04T18:58:27Z",
+   "form": "10-Q",
+   "company": "STANLEY BLACK & DECKER, INC.",
+   "cik": 93556,
+   "ticker": "SWK",
+   "role": "Filer",
+   "accession": "0000093556-26-000039",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000039/0000093556-26-000039-index.htm"
+  },
+  {
+   "time": "2026-11-04T18:54:53Z",
+   "form": "10-Q",
+   "company": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC",
+   "cik": 746515,
+   "ticker": "EXPD",
+   "role": "Filer",
+   "accession": "0001193125-26-446859",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/746515/000119312526446859/0001193125-26-446859-index.htm"
+  },
+  {
+   "time": "2026-11-04T18:50:10Z",
+   "form": "10-Q",
+   "company": "Brownie's Marine Group, Inc",
+   "cik": 1166708,
+   "ticker": "BWMG",
+   "role": "Filer",
+   "accession": "0001493152-26-049925",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1166708/000149315226049925/0001493152-26-049925-index.htm"
+  },
+  {
+   "time": "2026-11-04T18:43:23Z",
+   "form": "SCHEDULE 13D",
+   "company": "Strickland Paul",
+   "cik": 2157712,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001493152-26-049923",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2157712/000149315226049923/0001493152-26-049923-index.htm"
+  },
+  {
+   "time": "2026-11-04T18:43:23Z",
+   "form": "SCHEDULE 13D",
+   "company": "SDR Drone, Inc.",
+   "cik": 1331421,
+   "ticker": "SDCO",
+   "role": "Subject",
+   "accession": "0001493152-26-049923",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1331421/000149315226049923/0001493152-26-049923-index.htm"
+  },
   {
    "time": "2026-11-04T18:28:36Z",
    "form": "8-K",
@@ -16514,239 +16684,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1309082/000147793226006598/0001477932-26-006598-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:37:41Z",
-   "form": "10-Q",
-   "company": "Beam Therapeutics Inc.",
-   "cik": 1745999,
-   "ticker": "BEAM",
-   "role": "Filer",
-   "accession": "0001193125-26-444455",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1745999/000119312526444455/0001193125-26-444455-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:36:37Z",
-   "form": "8-K",
-   "company": "OppFi Inc.",
-   "cik": 1818502,
-   "ticker": "OPFI",
-   "role": "Filer",
-   "accession": "0001818502-26-000094",
-   "items": [
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1818502/000181850226000094/0001818502-26-000094-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:36:01Z",
-   "form": "8-K",
-   "company": "Liberty Global Ltd.",
-   "cik": 1570585,
-   "ticker": "LBTYA",
-   "role": "Filer",
-   "accession": "0001570585-26-000154",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1570585/000157058526000154/0001570585-26-000154-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:35:55Z",
-   "form": "10-Q",
-   "company": "GIFTIFY, INC.",
-   "cik": 1760233,
-   "ticker": "GIFT",
-   "role": "Filer",
-   "accession": "0001493152-26-049717",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1760233/000149315226049717/0001493152-26-049717-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:35:17Z",
-   "form": "8-K",
-   "company": "TOP Financial Group Ltd",
-   "cik": 1848275,
-   "ticker": "TOP",
-   "role": "Filer",
-   "accession": "0001213900-26-115172",
-   "items": [
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1848275/000121390026115172/0001213900-26-115172-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:35:17Z",
-   "form": "8-K",
-   "company": "Peraso Inc.",
-   "cik": 890394,
-   "ticker": "PRSO",
-   "role": "Filer",
-   "accession": "0001213900-26-115173",
-   "items": [
-    {
-     "item": "1.01",
-     "meaning": "Major agreement signed"
-    },
-    {
-     "item": "3.02",
-     "meaning": "Unregistered share sale"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/890394/000121390026115173/0001213900-26-115173-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:34:49Z",
-   "form": "8-K",
-   "company": "Beam Therapeutics Inc.",
-   "cik": 1745999,
-   "ticker": "BEAM",
-   "role": "Filer",
-   "accession": "0001193125-26-444454",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1745999/000119312526444454/0001193125-26-444454-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:34:34Z",
-   "form": "8-K",
-   "company": "LGI Homes, Inc.",
-   "cik": 1580670,
-   "ticker": "LGIH",
-   "role": "Filer",
-   "accession": "0001580670-26-000085",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1580670/000158067026000085/0001580670-26-000085-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:32:57Z",
-   "form": "8-K",
-   "company": "NexPoint Residential Trust, Inc.",
-   "cik": 1620393,
-   "ticker": "NXRT",
-   "role": "Filer",
-   "accession": "0001193125-26-444451",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1620393/000119312526444451/0001193125-26-444451-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:32:30Z",
-   "form": "8-K",
-   "company": "Knife River Corp",
-   "cik": 1955520,
-   "ticker": "KNF",
-   "role": "Filer",
-   "accession": "0001628280-26-069132",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1955520/000162828026069132/0001628280-26-069132-index.htm"
-  },
-  {
-   "time": "2026-11-03T13:32:19Z",
-   "form": "8-K",
-   "company": "First Watch Restaurant Group, Inc.",
-   "cik": 1789940,
-   "ticker": "FWRG",
-   "role": "Filer",
-   "accession": "0001789940-26-000102",
-   "items": [
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1789940/000178994026000102/0001789940-26-000102-index.htm"
   }
  ]
 }
