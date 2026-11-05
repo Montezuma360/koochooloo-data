@@ -76,3 +76,29 @@ date,strategy,symbol,decision,rsi,reason
 2026-11-04,insider_cluster2_smallcap,SEVN,TRADE,53.4,"2 insiders each bought $25k+ within 30 days. Bought $2,002 (2.0% of the portfolio, the 2% cap) at the 2026-11-04 open, 6.76; RSI 53 is neutral"
 2026-11-04,insider_cluster2_smallcap,ENPH,NO_TRADE,48.8,not a smaller company (trades $211M a day)
 2026-11-04,insider_cluster2_smallcap,BBTX,NO_TRADE,,"not enough price history to judge momentum, so the default is no trade"
+2026-11-05,insider_cluster3,TBBK,TRADE,37.9,"3 insiders bought within 30 days. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 48.42; RSI 38 is neutral"
+2026-11-05,insider_cluster3,UPBD,NO_TRADE,84.4,"RSI 84 is above 70: overbought, buying now risks chasing a spike"
+2026-11-05,insider_cluster3,UMH,TRADE,52.9,"3 insiders bought within 30 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 15.52; RSI 53 is neutral"
+2026-11-05,insider_cluster3,FUNC,TRADE,64.6,"3 insiders bought within 30 days. Bought $1,995 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 47.82; RSI 65 is neutral"
+2026-11-05,insider_big_250k,LSCC,TRADE,48.3,"Tamer Ford (President & CEO) bought $585,045. Bought $1,995 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 101.92; RSI 48 is neutral"
+2026-11-05,insider_big_250k,UPBD,NO_TRADE,84.4,"RSI 84 is above 70: overbought, buying now risks chasing a spike"
+2026-11-05,insider_big_250k,KNOP,NO_TRADE,20.4,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-05,insider_big_250k,INTC,TRADE,22.8,"TAN LIP BU (CEO) bought $9,709,680. Bought $1,994 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 56.51; RSI 23 is oversold, but insiders buying with their own money is the contrarian reason"
+2026-11-05,terminal_top_signals,UPBD,NO_TRADE,84.4,"RSI 84 is above 70: overbought, buying now risks chasing a spike"
+2026-11-05,terminal_top_signals,LRN,TRADE,49.0,"score 20: Director Haggart Dylan G. bought $2,353,029 on 2026-11-03; Director Haggart Dylan G. bought $370,350 on 2026-11-03. Bought $1,958 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 80.25; RSI 49 is neutral"
+2026-11-05,terminal_top_signals,BA,TRADE,41.1,"score 10: 2 insiders bought $1,508,848 in 30 days (last 2026-10-30); Director Buckley Mortimer J bought $998,421 on 2026-10-30. Bought $1,956 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 176.84; RSI 41 is neutral"
+2026-11-05,terminal_top_signals,TBBK,NO_TRADE,37.9,already 4 positions in the same industry (National Commercial Banks)
+2026-11-05,terminal_top_signals,UMH,TRADE,52.9,"score 9: 3 insiders bought $29,188 in 30 days (last 2026-11-04). Bought $1,955 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 15.52; RSI 53 is neutral"
+2026-11-05,terminal_top_signals,FUNC,NO_TRADE,64.6,already 4 positions in the same industry (National Commercial Banks)
+2026-11-05,terminal_top_signals,JBLU,TRADE,54.8,"score 12: 2 insiders bought $623,844 in 30 days (last 2026-11-03); Director Mittal Nik bought $222,588 on 2026-11-03. Bought $1,954 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 3.75; RSI 55 is neutral"
+2026-11-05,terminal_top_signals,HGV,NO_TRADE,77.8,"RSI 78 is above 70: overbought, buying now risks chasing a spike"
+2026-11-05,terminal_top_signals,PAM,NO_TRADE,18.1,RSI 18 is below 30: oversold with no strong contrarian reason
+2026-11-05,terminal_top_signals,MXF,NO_TRADE,60.7,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-05,terminal_top_signals,DOLE,TRADE,62.9,"score 8: 10% owner Pale Fire Capital SE bought $9,832,264 on 2026-11-03; 10% owner Pale Fire Capital SE bought $3,053,054 on 2026-11-02. Bought $1,951 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 14.04; RSI 63 is neutral"
+2026-11-05,insider_cluster2_smallcap,PRLB,TRADE,28.2,"2 insiders each bought $25k+ within 30 days. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 67.32; RSI 28 is oversold, but insiders buying with their own money is the contrarian reason"
+2026-11-05,insider_cluster2_smallcap,UPBD,NO_TRADE,84.4,not a smaller company (trades $25M a day)
+2026-11-05,insider_cluster2_smallcap,UMBF,NO_TRADE,59.4,not a smaller company (trades $88M a day)
+2026-11-05,insider_cluster2_smallcap,LRN,NO_TRADE,49.0,not a smaller company (trades $81M a day)
+2026-11-05,insider_cluster2_smallcap,JBLU,NO_TRADE,54.8,not a smaller company (trades $107M a day)
+2026-11-05,research_setup,PRLB,TRADE,28.2,"research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 67.32; RSI 28 is oversold, but insiders buying with their own money is the contrarian reason"
+2026-11-05,research_setup_trend,PRLB,TRADE,28.2,"research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 67.32; RSI 28 is oversold, but insiders buying with their own money is the contrarian reason"
