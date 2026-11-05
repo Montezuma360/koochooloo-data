@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 11,
+ "runs": 12,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -98,6 +98,12 @@
      "signal": "2026-11-05",
      "event": "2026-11-03",
      "note": "3 insiders bought within 30 days"
+    },
+    {
+     "sym": "LBRT",
+     "signal": "2026-11-05",
+     "event": "2026-11-03",
+     "note": "3 insiders bought within 30 days"
     }
    ],
    "closed": [],
@@ -151,7 +157,8 @@
     "UPBD": "2026-11-04",
     "UMH": "2026-11-04",
     "FUNC": "2026-11-04",
-    "AN": "2026-11-05"
+    "AN": "2026-11-05",
+    "LBRT": "2026-11-05"
    },
    "events": [
     {
@@ -228,7 +235,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -0.19,
+   "drawdown_pct": -0.36,
    "paused": false
   },
   "insider_big_250k": {
@@ -473,6 +480,18 @@
      "signal": "2026-11-05",
      "event": "2026-11-02",
      "note": "TRYFOROS THOMAS N (Director) bought $1,455,600"
+    },
+    {
+     "sym": "LBRT",
+     "signal": "2026-11-05",
+     "event": "2026-11-03",
+     "note": "Gusek Ron (CEO and President) bought $377,335"
+    },
+    {
+     "sym": "BXMT",
+     "signal": "2026-11-05",
+     "event": "2026-11-04",
+     "note": "Johnson Timothy Steven (Chief Executive Officer) bought $1,035,351"
     }
    ],
    "closed": [],
@@ -583,7 +602,9 @@
     "FBRT": "2026-11-05",
     "AN": "2026-11-05",
     "ASPE": "2026-11-05",
-    "CACC": "2026-11-05"
+    "CACC": "2026-11-05",
+    "LBRT": "2026-11-05",
+    "BXMT": "2026-11-05"
    },
    "events": [
     {
@@ -695,7 +716,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -0.99,
+   "drawdown_pct": -1.22,
    "paused": false
   },
   "congress_cluster3": {
@@ -1547,6 +1568,30 @@
      "signal": "2026-11-05",
      "event": "2026-11-05",
      "note": "score 8: 2 insiders bought $1,024,108 in 30 days (last 2026-11-03); Chairman and CEO Byrne Richard J bought $998,364 on 2026-11-03"
+    },
+    {
+     "sym": "ETRA",
+     "signal": "2026-11-05",
+     "event": "2026-11-05",
+     "note": "score 38: 2 insiders bought $7,210,232 in 30 days (last 2026-11-05); Director GORDON CARL L bought $915,212 on 2026-11-05"
+    },
+    {
+     "sym": "LBRT",
+     "signal": "2026-11-05",
+     "event": "2026-11-05",
+     "note": "score 13: 3 insiders bought $645,635 in 30 days (last 2026-11-03); CEO and President Gusek Ron bought $377,335 on 2026-11-03"
+    },
+    {
+     "sym": "LYEL",
+     "signal": "2026-11-05",
+     "event": "2026-11-05",
+     "note": "score 10: 2 insiders bought $49,999,984 in 30 days (last 2026-11-04); 10% owner ARCH Venture Partners IX, LLC bought $24,999,992 on 2026-11-04"
+    },
+    {
+     "sym": "BXMT",
+     "signal": "2026-11-05",
+     "event": "2026-11-05",
+     "note": "score 10: 2 insiders bought $1,149,642 in 30 days (last 2026-11-04); Director NASSAU HENRY N bought $114,291 on 2026-11-04"
     }
    ],
    "closed": [],
@@ -1612,7 +1657,11 @@
     "DOLE": "2026-11-04",
     "AN": "2026-11-05",
     "LBTY": "2026-11-05",
-    "FBRT": "2026-11-05"
+    "FBRT": "2026-11-05",
+    "ETRA": "2026-11-05",
+    "LBRT": "2026-11-05",
+    "LYEL": "2026-11-05",
+    "BXMT": "2026-11-05"
    },
    "events": [
     {
@@ -1934,7 +1983,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -3.23,
+   "drawdown_pct": -3.64,
    "paused": false
   },
   "spy_benchmark": {
@@ -2073,6 +2122,18 @@
      "signal": "2026-11-05",
      "event": "2026-11-02",
      "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "LBRT",
+     "signal": "2026-11-05",
+     "event": "2026-11-03",
+     "note": "3 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "BXMT",
+     "signal": "2026-11-05",
+     "event": "2026-11-04",
+     "note": "2 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -2137,7 +2198,9 @@
     "JBLU": "2026-11-04",
     "LBTY": "2026-11-05",
     "AN": "2026-11-05",
-    "ASPE": "2026-11-05"
+    "ASPE": "2026-11-05",
+    "LBRT": "2026-11-05",
+    "BXMT": "2026-11-05"
    },
    "events": [
     {
@@ -2229,7 +2292,7 @@
     ]
    ],
    "started": "2026-11-02",
-   "drawdown_pct": -0.2,
+   "drawdown_pct": -0.33,
    "paused": false
   },
   "research_setup": {
@@ -2277,7 +2340,7 @@
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.13,
    "paused": false
   },
   "research_setup_trend": {
@@ -2325,11 +2388,11 @@
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.13,
    "paused": false
   }
  },
- "updated": "2026-11-05T22:27:04+00:00",
+ "updated": "2026-11-05T23:51:10+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -2658,6 +2721,22 @@
   "GLXY": {
    "sic": "62",
    "name": "Security Brokers, Dealers & Flotation Companies"
+  },
+  "BXMT": {
+   "sic": "67",
+   "name": "Real Estate Investment Trusts"
+  },
+  "ETRA": {
+   "sic": "28",
+   "name": "Biological Products, (No Diagnostic Substances)"
+  },
+  "LBRT": {
+   "sic": "13",
+   "name": "Oil & Gas Field Services, NEC"
+  },
+  "LYEL": {
+   "sic": "28",
+   "name": "Pharmaceutical Preparations"
   }
  }
 }

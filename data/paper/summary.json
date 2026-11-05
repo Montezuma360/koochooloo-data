@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T22:27:04+00:00",
+ "updated": "2026-11-05T23:51:10+00:00",
  "priced_to": "2026-11-05",
  "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\n- Two strategies were added on 4 Nov 2026 and follow every rule above: \"research_setup\" (smaller company, 2+ insiders at $25k+, cash flow above\n  profit) and \"research_setup_trend\" (the same, but no new entries while the S&P 500 is below its 200-day average). The older strategies are unchanged.\n- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies\n  are ranked by their margin over the S&P 500; summary.json \"goal\" shows what GBP 100 has become in each and how long\n  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
  "market_stress": false,
@@ -11,7 +11,7 @@
    "started": "2026-11-01",
    "value": 99683.14,
    "paused": false,
-   "drawdown_pct": -0.19,
+   "drawdown_pct": -0.36,
    "max_drawdown_pct": -0.36,
    "stops_hit": 0,
    "return_pct": -0.32,
@@ -79,7 +79,8 @@
     }
    ],
    "pending": [
-    "AN"
+    "AN",
+    "LBRT"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -172,7 +173,7 @@
    "started": "2026-11-01",
    "value": 99554.88,
    "paused": false,
-   "drawdown_pct": -0.99,
+   "drawdown_pct": -1.22,
    "max_drawdown_pct": -1.22,
    "stops_hit": 0,
    "return_pct": -0.45,
@@ -318,7 +319,9 @@
     "FBRT",
     "AN",
     "ASPE",
-    "CACC"
+    "CACC",
+    "LBRT",
+    "BXMT"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -547,7 +550,7 @@
    "started": "2026-11-01",
    "value": 97536.47,
    "paused": false,
-   "drawdown_pct": -3.23,
+   "drawdown_pct": -3.64,
    "max_drawdown_pct": -3.64,
    "stops_hit": 0,
    "return_pct": -2.46,
@@ -967,7 +970,11 @@
    "pending": [
     "AN",
     "LBTY",
-    "FBRT"
+    "FBRT",
+    "ETRA",
+    "LBRT",
+    "LYEL",
+    "BXMT"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -1149,7 +1156,7 @@
    "started": "2026-11-02",
    "value": 99824.96,
    "paused": false,
-   "drawdown_pct": -0.2,
+   "drawdown_pct": -0.33,
    "max_drawdown_pct": -0.33,
    "stops_hit": 0,
    "return_pct": -0.18,
@@ -1199,7 +1206,9 @@
    "pending": [
     "LBTY",
     "AN",
-    "ASPE"
+    "ASPE",
+    "LBRT",
+    "BXMT"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -1307,7 +1316,7 @@
    "started": "2026-11-04",
    "value": 99869.74,
    "paused": false,
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.13,
    "max_drawdown_pct": -0.13,
    "stops_hit": 0,
    "return_pct": -0.13,
@@ -1359,7 +1368,7 @@
    "started": "2026-11-04",
    "value": 99869.74,
    "paused": false,
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.13,
    "max_drawdown_pct": -0.13,
    "stops_hit": 0,
    "return_pct": -0.13,
@@ -1475,214 +1484,5 @@
   },
   "note": "Virtual money only. Rankings mean little before 90 days of live trading. Not financial advice."
  },
- "latest_decisions": [
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_cluster3",
-   "symbol": "TBBK",
-   "decision": "TRADE",
-   "rsi": 37.9,
-   "reason": "3 insiders bought within 30 days. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 48.42; RSI 38 is neutral"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_cluster3",
-   "symbol": "UPBD",
-   "decision": "NO_TRADE",
-   "rsi": 84.4,
-   "reason": "RSI 84 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_cluster3",
-   "symbol": "UMH",
-   "decision": "TRADE",
-   "rsi": 52.9,
-   "reason": "3 insiders bought within 30 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 15.52; RSI 53 is neutral"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_cluster3",
-   "symbol": "FUNC",
-   "decision": "TRADE",
-   "rsi": 64.6,
-   "reason": "3 insiders bought within 30 days. Bought $1,995 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 47.82; RSI 65 is neutral"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_big_250k",
-   "symbol": "LSCC",
-   "decision": "TRADE",
-   "rsi": 48.3,
-   "reason": "Tamer Ford (President & CEO) bought $585,045. Bought $1,995 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 101.92; RSI 48 is neutral"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_big_250k",
-   "symbol": "UPBD",
-   "decision": "NO_TRADE",
-   "rsi": 84.4,
-   "reason": "RSI 84 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_big_250k",
-   "symbol": "KNOP",
-   "decision": "NO_TRADE",
-   "rsi": 20.4,
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_big_250k",
-   "symbol": "INTC",
-   "decision": "TRADE",
-   "rsi": 22.8,
-   "reason": "TAN LIP BU (CEO) bought $9,709,680. Bought $1,994 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 56.51; RSI 23 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "UPBD",
-   "decision": "NO_TRADE",
-   "rsi": 84.4,
-   "reason": "RSI 84 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "LRN",
-   "decision": "TRADE",
-   "rsi": 49.0,
-   "reason": "score 20: Director Haggart Dylan G. bought $2,353,029 on 2026-11-03; Director Haggart Dylan G. bought $370,350 on 2026-11-03. Bought $1,958 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 80.25; RSI 49 is neutral"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "BA",
-   "decision": "TRADE",
-   "rsi": 41.1,
-   "reason": "score 10: 2 insiders bought $1,508,848 in 30 days (last 2026-10-30); Director Buckley Mortimer J bought $998,421 on 2026-10-30. Bought $1,956 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 176.84; RSI 41 is neutral"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "TBBK",
-   "decision": "NO_TRADE",
-   "rsi": 37.9,
-   "reason": "already 4 positions in the same industry (National Commercial Banks)"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "UMH",
-   "decision": "TRADE",
-   "rsi": 52.9,
-   "reason": "score 9: 3 insiders bought $29,188 in 30 days (last 2026-11-04). Bought $1,955 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 15.52; RSI 53 is neutral"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "FUNC",
-   "decision": "NO_TRADE",
-   "rsi": 64.6,
-   "reason": "already 4 positions in the same industry (National Commercial Banks)"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "JBLU",
-   "decision": "TRADE",
-   "rsi": 54.8,
-   "reason": "score 12: 2 insiders bought $623,844 in 30 days (last 2026-11-03); Director Mittal Nik bought $222,588 on 2026-11-03. Bought $1,954 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 3.75; RSI 55 is neutral"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "HGV",
-   "decision": "NO_TRADE",
-   "rsi": 77.8,
-   "reason": "RSI 78 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "PAM",
-   "decision": "NO_TRADE",
-   "rsi": 18.1,
-   "reason": "RSI 18 is below 30: oversold with no strong contrarian reason"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "MXF",
-   "decision": "NO_TRADE",
-   "rsi": 60.7,
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "terminal_top_signals",
-   "symbol": "DOLE",
-   "decision": "TRADE",
-   "rsi": 62.9,
-   "reason": "score 8: 10% owner Pale Fire Capital SE bought $9,832,264 on 2026-11-03; 10% owner Pale Fire Capital SE bought $3,053,054 on 2026-11-02. Bought $1,951 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 14.04; RSI 63 is neutral"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "PRLB",
-   "decision": "TRADE",
-   "rsi": 28.2,
-   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 67.32; RSI 28 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "UPBD",
-   "decision": "NO_TRADE",
-   "rsi": 84.4,
-   "reason": "not a smaller company (trades $25M a day)"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "UMBF",
-   "decision": "NO_TRADE",
-   "rsi": 59.4,
-   "reason": "not a smaller company (trades $88M a day)"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "LRN",
-   "decision": "NO_TRADE",
-   "rsi": 49.0,
-   "reason": "not a smaller company (trades $81M a day)"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "JBLU",
-   "decision": "NO_TRADE",
-   "rsi": 54.8,
-   "reason": "not a smaller company (trades $107M a day)"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "research_setup",
-   "symbol": "PRLB",
-   "decision": "TRADE",
-   "rsi": 28.2,
-   "reason": "research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 67.32; RSI 28 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-05",
-   "strategy": "research_setup_trend",
-   "symbol": "PRLB",
-   "decision": "TRADE",
-   "rsi": 28.2,
-   "reason": "research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 67.32; RSI 28 is oversold, but insiders buying with their own money is the contrarian reason"
-  }
- ]
+ "latest_decisions": []
 }
