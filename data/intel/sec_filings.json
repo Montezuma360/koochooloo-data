@@ -1,35 +1,7 @@
 {
- "updated": "2026-11-05T22:37:49Z",
+ "updated": "2026-11-05T23:03:12Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
- "red_flags_3d": [
-  {
-   "time": "2026-11-05T11:04:15Z",
-   "form": "8-K",
-   "company": "COGNITION THERAPEUTICS INC",
-   "cik": 1455365,
-   "ticker": "CGTX",
-   "role": "Filer",
-   "accession": "0001104659-26-122952",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "3.01",
-     "meaning": "Delisting warning"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [
-    "3.01"
-   ],
-   "link": "https://www.sec.gov/Archives/edgar/data/1455365/000110465926122952/0001104659-26-122952-index.htm"
-  }
- ],
+ "red_flags_3d": [],
  "results_announced_3d": [
   {
    "time": "2026-11-05T22:29:24Z",
@@ -2258,6 +2230,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-05T22:46:30Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "INVE Technologies, Inc.",
+   "cik": 1036044,
+   "ticker": "INVE",
+   "role": "Subject",
+   "accession": "0000921895-26-002942",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1036044/000092189526002942/0000921895-26-002942-index.htm"
+  },
+  {
    "time": "2026-11-05T22:00:28Z",
    "form": "SCHEDULE 13D/A",
    "company": "Wheels Up Experience Inc.",
@@ -2484,21 +2468,33 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1978867/000121390026115963/0001213900-26-115963-index.htm"
-  },
-  {
-   "time": "2026-11-04T21:15:17Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "KNOT Offshore Partners LP",
-   "cik": 1564180,
-   "ticker": "KNOP",
-   "role": "Subject",
-   "accession": "0001104659-26-122690",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1564180/000110465926122690/0001104659-26-122690-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-05T22:46:30Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Radoff Bradley Louis",
+   "cik": 1380585,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000921895-26-002942",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1380585/000092189526002942/0000921895-26-002942-index.htm"
+  },
+  {
+   "time": "2026-11-05T22:46:30Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "INVE Technologies, Inc.",
+   "cik": 1036044,
+   "ticker": "INVE",
+   "role": "Subject",
+   "accession": "0000921895-26-002942",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1036044/000092189526002942/0000921895-26-002942-index.htm"
+  },
   {
    "time": "2026-11-05T22:30:07Z",
    "form": "8-K",
@@ -16368,48 +16364,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/313143/000031314326000152/0000313143-26-000152-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:06:01Z",
-   "form": "8-K",
-   "company": "MidCap Financial Investment Corp",
-   "cik": 1278752,
-   "ticker": "MFIC",
-   "role": "Filer",
-   "accession": "0001193125-26-448373",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526448373/0001193125-26-448373-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:05:48Z",
-   "form": "8-K",
-   "company": "Primo Brands Corp",
-   "cik": 2042694,
-   "ticker": "PRMB",
-   "role": "Filer",
-   "accession": "0001279569-26-001044",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2042694/000127956926001044/0001279569-26-001044-index.htm"
   }
  ]
 }
