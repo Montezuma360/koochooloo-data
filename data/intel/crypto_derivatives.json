@@ -1,33 +1,33 @@
 {
- "updated": "2026-11-05T19:20:09Z",
+ "updated": "2026-11-05T20:10:10Z",
  "source": "Kraken Futures perpetual contracts",
  "note": "Positive funding = traders paying to stay long (crowded optimism); negative = crowded pessimism.",
  "perpetuals": {
   "BTC": {
-   "mark": 76166.65,
-   "open_interest": 3029.89,
-   "volume_24h": 8203.31,
-   "change_24h_pct": -5.02,
-   "funding_rate_hourly": 4.513e-05,
-   "funding_annualised_pct": 39.54,
-   "premium_to_index_pct": 0.036
+   "mark": 75990.24,
+   "open_interest": 3029.42,
+   "volume_24h": 8025.82,
+   "change_24h_pct": -5.16,
+   "funding_rate_hourly": 4.591e-05,
+   "funding_annualised_pct": 40.22,
+   "premium_to_index_pct": 0.034
   },
   "SOL": {
-   "mark": 89.61,
-   "open_interest": 197697.63,
-   "volume_24h": 802338.38,
-   "change_24h_pct": -5.92,
-   "funding_rate_hourly": 1.26e-05,
-   "funding_annualised_pct": 11.03,
-   "premium_to_index_pct": 0.004
+   "mark": 89.68,
+   "open_interest": 196171.96,
+   "volume_24h": 778509.84,
+   "change_24h_pct": -5.31,
+   "funding_rate_hourly": -3.48e-06,
+   "funding_annualised_pct": -3.05,
+   "premium_to_index_pct": -0.004
   },
   "ETH": {
-   "mark": 2255.35,
-   "open_interest": 33943.15,
-   "volume_24h": 115303.71,
-   "change_24h_pct": -6.86,
-   "funding_rate_hourly": 9.4e-06,
-   "funding_annualised_pct": 8.23,
+   "mark": 2245.38,
+   "open_interest": 33893.73,
+   "volume_24h": 113704.39,
+   "change_24h_pct": -6.85,
+   "funding_rate_hourly": 1.249e-05,
+   "funding_annualised_pct": 10.94,
    "premium_to_index_pct": 0.009
   }
  }
