@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T20:10:10Z",
+ "updated": "2026-11-05T20:13:35Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2600,6 +2600,39 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-05T20:12:59Z",
+   "form": "8-K",
+   "company": "KBS Real Estate Investment Trust III, Inc.",
+   "cik": 1482430,
+   "ticker": "KBSR",
+   "role": "Filer",
+   "accession": "0001482430-26-000044",
+   "items": [
+    {
+     "item": "1.01",
+     "meaning": "Major agreement signed"
+    },
+    {
+     "item": "2.03",
+     "meaning": "New debt"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1482430/000148243026000044/0001482430-26-000044-index.htm"
+  },
+  {
+   "time": "2026-11-05T20:11:30Z",
+   "form": "10-Q",
+   "company": "Liberty Capital Corp/NV",
+   "cik": 2057463,
+   "ticker": "GLIBA",
+   "role": "Filer",
+   "accession": "0001104659-26-123273",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2057463/000110465926123273/0001104659-26-123273-index.htm"
+  },
   {
    "time": "2026-11-05T20:07:13Z",
    "form": "10-Q",
@@ -16739,48 +16772,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1930679/000110465926122670/0001104659-26-122670-index.htm"
-  },
-  {
-   "time": "2026-11-04T21:08:38Z",
-   "form": "8-K",
-   "company": "Design Therapeutics, Inc.",
-   "cik": 1807120,
-   "ticker": "DSGN",
-   "role": "Filer",
-   "accession": "0001193125-26-447235",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1807120/000119312526447235/0001193125-26-447235-index.htm"
-  },
-  {
-   "time": "2026-11-04T21:08:36Z",
-   "form": "8-K",
-   "company": "Silvaco Group, Inc.",
-   "cik": 1943289,
-   "ticker": "SVCO",
-   "role": "Filer",
-   "accession": "0001628280-26-070138",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1943289/000162828026070138/0001628280-26-070138-index.htm"
   }
  ]
 }
