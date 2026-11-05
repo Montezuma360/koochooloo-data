@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T23:57:28Z",
+ "updated": "2026-11-05T01:30:31Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2335,6 +2335,54 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-05T00:45:37Z",
+   "form": "SCHEDULE 13D",
+   "company": "Peraso Inc.",
+   "cik": 890394,
+   "ticker": "PRSO",
+   "role": "Subject",
+   "accession": "0001193125-26-447929",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/890394/000119312526447929/0001193125-26-447929-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:34:08Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Grindr Inc.",
+   "cik": 1820144,
+   "ticker": "GRND",
+   "role": "Subject",
+   "accession": "0001140361-26-041991",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1820144/000114036126041991/0001140361-26-041991-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:16:08Z",
+   "form": "SCHEDULE 13D",
+   "company": "cbdMD, Inc.",
+   "cik": 1644903,
+   "ticker": "YCBD",
+   "role": "Subject",
+   "accession": "0001437749-26-035032",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1644903/000143774926035032/0001437749-26-035032-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:00:39Z",
+   "form": "SCHEDULE 13D",
+   "company": "BHAV Acquisition Corp II",
+   "cik": 2142627,
+   "ticker": "BHAI",
+   "role": "Subject",
+   "accession": "0001213900-26-116047",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2142627/000121390026116047/0001213900-26-116047-index.htm"
+  },
+  {
    "time": "2026-11-04T23:11:58Z",
    "form": "SCHEDULE 13D/A",
    "company": "Metalla Royalty & Streaming Ltd.",
@@ -2525,57 +2573,105 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1896329/000120189526000005/0001201895-26-000005-index.htm"
-  },
-  {
-   "time": "2026-11-03T23:58:11Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Priority Technology Holdings, Inc.",
-   "cik": 1653558,
-   "ticker": "PRTH",
-   "role": "Subject",
-   "accession": "0001213900-26-115672",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1653558/000121390026115672/0001213900-26-115672-index.htm"
-  },
-  {
-   "time": "2026-11-03T23:16:18Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Blackstone Long-Short Credit Income Fund",
-   "cik": 1504234,
-   "ticker": "BGX",
-   "role": "Subject",
-   "accession": "0001062993-26-005729",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1504234/000106299326005729/0001062993-26-005729-index.htm"
-  },
-  {
-   "time": "2026-11-03T23:10:48Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "CARVANA CO.",
-   "cik": 1690820,
-   "ticker": "CVNA",
-   "role": "Subject",
-   "accession": "0001193125-26-445725",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1690820/000119312526445725/0001193125-26-445725-index.htm"
-  },
-  {
-   "time": "2026-11-03T22:49:33Z",
-   "form": "SCHEDULE 13D",
-   "company": "ADM TRONICS UNLIMITED, INC.",
-   "cik": 849401,
-   "ticker": "ADMT",
-   "role": "Subject",
-   "accession": "0001140361-26-041845",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/849401/000114036126041845/0001140361-26-041845-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-05T00:45:37Z",
+   "form": "SCHEDULE 13D",
+   "company": "Nant Capital, LLC",
+   "cik": 1675758,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001193125-26-447929",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1675758/000119312526447929/0001193125-26-447929-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:45:37Z",
+   "form": "SCHEDULE 13D",
+   "company": "Peraso Inc.",
+   "cik": 890394,
+   "ticker": "PRSO",
+   "role": "Subject",
+   "accession": "0001193125-26-447929",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/890394/000119312526447929/0001193125-26-447929-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:34:08Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Zage George Raymond III",
+   "cik": 1833678,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001140361-26-041991",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1833678/000114036126041991/0001140361-26-041991-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:34:08Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Grindr Inc.",
+   "cik": 1820144,
+   "ticker": "GRND",
+   "role": "Subject",
+   "accession": "0001140361-26-041991",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1820144/000114036126041991/0001140361-26-041991-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:16:08Z",
+   "form": "SCHEDULE 13D",
+   "company": "Akretive Holdings LLC",
+   "cik": 1655238,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001437749-26-035032",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1655238/000143774926035032/0001437749-26-035032-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:16:08Z",
+   "form": "SCHEDULE 13D",
+   "company": "cbdMD, Inc.",
+   "cik": 1644903,
+   "ticker": "YCBD",
+   "role": "Subject",
+   "accession": "0001437749-26-035032",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1644903/000143774926035032/0001437749-26-035032-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:00:39Z",
+   "form": "SCHEDULE 13D",
+   "company": "BHAV Partners II LLC",
+   "cik": 2142629,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001213900-26-116047",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2142629/000121390026116047/0001213900-26-116047-index.htm"
+  },
+  {
+   "time": "2026-11-05T00:00:39Z",
+   "form": "SCHEDULE 13D",
+   "company": "BHAV Acquisition Corp II",
+   "cik": 2142627,
+   "ticker": "BHAI",
+   "role": "Subject",
+   "accession": "0001213900-26-116047",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2142627/000121390026116047/0001213900-26-116047-index.htm"
+  },
   {
    "time": "2026-11-04T23:11:58Z",
    "form": "SCHEDULE 13D/A",
@@ -17172,180 +17268,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1069878/000119312526446144/0001193125-26-446144-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:30:11Z",
-   "form": "8-K",
-   "company": "Bluejay Diagnostics, Inc.",
-   "cik": 1704287,
-   "ticker": "BJDX",
-   "role": "Filer",
-   "accession": "0001213900-26-115717",
-   "items": [
-    {
-     "item": "3.03",
-     "meaning": "Shareholder rights changed"
-    },
-    {
-     "item": "5.03",
-     "meaning": "Bylaws changed"
-    },
-    {
-     "item": "5.07",
-     "meaning": "Shareholder vote results"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1704287/000121390026115717/0001213900-26-115717-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:26:24Z",
-   "form": "8-K",
-   "company": "Circle Internet Group, Inc.",
-   "cik": 1876042,
-   "ticker": "CRCL",
-   "role": "Filer",
-   "accession": "0001876042-26-000309",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000309/0001876042-26-000309-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:23:33Z",
-   "form": "8-K",
-   "company": "ESTEE LAUDER COMPANIES INC",
-   "cik": 1001250,
-   "ticker": "EL",
-   "role": "Filer",
-   "accession": "0001001250-26-000066",
-   "items": [
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000066/0001001250-26-000066-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:15:32Z",
-   "form": "8-K",
-   "company": "National Energy Services Reunited Corp.",
-   "cik": 1698514,
-   "ticker": "NESR",
-   "role": "Filer",
-   "accession": "0001493152-26-049863",
-   "items": [
-    {
-     "item": "1.01",
-     "meaning": "Major agreement signed"
-    },
-    {
-     "item": "1.02",
-     "meaning": "Major agreement ended"
-    },
-    {
-     "item": "2.03",
-     "meaning": "New debt"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1698514/000149315226049863/0001493152-26-049863-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:15:18Z",
-   "form": "8-K",
-   "company": "Flowco Holdings Inc.",
-   "cik": 2035149,
-   "ticker": "FLOC",
-   "role": "Filer",
-   "accession": "0001193125-26-446133",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2035149/000119312526446133/0001193125-26-446133-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:10:21Z",
-   "form": "8-K",
-   "company": "ADDENTAX GROUP CORP.",
-   "cik": 1650101,
-   "ticker": "ATXG",
-   "role": "Filer",
-   "accession": "0001493152-26-049861",
-   "items": [
-    {
-     "item": "1.01",
-     "meaning": "Major agreement signed"
-    },
-    {
-     "item": "3.02",
-     "meaning": "Unregistered share sale"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1650101/000149315226049861/0001493152-26-049861-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:09:36Z",
-   "form": "10-Q",
-   "company": "Smurfit Westrock plc",
-   "cik": 2005951,
-   "ticker": "SW",
-   "role": "Filer",
-   "accession": "0001628280-26-069766",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2005951/000162828026069766/0001628280-26-069766-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:08:50Z",
-   "form": "10-Q",
-   "company": "Townsquare Media, Inc.",
-   "cik": 1499832,
-   "ticker": "TSQ",
-   "role": "Filer",
-   "accession": "0001628280-26-069765",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1499832/000162828026069765/0001628280-26-069765-index.htm"
   }
  ]
 }

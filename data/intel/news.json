@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T23:57:28Z",
+ "updated": "2026-11-05T01:30:31Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 19,
+  "Yahoo Finance": 16,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 36,
@@ -29,10 +29,6 @@
    12
   ],
   [
-   "TSLA",
-   12
-  ],
-  [
    "AAPL",
    11
   ],
@@ -42,23 +38,27 @@
   ],
   [
    "NVDA",
-   8
+   10
+  ],
+  [
+   "TSLA",
+   10
   ],
   [
    "AMD",
-   8
-  ],
-  [
-   "BTC",
-   7
+   9
   ],
   [
    "META",
+   7
+  ],
+  [
+   "BTC",
    6
   ],
   [
    "ORCL",
-   3
+   2
   ],
   [
    "PLTR",
@@ -75,13 +75,230 @@
   [
    "BRK.B",
    1
-  ],
-  [
-   "SOL",
-   1
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-05T01:28:05Z",
+   "source": "Yahoo Finance",
+   "title": "Dow Jones Futures Rise, But Techs Tumble; Apple, Microsoft, Amazon Flash Buy Signals In Postelection Rally",
+   "link": "https://finance.yahoo.com/m/a147bf9a-4218-3171-97a4-fb80fda211eb/dow-jones-futures-rise%2C-but.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL",
+    "AMZN",
+    "MSFT"
+   ]
+  },
+  {
+   "time": "2026-11-05T01:16:38Z",
+   "source": "Yahoo Finance",
+   "title": "Is the AI Bubble Popping?",
+   "link": "https://www.fool.com/investing/2026/11/04/is-the-ai-bubble-popping/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:14:04Z",
+   "source": "Investing.com",
+   "title": "Cathie Wood\u2019s ARK sells SpaceX stock, buys Nurix Therapeutics",
+   "link": "https://www.investing.com/news/company-news/cathie-woods-ark-sells-spacex-stock-buys-nurix-therapeutics-93CH-5001959",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:12:32Z",
+   "source": "Investing.com",
+   "title": "Disney\u2019s Pixar names Jonathan Garson president as Jim Morris steps back",
+   "link": "https://www.investing.com/news/stock-market-news/disneys-pixar-names-jonathan-garson-president-as-jim-morris-steps-back-5001943",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:12:23Z",
+   "source": "Investing.com",
+   "title": "Dollar edges lower as US election outcome cheers global markets",
+   "link": "https://www.investing.com/news/forex-news/dollar-edges-lower-as-us-election-outcome-cheers-global-markets-5001958",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:11:26Z",
+   "source": "CNBC",
+   "title": "White House panel delays hearing on Fed's Lisa Cook to Dec. 14",
+   "link": "https://www.cnbc.com/2026/11/04/trump-federal-reserve-lisa-cook-hearing.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:09:58Z",
+   "source": "Investing.com",
+   "title": "Australia trade surplus nearly triples forecasts as gold imports dive in September",
+   "link": "https://www.investing.com/news/economic-indicators/australia-trade-surplus-nearly-triples-forecasts-as-gold-imports-dive-in-september-5001957",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:06:18Z",
+   "source": "Investing.com",
+   "title": "US slaps sanctions on Indian, Turkish firms and people for aiding Iran",
+   "link": "https://www.investing.com/news/commodities-news/us-slaps-sanctions-on-indian-turkish-firms-and-people-for-aiding-iran-5000921",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:05:57Z",
+   "source": "Investing.com",
+   "title": "Robert Latta reports Farmers & Merchants Bancorp purchase",
+   "link": "https://www.investing.com/news/company-news/robert-latta-reports-farmers--merchants-bancorp-purchase-93CH-5001956",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:04:23Z",
+   "source": "Yahoo Finance",
+   "title": "Why Horace Mann Educators Stock Soared Today",
+   "link": "https://www.fool.com/investing/2026/11/04/why-horace-mann-educators-stock-soared-today/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:02:00Z",
+   "source": "Yahoo Finance",
+   "title": "Physical AI Empowers Smart Mobility: LUXEED Builds a New Full-Scenario Intelligent Ecosystem",
+   "link": "https://finance.yahoo.com/technology/ai/articles/physical-ai-empowers-smart-mobility-010200324.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:01:09Z",
+   "source": "Investing.com",
+   "title": "Tango Therapeutics president sells $112,107 in shares",
+   "link": "https://www.investing.com/news/insider-trading-news/tango-therapeutics-president-sells-112107-in-shares-93CH-5001947",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:01:02Z",
+   "source": "Investing.com",
+   "title": "Duolingo director William B. Gordon sells $1.36M in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/duolingo-director-william-b-gordon-sells-136m-in-stock-93CH-5001946",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T01:00:59Z",
+   "source": "Investing.com",
+   "title": "Tango Therapeutics principal accounting officer sells $157,660 in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/tango-therapeutics-principal-accounting-officer-sells-157660-in-stock-93CH-5001945",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T00:49:00Z",
+   "source": "Yahoo Finance",
+   "title": "Here's What $10,000 Invested in SpaceX and Nvidia Could Be Worth by 2030",
+   "link": "https://www.fool.com/investing/2026/11/04/heres-what-10000-invested-in-spacex-and-nvidia-cou/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-05T00:46:39Z",
+   "source": "Yahoo Finance",
+   "title": "Did IBM Just Tell the Truth About AI?",
+   "link": "https://www.fool.com/investing/2026/11/04/did-ibm-just-tell-the-truth-about-ai/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T00:45:05Z",
+   "source": "Yahoo Finance",
+   "title": "Arista Networks stock gets fresh backing from Jim Cramer and Wall Street",
+   "link": "https://www.thestreet.com/investing/stocks/arista-networks-stock-gets-fresh-backing-from-jim-cramer-and-wall-street-anet?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T00:42:58Z",
+   "source": "CNBC",
+   "title": "Thursday's big stock stories: What\u2019s likely to move the market in the next trading session",
+   "link": "https://www.cnbc.com/2026/11/04/thursdays-big-stock-stories-whats-likely-to-move-the-market.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T00:39:01Z",
+   "source": "Yahoo Finance",
+   "title": "What Is Going On With Zoom Stock?",
+   "link": "https://www.trefis.com/stock/zm/articles/622277/what-is-going-on-with-zoom-stock/2026-11-04?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T00:37:00Z",
+   "source": "Yahoo Finance",
+   "title": "5-star analyst resets Nvidia stock target after Intel crash",
+   "link": "https://www.thestreet.com/investing/stocks/melius-nvidia-target-cut-intel?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-05T00:20:00Z",
+   "source": "Yahoo Finance",
+   "title": "Prediction: This Is How Much IonQ Stock Will Be Worth by the End of 2027",
+   "link": "https://www.fool.com/investing/2026/11/04/prediction-this-is-how-much-ionq-stock-will-be-wor/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T00:14:01Z",
+   "source": "Yahoo Finance",
+   "title": "The Deal With Meta & OpenAI Just Cost AMD $1.1 Billion",
+   "link": "https://www.ibtimes.com/amd-1-1-billion-charge-openai-meta-deals-3809435?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMD",
+    "META"
+   ]
+  },
+  {
+   "time": "2026-11-05T00:13:01Z",
+   "source": "Yahoo Finance",
+   "title": "Why Alphabet Stock Popped on Wednesday",
+   "link": "https://www.fool.com/investing/2026/11/04/why-alphabet-stock-popped-on-wednesday/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "GOOGL"
+   ]
+  },
+  {
+   "time": "2026-11-05T00:09:14Z",
+   "source": "Yahoo Finance",
+   "title": "Steve Weiss Says the Midterms Just Put a Lid on AI Spending. Here\u2019s Who Could Get Hurt",
+   "link": "https://247wallst.com/investing/2026/11/04/steve-weiss-says-the-midterms-just-put-a-lid-on-ai-spending-heres-who-could-get-hurt/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T00:04:36Z",
+   "source": "CNBC",
+   "title": "Inside India newsletter: India weighs a tax cut to win over foreign investors. Will it work?",
+   "link": "https://www.cnbc.com/2026/11/05/india-tax-foreign-investors-nifty.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T23:50:00Z",
+   "source": "Yahoo Finance",
+   "title": "If You'd Invested $5,000 in VOO 15 Years Ago, Here's What You'd Have Today",
+   "link": "https://www.fool.com/investing/2026/11/04/if-youd-invested-5000-in-voo-15-years-ago-heres-wh/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
   {
    "time": "2026-11-04T23:49:37Z",
    "source": "Investing.com",
@@ -165,6 +382,14 @@
    ]
   },
   {
+   "time": "2026-11-04T23:39:00Z",
+   "source": "Yahoo Finance",
+   "title": "Q3 Earnings Scorecard: Solid Beats, Upward Revisions, and AI Drivers",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/q3-earnings-scorecard-solid-beats-233900397.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-04T23:32:33Z",
    "source": "Yahoo Finance",
    "title": "S&P 500, Nasdaq Surge Ahead After Democratic Sweep, Dow Jumps To One-Year High On Lower Oil \u2014 AAPL, SNAP, INTC, CRWV, QCOM In Focus",
@@ -235,6 +460,14 @@
    "source": "Yahoo Finance",
    "title": "A Major Neocloud Stock Rally May Be Coming. These 3 Stocks Could Be the Biggest Winners.",
    "link": "https://www.fool.com/investing/2026/11/04/a-major-neocloud-stock-rally-may-be-coming-these-3/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-04T23:18:56Z",
+   "source": "CNBC",
+   "title": "Jim Cramer warns investors may be reading too much into Wall Street's post-election rally",
+   "link": "https://www.cnbc.com/2026/11/04/cramer-midterms-ai-stocks.html",
    "kind": "markets",
    "tags": []
   },
@@ -3215,248 +3448,6 @@
    "link": "https://www.investing.com/news/company-news/pacs-group-inc-stock-hits-alltime-high-of-5041-usd-93CH-5000577",
    "kind": "markets",
    "tags": []
-  },
-  {
-   "time": "2026-11-04T16:35:50Z",
-   "source": "Investing.com",
-   "title": "Stella-Jones Q3 2026 slides target margin rebound after earnings miss",
-   "link": "https://www.investing.com/news/company-news/stellajones-q3-2026-slides-target-margin-rebound-after-earnings-miss-93CH-5000576",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:35:43Z",
-   "source": "Investing.com",
-   "title": "Lumen Technologies earnings loom as AI pivot meets revenue decline",
-   "link": "https://www.investing.com/news/earnings/lumen-technologies-earnings-loom-as-ai-pivot-meets-revenue-decline-93CH-5000575",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:35:03Z",
-   "source": "Investing.com",
-   "title": "Poland stocks higher at close of trade; WIG30 up 1.47%",
-   "link": "https://www.investing.com/news/stock-market-news/poland-stocks-higher-at-close-of-trade-wig30-up-147-5000574",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:35:00Z",
-   "source": "Yahoo Finance",
-   "title": "Nike vs. Lululemon: Which Stock Is a Better Buy for the Last 2 Months of 2026?",
-   "link": "https://www.fool.com/investing/2026/11/04/nike-vs-lululemon-which-stock-is-a-better-buy-for/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:34:55Z",
-   "source": "Investing.com",
-   "title": "Earnings call transcript: Omega Healthcare Investors tops revenue in Q3 2026",
-   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-omega-healthcare-investors-tops-revenue-in-q3-2026-93CH-5000573",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:34:49Z",
-   "source": "Investing.com",
-   "title": "Acm Research earnings on deck amid advanced packaging push",
-   "link": "https://www.investing.com/news/earnings/acm-research-earnings-on-deck-amid-advanced-packaging-push-93CH-5000572",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:33:41Z",
-   "source": "Yahoo Finance",
-   "title": "Musk\u2019s Election Bet Backfires on Tesla, and Your Index Fund Owns a Piece of It",
-   "link": "https://247wallst.com/investing/etf/2026/11/04/musks-election-bet-backfires-on-tesla-and-your-index-fund-owns-a-piece-of-it/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-04T16:33:28Z",
-   "source": "Yahoo Finance",
-   "title": "Intel Just Delivered Its Strongest Data Center Growth in 15 Years. Its Comeback Is Gaining Momentum",
-   "link": "https://247wallst.com/investing/2026/11/04/intel-just-delivered-its-strongest-data-center-growth-in-15-years-its-comeback-is-gaining-momentum/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:33:12Z",
-   "source": "Yahoo Finance",
-   "title": "Has Box Stock Really Become Cheaper?",
-   "link": "https://www.trefis.com/stock/box/articles/622639/has-box-stock-really-become-cheaper/2026-11-04?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:30:19Z",
-   "source": "Yahoo Finance",
-   "title": "Google's Latest AI Model Nearly Matches Anthropic at One-Third the Cost: Report",
-   "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62873862/google-ai-cost?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "GOOGL"
-   ]
-  },
-  {
-   "time": "2026-11-04T16:29:36Z",
-   "source": "Decrypt",
-   "title": "Wall Street\u2019s Plumbing Goes Onchain as Morgan Stanley Tokenizes Securities",
-   "link": "https://decrypt.co/382513/wall-streets-plumbing-onchain-morgan-stanley-tokenizes-securities",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:28:00Z",
-   "source": "SEC",
-   "title": "SEC Adopts Amendments to Update Definitions of Small Entity for Investment Companies and Investment Advisers",
-   "link": "https://www.sec.gov/newsroom/press-releases/2026-112-sec-adopts-amendments-update-definitions-small-entity-investment-companies-investment-advisers",
-   "kind": "official",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:27:49Z",
-   "source": "The Block",
-   "title": "Schroders launches tokenized emerging markets debt fund on Solana with Centrifuge",
-   "link": "https://www.theblock.co/news/business/2026-11-04-schroders-centrifuge-tokenized-emerging-markets-debt-fund-solana-432878",
-   "kind": "crypto",
-   "tags": [
-    "SOL"
-   ]
-  },
-  {
-   "time": "2026-11-04T16:24:47Z",
-   "source": "Yahoo Finance",
-   "title": "Silicon Valley investor shuts London office as US dominates AI",
-   "link": "https://uk.finance.yahoo.com/news/silicon-valley-investor-shuts-london-162447849.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:23:07Z",
-   "source": "Yahoo Finance",
-   "title": "Charlie Munger called $100K the hard part of getting rich. With inflation back at 3.7%, your magic number is over $200K",
-   "link": "https://finance.yahoo.com/markets/articles/charlie-munger-called-100k-hard-162307671.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:20:00Z",
-   "source": "Yahoo Finance",
-   "title": "Ford's Next Growth Engine Could Already Be in Your Driveway",
-   "link": "https://www.fool.com/investing/2026/11/04/fords-next-growth-engine-could-already-be-in-your/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:19:56Z",
-   "source": "Yahoo Finance",
-   "title": "Novo\u2019s Comeback Gets a Pill-Shaped Boost as Wegovy Starts to Bite Back",
-   "link": "https://app.moby.co/home/news/news-novos-comeback-gets-a-pill-shaped-boost-as-wegovy-starts-to-bite-back?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:19:43Z",
-   "source": "Yahoo Finance",
-   "title": "Microsoft Stocks Jump 3.5% as $25 Billion Debt Sale Is Due to Close",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stocks-jump-3-5-161943824.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "MSFT"
-   ]
-  },
-  {
-   "time": "2026-11-04T16:18:23Z",
-   "source": "Yahoo Finance",
-   "title": "Amazon Stocks Jump 4.5% While AWS Growth Faces a $220 Billion Spending Test",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-stocks-jump-4-5-161823131.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMZN"
-   ]
-  },
-  {
-   "time": "2026-11-04T16:15:00Z",
-   "source": "Yahoo Finance",
-   "title": "Got $5,000? Buy These 2 Growth Stocks Powering the AI Memory Boom (Hint: Micron Isn't One of Them)",
-   "link": "https://www.fool.com/investing/2026/11/04/got-5000-2-growth-stocks-powering-the-ai-memory-bo/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:12:48Z",
-   "source": "Yahoo Finance",
-   "title": "Tesla, SpaceX Take a Hit as Dems' Sweep Midterms; McDonald's Moves on Revenue | Stock Movers",
-   "link": "https://finance.yahoo.com/video/tesla-spacex-hit-dems-sweep-161248486.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-04T16:12:01Z",
-   "source": "Yahoo Finance",
-   "title": "AI Regulation Was on the Ballot In These States. Here Are The Elon Musk Stocks That Could Be Impacted.",
-   "link": "https://www.fool.com/investing/2026/11/04/ai-regulation-was-on-the-ballot-in-these-states-here-are-the-elon-musk-stocks-that-could-be-impacted/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:11:29Z",
-   "source": "CoinDesk",
-   "title": "U.S. Democratic sweep could be the final nail in the \u2018Clarity Act\u2019s coffin\u2019",
-   "link": "https://www.coindesk.com/policy/2026/11/04/u-s-democratic-sweep-could-be-the-final-nail-in-the-clarity-act-s-coffin",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:11:23Z",
-   "source": "Yahoo Finance",
-   "title": "Why Is Oracle (ORCL) Reworking Its AI Plans After A $7 Billion Deal Ended?",
-   "link": "https://finance.yahoo.com/technology/ai/articles/why-oracle-orcl-reworking-ai-161123177.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "ORCL"
-   ]
-  },
-  {
-   "time": "2026-11-04T16:11:18Z",
-   "source": "Yahoo Finance",
-   "title": "Why Lockheed Martin Stock Dropped Today",
-   "link": "https://www.fool.com/investing/2026/11/04/why-lockheed-martin-stock-dropped-today/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:11:00Z",
-   "source": "Yahoo Finance",
-   "title": "ELEKTROS Advances Review of Potential U.S. Lithium Opportunity as Critical Minerals Gain Strategic Momentum",
-   "link": "https://finance.yahoo.com/energy/articles/elektros-advances-review-potential-u-161100770.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-04T16:08:14Z",
-   "source": "CoinDesk",
-   "title": "Wall Street cuts Bitcoin miner price targets as newly blue Texas threatens data center boom",
-   "link": "https://www.coindesk.com/markets/2026/11/04/wall-street-cuts-bitcoin-miner-price-targets-after-democrats-texas-win-threatens-ai-data-center-boom",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-04T16:07:00Z",
-   "source": "Yahoo Finance",
-   "title": "Apple's AI problem could reach your next iPhone",
-   "link": "https://www.thestreet.com/investing/apples-ai-problem-could-reach-your-next-iphone?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AAPL"
-   ]
   }
  ]
 }
