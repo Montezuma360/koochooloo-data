@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T23:03:12Z",
+ "updated": "2026-11-05T23:58:01Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [],
  "results_announced_3d": [
@@ -2230,6 +2230,42 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-05T23:36:44Z",
+   "form": "SCHEDULE 13D",
+   "company": "Third Point Private Capital Income Fund",
+   "cik": 2122354,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0000899140-26-001217",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2122354/000089914026001217/0000899140-26-001217-index.htm"
+  },
+  {
+   "time": "2026-11-05T23:28:55Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Horizon Quantum Holdings Ltd.",
+   "cik": 2088256,
+   "ticker": "HQ",
+   "role": "Subject",
+   "accession": "0001213900-26-116500",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2088256/000121390026116500/0001213900-26-116500-index.htm"
+  },
+  {
+   "time": "2026-11-05T23:21:59Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Third Point Private Capital Partners",
+   "cik": 2025369,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0000899140-26-001213",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2025369/000089914026001213/0000899140-26-001213-index.htm"
+  },
+  {
    "time": "2026-11-05T22:46:30Z",
    "form": "SCHEDULE 13D/A",
    "company": "INVE Technologies, Inc.",
@@ -2432,45 +2468,81 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1535778/000139644026000153/0001396440-26-000153-index.htm"
-  },
-  {
-   "time": "2026-11-04T21:38:46Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Tevogen Inc.",
-   "cik": 1860871,
-   "ticker": "TVGN",
-   "role": "Subject",
-   "accession": "0001493152-26-049973",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1860871/000149315226049973/0001493152-26-049973-index.htm"
-  },
-  {
-   "time": "2026-11-04T21:35:05Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Cipher Digital Inc.",
-   "cik": 1819989,
-   "ticker": "CIFR",
-   "role": "Subject",
-   "accession": "0001123292-26-001459",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1819989/000112329226001459/0001123292-26-001459-index.htm"
-  },
-  {
-   "time": "2026-11-04T21:30:01Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Cadeler A/S",
-   "cik": 1978867,
-   "ticker": "CDLR",
-   "role": "Subject",
-   "accession": "0001213900-26-115963",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1978867/000121390026115963/0001213900-26-115963-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-05T23:36:44Z",
+   "form": "SCHEDULE 13D",
+   "company": "Third Point Private Capital Income Fund",
+   "cik": 2122354,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0000899140-26-001217",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2122354/000089914026001217/0000899140-26-001217-index.htm"
+  },
+  {
+   "time": "2026-11-05T23:36:44Z",
+   "form": "SCHEDULE 13D",
+   "company": "Third Point LLC",
+   "cik": 1040273,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000899140-26-001217",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1040273/000089914026001217/0000899140-26-001217-index.htm"
+  },
+  {
+   "time": "2026-11-05T23:28:55Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Horizon Quantum Holdings Ltd.",
+   "cik": 2088256,
+   "ticker": "HQ",
+   "role": "Subject",
+   "accession": "0001213900-26-116500",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2088256/000121390026116500/0001213900-26-116500-index.htm"
+  },
+  {
+   "time": "2026-11-05T23:28:55Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "You Harry L.",
+   "cik": 1432602,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001213900-26-116500",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1432602/000121390026116500/0001213900-26-116500-index.htm"
+  },
+  {
+   "time": "2026-11-05T23:21:59Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Third Point Private Capital Partners",
+   "cik": 2025369,
+   "ticker": null,
+   "role": "Subject",
+   "accession": "0000899140-26-001213",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2025369/000089914026001213/0000899140-26-001213-index.htm"
+  },
+  {
+   "time": "2026-11-05T23:21:59Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Third Point LLC",
+   "cik": 1040273,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000899140-26-001213",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1040273/000089914026001213/0000899140-26-001213-index.htm"
+  },
   {
    "time": "2026-11-05T22:46:30Z",
    "form": "SCHEDULE 13D/A",
@@ -16270,100 +16342,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1295947/000129594726000057/0001295947-26-000057-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:09:15Z",
-   "form": "8-K",
-   "company": "Oscar Health, Inc.",
-   "cik": 1568651,
-   "ticker": "OSCR",
-   "role": "Filer",
-   "accession": "0001568651-26-000082",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1568651/000156865126000082/0001568651-26-000082-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:08:40Z",
-   "form": "10-Q",
-   "company": "BeOne Medicines Ltd.",
-   "cik": 1651308,
-   "ticker": "ONC",
-   "role": "Filer",
-   "accession": "0001628280-26-070477",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1651308/000162828026070477/0001628280-26-070477-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:08:16Z",
-   "form": "8-K",
-   "company": "DataMeds AI, Inc.",
-   "cik": 2030763,
-   "ticker": "MEDS",
-   "role": "Filer",
-   "accession": "0001493152-26-050033",
-   "items": [
-    {
-     "item": "1.02",
-     "meaning": "Major agreement ended"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2030763/000149315226050033/0001493152-26-050033-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:07:25Z",
-   "form": "10-Q",
-   "company": "GigaCloud Technology Inc",
-   "cik": 1857816,
-   "ticker": "GCT",
-   "role": "Filer",
-   "accession": "0001628280-26-070475",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1857816/000162828026070475/0001628280-26-070475-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:07:19Z",
-   "form": "10-Q",
-   "company": "Arhaus, Inc.",
-   "cik": 1875444,
-   "ticker": "ARHS",
-   "role": "Filer",
-   "accession": "0001875444-26-000038",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1875444/000187544426000038/0001875444-26-000038-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:06:53Z",
-   "form": "10-Q",
-   "company": "HAEMONETICS CORP",
-   "cik": 313143,
-   "ticker": "HAE",
-   "role": "Filer",
-   "accession": "0000313143-26-000152",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/313143/000031314326000152/0000313143-26-000152-index.htm"
   }
  ]
 }
