@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T01:30:31Z",
+ "updated": "2026-11-05T03:10:33Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2335,6 +2335,30 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-05T02:38:44Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Churchill Capital Corp XI",
+   "cik": 2074973,
+   "ticker": "CCXI",
+   "role": "Subject",
+   "accession": "0001213900-26-116089",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026116089/0001213900-26-116089-index.htm"
+  },
+  {
+   "time": "2026-11-05T01:44:59Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Southern Cross Acquisition II Corp.",
+   "cik": 2133239,
+   "ticker": "SCAT",
+   "role": "Subject",
+   "accession": "0001929980-26-000576",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2133239/000192998026000576/0001929980-26-000576-index.htm"
+  },
+  {
    "time": "2026-11-05T00:45:37Z",
    "form": "SCHEDULE 13D",
    "company": "Peraso Inc.",
@@ -2549,33 +2573,57 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1376139/000119312526445965/0001193125-26-445965-index.htm"
-  },
-  {
-   "time": "2026-11-04T01:20:54Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Pelthos Therapeutics Inc.",
-   "cik": 1919246,
-   "ticker": "PTHS",
-   "role": "Subject",
-   "accession": "0001193125-26-445875",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1919246/000119312526445875/0001193125-26-445875-index.htm"
-  },
-  {
-   "time": "2026-11-04T00:16:27Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "PIMCO Flexible Real Estate Income Fund",
-   "cik": 1896329,
-   "ticker": null,
-   "role": "Subject",
-   "accession": "0001201895-26-000005",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1896329/000120189526000005/0001201895-26-000005-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-05T02:38:44Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "CHURCHILL SPONSOR XI LLC",
+   "cik": 2078043,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001213900-26-116089",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2078043/000121390026116089/0001213900-26-116089-index.htm"
+  },
+  {
+   "time": "2026-11-05T02:38:44Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Churchill Capital Corp XI",
+   "cik": 2074973,
+   "ticker": "CCXI",
+   "role": "Subject",
+   "accession": "0001213900-26-116089",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026116089/0001213900-26-116089-index.htm"
+  },
+  {
+   "time": "2026-11-05T01:44:59Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Southern Cross Acquisition II Sponsor Corp.",
+   "cik": 2149344,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001929980-26-000576",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2149344/000192998026000576/0001929980-26-000576-index.htm"
+  },
+  {
+   "time": "2026-11-05T01:44:59Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Southern Cross Acquisition II Corp.",
+   "cik": 2133239,
+   "ticker": "SCAT",
+   "role": "Subject",
+   "accession": "0001929980-26-000576",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2133239/000192998026000576/0001929980-26-000576-index.htm"
+  },
   {
    "time": "2026-11-05T00:45:37Z",
    "form": "SCHEDULE 13D",
@@ -17176,98 +17224,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1082554/000108255426000035/0001082554-26-000035-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:30:35Z",
-   "form": "8-K",
-   "company": "TPG Mortgage Investment Trust, Inc.",
-   "cik": 1514281,
-   "ticker": "MITT",
-   "role": "Filer",
-   "accession": "0001628280-26-069770",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1514281/000162828026069770/0001628280-26-069770-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:30:24Z",
-   "form": "8-K",
-   "company": "Ridgepost Capital, Inc.",
-   "cik": 1841968,
-   "ticker": "RPC",
-   "role": "Filer",
-   "accession": "0001193125-26-446147",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1841968/000119312526446147/0001193125-26-446147-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:30:18Z",
-   "form": "8-K",
-   "company": "ZIMMER BIOMET HOLDINGS, INC.",
-   "cik": 1136869,
-   "ticker": "ZBH",
-   "role": "Filer",
-   "accession": "0001193125-26-446145",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1136869/000119312526446145/0001193125-26-446145-index.htm"
-  },
-  {
-   "time": "2026-11-04T11:30:15Z",
-   "form": "8-K",
-   "company": "TREX CO INC",
-   "cik": 1069878,
-   "ticker": "TREX",
-   "role": "Filer",
-   "accession": "0001193125-26-446144",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1069878/000119312526446144/0001193125-26-446144-index.htm"
   }
  ]
 }
