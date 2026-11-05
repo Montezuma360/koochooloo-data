@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T16:26:19Z",
+ "updated": "2026-11-05T16:32:00Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -10,7 +10,7 @@
   "Yahoo Finance": 20,
   "CoinDesk": 25,
   "Cointelegraph": 30,
-  "Decrypt": 36,
+  "Decrypt": 37,
   "The Block": 20,
   "Federal Reserve": 20,
   "SEC": 25,
@@ -30,7 +30,7 @@
   ],
   [
    "BTC",
-   11
+   12
   ],
   [
    "GOOGL",
@@ -41,8 +41,12 @@
    10
   ],
   [
+   "META",
+   10
+  ],
+  [
    "NVDA",
-   8
+   7
   ],
   [
    "AAPL",
@@ -99,6 +103,24 @@
  ],
  "items": [
   {
+   "time": "2026-11-05T16:29:11Z",
+   "source": "Decrypt",
+   "title": "Bitcoin Erases Election Rally as AI Stocks Plunge, $428 Million in Crypto Longs Get Wiped Out",
+   "link": "https://decrypt.co/382612/bitcoin-erases-election-rally-ai-stocks-plunge-428-million-crypto-longs",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-05T16:27:10Z",
+   "source": "CNBC",
+   "title": "Marc Lore's Wonder confidentially files for IPO",
+   "link": "https://www.cnbc.com/2026/11/05/wonder-confidential-ipo-filing.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-05T16:23:48Z",
    "source": "CNBC",
    "title": "Trump's energy deals are about to face a wave of investigations by Democrats",
@@ -111,6 +133,14 @@
    "source": "MarketWatch",
    "title": "The year\u2019s most successful stock-market trades are unraveling \u2014 perhaps for good",
    "link": "https://www.marketwatch.com/story/the-years-most-successful-stock-market-trades-are-unraveling-perhaps-for-good-45f7a0dd?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T16:22:26Z",
+   "source": "CNBC",
+   "title": "We're booking big profits in 2 outperformers in Thursday's terrible market",
+   "link": "https://www.cnbc.com/investingclub/2026/11/05/were-booking-big-profits-in-2-outperformers-in-thursdays-terrible-market.html",
    "kind": "markets",
    "tags": []
   },
@@ -396,14 +426,6 @@
    "source": "Yahoo Finance",
    "title": "Are Big Tech stock buybacks officially dead?",
    "link": "https://finance.yahoo.com/video/are-big-tech-stock-buybacks-officially-dead-155848546.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:57:32Z",
-   "source": "CNBC",
-   "title": "Marc Lore's Wonder confidentially files for IPO",
-   "link": "https://www.cnbc.com/2026/11/05/wonder-confidential-ipo-filing.html",
    "kind": "markets",
    "tags": []
   },
@@ -3489,24 +3511,6 @@
    "link": "https://www.investing.com/news/insider-trading-news/duolingo-director-william-b-gordon-sells-136m-in-stock-93CH-5001946",
    "kind": "markets",
    "tags": []
-  },
-  {
-   "time": "2026-11-05T01:00:59Z",
-   "source": "Investing.com",
-   "title": "Tango Therapeutics principal accounting officer sells $157,660 in stock",
-   "link": "https://www.investing.com/news/insider-trading-news/tango-therapeutics-principal-accounting-officer-sells-157660-in-stock-93CH-5001945",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T00:49:00Z",
-   "source": "Yahoo Finance",
-   "title": "Here's What $10,000 Invested in SpaceX and Nvidia Could Be Worth by 2030",
-   "link": "https://www.fool.com/investing/2026/11/04/heres-what-10000-invested-in-spacex-and-nvidia-cou/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T16:26:19Z",
+ "updated": "2026-11-05T16:32:00Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2608,6 +2608,18 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-05T16:27:48Z",
+   "form": "10-Q",
+   "company": "SB FINANCIAL GROUP, INC.",
+   "cik": 767405,
+   "ticker": "SBFG",
+   "role": "Filer",
+   "accession": "0001213900-26-116212",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/767405/000121390026116212/0001213900-26-116212-index.htm"
+  },
   {
    "time": "2026-11-05T16:25:57Z",
    "form": "8-K",
@@ -17211,31 +17223,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026115928/0001213900-26-115928-index.htm"
-  },
-  {
-   "time": "2026-11-04T21:05:07Z",
-   "form": "8-K",
-   "company": "COHERENT CORP.",
-   "cik": 820318,
-   "ticker": "COHR",
-   "role": "Filer",
-   "accession": "0001193125-26-447200",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/0001193125-26-447200-index.htm"
   }
  ]
 }
