@@ -1,33 +1,33 @@
 {
- "updated": "2026-11-05T20:13:35Z",
+ "updated": "2026-11-05T21:06:19Z",
  "market_open": true,
  "failed": {},
  "sources": {
   "crypto": {
-   "last_try": "2026-11-05T20:13:35Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "100 coins, 15 trending, 3 exchanges",
-   "last_ok": "2026-11-05T20:13:35Z",
-   "seconds": 1.5,
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 1.6,
    "every_minutes": 1
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-05T20:13:35Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-05T20:13:35Z",
-   "seconds": 0.3,
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 0.4,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
-   "last_try": "2026-11-05T19:17:37Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "50 (Neutral)",
-   "last_ok": "2026-11-05T19:17:37Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 0.5,
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-05T20:13:35Z",
-   "result": "block 974702, 4 sat/vB",
-   "last_ok": "2026-11-05T20:13:35Z",
+   "last_try": "2026-11-05T21:06:19Z",
+   "result": "block 974709, 3 sat/vB",
+   "last_ok": "2026-11-05T21:06:19Z",
    "seconds": 1.3,
    "every_minutes": 2
   },
@@ -39,86 +39,86 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-05T20:13:35Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-05T20:13:35Z",
-   "seconds": 1.8,
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 2.0,
    "every_minutes": 1
   },
   "ecb_fx": {
-   "last_try": "2026-11-05T19:17:37Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "2026-11-05, 30 currencies",
-   "last_ok": "2026-11-05T19:17:37Z",
-   "seconds": 0.5,
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 0.8,
    "every_minutes": 60
   },
   "macro_global": {
-   "last_try": "2026-11-05T20:10:10Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "11 series",
-   "last_ok": "2026-11-05T20:10:10Z",
-   "seconds": 3.7,
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 3.8,
    "every_minutes": 30
   },
   "calendar": {
-   "last_try": "2026-11-05T20:10:10Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "115 events, 7 high-impact still to come",
-   "last_ok": "2026-11-05T20:10:10Z",
+   "last_ok": "2026-11-05T21:06:19Z",
    "seconds": 0.1,
    "every_minutes": 15
   },
   "news": {
-   "last_try": "2026-11-05T20:13:35Z",
-   "result": "1 new headlines from 15 feeds",
-   "last_ok": "2026-11-05T20:13:35Z",
-   "seconds": 7.4,
+   "last_try": "2026-11-05T21:06:19Z",
+   "result": "31 new headlines from 15 feeds",
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 3.4,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-05T20:13:35Z",
-   "result": "18 new filings (0 with a red flag)",
-   "last_ok": "2026-11-05T20:13:35Z",
-   "seconds": 29.8,
+   "last_try": "2026-11-05T21:06:19Z",
+   "result": "119 new filings (0 with a red flag)",
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 3.1,
    "every_minutes": 1
   },
   "options": {
-   "last_try": "2026-11-05T20:10:10Z",
-   "result": "12 chains, put/call 1.178, 470 unusual",
-   "last_ok": "2026-11-05T20:10:10Z",
-   "seconds": 3.3,
+   "last_try": "2026-11-05T21:06:19Z",
+   "result": "12 chains, put/call 1.194, 544 unusual",
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 4.3,
    "every_minutes": 5
   },
   "fear_greed": {
-   "last_try": "2026-11-05T20:10:10Z",
-   "result": "10.9 (Extreme fear), 6 parts",
-   "last_ok": "2026-11-05T20:10:10Z",
-   "seconds": 0.7,
+   "last_try": "2026-11-05T21:06:19Z",
+   "result": "10.3 (Extreme fear), 6 parts",
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 0.9,
    "every_minutes": 5
   },
   "stocktwits": {
-   "last_try": "2026-11-05T20:10:10Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "30 trending",
-   "last_ok": "2026-11-05T20:10:10Z",
-   "seconds": 0.3,
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 0.2,
    "every_minutes": 5
   },
   "reddit_forums": {
-   "last_try": "2026-11-05T20:10:10Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "5 forums",
-   "last_ok": "2026-11-05T20:10:10Z",
-   "seconds": 2.0,
+   "last_ok": "2026-11-05T21:06:19Z",
+   "seconds": 2.1,
    "every_minutes": 15
   },
   "finnhub": {
-   "last_try": "2026-11-05T19:17:37Z",
+   "last_try": "2026-11-05T21:06:19Z",
    "result": "skipped: add FINNHUB_KEY secret to switch on",
-   "last_ok": "2026-11-05T19:17:37Z",
+   "last_ok": "2026-11-05T21:06:19Z",
    "seconds": 0.0,
    "every_minutes": 60
   },
   "crypto_sectors": {
-   "last_try": "2026-11-05T20:10:10Z",
-   "result": "382 sectors; best Tokenized Private Credit +2.1%, worst bStocks Ecosystem -14.0%",
-   "last_ok": "2026-11-05T20:10:10Z",
+   "last_try": "2026-11-05T21:06:19Z",
+   "result": "382 sectors; best Tokenized Private Credit +2.0%, worst bStocks Ecosystem -15.7%",
+   "last_ok": "2026-11-05T21:06:19Z",
    "seconds": 0.2,
    "every_minutes": 10
   }
