@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 13,
+ "runs": 14,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -279,7 +279,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -0.47,
+   "drawdown_pct": -0.48,
    "paused": false
   },
   "insider_big_250k": {
@@ -612,6 +612,12 @@
      "signal": "2026-11-06",
      "event": "2026-11-04",
      "note": "Fairbanks Jonathan B. (Director) bought $292,924"
+    },
+    {
+     "sym": "MDGL",
+     "signal": "2026-11-06",
+     "event": "2026-11-06",
+     "note": "BAKER BROS. ADVISORS LP (Director) bought $793,220"
     }
    ],
    "closed": [],
@@ -728,7 +734,8 @@
     "KYN": "2026-11-06",
     "ANVS": "2026-11-06",
     "CVS": "2026-11-06",
-    "FLOC": "2026-11-06"
+    "FLOC": "2026-11-06",
+    "MDGL": "2026-11-06"
    },
    "events": [
     {
@@ -894,7 +901,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -1.12,
+   "drawdown_pct": -1.29,
    "paused": false
   },
   "congress_cluster3": {
@@ -1802,6 +1809,12 @@
      "signal": "2026-11-06",
      "event": "2026-11-06",
      "note": "score 8: 2 insiders bought $382,623 in 30 days (last 2026-11-05); President Baker James C bought $331,085 on 2026-11-05"
+    },
+    {
+     "sym": "MDGL",
+     "signal": "2026-11-06",
+     "event": "2026-11-06",
+     "note": "score 10: Director BAKER BROS. ADVISORS LP bought $793,220 on 2026-11-06; Director BAKER BROS. ADVISORS LP bought $5,335,105 on 2026-11-06"
     }
    ],
    "closed": [],
@@ -1874,7 +1887,8 @@
     "BXMT": "2026-11-05",
     "MTDR": "2026-11-06",
     "KOD": "2026-11-06",
-    "KYN": "2026-11-06"
+    "KYN": "2026-11-06",
+    "MDGL": "2026-11-06"
    },
    "events": [
     {
@@ -2230,7 +2244,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -3.33,
+   "drawdown_pct": -3.39,
    "paused": false
   },
   "spy_benchmark": {
@@ -2695,7 +2709,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-06T22:21:09+00:00",
+ "updated": "2026-11-06T23:45:45+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -3068,6 +3082,10 @@
   "KOD": {
    "sic": "28",
    "name": "Biological Products, (No Diagnostic Substances)"
+  },
+  "MDGL": {
+   "sic": "28",
+   "name": "Pharmaceutical Preparations"
   }
  }
 }

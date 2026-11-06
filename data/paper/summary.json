@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T22:21:09+00:00",
+ "updated": "2026-11-06T23:45:45+00:00",
  "priced_to": "2026-11-06",
  "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\n- Two strategies were added on 4 Nov 2026 and follow every rule above: \"research_setup\" (smaller company, 2+ insiders at $25k+, cash flow above\n  profit) and \"research_setup_trend\" (the same, but no new entries while the S&P 500 is below its 200-day average). The older strategies are unchanged.\n- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies\n  are ranked by their margin over the S&P 500; summary.json \"goal\" shows what GBP 100 has become in each and how long\n  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
  "market_stress": false,
@@ -11,7 +11,7 @@
    "started": "2026-11-01",
    "value": 99563.7,
    "paused": false,
-   "drawdown_pct": -0.47,
+   "drawdown_pct": -0.48,
    "max_drawdown_pct": -0.48,
    "stops_hit": 0,
    "return_pct": -0.44,
@@ -207,7 +207,7 @@
    "started": "2026-11-01",
    "value": 99488.87,
    "paused": false,
-   "drawdown_pct": -1.12,
+   "drawdown_pct": -1.29,
    "max_drawdown_pct": -1.29,
    "stops_hit": 0,
    "return_pct": -0.51,
@@ -429,7 +429,8 @@
     "KYN",
     "ANVS",
     "CVS",
-    "FLOC"
+    "FLOC",
+    "MDGL"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -670,7 +671,7 @@
    "started": "2026-11-01",
    "value": 97786.86,
    "paused": false,
-   "drawdown_pct": -3.33,
+   "drawdown_pct": -3.39,
    "max_drawdown_pct": -3.64,
    "stops_hit": 0,
    "return_pct": -2.21,
@@ -1121,7 +1122,8 @@
     "LBTY",
     "MTDR",
     "KOD",
-    "KYN"
+    "KYN",
+    "MDGL"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -1665,182 +1667,5 @@
   },
   "note": "Virtual money only. Rankings mean little before 90 days of live trading. Not financial advice."
  },
- "latest_decisions": [
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_cluster3",
-   "symbol": "AN",
-   "decision": "TRADE",
-   "rsi": 65.3,
-   "reason": "3 insiders bought within 30 days. Bought $1,991 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 183.99; RSI 65 is neutral"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_cluster3",
-   "symbol": "LBRT",
-   "decision": "TRADE",
-   "rsi": 23.1,
-   "reason": "3 insiders bought within 30 days. Bought $1,991 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 11.97; RSI 23 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "SPXC",
-   "decision": "TRADE",
-   "rsi": 23.8,
-   "reason": "Deck Brian A (Director) bought $493,020. Bought $1,993 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 145.84; RSI 24 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "GLXY",
-   "decision": "TRADE",
-   "rsi": 35.2,
-   "reason": "Novogratz Michael (Chief Executive Officer) bought $3,152,305. Bought $1,992 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 14.32; RSI 35 is neutral"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "BKR",
-   "decision": "TRADE",
-   "rsi": 27.2,
-   "reason": "RICE JOHN G (Director) bought $531,000. Bought $1,990 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 46.48; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "CLX",
-   "decision": "NO_TRADE",
-   "rsi": 75.4,
-   "reason": "RSI 75 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "FBRT",
-   "decision": "TRADE",
-   "rsi": 47.1,
-   "reason": "Byrne Richard J (Chairman and CEO) bought $998,364. Bought $1,991 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 6.40; RSI 47 is neutral"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "AN",
-   "decision": "TRADE",
-   "rsi": 65.3,
-   "reason": "Manley Michael Mark (CEO and Director) bought $349,350. Bought $1,990 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 183.99; RSI 65 is neutral"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "ASPE",
-   "decision": "NO_TRADE",
-   "rsi": "",
-   "reason": "not enough price history to judge momentum, so the default is no trade"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "CACC",
-   "decision": "TRADE",
-   "rsi": 47.7,
-   "reason": "TRYFOROS THOMAS N (Director) bought $1,455,600. Bought $1,990 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 515.00; RSI 48 is neutral"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "LBRT",
-   "decision": "TRADE",
-   "rsi": 23.1,
-   "reason": "Gusek Ron (CEO and President) bought $377,335. Bought $1,991 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 11.97; RSI 23 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_big_250k",
-   "symbol": "BXMT",
-   "decision": "TRADE",
-   "rsi": 55.1,
-   "reason": "Johnson Timothy Steven (Chief Executive Officer) bought $1,035,351. Bought $1,990 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 11.49; RSI 55 is neutral"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "terminal_top_signals",
-   "symbol": "AN",
-   "decision": "TRADE",
-   "rsi": 65.3,
-   "reason": "score 17: 3 insiders bought $1,431,864 in 30 days (last 2026-11-03); CEO and Director Manley Michael Mark bought $349,350 on 2026-11-02. Bought $1,956 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 183.99; RSI 65 is neutral"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "terminal_top_signals",
-   "symbol": "FBRT",
-   "decision": "TRADE",
-   "rsi": 47.1,
-   "reason": "score 8: 2 insiders bought $1,024,108 in 30 days (last 2026-11-03); Chairman and CEO Byrne Richard J bought $998,364 on 2026-11-03. Bought $1,956 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 6.40; RSI 47 is neutral"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "terminal_top_signals",
-   "symbol": "ETRA",
-   "decision": "TRADE",
-   "rsi": 40.1,
-   "reason": "score 38: 2 insiders bought $7,210,232 in 30 days (last 2026-11-05); Director GORDON CARL L bought $915,212 on 2026-11-05. Bought $1,955 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 7.72; RSI 40 is neutral"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "terminal_top_signals",
-   "symbol": "LBRT",
-   "decision": "NO_TRADE",
-   "rsi": 23.1,
-   "reason": "RSI 23 is below 30: oversold with no strong contrarian reason"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "terminal_top_signals",
-   "symbol": "LYEL",
-   "decision": "NO_TRADE",
-   "rsi": 75.8,
-   "reason": "RSI 76 is above 70: overbought, buying now risks chasing a spike"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "terminal_top_signals",
-   "symbol": "BXMT",
-   "decision": "NO_TRADE",
-   "rsi": 55.1,
-   "reason": "already 4 positions in the same industry (Real Estate Investment Trusts)"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "AN",
-   "decision": "NO_TRADE",
-   "rsi": 65.3,
-   "reason": "not a smaller company (trades $103M a day)"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "ASPE",
-   "decision": "NO_TRADE",
-   "rsi": "",
-   "reason": "not enough price history to judge momentum, so the default is no trade"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "LBRT",
-   "decision": "NO_TRADE",
-   "rsi": 23.1,
-   "reason": "not a smaller company (trades $79M a day)"
-  },
-  {
-   "date": "2026-11-06",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "BXMT",
-   "decision": "NO_TRADE",
-   "rsi": 55.1,
-   "reason": "not a smaller company (trades $41M a day)"
-  }
- ]
+ "latest_decisions": []
 }
