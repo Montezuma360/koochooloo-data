@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T13:29:10Z",
+ "updated": "2026-11-06T14:05:53Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,10 +7,10 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 18,
+  "Yahoo Finance": 19,
   "CoinDesk": 25,
   "Cointelegraph": 30,
-  "Decrypt": 37,
+  "Decrypt": 38,
   "The Block": 20,
   "Federal Reserve": 20,
   "SEC": 25,
@@ -21,27 +21,31 @@
  "feeds_failed": {},
  "most_mentioned_24h": [
   [
+   "TSLA",
+   21
+  ],
+  [
    "NVDA",
    19
   ],
   [
-   "TSLA",
-   15
-  ],
-  [
    "BTC",
-   9
+   10
   ],
   [
    "GOOGL",
-   7
+   8
   ],
   [
    "AVGO",
-   5
+   6
   ],
   [
    "AAPL",
+   5
+  ],
+  [
+   "AMD",
    4
   ],
   [
@@ -61,10 +65,6 @@
    3
   ],
   [
-   "AMD",
-   3
-  ],
-  [
    "ETH",
    2
   ],
@@ -74,10 +74,6 @@
   ],
   [
    "ORCL",
-   2
-  ],
-  [
-   "BRK.B",
    2
   ],
   [
@@ -99,9 +95,338 @@
   [
    "COST",
    1
+  ],
+  [
+   "BRK.B",
+   1
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-06T14:04:18Z",
+   "source": "Decrypt",
+   "title": "$3.1B in Stolen Binance Crypto Has Yet to Be Laundered: Elliptic",
+   "link": "https://decrypt.co/382711/3-1b-in-stolen-binance-crypto-has-yet-to-be-laundered-elliptic",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T14:02:11Z",
+   "source": "CNBC",
+   "title": "Wall Street's fear gauge may be flashing a buy sign",
+   "link": "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:58:40Z",
+   "source": "CNBC",
+   "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+   "link": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:56:39Z",
+   "source": "CNBC",
+   "title": "Market sell-off hits hard: Advisors say 'stay the course with an eye on buying'",
+   "link": "https://www.cnbc.com/2026/11/06/market-sell-off-hits-hard-advisors-say-stay-the-course-with-an-eye-on-buying-.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:55:49Z",
+   "source": "Investing.com",
+   "title": "U.S. chip stocks recover sharply after Thursday\u2019s brutal selloff",
+   "link": "https://www.investing.com/news/stock-market-news/us-chip-stocks-rebound-sharply-after-thursdays-brutal-selloff-5007137",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:55:20Z",
+   "source": "Investing.com",
+   "title": "Strong October jobs report sends yields higher",
+   "link": "https://www.investing.com/news/economic-indicators/strong-october-jobs-report-sends-yields-higher-5008272",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:55:03Z",
+   "source": "Investing.com",
+   "title": "Paraguay\u2019s Senate resumes President Pe\u00f1a impeachment proceedings",
+   "link": "https://www.investing.com/news/economy-news/paraguays-senate-resumes-president-pena-impeachment-proceedings-5008271",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:53:35Z",
+   "source": "Yahoo Finance",
+   "title": "Apple Is Borrowing $7.5 Billion, Its First Bond Sale Since 2025",
+   "link": "https://247wallst.com/investing/2026/11/06/apple-is-borrowing-7-5-billion-its-first-bond-sale-since-2025/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:53:04Z",
+   "source": "Yahoo Finance",
+   "title": "Tesla to Wind Down Cybertruck Production as Elon Musk Pivots to Robotaxis and AI",
+   "link": "https://decrypt.co/382703/tesla-to-wind-down-cybertruck-production-as-elon-musk-pivots-to-robotaxis-and-ai?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:52:43Z",
+   "source": "Investing.com",
+   "title": "Why is AST SpaceMobile stock climbing today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-ast-spacemobile-stock-climbing-today-93CH-5008244",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:52:32Z",
+   "source": "Investing.com",
+   "title": "Green Rain explores solar solutions for California farms",
+   "link": "https://www.investing.com/news/company-news/green-rain-explores-solar-solutions-for-california-farms-93CH-5008243",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:51:32Z",
+   "source": "CNBC",
+   "title": "A long-term Elon Musk backer is cashing out of Tesla \u2014 and cutting its SpaceX exposure",
+   "link": "https://www.cnbc.com/2026/11/06/scottish-mortgage-tesla-spacex.html",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:51:28Z",
+   "source": "Yahoo Finance",
+   "title": "OpenAI Says It Will Pay for Its Data Centers\u2019 Power After the Election Backlash",
+   "link": "https://247wallst.com/investing/2026/11/06/openai-says-it-will-pay-for-its-data-centers-power-after-the-election-backlash/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:50:55Z",
+   "source": "Investing.com",
+   "title": "Truist Securities reiterates Hold on Advance Auto Parts stock",
+   "link": "https://www.investing.com/news/analyst-ratings/truist-securities-reiterates-hold-on-advance-auto-parts-stock-93CH-5008242",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:50:50Z",
+   "source": "Investing.com",
+   "title": "Truist raises JFrog stock price target on cloud growth to $120",
+   "link": "https://www.investing.com/news/analyst-ratings/truist-raises-jfrog-stock-price-target-on-cloud-growth-to-120-93CH-5008239",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:50:48Z",
+   "source": "Investing.com",
+   "title": "Truist cuts Atlassian stock price target on cloud growth concerns",
+   "link": "https://www.investing.com/news/analyst-ratings/truist-cuts-atlassian-stock-price-target-on-cloud-growth-concerns-93CH-5008238",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:50:46Z",
+   "source": "Investing.com",
+   "title": "Truist cuts James Hardie stock price target on homebuilding outlook",
+   "link": "https://www.investing.com/news/analyst-ratings/truist-cuts-james-hardie-stock-price-target-on-homebuilding-outlook-93CH-5008237",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:50:41Z",
+   "source": "Investing.com",
+   "title": "Truist cuts Construction Partners stock price target on diesel costs",
+   "link": "https://www.investing.com/news/analyst-ratings/truist-cuts-construction-partners-stock-price-target-on-diesel-costs-93CH-5008236",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:50:00Z",
+   "source": "Yahoo Finance",
+   "title": "Here's How Many Shares of This Unstoppable Dividend Stock You'd Need for $10,000 in Yearly Passive Income",
+   "link": "https://www.fool.com/investing/2026/11/06/shares-dividend-stock-10k-passive-income/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:49:40Z",
+   "source": "Yahoo Finance",
+   "title": "Tesla winds down Cybertruck production as Musk shifts focus to robotaxis",
+   "link": "https://finance.yahoo.com/technology/articles/tesla-winds-down-cybertruck-production-134940487.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:46:09Z",
+   "source": "CNBC",
+   "title": "Dan Ives says tech rout is 'golden buying opportunity' just like during Covid, tariff sell-off",
+   "link": "https://www.cnbc.com/2026/11/06/dan-ives-says-tech-rout-is-golden-buying-opportunity-.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:45:34Z",
+   "source": "Yahoo Finance",
+   "title": "Marvell Drops 50% in One Month: This Analyst Stands Pat on 195% Gains Prediction",
+   "link": "https://247wallst.com/investing/2026/11/06/marvell-drops-50-in-one-month-this-analyst-stands-pat-on-195-gains-prediction/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:45:13Z",
+   "source": "Yahoo Finance",
+   "title": "Tesla\u2019s Primary Growth Drivers Just Got Choked Out",
+   "link": "https://247wallst.com/investing/2026/11/06/teslas-primary-growth-drivers-just-got-choked-out/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:45:11Z",
+   "source": "Yahoo Finance",
+   "title": "AMD Vs. Nvidia: The Balance of Power Shifts To AMD Now",
+   "link": "https://247wallst.com/investing/2026/11/06/amd-vs-nvidia-the-balance-of-power-shifts-to-amd-now/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMD",
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:43:39Z",
+   "source": "Yahoo Finance",
+   "title": "Cathie Wood Is Buying The Dip In Nvidia As She Adds $45.9 Million Of NVDA And Sells $119.7 Million Of Broadcom",
+   "link": "https://247wallst.com/investing/2026/11/06/cathie-wood-is-buying-the-dip-in-nvidia-as-she-adds-45-9-million-of-nvda-and-sells-119-7-million-of-broadcom/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AVGO",
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:43:36Z",
+   "source": "Yahoo Finance",
+   "title": "Nvidia, AMD, and Micron stocks lead chip sector higher following worst sell-off since 2020",
+   "link": "https://finance.yahoo.com/markets/article/nvidia-amd-micron-sandsik-lead-chip-sector-higher-134336542.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMD",
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:40:22Z",
+   "source": "The Block",
+   "title": "TeraWulf\u2019s bitcoin mining revenue falls 69% as HPC leasing surges amid Anthropic buildout",
+   "link": "https://www.theblock.co/news/business/2026-11-06-terawulfs-bitcoin-mining-revenue-falls-69-as-hpc-leasing-surges-amid-anthropic-buildout-435885",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:38:31Z",
+   "source": "Yahoo Finance",
+   "title": "Nvidia makes major chip policy change as China scrutiny grows",
+   "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-makes-major-chip-policy-133831132.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:36:11Z",
+   "source": "Yahoo Finance",
+   "title": "Google parent reveals $548 million bet on beaten-down chip stock",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/google-parent-reveals-548-million-133611955.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "GOOGL"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:35:05Z",
+   "source": "Yahoo Finance",
+   "title": "Big Investors Now Doubt Anthropic Can IPO at $1.5 Trillion After the AI Crash",
+   "link": "https://247wallst.com/investing/2026/11/06/big-investors-now-doubt-anthropic-can-ipo-at-1-5-trillion-after-the-ai-crash/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:35:00Z",
+   "source": "Yahoo Finance",
+   "title": "These 6 Utility Stocks Offer Income and a Link to Power Demand",
+   "link": "https://www.fool.com/investing/2026/11/06/these-6-utility-stocks-offer-income-and-a-link-to/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:31:54Z",
+   "source": "CoinDesk",
+   "title": "U.S. added 165,000 jobs in October, blowing past 65,000 estimate",
+   "link": "https://www.coindesk.com/markets/2026/11/06/u-s-added-165-000-jobs-in-october-blowing-past-65-000-estimate",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:30:00Z",
+   "source": "MarketWatch",
+   "title": "Why Democrats should use their new power to embrace Trump\u2019s tariffs",
+   "link": "https://www.marketwatch.com/story/why-democrats-should-use-their-new-power-to-embrace-trumps-tariffs-7c467541?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:29:20Z",
+   "source": "Decrypt",
+   "title": "Morning Minute: Bitcoin Erases Election Rally as AI Stocks Crater",
+   "link": "https://decrypt.co/382700/morning-minute-bitcoin-erases-election-rally-as-ai-stocks-crater",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:29:06Z",
+   "source": "Yahoo Finance",
+   "title": "Hannover Re, Munich Re fall 4% as J.P. Morgan sees weaker reinsurance pricing",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/hannover-munich-fall-4-j-132906305.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T13:29:02Z",
+   "source": "Yahoo Finance",
+   "title": "Tesla To End Cybertruck Production; Shares Inch Up After Election Rout",
+   "link": "https://finance.yahoo.com/m/074f46fb-f6e9-3694-96c6-f50bda3b76ea/tesla-to-end-cybertruck.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:29:00Z",
+   "source": "Yahoo Finance",
+   "title": "Musk says Tesla will end Cybertruck production next year",
+   "link": "https://www.cbsnews.com/news/tesla-ending-cybertruck-production-next-year/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
   {
    "time": "2026-11-06T13:23:08Z",
    "source": "Cointelegraph",
@@ -110,6 +435,16 @@
    "kind": "crypto",
    "tags": [
     "ETH"
+   ]
+  },
+  {
+   "time": "2026-11-06T13:22:37Z",
+   "source": "Yahoo Finance",
+   "title": "Cathie Wood sells $120 million in AI stock, buys Nvidia",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-sells-120-million-132237793.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
    ]
   },
   {
@@ -3147,324 +3482,6 @@
    "link": "https://www.investing.com/news/sec-filings/spruce-power-holding-announces-amendments-to-debt-agreements-and-refinancing-plans-93CH-5005781",
    "kind": "markets",
    "tags": []
-  },
-  {
-   "time": "2026-11-05T21:42:37Z",
-   "source": "Investing.com",
-   "title": "Saul Centers earnings beat by $0.57, revenue fell short of estimates",
-   "link": "https://www.investing.com/news/earnings/saul-centers-earnings-beat-by-057-revenue-fell-short-of-estimates-5005780",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:42:35Z",
-   "source": "Investing.com",
-   "title": "Democratic senator demands tech firms, FCC chair turn over documents",
-   "link": "https://www.investing.com/news/stock-market-news/democratic-senator-demands-tech-firms-fcc-chair-turn-over-documents-5005779",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:42:24Z",
-   "source": "Investing.com",
-   "title": "EOG Resources earnings beat by $0.46, revenue topped estimates",
-   "link": "https://www.investing.com/news/earnings/eog-resources-earnings-beat-by-046-revenue-topped-estimates-5005777",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:42:24Z",
-   "source": "Investing.com",
-   "title": "KLX Energy earnings missed by $0.32, revenue topped estimates",
-   "link": "https://www.investing.com/news/earnings/klx-energy-earnings-missed-by-032-revenue-topped-estimates-5005778",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:42:23Z",
-   "source": "Investing.com",
-   "title": "Devon Energy earnings missed by $0.39, revenue topped estimates",
-   "link": "https://www.investing.com/news/earnings/devon-energy-earnings-missed-by-039-revenue-topped-estimates-5005776",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:39:19Z",
-   "source": "Cointelegraph",
-   "title": "Crypto ally French Hill wins reelection but set to lose House chair",
-   "link": "https://cointelegraph.com/news/crypto-ally-french-hill-wins-reelection-arkansas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:38:11Z",
-   "source": "Yahoo Finance",
-   "title": "Update: Nasdaq Enters Correction Territory Amid Data Center Anxiety; Nvidia Tumbles Over 9%",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-enters-correction-territory-amid-213811085.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-05T21:38:01Z",
-   "source": "Yahoo Finance",
-   "title": "USA TODAY: The Newspaper That Sued the Toll Collector",
-   "link": "https://www.fool.com/earnings/takeaways/2026/11/05/usa-today-3-key-takeaways-for-long-term-investors/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:36:03Z",
-   "source": "Decrypt",
-   "title": "OpenAI Promises to Foot AI\u2019s Power Bill After Voter Revolt. Who Enforces It?",
-   "link": "https://decrypt.co/382674/openai-promises-foot-ai-power-bill-after-voter-revolt",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:35:00Z",
-   "source": "Yahoo Finance",
-   "title": "Prediction: Buying Archer Aviation Today Could Set You Up for Life",
-   "link": "https://www.fool.com/investing/2026/11/05/prediction-buying-archer-today-could-set-you/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:34:45Z",
-   "source": "Yahoo Finance",
-   "title": "Stock Market Today: Nasdaq Slammed By Big Tech Sell Off; Nvidia Hits Bear Territory (Live Coverage)",
-   "link": "https://finance.yahoo.com/m/38cb0654-6e49-3715-b4e4-f2f830876d7a/stock-market-today%3A-nasdaq.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-05T21:32:52Z",
-   "source": "CNBC",
-   "title": "The October jobs report is out Friday. Here's everything to expect",
-   "link": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:32:40Z",
-   "source": "Yahoo Finance",
-   "title": "US stocks nosedive as Democrat victory sparks investor panic",
-   "link": "https://uk.finance.yahoo.com/news/us-stocks-nosedive-democrat-victory-213240012.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:31:27Z",
-   "source": "Yahoo Finance",
-   "title": "Nvidia Eyes Apollo\u2019s Struggling Telecom Sites To Sidestep Data Center Moratoriums: Report",
-   "link": "https://stocktwits.com/news-articles/markets/equity/nvidia-eyes-apollo-s-struggling-telecom-sites-to-sidestep-data-center-moratoriums-report/cNG1vn9R94o?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-05T21:30:00Z",
-   "source": "Yahoo Finance",
-   "title": "X-energy, Fluor Corporation Advance Nuclear Engineering and Design for Second Xe-100 Project",
-   "link": "https://finance.yahoo.com/energy/articles/x-energy-fluor-corporation-advance-213000913.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:29:00Z",
-   "source": "MarketWatch",
-   "title": "5 of this year\u2019s biggest stock losers that are good bets in 2027",
-   "link": "https://www.marketwatch.com/story/5-of-this-years-biggest-stock-losers-that-are-good-bets-in-2027-bb861d4c?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:28:50Z",
-   "source": "Yahoo Finance",
-   "title": "Oil's Sudden Price Drop Surprises Citi's Chronert",
-   "link": "https://finance.yahoo.com/video/oils-sudden-price-drop-surprises-212850303.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:27:00Z",
-   "source": "Yahoo Finance",
-   "title": "Should You Buy Sandisk Before Its 8-for-1 Stock Split on Nov. 19?",
-   "link": "https://www.fool.com/investing/2026/11/05/should-you-buy-sandisk-before-its-8-for-1-stock-sp/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:26:00Z",
-   "source": "Yahoo Finance",
-   "title": "Nvidia Stock Is Below $200. What History Suggests Is the Floor.",
-   "link": "https://finance.yahoo.com/m/c9f327b9-16c5-3a50-a74d-937a12644740/nvidia-stock-is-below-%24200..html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-05T21:25:56Z",
-   "source": "Yahoo Finance",
-   "title": "dYdX Team\u2019s Arcus Opens Stock-Token Collateral to All Perps Traders, With a $20,000 Cap",
-   "link": "https://unchainedcrypto.com/dydx-teams-arcus-opens-stock-token-collateral-to-all-perps-traders-with-a-20000-cap/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:25:00Z",
-   "source": "Yahoo Finance",
-   "title": "Surveil Recognized as a Pioneer in the October 2026 Gartner(R) Emerging Market Quadrant for AI FinOps Tools - Startup Vendors",
-   "link": "https://finance.yahoo.com/technology/ai/articles/surveil-recognized-pioneer-october-2026-212500980.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:21:39Z",
-   "source": "Yahoo Finance",
-   "title": "Why SK Hynix Plunged Today",
-   "link": "https://www.fool.com/investing/2026/11/05/why-sk-hynix-plunged-today/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:21:11Z",
-   "source": "Yahoo Finance",
-   "title": "The AI Trade Just Had Its Worst Day Since The Pandemic",
-   "link": "https://app.moby.co/home/news/news-the-ai-trade-just-had-its-worst-day-since-the-pandemic?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:19:00Z",
-   "source": "MarketWatch",
-   "title": "Traders flock to Treasury market for safety as tech-led stock selloff deepens",
-   "link": "https://www.marketwatch.com/story/traders-flock-to-treasury-market-for-safety-as-tech-led-stock-selloff-deepens-cf548c8b?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:09:56Z",
-   "source": "CNBC",
-   "title": "Nvidia's Huang is asked to brief Congress on reported Chinese spy relationship",
-   "link": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-05T21:04:48Z",
-   "source": "Investing.com",
-   "title": "Stifel cuts Six Flags stock price target on leverage concerns",
-   "link": "https://www.investing.com/news/analyst-ratings/stifel-cuts-six-flags-stock-price-target-on-leverage-concerns-93CH-5005556",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:04:32Z",
-   "source": "Investing.com",
-   "title": "Inogen names Andy Reding as CEO, replacing Kevin Smith",
-   "link": "https://www.investing.com/news/company-news/inogen-names-andy-reding-as-ceo-replacing-kevin-smith-93CH-5005555",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:04:29Z",
-   "source": "Investing.com",
-   "title": "Marriott declares quarterly dividend of 73 cents per share",
-   "link": "https://www.investing.com/news/company-news/marriott-declares-quarterly-dividend-of-73-cents-per-share-93CH-5005554",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T21:01:07Z",
-   "source": "Investing.com",
-   "title": "Trump ally Dhillon, who remade DOJ civil rights unit, resigns",
-   "link": "https://www.investing.com/news/stock-market-news/trump-ally-leading-justice-department-civil-rights-unit-to-resign-sources-say-5005250",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T20:59:32Z",
-   "source": "Investing.com",
-   "title": "Centuri Holdings stock hits 52-week low at 18.57 USD",
-   "link": "https://www.investing.com/news/company-news/centuri-holdings-stock-hits-52week-low-at-1857-usd-93CH-5005539",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T20:54:15Z",
-   "source": "Yahoo Finance",
-   "title": "Sector Update: Tech Stocks Tumble Late Afternoon",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-tumble-afternoon-205415545.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T20:52:21Z",
-   "source": "Yahoo Finance",
-   "title": "Why Lumen Technologies Sank Today",
-   "link": "https://www.fool.com/investing/2026/11/05/why-lumen-technologies-sank-today/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T20:50:00Z",
-   "source": "Yahoo Finance",
-   "title": "Waiting for a Stock Market Crash Before You Invest? Here's What the Data Says It Can Cost You.",
-   "link": "https://www.fool.com/investing/2026/11/05/waiting-for-a-stock-market-crash-before-you-invest/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T20:46:02Z",
-   "source": "Decrypt",
-   "title": "DOJ Creates 'Super Intelligence' Task Force to Guard Against AI Abuse",
-   "link": "https://decrypt.co/382672/doj-creates-super-intelligence-task-force-to-guard-against-ai-abuse",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T20:44:10Z",
-   "source": "CNBC",
-   "title": "Here's where we stand on Kimberly-Clark shares after a better-than-feared quarter",
-   "link": "https://www.cnbc.com/investingclub/2026/11/05/heres-where-we-stand-on-kimberly-clark-shares-after-a-better-than-feared-quarter.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T20:42:59Z",
-   "source": "Investing.com",
-   "title": "From cosmetics to drugs to PCs, Walmsley faces fresh outsider test at HP",
-   "link": "https://www.investing.com/news/stock-market-news/from-cosmetics-to-drugs-to-pcs-walmsley-faces-fresh-outsider-test-at-hp-5005525",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T20:39:00Z",
-   "source": "Yahoo Finance",
-   "title": "Is AMD Stock a Buy as AI Revenue Soars?",
-   "link": "https://www.fool.com/investing/2026/11/05/is-amd-stock-a-buy-as-ai-revenue-soars/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-05T20:37:02Z",
-   "source": "Yahoo Finance",
-   "title": "Berkshire Hathaway Reports Nov. 7 With Its Stock at a Record. Its Cash Pile Is the Number to Watch.",
-   "link": "https://www.fool.com/investing/2026/11/05/berkshire-hathaway-reports-nov-7-with-its-stock-at-a-record-its-cash-pile-is-the-number-to-watch/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "BRK.B"
-   ]
   }
  ]
 }
