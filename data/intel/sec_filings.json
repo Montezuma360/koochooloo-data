@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T23:58:01Z",
+ "updated": "2026-11-06T03:09:28Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [],
  "results_announced_3d": [
@@ -2230,6 +2230,42 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-06T02:41:52Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "NovaBridge Biosciences",
+   "cik": 1778016,
+   "ticker": "NBP",
+   "role": "Subject",
+   "accession": "0000919574-26-007454",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1778016/000091957426007454/0000919574-26-007454-index.htm"
+  },
+  {
+   "time": "2026-11-06T02:37:59Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "METLIFE INC",
+   "cik": 1099219,
+   "ticker": "MET",
+   "role": "Subject",
+   "accession": "0001193125-26-450474",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1099219/000119312526450474/0001193125-26-450474-index.htm"
+  },
+  {
+   "time": "2026-11-06T02:09:18Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "MediaAlpha, Inc.",
+   "cik": 1818383,
+   "ticker": "MAX",
+   "role": "Subject",
+   "accession": "0000950157-26-001220",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1818383/000095015726001220/0000950157-26-001220-index.htm"
+  },
+  {
    "time": "2026-11-05T23:36:44Z",
    "form": "SCHEDULE 13D",
    "company": "Third Point Private Capital Income Fund",
@@ -2432,45 +2468,81 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1644903/000143774926035032/0001437749-26-035032-index.htm"
-  },
-  {
-   "time": "2026-11-05T00:00:39Z",
-   "form": "SCHEDULE 13D",
-   "company": "BHAV Acquisition Corp II",
-   "cik": 2142627,
-   "ticker": "BHAI",
-   "role": "Subject",
-   "accession": "0001213900-26-116047",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2142627/000121390026116047/0001213900-26-116047-index.htm"
-  },
-  {
-   "time": "2026-11-04T23:11:58Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "Metalla Royalty & Streaming Ltd.",
-   "cik": 1722606,
-   "ticker": "MTA",
-   "role": "Subject",
-   "accession": "0001104659-26-122850",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1722606/000110465926122850/0001104659-26-122850-index.htm"
-  },
-  {
-   "time": "2026-11-04T22:15:23Z",
-   "form": "SCHEDULE 13D",
-   "company": "MSC INCOME FUND, INC.",
-   "cik": 1535778,
-   "ticker": "MSIF",
-   "role": "Subject",
-   "accession": "0001396440-26-000153",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1535778/000139644026000153/0001396440-26-000153-index.htm"
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-06T02:41:52Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "NovaBridge Biosciences",
+   "cik": 1778016,
+   "ticker": "NBP",
+   "role": "Subject",
+   "accession": "0000919574-26-007454",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1778016/000091957426007454/0000919574-26-007454-index.htm"
+  },
+  {
+   "time": "2026-11-06T02:41:52Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "HHLR ADVISORS, LTD.",
+   "cik": 1762304,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000919574-26-007454",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1762304/000091957426007454/0000919574-26-007454-index.htm"
+  },
+  {
+   "time": "2026-11-06T02:37:59Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "BOARD OF DIRECTORS OF METLIFE INC",
+   "cik": 1111726,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001193125-26-450474",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1111726/000119312526450474/0001193125-26-450474-index.htm"
+  },
+  {
+   "time": "2026-11-06T02:37:59Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "METLIFE INC",
+   "cik": 1099219,
+   "ticker": "MET",
+   "role": "Subject",
+   "accession": "0001193125-26-450474",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1099219/000119312526450474/0001193125-26-450474-index.htm"
+  },
+  {
+   "time": "2026-11-06T02:09:18Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "MediaAlpha, Inc.",
+   "cik": 1818383,
+   "ticker": "MAX",
+   "role": "Subject",
+   "accession": "0000950157-26-001220",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1818383/000095015726001220/0000950157-26-001220-index.htm"
+  },
+  {
+   "time": "2026-11-06T02:09:18Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "WHITE MOUNTAINS INSURANCE GROUP LTD",
+   "cik": 776867,
+   "ticker": "WTM",
+   "role": "Filed by",
+   "accession": "0000950157-26-001220",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/776867/000095015726001220/0000950157-26-001220-index.htm"
+  },
   {
    "time": "2026-11-05T23:36:44Z",
    "form": "SCHEDULE 13D",
@@ -16234,114 +16306,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1334933/000143774926035062/0001437749-26-035062-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:13:38Z",
-   "form": "10-Q",
-   "company": "DUCOMMUN INC /DE/",
-   "cik": 30305,
-   "ticker": "DCO",
-   "role": "Filer",
-   "accession": "0001628280-26-070487",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/30305/000162828026070487/0001628280-26-070487-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:12:36Z",
-   "form": "8-K",
-   "company": "Ingredion Inc",
-   "cik": 1046257,
-   "ticker": "INGR",
-   "role": "Filer",
-   "accession": "0001628280-26-070486",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1046257/000162828026070486/0001628280-26-070486-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:11:08Z",
-   "form": "8-K",
-   "company": "DUCOMMUN INC /DE/",
-   "cik": 30305,
-   "ticker": "DCO",
-   "role": "Filer",
-   "accession": "0001628280-26-070480",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/30305/000162828026070480/0001628280-26-070480-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:10:54Z",
-   "form": "8-K",
-   "company": "Enovis CORP",
-   "cik": 1420800,
-   "ticker": "ENOV",
-   "role": "Filer",
-   "accession": "0001420800-26-000052",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1420800/000142080026000052/0001420800-26-000052-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:10:30Z",
-   "form": "8-K",
-   "company": "Privia Health Group, Inc.",
-   "cik": 1759655,
-   "ticker": "PRVA",
-   "role": "Filer",
-   "accession": "0001759655-26-000083",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1759655/000175965526000083/0001759655-26-000083-index.htm"
-  },
-  {
-   "time": "2026-11-05T11:09:59Z",
-   "form": "10-Q",
-   "company": "Prestige Consumer Healthcare Inc.",
-   "cik": 1295947,
-   "ticker": "PBH",
-   "role": "Filer",
-   "accession": "0001295947-26-000057",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1295947/000129594726000057/0001295947-26-000057-index.htm"
   }
  ]
 }
