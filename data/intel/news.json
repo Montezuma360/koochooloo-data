@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T15:05:55Z",
+ "updated": "2026-11-06T15:44:29Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 19,
+  "Yahoo Finance": 20,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 38,
@@ -22,11 +22,11 @@
  "most_mentioned_24h": [
   [
    "TSLA",
-   26
+   30
   ],
   [
    "NVDA",
-   19
+   21
   ],
   [
    "BTC",
@@ -34,7 +34,7 @@
   ],
   [
    "GOOGL",
-   9
+   8
   ],
   [
    "AMD",
@@ -45,15 +45,15 @@
    6
   ],
   [
-   "AMZN",
-   4
+   "PLTR",
+   5
   ],
   [
    "AAPL",
-   4
+   5
   ],
   [
-   "PLTR",
+   "AMZN",
    4
   ],
   [
@@ -63,6 +63,10 @@
   [
    "MSFT",
    3
+  ],
+  [
+   "JPM",
+   2
   ],
   [
    "ETH",
@@ -75,10 +79,6 @@
   [
    "ORCL",
    2
-  ],
-  [
-   "JPM",
-   1
   ],
   [
    "SOL",
@@ -102,6 +102,299 @@
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-06T15:42:41Z",
+   "source": "CNBC",
+   "title": "Anthropic IPO announcement odds drop on Kalshi following midterms and AI sell-off",
+   "link": "https://www.cnbc.com/2026/11/06/anthropic-ipo-kalshi-post-midterms-ai-sell-off.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:33:56Z",
+   "source": "Yahoo Finance",
+   "title": "The AI Chip Race Is Changing. This Could Matter More Than GPU Market Share",
+   "link": "https://247wallst.com/investing/2026/11/06/the-ai-chip-race-is-changing-this-could-matter-more-than-gpu-market-share/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:32:44Z",
+   "source": "Yahoo Finance",
+   "title": "Why SpaceX Stock Popped on Friday",
+   "link": "https://www.fool.com/investing/2026/11/06/why-spacex-stock-popped-on-friday/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:32:17Z",
+   "source": "Investing.com",
+   "title": "Moody\u2019s lifts Genmab outlook to positive on pipeline progress, debt reduction",
+   "link": "https://www.investing.com/news/stock-market-news/moodys-lifts-genmab-outlook-to-positive-on-pipeline-progress-debt-reduction-5008769",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:32:12Z",
+   "source": "Investing.com",
+   "title": "Tesla support and resistance levels to watch now",
+   "link": "https://www.investing.com/news/stock-market-news/tesla-support-and-resistance-levels-to-watch-now-93CH-5008768",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T15:31:57Z",
+   "source": "Investing.com",
+   "title": "Why is Palantir Technologies stock rallying today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-palantir-technologies-stock-rallying-today-93CH-5008767",
+   "kind": "markets",
+   "tags": [
+    "PLTR"
+   ]
+  },
+  {
+   "time": "2026-11-06T15:31:03Z",
+   "source": "Investing.com",
+   "title": "Exclusive-Apple\u2019s autocomplete restrictions include \u2019Dictator Trump\u2019 and \u2019Sleepy Joe,\u2019 researcher finds",
+   "link": "https://www.investing.com/news/stock-market-news/exclusiveapples-predictive-text-restrictions-include-dictator-trump-and-sleepy-joe-researcher-finds-5007215",
+   "kind": "markets",
+   "tags": [
+    "AAPL"
+   ]
+  },
+  {
+   "time": "2026-11-06T15:30:34Z",
+   "source": "Investing.com",
+   "title": "SPCX support and resistance levels to watch",
+   "link": "https://www.investing.com/news/stock-market-news/spcx-support-and-resistance-levels-to-watch-93CH-5008765",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:30:34Z",
+   "source": "Investing.com",
+   "title": "Jared Esguerra Highlights the Critical Role of Post-Consulting Execution in Fintech Implementation",
+   "link": "https://www.investing.com/news/press-releases/jared-esguerra-highlights-the-critical-role-of-postconsulting-execution-in-fintech-implementation-5008766",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:30:31Z",
+   "source": "Investing.com",
+   "title": "Nasdaq rebounds as chips stocks recover from steep losses",
+   "link": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:30:28Z",
+   "source": "Investing.com",
+   "title": "Jupiter Launches Combos for Jupiter Predict, Bringing Multi-Outcome Trading Onchain Amid Record Market Growth",
+   "link": "https://www.investing.com/news/press-releases/jupiter-launches-combos-for-jupiter-predict-bringing-multioutcome-trading-onchain-amid-record-market-growth-5008764",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:30:19Z",
+   "source": "Yahoo Finance",
+   "title": "BC-Most Active Stocks",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/bc-most-active-stocks-153019884.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:30:12Z",
+   "source": "CNBC",
+   "title": "Watch live: Jim Cramer shares his next investing moves for this tough market",
+   "link": "https://www.cnbc.com/investingclub/2026/11/06/watch-jim-cramer-live.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:30:08Z",
+   "source": "Yahoo Finance",
+   "title": "Musk Winds Down Cybertruck After Sales Collapse, Shifts Tesla Focus to Cybercab",
+   "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62985680/tesla-cybertruck-cybercab?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T15:30:04Z",
+   "source": "Investing.com",
+   "title": "Turkey stocks higher at close of trade; BIST 100 up 1.32%",
+   "link": "https://www.investing.com/news/stock-market-news/turkey-stocks-higher-at-close-of-trade-bist-100-up-132-5008759",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:30:00Z",
+   "source": "Yahoo Finance",
+   "title": "Why Elon Musk is killing the Tesla Cybertruck",
+   "link": "https://finance.yahoo.com/video/why-elon-musk-killing-tesla-153000856.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T15:30:00Z",
+   "source": "Yahoo Finance",
+   "title": "Analyst points to JPMorgan's Bitcoin figure most investors overlooked",
+   "link": "https://www.thestreet.com/crypto/markets/analyst-points-to-jpmorgans-bitcoin-figure-most-investors-overlooked?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "BTC",
+    "JPM"
+   ]
+  },
+  {
+   "time": "2026-11-06T15:29:09Z",
+   "source": "Investing.com",
+   "title": "Why is ASML NV ADR stock rallying today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-asml-nv-adr-stock-rallying-today-93CH-5008758",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:27:00Z",
+   "source": "MarketWatch",
+   "title": "These three stars need to align before investors rush back into stocks, Bank of America strategist says",
+   "link": "https://www.marketwatch.com/story/these-three-stars-need-to-align-before-investors-rush-back-into-stocks-bank-of-america-strategist-says-52879caa?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:26:38Z",
+   "source": "CoinDesk",
+   "title": "The crypto industry has found new ways to grow. Making money from them is another story",
+   "link": "https://www.coindesk.com/markets/2026/11/05/the-crypto-industry-has-found-new-ways-to-grow-making-money-from-them-is-another-story",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:26:33Z",
+   "source": "CNBC",
+   "title": "SpaceX is down big on Dem retribution fears against Musk. Deutsche Bank says buy the dip",
+   "link": "https://www.cnbc.com/2026/11/06/spacex-is-down-big-on-dem-retribution-fears-against-musk-deutsche-bank-says-buy-the-dip.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:25:01Z",
+   "source": "Yahoo Finance",
+   "title": "Is ConocoPhillips a Buy After Its Latest Earnings Report?",
+   "link": "https://www.fool.com/investing/2026/11/06/is-conocophillips-a-buy-after-its-latest-earnings-report/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:22:55Z",
+   "source": "Yahoo Finance",
+   "title": "Marvell Rises 4%, AMD Up 10% as Chip Stocks Rebound From Election Selloff",
+   "link": "https://www.tikr.com/blog/marvell-rises-4-amd-up-10-as-chip-stocks-rebound-from-election-selloff?ref=yahoofinance&tlnk=yf-261106-qv79q39c&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMD"
+   ]
+  },
+  {
+   "time": "2026-11-06T15:22:04Z",
+   "source": "Yahoo Finance",
+   "title": "Sandisk Soars 7% After Thursday\u2019s 22% Crash as Chip Stocks Rebound",
+   "link": "https://www.tikr.com/blog/sandisk-soars-7-after-thursdays-22-crash-as-chip-stocks-rebound?ref=yahoofinance&tlnk=yf-261106-hwqg252p&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:21:25Z",
+   "source": "Yahoo Finance",
+   "title": "Keep an eye on Georgia: Next data center flash point emerges after Texas",
+   "link": "https://finance.yahoo.com/video/keep-an-eye-on-georgia-next-data-center-flash-point-emerges-after-texas-152125141.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:20:00Z",
+   "source": "Yahoo Finance",
+   "title": "Coca-Cola Stock Is a Buy Thanks to Shelf Space and Habits",
+   "link": "https://www.fool.com/investing/2026/11/06/coca-cola-stock-is-a-buy-thanks-to-shelf-space-and/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:20:00Z",
+   "source": "Yahoo Finance",
+   "title": "Stock-Split Watch: Is Micron (MU) Next?",
+   "link": "https://www.fool.com/investing/2026/11/06/stock-split-watch-is-micron-mu-next/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:17:00Z",
+   "source": "Yahoo Finance",
+   "title": "Goldman Sachs and Apollo changes position on SpaceX",
+   "link": "https://www.thestreet.com/technology/goldman-sachs-and-apollo-changes-position-on-spacex?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:15:04Z",
+   "source": "Yahoo Finance",
+   "title": "A $25 Billion Fund Just Bought These 3 Stocks",
+   "link": "https://www.tikr.com/blog/arga-investment-management-bought-nokia-qualcomm-alphabet?ref=yahoofinance&tlnk=yf-261106-xw2jhg8h&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:14:44Z",
+   "source": "Yahoo Finance",
+   "title": "What AirSculpt Technologies (AIRS) Said on Its Q3 Earnings Call",
+   "link": "https://www.marketbeat.com/instant-alerts/transcript-what-airsculpt-technologies-airs-said-on-its-q3-earnings-call-2026-11-06/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:13:00Z",
+   "source": "Yahoo Finance",
+   "title": "TSMC rises on report of potential push into advanced memory for Nvidia",
+   "link": "https://finance.yahoo.com/technology/ai/articles/tsmc-rises-report-potential-push-151300006.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T15:11:16Z",
+   "source": "Yahoo Finance",
+   "title": "Stocks rebound after tech selloff that pushed Nasdaq into correction",
+   "link": "https://www.cbsnews.com/news/stocks-tech-sell-off-nasdaq-correction-dow/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T15:09:36Z",
+   "source": "Yahoo Finance",
+   "title": "Nvidia stock oversold setup: Key levels after a 9% drop",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-oversold-setup-key-150936116.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T15:09:06Z",
+   "source": "Yahoo Finance",
+   "title": "Chip stocks lead tech rebound as SpaceX, Tesla jump: AlphaCheck",
+   "link": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
   {
    "time": "2026-11-06T15:00:00Z",
    "source": "The Block",
@@ -3220,286 +3513,6 @@
    "source": "Yahoo Finance",
    "title": "IREN (IREN) Draws Tighter Oversight On Neocloud Data Center Projects",
    "link": "https://finance.yahoo.com/technology/ai/articles/iren-iren-draws-tighter-oversight-232125190.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T23:20:39Z",
-   "source": "Yahoo Finance",
-   "title": "DXP Enterprises, Inc. Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-dxp-enterprises-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T23:20:35Z",
-   "source": "Yahoo Finance",
-   "title": "Krispy Kreme, Inc. Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-krispy-kreme-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T23:20:00Z",
-   "source": "Yahoo Finance",
-   "title": "Cathie Wood Just Sold AMD Stock and Bought This AI Chip Stock Instead",
-   "link": "https://www.fool.com/investing/2026/11/05/cathie-wood-just-sold-amd-stock-and-bought-this-ai/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-05T23:17:51Z",
-   "source": "CNBC",
-   "title": "Jim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash",
-   "link": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-sell-off.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T23:06:02Z",
-   "source": "Decrypt",
-   "title": "Claude Gets Personal Finance\u2014Anthony Pompliano Accuses Anthropic of Copying His Startup",
-   "link": "https://decrypt.co/382689/claude-personal-finance-anthony-pompliano-anthropic",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:53:24Z",
-   "source": "Yahoo Finance",
-   "title": "Berkshire After Buffett: Steady Hands, Big Bets In The Greg Abel Era",
-   "link": "https://finance.yahoo.com/m/6d694ac8-80af-35c3-ba67-7647c94d58da/berkshire-after-buffett%3A.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "BRK.B"
-   ]
-  },
-  {
-   "time": "2026-11-05T22:48:34Z",
-   "source": "Yahoo Finance",
-   "title": "WW International, Inc. Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ww-international-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:47:36Z",
-   "source": "Yahoo Finance",
-   "title": "Xeris Biopharma Holdings, Inc. Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-xeris-biopharma-holdings-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:46:34Z",
-   "source": "Yahoo Finance",
-   "title": "The Wendy's Company Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-the-wendys-company-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:44:56Z",
-   "source": "Yahoo Finance",
-   "title": "Advanced Drainage Systems, Inc. Q2 2027 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-advanced-drainage-systems-inc-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:43:18Z",
-   "source": "Cointelegraph",
-   "title": "American Bitcoin\u2019s $126M profit masks mining pressure as rivals turn to AI",
-   "link": "https://cointelegraph.com/news/american-bitcoins-126m-profit-masks-mining-pressure-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-05T22:41:36Z",
-   "source": "Investing.com",
-   "title": "Why is DraftKings stock plunging today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-draftkings-stock-plunging-today-93CH-5006013",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:41:12Z",
-   "source": "Yahoo Finance",
-   "title": "Viatris Inc. Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-viatris-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:40:36Z",
-   "source": "Investing.com",
-   "title": "Why is Airbnb stock surging today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-airbnb-stock-surging-today-93CH-5006012",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:40:32Z",
-   "source": "Investing.com",
-   "title": "Five9 falls 22% on disappointing fourth quarter EPS outlook",
-   "link": "https://www.investing.com/news/earnings/five9-falls-22-on-disappointing-fourth-quarter-eps-outlook-5006011",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:40:01Z",
-   "source": "Yahoo Finance",
-   "title": "Why IonQ Stock Just Fell 10.5% Today",
-   "link": "https://www.fool.com/investing/2026/11/05/why-ionq-stock-just-fell-10-5-today/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:37:19Z",
-   "source": "Yahoo Finance",
-   "title": "Tapestry, Inc. Q1 2027 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-tapestry-inc-q1-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:37:04Z",
-   "source": "Investing.com",
-   "title": "Oil rebounds a day after sliding more than 8% following Democratic midterms sweep",
-   "link": "https://www.investing.com/news/commodities-news/oil-holds-steep-losses-after-us-election-fuels-iran-peace-hopes-5001939",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:36:34Z",
-   "source": "Investing.com",
-   "title": "Algorhythm Holdings appoints Gregory D. Smith as CEO and chairman",
-   "link": "https://www.investing.com/news/sec-filings/algorhythm-holdings-appoints-gregory-d-smith-as-ceo-and-chairman-93CH-5006008",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:36:31Z",
-   "source": "Investing.com",
-   "title": "Pine Cliff Energy reports Q3 results, cuts net debt 14%",
-   "link": "https://www.investing.com/news/company-news/pine-cliff-energy-reports-q3-results-cuts-net-debt-14-93CH-5006007",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:36:20Z",
-   "source": "Investing.com",
-   "title": "Audi may boost size of new US auto plant by $3 billion, add 3,000 jobs",
-   "link": "https://www.investing.com/news/stock-market-news/audi-may-boost-size-of-new-us-auto-plant-by-3-billion-add-3000-jobs-5005725",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:35:42Z",
-   "source": "Investing.com",
-   "title": "Eton Pharmaceuticals earnings beat by $0.19, revenue topped estimates",
-   "link": "https://www.investing.com/news/earnings/eton-pharmaceuticals-earnings-beat-by-019-revenue-topped-estimates-5006006",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:35:40Z",
-   "source": "Investing.com",
-   "title": "Puma Biotechnology earnings beat by $0.06, revenue fell short of estimates",
-   "link": "https://www.investing.com/news/earnings/puma-biotechnology-earnings-beat-by-006-revenue-fell-short-of-estimates-5006004",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:35:40Z",
-   "source": "Investing.com",
-   "title": "Quantum-Si earnings beat by $0.02, revenue fell short of estimates",
-   "link": "https://www.investing.com/news/earnings/quantumsi-earnings-beat-by-002-revenue-fell-short-of-estimates-5006005",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:35:07Z",
-   "source": "Yahoo Finance",
-   "title": "Teleflex Incorporated Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-teleflex-incorporated-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:33:02Z",
-   "source": "Yahoo Finance",
-   "title": "Docusign vs. Monday.com: Which Technology Stock Is a Better Buy for 2027?",
-   "link": "https://www.fool.com/coverage/better-buy/2026/11/05/docusign-vs-monday-com-which-technology-stock-is-a-better-buy-for-2027/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:32:59Z",
-   "source": "Yahoo Finance",
-   "title": "Here\u2019s Why AI Insurer Lemonade (LMND) May Skyrocket in 2027",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/why-ai-insurer-lemonade-lmnd-223259045.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:31:43Z",
-   "source": "Yahoo Finance",
-   "title": "A Utah Drilling Project Puts Ormat Technologies (ORA) at the Center of Geothermal\u2019s Next Push",
-   "link": "https://finance.yahoo.com/energy/articles/utah-drilling-project-puts-ormat-223143273.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:31:28Z",
-   "source": "CNBC",
-   "title": "Stocks making the biggest moves after hours: DraftKings, Cloudflare, Airbnb, Atlassian & more",
-   "link": "https://www.cnbc.com/2026/11/05/stocks-making-the-biggest-moves-after-hours-dkng-net-abnb-team.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:31:23Z",
-   "source": "Yahoo Finance",
-   "title": "Marc Chaikin Sees Alphabet (GOOGL) as a Conglomerate Hiding Three World-Class Businesses",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/marc-chaikin-sees-alphabet-googl-223123609.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "GOOGL"
-   ]
-  },
-  {
-   "time": "2026-11-05T22:31:05Z",
-   "source": "Yahoo Finance",
-   "title": "Shake Shack Inc. Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-shake-shack-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:31:01Z",
-   "source": "Yahoo Finance",
-   "title": "Why Rocket Lab Stock Dropped Today",
-   "link": "https://www.fool.com/investing/2026/11/05/why-rocket-lab-stock-dropped-today/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:30:45Z",
-   "source": "Yahoo Finance",
-   "title": "Palvella Therapeutics, Inc. Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-palvella-therapeutics-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T22:30:43Z",
-   "source": "CNBC",
-   "title": "Magnificent 7 loses $1 trillion. The most eye-popping stats from Thursday's tech stock plunge",
-   "link": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html",
    "kind": "markets",
    "tags": []
   }
