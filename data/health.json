@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T22:22:40Z",
+ "updated": "2026-11-06T22:39:24Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -8,7 +8,7 @@
  "feeds": {
   "prices": {
    "updated": "2026-11-06T22:22:00Z",
-   "age_hours": 0.01,
+   "age_hours": 0.29,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -18,7 +18,7 @@
   },
   "sec_insiders": {
    "updated": "2026-11-06T22:19:07Z",
-   "age_hours": 0.06,
+   "age_hours": 0.34,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
@@ -28,7 +28,7 @@
   },
   "signals": {
    "updated": "2026-11-06T22:22:40Z",
-   "age_hours": 0.0,
+   "age_hours": 0.28,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-06T21:57:41Z",
-   "age_hours": 0.42,
+   "age_hours": 0.7,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-06T00:06:32Z",
-   "age_hours": 22.27,
+   "age_hours": 22.55,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -54,7 +54,7 @@
   },
   "paper_trading": {
    "updated": "2026-11-06T22:21:09+00:00",
-   "age_hours": 0.03,
+   "age_hours": 0.3,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -62,7 +62,7 @@
   },
   "intelligence": {
    "updated": "2026-11-06T22:22:07Z",
-   "age_hours": 0.01,
+   "age_hours": 0.29,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -72,6 +72,12 @@
   }
  },
  "workflows": {
+  "Refresh signals and dashboard": {
+   "last": "success",
+   "at": "2026-11-06T22:22:54Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 36
+  },
   "Refresh brain data": {
    "last": "success",
    "at": "2026-11-06T22:22:22Z",
@@ -84,9 +90,9 @@
    "failures_in_last_100": 0,
    "runs_in_last_100": 1
   },
-  "Refresh signals and dashboard": {
-   "last": "success",
-   "at": "2026-11-06T22:20:21Z",
+  "Caesar's voice": {
+   "last": "cancelled",
+   "at": "2026-11-06T22:30:43Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 35
   },
@@ -94,13 +100,7 @@
    "last": "success",
    "at": "2026-11-06T22:19:31Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 11
-  },
-  "Caesar's voice": {
-   "last": "success",
-   "at": "2026-11-06T22:00:38Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 35
+   "runs_in_last_100": 10
   }
  }
 }
