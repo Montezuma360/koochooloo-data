@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T18:19:18Z",
+ "updated": "2026-11-06T19:16:40Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 19,
+  "Yahoo Finance": 18,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 39,
@@ -22,7 +22,7 @@
  "most_mentioned_24h": [
   [
    "TSLA",
-   38
+   37
   ],
   [
    "NVDA",
@@ -30,38 +30,42 @@
   ],
   [
    "AMD",
-   13
+   12
   ],
   [
    "BTC",
-   11
+   10
+  ],
+  [
+   "MSFT",
+   9
   ],
   [
    "AAPL",
    8
   ],
   [
-   "MSFT",
-   7
-  ],
-  [
-   "PLTR",
-   7
-  ],
-  [
    "META",
    6
   ],
   [
-   "GOOGL",
+   "PLTR",
    6
+  ],
+  [
+   "GOOGL",
+   5
+  ],
+  [
+   "ORCL",
+   4
   ],
   [
    "AMZN",
    4
   ],
   [
-   "ORCL",
+   "AVGO",
    3
   ],
   [
@@ -69,23 +73,19 @@
    3
   ],
   [
-   "AVGO",
-   3
-  ],
-  [
    "LLY",
    2
   ],
   [
+   "BRK.B",
+   1
+  ],
+  [
    "ETH",
-   2
+   1
   ],
   [
    "NFLX",
-   2
-  ],
-  [
-   "BRK.B",
    1
   ],
   [
@@ -98,6 +98,334 @@
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-06T19:16:03Z",
+   "source": "Decrypt",
+   "title": "Paraguay Protests Over Bank Lockout Intensify as Impeachment Vote Nears",
+   "link": "https://decrypt.co/382740/paraguay-protests-bitcoin-impeachment-vote-nears",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:12:52Z",
+   "source": "Investing.com",
+   "title": "Raymond James cuts Axon stock price target on federal delays",
+   "link": "https://www.investing.com/news/analyst-ratings/raymond-james-cuts-axon-stock-price-target-on-federal-delays-93CH-5009043",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:09:56Z",
+   "source": "CNBC",
+   "title": "Fake job interview scams like the one that hit Binance are getting more sophisticated. Here are the new signs to watch for",
+   "link": "https://www.cnbc.com/make-it/2026/11/06/binance-hack-fake-job-interview-scams.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:09:49Z",
+   "source": "CNBC",
+   "title": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+   "link": "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:09:07Z",
+   "source": "Investing.com",
+   "title": "Rosenblatt names top semiconductor stock",
+   "link": "https://www.investing.com/news/stock-market-news/rosenblatt-names-top-semiconductor-stock-5009040",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:08:33Z",
+   "source": "Investing.com",
+   "title": "Ashland Inc stock hits 52-week high at 78.26 USD",
+   "link": "https://www.investing.com/news/company-news/ashland-inc-stock-hits-52week-high-at-7826-usd-93CH-5009041",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:07:01Z",
+   "source": "Investing.com",
+   "title": "Raymond James reiterates Strong Buy on Columbia Banking stock",
+   "link": "https://www.investing.com/news/analyst-ratings/raymond-james-reiterates-strong-buy-on-columbia-banking-stock-93CH-5009039",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:06:53Z",
+   "source": "Investing.com",
+   "title": "B.Riley cuts Koppers Holdings stock price target on weaker margins",
+   "link": "https://www.investing.com/news/analyst-ratings/briley-cuts-koppers-holdings-stock-price-target-on-weaker-margins-93CH-5009036",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:06:52Z",
+   "source": "Investing.com",
+   "title": "Raymond James raises Wheaton Precious Metals price target on valuation",
+   "link": "https://www.investing.com/news/analyst-ratings/raymond-james-raises-wheaton-precious-metals-price-target-on-valuation-93CH-5009035",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:06:50Z",
+   "source": "Investing.com",
+   "title": "Jefferies raises Mettler-Toledo stock price target on solid growth",
+   "link": "https://www.investing.com/news/analyst-ratings/jefferies-raises-mettlertoledo-stock-price-target-on-solid-growth-93CH-5009034",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:06:49Z",
+   "source": "Investing.com",
+   "title": "Truist holds Oklo stock rating at Hold on deployment progress",
+   "link": "https://www.investing.com/news/analyst-ratings/truist-holds-oklo-stock-rating-at-hold-on-deployment-progress-93CH-5009033",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:06:13Z",
+   "source": "Investing.com",
+   "title": "Josh Gottheimer buys Applied Materials stock in managed account",
+   "link": "https://www.investing.com/news/company-news/josh-gottheimer-buys-applied-materials-stock-in-managed-account-93CH-5009030",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:05:20Z",
+   "source": "Investing.com",
+   "title": "Tesla and Arista Networks among market cap stock movers on Friday",
+   "link": "https://www.investing.com/news/stock-market-news/tesla-and-arista-networks-among-market-cap-stock-movers-on-friday-93CH-5009029",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T19:05:00Z",
+   "source": "CNBC",
+   "title": "Americans are on a 'treadmill of high inflation' and more rate hikes are likely, Fed's Daly says",
+   "link": "https://www.cnbc.com/2026/11/06/fed-daly-interest-rates-inflation.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:05:00Z",
+   "source": "Yahoo Finance",
+   "title": "A Recession Is Coming Eventually. Here's Warren Buffett's Best Investing Advice.",
+   "link": "https://www.fool.com/investing/2026/11/06/recession-coming-eventually-heres-warren-buffett/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:02:00Z",
+   "source": "Yahoo Finance",
+   "title": "Crusoe Announces Wyoming Data Center Campus Update",
+   "link": "https://finance.yahoo.com/technology/ai/articles/crusoe-announces-wyoming-data-center-190200368.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:01:48Z",
+   "source": "Yahoo Finance",
+   "title": "The US adds in the latest jobs report, markets try to bounce back from an awful sell-off",
+   "link": "https://finance.yahoo.com/video/the-us-adds-in-the-latest-jobs-report-markets-try-to-bounce-back-from-an-awful-sell-off-190148849.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:00:28Z",
+   "source": "Yahoo Finance",
+   "title": "Telephone and Data Systems, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-telephone-and-data-systems-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:00:24Z",
+   "source": "Yahoo Finance",
+   "title": "Under Armour, Inc. Q2 2027 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-under-armour-inc-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T19:00:05Z",
+   "source": "Yahoo Finance",
+   "title": "TechTarget, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-techtarget-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:58:58Z",
+   "source": "The Block",
+   "title": "Gnosis Pay data breach exposes customer info; funds unaffected",
+   "link": "https://www.theblock.co/news/defi/2026-11-06-gnosis-pay-data-breach-legacy-debit-card-system-435934",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:58:53Z",
+   "source": "Yahoo Finance",
+   "title": "Cathie Wood Makes $437 Million In Trades. Adds Nvidia, SpaceX; Offloads Broadcom",
+   "link": "https://finance.yahoo.com/m/be001c9f-c94b-3a4d-9a7d-61cb27b85933/cathie-wood-makes-%24437.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AVGO",
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T18:53:34Z",
+   "source": "Yahoo Finance",
+   "title": "TeraWulf Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-terawulf-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:53:00Z",
+   "source": "MarketWatch",
+   "title": "My adviser recommended an annuity. Is it the right move in this market environment?",
+   "link": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:48:21Z",
+   "source": "Yahoo Finance",
+   "title": "Humana Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-humana-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:47:45Z",
+   "source": "Cointelegraph",
+   "title": "Russia finalizes crypto trading rules ahead of Nov. 17 rollout",
+   "link": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:47:41Z",
+   "source": "Yahoo Finance",
+   "title": "Semiconductor Plunged in Thursday's Market Rout. These Were the Ones That Lost the Most.",
+   "link": "https://www.ibtimes.com/semiconductor-stocks-plunge-ai-spending-concerns-3809509?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:46:25Z",
+   "source": "Yahoo Finance",
+   "title": "Update: Market Chatter: Microsoft to Conclude Deal With Oracle for Renting AI Compute",
+   "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-microsoft-conclude-deal-184625120.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "MSFT",
+    "ORCL"
+   ]
+  },
+  {
+   "time": "2026-11-06T18:44:19Z",
+   "source": "Yahoo Finance",
+   "title": "Tesla Stock Rebounds After Brutal Selloff. Musk Has a New Cybercab Plan",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-stock-rebounds-brutal-selloff-184419331.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T18:41:46Z",
+   "source": "Yahoo Finance",
+   "title": "Why NerdWallet Stock Crashed Today",
+   "link": "https://www.fool.com/investing/2026/11/06/why-nerdwallet-stock-crashed-today/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:41:28Z",
+   "source": "Yahoo Finance",
+   "title": "Moderna, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-moderna-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:40:58Z",
+   "source": "CNBC",
+   "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
+   "link": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
+   "kind": "markets",
+   "tags": [
+    "MSFT"
+   ]
+  },
+  {
+   "time": "2026-11-06T18:39:01Z",
+   "source": "Yahoo Finance",
+   "title": "Why Micron Stock Is Up Today",
+   "link": "https://www.fool.com/investing/2026/11/06/why-micron-stock-is-up-today/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:37:00Z",
+   "source": "Yahoo Finance",
+   "title": "4 Stocks I'm Not Selling Even If the Fed Keeps Raising Rates",
+   "link": "https://www.fool.com/investing/2026/11/06/x-stocks-im-not-selling-even-if-the-fed-keeps-rais/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:36:05Z",
+   "source": "Yahoo Finance",
+   "title": "Calumet, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-calumet-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:36:03Z",
+   "source": "Decrypt",
+   "title": "Bitcoin ETFs Bleed $430 Million as Tech Rout Tests Wall Street Buyers",
+   "link": "https://decrypt.co/382733/bitcoin-etfs-bleed-430-million-tech-rout-tests-wall-street",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-06T18:35:01Z",
+   "source": "Yahoo Finance",
+   "title": "Why Opendoor Stock Is Down Today",
+   "link": "https://www.fool.com/investing/2026/11/06/why-opendoor-stock-is-down-today/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:29:36Z",
+   "source": "The Block",
+   "title": "Trump administration moves closer to allowing crypto in 401(k) retirement plans",
+   "link": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939",
+   "kind": "crypto",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T18:22:42Z",
+   "source": "Cointelegraph",
+   "title": "Strive buys 15,124 Bitcoin in October, closes in on top treasury holders",
+   "link": "https://cointelegraph.com/news/strive-buys-bitcoin-october-top-btc-corporate-holders?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
   {
    "time": "2026-11-06T18:16:07Z",
    "source": "Investing.com",
@@ -3220,342 +3548,6 @@
    "source": "Investing.com",
    "title": "Chardan initiates Moonlake stock with buy rating on HS drug outlook",
    "link": "https://www.investing.com/news/analyst-ratings/chardan-initiates-moonlake-stock-with-buy-rating-on-hs-drug-outlook-93CH-5007089",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T10:06:22Z",
-   "source": "Investing.com",
-   "title": "Binance $6.3 billion heist to prompt closer scrutiny by insurers",
-   "link": "https://www.investing.com/news/stock-market-news/binance-63-billion-heist-to-prompt-closer-scrutiny-by-insurers-5007088",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T10:05:59Z",
-   "source": "Investing.com",
-   "title": "While biotech bets swing on trial data, this dividend payer gained 72% since 2024",
-   "link": "https://www.investing.com/news/stock-market-news/while-biotech-bets-swing-on-trial-data-this-dividend-payer-gained-72-since-2024-5003874",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T10:04:26Z",
-   "source": "Investing.com",
-   "title": "Data centers need power, so why did this Dow stock fall 26%?",
-   "link": "https://www.investing.com/news/stock-market-news/data-centers-need-power-so-why-did-this-dow-stock-fall-26-5003861",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T10:04:06Z",
-   "source": "Investing.com",
-   "title": "Disney struggles as Netflix pulls away: Time to buy the dip?",
-   "link": "https://www.investing.com/news/stock-market-news/disney-struggles-as-netflix-pulls-away-time-to-buy-the-dip-5003846",
-   "kind": "markets",
-   "tags": [
-    "NFLX"
-   ]
-  },
-  {
-   "time": "2026-11-06T10:02:00Z",
-   "source": "MarketWatch",
-   "title": "The $4 million mansion that author Sarah J. Maas bought after finding fame with \u2018A Court of Thorns and Roses\u2019",
-   "link": "https://www.marketwatch.com/story/the-4-million-mansion-that-author-sarah-j-maas-bought-after-finding-fame-with-a-court-of-thorns-and-roses-170bbe1b?mod=mw_rss_topstories",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T10:02:00Z",
-   "source": "FCA",
-   "title": "The not-so-fine print: making consumer contracts fair",
-   "link": "https://www.fca.org.uk/news/blogs/not-so-fine-print-making-consumer-contracts-fair",
-   "kind": "official",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T10:00:54Z",
-   "source": "Investing.com",
-   "title": "Bcb Bancorp director Denny Kim buys $500 in shares",
-   "link": "https://www.investing.com/news/insider-trading-news/bcb-bancorp-director-denny-kim-buys-500-in-shares-93CH-5007080",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:53:27Z",
-   "source": "CoinDesk",
-   "title": "Bitcoin recovers $76,000 level as ETFs shed $430 million after tech rout",
-   "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-06T09:50:00Z",
-   "source": "Yahoo Finance",
-   "title": "With a Nearly 7% Yield, Is Energy Transfer Stock a Buy as It Looks to Turbocharge Growth?",
-   "link": "https://www.fool.com/investing/2026/11/06/dividend-yield-energy-transfer-stock-buy-growth/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:35:00Z",
-   "source": "Yahoo Finance",
-   "title": "Fed Chair Kevin Warsh Is Planning to Break 45 Years of Precedent With a Stunning Change to Monetary Policy -- It Could Rattle Wall Street for Years to Come",
-   "link": "https://www.fool.com/investing/2026/11/06/fed-chair-kevin-warsh-planning-fed-policy-change/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:32:02Z",
-   "source": "Yahoo Finance",
-   "title": "Yikes! The Stock Market Just Did Something It Has Never Done Before. History Is Clear About What Comes Next.",
-   "link": "https://www.fool.com/investing/2026/11/06/stock-market-never-done-before-what-comes-next/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:32:02Z",
-   "source": "Yahoo Finance",
-   "title": "The Nasdaq Just Hit Correction Territory. History Says the Stock Market Will Do This Next (Hint: It May Stun You)",
-   "link": "https://www.fool.com/investing/2026/11/06/nasdaq-hit-correction-stock-market-will-do-this-next/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:32:00Z",
-   "source": "Yahoo Finance",
-   "title": "Meet the Unstoppable Vanguard ETF Beating the S&P 500 and the Dow Jones in 2026",
-   "link": "https://www.fool.com/investing/2026/11/06/meet-vanguard-etf-beating-sp-500-dow-jones-2026/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:31:59Z",
-   "source": "Yahoo Finance",
-   "title": "AI wipeout in focus; U.S. employment data ahead - what\u2019s moving markets",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/ai-wipeout-focus-u-employment-093159092.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:27:48Z",
-   "source": "Yahoo Finance",
-   "title": "Elon Musk\u2019s Net Worth Drops Nearly $80 Billion In A Day As Tesla And SpaceX Stock Crater During Tech Wipe-Out",
-   "link": "https://247wallst.com/investing/2026/11/06/elon-musks-net-worth-drops-nearly-80-billion-in-a-day-as-tesla-and-spacex-stock-crater-during-tech-wipe-out/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-06T09:26:01Z",
-   "source": "Yahoo Finance",
-   "title": "Midterm Elections Yield a Dubious Surprise for the Trump Bull Market -- Is a Stock Market Crash Imminent?",
-   "link": "https://www.fool.com/investing/2026/11/06/midterm-elections-yield-dubious-surprise-trump-bull-market-stock-market-crash-imminent/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:25:02Z",
-   "source": "Yahoo Finance",
-   "title": "Should You Buy Nvidia Before Nov. 17? The Evidence is Piling Up and Here\u2019s What It Shows.",
-   "link": "https://www.fool.com/investing/2026/11/06/should-you-buy-nvidia-before-nov-17-the-evidence-is-piling-up-and-here-s-what-it-shows/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-06T09:20:21Z",
-   "source": "Yahoo Finance",
-   "title": "Bitcoin Falls Below $76,000 as Chip Stocks Crash and Liquidations Hit $1 Billion: Why Is Crypto Down Today?",
-   "link": "https://www.coinspeaker.com/crypto-down-today-bitcoin-etf-outflows/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-06T09:19:27Z",
-   "source": "Yahoo Finance",
-   "title": "Stock market today: Dow, S&P 500, Nasdaq futures wobble after brutal sell-off, with key jobs report on deck",
-   "link": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-091927729.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:15:00Z",
-   "source": "Yahoo Finance",
-   "title": "The Biggest Stock Winners and Losers From the Midterm Elections",
-   "link": "https://www.fool.com/investing/2026/11/06/biggest-stock-winners-losers-midterm-election/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:01:02Z",
-   "source": "Yahoo Finance",
-   "title": "Broadcom Stock Has Had Only 2 Losing Years Since 2009. 2026 Is on Pace to Be the 3rd.",
-   "link": "https://www.fool.com/investing/2026/11/06/broadcom-stock-has-had-only-2-losing-years-since-2009-2026-is-on-pace-to-be-the-3rd/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AVGO"
-   ]
-  },
-  {
-   "time": "2026-11-06T09:00:36Z",
-   "source": "Cointelegraph",
-   "title": "Zcash NU7 upgrade goes live, leaves 12,224 ZEC stranded in Sprout pool",
-   "link": "https://cointelegraph.com/news/zcash-nu7-upgrade-15m-sprout-funds-unspendable?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T09:00:00Z",
-   "source": "ECB",
-   "title": "ECB publishes consolidated banking data for end-June 2026",
-   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-   "kind": "official",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:52:14Z",
-   "source": "CNBC",
-   "title": "Tanks or drones? Defense earnings reveal a more complicated rearmament boom",
-   "link": "https://www.cnbc.com/2026/11/06/defense-military-tech-earnings.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:47:42Z",
-   "source": "CoinDesk",
-   "title": "Greece approves 10% tax on crypto gains and 15% levy on DeFi income",
-   "link": "https://www.coindesk.com/policy/2026/11/06/greece-approves-10-tax-on-crypto-gains-and-15-levy-on-defi-income",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:43:43Z",
-   "source": "Yahoo Finance",
-   "title": "Google Schedules Gemini 3.8 and 3.6 Flash API Price Increases for January 1, 2027",
-   "link": "https://finance.yahoo.com/technology/ai/articles/google-schedules-gemini-3-8-084343356.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "GOOGL"
-   ]
-  },
-  {
-   "time": "2026-11-06T08:42:54Z",
-   "source": "Cointelegraph",
-   "title": "Hyperliquid Strategies seeks futures registration for perps",
-   "link": "https://cointelegraph.com/news/nasdaq-hyperliquid-strategies-futures-broker-license-onchain-perps?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:35:00Z",
-   "source": "Yahoo Finance",
-   "title": "Palantir and AMD Just Reported Earnings. History Says This Will Happen to Both Stocks Next.",
-   "link": "https://www.fool.com/investing/2026/11/06/palantir-and-amd-just-reported-earnings-history-sa/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMD",
-    "PLTR"
-   ]
-  },
-  {
-   "time": "2026-11-06T08:34:02Z",
-   "source": "The Block",
-   "title": "Kalshi hit with injunction over sports contracts on California tribal lands",
-   "link": "https://www.theblock.co/news/business/2026-11-06-kalshi-injunction-california-tribal-lands-435813",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:27:02Z",
-   "source": "Yahoo Finance",
-   "title": "Tesla Stock Has Fallen 29% From Its Record. I Think the Stock Is Overvalued.",
-   "link": "https://www.fool.com/investing/2026/11/06/tesla-stock-has-fallen-29-from-its-record-i-think-the-stock-is-overvalued/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-06T08:19:18Z",
-   "source": "Cointelegraph",
-   "title": "Bitcoin, Ether ETFs post $530M outflows as election gains evaporate",
-   "link": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": [
-    "BTC",
-    "ETH"
-   ]
-  },
-  {
-   "time": "2026-11-06T08:14:42Z",
-   "source": "Yahoo Finance",
-   "title": "What IREN (IREN) Said on Its Q1 Earnings Call",
-   "link": "https://www.marketbeat.com/instant-alerts/transcript-what-iren-iren-said-on-its-q1-earnings-call-2026-11-06/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:11:52Z",
-   "source": "Yahoo Finance",
-   "title": "Top 3 Cash Flow Stocks To Watch In November 2026",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/top-3-cash-flow-stocks-081152747.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:11:32Z",
-   "source": "Investing.com",
-   "title": "Amadeus maintains guidance at lower end amid Middle East impact",
-   "link": "https://www.investing.com/news/earnings/amadeus-maintains-guidance-at-lower-end-amid-middle-east-impact-5006679",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:11:06Z",
-   "source": "Investing.com",
-   "title": "UBS raises Certara stock price target on software demand strength",
-   "link": "https://www.investing.com/news/analyst-ratings/ubs-raises-certara-stock-price-target-on-software-demand-strength-93CH-5006678",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:10:24Z",
-   "source": "Investing.com",
-   "title": "Europe stocks drop on tech drag; STOXX 600 overtakes S&P 500 in YTD gains",
-   "link": "https://www.investing.com/news/stock-market-news/europe-stocks-drop-on-tech-drag--stoxx-600-overtakes-sp-500-in-ytd-gains-5006627",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:07:24Z",
-   "source": "Investing.com",
-   "title": "Getlink reports October traffic growth across key segments",
-   "link": "https://www.investing.com/news/stock-market-news/getlink-reports-october-traffic-growth-across-key-segments-93CH-5006676",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T08:06:25Z",
-   "source": "Investing.com",
-   "title": "Tesla to wind down Cybertruck production at Texas factory, Musk says",
-   "link": "https://www.investing.com/news/stock-market-news/tesla-to-wind-down-cybertruck-production-at-texas-gigafactory-next-year-musk-says-5006624",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-06T08:05:11Z",
-   "source": "Investing.com",
-   "title": "Goldman Sachs downgrades Kuehne & Nagel to Neutral as relative upside narrows",
-   "link": "https://www.investing.com/news/stock-market-news/goldman-sachs-downgrades-kuehne--nagel-to-neutral-as-relative-upside-narrows-5006675",
    "kind": "markets",
    "tags": []
   }
