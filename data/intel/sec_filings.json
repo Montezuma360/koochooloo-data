@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T23:51:15Z",
+ "updated": "2026-11-06T23:55:47Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-06T23:55:02Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Vir Biotechnology, Inc.",
+   "cik": 1706431,
+   "ticker": "VIR",
+   "role": "Subject",
+   "accession": "0001012975-26-001020",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1706431/000101297526001020/0001012975-26-001020-index.htm"
+  },
+  {
    "time": "2026-11-06T23:43:39Z",
    "form": "SCHEDULE 13D",
    "company": "Generation Essentials Group",
@@ -2920,6 +2932,30 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-06T23:55:02Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Vir Biotechnology, Inc.",
+   "cik": 1706431,
+   "ticker": "VIR",
+   "role": "Subject",
+   "accession": "0001012975-26-001020",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1706431/000101297526001020/0001012975-26-001020-index.htm"
+  },
+  {
+   "time": "2026-11-06T23:55:02Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "ARCH Venture Fund IX, L.P.",
+   "cik": 1666306,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001012975-26-001020",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1666306/000101297526001020/0001012975-26-001020-index.htm"
+  },
   {
    "time": "2026-11-06T23:43:39Z",
    "form": "SCHEDULE 13D",
@@ -15858,39 +15894,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1857154/000185715426000057/0001857154-26-000057-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:44:27Z",
-   "form": "8-K",
-   "company": "CONSOLIDATED EDISON INC",
-   "cik": 1047862,
-   "ticker": "ED",
-   "role": "Filer",
-   "accession": "0001047862-26-000157",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000157/0001047862-26-000157-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:44:22Z",
-   "form": "10-Q",
-   "company": "Camping World Holdings, Inc.",
-   "cik": 1669779,
-   "ticker": "CWH",
-   "role": "Filer",
-   "accession": "0001104659-26-123402",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1669779/000110465926123402/0001104659-26-123402-index.htm"
   }
  ]
 }
