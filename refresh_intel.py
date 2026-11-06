@@ -144,12 +144,45 @@ def crypto():
         px = [v[coin] for v in ex.values() if isinstance(v, dict) and v.get(coin)]
         if len(px) >= 2:
             spread[coin] = round(100 * (max(px) / min(px) - 1), 3)
-    save("crypto", {"source": "CoinGecko, Kraken, Coinbase, Binance (market-data API)", "global": glob, "top100": top,
+    save("crypto", {"source": "CoinGecko, Kraken, Coinbase, Binance (market-data API)", "coingecko_updated": STAMP, "global": glob, "top100": top,
                     "trending": trending, "exchange_prices": ex, "exchange_spread_pct": spread})
     by = {c["symbol"]: c for c in top}
     history("crypto", [{"t": STAMP, "btc": by.get("BTC", {}).get("price"), "eth": by.get("ETH", {}).get("price"),
                         "sol": by.get("SOL", {}).get("price"), **glob}])
     return "%d coins, %d trending, %d exchanges" % (len(top), len(trending), sum("error" not in v for v in ex.values()))
+
+
+def crypto_live():
+    """Every run, day and night: BTC, ETH and SOL straight from the exchanges (Kraken, Coinbase, Binance; free, no monthly cap),
+    written into crypto.json. CoinGecko's free Demo key allows about 10,000 calls a month, so its wider view (top 100, global,
+    trending: 3 calls) refreshes every 15 minutes and its sectors hourly, about 9,400 calls a month in all, inside the free allowance."""
+    ex = {}
+    for name, fn in (("kraken", _kraken), ("coinbase", _coinbase), ("binance", _binance)):
+        try:
+            ex[name] = fn()
+        except Exception as e:
+            ex[name] = {"error": repr(e)[:120]}
+    live, spread = {}, {}
+    for coin in ("BTC", "ETH", "SOL"):
+        px = sorted(v[coin] for v in ex.values() if isinstance(v, dict) and v.get(coin))
+        if px:
+            live[coin] = px[len(px) // 2]
+        if len(px) >= 2:
+            spread[coin] = round(100 * (px[-1] / px[0] - 1), 3)
+    if not live:
+        raise RuntimeError("no exchange answered")
+    cur = load(OUT / "crypto.json", None)
+    if not isinstance(cur, dict) or not cur.get("top100"):
+        return "waiting for the first CoinGecko run"
+    cur.pop("updated", None)
+    for c in cur["top100"]:
+        if c.get("symbol") in live:
+            c["price"] = live[c["symbol"]]
+    cur.update({"exchange_prices": ex, "exchange_spread_pct": spread,
+                "live_prices": dict({"t": STAMP, "source": "median of Kraken, Coinbase and Binance"}, **live)})
+    save("crypto", cur)
+    return "BTC %s, ETH %s, SOL %s from %d exchanges" % (live.get("BTC"), live.get("ETH"), live.get("SOL"),
+                                                         sum("error" not in v for v in ex.values()))
 
 
 def _kraken():
@@ -735,8 +768,9 @@ def finnhub():
 # name: (function, minimum minutes between fetches when the US market is open, ... when it is closed)
 SOURCES = {
     # Set to how often each source itself changes (3 Nov 2026): with a 1-minute timer, the fast sources refresh every run.
-    "crypto": (crypto, 1, 1),                    # exchanges are live; CoinGecko updates about every minute
-    "crypto_sectors": (crypto_sectors, 10, 30),
+    "crypto": (crypto, 15, 15),                  # CoinGecko top 100, global, trending: 3 calls, kept inside the free monthly allowance
+    "crypto_live": (crypto_live, 1, 1),          # BTC, ETH, SOL from the exchanges every run (no monthly cap)
+    "crypto_sectors": (crypto_sectors, 60, 60),  # CoinGecko categories: 1 call an hour
     "crypto_derivatives": (crypto_derivatives, 1, 1),
     "crypto_fear_greed": (crypto_fear_greed, 60, 60),  # published once a day
     "onchain": (onchain, 2, 5),                  # a Bitcoin block every ~10 minutes; fees move between blocks
@@ -786,7 +820,7 @@ def main():
             continue
         due.append((name, fn, gap))
     # Yahoo (yfinance is not thread-safe) and CoinGecko (tight shared rate limit) run one at a time; the rest in parallel
-    one_at_a_time = {"crypto", "crypto_sectors", "futures_fx", "fear_greed"}
+    one_at_a_time = {"crypto", "crypto_live", "crypto_sectors", "futures_fx", "fear_greed"}  # crypto_live edits crypto.json after crypto
     import concurrent.futures
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
         futs = [ex.submit(run, *d) for d in due if d[0] not in one_at_a_time]
