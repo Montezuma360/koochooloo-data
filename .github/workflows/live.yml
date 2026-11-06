@@ -16,7 +16,23 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # The outside timer may fire every minute, all day. A full run happens every minute only in the extended US day
+  # (Mon-Fri 04:00-20:00 New York time); at other times only every 5th minute, so the repo does not fill with quiet-hour commits.
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        run: |
+          d=$(TZ=America/New_York date +%u); h=$(TZ=America/New_York date +%-H); m=$(date -u +%-M)
+          if [ "$d" -le 5 ] && [ "$h" -ge 4 ] && [ "$h" -lt 20 ]; then go=true; elif [ $((m % 5)) -eq 0 ]; then go=true; else go=false; fi
+          echo "New York day $d hour $h, minute $m -> run: $go"
+          echo "go=$go" >> "$GITHUB_OUTPUT"
   live:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
