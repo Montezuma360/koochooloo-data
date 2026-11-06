@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T20:05:40Z",
+ "updated": "2026-11-06T20:10:49Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 19,
+  "Yahoo Finance": 18,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 39,
@@ -33,11 +33,11 @@
    12
   ],
   [
-   "MSFT",
-   9
+   "AAPL",
+   10
   ],
   [
-   "AAPL",
+   "MSFT",
    9
   ],
   [
@@ -50,7 +50,7 @@
   ],
   [
    "META",
-   6
+   7
   ],
   [
    "PLTR",
@@ -98,6 +98,17 @@
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-06T20:09:18Z",
+   "source": "CoinDesk",
+   "title": "Apple, Meta reject OKX\u2013ICE tokenized stock plans, leaving crypto firms as the ones to watch",
+   "link": "https://www.coindesk.com/policy/2026/11/06/apple-meta-reject-okx-ice-tokenized-stock-plans-leaving-crypto-firms-as-the-ones-to-watch",
+   "kind": "crypto",
+   "tags": [
+    "AAPL",
+    "META"
+   ]
+  },
   {
    "time": "2026-11-06T19:58:29Z",
    "source": "CNBC",
@@ -3537,14 +3548,6 @@
    "title": "Outside groups urge congressional Dems to target corporate interests over Trump",
    "link": "https://www.cnbc.com/2026/11/06/democrats-corporate-oversight-trump.html",
    "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T11:26:30Z",
-   "source": "Cointelegraph",
-   "title": "Binance hackers had 8 weeks of access before $6.3B exploit, Security Alliance estimates",
-   "link": "https://cointelegraph.com/news/binance-hackers-8-weeks-access-63b-exploit-security-alliance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
    "tags": []
   }
  ]
