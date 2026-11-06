@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T23:40:54Z",
+ "updated": "2026-11-06T23:51:15Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-06T23:43:39Z",
+   "form": "SCHEDULE 13D",
+   "company": "Generation Essentials Group",
+   "cik": 2053456,
+   "ticker": "TGE",
+   "role": "Subject",
+   "accession": "0001213900-26-117049",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2053456/000121390026117049/0001213900-26-117049-index.htm"
+  },
+  {
    "time": "2026-11-06T23:38:15Z",
    "form": "SCHEDULE 13D",
    "company": "Aspen Neuroscience, Inc.",
@@ -2908,6 +2920,30 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-06T23:43:39Z",
+   "form": "SCHEDULE 13D",
+   "company": "Generation Essentials Group",
+   "cik": 2053456,
+   "ticker": "TGE",
+   "role": "Subject",
+   "accession": "0001213900-26-117049",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2053456/000121390026117049/0001213900-26-117049-index.htm"
+  },
+  {
+   "time": "2026-11-06T23:43:39Z",
+   "form": "SCHEDULE 13D",
+   "company": "AMTD Group Inc.",
+   "cik": 1765856,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001213900-26-117049",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1765856/000121390026117049/0001213900-26-117049-index.htm"
+  },
   {
    "time": "2026-11-06T23:38:15Z",
    "form": "SCHEDULE 13D",
@@ -15855,56 +15891,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1669779/000110465926123402/0001104659-26-123402-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:44:03Z",
-   "form": "8-K",
-   "company": "CHESAPEAKE UTILITIES CORP",
-   "cik": 19745,
-   "ticker": "CPK",
-   "role": "Filer",
-   "accession": "0001628280-26-071140",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/19745/000162828026071140/0001628280-26-071140-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:43:57Z",
-   "form": "8-K",
-   "company": "CEDAR REALTY TRUST, INC.",
-   "cik": 761648,
-   "ticker": "CDR.PB",
-   "role": "Filer",
-   "accession": "0000761648-26-000033",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/761648/000076164826000033/0000761648-26-000033-index.htm"
   }
  ]
 }
