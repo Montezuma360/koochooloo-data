@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T15:44:29Z",
+ "updated": "2026-11-06T16:07:15Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -23,6 +23,27 @@
   }
  ],
  "results_announced_3d": [
+  {
+   "time": "2026-11-06T15:54:34Z",
+   "form": "8-K",
+   "company": "YORK WATER CO",
+   "cik": 108985,
+   "ticker": "YORW",
+   "role": "Filer",
+   "accession": "0000108985-26-000096",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/108985/000010898526000096/0000108985-26-000096-index.htm"
+  },
   {
    "time": "2026-11-06T15:18:20Z",
    "form": "8-K",
@@ -2221,35 +2242,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1787400/000178740026000020/0001787400-26-000020-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:36:27Z",
-   "form": "8-K",
-   "company": "Concentra Group Holdings Parent, Inc.",
-   "cik": 2014596,
-   "ticker": "CON",
-   "role": "Filer",
-   "accession": "0002014596-26-000070",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2014596/000201459626000070/0002014596-26-000070-index.htm"
   }
  ],
  "activist_stakes_3d": [
@@ -2531,6 +2523,75 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-06T16:05:22Z",
+   "form": "10-Q",
+   "company": "PEAPACK GLADSTONE FINANCIAL CORP",
+   "cik": 1050743,
+   "ticker": "PGC",
+   "role": "Filer",
+   "accession": "0001193125-26-451100",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1050743/000119312526451100/0001193125-26-451100-index.htm"
+  },
+  {
+   "time": "2026-11-06T16:01:51Z",
+   "form": "10-Q",
+   "company": "BlackRock Private Credit Fund",
+   "cik": 1902649,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001193125-26-451070",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1902649/000119312526451070/0001193125-26-451070-index.htm"
+  },
+  {
+   "time": "2026-11-06T15:54:34Z",
+   "form": "8-K",
+   "company": "YORK WATER CO",
+   "cik": 108985,
+   "ticker": "YORW",
+   "role": "Filer",
+   "accession": "0000108985-26-000096",
+   "items": [
+    {
+     "item": "2.02",
+     "meaning": "Results announced"
+    },
+    {
+     "item": "9.01",
+     "meaning": "Financial statements and exhibits"
+    }
+   ],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/108985/000010898526000096/0000108985-26-000096-index.htm"
+  },
+  {
+   "time": "2026-11-06T15:47:22Z",
+   "form": "10-Q",
+   "company": "BOSTON PROPERTIES LTD PARTNERSHIP",
+   "cik": 1043121,
+   "ticker": null,
+   "role": "Filer",
+   "accession": "0001037540-26-000043",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1043121/000103754026000043/0001037540-26-000043-index.htm"
+  },
+  {
+   "time": "2026-11-06T15:44:48Z",
+   "form": "10-Q",
+   "company": "Agentix Corp.",
+   "cik": 1603345,
+   "ticker": "AGTX",
+   "role": "Filer",
+   "accession": "0001477932-26-006739",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1603345/000147793226006739/0001477932-26-006739-index.htm"
+  },
   {
    "time": "2026-11-06T15:42:06Z",
    "form": "10-Q",
@@ -16081,80 +16142,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1829576/000182957626000097/0001829576-26-000097-index.htm"
-  },
-  {
-   "time": "2026-11-05T16:40:17Z",
-   "form": "10-Q",
-   "company": "Zoetis Inc.",
-   "cik": 1555280,
-   "ticker": "ZTS",
-   "role": "Filer",
-   "accession": "0001555280-26-000050",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000050/0001555280-26-000050-index.htm"
-  },
-  {
-   "time": "2026-11-05T16:39:46Z",
-   "form": "10-Q",
-   "company": "TOYOTA MOTOR CREDIT CORP",
-   "cik": 834071,
-   "ticker": null,
-   "role": "Filer",
-   "accession": "0001193125-26-449075",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/834071/000119312526449075/0001193125-26-449075-index.htm"
-  },
-  {
-   "time": "2026-11-05T16:37:36Z",
-   "form": "8-K",
-   "company": "Orange County Bancorp, Inc. /DE/",
-   "cik": 1754226,
-   "ticker": "OBT",
-   "role": "Filer",
-   "accession": "0001104659-26-123183",
-   "items": [
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1754226/000110465926123183/0001104659-26-123183-index.htm"
-  },
-  {
-   "time": "2026-11-05T16:36:25Z",
-   "form": "10-Q",
-   "company": "FVCBankcorp, Inc.",
-   "cik": 1675644,
-   "ticker": "FVCB",
-   "role": "Filer",
-   "accession": "0001675644-26-000091",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1675644/000167564426000091/0001675644-26-000091-index.htm"
-  },
-  {
-   "time": "2026-11-05T16:35:13Z",
-   "form": "8-K",
-   "company": "Federal Home Loan Bank of Chicago",
-   "cik": 1331451,
-   "ticker": null,
-   "role": "Filer",
-   "accession": "0001331451-26-000212",
-   "items": [
-    {
-     "item": "2.03",
-     "meaning": "New debt"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1331451/000133145126000212/0001331451-26-000212-index.htm"
   }
  ]
 }
