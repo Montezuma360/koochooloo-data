@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T22:55:53Z",
+ "updated": "2026-11-06T23:05:42Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-06T23:01:58Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "HCA Healthcare, Inc.",
+   "cik": 860730,
+   "ticker": "HCA",
+   "role": "Subject",
+   "accession": "0001140361-26-042524",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/860730/000114036126042524/0001140361-26-042524-index.htm"
+  },
+  {
    "time": "2026-11-06T22:30:03Z",
    "form": "SCHEDULE 13D/A",
    "company": "Hyatt Hotels Corp",
@@ -2860,6 +2872,30 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-06T23:01:58Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Frisco Holding II",
+   "cik": 1433317,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001140361-26-042524",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1433317/000114036126042524/0001140361-26-042524-index.htm"
+  },
+  {
+   "time": "2026-11-06T23:01:58Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "HCA Healthcare, Inc.",
+   "cik": 860730,
+   "ticker": "HCA",
+   "role": "Subject",
+   "accession": "0001140361-26-042524",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/860730/000114036126042524/0001140361-26-042524-index.htm"
+  },
   {
    "time": "2026-11-06T22:30:32Z",
    "form": "10-Q",
@@ -15851,30 +15887,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000155/0001047862-26-000155-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:41:03Z",
-   "form": "10-Q",
-   "company": "FULL HOUSE RESORTS INC",
-   "cik": 891482,
-   "ticker": "FLL",
-   "role": "Filer",
-   "accession": "0000891482-26-000050",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/891482/000089148226000050/0000891482-26-000050-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:40:59Z",
-   "form": "10-Q",
-   "company": "LAGO Evergreen Credit",
-   "cik": 2043759,
-   "ticker": null,
-   "role": "Filer",
-   "accession": "0001193125-26-450024",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2043759/000119312526450024/0001193125-26-450024-index.htm"
   }
  ]
 }
