@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T10:21:25Z",
+ "updated": "2026-11-06T14:56:18Z",
  "source": "BLS, ONS, Bank of England, ECB (official statistics)",
  "series": {
   "uk_cpi_annual_pct": {
@@ -2634,14 +2634,10 @@
    "inflation_annual_pct": 3.74
   },
   "us_unemployment_pct": {
-   "latest": "2026-09",
-   "value": 4.2,
-   "previous": 4.1,
+   "latest": "2026-10",
+   "value": 4.1,
+   "previous": 4.2,
    "history": [
-    [
-     "2024-10",
-     4.1
-    ],
     [
      "2024-11",
      4.2
@@ -2733,18 +2729,18 @@
     [
      "2026-09",
      4.2
+    ],
+    [
+     "2026-10",
+     4.1
     ]
    ]
   },
   "us_payrolls_thousands": {
-   "latest": "2026-09",
-   "value": 159044.0,
-   "previous": 159015.0,
+   "latest": "2026-10",
+   "value": 159293.0,
+   "previous": 159128.0,
    "history": [
-    [
-     "2024-10",
-     157945.0
-    ],
     [
      "2024-11",
      158079.0
@@ -2831,24 +2827,24 @@
     ],
     [
      "2026-08",
-     159015.0
+     159068.0
     ],
     [
      "2026-09",
-     159044.0
+     159128.0
+    ],
+    [
+     "2026-10",
+     159293.0
     ]
    ],
-   "jobs_added_thousands": 29.0
+   "jobs_added_thousands": 165.0
   },
   "us_avg_hourly_earnings": {
-   "latest": "2026-09",
-   "value": 37.81,
-   "previous": 37.76,
+   "latest": "2026-10",
+   "value": 38.0,
+   "previous": 37.86,
    "history": [
-    [
-     "2024-10",
-     35.46
-    ],
     [
      "2024-11",
      35.6
@@ -2939,7 +2935,11 @@
     ],
     [
      "2026-09",
-     37.81
+     37.86
+    ],
+    [
+     "2026-10",
+     38.0
     ]
    ]
   }

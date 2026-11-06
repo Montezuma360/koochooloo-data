@@ -1,22 +1,22 @@
 {
- "updated": "2026-11-06T14:05:53Z",
+ "updated": "2026-11-06T14:56:18Z",
  "source": "mempool.space",
  "bitcoin": {
-  "block_height": 974813,
+  "block_height": 974817,
   "fees_sat_per_vb": {
-   "fastestFee": 4,
-   "halfHourFee": 4,
+   "fastestFee": 3,
+   "halfHourFee": 3,
    "hourFee": 3,
    "economyFee": 2,
    "minimumFee": 1
   },
-  "mempool_tx": 62479,
-  "mempool_vsize_mb": 21.01,
-  "mempool_fees_btc": 0.0985,
-  "hashrate_eh_s": 1040.7,
+  "mempool_tx": 61800,
+  "mempool_vsize_mb": 21.06,
+  "mempool_fees_btc": 0.0915,
+  "hashrate_eh_s": 1037.1,
   "difficulty": 148364561003867.4,
-  "next_difficulty_change_pct": -3.13,
-  "next_retarget_in_blocks": 931
+  "next_difficulty_change_pct": -3.21,
+  "next_retarget_in_blocks": 927
  },
  "ethereum": "add ETHERSCAN_KEY secret to switch on"
 }
