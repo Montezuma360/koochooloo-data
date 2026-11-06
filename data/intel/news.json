@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T23:58:01Z",
+ "updated": "2026-11-06T01:32:57Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 20,
+  "Yahoo Finance": 19,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 37,
@@ -22,39 +22,39 @@
  "most_mentioned_24h": [
   [
    "NVDA",
-   18
+   20
   ],
   [
    "GOOGL",
    11
   ],
   [
-   "TSLA",
+   "BTC",
    10
+  ],
+  [
+   "TSLA",
+   9
   ],
   [
    "MSFT",
-   10
+   8
   ],
   [
    "AMZN",
-   8
-  ],
-  [
-   "BTC",
-   8
-  ],
-  [
-   "AMD",
-   6
+   7
   ],
   [
    "AAPL",
    6
   ],
   [
+   "AMD",
+   5
+  ],
+  [
    "BRK.B",
-   4
+   3
   ],
   [
    "META",
@@ -65,6 +65,18 @@
    3
   ],
   [
+   "XRP",
+   2
+  ],
+  [
+   "AVGO",
+   2
+  ],
+  [
+   "PLTR",
+   2
+  ],
+  [
    "ORCL",
    2
   ],
@@ -73,15 +85,7 @@
    2
   ],
   [
-   "PLTR",
-   1
-  ],
-  [
-   "AVGO",
-   1
-  ],
-  [
-   "XRP",
+   "COST",
    1
   ],
   [
@@ -91,12 +95,263 @@
  ],
  "items": [
   {
+   "time": "2026-11-06T01:30:00Z",
+   "source": "CoinDesk",
+   "title": "Bitcoin developer proposes \u2018landmines\u2019 to make quantum thieves lose their own BTC",
+   "link": "https://www.coindesk.com/tech/2026/11/05/bitcoin-developer-proposes-landmines-to-make-quantum-thieves-lose-their-own-btc",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-06T01:20:00Z",
+   "source": "Yahoo Finance",
+   "title": "Prediction: This Is How Much XRP Will Be Worth by the End of 2030",
+   "link": "https://www.fool.com/investing/2026/11/05/prediction-this-is-how-much-xrp-will-be-worth-by-t/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "XRP"
+   ]
+  },
+  {
+   "time": "2026-11-06T01:18:01Z",
+   "source": "Yahoo Finance",
+   "title": "Dow Jones Futures Fall, Techs Bounce After Nasdaq Dives 5.5%; Nvidia, Sandisk, CoreWeave, SpaceX Plunge",
+   "link": "https://finance.yahoo.com/m/0cd2227b-7753-3d54-a8c5-286efe82ac39/dow-jones-futures-fall%2C-techs.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T01:15:00Z",
+   "source": "Yahoo Finance",
+   "title": "Prediction: This Will Be SpaceX's Stock Price by the End of 2029",
+   "link": "https://www.fool.com/investing/2026/11/05/prediction-this-will-be-spacexs-stock-price-by-the/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:12:38Z",
+   "source": "Investing.com",
+   "title": "Asia stocks crumble after AI rout rocks US markets",
+   "link": "https://www.investing.com/news/economy-news/asia-stocks-to-drop-after-ai-rout-rocks-us-markets-5006125",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:12:25Z",
+   "source": "Investing.com",
+   "title": "Analysts and investors react to AI market rout",
+   "link": "https://www.investing.com/news/stock-market-news/analysts-and-investors-react-to-ai-market-rout-5006243",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:11:35Z",
+   "source": "CNBC",
+   "title": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank, TSMC tumble",
+   "link": "https://www.cnbc.com/2026/11/06/tech-stocks-sk-hynix-samsung-softbank.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:10:02Z",
+   "source": "Yahoo Finance",
+   "title": "The Nasdaq Composite Just Shattered Its Single-Session Point-Loss Record: 3 Reasons These Elevator-Down Moves May Be Just Beginning",
+   "link": "https://www.fool.com/investing/2026/11/05/nasdaq-composite-shattered-single-session-point-loss-record-3-reasons-elevator-down-moves-just-beginning/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:08:07Z",
+   "source": "Investing.com",
+   "title": "U.S. stock futures rise after AI rout batters Wall St; payrolls data in focus",
+   "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:07:59Z",
+   "source": "Yahoo Finance",
+   "title": "Purple Innovation Inc (PRPL) Q3 2026 Earnings Call Highlights: Cash Flow Turns Positive as ...",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/purple-innovation-inc-prpl-q3-010759073.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:05:55Z",
+   "source": "Investing.com",
+   "title": "Cathie Wood\u2019s ARK sells Broadcom stock, buys Nvidia and SpaceX",
+   "link": "https://www.investing.com/news/company-news/cathie-woods-ark-sells-broadcom-stock-buys-nvidia-and-spacex-93CH-5006238",
+   "kind": "markets",
+   "tags": [
+    "AVGO",
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T01:05:14Z",
+   "source": "Investing.com",
+   "title": "Hyatt\u2019s Mark Vondrasek sells $962,513 in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/hyatts-mark-vondrasek-sells-962513-in-stock-93CH-5006237",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:05:09Z",
+   "source": "Investing.com",
+   "title": "Orange County Bancorp regional president Ruhl sells $77,439 in shares.",
+   "link": "https://www.investing.com/news/insider-trading-news/orange-county-bancorp-regional-president-ruhl-sells-77439-in-shares-93CH-5006236",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:04:23Z",
+   "source": "Investing.com",
+   "title": "National HealthCare declares 67 cent quarterly dividend",
+   "link": "https://www.investing.com/news/company-news/national-healthcare-declares-67-cent-quarterly-dividend-93CH-5006234",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:01:09Z",
+   "source": "Investing.com",
+   "title": "GATX president and CEO Robert Lyons sells $2.28 million in shares",
+   "link": "https://www.investing.com/news/insider-trading-news/gatx-president-and-ceo-robert-lyons-sells-228-million-in-shares-93CH-5006227",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:01:05Z",
+   "source": "Investing.com",
+   "title": "Veralto svp, pqi Mattias Bystrom sells $1.05M in common stock",
+   "link": "https://www.investing.com/news/insider-trading-news/veralto-svp-pqi-mattias-bystrom-sells-105m-in-common-stock-93CH-5006225",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:01:02Z",
+   "source": "Investing.com",
+   "title": "Glaukos director Gilbert Kliman sells $632,500 in shares",
+   "link": "https://www.investing.com/news/insider-trading-news/glaukos-director-gilbert-kliman-sells-632500-in-shares-93CH-5006224",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T01:00:30Z",
+   "source": "Yahoo Finance",
+   "title": "S&P 500, Nasdaq, Dow Futures Dip As Investors Step Back From AI And Tech With Nasdaq In Correction Territory \u2014 NVDA, AAPL, UBER, SOXX In Focus",
+   "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-futures-dip-as-investors-step-back-from-ai-and-tech-with-nasdaq-in-correction-territory-nvda-aapl-uber-soxx-in-focus/cNGlIylR94A?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T00:54:24Z",
+   "source": "Yahoo Finance",
+   "title": "Zero To Sixty: Fort Worth Gets Tesla Robotaxi While UBS Upgrades Rivian And Citigroup Shuffles EV Holdings",
+   "link": "https://stocktwits.com/news-articles/markets/equity/zero-to-sixty-fort-worth-gets-tesla-robotaxi-while-ubs-upgrades-rivian-and-citigroup-shuffles-ev-holdings/cNGl4ABR94q?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
+  {
+   "time": "2026-11-06T00:50:48Z",
+   "source": "CNBC",
+   "title": "Friday's big stock stories: What\u2019s likely to move the market in the next trading session",
+   "link": "https://www.cnbc.com/2026/11/05/fridays-big-stock-stories-whats-likely-to-move-the-market.html",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T00:50:25Z",
+   "source": "Yahoo Finance",
+   "title": "GE Vernova Is Up 18% in 2026 After Three Guidance Raises: Take Profits, or Buy More?",
+   "link": "https://www.tikr.com/blog/ge-vernova-is-up-18-in-2026-after-three-guidance-raises-take-profits-or-buy-more?ref=yahoofinance&tlnk=yf-261105-wg2jv6gx&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T00:50:01Z",
+   "source": "Yahoo Finance",
+   "title": "Is Appian a Buy After Its Latest Earnings Report?",
+   "link": "https://www.fool.com/investing/2026/11/05/is-appian-a-buy-after-its-latest-earnings-report/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T00:45:56Z",
+   "source": "Yahoo Finance",
+   "title": "Why Krispy Kreme Stock Crushed It Today",
+   "link": "https://www.fool.com/investing/2026/11/05/why-krispy-kreme-stock-crushed-it-today/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T00:19:49Z",
+   "source": "Cointelegraph",
+   "title": "Core Scientific to quit Bitcoin mining by year-end as AI business surges",
+   "link": "https://cointelegraph.com/news/core-scientific-to-quit-bitcoin-mining-by-year-end-as-ai-business-surges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "kind": "crypto",
+   "tags": [
+    "BTC"
+   ]
+  },
+  {
+   "time": "2026-11-06T00:14:32Z",
+   "source": "Yahoo Finance",
+   "title": "Box Unveils AI Agent Tools and NVIDIA Partnership at BoxWorks 2026",
+   "link": "https://www.marketbeat.com/instant-alerts/event-box-unveils-ai-agent-tools-and-nvidia-partnership-at-boxworks-2026-2026-11-05/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-06T00:09:51Z",
+   "source": "Yahoo Finance",
+   "title": "Nvidia Stock Just Crashed 22%. Jim Cramer Says It\u2019s the Cheapest in a Decade",
+   "link": "https://247wallst.com/investing/2026/11/05/nvidia-stock-just-crashed-22-jim-cramer-says-its-the-cheapest-in-a-decade/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "time": "2026-11-06T00:05:00Z",
+   "source": "Yahoo Finance",
+   "title": "Palantir Is Down 16% From Its High. History Suggests This Is What Happens Next.",
+   "link": "https://www.fool.com/investing/2026/11/05/palantir-is-down-16-from-its-high-history-suggests/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "PLTR"
+   ]
+  },
+  {
+   "time": "2026-11-06T00:00:10Z",
+   "source": "Yahoo Finance",
+   "title": "Strawberry Fields REIT, Inc. (STRW) Q3 FFO and Revenues Lag Estimates",
+   "link": "https://finance.yahoo.com/real-estate/articles/strawberry-fields-reit-inc-strw-000010117.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-05T23:56:36Z",
    "source": "CNBC",
    "title": "Stock futures fall after Nasdaq slips into correction; traders await big payrolls report: Live updates",
    "link": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html",
    "kind": "markets",
    "tags": []
+  },
+  {
+   "time": "2026-11-05T23:56:24Z",
+   "source": "CNBC",
+   "title": "Costco is taking aim at its May record high \u2014 how it got here and where's it going",
+   "link": "https://www.cnbc.com/investingclub/2026/11/05/costco-is-taking-aim-at-its-may-record-high-how-it-got-here-and-wheres-going.html",
+   "kind": "markets",
+   "tags": [
+    "COST"
+   ]
   },
   {
    "time": "2026-11-05T23:54:44Z",
@@ -109,10 +364,26 @@
    ]
   },
   {
+   "time": "2026-11-05T23:52:15Z",
+   "source": "Yahoo Finance",
+   "title": "Amylyx Pharmaceuticals, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-amylyx-pharmaceuticals-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-05T23:50:00Z",
    "source": "MarketWatch",
    "title": "Cloudflare\u2019s stock mounts a big comeback after fastest sales surge in nearly 4 years",
    "link": "https://www.marketwatch.com/story/cloudflares-stock-mounts-a-big-comeback-after-fastest-sales-surge-in-nearly-4-years-d80d994d?mod=mw_rss_topstories",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T23:49:18Z",
+   "source": "Yahoo Finance",
+   "title": "Evolent Health, Inc. Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-evolent-health-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
    "kind": "markets",
    "tags": []
   },
@@ -149,10 +420,26 @@
    "tags": []
   },
   {
+   "time": "2026-11-05T23:45:32Z",
+   "source": "Yahoo Finance",
+   "title": "Duke Energy Corporation Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-duke-energy-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-05T23:45:31Z",
    "source": "Yahoo Finance",
    "title": "Democrats Eye New Wealth Taxes, Even as California Ballot Initiative Falters",
    "link": "https://finance.yahoo.com/economy/policy/articles/democrats-eye-wealth-taxes-even-234531855.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-05T23:45:31Z",
+   "source": "Yahoo Finance",
+   "title": "The Middleby Corporation Q3 2026 Earnings Call Summary",
+   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-the-middleby-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
    "kind": "markets",
    "tags": []
   },
@@ -344,6 +631,14 @@
    "tags": [
     "AMD"
    ]
+  },
+  {
+   "time": "2026-11-05T23:17:51Z",
+   "source": "CNBC",
+   "title": "Jim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash",
+   "link": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-sell-off.html",
+   "kind": "markets",
+   "tags": []
   },
   {
    "time": "2026-11-05T23:06:02Z",
@@ -3182,294 +3477,6 @@
    "link": "https://www.theblock.co/news/business/2026-11-05-anchorage-digital-seeks-cftc-swap-dealer-registration-for-crypto-options-business-434437",
    "kind": "crypto",
    "tags": []
-  },
-  {
-   "time": "2026-11-05T16:00:01Z",
-   "source": "CNBC",
-   "title": "This stock that sold off in the 'SaasPocalypse' is back at all-time highs. How Josh Brown is trading",
-   "link": "https://www.cnbc.com/2026/11/05/this-stock-that-sold-off-in-the-saaspocalypse-is-back-at-all-time-highs-how-josh-brown-is-trading.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T16:00:00Z",
-   "source": "Yahoo Finance",
-   "title": "Scout Clean Energy\u2019s Nimbus Wind Farm Achieves Commercial Operations, Supporting Microsoft\u2019s Clean Energy Portfolio",
-   "link": "https://finance.yahoo.com/energy/articles/scout-clean-energy-nimbus-wind-160000329.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "MSFT"
-   ]
-  },
-  {
-   "time": "2026-11-05T16:00:00Z",
-   "source": "Federal Reserve",
-   "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-   "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
-   "kind": "official",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:58:48Z",
-   "source": "Yahoo Finance",
-   "title": "Are Big Tech stock buybacks officially dead?",
-   "link": "https://finance.yahoo.com/video/are-big-tech-stock-buybacks-officially-dead-155848546.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:56:40Z",
-   "source": "Yahoo Finance",
-   "title": "NVDA vs AMD: which stock has the better bounce setup",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/nvda-vs-amd-stock-better-155640375.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "time": "2026-11-05T15:52:00Z",
-   "source": "Yahoo Finance",
-   "title": "Digital Transformation in Manufacturing - Global Strategic Business Report: Capitalize on a US$1.0 Trillion Market by 2030 as Siemens, ABB, Microsoft, Rockwell Automation and SAP Reshape Industry",
-   "link": "https://finance.yahoo.com/technology/articles/digital-transformation-manufacturing-global-strategic-155200478.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "MSFT"
-   ]
-  },
-  {
-   "time": "2026-11-05T15:51:40Z",
-   "source": "Yahoo Finance",
-   "title": "China\u2019s Moonshot AI seeks Nvidia Blackwell access in Europe, CNBC reports",
-   "link": "https://finance.yahoo.com/technology/ai/articles/china-moonshot-ai-seeks-nvidia-155140723.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-05T15:36:50Z",
-   "source": "The Block",
-   "title": "Payward-affiliated fund and clients buy AAVE token stake on secondary market",
-   "link": "https://www.theblock.co/news/business/2026-11-05-payward-affiliated-fund-clients-buy-aave-token-stake-secondary-market-aave-says-434798",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:34:55Z",
-   "source": "CNBC",
-   "title": "Expedia CEO says AI agents aren't changing booking habits \u2014 yet",
-   "link": "https://www.cnbc.com/2026/11/05/expedia-ai-agents-booking-habits.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:26:06Z",
-   "source": "CNBC",
-   "title": "Bomb threats disrupt flights across Europe for the second time. Here\u2019s what we know",
-   "link": "https://www.cnbc.com/2026/11/05/bomb-threats-flights-europe.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:24:47Z",
-   "source": "CNBC",
-   "title": "Qualcomm slides 9% after earnings, leading postelection chip stock sell-off",
-   "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:16:10Z",
-   "source": "CNBC",
-   "title": "Three tax proposals targeting the rich that the new Congress could revive",
-   "link": "https://www.cnbc.com/2026/11/05/three-tax-proposals-targeting-the-rich-the-new-congress-could-revive.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:16:05Z",
-   "source": "CNBC",
-   "title": "Barkin sees interest rate hikes ahead, but at a gradual pace",
-   "link": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:15:56Z",
-   "source": "Investing.com",
-   "title": "Why is Direxion Daily Semiconductor Bull 3X Shares plummeting today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-direxion-daily-semiconductor-bull-3x-shares-plummeting-today-93CH-5005035",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:15:49Z",
-   "source": "Investing.com",
-   "title": "Ionq stock hits 52-week low at 25.86 USD",
-   "link": "https://www.investing.com/news/company-news/ionq-stock-hits-52week-low-at-2586-usd-93CH-5005034",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:14:07Z",
-   "source": "Investing.com",
-   "title": "Why is MercadoLibre stock plunging today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-mercadolibre-stock-plunging-today-93CH-5005033",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:12:17Z",
-   "source": "Investing.com",
-   "title": "Advanced Energy Industries stock hits 52-week low at $187.70",
-   "link": "https://www.investing.com/news/company-news/advanced-energy-industries-stock-hits-52week-low-at-18770-93CH-5005032",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:12:11Z",
-   "source": "Investing.com",
-   "title": "Bgc Group earnings beat by $0.01, revenue topped estimates",
-   "link": "https://www.investing.com/news/earnings/bgc-group-earnings-beat-by-001-revenue-topped-estimates-5005031",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:11:55Z",
-   "source": "Investing.com",
-   "title": "Why is SanDisk stock tumbling today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-sandisk-stock-tumbling-today-93CH-5005030",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:11:18Z",
-   "source": "Investing.com",
-   "title": "AMSC stock hits 52-week low at 23.93 USD",
-   "link": "https://www.investing.com/news/company-news/amsc-stock-hits-52week-low-at-2393-usd-93CH-5005029",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:11:03Z",
-   "source": "Investing.com",
-   "title": "Why is SPDR S&P 500 ETF Trust sliding today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-spdr-sp-500-etf-trust-sliding-today-93CH-5005028",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:10:03Z",
-   "source": "Investing.com",
-   "title": "Morocco stocks higher at close of trade; Moroccan All Shares up 2.47%",
-   "link": "https://www.investing.com/news/stock-market-news/morocco-stocks-higher-at-close-of-trade-moroccan-all-shares-up-247-5005027",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:10:00Z",
-   "source": "Yahoo Finance",
-   "title": "Bluehost Brings AI to Life for Small Businesses Worldwide",
-   "link": "https://finance.yahoo.com/small-business/articles/bluehost-brings-ai-life-small-151000615.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:09:44Z",
-   "source": "Investing.com",
-   "title": "Nextdoor Holdings earnings matched, revenue topped estimates",
-   "link": "https://www.investing.com/news/earnings/nextdoor-holdings-earnings-matched-revenue-topped-estimates-5005026",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:07:47Z",
-   "source": "Yahoo Finance",
-   "title": "Elon Musk faces a new $28.5 trillion problem after Texas upset",
-   "link": "https://finance.yahoo.com/technology/ai/articles/elon-musk-faces-28-5-150747509.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:05:11Z",
-   "source": "Yahoo Finance",
-   "title": "Arm Stock Plunges -- Smartphone Business Delivers a Major Disappointment",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/arm-stock-plunges-smartphone-business-150511881.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:05:01Z",
-   "source": "Yahoo Finance",
-   "title": "Is Host Hotels & Resorts a Buy After Its Latest Earnings Report?",
-   "link": "https://www.fool.com/investing/2026/11/05/is-host-hotels-resorts-a-buy-after-its-latest-earnings-report/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:05:00Z",
-   "source": "Yahoo Finance",
-   "title": "Prediction: Berkshire Hathaway Stock Tops $700 a Share Before the End of 2030",
-   "link": "https://www.fool.com/investing/2026/11/05/prediction-berkshire-hathaway-stock-tops-700-share/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "BRK.B"
-   ]
-  },
-  {
-   "time": "2026-11-05T15:04:27Z",
-   "source": "Yahoo Finance",
-   "title": "SpaceX and Tesla stocks extend their slide as chip stocks drop: AlphaCheck",
-   "link": "https://finance.yahoo.com/markets/article/spacex-tesla-shares-extend-declines-semiconductor-stocks-drop-alphacheck-150427180.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-05T15:04:21Z",
-   "source": "Yahoo Finance",
-   "title": "Toyota sees stock upswing after raising full-year guidance",
-   "link": "https://finance.yahoo.com/video/toyota-sees-stock-upswing-after-raising-full-year-guidance-150421407.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:04:08Z",
-   "source": "Yahoo Finance",
-   "title": "Data Center Construction Starts Lag 6 Months Behind, Report Says",
-   "link": "https://finance.yahoo.com/m/76a2c085-c8d7-3e24-9b16-f0eb604ab8ef/data-center-construction.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:03:12Z",
-   "source": "Yahoo Finance",
-   "title": "Amazon Is Winning the AI Race in the Cloud. Here\u2019s What Investors Need to Watch Next.",
-   "link": "https://247wallst.com/investing/2026/11/05/amazon-is-winning-the-ai-race-in-the-cloud-heres-what-investors-need-to-watch-next/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMZN"
-   ]
-  },
-  {
-   "time": "2026-11-05T15:03:09Z",
-   "source": "Yahoo Finance",
-   "title": "Wall Street Is Being Asked to Take Part of SpaceX\u2019s $40 Billion AI Bet",
-   "link": "https://247wallst.com/investing/2026/11/05/wall-street-is-being-asked-to-take-part-of-spacexs-40-billion-ai-bet/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-05T15:01:32Z",
-   "source": "Yahoo Finance",
-   "title": "Tesla Optimus Rival Agility Robotics Begins Trading After SPAC Merger",
-   "link": "https://finance.yahoo.com/m/d7c384d4-af62-3dae-a383-dac5c15508c9/tesla-optimus-rival-agility.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
   }
  ]
 }
