@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T23:16:00Z",
+ "updated": "2026-11-06T23:40:54Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-06T23:38:15Z",
+   "form": "SCHEDULE 13D",
+   "company": "Aspen Neuroscience, Inc.",
+   "cik": 2124080,
+   "ticker": "ASPE",
+   "role": "Subject",
+   "accession": "0000947871-26-000996",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2124080/000094787126000996/0000947871-26-000996-index.htm"
+  },
+  {
    "time": "2026-11-06T23:15:25Z",
    "form": "SCHEDULE 13D/A",
    "company": "MADRIGAL PHARMACEUTICALS, INC.",
@@ -2896,6 +2908,30 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-06T23:38:15Z",
+   "form": "SCHEDULE 13D",
+   "company": "Aspen Neuroscience, Inc.",
+   "cik": 2124080,
+   "ticker": "ASPE",
+   "role": "Subject",
+   "accession": "0000947871-26-000996",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2124080/000094787126000996/0000947871-26-000996-index.htm"
+  },
+  {
+   "time": "2026-11-06T23:38:15Z",
+   "form": "SCHEDULE 13D",
+   "company": "ORBIMED ADVISORS LLC",
+   "cik": 1055951,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000947871-26-000996",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1055951/000094787126000996/0000947871-26-000996-index.htm"
+  },
   {
    "time": "2026-11-06T23:15:25Z",
    "form": "SCHEDULE 13D/A",
@@ -15869,48 +15905,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/761648/000076164826000033/0000761648-26-000033-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:43:19Z",
-   "form": "8-K",
-   "company": "Ellington Financial Inc.",
-   "cik": 1411342,
-   "ticker": "EFC",
-   "role": "Filer",
-   "accession": "0001628280-26-071139",
-   "items": [
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1411342/000162828026071139/0001628280-26-071139-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:42:51Z",
-   "form": "8-K",
-   "company": "Otis Worldwide Corp",
-   "cik": 1781335,
-   "ticker": "OTIS",
-   "role": "Filer",
-   "accession": "0001140361-26-042122",
-   "items": [
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1781335/000114036126042122/0001140361-26-042122-index.htm"
   }
  ]
 }
