@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T23:05:42Z",
+ "updated": "2026-11-06T23:16:00Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,30 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-06T23:15:25Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "MADRIGAL PHARMACEUTICALS, INC.",
+   "cik": 1157601,
+   "ticker": "MDGL",
+   "role": "Subject",
+   "accession": "0001104659-26-124003",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1157601/000110465926124003/0001104659-26-124003-index.htm"
+  },
+  {
+   "time": "2026-11-06T23:11:51Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "NRC HEALTH",
+   "cik": 70487,
+   "ticker": "NRC",
+   "role": "Subject",
+   "accession": "0001008886-26-000231",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/70487/000100888626000231/0001008886-26-000231-index.htm"
+  },
+  {
    "time": "2026-11-06T23:01:58Z",
    "form": "SCHEDULE 13D/A",
    "company": "HCA Healthcare, Inc.",
@@ -2872,6 +2896,54 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-06T23:15:25Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "BAKER BROS. ADVISORS LP",
+   "cik": 1263508,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001104659-26-124003",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1263508/000110465926124003/0001104659-26-124003-index.htm"
+  },
+  {
+   "time": "2026-11-06T23:15:25Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "MADRIGAL PHARMACEUTICALS, INC.",
+   "cik": 1157601,
+   "ticker": "MDGL",
+   "role": "Subject",
+   "accession": "0001104659-26-124003",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1157601/000110465926124003/0001104659-26-124003-index.htm"
+  },
+  {
+   "time": "2026-11-06T23:11:51Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Common Property Trust",
+   "cik": 1847052,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001008886-26-000231",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1847052/000100888626000231/0001008886-26-000231-index.htm"
+  },
+  {
+   "time": "2026-11-06T23:11:51Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "NRC HEALTH",
+   "cik": 70487,
+   "ticker": "NRC",
+   "role": "Subject",
+   "accession": "0001008886-26-000231",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/70487/000100888626000231/0001008886-26-000231-index.htm"
+  },
   {
    "time": "2026-11-06T23:01:58Z",
    "form": "SCHEDULE 13D/A",
@@ -15839,54 +15911,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1781335/000114036126042122/0001140361-26-042122-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:42:47Z",
-   "form": "10-Q",
-   "company": "Serve Robotics Inc. /DE/",
-   "cik": 1832483,
-   "ticker": "SERV",
-   "role": "Filer",
-   "accession": "0001832483-26-000051",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1832483/000183248326000051/0001832483-26-000051-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:42:15Z",
-   "form": "10-Q",
-   "company": "Bank of Marin Bancorp",
-   "cik": 1403475,
-   "ticker": "BMRC",
-   "role": "Filer",
-   "accession": "0001403475-26-000045",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1403475/000140347526000045/0001403475-26-000045-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:42:09Z",
-   "form": "10-Q",
-   "company": "WYNN RESORTS LTD",
-   "cik": 1174922,
-   "ticker": "WYNN",
-   "role": "Filer",
-   "accession": "0001174922-26-000079",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000079/0001174922-26-000079-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:41:04Z",
-   "form": "10-Q",
-   "company": "CONSOLIDATED EDISON INC",
-   "cik": 1047862,
-   "ticker": "ED",
-   "role": "Filer",
-   "accession": "0001047862-26-000155",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000155/0001047862-26-000155-index.htm"
   }
  ]
 }
