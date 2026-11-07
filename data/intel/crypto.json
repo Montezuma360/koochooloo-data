@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T01:20:52Z",
+ "updated": "2026-11-07T01:24:36Z",
  "source": "CoinGecko, Kraken, Coinbase, Binance (market-data API)",
  "coingecko_updated": "2026-11-07T01:20:52Z",
  "global": {
@@ -14,7 +14,7 @@
    "rank": 1,
    "symbol": "BTC",
    "name": "Bitcoin",
-   "price": 75776.2,
+   "price": 75823.7,
    "market_cap": 1524227306885,
    "volume_24h": 28391436224,
    "change_1h_pct": 0.07,
@@ -25,7 +25,7 @@
    "rank": 2,
    "symbol": "ETH",
    "name": "Ethereum",
-   "price": 2238.56,
+   "price": 2241.4,
    "market_cap": 273622821012,
    "volume_24h": 10223932496,
    "change_1h_pct": 0.09,
@@ -80,7 +80,7 @@
    "rank": 7,
    "symbol": "SOL",
    "name": "Solana",
-   "price": 90.17,
+   "price": 90.26,
    "market_cap": 53297671468,
    "volume_24h": 2293090785,
    "change_1h_pct": 0.1,
@@ -1190,31 +1190,31 @@
  ],
  "exchange_prices": {
   "kraken": {
-   "ETH": 2238.36,
-   "SOL": 90.17,
-   "BTC": 75776.2
+   "ETH": 2241.4,
+   "SOL": 90.26,
+   "BTC": 75823.7
   },
   "coinbase": {
-   "BTC": 75770.72,
-   "ETH": 2238.56,
-   "SOL": 90.17
+   "BTC": 75815.33,
+   "ETH": 2241.12,
+   "SOL": 90.25
   },
   "binance": {
-   "BTC": 75879.33,
-   "ETH": 2242.02,
-   "SOL": 90.29
+   "BTC": 75920.01,
+   "ETH": 2244.49,
+   "SOL": 90.39
   }
  },
  "exchange_spread_pct": {
-  "BTC": 0.143,
-  "ETH": 0.164,
-  "SOL": 0.133
+  "BTC": 0.138,
+  "ETH": 0.15,
+  "SOL": 0.155
  },
  "live_prices": {
-  "t": "2026-11-07T01:20:52Z",
+  "t": "2026-11-07T01:24:36Z",
   "source": "median of Kraken, Coinbase and Binance",
-  "BTC": 75776.2,
-  "ETH": 2238.56,
-  "SOL": 90.17
+  "BTC": 75823.7,
+  "ETH": 2241.4,
+  "SOL": 90.26
  }
 }
