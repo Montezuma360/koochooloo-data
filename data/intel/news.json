@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T04:45:50Z",
+ "updated": "2026-11-07T04:50:52Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -12,14 +12,13 @@
   "Cointelegraph": 30,
   "Decrypt": 39,
   "The Block": 20,
+  "Federal Reserve": 20,
   "SEC": 25,
   "ECB": 15,
   "Bank of England": 50,
   "FCA": 20
  },
- "feeds_failed": {
-  "Federal Reserve": "<HTTPError 404: 'Not Found'>"
- },
+ "feeds_failed": {},
  "most_mentioned_24h": [
   [
    "TSLA",
