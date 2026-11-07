@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T23:55:47Z",
+ "updated": "2026-11-07T00:25:41Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-07T00:25:01Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Metropolitan Bank Holding Corp.",
+   "cik": 1476034,
+   "ticker": "MCB",
+   "role": "Subject",
+   "accession": "0001104659-26-124019",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1476034/000110465926124019/0001104659-26-124019-index.htm"
+  },
+  {
    "time": "2026-11-06T23:55:02Z",
    "form": "SCHEDULE 13D/A",
    "company": "Vir Biotechnology, Inc.",
@@ -2932,6 +2944,30 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-07T00:25:01Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "PATRIOT FINANCIAL PARTNERS III, L.P.",
+   "cik": 1703298,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001104659-26-124019",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1703298/000110465926124019/0001104659-26-124019-index.htm"
+  },
+  {
+   "time": "2026-11-07T00:25:01Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Metropolitan Bank Holding Corp.",
+   "cik": 1476034,
+   "ticker": "MCB",
+   "role": "Subject",
+   "accession": "0001104659-26-124019",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1476034/000110465926124019/0001104659-26-124019-index.htm"
+  },
   {
    "time": "2026-11-06T23:55:02Z",
    "form": "SCHEDULE 13D/A",
@@ -15865,35 +15901,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1489393/000119312526450035/0001193125-26-450035-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:44:42Z",
-   "form": "10-Q",
-   "company": "Five9, Inc.",
-   "cik": 1288847,
-   "ticker": "FIVN",
-   "role": "Filer",
-   "accession": "0001288847-26-000145",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1288847/000128884726000145/0001288847-26-000145-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:44:38Z",
-   "form": "8-K",
-   "company": "Krispy Kreme, Inc.",
-   "cik": 1857154,
-   "ticker": "DNUT",
-   "role": "Filer",
-   "accession": "0001857154-26-000057",
-   "items": [
-    {
-     "item": "5.02",
-     "meaning": "Director or executive change"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1857154/000185715426000057/0001857154-26-000057-index.htm"
   }
  ]
 }
