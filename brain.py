@@ -410,7 +410,7 @@ def compact_paper():
                                           "win_pct", "beat_spy_pct")} | {"open": len(v.get("open", []))} for k, v in (p.get("strategies") or {}).items()}
     return {"updated": p.get("updated"), "spy_since_start_pct": p.get("spy_since_start_pct"), "goal": {k: g.get(k) for k in
             ("aim", "leaderboard", "leader", "leader_is_meaningful", "years_to_10000_at_reference_pace", "note")},
-            "strategies": strat, "latest_decisions": (p.get("latest_decisions") or [])[-15:]}
+            "strategies": strat, "latest_decisions": (p.get("latest_decisions") or [])[-40:]}
 
 
 def health_block():
