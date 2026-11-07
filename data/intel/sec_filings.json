@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T01:10:52Z",
+ "updated": "2026-11-07T02:05:47Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,30 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-07T02:00:58Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Resolute Holdings Management, Inc.",
+   "cik": 2039497,
+   "ticker": "RHLD",
+   "role": "Subject",
+   "accession": "0000950142-26-002977",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2039497/000095014226002977/0000950142-26-002977-index.htm"
+  },
+  {
+   "time": "2026-11-07T02:00:33Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "GPGI, Inc.",
+   "cik": 1823144,
+   "ticker": "GPGI",
+   "role": "Subject",
+   "accession": "0000950142-26-002976",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1823144/000095014226002976/0000950142-26-002976-index.htm"
+  },
+  {
    "time": "2026-11-07T01:09:22Z",
    "form": "SCHEDULE 13D/A",
    "company": "Silvia, Inc.",
@@ -2956,6 +2980,54 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-07T02:00:58Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Resolute ManCo Holdings LLC",
+   "cik": 2056592,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000950142-26-002977",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2056592/000095014226002977/0000950142-26-002977-index.htm"
+  },
+  {
+   "time": "2026-11-07T02:00:58Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Resolute Holdings Management, Inc.",
+   "cik": 2039497,
+   "ticker": "RHLD",
+   "role": "Subject",
+   "accession": "0000950142-26-002977",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2039497/000095014226002977/0000950142-26-002977-index.htm"
+  },
+  {
+   "time": "2026-11-07T02:00:33Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Resolute Compo Holdings LLC",
+   "cik": 2037164,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000950142-26-002976",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2037164/000095014226002976/0000950142-26-002976-index.htm"
+  },
+  {
+   "time": "2026-11-07T02:00:33Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "GPGI, Inc.",
+   "cik": 1823144,
+   "ticker": "GPGI",
+   "role": "Subject",
+   "accession": "0000950142-26-002976",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1823144/000095014226002976/0000950142-26-002976-index.htm"
+  },
   {
    "time": "2026-11-07T01:09:22Z",
    "form": "SCHEDULE 13D/A",
@@ -15838,63 +15910,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/2012706/000162828026071144/0001628280-26-071144-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:46:46Z",
-   "form": "10-Q",
-   "company": "Mobia Medical, Inc.",
-   "cik": 1489993,
-   "ticker": "MOBI",
-   "role": "Filer",
-   "accession": "0001193125-26-450041",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1489993/000119312526450041/0001193125-26-450041-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:46:29Z",
-   "form": "10-Q",
-   "company": "Blue Owl Credit Income Corp.",
-   "cik": 1812554,
-   "ticker": null,
-   "role": "Filer",
-   "accession": "0001812554-26-000060",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1812554/000181255426000060/0001812554-26-000060-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:46:27Z",
-   "form": "8-K",
-   "company": "FRIEDMAN INDUSTRIES INC",
-   "cik": 39092,
-   "ticker": "FRD",
-   "role": "Filer",
-   "accession": "0001437749-26-035315",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/39092/000143774926035315/0001437749-26-035315-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:46:14Z",
-   "form": "10-Q",
-   "company": "DXP ENTERPRISES INC",
-   "cik": 1020710,
-   "ticker": "DXPE",
-   "role": "Filer",
-   "accession": "0001628280-26-071141",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1020710/000162828026071141/0001628280-26-071141-index.htm"
   }
  ]
 }
