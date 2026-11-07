@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T01:05:52Z",
+ "updated": "2026-11-07T01:10:52Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-07T01:09:22Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Silvia, Inc.",
+   "cik": 2076163,
+   "ticker": "SVIA",
+   "role": "Subject",
+   "accession": "0001493152-26-050567",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2076163/000149315226050567/0001493152-26-050567-index.htm"
+  },
+  {
    "time": "2026-11-07T00:58:00Z",
    "form": "SCHEDULE 13D",
    "company": "BRASKEM SA",
@@ -2944,6 +2956,30 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-07T01:09:22Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Silvia, Inc.",
+   "cik": 2076163,
+   "ticker": "SVIA",
+   "role": "Subject",
+   "accession": "0001493152-26-050567",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2076163/000149315226050567/0001493152-26-050567-index.htm"
+  },
+  {
+   "time": "2026-11-07T01:09:22Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Pompliano Anthony John III",
+   "cik": 2067990,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001493152-26-050567",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/2067990/000149315226050567/0001493152-26-050567-index.htm"
+  },
   {
    "time": "2026-11-07T00:58:00Z",
    "form": "SCHEDULE 13D",
@@ -15859,48 +15895,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1020710/000162828026071141/0001628280-26-071141-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:45:42Z",
-   "form": "8-K",
-   "company": "PANTAGES CAPITAL ACQUISITION Corp",
-   "cik": 2030829,
-   "ticker": "PGAC",
-   "role": "Filer",
-   "accession": "0001213900-26-116422",
-   "items": [
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2030829/000121390026116422/0001213900-26-116422-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:45:00Z",
-   "form": "8-K",
-   "company": "CVR ENERGY INC",
-   "cik": 1376139,
-   "ticker": "CVI",
-   "role": "Filer",
-   "accession": "0001193125-26-450036",
-   "items": [
-    {
-     "item": "1.01",
-     "meaning": "Major agreement signed"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1376139/000119312526450036/0001193125-26-450036-index.htm"
   }
  ]
 }
