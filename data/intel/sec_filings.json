@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T00:25:41Z",
+ "updated": "2026-11-07T01:01:28Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-07T00:58:00Z",
+   "form": "SCHEDULE 13D",
+   "company": "BRASKEM SA",
+   "cik": 1071438,
+   "ticker": "BAK",
+   "role": "Subject",
+   "accession": "0000921895-26-002956",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1071438/000092189526002956/0000921895-26-002956-index.htm"
+  },
+  {
    "time": "2026-11-07T00:25:01Z",
    "form": "SCHEDULE 13D/A",
    "company": "Metropolitan Bank Holding Corp.",
@@ -2944,6 +2956,30 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-07T00:58:00Z",
+   "form": "SCHEDULE 13D",
+   "company": "HELU CARLOS SLIM",
+   "cik": 1080910,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0000921895-26-002956",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1080910/000092189526002956/0000921895-26-002956-index.htm"
+  },
+  {
+   "time": "2026-11-07T00:58:00Z",
+   "form": "SCHEDULE 13D",
+   "company": "BRASKEM SA",
+   "cik": 1071438,
+   "ticker": "BAK",
+   "role": "Subject",
+   "accession": "0000921895-26-002956",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1071438/000092189526002956/0000921895-26-002956-index.htm"
+  },
   {
    "time": "2026-11-07T00:25:01Z",
    "form": "SCHEDULE 13D/A",
@@ -15877,30 +15913,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1376139/000119312526450036/0001193125-26-450036-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:44:47Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "LYB Holdco LLC",
-   "cik": 1508220,
-   "ticker": null,
-   "role": "Filed by",
-   "accession": "0001193125-26-450035",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1508220/000119312526450035/0001193125-26-450035-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:44:47Z",
-   "form": "SCHEDULE 13D/A",
-   "company": "LyondellBasell Industries N.V.",
-   "cik": 1489393,
-   "ticker": "LYB",
-   "role": "Subject",
-   "accession": "0001193125-26-450035",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1489393/000119312526450035/0001193125-26-450035-index.htm"
   }
  ]
 }
