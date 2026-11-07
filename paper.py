@@ -541,7 +541,8 @@ def main():
         if newd:
             w.writeheader()
         w.writerows(DECISIONS)
-    summ["latest_decisions"] = DECISIONS[-60:]
+    with dfile.open(newline="") as f:  # the last 60 from the whole log, so days without new decisions still show the recent ones
+        summ["latest_decisions"] = list(csv.DictReader(f))[-60:]
     (P / "summary.json").write_text(json.dumps(summ, indent=1, default=str))
     tf = P / "trades.csv"
     if tf.exists():  # upgrade an old file to the current columns
