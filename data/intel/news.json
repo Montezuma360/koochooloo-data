@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T12:50:52Z",
+ "updated": "2026-11-07T12:55:42Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -33,10 +33,6 @@
    10
   ],
   [
-   "MSFT",
-   6
-  ],
-  [
    "AMD",
    5
   ],
@@ -49,11 +45,11 @@
    5
   ],
   [
-   "AMZN",
-   4
+   "MSFT",
+   5
   ],
   [
-   "ORCL",
+   "AMZN",
    4
   ],
   [
@@ -66,6 +62,10 @@
   ],
   [
    "BTC",
+   3
+  ],
+  [
+   "ORCL",
    3
   ],
   [
@@ -98,6 +98,24 @@
    "kind": "markets",
    "tags": [
     "BRK.B"
+   ]
+  },
+  {
+   "time": "2026-11-07T12:42:06Z",
+   "source": "Yahoo Finance",
+   "title": "Some Experts Think TransMedics Group (TMDX) Has a Near-Monopoly on Keeping Donor Organs Alive",
+   "link": "https://finance.yahoo.com/healthcare/articles/experts-think-transmedics-group-tmdx-124206222.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-07T12:41:40Z",
+   "source": "Yahoo Finance",
+   "title": "ON Semiconductor (ON) Is Jeff Brown\u2019s Chip Play on Tesla\u2019s Optimus Robot",
+   "link": "https://finance.yahoo.com/technology/ai/articles/semiconductor-jeff-brown-chip-play-124140081.html?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
    ]
   },
   {
@@ -3417,27 +3435,6 @@
    "link": "https://www.ibtimes.com/semiconductor-stocks-plunge-ai-spending-concerns-3809509?.tsrc=rss",
    "kind": "markets",
    "tags": []
-  },
-  {
-   "time": "2026-11-06T18:46:25Z",
-   "source": "Yahoo Finance",
-   "title": "Update: Market Chatter: Microsoft to Conclude Deal With Oracle for Renting AI Compute",
-   "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-microsoft-conclude-deal-184625120.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "MSFT",
-    "ORCL"
-   ]
-  },
-  {
-   "time": "2026-11-06T18:44:19Z",
-   "source": "Yahoo Finance",
-   "title": "Tesla Stock Rebounds After Brutal Selloff. Musk Has a New Cybercab Plan",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-stock-rebounds-brutal-selloff-184419331.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
   }
  ]
 }
