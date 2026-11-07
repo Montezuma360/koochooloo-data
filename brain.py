@@ -371,7 +371,7 @@ def stocks_block(ev, cache):
 
 # ---------- the rest ----------
 def compact_markets(quotes):
-    idx = {k: quotes[k] for k in ("SPY", "QQQ", "IWM", "DIA", "^VIX", "^FTSE", "^GDAXI", "^N225") if k in quotes}
+    idx = {k: quotes[k] for k in ("SPY", "QQQ", "IWM", "DIA", "^GSPC", "^IXIC", "^VIX", "^FTSE", "^GDAXI", "^N225") if k in quotes}
     sectors = [{k: r.get(k) for k in ("symbol", "sector", "1d", "1w_vs_spy", "1m_vs_spy", "3m_vs_spy")} for r in rows("sector_board.json")]
     ff = [{k: r.get(k) for k in ("symbol", "name", "last", "change_1d_pct", "change_5d_pct")} for r in load("intel/futures_fx.json").get("rows", [])]
     mv = lambda p: [{"symbol": r.get("symbol"), "name": r.get("shortName"), "change_pct": num(r.get("regularMarketChangePercent")),
