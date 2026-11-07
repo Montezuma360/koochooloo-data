@@ -19,6 +19,9 @@ concurrency:
 
 jobs:
   voice:
+    # Only after the 5-minute signals run (which rebuilds the briefing and alerts), not after every 1-minute price refresh:
+    # recording needs fresh signals, and installing the voice every minute wasted a runner and queued up cancelled runs.
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.name == 'Refresh signals and dashboard'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
