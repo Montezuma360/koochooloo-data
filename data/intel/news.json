@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T12:05:43Z",
+ "updated": "2026-11-07T12:15:51Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 20,
+  "Yahoo Finance": 19,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 39,
@@ -45,15 +45,15 @@
    5
   ],
   [
-   "BTC",
-   5
-  ],
-  [
    "META",
    5
   ],
   [
    "AMZN",
+   4
+  ],
+  [
+   "BTC",
    4
   ],
   [
@@ -91,6 +91,30 @@
  ],
  "items": [
   {
+   "time": "2026-11-07T12:12:45Z",
+   "source": "Benzinga",
+   "title": "Best Tech Stocks Right Now",
+   "link": "https://www.benzinga.com/money/best-tech-stocks",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-07T12:12:00Z",
+   "source": "Yahoo Finance",
+   "title": "Here's the Yearly Dividend Income $10,000 Provides Across 3 Very Different Yields",
+   "link": "https://www.fool.com/investing/2026/11/07/yearly-dividend-income-10000-3-different-yields/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-07T12:05:00Z",
+   "source": "Yahoo Finance",
+   "title": "Archer Aviation Said It Has More Than $6 Billion in Orders. What Does That Actually Mean for Investors?",
+   "link": "https://www.fool.com/investing/2026/11/07/archer-aviation-said-it-has-more-than-6-billion-in/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-07T12:00:01Z",
    "source": "CNBC",
    "title": "Tech companies face mounting child safety lawsuits while pushing AI into schools",
@@ -123,6 +147,14 @@
    "tags": [
     "TSLA"
    ]
+  },
+  {
+   "time": "2026-11-07T11:48:00Z",
+   "source": "Yahoo Finance",
+   "title": "Citi Raises AI Revenue Forecasts Through 2028 as Cloud Demand Accelerates",
+   "link": "https://investorshub.advfn.com/market-news/article/39463/citi-raises-ai-revenue-forecasts-through-2028-as-cloud-demand-accelerates?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
   },
   {
    "time": "2026-11-07T11:46:19Z",
@@ -3404,40 +3436,6 @@
    "source": "Decrypt",
    "title": "Bitcoin ETFs Bleed $430 Million as Tech Rout Tests Wall Street Buyers",
    "link": "https://decrypt.co/382733/bitcoin-etfs-bleed-430-million-tech-rout-tests-wall-street",
-   "kind": "crypto",
-   "tags": [
-    "BTC"
-   ]
-  },
-  {
-   "time": "2026-11-06T18:35:08Z",
-   "source": "CNBC",
-   "title": "OpenAI, Arm and Qualcomm executives react to post-midterm AI sell-off",
-   "link": "https://www.cnbc.com/2026/11/06/tech-executives-ai-data-center-selloff-midterms.html",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T18:35:01Z",
-   "source": "Yahoo Finance",
-   "title": "Why Opendoor Stock Is Down Today",
-   "link": "https://www.fool.com/investing/2026/11/06/why-opendoor-stock-is-down-today/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T18:29:36Z",
-   "source": "The Block",
-   "title": "Trump administration moves closer to allowing crypto in 401(k) retirement plans",
-   "link": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T18:22:42Z",
-   "source": "Cointelegraph",
-   "title": "Strive buys 15,124 Bitcoin in October, closes in on top treasury holders",
-   "link": "https://cointelegraph.com/news/strive-buys-bitcoin-october-top-btc-corporate-holders?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "kind": "crypto",
    "tags": [
     "BTC"
