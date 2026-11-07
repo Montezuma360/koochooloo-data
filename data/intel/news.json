@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T12:45:51Z",
+ "updated": "2026-11-07T12:50:52Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -61,12 +61,12 @@
    4
   ],
   [
-   "BTC",
+   "BRK.B",
    3
   ],
   [
-   "BRK.B",
-   2
+   "BTC",
+   3
   ],
   [
    "PLTR",
@@ -90,6 +90,24 @@
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-07T12:49:19Z",
+   "source": "CNBC",
+   "title": "Berkshire shares surge as Wall Street swoons amid AI fears",
+   "link": "https://www.cnbc.com/2026/11/07/berkshire-shares-surge-as-wall-street-swoons-amid-ai-fears.html",
+   "kind": "markets",
+   "tags": [
+    "BRK.B"
+   ]
+  },
+  {
+   "time": "2026-11-07T12:38:40Z",
+   "source": "Yahoo Finance",
+   "title": "Ziff Davis: 3 Key Takeaways for Long-Term Investors",
+   "link": "https://www.fool.com/earnings/takeaways/2026/11/07/ziff-davis-3-key-takeaways-for-long-term-investors/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
   {
    "time": "2026-11-07T12:29:00Z",
    "source": "Yahoo Finance",
@@ -3420,22 +3438,6 @@
    "tags": [
     "TSLA"
    ]
-  },
-  {
-   "time": "2026-11-06T18:41:46Z",
-   "source": "Yahoo Finance",
-   "title": "Why NerdWallet Stock Crashed Today",
-   "link": "https://www.fool.com/investing/2026/11/06/why-nerdwallet-stock-crashed-today/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T18:41:28Z",
-   "source": "Yahoo Finance",
-   "title": "Moderna, Inc. Q3 2026 Earnings Call Summary",
-   "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-moderna-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
   }
  ]
 }
