@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T12:55:42Z",
+ "updated": "2026-11-07T13:01:16Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -49,6 +49,10 @@
    5
   ],
   [
+   "BTC",
+   4
+  ],
+  [
    "AMZN",
    4
   ],
@@ -58,10 +62,6 @@
   ],
   [
    "BRK.B",
-   3
-  ],
-  [
-   "BTC",
    3
   ],
   [
@@ -91,6 +91,14 @@
  ],
  "items": [
   {
+   "time": "2026-11-07T12:50:00Z",
+   "source": "Yahoo Finance",
+   "title": "Warren Buffett's Top Advice for Investors Bracing for a Market Crash",
+   "link": "https://www.fool.com/investing/2026/11/07/warren-buffett-advice-brace-market-crash/?.tsrc=rss",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-07T12:49:19Z",
    "source": "CNBC",
    "title": "Berkshire shares surge as Wall Street swoons amid AI fears",
@@ -98,6 +106,16 @@
    "kind": "markets",
    "tags": [
     "BRK.B"
+   ]
+  },
+  {
+   "time": "2026-11-07T12:45:00Z",
+   "source": "Yahoo Finance",
+   "title": "In 5 Years, One of These Cryptocurrencies Could Be Worth More Than Bitcoin",
+   "link": "https://www.fool.com/investing/2026/11/07/in-5-years-one-of-these-cryptocurrencies-could-be/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "BTC"
    ]
   },
   {
@@ -3417,22 +3435,6 @@
    "source": "Yahoo Finance",
    "title": "Humana Inc. Q3 2026 Earnings Call Summary",
    "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-humana-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T18:47:45Z",
-   "source": "Cointelegraph",
-   "title": "Russia finalizes crypto trading rules ahead of Nov. 17 rollout",
-   "link": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "kind": "crypto",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T18:47:41Z",
-   "source": "Yahoo Finance",
-   "title": "Semiconductor Plunged in Thursday's Market Rout. These Were the Ones That Lost the Most.",
-   "link": "https://www.ibtimes.com/semiconductor-stocks-plunge-ai-spending-concerns-3809509?.tsrc=rss",
    "kind": "markets",
    "tags": []
   }
