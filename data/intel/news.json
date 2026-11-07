@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T09:45:53Z",
+ "updated": "2026-11-07T10:01:15Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -22,7 +22,7 @@
  "most_mentioned_24h": [
   [
    "TSLA",
-   16
+   15
   ],
   [
    "NVDA",
@@ -37,10 +37,6 @@
    9
   ],
   [
-   "AAPL",
-   6
-  ],
-  [
    "BTC",
    6
   ],
@@ -53,16 +49,20 @@
    6
   ],
   [
-   "AMD",
+   "AAPL",
    5
+  ],
+  [
+   "AMZN",
+   4
+  ],
+  [
+   "AMD",
+   4
   ],
   [
    "AVGO",
    4
-  ],
-  [
-   "AMZN",
-   3
   ],
   [
    "BRK.B",
@@ -82,6 +82,16 @@
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-07T09:54:43Z",
+   "source": "Yahoo Finance",
+   "title": "Gary Marcus Warns OpenAI Could Become \u2018WeWork Of AI\u2019 \u2014 And Nvidia May Pay The Price",
+   "link": "https://stocktwits.com/news-articles/markets/equity/gary-marcus-warns-openai-become-wework-of-ai-nvidia-pay-price/cNGVrOeR9Im?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "NVDA"
+   ]
+  },
   {
    "time": "2026-11-07T09:32:24Z",
    "source": "Investing.com",
@@ -117,6 +127,14 @@
    "tags": [
     "AMD"
    ]
+  },
+  {
+   "time": "2026-11-07T09:24:18Z",
+   "source": "Investing.com",
+   "title": "Russian diplomats and military officials to join talks with US and Ukraine, Kremlin says",
+   "link": "https://www.investing.com/news/world-news/russian-aide-and-military-intelligence-chief-to-attend-talks-with-us-and-ukraine-kremlin-says-5009755",
+   "kind": "markets",
+   "tags": []
   },
   {
    "time": "2026-11-07T09:19:10Z",
@@ -217,6 +235,30 @@
    "tags": []
   },
   {
+   "time": "2026-11-07T08:48:18Z",
+   "source": "Investing.com",
+   "title": "New Zealand election early count shows two main parties near deadlocked",
+   "link": "https://www.investing.com/news/world-news/new-zealand-election-voting-ends-early-results-due-shortly-5009732",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-07T08:48:05Z",
+   "source": "Investing.com",
+   "title": "Iran executes Baluch militant over armed attack on police station",
+   "link": "https://www.investing.com/news/world-news/iran-executes-baluch-militant-over-armed-attack-on-police-station-5009772",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-07T08:24:20Z",
+   "source": "Investing.com",
+   "title": "Russian strikes hit power facilities around Kyiv, damage major bridge",
+   "link": "https://www.investing.com/news/world-news/russian-forces-launch-missile-attack-on-ukrainian-capital-kyiv-mayor-says-5009502",
+   "kind": "markets",
+   "tags": []
+  },
+  {
    "time": "2026-11-07T08:12:35Z",
    "source": "Investing.com",
    "title": "Bitcoin rebounds to $76,000, but $1.3 billion ETF exodus tests recovery",
@@ -241,6 +283,16 @@
    "link": "https://www.investing.com/news/insider-trading-news/moodys-corp-chief-accounting-officer-phillips-sells-49335-stock-93CH-5009762",
    "kind": "markets",
    "tags": []
+  },
+  {
+   "time": "2026-11-07T07:49:55Z",
+   "source": "Yahoo Finance",
+   "title": "Amazon Gives Prime Members Uber Eats, Opening a New Front Against DoorDash",
+   "link": "https://www.tikr.com/blog/amazon-gives-prime-members-uber-eats-opening-a-new-front-against-doordash?ref=yahoofinance&tlnk=yf-261107-hqwpq45v&.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "AMZN"
+   ]
   },
   {
    "time": "2026-11-07T07:46:27Z",
@@ -3389,61 +3441,6 @@
    "kind": "markets",
    "tags": [
     "META"
-   ]
-  },
-  {
-   "time": "2026-11-06T17:33:07Z",
-   "source": "Yahoo Finance",
-   "title": "NVIDIA Corporation (NVDA) Is Taking AI Beyond Chips: Here\u2019s What Could Drive Its Next Growth Phase",
-   "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-corporation-nvda-taking-ai-173307195.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T17:33:00Z",
-   "source": "Yahoo Finance",
-   "title": "AMD, Nvidia and Intel diverge as Morningstar resets the scorecard",
-   "link": "https://www.thestreet.com/markets/amd-nvidia-and-intel-diverge-as-morningstar-resets-the-scorecard?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMD",
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-06T17:28:21Z",
-   "source": "Yahoo Finance",
-   "title": "What the AI stock crash cost your 401(k) for every $1,000 invested",
-   "link": "https://finance.yahoo.com/markets/article/what-the-ai-stock-crash-cost-your-401k-for-every-1000-invested-172821837.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T17:25:36Z",
-   "source": "Yahoo Finance",
-   "title": "Tesla Rebounds 5% as Musk Ends Cybertruck to Make Room for \u201cIncreased Cybercab Production\u201d",
-   "link": "https://www.tikr.com/blog/tesla-rebounds-5-as-musk-ends-cybertruck-to-make-room-for-increased-cybercab-production?ref=yahoofinance&tlnk=yf-261106-69vjr5x9&.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "time": "2026-11-06T17:24:00Z",
-   "source": "Yahoo Finance",
-   "title": "3 High-Yield Healthcare Stocks to Buy With $1,000 and Hold Through Any Market",
-   "link": "https://www.fool.com/investing/2026/11/06/3-high-yield-healthcare-stocks-to-buy-with-1000-an/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T17:23:13Z",
-   "source": "Yahoo Finance",
-   "title": "Apple Is \u201cthe Anti-AI Large Cap Tech Trade,\u201d Says Josh Brown. Now It\u2019s Capping AI Spending",
-   "link": "https://www.tikr.com/blog/apple-is-the-anti-ai-large-cap-tech-trade-says-josh-brown-now-its-capping-ai-spending?ref=yahoofinance&tlnk=yf-261106-5rx9fr6v&.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AAPL"
    ]
   }
  ]
