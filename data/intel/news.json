@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T02:10:49Z",
+ "updated": "2026-11-07T02:25:41Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -21,11 +21,11 @@
  "feeds_failed": {},
  "most_mentioned_24h": [
   [
-   "NVDA",
-   16
+   "TSLA",
+   17
   ],
   [
-   "TSLA",
+   "NVDA",
    16
   ],
   [
@@ -90,6 +90,16 @@
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-07T02:10:00Z",
+   "source": "Yahoo Finance",
+   "title": "Elon Musk says Tesla will stop making iconic vehicles",
+   "link": "https://www.thestreet.com/retail/elon-musk-says-tesla-will-stop-making-iconic-vehicles?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "TSLA"
+   ]
+  },
   {
    "time": "2026-11-07T02:04:33Z",
    "source": "Investing.com",
@@ -3465,14 +3475,6 @@
    "source": "Investing.com",
    "title": "Citi Names Top Stock in Stablecoin and Digital Payments Space",
    "link": "https://www.investing.com/news/stock-market-news/citi-names-top-stock-in-stablecoin-and-digital-payments-space-5008780",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T15:38:34Z",
-   "source": "Investing.com",
-   "title": "Immunome stock may move 9.4% on earnings release",
-   "link": "https://www.investing.com/news/stock-market-news/immunome-stock-may-move-94-on-earnings-release-93CH-5008779",
    "kind": "markets",
    "tags": []
   }
