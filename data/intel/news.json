@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T04:20:51Z",
+ "updated": "2026-11-07T04:41:01Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -12,13 +12,14 @@
   "Cointelegraph": 30,
   "Decrypt": 39,
   "The Block": 20,
-  "Federal Reserve": 20,
   "SEC": 25,
   "ECB": 15,
   "Bank of England": 50,
   "FCA": 20
  },
- "feeds_failed": {},
+ "feeds_failed": {
+  "Federal Reserve": "<HTTPError 404: 'Not Found'>"
+ },
  "most_mentioned_24h": [
   [
    "TSLA",
@@ -26,11 +27,11 @@
   ],
   [
    "NVDA",
-   15
+   14
   ],
   [
    "MSFT",
-   11
+   10
   ],
   [
    "GOOGL",
@@ -54,7 +55,7 @@
   ],
   [
    "AMD",
-   5
+   4
   ],
   [
    "AVGO",
@@ -69,11 +70,11 @@
    3
   ],
   [
-   "PLTR",
-   3
+   "LLY",
+   2
   ],
   [
-   "LLY",
+   "PLTR",
    2
   ],
   [
@@ -86,6 +87,38 @@
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-07T04:30:57Z",
+   "source": "Investing.com",
+   "title": "HCA Healthcare EVP Michael Schlosser sells $593,582 in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/hca-healthcare-evp-michael-schlosser-sells-593582-in-stock-93CH-5009633",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-07T04:21:47Z",
+   "source": "Investing.com",
+   "title": "Bumble earnings missed by $0.04, revenue fell short of estimates",
+   "link": "https://www.investing.com/news/earnings/bumble-earnings-missed-by-004-revenue-fell-short-of-estimates-5009626",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-07T04:16:13Z",
+   "source": "Investing.com",
+   "title": "HCA Healthcare EVP and COO Jon Foster sells $15.9M in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/hca-healthcare-evp-and-coo-jon-foster-sells-159m-in-stock-93CH-5009623",
+   "kind": "markets",
+   "tags": []
+  },
+  {
+   "time": "2026-11-07T04:15:53Z",
+   "source": "Investing.com",
+   "title": "Abbott Laboratories EVP Mary Moreland sells $406,000 in shares",
+   "link": "https://www.investing.com/news/insider-trading-news/abbott-laboratories-evp-mary-moreland-sells-406000-in-shares-93CH-5009622",
+   "kind": "markets",
+   "tags": []
+  },
   {
    "time": "2026-11-07T04:12:08Z",
    "source": "Yahoo Finance",
@@ -3429,45 +3462,6 @@
    "source": "Yahoo Finance",
    "title": "Marvell Is Betting $115 Billion on 1 of AI's Biggest Bottlenecks",
    "link": "https://www.fool.com/investing/2026/11/06/marvell-is-betting-115-billion-on-1-of-ais-biggest/?.tsrc=rss",
-   "kind": "markets",
-   "tags": []
-  },
-  {
-   "time": "2026-11-06T16:03:08Z",
-   "source": "Yahoo Finance",
-   "title": "Palantir Grew Revenue 96% and the Stock Still Fell. Here\u2019s Where the Price Target Goes",
-   "link": "https://247wallst.com/investing/2026/11/06/palantir-grew-revenue-96-and-the-stock-still-fell-heres-where-the-price-target-goes/?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "PLTR"
-   ]
-  },
-  {
-   "time": "2026-11-06T16:01:57Z",
-   "source": "Yahoo Finance",
-   "title": "Micron, AMD and Nvidia Lead AI Stocks Rebound After Historic Selloff",
-   "link": "https://finance.yahoo.com/technology/ai/articles/micron-amd-nvidia-lead-ai-160157661.html?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "AMD",
-    "NVDA"
-   ]
-  },
-  {
-   "time": "2026-11-06T16:00:13Z",
-   "source": "Yahoo Finance",
-   "title": "Backlash Against Data Centers Grows. Protesters Broke Into a Microsoft Construction Site.",
-   "link": "https://www.ibtimes.com/activists-breach-microsoft-data-center-site-amsterdam-3809501?.tsrc=rss",
-   "kind": "markets",
-   "tags": [
-    "MSFT"
-   ]
-  },
-  {
-   "time": "2026-11-06T15:59:21Z",
-   "source": "Yahoo Finance",
-   "title": "Musk Winds Down Cybertruck to Make Room for \u201cIncreased Cybercab Production\u201d",
-   "link": "https://www.tikr.com/blog/musk-winds-down-cybertruck-to-make-room-for-increased-cybercab-production?ref=yahoofinance&tlnk=yf-261106-4hvmg8wj&.tsrc=rss",
    "kind": "markets",
    "tags": []
   }
