@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T02:31:04Z",
+ "updated": "2026-11-07T02:50:55Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,30 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-07T02:48:25Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Guerrilla RF, Inc.",
+   "cik": 1832487,
+   "ticker": "GUER",
+   "role": "Subject",
+   "accession": "0001437749-26-035657",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1832487/000143774926035657/0001437749-26-035657-index.htm"
+  },
+  {
+   "time": "2026-11-07T02:46:42Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Guerrilla RF, Inc.",
+   "cik": 1832487,
+   "ticker": "GUER",
+   "role": "Subject",
+   "accession": "0001437749-26-035656",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1832487/000143774926035656/0001437749-26-035656-index.htm"
+  },
+  {
    "time": "2026-11-07T02:26:18Z",
    "form": "SCHEDULE 13D/A",
    "company": "LanzaTech Global, Inc.",
@@ -2992,6 +3016,54 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-07T02:48:25Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "SALEM INVESTMENT PARTNERS V, LIMITED PARTNERSHIP",
+   "cik": 1832887,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001437749-26-035657",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1832887/000143774926035657/0001437749-26-035657-index.htm"
+  },
+  {
+   "time": "2026-11-07T02:48:25Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Guerrilla RF, Inc.",
+   "cik": 1832487,
+   "ticker": "GUER",
+   "role": "Subject",
+   "accession": "0001437749-26-035657",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1832487/000143774926035657/0001437749-26-035657-index.htm"
+  },
+  {
+   "time": "2026-11-07T02:46:42Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Bodford Alvin M.",
+   "cik": 1891890,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001437749-26-035656",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1891890/000143774926035656/0001437749-26-035656-index.htm"
+  },
+  {
+   "time": "2026-11-07T02:46:42Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Guerrilla RF, Inc.",
+   "cik": 1832487,
+   "ticker": "GUER",
+   "role": "Subject",
+   "accession": "0001437749-26-035656",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1832487/000143774926035656/0001437749-26-035656-index.htm"
+  },
   {
    "time": "2026-11-07T02:26:18Z",
    "form": "SCHEDULE 13D/A",
@@ -15831,76 +15903,6 @@
    "items": [],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/1065078/000107261326000851/0001072613-26-000851-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:51:10Z",
-   "form": "10-Q",
-   "company": "Investar Holding Corp",
-   "cik": 1602658,
-   "ticker": "ISTR",
-   "role": "Filer",
-   "accession": "0001437749-26-035318",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1602658/000143774926035318/0001437749-26-035318-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:50:17Z",
-   "form": "8-K",
-   "company": "BRT Apartments Corp.",
-   "cik": 14846,
-   "ticker": "BRT",
-   "role": "Filer",
-   "accession": "0000014846-26-000049",
-   "items": [
-    {
-     "item": "2.02",
-     "meaning": "Results announced"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/14846/000001484626000049/0000014846-26-000049-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:49:11Z",
-   "form": "10-Q",
-   "company": "Natera, Inc.",
-   "cik": 1604821,
-   "ticker": "NTRA",
-   "role": "Filer",
-   "accession": "0001628280-26-071145",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/1604821/000162828026071145/0001628280-26-071145-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:49:09Z",
-   "form": "8-K",
-   "company": "DTE Electric Securitization Funding III LLC",
-   "cik": 2151176,
-   "ticker": null,
-   "role": "Filer",
-   "accession": "0001193125-26-450049",
-   "items": [
-    {
-     "item": "8.01",
-     "meaning": "Other events"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2151176/000119312526450049/0001193125-26-450049-index.htm"
   }
  ]
 }
