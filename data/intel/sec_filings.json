@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T02:05:47Z",
+ "updated": "2026-11-07T02:31:04Z",
  "source": "SEC EDGAR live filings (8-K, 10-K, 10-Q, Schedule 13D)",
  "red_flags_3d": [
   {
@@ -2439,6 +2439,18 @@
  ],
  "activist_stakes_3d": [
   {
+   "time": "2026-11-07T02:26:18Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "LanzaTech Global, Inc.",
+   "cik": 1843724,
+   "ticker": "LNZA",
+   "role": "Subject",
+   "accession": "0001193125-26-452279",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1843724/000119312526452279/0001193125-26-452279-index.htm"
+  },
+  {
    "time": "2026-11-07T02:00:58Z",
    "form": "SCHEDULE 13D/A",
    "company": "Resolute Holdings Management, Inc.",
@@ -2980,6 +2992,30 @@
   }
  ],
  "filings": [
+  {
+   "time": "2026-11-07T02:26:18Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "LanzaTech Global, Inc.",
+   "cik": 1843724,
+   "ticker": "LNZA",
+   "role": "Subject",
+   "accession": "0001193125-26-452279",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1843724/000119312526452279/0001193125-26-452279-index.htm"
+  },
+  {
+   "time": "2026-11-07T02:26:18Z",
+   "form": "SCHEDULE 13D/A",
+   "company": "Khosla Ventures III, L.P.",
+   "cik": 1471809,
+   "ticker": null,
+   "role": "Filed by",
+   "accession": "0001193125-26-452279",
+   "items": [],
+   "red_flag": [],
+   "link": "https://www.sec.gov/Archives/edgar/data/1471809/000119312526452279/0001193125-26-452279-index.htm"
+  },
   {
    "time": "2026-11-07T02:00:58Z",
    "form": "SCHEDULE 13D/A",
@@ -15865,51 +15901,6 @@
    ],
    "red_flag": [],
    "link": "https://www.sec.gov/Archives/edgar/data/2151176/000119312526450049/0001193125-26-450049-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:48:25Z",
-   "form": "10-Q",
-   "company": "BRT Apartments Corp.",
-   "cik": 14846,
-   "ticker": "BRT",
-   "role": "Filer",
-   "accession": "0000014846-26-000048",
-   "items": [],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/14846/000001484626000048/0000014846-26-000048-index.htm"
-  },
-  {
-   "time": "2026-11-05T21:47:58Z",
-   "form": "8-K",
-   "company": "Sunrise Realty Trust, Inc.",
-   "cik": 2012706,
-   "ticker": "SUNS",
-   "role": "Filer",
-   "accession": "0001628280-26-071144",
-   "items": [
-    {
-     "item": "1.01",
-     "meaning": "Major agreement signed"
-    },
-    {
-     "item": "2.01",
-     "meaning": "Acquisition or sale completed"
-    },
-    {
-     "item": "3.02",
-     "meaning": "Unregistered share sale"
-    },
-    {
-     "item": "7.01",
-     "meaning": "Regulation FD disclosure"
-    },
-    {
-     "item": "9.01",
-     "meaning": "Financial statements and exhibits"
-    }
-   ],
-   "red_flag": [],
-   "link": "https://www.sec.gov/Archives/edgar/data/2012706/000162828026071144/0001628280-26-071144-index.htm"
   }
  ]
 }
