@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T08:35:45Z",
+ "updated": "2026-11-07T08:40:53Z",
  "source": "CoinGecko, Kraken, Coinbase, Binance (market-data API)",
  "coingecko_updated": "2026-11-07T08:35:45Z",
  "global": {
@@ -14,7 +14,7 @@
    "rank": 1,
    "symbol": "BTC",
    "name": "Bitcoin",
-   "price": 76023.5,
+   "price": 76018.9,
    "market_cap": 1529318281569,
    "volume_24h": 23516434858,
    "change_1h_pct": 0.08,
@@ -25,7 +25,7 @@
    "rank": 2,
    "symbol": "ETH",
    "name": "Ethereum",
-   "price": 2245.73,
+   "price": 2245.77,
    "market_cap": 274410510062,
    "volume_24h": 8197374661,
    "change_1h_pct": -0.02,
@@ -1190,31 +1190,31 @@
  ],
  "exchange_prices": {
   "kraken": {
-   "ETH": 2245.73,
+   "ETH": 2245.77,
    "SOL": 90.2,
-   "BTC": 76023.5
+   "BTC": 76018.9
   },
   "coinbase": {
-   "BTC": 76020.15,
-   "ETH": 2245.57,
-   "SOL": 90.18
+   "BTC": 76010.97,
+   "ETH": 2245.56,
+   "SOL": 90.2
   },
   "binance": {
-   "BTC": 76129.47,
-   "ETH": 2248.86,
-   "SOL": 90.31
+   "BTC": 76120.59,
+   "ETH": 2248.6,
+   "SOL": 90.32
   }
  },
  "exchange_spread_pct": {
   "BTC": 0.144,
-  "ETH": 0.147,
-  "SOL": 0.144
+  "ETH": 0.135,
+  "SOL": 0.133
  },
  "live_prices": {
-  "t": "2026-11-07T08:35:45Z",
+  "t": "2026-11-07T08:40:53Z",
   "source": "median of Kraken, Coinbase and Binance",
-  "BTC": 76023.5,
-  "ETH": 2245.73,
+  "BTC": 76018.9,
+  "ETH": 2245.77,
   "SOL": 90.2
  }
 }
