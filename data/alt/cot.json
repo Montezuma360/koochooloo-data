@@ -1,21 +1,17 @@
 {
- "report_date": "2026-10-27",
+ "report_date": "2026-11-03",
  "note": "Weekly CFTC positioning. percentile_3y near 100 means hedge funds are the most bullish they have been in 3 years; near 0 the most bearish. Extremes often come before reversals.",
  "markets": [
   {
    "code": "133741",
    "market": "Bitcoin (CME)",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": -3979,
-   "net_pct_of_open_interest": -19.1,
-   "change_1w": 963,
+   "report_date": "2026-11-03",
+   "net_contracts": -2591,
+   "net_pct_of_open_interest": -14.8,
+   "change_1w": 1388,
    "percentile_3y": 100,
    "history": [
-    [
-     "2025-11-04",
-     -15168
-    ],
     [
      "2025-11-10",
      -15810
@@ -219,6 +215,10 @@
     [
      "2026-10-27",
      -3979
+    ],
+    [
+     "2026-11-03",
+     -2591
     ]
    ]
   },
@@ -226,16 +226,12 @@
    "code": "096742",
    "market": "British pound",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": 17195,
-   "net_pct_of_open_interest": 6.8,
-   "change_1w": -6909,
-   "percentile_3y": 18,
+   "report_date": "2026-11-03",
+   "net_contracts": 26663,
+   "net_pct_of_open_interest": 10.9,
+   "change_1w": 9468,
+   "percentile_3y": 33,
    "history": [
-    [
-     "2025-11-04",
-     25923
-    ],
     [
      "2025-11-10",
      12554
@@ -439,6 +435,10 @@
     [
      "2026-10-27",
      17195
+    ],
+    [
+     "2026-11-03",
+     26663
     ]
    ]
   },
@@ -446,16 +446,12 @@
    "code": "085692",
    "market": "Copper",
    "who": "hedge funds (managed money)",
-   "report_date": "2026-10-27",
-   "net_contracts": 40575,
-   "net_pct_of_open_interest": 12.0,
-   "change_1w": -7115,
-   "percentile_3y": 56,
+   "report_date": "2026-11-03",
+   "net_contracts": 34890,
+   "net_pct_of_open_interest": 10.6,
+   "change_1w": -5685,
+   "percentile_3y": 48,
    "history": [
-    [
-     "2025-11-04",
-     60729
-    ],
     [
      "2025-11-10",
      63284
@@ -659,6 +655,10 @@
     [
      "2026-10-27",
      40575
+    ],
+    [
+     "2026-11-03",
+     34890
     ]
    ]
   },
@@ -666,16 +666,12 @@
    "code": "067651",
    "market": "Crude oil (WTI)",
    "who": "hedge funds (managed money)",
-   "report_date": "2026-10-27",
-   "net_contracts": 31128,
-   "net_pct_of_open_interest": 1.7,
-   "change_1w": -5059,
-   "percentile_3y": 13,
+   "report_date": "2026-11-03",
+   "net_contracts": 21728,
+   "net_pct_of_open_interest": 1.1,
+   "change_1w": -9400,
+   "percentile_3y": 10,
    "history": [
-    [
-     "2025-11-04",
-     7737
-    ],
     [
      "2025-11-10",
      -11646
@@ -879,6 +875,10 @@
     [
      "2026-10-27",
      31128
+    ],
+    [
+     "2026-11-03",
+     21728
     ]
    ]
   },
@@ -886,16 +886,12 @@
    "code": "099741",
    "market": "Euro",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": -71574,
-   "net_pct_of_open_interest": -8.2,
-   "change_1w": -2734,
+   "report_date": "2026-11-03",
+   "net_contracts": -78559,
+   "net_pct_of_open_interest": -9.0,
+   "change_1w": -6985,
    "percentile_3y": 1,
    "history": [
-    [
-     "2025-11-04",
-     5182
-    ],
     [
      "2025-11-10",
      -5661
@@ -1099,6 +1095,10 @@
     [
      "2026-10-27",
      -71574
+    ],
+    [
+     "2026-11-03",
+     -78559
     ]
    ]
   },
@@ -1106,16 +1106,12 @@
    "code": "088691",
    "market": "Gold",
    "who": "hedge funds (managed money)",
-   "report_date": "2026-10-27",
-   "net_contracts": 105562,
-   "net_pct_of_open_interest": 26.6,
-   "change_1w": 1356,
-   "percentile_3y": 24,
+   "report_date": "2026-11-03",
+   "net_contracts": 103614,
+   "net_pct_of_open_interest": 26.0,
+   "change_1w": -1948,
+   "percentile_3y": 22,
    "history": [
-    [
-     "2025-11-04",
-     100545
-    ],
     [
      "2025-11-10",
      104087
@@ -1319,6 +1315,10 @@
     [
      "2026-10-27",
      105562
+    ],
+    [
+     "2026-11-03",
+     103614
     ]
    ]
   },
@@ -1326,16 +1326,12 @@
    "code": "097741",
    "market": "Japanese yen",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": -14630,
+   "report_date": "2026-11-03",
+   "net_contracts": -14817,
    "net_pct_of_open_interest": -3.9,
-   "change_1w": 8260,
-   "percentile_3y": 78,
+   "change_1w": -187,
+   "percentile_3y": 77,
    "history": [
-    [
-     "2025-11-04",
-     -56616
-    ],
     [
      "2025-11-10",
      -57614
@@ -1539,6 +1535,10 @@
     [
      "2026-10-27",
      -14630
+    ],
+    [
+     "2026-11-03",
+     -14817
     ]
    ]
   },
@@ -1546,16 +1546,12 @@
    "code": "209742",
    "market": "Nasdaq-100 (mini)",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": 2301,
-   "net_pct_of_open_interest": 0.9,
-   "change_1w": 1351,
-   "percentile_3y": 95,
+   "report_date": "2026-11-03",
+   "net_contracts": 10073,
+   "net_pct_of_open_interest": 3.4,
+   "change_1w": 7772,
+   "percentile_3y": 97,
    "history": [
-    [
-     "2025-11-04",
-     9130
-    ],
     [
      "2025-11-10",
      17619
@@ -1759,6 +1755,10 @@
     [
      "2026-10-27",
      2301
+    ],
+    [
+     "2026-11-03",
+     10073
     ]
    ]
   },
@@ -1766,16 +1766,12 @@
    "code": "023651",
    "market": "Natural gas",
    "who": "hedge funds (managed money)",
-   "report_date": "2026-10-27",
-   "net_contracts": -206317,
-   "net_pct_of_open_interest": -12.3,
-   "change_1w": -48908,
+   "report_date": "2026-11-03",
+   "net_contracts": -225359,
+   "net_pct_of_open_interest": -13.4,
+   "change_1w": -19042,
    "percentile_3y": 1,
    "history": [
-    [
-     "2025-11-04",
-     -43986
-    ],
     [
      "2025-11-10",
      -52820
@@ -1979,6 +1975,10 @@
     [
      "2026-10-27",
      -206317
+    ],
+    [
+     "2026-11-03",
+     -225359
     ]
    ]
   },
@@ -1986,16 +1986,12 @@
    "code": "239742",
    "market": "Russell 2000 (E-mini)",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": -48081,
-   "net_pct_of_open_interest": -10.5,
-   "change_1w": 4954,
-   "percentile_3y": 58,
+   "report_date": "2026-11-03",
+   "net_contracts": -55080,
+   "net_pct_of_open_interest": -12.3,
+   "change_1w": -6999,
+   "percentile_3y": 48,
    "history": [
-    [
-     "2025-11-04",
-     -80270
-    ],
     [
      "2025-11-10",
      -81258
@@ -2199,6 +2195,10 @@
     [
      "2026-10-27",
      -48081
+    ],
+    [
+     "2026-11-03",
+     -55080
     ]
    ]
   },
@@ -2206,16 +2206,12 @@
    "code": "13874A",
    "market": "S&P 500 (E-mini)",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": -400604,
-   "net_pct_of_open_interest": -20.5,
-   "change_1w": -29359,
-   "percentile_3y": 28,
+   "report_date": "2026-11-03",
+   "net_contracts": -372318,
+   "net_pct_of_open_interest": -18.7,
+   "change_1w": 28286,
+   "percentile_3y": 36,
    "history": [
-    [
-     "2025-11-04",
-     -405386
-    ],
     [
      "2025-11-10",
      -423003
@@ -2419,6 +2415,10 @@
     [
      "2026-10-27",
      -400604
+    ],
+    [
+     "2026-11-03",
+     -372318
     ]
    ]
   },
@@ -2426,16 +2426,12 @@
    "code": "084691",
    "market": "Silver",
    "who": "hedge funds (managed money)",
-   "report_date": "2026-10-27",
-   "net_contracts": 3321,
-   "net_pct_of_open_interest": 2.9,
-   "change_1w": -184,
-   "percentile_3y": 4,
+   "report_date": "2026-11-03",
+   "net_contracts": 4035,
+   "net_pct_of_open_interest": 3.5,
+   "change_1w": 714,
+   "percentile_3y": 5,
    "history": [
-    [
-     "2025-11-04",
-     19157
-    ],
     [
      "2025-11-10",
      22655
@@ -2639,6 +2635,10 @@
     [
      "2026-10-27",
      3321
+    ],
+    [
+     "2026-11-03",
+     4035
     ]
    ]
   },
@@ -2646,16 +2646,12 @@
    "code": "043602",
    "market": "US 10-year Treasury note",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": -2227275,
-   "net_pct_of_open_interest": -37.9,
-   "change_1w": -120051,
-   "percentile_3y": 17,
+   "report_date": "2026-11-03",
+   "net_contracts": -2262310,
+   "net_pct_of_open_interest": -38.0,
+   "change_1w": -35035,
+   "percentile_3y": 15,
    "history": [
-    [
-     "2025-11-04",
-     -2296028
-    ],
     [
      "2025-11-10",
      -2286700
@@ -2859,6 +2855,10 @@
     [
      "2026-10-27",
      -2227275
+    ],
+    [
+     "2026-11-03",
+     -2262310
     ]
    ]
   },
@@ -2866,16 +2866,12 @@
    "code": "042601",
    "market": "US 2-year Treasury note",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": -1357658,
-   "net_pct_of_open_interest": -30.0,
-   "change_1w": -72110,
-   "percentile_3y": 91,
+   "report_date": "2026-11-03",
+   "net_contracts": -1450892,
+   "net_pct_of_open_interest": -32.5,
+   "change_1w": -93234,
+   "percentile_3y": 86,
    "history": [
-    [
-     "2025-11-04",
-     -2107571
-    ],
     [
      "2025-11-10",
      -2077590
@@ -3079,6 +3075,10 @@
     [
      "2026-10-27",
      -1357658
+    ],
+    [
+     "2026-11-03",
+     -1450892
     ]
    ]
   },
@@ -3086,16 +3086,12 @@
    "code": "1170E1",
    "market": "VIX futures",
    "who": "hedge funds (leveraged money)",
-   "report_date": "2026-10-27",
-   "net_contracts": -26334,
-   "net_pct_of_open_interest": -7.0,
-   "change_1w": -5444,
-   "percentile_3y": 48,
+   "report_date": "2026-11-03",
+   "net_contracts": -31479,
+   "net_pct_of_open_interest": -8.5,
+   "change_1w": -5145,
+   "percentile_3y": 39,
    "history": [
-    [
-     "2025-11-04",
-     -78126
-    ],
     [
      "2025-11-10",
      -68072
@@ -3299,6 +3295,10 @@
     [
      "2026-10-27",
      -26334
+    ],
+    [
+     "2026-11-03",
+     -31479
     ]
    ]
   }
