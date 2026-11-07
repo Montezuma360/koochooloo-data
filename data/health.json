@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T00:45:58Z",
+ "updated": "2026-11-07T00:50:54Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,7 +7,7 @@
  "repo_size_mb": 90.4,
  "feeds": {
   "prices": {
-   "updated": "2026-11-07T00:45:47Z",
+   "updated": "2026-11-07T00:50:43Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -17,7 +17,7 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-07T00:45:53Z",
+   "updated": "2026-11-07T00:50:50Z",
    "age_hours": 0.0,
    "stale_after_hours": 31,
    "stale": false,
@@ -27,7 +27,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-07T00:45:58Z",
+   "updated": "2026-11-07T00:50:54Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -37,8 +37,8 @@
    "on_target": null
   },
   "treasury_rates": {
-   "updated": "2026-11-06T23:50:58Z",
-   "age_hours": 0.92,
+   "updated": "2026-11-07T00:50:43Z",
+   "age_hours": 0.0,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-07T00:01:47Z",
-   "age_hours": 0.74,
+   "age_hours": 0.82,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
@@ -54,14 +54,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-06T23:45:45+00:00",
-   "age_hours": 1.0,
+   "age_hours": 1.09,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-07T00:45:53Z",
+   "updated": "2026-11-07T00:50:50Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -74,13 +74,13 @@
  "workflows": {
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-07T00:44:20Z",
+   "at": "2026-11-07T00:49:16Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 47
+   "runs_in_last_100": 48
   },
   "Caesar's voice": {
    "last": "cancelled",
-   "at": "2026-11-07T00:44:23Z",
+   "at": "2026-11-07T00:49:20Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 48
   },
@@ -89,12 +89,6 @@
    "at": "2026-11-07T00:02:05Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 1
-  },
-  "Refresh signals and dashboard": {
-   "last": "success",
-   "at": "2026-11-06T23:59:02Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 2
   }
  }
 }

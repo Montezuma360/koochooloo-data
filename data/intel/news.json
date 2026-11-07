@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T00:45:53Z",
+ "updated": "2026-11-07T00:50:50Z",
  "source": "RSS headlines and links only (no article text)",
  "feeds_ok": {
   "CNBC": 30,
@@ -7,7 +7,7 @@
   "MarketWatch": 10,
   "Investing.com": 10,
   "Benzinga": 10,
-  "Yahoo Finance": 18,
+  "Yahoo Finance": 20,
   "CoinDesk": 25,
   "Cointelegraph": 30,
   "Decrypt": 39,
@@ -69,6 +69,10 @@
    3
   ],
   [
+   "LLY",
+   2
+  ],
+  [
    "BRK.B",
    2
   ],
@@ -83,13 +87,19 @@
   [
    "SOL",
    1
-  ],
-  [
-   "LLY",
-   1
   ]
  ],
  "items": [
+  {
+   "time": "2026-11-07T00:38:02Z",
+   "source": "Yahoo Finance",
+   "title": "Eli Lilly Is Much More Than a Weight-Loss Drug Company. Here's the Evidence",
+   "link": "https://www.fool.com/investing/2026/11/06/eli-lilly-is-much-more-than-a-weight-loss-drug-company-here-s-the-evidence/?.tsrc=rss",
+   "kind": "markets",
+   "tags": [
+    "LLY"
+   ]
+  },
   {
    "time": "2026-11-07T00:31:08Z",
    "source": "Investing.com",
@@ -3481,14 +3491,6 @@
    "tags": [
     "AMD"
    ]
-  },
-  {
-   "time": "2026-11-06T15:22:04Z",
-   "source": "Yahoo Finance",
-   "title": "Sandisk Soars 7% After Thursday\u2019s 22% Crash as Chip Stocks Rebound",
-   "link": "https://www.tikr.com/blog/sandisk-soars-7-after-thursdays-22-crash-as-chip-stocks-rebound?ref=yahoofinance&tlnk=yf-261106-hwqg252p&.tsrc=rss",
-   "kind": "markets",
-   "tags": []
   }
  ]
 }
