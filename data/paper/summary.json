@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T22:00:09+00:00",
+ "updated": "2026-11-13T22:24:24+00:00",
  "priced_to": "2026-11-13",
  "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\n- Two strategies were added on 4 Nov 2026 and follow every rule above: \"research_setup\" (smaller company, 2+ insiders at $25k+, cash flow above\n  profit) and \"research_setup_trend\" (the same, but no new entries while the S&P 500 is below its 200-day average). The older strategies are unchanged.\n- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies\n  are ranked by their margin over the S&P 500; summary.json \"goal\" shows what GBP 100 has become in each and how long\n  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
  "market_stress": false,
@@ -11,7 +11,7 @@
    "started": "2026-11-01",
    "value": 100314.26,
    "paused": false,
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.0,
    "max_drawdown_pct": -0.48,
    "stops_hit": 0,
    "return_pct": 0.31,
@@ -398,9 +398,9 @@
    "label": "A director or officer buys $250k+ on the open market",
    "hold_days": 60,
    "started": "2026-11-01",
-   "value": 100425.18,
+   "value": 100426.1,
    "paused": false,
-   "drawdown_pct": -1.43,
+   "drawdown_pct": -1.71,
    "max_drawdown_pct": -1.71,
    "stops_hit": 0,
    "return_pct": 0.43,
@@ -937,11 +937,11 @@
     {
      "symbol": "ALNY",
      "since": "2026-11-13",
-     "value": 2081.22,
-     "return_pct": 3.53,
+     "value": 2082.13,
+     "return_pct": 3.58,
      "why": "SCHULMAN AMY W (Director) bought $299,526",
      "spy_same_days_pct": -0.75,
-     "excess_pct": 4.28,
+     "excess_pct": 4.33,
      "size_x": 1.0,
      "stop_pct": 20.2,
      "industry": "Pharmaceutical Preparations"
@@ -1045,7 +1045,7 @@
     ],
     [
      "2026-11-13",
-     100425.18
+     100426.1
     ]
    ],
    "events": [
@@ -1136,7 +1136,7 @@
    "started": "2026-11-01",
    "value": 100115.21,
    "paused": false,
-   "drawdown_pct": -0.01,
+   "drawdown_pct": 0.0,
    "max_drawdown_pct": -0.02,
    "stops_hit": 0,
    "return_pct": 0.12,
@@ -2182,12 +2182,12 @@
    "label": "2+ insiders each buy $25k+ within 30 days in a smaller company ($1M-$20M traded a day)",
    "hold_days": 60,
    "started": "2026-11-02",
-   "value": 99653.93,
+   "value": 99611.66,
    "paused": false,
-   "drawdown_pct": -0.62,
-   "max_drawdown_pct": -0.5,
+   "drawdown_pct": -0.54,
+   "max_drawdown_pct": -0.54,
    "stops_hit": 0,
-   "return_pct": -0.35,
+   "return_pct": -0.39,
    "cash": 66054.5,
    "open": [
     {
@@ -2349,11 +2349,11 @@
     {
      "symbol": "NSLR",
      "since": "2026-11-13",
-     "value": 1950.04,
-     "return_pct": -2.04,
+     "value": 1937.3,
+     "return_pct": -2.68,
      "why": "2 insiders each bought $25k+ within 30 days",
      "spy_same_days_pct": -0.75,
-     "excess_pct": -1.29,
+     "excess_pct": -1.93,
      "size_x": 1.0,
      "stop_pct": 14.6,
      "industry": ""
@@ -2361,11 +2361,11 @@
     {
      "symbol": "EGBN",
      "since": "2026-11-13",
-     "value": 2004.86,
-     "return_pct": 0.76,
+     "value": 1975.35,
+     "return_pct": -0.73,
      "why": "2 insiders each bought $25k+ within 30 days",
      "spy_same_days_pct": -0.75,
-     "excess_pct": 1.51,
+     "excess_pct": 0.02,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": "State Commercial Banks"
@@ -2396,8 +2396,8 @@
     }
    ],
    "invested_pct": 33.7,
-   "open_excess_pct": 0.29,
-   "skill_vs_spy_pct": -0.85,
+   "open_excess_pct": 0.17,
+   "skill_vs_spy_pct": -0.97,
    "trades_measured": 17,
    "trades_beating_spy_pct": 58.8,
    "pending": [
@@ -2459,7 +2459,7 @@
     ],
     [
      "2026-11-13",
-     99653.93
+     99611.66
     ]
    ],
    "events": [
@@ -2539,8 +2539,8 @@
      "what": "TRADE: 3 insiders each bought $25k+ within 30 days. Bought $1,993 (2.0% of the portfolio, the 2% cap) at the 2026-11-13 open, 3.01; RSI 52 is neutral"
     }
    ],
-   "margin_vs_spy_pct": 0.47,
-   "gbp100_now": 99.65,
+   "margin_vs_spy_pct": 0.43,
+   "gbp100_now": 99.61,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -2548,12 +2548,12 @@
    "label": "Research setup: a smaller company, 2+ insiders each buying $25k+ within 30 days, operating cash flow above profit (added 4 Nov 2026)",
    "hold_days": 60,
    "started": "2026-11-04",
-   "value": 99969.78,
+   "value": 99940.13,
    "paused": false,
-   "drawdown_pct": -0.04,
+   "drawdown_pct": -0.06,
    "max_drawdown_pct": -0.19,
    "stops_hit": 0,
-   "return_pct": -0.03,
+   "return_pct": -0.06,
    "cash": 82012.45,
    "open": [
     {
@@ -2643,11 +2643,11 @@
     {
      "symbol": "EGBN",
      "since": "2026-11-13",
-     "value": 2014.25,
-     "return_pct": 0.76,
+     "value": 1984.6,
+     "return_pct": -0.73,
      "why": "research setup: 2 insiders bought $199,430 in total within 30 days (Curley Stephen Russell, Newell Eric R); 2 officers or directors each bought $25k+",
      "spy_same_days_pct": -0.75,
-     "excess_pct": 1.51,
+     "excess_pct": 0.02,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": "State Commercial Banks"
@@ -2665,9 +2665,9 @@
      "industry": "Pharmaceutical Preparations"
     }
    ],
-   "invested_pct": 18.0,
-   "open_excess_pct": 1.26,
-   "skill_vs_spy_pct": -0.15,
+   "invested_pct": 17.9,
+   "open_excess_pct": 1.09,
+   "skill_vs_spy_pct": -0.31,
    "trades_measured": 9,
    "trades_beating_spy_pct": 66.7,
    "pending": [
@@ -2711,7 +2711,7 @@
     ],
     [
      "2026-11-13",
-     99969.78
+     99940.13
     ]
    ],
    "events": [
@@ -2761,8 +2761,8 @@
      "what": "TRADE: research setup: 6 insiders bought $195,004 in total within 30 days (BEN-MAIMON CAROLE, Celano Michael, Harlow John B. Jr., Shankar Gopi); 3 officers or dire. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-13 open, 3.01; RSI 52 is neutral"
     }
    ],
-   "margin_vs_spy_pct": 0.79,
-   "gbp100_now": 99.97,
+   "margin_vs_spy_pct": 0.76,
+   "gbp100_now": 99.94,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -2770,12 +2770,12 @@
    "label": "Research setup, but no new entries while the S&P 500 is below its 200-day average (added 4 Nov 2026)",
    "hold_days": 60,
    "started": "2026-11-04",
-   "value": 99969.78,
+   "value": 99940.13,
    "paused": false,
-   "drawdown_pct": -0.04,
+   "drawdown_pct": -0.06,
    "max_drawdown_pct": -0.19,
    "stops_hit": 0,
-   "return_pct": -0.03,
+   "return_pct": -0.06,
    "cash": 82012.45,
    "open": [
     {
@@ -2865,11 +2865,11 @@
     {
      "symbol": "EGBN",
      "since": "2026-11-13",
-     "value": 2014.25,
-     "return_pct": 0.76,
+     "value": 1984.6,
+     "return_pct": -0.73,
      "why": "research setup: 2 insiders bought $199,430 in total within 30 days (Curley Stephen Russell, Newell Eric R); 2 officers or directors each bought $25k+",
      "spy_same_days_pct": -0.75,
-     "excess_pct": 1.51,
+     "excess_pct": 0.02,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": "State Commercial Banks"
@@ -2887,9 +2887,9 @@
      "industry": "Pharmaceutical Preparations"
     }
    ],
-   "invested_pct": 18.0,
-   "open_excess_pct": 1.26,
-   "skill_vs_spy_pct": -0.15,
+   "invested_pct": 17.9,
+   "open_excess_pct": 1.09,
+   "skill_vs_spy_pct": -0.31,
    "trades_measured": 9,
    "trades_beating_spy_pct": 66.7,
    "pending": [
@@ -2933,7 +2933,7 @@
     ],
     [
      "2026-11-13",
-     99969.78
+     99940.13
     ]
    ],
    "events": [
@@ -2983,8 +2983,8 @@
      "what": "TRADE: research setup: 6 insiders bought $195,004 in total within 30 days (BEN-MAIMON CAROLE, Celano Michael, Harlow John B. Jr., Shankar Gopi); 3 officers or dire. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-13 open, 3.01; RSI 52 is neutral"
     }
    ],
-   "margin_vs_spy_pct": 0.79,
-   "gbp100_now": 99.97,
+   "margin_vs_spy_pct": 0.76,
+   "gbp100_now": 99.94,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   }
@@ -3025,32 +3025,32 @@
    },
    {
     "strategy": "research_setup",
-    "skill_vs_spy_pct": -0.15,
+    "skill_vs_spy_pct": -0.31,
     "trades_measured": 9,
     "trades_beating_spy_pct": 66.7,
-    "invested_pct": 18.0,
-    "margin_vs_spy_pct": 0.79,
-    "gbp100_now": 99.97,
+    "invested_pct": 17.9,
+    "margin_vs_spy_pct": 0.76,
+    "gbp100_now": 99.94,
     "days_live": 9
    },
    {
     "strategy": "research_setup_trend",
-    "skill_vs_spy_pct": -0.15,
+    "skill_vs_spy_pct": -0.31,
     "trades_measured": 9,
     "trades_beating_spy_pct": 66.7,
-    "invested_pct": 18.0,
-    "margin_vs_spy_pct": 0.79,
-    "gbp100_now": 99.97,
+    "invested_pct": 17.9,
+    "margin_vs_spy_pct": 0.76,
+    "gbp100_now": 99.94,
     "days_live": 9
    },
    {
     "strategy": "insider_cluster2_smallcap",
-    "skill_vs_spy_pct": -0.85,
+    "skill_vs_spy_pct": -0.97,
     "trades_measured": 17,
     "trades_beating_spy_pct": 58.8,
     "invested_pct": 33.7,
-    "margin_vs_spy_pct": 0.47,
-    "gbp100_now": 99.65,
+    "margin_vs_spy_pct": 0.43,
+    "gbp100_now": 99.61,
     "days_live": 11
    },
    {

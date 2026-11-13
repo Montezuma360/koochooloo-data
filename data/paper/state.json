@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 23,
+ "runs": 24,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -573,7 +573,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.0,
    "paused": false
   },
   "insider_big_250k": {
@@ -1209,7 +1209,7 @@
      "stop_pct": 0.2015,
      "industry": "28",
      "rsi": 27.5,
-     "last_value": 2081.2157056500578
+     "last_value": 2082.13128440716
     },
     {
      "sym": "COHR",
@@ -1811,11 +1811,11 @@
     ],
     [
      "2026-11-13",
-     100425.18
+     100426.1
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -1.43,
+   "drawdown_pct": -1.71,
    "paused": false
   },
   "congress_cluster3": {
@@ -1957,7 +1957,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -0.01,
+   "drawdown_pct": 0.0,
    "paused": false
   },
   "congress_big_100k": {
@@ -3940,7 +3940,7 @@
      "stop_pct": 0.1462,
      "industry": null,
      "rsi": 41.0,
-     "last_value": 1950.0428835490684
+     "last_value": 1937.2975171418263
     },
     {
      "sym": "EGBN",
@@ -3954,7 +3954,7 @@
      "stop_pct": 0.064,
      "industry": "60",
      "rsi": 69.5,
-     "last_value": 2004.864550351478
+     "last_value": 1975.3472993816001
     },
     {
      "sym": "STVN",
@@ -4467,11 +4467,11 @@
     ],
     [
      "2026-11-13",
-     99653.93
+     99611.66
     ]
    ],
    "started": "2026-11-02",
-   "drawdown_pct": -0.62,
+   "drawdown_pct": -0.54,
    "paused": false
   },
   "research_setup": {
@@ -4589,7 +4589,7 @@
      "stop_pct": 0.064,
      "industry": "60",
      "rsi": 69.5,
-     "last_value": 2014.2524342180104
+     "last_value": 1984.5969671655967
     },
     {
      "sym": "LRMR",
@@ -4714,11 +4714,11 @@
     ],
     [
      "2026-11-13",
-     99969.78
+     99940.13
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -0.04,
+   "drawdown_pct": -0.06,
    "paused": false
   },
   "research_setup_trend": {
@@ -4836,7 +4836,7 @@
      "stop_pct": 0.064,
      "industry": "60",
      "rsi": 69.5,
-     "last_value": 2014.2524342180104
+     "last_value": 1984.5969671655967
     },
     {
      "sym": "LRMR",
@@ -4961,15 +4961,15 @@
     ],
     [
      "2026-11-13",
-     99969.78
+     99940.13
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -0.04,
+   "drawdown_pct": -0.06,
    "paused": false
   }
  },
- "updated": "2026-11-13T22:00:09+00:00",
+ "updated": "2026-11-13T22:24:24+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
