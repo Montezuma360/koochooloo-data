@@ -310,8 +310,11 @@ def goal_block(summ):
         v["yearly_pace_pct"] = round(100 * pace, 1) if pace is not None else None
         v["years_to_10000_at_pace"] = years_to_target(pace)
         if k != "spy_benchmark":
-            board.append({"strategy": k, "margin_vs_spy_pct": v["margin_vs_spy_pct"], "gbp100_now": v["gbp100_now"], "days_live": days})
-    board.sort(key=lambda r: -(r["margin_vs_spy_pct"] if r["margin_vs_spy_pct"] is not None else -1e9))
+            board.append({"strategy": k, "skill_vs_spy_pct": v.get("skill_vs_spy_pct"), "trades_measured": v.get("trades_measured", 0),
+                          "trades_beating_spy_pct": v.get("trades_beating_spy_pct"), "invested_pct": v.get("invested_pct"),
+                          "margin_vs_spy_pct": v["margin_vs_spy_pct"], "gbp100_now": v["gbp100_now"], "days_live": days})
+    # rank by skill (each trade against the S&P over its own days); a strategy sitting in cash no longer looks clever
+    board.sort(key=lambda r: -(r["skill_vs_spy_pct"] if r["skill_vs_spy_pct"] is not None else -1e9))
     best = board[0] if board else None
     return {
         "aim": "Beat the S&P 500 by the largest possible margin after costs; turn GBP 100 into GBP 10,000 (100x)",
@@ -509,9 +512,21 @@ def main():
     spy_start = S["spy_benchmark"]["equity"][0][1] if S["spy_benchmark"]["equity"] else START_CASH
     summ = {"updated": st["updated"], "priced_to": str(mark_day), "rules": __doc__.split("\n\n", 1)[1].strip(),
             "market_stress": stressed, "market_note": stress_why, "strategies": {}}
+    def spy_from(since):  # SPY from the open of the position's entry day to the latest close: the fair comparison
+        idx = [d for d in spy.index if str(d)[:10] >= str(since)[:10]]
+        if not idx:
+            return None
+        a = spy.Open.get(idx[0])
+        return (float(spy.Close.iloc[-1]) / float(a) - 1) if a else None
     for k, s in S.items():
         eq = s["equity"][-1][1] if s["equity"] else START_CASH
         C = s["closed"]
+        ox = []  # open positions: (value, excess over SPY in the same days, %)
+        for q in s["open"]:
+            sf = spy_from(q["entry_date"]) if k != "spy_benchmark" else None
+            q["_spy"] = sf
+            if sf is not None:
+                ox.append((q["last_value"], 100 * (q["last_value"] / q["alloc"] - 1) - 100 * sf))
         x = [t["excess_pct"] for t in C if t.get("excess_pct") is not None]
         summ["strategies"][k] = {
             "label": s["label"], "hold_days": s["hold"], "started": s["started"], "value": round(eq, 2),
@@ -521,7 +536,15 @@ def main():
             "return_pct": round(100 * (eq / START_CASH - 1), 2), "cash": round(s["cash"], 2),
             "open": [{"symbol": q["sym"], "since": q["entry_date"], "value": round(q["last_value"], 2),
                       "return_pct": round(100 * (q["last_value"] / q["alloc"] - 1), 2), "why": q.get("note", ""),
+                      "spy_same_days_pct": round(100 * q["_spy"], 2) if q.get("_spy") is not None else None,
+                      "excess_pct": round(100 * (q["last_value"] / q["alloc"] - 1) - 100 * q["_spy"], 2) if q.get("_spy") is not None else None,
                       "size_x": q.get("size_x"), "stop_pct": round(100 * q.get("stop_pct", 0), 1), "industry": (sic.get(q["sym"]) or {}).get("name")} for q in s["open"]],
+            # the fair scorecard: every trade, open or closed, against the S&P 500 over the same days; cash earns no credit
+            "invested_pct": round(100 * (eq - s["cash"]) / eq, 1) if eq else None,
+            "open_excess_pct": round(sum(v * e for v, e in ox) / sum(v for v, _ in ox), 2) if ox else None,
+            "skill_vs_spy_pct": round((sum(x) + sum(e for _, e in ox)) / (len(x) + len(ox)), 2) if (x or ox) else None,
+            "trades_measured": len(x) + len(ox),
+            "trades_beating_spy_pct": round(100 * (sum(v > 0 for v in x) + sum(e > 0 for _, e in ox)) / (len(x) + len(ox)), 1) if (x or ox) else None,
             "pending": [p["sym"] for p in s["pending"]],
             "closed_trades": len(C),
             "win_pct": round(100 * sum(t["return_pct"] > 0 for t in C) / len(C), 1) if C else None,
@@ -532,6 +555,9 @@ def main():
         }
     summ["spy_since_start_pct"] = round(100 * (S["spy_benchmark"]["equity"][-1][1] / START_CASH - 1), 2) if S["spy_benchmark"]["equity"] else None
     summ["goal"] = goal_block(summ)
+    for s in S.values():
+        for q in s["open"]:
+            q.pop("_spy", None)
     (P / "state.json").write_text(json.dumps(st, indent=1, default=str))
     (P / "summary.json").write_text(json.dumps(summ, indent=1, default=str))
     dfile = P / "decisions.csv"
