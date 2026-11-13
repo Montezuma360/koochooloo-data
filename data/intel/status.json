@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T23:00:32Z",
+ "updated": "2026-11-13T23:01:21Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,10 +11,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-13T23:00:32Z",
+   "last_try": "2026-11-13T23:01:21Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-13T23:00:32Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-13T23:01:21Z",
+   "seconds": 0.3,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-13T23:00:32Z",
+   "last_try": "2026-11-13T23:01:21Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-13T23:00:32Z",
-   "seconds": 1.4,
+   "last_ok": "2026-11-13T23:01:21Z",
+   "seconds": 2.0,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,10 +67,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-13T23:00:32Z",
-   "result": "6 new headlines from 15 feeds",
-   "last_ok": "2026-11-13T23:00:32Z",
-   "seconds": 1.9,
+   "last_try": "2026-11-13T23:01:21Z",
+   "result": "0 new headlines from 15 feeds",
+   "last_ok": "2026-11-13T23:01:21Z",
+   "seconds": 3.4,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -123,10 +123,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-13T23:00:32Z",
-   "result": "BTC 68148.8, ETH 1921.09, SOL 77.59 from 3 exchanges",
-   "last_ok": "2026-11-13T23:00:32Z",
-   "seconds": 0.9,
+   "last_try": "2026-11-13T23:01:21Z",
+   "result": "BTC 68147.93, ETH 1921.82, SOL 77.6 from 3 exchanges",
+   "last_ok": "2026-11-13T23:01:21Z",
+   "seconds": 1.2,
    "every_minutes": 1
   }
  }
