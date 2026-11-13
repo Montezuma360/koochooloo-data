@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T22:21:14Z",
+ "updated": "2026-11-13T22:26:02Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,7 +7,7 @@
  "repo_size_mb": 278.2,
  "feeds": {
   "prices": {
-   "updated": "2026-11-13T22:20:57Z",
+   "updated": "2026-11-13T22:25:51Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -17,7 +17,7 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-13T22:21:01Z",
+   "updated": "2026-11-13T22:25:55Z",
    "age_hours": 0.0,
    "stale_after_hours": 1,
    "stale": false,
@@ -27,7 +27,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-13T22:21:14Z",
+   "updated": "2026-11-13T22:26:01Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-13T21:38:44Z",
-   "age_hours": 0.71,
+   "age_hours": 0.79,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,22 +46,22 @@
   },
   "alt_data": {
    "updated": "2026-11-13T00:09:42Z",
-   "age_hours": 22.19,
+   "age_hours": 22.27,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "paper_trading": {
-   "updated": "2026-11-13T22:00:09+00:00",
-   "age_hours": 0.35,
+   "updated": "2026-11-13T22:24:24+00:00",
+   "age_hours": 0.03,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-13T22:21:10Z",
+   "updated": "2026-11-13T22:25:57Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -74,15 +74,21 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-13T22:19:28Z",
+   "at": "2026-11-13T22:24:25Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 46
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-13T22:19:22Z",
+   "at": "2026-11-13T22:24:20Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 42
+  },
+  "Paper trading": {
+   "last": "success",
+   "at": "2026-11-13T22:24:40Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 2
   },
   "Refresh signals and dashboard": {
    "last": "success",
@@ -105,12 +111,6 @@
   "Morning brief": {
    "last": "success",
    "at": "2026-11-13T22:03:07Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 1
-  },
-  "Paper trading": {
-   "last": "success",
-   "at": "2026-11-13T22:00:29Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 1
   },
