@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 24,
+ "runs": 25,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -1290,6 +1290,12 @@
      "signal": "2026-11-13",
      "event": "2026-11-09",
      "note": "Perez Anton Jose Antonio (Director) bought $477,648"
+    },
+    {
+     "sym": "UPST",
+     "signal": "2026-11-13",
+     "event": "2026-11-11",
+     "note": "Gu Paul (Chief Executive Officer) bought $1,028,400"
     }
    ],
    "closed": [],
@@ -1444,7 +1450,8 @@
     "AKAM": "2026-11-13",
     "BH": "2026-11-13",
     "VISN": "2026-11-13",
-    "ASR": "2026-11-13"
+    "ASR": "2026-11-13",
+    "UPST": "2026-11-13"
    },
    "events": [
     {
@@ -2909,6 +2916,12 @@
      "signal": "2026-11-13",
      "event": "2026-11-13",
      "note": "score 8: 10% owner OLIVER ERIC L bought $899,472 on 2026-11-12; 10% owner OLIVER ERIC L bought $1,112,936 on 2026-11-11"
+    },
+    {
+     "sym": "CTEV",
+     "signal": "2026-11-13",
+     "event": "2026-11-13",
+     "note": "score 12: 2 insiders bought $4,763,662 in 30 days (last 2026-11-11); Pres., CEO & Executive Chair Dalton Travis bought $149,927 on 2026-11-11"
     }
    ],
    "closed": [],
@@ -3037,7 +3050,8 @@
     "VISN": "2026-11-13",
     "ABCL": "2026-11-13",
     "ALDX": "2026-11-13",
-    "SJT": "2026-11-13"
+    "SJT": "2026-11-13",
+    "CTEV": "2026-11-13"
    },
    "events": [
     {
@@ -4969,7 +4983,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-13T22:24:24+00:00",
+ "updated": "2026-11-13T23:48:47+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -5630,6 +5644,14 @@
   "ASR": {
    "sic": "45",
    "name": "Airports, Flying Fields & Airport Terminal Services"
+  },
+  "UPST": {
+   "sic": "61",
+   "name": "Finance Services"
+  },
+  "CTEV": {
+   "sic": "73",
+   "name": "Services-Business Services, NEC"
   }
  }
 }
