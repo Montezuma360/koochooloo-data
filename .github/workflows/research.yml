@@ -1,0 +1,35 @@
+name: Research backtest
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: pip install -q yfinance pandas numpy
+      - name: Run the backtest
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python research/backtest.py
+      - name: Commit results
+        run: |
+          git config user.name "koochooloo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/research
+          git diff --staged --quiet && exit 0
+          git commit -m "Research backtest $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push && break; sleep 10; done

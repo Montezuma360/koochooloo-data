@@ -1,0 +1,28 @@
+name: Clear old data history
+# Every-minute data saves made the repository grow about 35 MB a day. Once a week the current files are kept as one
+# fresh commit and the older history is dropped (nothing reads it: long-run memory lives in data/history/ files).
+on:
+  schedule:
+    - cron: "17 3 * * 0"   # Sunday 03:17 UTC, markets shut
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: squash
+  cancel-in-progress: false
+jobs:
+  squash:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Keep only the current files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan fresh
+          git add -A
+          git commit -q -m "Data snapshot $(date -u +%F): older history cleared to keep the repository small"
+          git push -f origin fresh:main

@@ -1,0 +1,851 @@
+{
+ "updated": "2026-11-13T21:24:41Z",
+ "source": "CoinGecko categories (sectors and narratives)",
+ "note": "A very large one-day jump can mean CoinGecko added coins to the category rather than a real move; check the top coins before reading much into it.",
+ "largest": [
+  {
+   "id": "smart-contract-platform",
+   "name": "Smart Contract Platform",
+   "market_cap": 1974212622463.0,
+   "change_24h_pct": -3.68,
+   "volume_24h": 71432511658.0,
+   "top_coins": [
+    "bitcoin",
+    "ethereum",
+    "binancecoin"
+   ]
+  },
+  {
+   "id": "layer-1",
+   "name": "Layer 1 (L1)",
+   "market_cap": 1946753969248.0,
+   "change_24h_pct": -3.71,
+   "volume_24h": 69701426111.0,
+   "top_coins": [
+    "bitcoin",
+    "ethereum",
+    "binancecoin"
+   ]
+  },
+  {
+   "id": "proof-of-work-pow",
+   "name": "Proof of Work (PoW)",
+   "market_cap": 1426549598333.0,
+   "change_24h_pct": -4.0,
+   "volume_24h": 44795804450.0,
+   "top_coins": [
+    "bitcoin",
+    "zcash",
+    "dogecoin"
+   ]
+  },
+  {
+   "id": "world-liberty-financial-portfolio",
+   "name": "World Liberty Financial Portfolio",
+   "market_cap": 532321898205.0,
+   "change_24h_pct": -2.0,
+   "volume_24h": 97223845895.0,
+   "top_coins": [
+    "ethereum",
+    "tether",
+    "usd-coin"
+   ]
+  },
+  {
+   "id": "proof-of-stake-pos",
+   "name": "Proof of Stake (PoS)",
+   "market_cap": 444309677267.0,
+   "change_24h_pct": -3.03,
+   "volume_24h": 22572036135.0,
+   "top_coins": [
+    "ethereum",
+    "binancecoin",
+    "solana"
+   ]
+  },
+  {
+   "id": "made-in-usa",
+   "name": "Made in USA",
+   "market_cap": 291142143451.0,
+   "change_24h_pct": -1.31,
+   "volume_24h": 28704376659.0,
+   "top_coins": [
+    "usd-coin",
+    "ripple",
+    "solana"
+   ]
+  },
+  {
+   "id": "stablecoins",
+   "name": "Stablecoins",
+   "market_cap": 284485425238.0,
+   "change_24h_pct": -0.2,
+   "volume_24h": 82730014384.0,
+   "top_coins": [
+    "tether",
+    "usd-coin",
+    "usds"
+   ]
+  },
+  {
+   "id": "usd-stablecoin",
+   "name": "USD Stablecoin",
+   "market_cap": 281283520738.0,
+   "change_24h_pct": -0.19,
+   "volume_24h": 82599730800.0,
+   "top_coins": [
+    "tether",
+    "usd-coin",
+    "usds"
+   ]
+  },
+  {
+   "id": "fiat-backed-stablecoin",
+   "name": "Fiat-backed Stablecoin",
+   "market_cap": 271062753443.0,
+   "change_24h_pct": -0.17,
+   "volume_24h": 81031268166.0,
+   "top_coins": [
+    "tether",
+    "usd-coin",
+    "usds"
+   ]
+  },
+  {
+   "id": "exchange-based-tokens",
+   "name": "Exchange-based Tokens",
+   "market_cap": 138865101656.0,
+   "change_24h_pct": -2.22,
+   "volume_24h": 3731682692.0,
+   "top_coins": [
+    "binancecoin",
+    "hyperliquid",
+    "leo-token"
+   ]
+  },
+  {
+   "id": "alleged-sec-securities",
+   "name": "Alleged SEC Securities",
+   "market_cap": 125966207956.0,
+   "change_24h_pct": -2.26,
+   "volume_24h": 2374197659.0,
+   "top_coins": [
+    "binancecoin",
+    "tron",
+    "near"
+   ]
+  },
+  {
+   "id": "made-in-china",
+   "name": "Made in China",
+   "market_cap": 124066713171.0,
+   "change_24h_pct": -2.44,
+   "volume_24h": 1602571233.0,
+   "top_coins": [
+    "binancecoin",
+    "tron",
+    "okb"
+   ]
+  },
+  {
+   "id": "centralized-exchange-token-cex",
+   "name": "Centralized Exchange (CEX) Token",
+   "market_cap": 110008807942.0,
+   "change_24h_pct": -2.66,
+   "volume_24h": 1436137964.0,
+   "top_coins": [
+    "binancecoin",
+    "leo-token",
+    "whitebit"
+   ]
+  },
+  {
+   "id": "base-native",
+   "name": "Base Native",
+   "market_cap": 106237904285.0,
+   "change_24h_pct": -0.48,
+   "volume_24h": 20324578270.0,
+   "top_coins": [
+    "usd-coin",
+    "usds",
+    "chainlink"
+   ]
+  },
+  {
+   "id": "genius-act-compliant-stablecoin",
+   "name": "GENIUS Act Compliant Stablecoin",
+   "market_cap": 71866299086.0,
+   "change_24h_pct": -0.49,
+   "volume_24h": 17158334288.0,
+   "top_coins": [
+    "usd-coin",
+    "paypal-usd",
+    "usa"
+   ]
+  },
+  {
+   "id": "real-world-assets-rwa",
+   "name": "Real World Assets (RWA)",
+   "market_cap": 70673751465.0,
+   "change_24h_pct": -1.07,
+   "volume_24h": 3434955838.0,
+   "top_coins": [
+    "figure-heloc",
+    "chainlink",
+    "stellar"
+   ]
+  },
+  {
+   "id": "mica-compliant-stablecoin",
+   "name": "MiCA-Compliant Stablecoin",
+   "market_cap": 69884781988.0,
+   "change_24h_pct": -0.41,
+   "volume_24h": 17217647978.0,
+   "top_coins": [
+    "usd-coin",
+    "euro-coin",
+    "societe-generale-forge-eurcv"
+   ]
+  },
+  {
+   "id": "decentralized-finance-defi",
+   "name": "Decentralized Finance (DeFi)",
+   "market_cap": 62985995399.0,
+   "change_24h_pct": -2.08,
+   "volume_24h": 4740073236.0,
+   "top_coins": [
+    "staked-ether",
+    "hyperliquid",
+    "wrapped-steth"
+   ]
+  },
+  {
+   "id": "coinlist-launchpad",
+   "name": "CoinList Launchpad",
+   "market_cap": 57959126858.0,
+   "change_24h_pct": -1.78,
+   "volume_24h": 4360408255.0,
+   "top_coins": [
+    "solana",
+    "near",
+    "ondo-finance"
+   ]
+  },
+  {
+   "id": "tokenized-products",
+   "name": "Tokenized Assets",
+   "market_cap": 48309819408.0,
+   "change_24h_pct": -1.2,
+   "volume_24h": 2379108602.0,
+   "top_coins": [
+    "figure-heloc",
+    "tether-gold",
+    "ondo-us-dollar-yield"
+   ]
+  },
+  {
+   "id": "privacy",
+   "name": "Privacy",
+   "market_cap": 45706354296.0,
+   "change_24h_pct": -0.98,
+   "volume_24h": 2556563746.0,
+   "top_coins": [
+    "zcash",
+    "monero",
+    "chainlink"
+   ]
+  },
+  {
+   "id": "governance",
+   "name": "Governance",
+   "market_cap": 37770162553.0,
+   "change_24h_pct": -1.65,
+   "volume_24h": 3205187170.0,
+   "top_coins": [
+    "hyperliquid",
+    "uniswap",
+    "ethena"
+   ]
+  },
+  {
+   "id": "decentralized-exchange",
+   "name": "Decentralized Exchange (DEX)",
+   "market_cap": 30241664485.0,
+   "change_24h_pct": -0.63,
+   "volume_24h": 2417362338.0,
+   "top_coins": [
+    "hyperliquid",
+    "uniswap",
+    "aster-2"
+   ]
+  },
+  {
+   "id": "tokenized-private-credit",
+   "name": "Tokenized Private Credit",
+   "market_cap": 26696090896.0,
+   "change_24h_pct": -0.32,
+   "volume_24h": 529812281.0,
+   "top_coins": [
+    "figure-heloc",
+    "pareto-aa-tranche-falconx-usdc"
+   ]
+  },
+  {
+   "id": "privacy-coins",
+   "name": "Privacy Coins",
+   "market_cap": 26536711144.0,
+   "change_24h_pct": -1.48,
+   "volume_24h": 1221863652.0,
+   "top_coins": [
+    "zcash",
+    "monero",
+    "decred"
+   ]
+  },
+  {
+   "id": "meme-token",
+   "name": "Meme",
+   "market_cap": 24629417452.0,
+   "change_24h_pct": -1.07,
+   "volume_24h": 1849307809.0,
+   "top_coins": [
+    "dogecoin",
+    "shiba-inu",
+    "memecore"
+   ]
+  },
+  {
+   "id": "decentralized-perpetuals",
+   "name": "Perpetuals",
+   "market_cap": 22596172225.0,
+   "change_24h_pct": 0.1,
+   "volume_24h": 1529201275.0,
+   "top_coins": [
+    "hyperliquid",
+    "aster-2",
+    "jupiter-exchange-solana"
+   ]
+  },
+  {
+   "id": "infrastructure",
+   "name": "Infrastructure",
+   "market_cap": 22385202591.0,
+   "change_24h_pct": -1.09,
+   "volume_24h": 1256446536.0,
+   "top_coins": [
+    "chainlink",
+    "litecoin",
+    "quant-network"
+   ]
+  },
+  {
+   "id": "zero-knowledge-zk",
+   "name": "Zero Knowledge (ZK)",
+   "market_cap": 19730058150.0,
+   "change_24h_pct": -0.77,
+   "volume_24h": 1333310370.0,
+   "top_coins": [
+    "zcash",
+    "polygon-ecosystem-token",
+    "midnight-3"
+   ]
+  },
+  {
+   "id": "decentralized-derivatives",
+   "name": "Derivatives",
+   "market_cap": 19413482394.0,
+   "change_24h_pct": 0.38,
+   "volume_24h": 1373809185.0,
+   "top_coins": [
+    "hyperliquid",
+    "lighter",
+    "derive"
+   ]
+  },
+  {
+   "id": "artificial-intelligence",
+   "name": "Artificial Intelligence (AI)",
+   "market_cap": 18998222209.0,
+   "change_24h_pct": 2.62,
+   "volume_24h": 2265467482.0,
+   "top_coins": [
+    "near",
+    "bittensor",
+    "staked-tao-root"
+   ]
+  },
+  {
+   "id": "quantum-resistant",
+   "name": "Quantum-Resistant",
+   "market_cap": 18488350873.0,
+   "change_24h_pct": -0.32,
+   "volume_24h": 1281990022.0,
+   "top_coins": [
+    "zcash",
+    "injective-protocol",
+    "algorand"
+   ]
+  },
+  {
+   "id": "binance-alpha-spotlight",
+   "name": "Binance Alpha Spotlight",
+   "market_cap": 16662015045.0,
+   "change_24h_pct": -2.45,
+   "volume_24h": 1364490415.0,
+   "top_coins": [
+    "memecore",
+    "ondo-finance",
+    "morpho"
+   ]
+  },
+  {
+   "id": "privacy-infrastructure",
+   "name": "Privacy Infrastructure",
+   "market_cap": 14734084512.0,
+   "change_24h_pct": -0.07,
+   "volume_24h": 1046341779.0,
+   "top_coins": [
+    "chainlink",
+    "near",
+    "midnight-3"
+   ]
+  },
+  {
+   "id": "dog-themed-coins",
+   "name": "Dog-Themed",
+   "market_cap": 13827006929.0,
+   "change_24h_pct": -1.63,
+   "volume_24h": 721579361.0,
+   "top_coins": [
+    "dogecoin",
+    "shiba-inu",
+    "bonk"
+   ]
+  },
+  {
+   "id": "4chan-themed",
+   "name": "4chan-Themed",
+   "market_cap": 12896171398.0,
+   "change_24h_pct": -1.56,
+   "volume_24h": 1039352878.0,
+   "top_coins": [
+    "dogecoin",
+    "pepe",
+    "spx6900"
+   ]
+  },
+  {
+   "id": "chain-abstraction",
+   "name": "Chain Abstraction",
+   "market_cap": 12342839027.0,
+   "change_24h_pct": -0.19,
+   "volume_24h": 904499501.0,
+   "top_coins": [
+    "chainlink",
+    "near",
+    "zetachain"
+   ]
+  },
+  {
+   "id": "yzi-labs-portfolio",
+   "name": "YZi Labs (Prev. Binance Labs) Portfolio",
+   "market_cap": 10278082690.0,
+   "change_24h_pct": -1.22,
+   "volume_24h": 1476307026.0,
+   "top_coins": [
+    "sui",
+    "ethena",
+    "pancakeswap-token"
+   ]
+  },
+  {
+   "id": "elon-musk-inspired-coins",
+   "name": "Elon Musk-Inspired",
+   "market_cap": 10194002778.0,
+   "change_24h_pct": -1.57,
+   "volume_24h": 566537344.0,
+   "top_coins": [
+    "dogecoin",
+    "dogelon-mars",
+    "elonxcat"
+   ]
+  },
+  {
+   "id": "rwa-protocol",
+   "name": "RWA Protocol",
+   "market_cap": 10187426165.0,
+   "change_24h_pct": -1.69,
+   "volume_24h": 476118616.0,
+   "top_coins": [
+    "chainlink",
+    "ondo-finance",
+    "zebec-network"
+   ]
+  }
+ ],
+ "best_24h": [
+  {
+   "id": "binance-wallet-ido",
+   "name": "Binance Wallet IDO",
+   "market_cap": 2106747860.0,
+   "change_24h_pct": 14.11,
+   "volume_24h": 844095947.0,
+   "top_coins": [
+    "midnight-3",
+    "akedo",
+    "zama"
+   ]
+  },
+  {
+   "id": "ai-applications",
+   "name": "AI Applications",
+   "market_cap": 2522101926.0,
+   "change_24h_pct": 11.9,
+   "volume_24h": 689765380.0,
+   "top_coins": [
+    "venice-token",
+    "pieverse",
+    "akedo"
+   ]
+  },
+  {
+   "id": "socialfi",
+   "name": "SocialFi",
+   "market_cap": 2087390728.0,
+   "change_24h_pct": 5.79,
+   "volume_24h": 160237964.0,
+   "top_coins": [
+    "pump-fun",
+    "swop-2",
+    "project-galaxy"
+   ]
+  },
+  {
+   "id": "tokenized-exchange-traded-funds-etfs",
+   "name": "Tokenized Exchange-Traded Funds (ETFs)",
+   "market_cap": 726983284.0,
+   "change_24h_pct": 5.44,
+   "volume_24h": 270888779.0,
+   "top_coins": [
+    "sp500-xstock",
+    "nasdaq-xstock",
+    "ishares-core-s-p-500-etf-ondo-tokenized-etf"
+   ]
+  },
+  {
+   "id": "tokenized-exchange-traded-product-etps",
+   "name": "Tokenized Exchange-Traded Product (ETPs)",
+   "market_cap": 727050131.0,
+   "change_24h_pct": 5.44,
+   "volume_24h": 270892648.0,
+   "top_coins": [
+    "sp500-xstock",
+    "nasdaq-xstock",
+    "ishares-core-s-p-500-etf-ondo-tokenized-etf"
+   ]
+  },
+  {
+   "id": "bittensor-subnets",
+   "name": "Bittensor Subnets",
+   "market_cap": 989166321.0,
+   "change_24h_pct": 4.29,
+   "volume_24h": 42399540.0,
+   "top_coins": [
+    "celium",
+    "chutes",
+    "targon"
+   ]
+  },
+  {
+   "id": "identity",
+   "name": "Decentralized Identifier (DID)",
+   "market_cap": 1675850792.0,
+   "change_24h_pct": 3.01,
+   "volume_24h": 188303763.0,
+   "top_coins": [
+    "worldcoin-wld",
+    "ethereum-name-service",
+    "swop-2"
+   ]
+  },
+  {
+   "id": "chinese-meme",
+   "name": "Chinese Meme",
+   "market_cap": 670623299.0,
+   "change_24h_pct": 2.92,
+   "volume_24h": 34651796.0,
+   "top_coins": [
+    "bianrensheng",
+    "niu-lai",
+    "meme-horse"
+   ]
+  },
+  {
+   "id": "artificial-intelligence",
+   "name": "Artificial Intelligence (AI)",
+   "market_cap": 18998222209.0,
+   "change_24h_pct": 2.62,
+   "volume_24h": 2265467482.0,
+   "top_coins": [
+    "near",
+    "bittensor",
+    "staked-tao-root"
+   ]
+  },
+  {
+   "id": "binance-launchpad",
+   "name": "Binance Launchpad",
+   "market_cap": 2331054058.0,
+   "change_24h_pct": 2.23,
+   "volume_24h": 354867847.0,
+   "top_coins": [
+    "injective-protocol",
+    "fetch-ai",
+    "bittorrent"
+   ]
+  },
+  {
+   "id": "ai-agents",
+   "name": "AI Agents",
+   "market_cap": 2874908032.0,
+   "change_24h_pct": 2.02,
+   "volume_24h": 237130390.0,
+   "top_coins": [
+    "venice-token",
+    "virtual-protocol",
+    "fetch-ai"
+   ]
+  },
+  {
+   "id": "defai",
+   "name": "DeFAI",
+   "market_cap": 575005023.0,
+   "change_24h_pct": 1.96,
+   "volume_24h": 40964936.0,
+   "top_coins": [
+    "derive",
+    "mantis",
+    "cortex-2"
+   ]
+  },
+  {
+   "id": "bitcoin-layer-2",
+   "name": "Bitcoin Sidechains",
+   "market_cap": 961902517.0,
+   "change_24h_pct": 1.72,
+   "volume_24h": 65911426.0,
+   "top_coins": [
+    "blockstack",
+    "starknet",
+    "merlin-chain"
+   ]
+  },
+  {
+   "id": "binance-hodler-airdrops",
+   "name": "Binance HODLer Airdrops",
+   "market_cap": 2113590834.0,
+   "change_24h_pct": 1.72,
+   "volume_24h": 572491502.0,
+   "top_coins": [
+    "pudgy-penguins",
+    "falcon-finance-ff",
+    "plasma"
+   ]
+  },
+  {
+   "id": "venice-ecosystem",
+   "name": "Venice Ecosystem",
+   "market_cap": 1051549478.0,
+   "change_24h_pct": 1.54,
+   "volume_24h": 39658620.0,
+   "top_coins": [
+    "venice-token",
+    "diem",
+    "dolphin-2"
+   ]
+  }
+ ],
+ "worst_24h": [
+  {
+   "id": "ondo-tokenized-assets",
+   "name": "Ondo Tokenized Assets",
+   "market_cap": 970752905.0,
+   "change_24h_pct": -21.02,
+   "volume_24h": 133328589.0,
+   "top_coins": [
+    "circle-internet-group-ondo-tokenized-stock",
+    "ishares-core-s-p-500-etf-ondo-tokenized-etf",
+    "strategy-stretch-preferred-ondo-tokenized"
+   ]
+  },
+  {
+   "id": "lending-borrowing",
+   "name": "Lending/Borrowing Protocols",
+   "market_cap": 4428564505.0,
+   "change_24h_pct": -9.89,
+   "volume_24h": 293680093.0,
+   "top_coins": [
+    "aave",
+    "morpho",
+    "olympus"
+   ]
+  },
+  {
+   "id": "yield-farming",
+   "name": "Yield Farming",
+   "market_cap": 9072117602.0,
+   "change_24h_pct": -9.52,
+   "volume_24h": 901291749.0,
+   "top_coins": [
+    "uniswap",
+    "aave",
+    "bitway"
+   ]
+  },
+  {
+   "id": "payment-solutions",
+   "name": "Payment Solutions",
+   "market_cap": 1908799849.0,
+   "change_24h_pct": -7.2,
+   "volume_24h": 93793388.0,
+   "top_coins": [
+    "dash",
+    "stable-2",
+    "zebec-network"
+   ]
+  },
+  {
+   "id": "ether-fi-ecosystem",
+   "name": "Ether.fi Ecosystem",
+   "market_cap": 579248610.0,
+   "change_24h_pct": -7.05,
+   "volume_24h": 59030712.0,
+   "top_coins": [
+    "wrapped-eeth",
+    "ether-fi",
+    "ether-fi-staked-eth"
+   ]
+  },
+  {
+   "id": "curve-ecosystem",
+   "name": "Curve Ecosystem",
+   "market_cap": 560712194.0,
+   "change_24h_pct": -6.22,
+   "volume_24h": 52121226.0,
+   "top_coins": [
+    "curve-dao-token",
+    "convex-finance",
+    "frax-share"
+   ]
+  },
+  {
+   "id": "modular-blockchain",
+   "name": "Modular Blockchain",
+   "market_cap": 550300195.0,
+   "change_24h_pct": -6.15,
+   "volume_24h": 70580215.0,
+   "top_coins": [
+    "celestia",
+    "movement",
+    "cartesi"
+   ]
+  },
+  {
+   "id": "bstocks-ecosystem",
+   "name": "bStocks Ecosystem",
+   "market_cap": 1258642378.0,
+   "change_24h_pct": -6.13,
+   "volume_24h": 773123296.0,
+   "top_coins": [
+    "spacex-bstocks-tokenized-stock",
+    "nvidia-bstocks",
+    "circle-internet-group-bstock"
+   ]
+  },
+  {
+   "id": "liquid-restaking-governance-token",
+   "name": "Liquid Restaking Governance Tokens",
+   "market_cap": 882530976.0,
+   "change_24h_pct": -4.34,
+   "volume_24h": 102430017.0,
+   "top_coins": [
+    "ether-fi",
+    "pendle",
+    "puffer-finance"
+   ]
+  },
+  {
+   "id": "tokenized-money-market-fund-mmfs",
+   "name": "Tokenized Money Market Fund (MMFs)",
+   "market_cap": 2341612634.0,
+   "change_24h_pct": -4.16,
+   "volume_24h": 0.0,
+   "top_coins": [
+    "blackrock-usd-institutional-digital-liquidity-fund",
+    "eutbl",
+    "spiko-us-t-bills-money-market-fund"
+   ]
+  },
+  {
+   "id": "proof-of-work-pow",
+   "name": "Proof of Work (PoW)",
+   "market_cap": 1426549598333.0,
+   "change_24h_pct": -4.0,
+   "volume_24h": 44795804450.0,
+   "top_coins": [
+    "bitcoin",
+    "zcash",
+    "dogecoin"
+   ]
+  },
+  {
+   "id": "restaking",
+   "name": "Restaking",
+   "market_cap": 1157468669.0,
+   "change_24h_pct": -3.89,
+   "volume_24h": 166737498.0,
+   "top_coins": [
+    "wrapped-eeth",
+    "kelp-dao-restaked-eth",
+    "ether-fi"
+   ]
+  },
+  {
+   "id": "neobank",
+   "name": "Neobank",
+   "market_cap": 2181162100.0,
+   "change_24h_pct": -3.78,
+   "volume_24h": 104919419.0,
+   "top_coins": [
+    "mantle",
+    "ether-fi",
+    "plasma"
+   ]
+  },
+  {
+   "id": "layer-1",
+   "name": "Layer 1 (L1)",
+   "market_cap": 1946753969248.0,
+   "change_24h_pct": -3.71,
+   "volume_24h": 69701426111.0,
+   "top_coins": [
+    "bitcoin",
+    "ethereum",
+    "binancecoin"
+   ]
+  },
+  {
+   "id": "smart-contract-platform",
+   "name": "Smart Contract Platform",
+   "market_cap": 1974212622463.0,
+   "change_24h_pct": -3.68,
+   "volume_24h": 71432511658.0,
+   "top_coins": [
+    "bitcoin",
+    "ethereum",
+    "binancecoin"
+   ]
+  }
+ ],
+ "sectors_counted": 383
+}

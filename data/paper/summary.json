@@ -1,0 +1,2919 @@
+{
+ "updated": "2026-11-12T23:53:00+00:00",
+ "priced_to": "2026-11-12",
+ "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\n- Two strategies were added on 4 Nov 2026 and follow every rule above: \"research_setup\" (smaller company, 2+ insiders at $25k+, cash flow above\n  profit) and \"research_setup_trend\" (the same, but no new entries while the S&P 500 is below its 200-day average). The older strategies are unchanged.\n- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies\n  are ranked by their margin over the S&P 500; summary.json \"goal\" shows what GBP 100 has become in each and how long\n  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
+ "market_stress": false,
+ "market_note": "calm (VIX 19.46, high-yield spread 3.34)",
+ "strategies": {
+  "insider_cluster3": {
+   "label": "3+ company insiders buy the same stock within 30 days",
+   "hold_days": 60,
+   "started": "2026-11-01",
+   "value": 99824.63,
+   "paused": false,
+   "drawdown_pct": -0.22,
+   "max_drawdown_pct": -0.48,
+   "stops_hit": 0,
+   "return_pct": -0.18,
+   "cash": 70060.19,
+   "open": [
+    {
+     "symbol": "OCFC",
+     "since": "2026-11-04",
+     "value": 1934.78,
+     "return_pct": -3.26,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 6.4,
+     "industry": "National Commercial Banks"
+    },
+    {
+     "symbol": "FFIN",
+     "since": "2026-11-04",
+     "value": 1895.73,
+     "return_pct": -5.22,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 6.4,
+     "industry": "State Commercial Banks"
+    },
+    {
+     "symbol": "TRTX",
+     "since": "2026-11-04",
+     "value": 1829.41,
+     "return_pct": -8.51,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 8.8,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "TBBK",
+     "since": "2026-11-05",
+     "value": 1993.37,
+     "return_pct": -0.19,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 9.2,
+     "industry": "National Commercial Banks"
+    },
+    {
+     "symbol": "UMH",
+     "since": "2026-11-05",
+     "value": 1867.69,
+     "return_pct": -6.45,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 6.2,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "FUNC",
+     "since": "2026-11-05",
+     "value": 1933.35,
+     "return_pct": -3.12,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 7.1,
+     "industry": "National Commercial Banks"
+    },
+    {
+     "symbol": "AN",
+     "since": "2026-11-06",
+     "value": 1950.83,
+     "return_pct": -2.04,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 11.2,
+     "industry": "Retail-Auto Dealers & Gasoline Stations"
+    },
+    {
+     "symbol": "LBRT",
+     "since": "2026-11-06",
+     "value": 2146.19,
+     "return_pct": 7.77,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Oil & Gas Field Services, NEC"
+    },
+    {
+     "symbol": "MTDR",
+     "since": "2026-11-09",
+     "value": 2132.98,
+     "return_pct": 6.82,
+     "why": "4 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 12.5,
+     "industry": "Crude Petroleum & Natural Gas"
+    },
+    {
+     "symbol": "LKQ",
+     "since": "2026-11-09",
+     "value": 1960.04,
+     "return_pct": -1.84,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 15.7,
+     "industry": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
+    },
+    {
+     "symbol": "SHEN",
+     "since": "2026-11-10",
+     "value": 2004.3,
+     "return_pct": 0.54,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 12.8,
+     "industry": "Telephone Communications (No Radiotelephone)"
+    },
+    {
+     "symbol": "FLOC",
+     "since": "2026-11-10",
+     "value": 1999.92,
+     "return_pct": 0.28,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 14.1,
+     "industry": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
+     "symbol": "TTMI",
+     "since": "2026-11-10",
+     "value": 2005.42,
+     "return_pct": 0.59,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Printed Circuit Boards"
+    },
+    {
+     "symbol": "OBIO",
+     "since": "2026-11-10",
+     "value": 2093.42,
+     "return_pct": 5.07,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 17.1,
+     "industry": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+     "symbol": "FUN",
+     "since": "2026-11-11",
+     "value": 2017.02,
+     "return_pct": 0.84,
+     "why": "3 insiders bought within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 18.5,
+     "industry": "Services-Amusement & Recreation Services"
+    }
+   ],
+   "pending": [
+    "MP",
+    "GOOD",
+    "DOX",
+    "LRMR"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ],
+    [
+     "2026-11-02",
+     100000.0
+    ],
+    [
+     "2026-11-03",
+     100000.0
+    ],
+    [
+     "2026-11-04",
+     100044.91
+    ],
+    [
+     "2026-11-05",
+     99683.14
+    ],
+    [
+     "2026-11-06",
+     99563.7
+    ],
+    [
+     "2026-11-09",
+     99859.11
+    ],
+    [
+     "2026-11-10",
+     99581.29
+    ],
+    [
+     "2026-11-11",
+     100010.13
+    ],
+    [
+     "2026-11-12",
+     99824.63
+    ]
+   ],
+   "events": [
+    {
+     "date": "2026-11-05",
+     "sym": "UPBD",
+     "what": "NO_TRADE: RSI 84 is above 70: overbought, buying now risks chasing a spike"
+    },
+    {
+     "date": "2026-11-05",
+     "sym": "UMH",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 15.52; RSI 53 is neutral"
+    },
+    {
+     "date": "2026-11-05",
+     "sym": "FUNC",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,995 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 47.82; RSI 65 is neutral"
+    },
+    {
+     "date": "2026-11-06",
+     "sym": "AN",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,991 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 183.99; RSI 65 is neutral"
+    },
+    {
+     "date": "2026-11-06",
+     "sym": "LBRT",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,991 (2.0% of the portfolio, the 2% cap) at the 2026-11-06 open, 11.97; RSI 23 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-09",
+     "sym": "MTDR",
+     "what": "TRADE: 4 insiders bought within 30 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-09 open, 49.80; RSI 35 is neutral"
+    },
+    {
+     "date": "2026-11-09",
+     "sym": "LKQ",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-09 open, 20.21; RSI 47 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "SHEN",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,993 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 10.19; RSI 48 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "AFCG",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "FLOC",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,994 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 21.00; RSI 62 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "TTMI",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,993 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 74.41; RSI 40 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "OBIO",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,992 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 5.83; RSI 49 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "SLQT",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "FUN",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 11.08; RSI 56 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "DTI",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    }
+   ],
+   "margin_vs_spy_pct": 0.28,
+   "gbp100_now": 99.82,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
+  },
+  "insider_big_250k": {
+   "label": "A director or officer buys $250k+ on the open market",
+   "hold_days": 60,
+   "started": "2026-11-01",
+   "value": 100837.64,
+   "paused": false,
+   "drawdown_pct": -1.31,
+   "max_drawdown_pct": -1.31,
+   "stops_hit": 0,
+   "return_pct": 0.84,
+   "cash": 23593.02,
+   "open": [
+    {
+     "symbol": "RAPP",
+     "since": "2026-11-02",
+     "value": 2051.77,
+     "return_pct": 2.59,
+     "why": "HEALY JAMES (Director) bought $19,999,980",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Pharmaceutical Preparations"
+    },
+    {
+     "symbol": "LSTR",
+     "since": "2026-11-03",
+     "value": 2006.06,
+     "return_pct": 0.28,
+     "why": "Lonegro Frank A (President & CEO) bought $714,619",
+     "size_x": 1.0,
+     "stop_pct": 11.1,
+     "industry": "Trucking (No Local)"
+    },
+    {
+     "symbol": "ATEC",
+     "since": "2026-11-03",
+     "value": 1901.73,
+     "return_pct": -4.98,
+     "why": "Demski David M (Director) bought $408,600",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+     "symbol": "ENPH",
+     "since": "2026-11-03",
+     "value": 1892.53,
+     "return_pct": -5.45,
+     "why": "Kothandaraman Badrinarayanan (President & CEO) bought $267,514",
+     "size_x": 1.0,
+     "stop_pct": 19.2,
+     "industry": "Semiconductors & Related Devices"
+    },
+    {
+     "symbol": "XYL",
+     "since": "2026-11-03",
+     "value": 1936.03,
+     "return_pct": -3.42,
+     "why": "KOCH D CHRISTIAN (Director) bought $985,600",
+     "size_x": 1.0,
+     "stop_pct": 10.1,
+     "industry": "Pumps & Pumping Equipment"
+    },
+    {
+     "symbol": "DINO",
+     "since": "2026-11-03",
+     "value": 1838.7,
+     "return_pct": -8.25,
+     "why": "MYERS FRANKLIN (CEO) bought $1,108,000",
+     "size_x": 1.0,
+     "stop_pct": 12.0,
+     "industry": "Pipe Lines (No Natural Gas)"
+    },
+    {
+     "symbol": "JBLU",
+     "since": "2026-11-03",
+     "value": 2319.42,
+     "return_pct": 15.69,
+     "why": "BONEPARTH PETER (Director) bought $300,000",
+     "size_x": 1.0,
+     "stop_pct": 24.4,
+     "industry": "Air Transportation, Scheduled"
+    },
+    {
+     "symbol": "LKQ",
+     "since": "2026-11-04",
+     "value": 1959.89,
+     "return_pct": -2.67,
+     "why": "CLARKE ANDREW C (Director) bought $400,030",
+     "size_x": 1.0,
+     "stop_pct": 15.1,
+     "industry": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
+    },
+    {
+     "symbol": "TRTX",
+     "since": "2026-11-04",
+     "value": 1843.52,
+     "return_pct": -8.51,
+     "why": "SILVERSTEIN WENDY (Director) bought $253,239",
+     "size_x": 1.0,
+     "stop_pct": 8.8,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "CAT",
+     "since": "2026-11-04",
+     "value": 1999.53,
+     "return_pct": -0.83,
+     "why": "Fish James C Jr (Director) bought $620,390",
+     "size_x": 1.0,
+     "stop_pct": 11.7,
+     "industry": "Construction Machinery & Equip"
+    },
+    {
+     "symbol": "MGM",
+     "since": "2026-11-04",
+     "value": 2073.81,
+     "return_pct": 2.92,
+     "why": "Meister Keith A. (Director) bought $44,746,261",
+     "size_x": 1.0,
+     "stop_pct": 9.6,
+     "industry": "Hotels & Motels"
+    },
+    {
+     "symbol": "LSCC",
+     "since": "2026-11-05",
+     "value": 2323.76,
+     "return_pct": 16.44,
+     "why": "Tamer Ford (President & CEO) bought $585,045",
+     "size_x": 1.0,
+     "stop_pct": 15.9,
+     "industry": "Semiconductors & Related Devices"
+    },
+    {
+     "symbol": "INTC",
+     "since": "2026-11-05",
+     "value": 2156.42,
+     "return_pct": 8.14,
+     "why": "TAN LIP BU (CEO) bought $9,709,680",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Semiconductors & Related Devices"
+    },
+    {
+     "symbol": "SPXC",
+     "since": "2026-11-06",
+     "value": 2055.12,
+     "return_pct": 3.11,
+     "why": "Deck Brian A (Director) bought $493,020",
+     "size_x": 1.0,
+     "stop_pct": 13.7,
+     "industry": "Metalworkg Machinery & Equipment"
+    },
+    {
+     "symbol": "GLXY",
+     "since": "2026-11-06",
+     "value": 2107.98,
+     "return_pct": 5.81,
+     "why": "Novogratz Michael (Chief Executive Officer) bought $3,152,305",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Security Brokers, Dealers & Flotation Companies"
+    },
+    {
+     "symbol": "BKR",
+     "since": "2026-11-06",
+     "value": 2099.08,
+     "return_pct": 5.46,
+     "why": "RICE JOHN G (Director) bought $531,000",
+     "size_x": 1.0,
+     "stop_pct": 12.6,
+     "industry": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
+     "symbol": "FBRT",
+     "since": "2026-11-06",
+     "value": 1912.22,
+     "return_pct": -3.98,
+     "why": "Byrne Richard J (Chairman and CEO) bought $998,364",
+     "size_x": 1.0,
+     "stop_pct": 9.8,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "AN",
+     "since": "2026-11-06",
+     "value": 1949.5,
+     "return_pct": -2.04,
+     "why": "Manley Michael Mark (CEO and Director) bought $349,350",
+     "size_x": 1.0,
+     "stop_pct": 11.2,
+     "industry": "Retail-Auto Dealers & Gasoline Stations"
+    },
+    {
+     "symbol": "CACC",
+     "since": "2026-11-06",
+     "value": 1942.77,
+     "return_pct": -2.37,
+     "why": "TRYFOROS THOMAS N (Director) bought $1,455,600",
+     "size_x": 1.0,
+     "stop_pct": 12.6,
+     "industry": "Personal Credit Institutions"
+    },
+    {
+     "symbol": "LBRT",
+     "since": "2026-11-06",
+     "value": 2145.87,
+     "return_pct": 7.77,
+     "why": "Gusek Ron (CEO and President) bought $377,335",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Oil & Gas Field Services, NEC"
+    },
+    {
+     "symbol": "BXMT",
+     "since": "2026-11-06",
+     "value": 1872.07,
+     "return_pct": -5.97,
+     "why": "Johnson Timothy Steven (Chief Executive Officer) bought $1,035,351",
+     "size_x": 1.0,
+     "stop_pct": 9.5,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "KYN",
+     "since": "2026-11-09",
+     "value": 2104.02,
+     "return_pct": 4.22,
+     "why": "Baker James C (President) bought $331,085",
+     "size_x": 1.0,
+     "stop_pct": 6.4,
+     "industry": ""
+    },
+    {
+     "symbol": "CVS",
+     "since": "2026-11-09",
+     "value": 2139.99,
+     "return_pct": 5.98,
+     "why": "Shah Prem S (EVP and Group President) bought $2,001,315",
+     "size_x": 1.0,
+     "stop_pct": 9.9,
+     "industry": "Retail-Drug Stores and Proprietary Stores"
+    },
+    {
+     "symbol": "MDGL",
+     "since": "2026-11-09",
+     "value": 2083.73,
+     "return_pct": 3.18,
+     "why": "BAKER BROS. ADVISORS LP (Director) bought $793,220",
+     "size_x": 1.0,
+     "stop_pct": 15.6,
+     "industry": "Pharmaceutical Preparations"
+    },
+    {
+     "symbol": "DKNG",
+     "since": "2026-11-10",
+     "value": 2058.29,
+     "return_pct": 2.48,
+     "why": "Ellingson Alan Wayne (Chief Financial Officer) bought $349,987",
+     "size_x": 1.0,
+     "stop_pct": 18.5,
+     "industry": "Services-Miscellaneous Amusement & Recreation"
+    },
+    {
+     "symbol": "NLY",
+     "since": "2026-11-10",
+     "value": 1880.75,
+     "return_pct": -6.43,
+     "why": "Wede Scott (Director) bought $940,000",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "GFS",
+     "since": "2026-11-10",
+     "value": 2138.93,
+     "return_pct": 6.42,
+     "why": "LAZAR JACK R (Director) bought $380,000",
+     "size_x": 1.0,
+     "stop_pct": 16.7,
+     "industry": "Semiconductors & Related Devices"
+    },
+    {
+     "symbol": "MTDR",
+     "since": "2026-11-10",
+     "value": 2169.81,
+     "return_pct": 7.92,
+     "why": "Foran Joseph Wm (Chairman and CEO) bought $256,800",
+     "size_x": 1.0,
+     "stop_pct": 12.6,
+     "industry": "Crude Petroleum & Natural Gas"
+    },
+    {
+     "symbol": "WCC",
+     "since": "2026-11-10",
+     "value": 2060.1,
+     "return_pct": 2.41,
+     "why": "Dev Indraneel (EVP & CFO) bought $503,527",
+     "size_x": 1.0,
+     "stop_pct": 17.3,
+     "industry": "Wholesale-Electrical Apparatus & Equipment, Wiring Supplies "
+    },
+    {
+     "symbol": "LUMN",
+     "since": "2026-11-10",
+     "value": 1877.23,
+     "return_pct": -6.67,
+     "why": "Johnson Kathleen E (Chief Executive Officer) bought $396,890",
+     "size_x": 1.0,
+     "stop_pct": 18.4,
+     "industry": "Telephone Communications (No Radiotelephone)"
+    },
+    {
+     "symbol": "KMI",
+     "since": "2026-11-10",
+     "value": 2133.2,
+     "return_pct": 5.94,
+     "why": "KINDER RICHARD D (Executive Chairman) bought $14,994,200",
+     "size_x": 1.0,
+     "stop_pct": 8.4,
+     "industry": "Natural Gas Transmission"
+    },
+    {
+     "symbol": "ROK",
+     "since": "2026-11-10",
+     "value": 2074.55,
+     "return_pct": 2.96,
+     "why": "Moret Blake D. (President and CEO) bought $931,731",
+     "size_x": 1.0,
+     "stop_pct": 11.5,
+     "industry": "Measuring & Controlling Devices, NEC"
+    },
+    {
+     "symbol": "BSM",
+     "since": "2026-11-11",
+     "value": 2064.69,
+     "return_pct": 1.0,
+     "why": "Carter Thomas L Jr (Executive Chairman) bought $686,290",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "Crude Petroleum & Natural Gas"
+    },
+    {
+     "symbol": "PSEC",
+     "since": "2026-11-11",
+     "value": 1869.9,
+     "return_pct": -8.54,
+     "why": "Barry John F (CHIEF EXECUTIVE OFFICER) bought $1,727,314",
+     "size_x": 1.0,
+     "stop_pct": 17.8,
+     "industry": ""
+    },
+    {
+     "symbol": "STVN",
+     "since": "2026-11-11",
+     "value": 2102.15,
+     "return_pct": 2.86,
+     "why": "MOREL DONALD E JR (Director) bought $326,750",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+     "symbol": "TXO",
+     "since": "2026-11-11",
+     "value": 2041.98,
+     "return_pct": -0.08,
+     "why": "SIMPSON BOB R (Director) bought $1,170,505",
+     "size_x": 1.0,
+     "stop_pct": 10.0,
+     "industry": "Crude Petroleum & Natural Gas"
+    },
+    {
+     "symbol": "CRH",
+     "since": "2026-11-11",
+     "value": 1996.91,
+     "return_pct": -2.27,
+     "why": "FEARON RICHARD H (Director) bought $569,700",
+     "size_x": 1.0,
+     "stop_pct": 9.3,
+     "industry": "Cement, Hydraulic"
+    },
+    {
+     "symbol": "FUN",
+     "since": "2026-11-11",
+     "value": 2060.61,
+     "return_pct": 0.84,
+     "why": "JAFFER REHAN (Director) bought $4,128,000",
+     "size_x": 1.0,
+     "stop_pct": 18.5,
+     "industry": "Services-Amusement & Recreation Services"
+    }
+   ],
+   "pending": [
+    "LBTY",
+    "FIP",
+    "MP",
+    "LILA",
+    "TH",
+    "TEAM",
+    "EQPT",
+    "BOOT",
+    "HOS",
+    "ALNY",
+    "COHR",
+    "BLMN",
+    "BKD"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ],
+    [
+     "2026-11-02",
+     99994.62
+    ],
+    [
+     "2026-11-03",
+     100170.71
+    ],
+    [
+     "2026-11-04",
+     100785.99
+    ],
+    [
+     "2026-11-05",
+     99554.88
+    ],
+    [
+     "2026-11-06",
+     99488.87
+    ],
+    [
+     "2026-11-09",
+     101076.99
+    ],
+    [
+     "2026-11-10",
+     100768.62
+    ],
+    [
+     "2026-11-11",
+     102171.4
+    ],
+    [
+     "2026-11-12",
+     100837.64
+    ]
+   ],
+   "events": [
+    {
+     "date": "2026-11-10",
+     "sym": "MTDR",
+     "what": "TRADE: Foran Joseph Wm (Chairman and CEO) bought $256,800. Bought $2,010 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 48.86; RSI 34 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "WCC",
+     "what": "TRADE: Dev Indraneel (EVP & CFO) bought $503,527. Bought $2,011 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 319.05; RSI 44 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "TSM",
+     "what": "NO_TRADE: already 4 positions in the same industry (Semiconductors & Related Devices)"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "LUMN",
+     "what": "TRADE: Johnson Kathleen E (Chief Executive Officer) bought $396,890. Bought $2,011 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 4.44; RSI 38 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "KMI",
+     "what": "TRADE: KINDER RICHARD D (Executive Chairman) bought $14,994,200. Bought $2,013 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 30.17; RSI 38 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "ROK",
+     "what": "TRADE: Moret Blake D. (President and CEO) bought $931,731. Bought $2,014 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 391.99; RSI 36 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "BSM",
+     "what": "TRADE: Carter Thomas L Jr (Executive Chairman) bought $686,290. Bought $2,044 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 13.90; RSI 32 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "PSEC",
+     "what": "TRADE: Barry John F (CHIEF EXECUTIVE OFFICER) bought $1,727,314. Bought $2,044 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 1.52; RSI 41 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "STVN",
+     "what": "TRADE: MOREL DONALD E JR (Director) bought $326,750. Bought $2,043 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 13.94; RSI 23 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "TXO",
+     "what": "TRADE: SIMPSON BOB R (Director) bought $1,170,505. Bought $2,043 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 14.00; RSI 48 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "NVT",
+     "what": "NO_TRADE: already 4 positions in the same industry (Special Industry Machinery (No Metalworking Machinery))"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "CRH",
+     "what": "TRADE: FEARON RICHARD H (Director) bought $569,700. Bought $2,043 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 95.96; RSI 64 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "ADTN",
+     "what": "NO_TRADE: already 4 positions in the same industry (Telephone & Telegraph Apparatus)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "FUN",
+     "what": "TRADE: JAFFER REHAN (Director) bought $4,128,000. Bought $2,043 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 11.08; RSI 56 is neutral"
+    },
+    {
+     "date": "2026-11-12",
+     "sym": "MX",
+     "what": "NO_TRADE: already 4 positions in the same industry (Semiconductors & Related Devices)"
+    }
+   ],
+   "margin_vs_spy_pct": 1.3,
+   "gbp100_now": 100.84,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
+  },
+  "congress_cluster3": {
+   "label": "3+ members of Congress disclose buying the same stock within 60 days",
+   "hold_days": 60,
+   "started": "2026-11-01",
+   "value": 100099.22,
+   "paused": false,
+   "drawdown_pct": -0.01,
+   "max_drawdown_pct": -0.02,
+   "stops_hit": 0,
+   "return_pct": 0.1,
+   "cash": 98000.0,
+   "open": [
+    {
+     "symbol": "T",
+     "since": "2026-11-02",
+     "value": 2099.22,
+     "return_pct": 4.96,
+     "why": "3 members bought within 60 days",
+     "size_x": 1.0,
+     "stop_pct": 9.0,
+     "industry": "Telephone Communications (No Radiotelephone)"
+    }
+   ],
+   "pending": [
+    "LLY"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ],
+    [
+     "2026-11-02",
+     100029.18
+    ],
+    [
+     "2026-11-03",
+     100024.45
+    ],
+    [
+     "2026-11-04",
+     100066.09
+    ],
+    [
+     "2026-11-05",
+     100065.14
+    ],
+    [
+     "2026-11-06",
+     100047.16
+    ],
+    [
+     "2026-11-09",
+     100063.25
+    ],
+    [
+     "2026-11-10",
+     100076.5
+    ],
+    [
+     "2026-11-11",
+     100106.79
+    ],
+    [
+     "2026-11-12",
+     100099.22
+    ]
+   ],
+   "events": [
+    {
+     "date": "2026-11-02",
+     "sym": "T",
+     "what": "TRADE: 3 members bought within 60 days. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-02 open, 21.10; RSI 39 is neutral"
+    }
+   ],
+   "margin_vs_spy_pct": 0.56,
+   "gbp100_now": 100.1,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
+  },
+  "congress_big_100k": {
+   "label": "A member of Congress discloses a $100k+ purchase",
+   "hold_days": 60,
+   "started": "2026-11-01",
+   "value": 100000.0,
+   "paused": false,
+   "drawdown_pct": 0.0,
+   "max_drawdown_pct": 0.0,
+   "stops_hit": 0,
+   "return_pct": 0.0,
+   "cash": 100000.0,
+   "open": [],
+   "pending": [],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ],
+    [
+     "2026-11-02",
+     100000.0
+    ],
+    [
+     "2026-11-03",
+     100000.0
+    ],
+    [
+     "2026-11-04",
+     100000.0
+    ],
+    [
+     "2026-11-05",
+     100000.0
+    ],
+    [
+     "2026-11-06",
+     100000.0
+    ],
+    [
+     "2026-11-09",
+     100000.0
+    ],
+    [
+     "2026-11-10",
+     100000.0
+    ],
+    [
+     "2026-11-11",
+     100000.0
+    ],
+    [
+     "2026-11-12",
+     100000.0
+    ]
+   ],
+   "events": [],
+   "margin_vs_spy_pct": 0.46,
+   "gbp100_now": 100.0,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
+  },
+  "terminal_top_signals": {
+   "label": "The terminal's own signal score reaches 8+",
+   "hold_days": 20,
+   "started": "2026-11-01",
+   "value": 98687.38,
+   "paused": false,
+   "drawdown_pct": -2.5,
+   "max_drawdown_pct": -3.64,
+   "stops_hit": 0,
+   "return_pct": -1.31,
+   "cash": 388.91,
+   "open": [
+    {
+     "symbol": "MSFT",
+     "since": "2026-11-02",
+     "value": 1993.11,
+     "return_pct": -0.34,
+     "why": "score 12: 6 politicians bought (~$5,561,500, last filed 2026-10-12); heavy trading today: -1.6%",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "Services-Prepackaged Software"
+    },
+    {
+     "symbol": "NVDA",
+     "since": "2026-11-02",
+     "value": 1598.11,
+     "return_pct": -20.04,
+     "why": "score 10: 5 politicians bought (~$1,955,500, last filed 2026-10-22); heavy trading today: -4.2%",
+     "size_x": 1.0,
+     "stop_pct": 8.0,
+     "industry": "Semiconductors & Related Devices"
+    },
+    {
+     "symbol": "NFLX",
+     "since": "2026-11-02",
+     "value": 2010.24,
+     "return_pct": 0.64,
+     "why": "score 8: 4 politicians bought (~$3,306,000, last filed 2026-10-08); heavy trading today: +0.0%",
+     "size_x": 1.0,
+     "stop_pct": 8.5,
+     "industry": "Services-Video Tape Rental"
+    },
+    {
+     "symbol": "PG",
+     "since": "2026-11-02",
+     "value": 2065.74,
+     "return_pct": 3.41,
+     "why": "score 8: 4 politicians bought (~$504,000, last filed 2026-10-08)",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
+    },
+    {
+     "symbol": "AVGO",
+     "since": "2026-11-02",
+     "value": 2213.46,
+     "return_pct": 10.79,
+     "why": "score 8: 4 politicians bought (~$464,000, last filed 2026-10-08); heavy trading today: -5.5%",
+     "size_x": 1.0,
+     "stop_pct": 10.0,
+     "industry": "Semiconductors & Related Devices"
+    },
+    {
+     "symbol": "BRK.B",
+     "since": "2026-11-02",
+     "value": 2158.03,
+     "return_pct": 8.06,
+     "why": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-14)",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "Fire, Marine & Casualty Insurance"
+    },
+    {
+     "symbol": "HD",
+     "since": "2026-11-02",
+     "value": 2079.43,
+     "return_pct": 4.09,
+     "why": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-07)",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "Retail-Lumber & Other Building Materials Dealers"
+    },
+    {
+     "symbol": "CSCO",
+     "since": "2026-11-02",
+     "value": 1930.99,
+     "return_pct": -3.38,
+     "why": "score 8: 4 politicians bought (~$423,500, last filed 2026-10-27); heavy trading today: -3.8%",
+     "size_x": 1.0,
+     "stop_pct": 7.6,
+     "industry": "Computer Communications Equipment"
+    },
+    {
+     "symbol": "TSM",
+     "since": "2026-11-03",
+     "value": 1999.69,
+     "return_pct": -0.03,
+     "why": "score 96: 30 insiders bought $121,468 in 30 days (last 2026-10-07); 3 politicians bought (~$24,000, last filed 2026-10-22)",
+     "size_x": 1.0,
+     "stop_pct": 9.4,
+     "industry": "Semiconductors & Related Devices"
+    },
+    {
+     "symbol": "GPI",
+     "since": "2026-11-03",
+     "value": 1904.76,
+     "return_pct": -4.77,
+     "why": "score 48: 10% owner Conifer Management, L.L.C. bought $119,117 on 2026-10-22; 10% owner Conifer Management, L.L.C. bought $452,783 on 2026-10-22",
+     "size_x": 1.0,
+     "stop_pct": 12.5,
+     "industry": "Retail-Auto Dealers & Gasoline Stations"
+    },
+    {
+     "symbol": "RAPP",
+     "since": "2026-11-03",
+     "value": 2032.56,
+     "return_pct": 1.66,
+     "why": "score 33: 7 insiders bought $22,023,905 in 30 days (last 2026-10-28); Director HEALY JAMES bought $145,593 on 2026-10-28",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Pharmaceutical Preparations"
+    },
+    {
+     "symbol": "HEI",
+     "since": "2026-11-03",
+     "value": 1999.64,
+     "return_pct": 0.01,
+     "why": "score 24: 8 insiders bought $1,400,595 in 30 days (last 2026-10-08)",
+     "size_x": 1.0,
+     "stop_pct": 7.5,
+     "industry": "Aircraft Engines & Engine Parts"
+    },
+    {
+     "symbol": "BPRE",
+     "since": "2026-11-03",
+     "value": 1933.62,
+     "return_pct": -3.28,
+     "why": "score 23: 3 insiders bought $25,364,808 in 30 days (last 2026-10-27); Director KAMFAR RAMIN bought $869,506 on 2026-10-27",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": ""
+    },
+    {
+     "symbol": "NPB",
+     "since": "2026-11-03",
+     "value": 1933.8,
+     "return_pct": -3.28,
+     "why": "score 18: 4 insiders bought $1,819,350 in 30 days (last 2026-10-28); Director Boer Carrie L bought $184,762 on 2026-10-23",
+     "size_x": 1.0,
+     "stop_pct": 10.5,
+     "industry": "State Commercial Banks"
+    },
+    {
+     "symbol": "CRBG",
+     "since": "2026-11-03",
+     "value": 2018.34,
+     "return_pct": 0.97,
+     "why": "score 18: 10% owner NIPPON LIFE INSURANCE CO bought $8,671,495 on 2026-10-28; 10% owner NIPPON LIFE INSURANCE CO bought $6,259,186 on 2026-10-27",
+     "size_x": 1.0,
+     "stop_pct": 7.6,
+     "industry": "Life Insurance"
+    },
+    {
+     "symbol": "STC",
+     "since": "2026-11-03",
+     "value": 1821.81,
+     "return_pct": -8.86,
+     "why": "score 17: 5 insiders bought $460,970 in 30 days (last 2026-10-26); Chief Executive Officer EPPINGER FREDERICK H bought $133,350 on 2026-10-26",
+     "size_x": 1.0,
+     "stop_pct": 12.7,
+     "industry": "Title Insurance"
+    },
+    {
+     "symbol": "RENT",
+     "since": "2026-11-03",
+     "value": 2218.47,
+     "return_pct": 11.02,
+     "why": "score 15: 3 insiders bought $6,120,516 in 30 days (last 2026-10-21); Director STORY3 Capital Partners, LLC bought $2,246,873 on 2026-10-21",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Retail-Retail Stores, NEC"
+    },
+    {
+     "symbol": "NMCO",
+     "since": "2026-11-03",
+     "value": 1973.41,
+     "return_pct": -1.3,
+     "why": "score 14: 4 insiders bought $279,675 in 30 days (last 2026-10-23); Insider Robert Young L bought $248,883 on 2026-10-23",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": ""
+    },
+    {
+     "symbol": "CHCO",
+     "since": "2026-11-03",
+     "value": 1952.19,
+     "return_pct": -2.36,
+     "why": "score 12: 4 insiders bought $68,222 in 30 days (last 2026-10-23)",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "National Commercial Banks"
+    },
+    {
+     "symbol": "MSM",
+     "since": "2026-11-03",
+     "value": 1998.1,
+     "return_pct": -0.03,
+     "why": "score 12: 2 insiders bought $29,034,300 in 30 days (last 2026-10-23); Director JACOBSON MITCHELL bought $6,348,018 on 2026-10-23",
+     "size_x": 1.0,
+     "stop_pct": 10.5,
+     "industry": "Wholesale-Industrial Machinery & Equipment"
+    },
+    {
+     "symbol": "DSM",
+     "since": "2026-11-03",
+     "value": 1987.04,
+     "return_pct": -0.58,
+     "why": "score 12: 2 insiders bought $1,555,905 in 30 days (last 2026-10-28); 10% owner Saba Capital Management, L.P. bought $111,326 on 2026-10-26",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": ""
+    },
+    {
+     "symbol": "TTMI",
+     "since": "2026-11-03",
+     "value": 1923.04,
+     "return_pct": -3.77,
+     "why": "score 12: 2 insiders bought $1,342,811 in 30 days (last 2026-10-28); President and CEO Roks Edwin bought $440,350 on 2026-10-28",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Printed Circuit Boards"
+    },
+    {
+     "symbol": "NXG",
+     "since": "2026-11-03",
+     "value": 1975.38,
+     "return_pct": -1.21,
+     "why": "score 11: 3 insiders bought $525,575 in 30 days (last 2026-10-23); See Remarks Swank Jerry V bought $439,493 on 2026-10-23",
+     "size_x": 1.0,
+     "stop_pct": 13.3,
+     "industry": ""
+    },
+    {
+     "symbol": "DX",
+     "since": "2026-11-03",
+     "value": 1885.26,
+     "return_pct": -5.73,
+     "why": "score 11: 3 insiders bought $267,230 in 30 days (last 2026-10-20); Co-CEO and President Popenoe Smriti Laxman bought $106,200 on 2026-10-20",
+     "size_x": 1.0,
+     "stop_pct": 7.2,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "ROL",
+     "since": "2026-11-03",
+     "value": 2084.18,
+     "return_pct": 4.25,
+     "why": "score 10: 2 insiders bought $99,913,330 in 30 days (last 2026-10-29); 10% owner R. Randall Rollins Voting Trust U/A dated August 25, 1994 bought $49,956,665 on 2026-10-29",
+     "size_x": 1.0,
+     "stop_pct": 8.2,
+     "industry": "Services-To Dwellings & Other Buildings"
+    },
+    {
+     "symbol": "LEO",
+     "since": "2026-11-03",
+     "value": 1965.44,
+     "return_pct": -1.74,
+     "why": "score 10: 2 insiders bought $2,661,149 in 30 days (last 2026-10-26); 10% owner Saba Capital Management, L.P. bought $369,200 on 2026-10-23",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": ""
+    },
+    {
+     "symbol": "THRM",
+     "since": "2026-11-03",
+     "value": 1822.32,
+     "return_pct": -8.88,
+     "why": "score 10: 2 insiders bought $662,600 in 30 days (last 2026-10-23); Director MASCARENAS PAUL ANTHONY bought $532,600 on 2026-10-23",
+     "size_x": 1.0,
+     "stop_pct": 15.4,
+     "industry": "Motor Vehicle Parts & Accessories"
+    },
+    {
+     "symbol": "HBAN",
+     "since": "2026-11-03",
+     "value": 1960.48,
+     "return_pct": -1.9,
+     "why": "score 10: 2 insiders bought $453,554 in 30 days (last 2026-10-27); Director TORGOW GARY bought $199,834 on 2026-10-27",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "National Commercial Banks"
+    },
+    {
+     "symbol": "IMSR",
+     "since": "2026-11-03",
+     "value": 1680.7,
+     "return_pct": -15.88,
+     "why": "score 9: 3 insiders bought $112,279 in 30 days (last 2026-10-14)",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Fabricated Plate Work (Boiler Shops)"
+    },
+    {
+     "symbol": "NVA",
+     "since": "2026-11-03",
+     "value": 1645.76,
+     "return_pct": -17.57,
+     "why": "score 9: 3 insiders bought $46,934 in 30 days (last 2026-10-26)",
+     "size_x": 1.0,
+     "stop_pct": 19.9,
+     "industry": "Gold and Silver Ores"
+    },
+    {
+     "symbol": "GABC",
+     "since": "2026-11-03",
+     "value": 1987.1,
+     "return_pct": -0.63,
+     "why": "score 9: 3 insiders bought $17,300 in 30 days (last 2026-10-15)",
+     "size_x": 1.0,
+     "stop_pct": 6.1,
+     "industry": "State Commercial Banks"
+    },
+    {
+     "symbol": "NRXS",
+     "since": "2026-11-03",
+     "value": 1726.88,
+     "return_pct": -13.62,
+     "why": "score 9: 3 insiders bought $12,260 in 30 days (last 2026-10-08)",
+     "size_x": 1.0,
+     "stop_pct": 18.7,
+     "industry": "Electromedical & Electrotherapeutic Apparatus"
+    },
+    {
+     "symbol": "SRRK",
+     "since": "2026-11-03",
+     "value": 1986.05,
+     "return_pct": -0.63,
+     "why": "score 8: Director AKKARAJU SRINIVAS bought $4,075,071 on 2026-10-26; Director AKKARAJU SRINIVAS bought $2,037,411 on 2026-10-26",
+     "size_x": 1.0,
+     "stop_pct": 10.1,
+     "industry": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+     "symbol": "TRTX",
+     "since": "2026-11-04",
+     "value": 1848.64,
+     "return_pct": -8.51,
+     "why": "score 11: 3 insiders bought $298,699 in 30 days (last 2026-10-30); Director SILVERSTEIN WENDY bought $253,239 on 2026-10-30",
+     "size_x": 1.0,
+     "stop_pct": 8.8,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "STRZ",
+     "since": "2026-11-04",
+     "value": 2147.99,
+     "return_pct": 6.23,
+     "why": "score 11: 3 insiders bought $176,706 in 30 days (last 2026-11-02); President and CEO Hirsch Jeffrey bought $110,650 on 2026-11-02",
+     "size_x": 1.0,
+     "stop_pct": 23.2,
+     "industry": "Services-Motion Picture & Video Tape Production"
+    },
+    {
+     "symbol": "LKQ",
+     "since": "2026-11-04",
+     "value": 1968.99,
+     "return_pct": -2.67,
+     "why": "score 10: 2 insiders bought $591,530 in 30 days (last 2026-11-02); Director Powell Michael Scott bought $191,500 on 2026-11-02",
+     "size_x": 1.0,
+     "stop_pct": 15.1,
+     "industry": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
+    },
+    {
+     "symbol": "LRN",
+     "since": "2026-11-05",
+     "value": 1835.1,
+     "return_pct": -6.32,
+     "why": "score 20: Director Haggart Dylan G. bought $2,353,029 on 2026-11-03; Director Haggart Dylan G. bought $370,350 on 2026-11-03",
+     "size_x": 1.0,
+     "stop_pct": 10.3,
+     "industry": "Services-Educational Services"
+    },
+    {
+     "symbol": "BA",
+     "since": "2026-11-05",
+     "value": 1894.89,
+     "return_pct": -3.14,
+     "why": "score 10: 2 insiders bought $1,508,848 in 30 days (last 2026-10-30); Director Buckley Mortimer J bought $998,421 on 2026-10-30",
+     "size_x": 1.0,
+     "stop_pct": 8.5,
+     "industry": "Aircraft"
+    },
+    {
+     "symbol": "UMH",
+     "since": "2026-11-05",
+     "value": 1829.03,
+     "return_pct": -6.45,
+     "why": "score 9: 3 insiders bought $29,188 in 30 days (last 2026-11-04)",
+     "size_x": 1.0,
+     "stop_pct": 6.2,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "JBLU",
+     "since": "2026-11-05",
+     "value": 1977.52,
+     "return_pct": 1.19,
+     "why": "score 12: 2 insiders bought $623,844 in 30 days (last 2026-11-03); Director Mittal Nik bought $222,588 on 2026-11-03",
+     "size_x": 1.0,
+     "stop_pct": 22.4,
+     "industry": "Air Transportation, Scheduled"
+    },
+    {
+     "symbol": "DOLE",
+     "since": "2026-11-05",
+     "value": 1969.23,
+     "return_pct": 0.92,
+     "why": "score 8: 10% owner Pale Fire Capital SE bought $9,832,264 on 2026-11-03; 10% owner Pale Fire Capital SE bought $3,053,054 on 2026-11-02",
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "Agricultural Production-Crops"
+    },
+    {
+     "symbol": "AN",
+     "since": "2026-11-06",
+     "value": 1917.03,
+     "return_pct": -2.04,
+     "why": "score 17: 3 insiders bought $1,431,864 in 30 days (last 2026-11-03); CEO and Director Manley Michael Mark bought $349,350 on 2026-11-02",
+     "size_x": 1.0,
+     "stop_pct": 11.2,
+     "industry": "Retail-Auto Dealers & Gasoline Stations"
+    },
+    {
+     "symbol": "FBRT",
+     "since": "2026-11-06",
+     "value": 1878.99,
+     "return_pct": -3.98,
+     "why": "score 8: 2 insiders bought $1,024,108 in 30 days (last 2026-11-03); Chairman and CEO Byrne Richard J bought $998,364 on 2026-11-03",
+     "size_x": 1.0,
+     "stop_pct": 9.8,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "ETRA",
+     "since": "2026-11-06",
+     "value": 2298.35,
+     "return_pct": 17.53,
+     "why": "score 38: 2 insiders bought $7,210,232 in 30 days (last 2026-11-05); Director GORDON CARL L bought $915,212 on 2026-11-05",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Biological Products, (No Diagnostic Substances)"
+    },
+    {
+     "symbol": "MTDR",
+     "since": "2026-11-09",
+     "value": 2141.67,
+     "return_pct": 6.82,
+     "why": "score 14: 4 insiders bought $223,705 in 30 days (last 2026-11-05); EVP and CFO Calvert Christopher P bought $105,140 on 2026-11-05",
+     "size_x": 1.0,
+     "stop_pct": 12.5,
+     "industry": "Crude Petroleum & Natural Gas"
+    },
+    {
+     "symbol": "KYN",
+     "since": "2026-11-09",
+     "value": 2089.61,
+     "return_pct": 4.22,
+     "why": "score 8: 2 insiders bought $382,623 in 30 days (last 2026-11-05); President Baker James C bought $331,085 on 2026-11-05",
+     "size_x": 1.0,
+     "stop_pct": 6.4,
+     "industry": ""
+    },
+    {
+     "symbol": "OBIO",
+     "since": "2026-11-10",
+     "value": 2083.53,
+     "return_pct": 5.07,
+     "why": "score 16: 4 insiders bought $230,000 in 30 days (last 2026-11-09); Director Fain Eric S bought $100,000 on 2026-11-09",
+     "size_x": 1.0,
+     "stop_pct": 17.1,
+     "industry": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+     "symbol": "FLOC",
+     "since": "2026-11-10",
+     "value": 1987.73,
+     "return_pct": 0.28,
+     "why": "score 15: 3 insiders bought $1,104,342 in 30 days (last 2026-11-05); President and CEO EDWARDS JOSEPH R bought $496,194 on 2026-11-05",
+     "size_x": 1.0,
+     "stop_pct": 14.1,
+     "industry": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
+     "symbol": "SOPH",
+     "since": "2026-11-10",
+     "value": 1963.62,
+     "return_pct": -0.9,
+     "why": "score 10: 2 insiders bought $278,388 in 30 days (last 2026-11-06); Chief Financial Officer CARDOZA GEORGE bought $141,200 on 2026-11-06",
+     "size_x": 1.0,
+     "stop_pct": 17.5,
+     "industry": "Services-Computer Processing & Data Preparation"
+    },
+    {
+     "symbol": "DGICA",
+     "since": "2026-11-10",
+     "value": 2001.43,
+     "return_pct": 1.02,
+     "why": "score 10: 10% owner DONEGAL MUTUAL INSURANCE CO bought $140,531 on 2026-11-06; 10% owner DONEGAL MUTUAL INSURANCE CO bought $142,286 on 2026-11-05",
+     "size_x": 1.0,
+     "stop_pct": 7.9,
+     "industry": "Fire, Marine & Casualty Insurance"
+    }
+   ],
+   "pending": [
+    "LBTY",
+    "DOX",
+    "MP",
+    "GSM",
+    "COHR",
+    "BW",
+    "STVN",
+    "LILA",
+    "NTHI",
+    "ALNY",
+    "CSQR",
+    "FIS",
+    "GOOD",
+    "PHIO",
+    "FIP",
+    "DKNG",
+    "EGBN",
+    "NSLR",
+    "URG",
+    "TEAM",
+    "META",
+    "LRMR",
+    "EQPT"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ],
+    [
+     "2026-11-02",
+     99851.9
+    ],
+    [
+     "2026-11-03",
+     99960.49
+    ],
+    [
+     "2026-11-04",
+     101217.36
+    ],
+    [
+     "2026-11-05",
+     97536.47
+    ],
+    [
+     "2026-11-06",
+     97786.86
+    ],
+    [
+     "2026-11-09",
+     100274.76
+    ],
+    [
+     "2026-11-10",
+     99080.18
+    ],
+    [
+     "2026-11-11",
+     100174.28
+    ],
+    [
+     "2026-11-12",
+     98687.38
+    ]
+   ],
+   "events": [
+    {
+     "date": "2026-11-10",
+     "sym": "ATLO",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "WCC",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "LUMN",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "GFS",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "KMT",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "SLQT",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "GLXY",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "CRH",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "PSEC",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "ADTN",
+     "what": "NO_TRADE: RSI 27 is below 30: oversold with no strong contrarian reason"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "DTI",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "FUN",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "WW",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-12",
+     "sym": "MX",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-12",
+     "sym": "ATEC",
+     "what": "NO_TRADE: all 50 slots are full"
+    }
+   ],
+   "margin_vs_spy_pct": -0.85,
+   "gbp100_now": 98.69,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
+  },
+  "spy_benchmark": {
+   "label": "Buy and hold the S&P 500 (SPY), the bar to beat",
+   "hold_days": null,
+   "started": "2026-11-01",
+   "value": 99543.66,
+   "paused": false,
+   "drawdown_pct": -1.26,
+   "max_drawdown_pct": -4.41,
+   "stops_hit": 0,
+   "return_pct": -0.46,
+   "cash": 0.0,
+   "open": [
+    {
+     "symbol": "SPY",
+     "since": "2026-11-02",
+     "value": 99543.66,
+     "return_pct": -0.46,
+     "why": "benchmark",
+     "size_x": 1.0,
+     "stop_pct": 100.0,
+     "industry": null
+    }
+   ],
+   "pending": [],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ],
+    [
+     "2026-11-02",
+     98883.64
+    ],
+    [
+     "2026-11-03",
+     99179.46
+    ],
+    [
+     "2026-11-04",
+     100817.67
+    ],
+    [
+     "2026-11-05",
+     96372.44
+    ],
+    [
+     "2026-11-06",
+     96673.52
+    ],
+    [
+     "2026-11-09",
+     98961.22
+    ],
+    [
+     "2026-11-10",
+     98597.02
+    ],
+    [
+     "2026-11-11",
+     99897.33
+    ],
+    [
+     "2026-11-12",
+     99543.66
+    ]
+   ],
+   "events": [
+    {
+     "date": "2026-11-02",
+     "sym": "SPY",
+     "what": "TRADE: benchmark: buy and hold the S&P 500 at 759.45 on 2026-11-02"
+    }
+   ],
+   "margin_vs_spy_pct": null,
+   "gbp100_now": 99.54,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
+  },
+  "insider_cluster2_smallcap": {
+   "label": "2+ insiders each buy $25k+ within 30 days in a smaller company ($1M-$20M traded a day)",
+   "hold_days": 60,
+   "started": "2026-11-02",
+   "value": 99676.22,
+   "paused": false,
+   "drawdown_pct": -0.48,
+   "max_drawdown_pct": -0.48,
+   "stops_hit": 0,
+   "return_pct": -0.32,
+   "cash": 74018.12,
+   "open": [
+    {
+     "symbol": "STRZ",
+     "since": "2026-11-04",
+     "value": 2124.69,
+     "return_pct": 6.23,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 23.2,
+     "industry": "Services-Motion Picture & Video Tape Production"
+    },
+    {
+     "symbol": "TRTX",
+     "since": "2026-11-04",
+     "value": 1830.73,
+     "return_pct": -8.51,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 8.8,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "SEVN",
+     "since": "2026-11-04",
+     "value": 1917.63,
+     "return_pct": -4.23,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 8.7,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "PRLB",
+     "since": "2026-11-05",
+     "value": 2034.35,
+     "return_pct": 1.76,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 19.6,
+     "industry": "Fabricated Structural Metal Products"
+    },
+    {
+     "symbol": "KYN",
+     "since": "2026-11-09",
+     "value": 2085.35,
+     "return_pct": 4.22,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 6.4,
+     "industry": ""
+    },
+    {
+     "symbol": "PMN",
+     "since": "2026-11-09",
+     "value": 1636.09,
+     "return_pct": -18.25,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Pharmaceutical Preparations"
+    },
+    {
+     "symbol": "SOPH",
+     "since": "2026-11-10",
+     "value": 1979.63,
+     "return_pct": -0.9,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 17.5,
+     "industry": "Services-Computer Processing & Data Preparation"
+    },
+    {
+     "symbol": "FLOC",
+     "since": "2026-11-10",
+     "value": 2002.88,
+     "return_pct": 0.28,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 14.1,
+     "industry": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
+     "symbol": "OBIO",
+     "since": "2026-11-10",
+     "value": 2097.81,
+     "return_pct": 5.07,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 17.1,
+     "industry": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+     "symbol": "GOOD",
+     "since": "2026-11-11",
+     "value": 1950.32,
+     "return_pct": -2.33,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 9.6,
+     "industry": "Lessors of  Real Property, NEC"
+    },
+    {
+     "symbol": "ADTN",
+     "since": "2026-11-11",
+     "value": 2148.15,
+     "return_pct": 7.57,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 24.6,
+     "industry": "Telephone & Telegraph Apparatus"
+    },
+    {
+     "symbol": "WW",
+     "since": "2026-11-11",
+     "value": 1836.76,
+     "return_pct": -8.09,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Services-Personal Services"
+    },
+    {
+     "symbol": "MX",
+     "since": "2026-11-12",
+     "value": 2013.7,
+     "return_pct": 1.03,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "size_x": 1.0,
+     "stop_pct": 18.7,
+     "industry": "Semiconductors & Related Devices"
+    }
+   ],
+   "pending": [
+    "LBTY",
+    "DKNG",
+    "MP",
+    "NSLR",
+    "EGBN",
+    "STVN",
+    "DOX",
+    "ALNY",
+    "CSQR",
+    "COHR",
+    "EQPT",
+    "LRMR"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-10-30",
+     100000.0
+    ],
+    [
+     "2026-11-02",
+     100000.0
+    ],
+    [
+     "2026-11-03",
+     100000.0
+    ],
+    [
+     "2026-11-04",
+     100156.36
+    ],
+    [
+     "2026-11-05",
+     99824.96
+    ],
+    [
+     "2026-11-06",
+     99814.47
+    ],
+    [
+     "2026-11-09",
+     99972.93
+    ],
+    [
+     "2026-11-10",
+     99790.16
+    ],
+    [
+     "2026-11-11",
+     99855.34
+    ],
+    [
+     "2026-11-12",
+     99676.22
+    ]
+   ],
+   "events": [
+    {
+     "date": "2026-11-10",
+     "sym": "TSM",
+     "what": "NO_TRADE: not a smaller company (trades $6090M a day)"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "LUMN",
+     "what": "NO_TRADE: not a smaller company (trades $74M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "FUN",
+     "what": "NO_TRADE: not a smaller company (trades $59M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "STRA",
+     "what": "NO_TRADE: not a smaller company (trades $26M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "SLQT",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "FIS",
+     "what": "NO_TRADE: not a smaller company (trades $297M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "GOOD",
+     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 10.07; RSI 22 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "MCY",
+     "what": "NO_TRADE: not a smaller company (trades $32M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "GLXY",
+     "what": "NO_TRADE: not a smaller company (trades $155M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "CRH",
+     "what": "NO_TRADE: not a smaller company (trades $539M a day)"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "ADTN",
+     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 4.51; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "WW",
+     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 13.48; RSI 41 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "DTI",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-12",
+     "sym": "ATEC",
+     "what": "NO_TRADE: not a smaller company (trades $48M a day)"
+    },
+    {
+     "date": "2026-11-12",
+     "sym": "MX",
+     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,993 (2.0% of the portfolio, the 2% cap) at the 2026-11-12 open, 2.78; RSI 58 is neutral"
+    }
+   ],
+   "margin_vs_spy_pct": 0.14,
+   "gbp100_now": 99.68,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
+  },
+  "research_setup": {
+   "label": "Research setup: a smaller company, 2+ insiders each buying $25k+ within 30 days, operating cash flow above profit (added 4 Nov 2026)",
+   "hold_days": 60,
+   "started": "2026-11-04",
+   "value": 99901.95,
+   "paused": false,
+   "drawdown_pct": -0.1,
+   "max_drawdown_pct": -0.19,
+   "stops_hit": 0,
+   "return_pct": -0.1,
+   "cash": 86010.99,
+   "open": [
+    {
+     "symbol": "PRLB",
+     "since": "2026-11-05",
+     "value": 2035.27,
+     "return_pct": 1.76,
+     "why": "research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 19.6,
+     "industry": "Fabricated Structural Metal Products"
+    },
+    {
+     "symbol": "PMN",
+     "since": "2026-11-09",
+     "value": 1635.75,
+     "return_pct": -18.25,
+     "why": "research setup: 2 insiders bought $134,746 in total within 30 days (Cashman Neil, Williams Eugene); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Pharmaceutical Preparations"
+    },
+    {
+     "symbol": "FLOC",
+     "since": "2026-11-10",
+     "value": 2003.25,
+     "return_pct": 0.28,
+     "why": "research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e",
+     "size_x": 1.0,
+     "stop_pct": 14.1,
+     "industry": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
+     "symbol": "OBIO",
+     "since": "2026-11-10",
+     "value": 2098.2,
+     "return_pct": 5.07,
+     "why": "research setup: 4 insiders bought $230,000 in total within 30 days (Fain Eric S, Hochman David P, Pacitti David, Taylor Andrew Lawrence); 2 officers or dire",
+     "size_x": 1.0,
+     "stop_pct": 17.1,
+     "industry": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+     "symbol": "ADTN",
+     "since": "2026-11-11",
+     "value": 2148.27,
+     "return_pct": 7.57,
+     "why": "research setup: 2 insiders bought $675,088 in total within 30 days (STANTON THOMAS R, Santo Timothy P); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 24.6,
+     "industry": "Telephone & Telegraph Apparatus"
+    },
+    {
+     "symbol": "GOOD",
+     "since": "2026-11-11",
+     "value": 1951.96,
+     "return_pct": -2.33,
+     "why": "research setup: 2 insiders bought $186,263 in total within 30 days (Cooper Arthur S., Gerson Gary); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 9.6,
+     "industry": "Lessors of  Real Property, NEC"
+    },
+    {
+     "symbol": "MX",
+     "since": "2026-11-12",
+     "value": 2018.26,
+     "return_pct": 1.03,
+     "why": "research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 18.7,
+     "industry": "Semiconductors & Related Devices"
+    }
+   ],
+   "pending": [
+    "EGBN",
+    "LRMR"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-11-04",
+     100000.0
+    ],
+    [
+     "2026-11-05",
+     99869.74
+    ],
+    [
+     "2026-11-06",
+     99948.65
+    ],
+    [
+     "2026-11-09",
+     99952.19
+    ],
+    [
+     "2026-11-10",
+     99808.43
+    ],
+    [
+     "2026-11-11",
+     99934.76
+    ],
+    [
+     "2026-11-12",
+     99901.95
+    ]
+   ],
+   "events": [
+    {
+     "date": "2026-11-05",
+     "sym": "PRLB",
+     "what": "TRADE: research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 67.32; RSI 28 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-09",
+     "sym": "PMN",
+     "what": "TRADE: research setup: 2 insiders bought $134,746 in total within 30 days (Cashman Neil, Williams Eugene); 2 officers or directors each bought $25k+. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-09 open, 4.24; RSI 33 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "FLOC",
+     "what": "TRADE: research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 21.00; RSI 62 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "OBIO",
+     "what": "TRADE: research setup: 4 insiders bought $230,000 in total within 30 days (Fain Eric S, Hochman David P, Pacitti David, Taylor Andrew Lawrence); 2 officers or dire. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 5.83; RSI 49 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "ADTN",
+     "what": "TRADE: research setup: 2 insiders bought $675,088 in total within 30 days (STANTON THOMAS R, Santo Timothy P); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 4.51; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "GOOD",
+     "what": "TRADE: research setup: 2 insiders bought $186,263 in total within 30 days (Cooper Arthur S., Gerson Gary); 2 officers or directors each bought $25k+. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 10.07; RSI 22 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-12",
+     "sym": "MX",
+     "what": "TRADE: research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-12 open, 2.78; RSI 58 is neutral"
+    }
+   ],
+   "margin_vs_spy_pct": 0.36,
+   "gbp100_now": 99.9,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
+  },
+  "research_setup_trend": {
+   "label": "Research setup, but no new entries while the S&P 500 is below its 200-day average (added 4 Nov 2026)",
+   "hold_days": 60,
+   "started": "2026-11-04",
+   "value": 99901.95,
+   "paused": false,
+   "drawdown_pct": -0.1,
+   "max_drawdown_pct": -0.19,
+   "stops_hit": 0,
+   "return_pct": -0.1,
+   "cash": 86010.99,
+   "open": [
+    {
+     "symbol": "PRLB",
+     "since": "2026-11-05",
+     "value": 2035.27,
+     "return_pct": 1.76,
+     "why": "research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 19.6,
+     "industry": "Fabricated Structural Metal Products"
+    },
+    {
+     "symbol": "PMN",
+     "since": "2026-11-09",
+     "value": 1635.75,
+     "return_pct": -18.25,
+     "why": "research setup: 2 insiders bought $134,746 in total within 30 days (Cashman Neil, Williams Eugene); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Pharmaceutical Preparations"
+    },
+    {
+     "symbol": "FLOC",
+     "since": "2026-11-10",
+     "value": 2003.25,
+     "return_pct": 0.28,
+     "why": "research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e",
+     "size_x": 1.0,
+     "stop_pct": 14.1,
+     "industry": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
+     "symbol": "OBIO",
+     "since": "2026-11-10",
+     "value": 2098.2,
+     "return_pct": 5.07,
+     "why": "research setup: 4 insiders bought $230,000 in total within 30 days (Fain Eric S, Hochman David P, Pacitti David, Taylor Andrew Lawrence); 2 officers or dire",
+     "size_x": 1.0,
+     "stop_pct": 17.1,
+     "industry": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+     "symbol": "ADTN",
+     "since": "2026-11-11",
+     "value": 2148.27,
+     "return_pct": 7.57,
+     "why": "research setup: 2 insiders bought $675,088 in total within 30 days (STANTON THOMAS R, Santo Timothy P); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 24.6,
+     "industry": "Telephone & Telegraph Apparatus"
+    },
+    {
+     "symbol": "GOOD",
+     "since": "2026-11-11",
+     "value": 1951.96,
+     "return_pct": -2.33,
+     "why": "research setup: 2 insiders bought $186,263 in total within 30 days (Cooper Arthur S., Gerson Gary); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 9.6,
+     "industry": "Lessors of  Real Property, NEC"
+    },
+    {
+     "symbol": "MX",
+     "since": "2026-11-12",
+     "value": 2018.26,
+     "return_pct": 1.03,
+     "why": "research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+",
+     "size_x": 1.0,
+     "stop_pct": 18.7,
+     "industry": "Semiconductors & Related Devices"
+    }
+   ],
+   "pending": [
+    "EGBN",
+    "LRMR"
+   ],
+   "closed_trades": 0,
+   "win_pct": null,
+   "beat_spy_pct": null,
+   "avg_return_pct": null,
+   "avg_excess_pct": null,
+   "recent_trades": [],
+   "equity": [
+    [
+     "2026-11-04",
+     100000.0
+    ],
+    [
+     "2026-11-05",
+     99869.74
+    ],
+    [
+     "2026-11-06",
+     99948.65
+    ],
+    [
+     "2026-11-09",
+     99952.19
+    ],
+    [
+     "2026-11-10",
+     99808.43
+    ],
+    [
+     "2026-11-11",
+     99934.76
+    ],
+    [
+     "2026-11-12",
+     99901.95
+    ]
+   ],
+   "events": [
+    {
+     "date": "2026-11-05",
+     "sym": "PRLB",
+     "what": "TRADE: research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-05 open, 67.32; RSI 28 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-09",
+     "sym": "PMN",
+     "what": "TRADE: research setup: 2 insiders bought $134,746 in total within 30 days (Cashman Neil, Williams Eugene); 2 officers or directors each bought $25k+. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-09 open, 4.24; RSI 33 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "FLOC",
+     "what": "TRADE: research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 21.00; RSI 62 is neutral"
+    },
+    {
+     "date": "2026-11-10",
+     "sym": "OBIO",
+     "what": "TRADE: research setup: 4 insiders bought $230,000 in total within 30 days (Fain Eric S, Hochman David P, Pacitti David, Taylor Andrew Lawrence); 2 officers or dire. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 5.83; RSI 49 is neutral"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "ADTN",
+     "what": "TRADE: research setup: 2 insiders bought $675,088 in total within 30 days (STANTON THOMAS R, Santo Timothy P); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 4.51; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-11",
+     "sym": "GOOD",
+     "what": "TRADE: research setup: 2 insiders bought $186,263 in total within 30 days (Cooper Arthur S., Gerson Gary); 2 officers or directors each bought $25k+. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 10.07; RSI 22 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-12",
+     "sym": "MX",
+     "what": "TRADE: research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-12 open, 2.78; RSI 58 is neutral"
+    }
+   ],
+   "margin_vs_spy_pct": 0.36,
+   "gbp100_now": 99.9,
+   "yearly_pace_pct": null,
+   "years_to_10000_at_pace": null
+  }
+ },
+ "spy_since_start_pct": -0.46,
+ "goal": {
+  "aim": "Beat the S&P 500 by the largest possible margin after costs; turn GBP 100 into GBP 10,000 (100x)",
+  "leaderboard": [
+   {
+    "strategy": "insider_big_250k",
+    "margin_vs_spy_pct": 1.3,
+    "gbp100_now": 100.84,
+    "days_live": 11
+   },
+   {
+    "strategy": "congress_cluster3",
+    "margin_vs_spy_pct": 0.56,
+    "gbp100_now": 100.1,
+    "days_live": 11
+   },
+   {
+    "strategy": "congress_big_100k",
+    "margin_vs_spy_pct": 0.46,
+    "gbp100_now": 100.0,
+    "days_live": 11
+   },
+   {
+    "strategy": "research_setup",
+    "margin_vs_spy_pct": 0.36,
+    "gbp100_now": 99.9,
+    "days_live": 8
+   },
+   {
+    "strategy": "research_setup_trend",
+    "margin_vs_spy_pct": 0.36,
+    "gbp100_now": 99.9,
+    "days_live": 8
+   },
+   {
+    "strategy": "insider_cluster3",
+    "margin_vs_spy_pct": 0.28,
+    "gbp100_now": 99.82,
+    "days_live": 11
+   },
+   {
+    "strategy": "insider_cluster2_smallcap",
+    "margin_vs_spy_pct": 0.14,
+    "gbp100_now": 99.68,
+    "days_live": 10
+   },
+   {
+    "strategy": "terminal_top_signals",
+    "margin_vs_spy_pct": -0.85,
+    "gbp100_now": 98.69,
+    "days_live": 11
+   }
+  ],
+  "leader": "insider_big_250k",
+  "leader_is_meaningful": false,
+  "years_to_10000_at_reference_pace": {
+   "S&P 500, long-run average": 48.3,
+   "S&P 500, 2023-2026": 24.1,
+   "Small-company insider buying, 2014-2022": 52.9,
+   "Small-company insider buying, 2023-2026": 20.1
+  },
+  "yearly_return_needed": {
+   "3 years": 364.2,
+   "5 years": 151.2,
+   "10 years": 58.5,
+   "20 years": 25.9
+  },
+  "note": "Virtual money only. Rankings mean little before 90 days of live trading. Not financial advice."
+ },
+ "latest_decisions": [
+  {
+   "date": "2026-11-10",
+   "strategy": "terminal_top_signals",
+   "symbol": "SHEN",
+   "decision": "NO_TRADE",
+   "rsi": "48.2",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "terminal_top_signals",
+   "symbol": "ATLO",
+   "decision": "NO_TRADE",
+   "rsi": "59.3",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "terminal_top_signals",
+   "symbol": "WCC",
+   "decision": "NO_TRADE",
+   "rsi": "44.3",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "terminal_top_signals",
+   "symbol": "LUMN",
+   "decision": "NO_TRADE",
+   "rsi": "38.1",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "terminal_top_signals",
+   "symbol": "GFS",
+   "decision": "NO_TRADE",
+   "rsi": "41.1",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "terminal_top_signals",
+   "symbol": "KMT",
+   "decision": "NO_TRADE",
+   "rsi": "31.3",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "SOPH",
+   "decision": "TRADE",
+   "rsi": "51.8",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 7.90; RSI 52 is neutral"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "GFS",
+   "decision": "NO_TRADE",
+   "rsi": "41.1",
+   "reason": "not a smaller company (trades $280M a day)"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "KMT",
+   "decision": "NO_TRADE",
+   "rsi": "31.3",
+   "reason": "not a smaller company (trades $50M a day)"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "AFCG",
+   "decision": "NO_TRADE",
+   "rsi": "63.7",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "WCC",
+   "decision": "NO_TRADE",
+   "rsi": "44.3",
+   "reason": "not a smaller company (trades $269M a day)"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "FLOC",
+   "decision": "TRADE",
+   "rsi": "61.7",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 21.00; RSI 62 is neutral"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "OBIO",
+   "decision": "TRADE",
+   "rsi": "49.0",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 5.83; RSI 49 is neutral"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "TSM",
+   "decision": "NO_TRADE",
+   "rsi": "41.3",
+   "reason": "not a smaller company (trades $6090M a day)"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "LUMN",
+   "decision": "NO_TRADE",
+   "rsi": "38.1",
+   "reason": "not a smaller company (trades $74M a day)"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "research_setup",
+   "symbol": "FLOC",
+   "decision": "TRADE",
+   "rsi": "61.7",
+   "reason": "research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 21.00; RSI 62 is neutral"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "research_setup",
+   "symbol": "OBIO",
+   "decision": "TRADE",
+   "rsi": "49.0",
+   "reason": "research setup: 4 insiders bought $230,000 in total within 30 days (Fain Eric S, Hochman David P, Pacitti David, Taylor Andrew Lawrence); 2 officers or dire. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 5.83; RSI 49 is neutral"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "research_setup_trend",
+   "symbol": "FLOC",
+   "decision": "TRADE",
+   "rsi": "61.7",
+   "reason": "research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 21.00; RSI 62 is neutral"
+  },
+  {
+   "date": "2026-11-10",
+   "strategy": "research_setup_trend",
+   "symbol": "OBIO",
+   "decision": "TRADE",
+   "rsi": "49.0",
+   "reason": "research setup: 4 insiders bought $230,000 in total within 30 days (Fain Eric S, Hochman David P, Pacitti David, Taylor Andrew Lawrence); 2 officers or dire. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-10 open, 5.83; RSI 49 is neutral"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster3",
+   "symbol": "SLQT",
+   "decision": "NO_TRADE",
+   "rsi": "56.8",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster3",
+   "symbol": "FUN",
+   "decision": "TRADE",
+   "rsi": "56.0",
+   "reason": "3 insiders bought within 30 days. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 11.08; RSI 56 is neutral"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster3",
+   "symbol": "DTI",
+   "decision": "NO_TRADE",
+   "rsi": "34.3",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_big_250k",
+   "symbol": "BSM",
+   "decision": "TRADE",
+   "rsi": "32.3",
+   "reason": "Carter Thomas L Jr (Executive Chairman) bought $686,290. Bought $2,044 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 13.90; RSI 32 is neutral"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_big_250k",
+   "symbol": "PSEC",
+   "decision": "TRADE",
+   "rsi": "40.7",
+   "reason": "Barry John F (CHIEF EXECUTIVE OFFICER) bought $1,727,314. Bought $2,044 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 1.52; RSI 41 is neutral"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_big_250k",
+   "symbol": "STVN",
+   "decision": "TRADE",
+   "rsi": "23.5",
+   "reason": "MOREL DONALD E JR (Director) bought $326,750. Bought $2,043 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 13.94; RSI 23 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_big_250k",
+   "symbol": "TXO",
+   "decision": "TRADE",
+   "rsi": "48.3",
+   "reason": "SIMPSON BOB R (Director) bought $1,170,505. Bought $2,043 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 14.00; RSI 48 is neutral"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_big_250k",
+   "symbol": "NVT",
+   "decision": "NO_TRADE",
+   "rsi": "37.7",
+   "reason": "already 4 positions in the same industry (Special Industry Machinery (No Metalworking Machinery))"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_big_250k",
+   "symbol": "CRH",
+   "decision": "TRADE",
+   "rsi": "63.8",
+   "reason": "FEARON RICHARD H (Director) bought $569,700. Bought $2,043 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 95.96; RSI 64 is neutral"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_big_250k",
+   "symbol": "ADTN",
+   "decision": "NO_TRADE",
+   "rsi": "26.7",
+   "reason": "already 4 positions in the same industry (Telephone & Telegraph Apparatus)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_big_250k",
+   "symbol": "FUN",
+   "decision": "TRADE",
+   "rsi": "56.0",
+   "reason": "JAFFER REHAN (Director) bought $4,128,000. Bought $2,043 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 11.08; RSI 56 is neutral"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "terminal_top_signals",
+   "symbol": "SLQT",
+   "decision": "NO_TRADE",
+   "rsi": "56.8",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "terminal_top_signals",
+   "symbol": "GLXY",
+   "decision": "NO_TRADE",
+   "rsi": "39.9",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "terminal_top_signals",
+   "symbol": "CRH",
+   "decision": "NO_TRADE",
+   "rsi": "63.8",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "terminal_top_signals",
+   "symbol": "PSEC",
+   "decision": "NO_TRADE",
+   "rsi": "40.7",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "terminal_top_signals",
+   "symbol": "ADTN",
+   "decision": "NO_TRADE",
+   "rsi": "26.7",
+   "reason": "RSI 27 is below 30: oversold with no strong contrarian reason"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "terminal_top_signals",
+   "symbol": "DTI",
+   "decision": "NO_TRADE",
+   "rsi": "34.3",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "terminal_top_signals",
+   "symbol": "FUN",
+   "decision": "NO_TRADE",
+   "rsi": "56.0",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "terminal_top_signals",
+   "symbol": "WW",
+   "decision": "NO_TRADE",
+   "rsi": "41.5",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "FUN",
+   "decision": "NO_TRADE",
+   "rsi": "56.0",
+   "reason": "not a smaller company (trades $59M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "STRA",
+   "decision": "NO_TRADE",
+   "rsi": "20.4",
+   "reason": "not a smaller company (trades $26M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "SLQT",
+   "decision": "NO_TRADE",
+   "rsi": "56.8",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "FIS",
+   "decision": "NO_TRADE",
+   "rsi": "29.4",
+   "reason": "not a smaller company (trades $297M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "GOOD",
+   "decision": "TRADE",
+   "rsi": "21.5",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 10.07; RSI 22 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "MCY",
+   "decision": "NO_TRADE",
+   "rsi": "25.9",
+   "reason": "not a smaller company (trades $32M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "GLXY",
+   "decision": "NO_TRADE",
+   "rsi": "39.9",
+   "reason": "not a smaller company (trades $155M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "CRH",
+   "decision": "NO_TRADE",
+   "rsi": "63.8",
+   "reason": "not a smaller company (trades $539M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "ADTN",
+   "decision": "TRADE",
+   "rsi": "26.7",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 4.51; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "WW",
+   "decision": "TRADE",
+   "rsi": "41.5",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 13.48; RSI 41 is neutral"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "DTI",
+   "decision": "NO_TRADE",
+   "rsi": "34.3",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "research_setup",
+   "symbol": "ADTN",
+   "decision": "TRADE",
+   "rsi": "26.7",
+   "reason": "research setup: 2 insiders bought $675,088 in total within 30 days (STANTON THOMAS R, Santo Timothy P); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 4.51; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "research_setup",
+   "symbol": "GOOD",
+   "decision": "TRADE",
+   "rsi": "21.5",
+   "reason": "research setup: 2 insiders bought $186,263 in total within 30 days (Cooper Arthur S., Gerson Gary); 2 officers or directors each bought $25k+. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 10.07; RSI 22 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "research_setup_trend",
+   "symbol": "ADTN",
+   "decision": "TRADE",
+   "rsi": "26.7",
+   "reason": "research setup: 2 insiders bought $675,088 in total within 30 days (STANTON THOMAS R, Santo Timothy P); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 4.51; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-11",
+   "strategy": "research_setup_trend",
+   "symbol": "GOOD",
+   "decision": "TRADE",
+   "rsi": "21.5",
+   "reason": "research setup: 2 insiders bought $186,263 in total within 30 days (Cooper Arthur S., Gerson Gary); 2 officers or directors each bought $25k+. Bought $1,998 (2.0% of the portfolio, the 2% cap) at the 2026-11-11 open, 10.07; RSI 22 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-12",
+   "strategy": "insider_big_250k",
+   "symbol": "MX",
+   "decision": "NO_TRADE",
+   "rsi": "57.7",
+   "reason": "already 4 positions in the same industry (Semiconductors & Related Devices)"
+  },
+  {
+   "date": "2026-11-12",
+   "strategy": "terminal_top_signals",
+   "symbol": "MX",
+   "decision": "NO_TRADE",
+   "rsi": "57.7",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-12",
+   "strategy": "terminal_top_signals",
+   "symbol": "ATEC",
+   "decision": "NO_TRADE",
+   "rsi": "35.8",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-12",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "ATEC",
+   "decision": "NO_TRADE",
+   "rsi": "35.8",
+   "reason": "not a smaller company (trades $48M a day)"
+  },
+  {
+   "date": "2026-11-12",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "MX",
+   "decision": "TRADE",
+   "rsi": "57.7",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,993 (2.0% of the portfolio, the 2% cap) at the 2026-11-12 open, 2.78; RSI 58 is neutral"
+  },
+  {
+   "date": "2026-11-12",
+   "strategy": "research_setup",
+   "symbol": "MX",
+   "decision": "TRADE",
+   "rsi": "57.7",
+   "reason": "research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-12 open, 2.78; RSI 58 is neutral"
+  },
+  {
+   "date": "2026-11-12",
+   "strategy": "research_setup_trend",
+   "symbol": "MX",
+   "decision": "TRADE",
+   "rsi": "57.7",
+   "reason": "research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-12 open, 2.78; RSI 58 is neutral"
+  }
+ ]
+}

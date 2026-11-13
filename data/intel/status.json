@@ -1,0 +1,133 @@
+{
+ "updated": "2026-11-13T21:57:32Z",
+ "market_open": false,
+ "failed": {},
+ "sources": {
+  "crypto": {
+   "last_try": "2026-11-13T21:53:41Z",
+   "result": "100 coins, 15 trending, 3 exchanges",
+   "last_ok": "2026-11-13T21:53:41Z",
+   "seconds": 1.6,
+   "every_minutes": 15
+  },
+  "crypto_derivatives": {
+   "last_try": "2026-11-13T21:57:32Z",
+   "result": "3 perpetuals",
+   "last_ok": "2026-11-13T21:57:32Z",
+   "seconds": 0.2,
+   "every_minutes": 1
+  },
+  "crypto_fear_greed": {
+   "last_try": "2026-11-13T21:24:41Z",
+   "result": "20 (Extreme Fear)",
+   "last_ok": "2026-11-13T21:24:41Z",
+   "seconds": 0.3,
+   "every_minutes": 60
+  },
+  "onchain": {
+   "last_try": "2026-11-13T21:53:41Z",
+   "result": "block 975717, 3 sat/vB",
+   "last_ok": "2026-11-13T21:53:41Z",
+   "seconds": 3.4,
+   "every_minutes": 5
+  },
+  "onchain_daily": {
+   "last_try": "2026-11-13T18:19:42Z",
+   "result": "5 charts",
+   "last_ok": "2026-11-13T18:19:42Z",
+   "seconds": 1.8,
+   "every_minutes": 360
+  },
+  "futures_fx": {
+   "last_try": "2026-11-13T21:57:32Z",
+   "result": "31 quotes",
+   "last_ok": "2026-11-13T21:57:32Z",
+   "seconds": 1.6,
+   "every_minutes": 1
+  },
+  "ecb_fx": {
+   "last_try": "2026-11-13T20:31:55Z",
+   "result": "2026-11-13, 30 currencies",
+   "last_ok": "2026-11-13T20:31:55Z",
+   "seconds": 0.7,
+   "every_minutes": 60
+  },
+  "macro_global": {
+   "last_try": "2026-11-13T21:03:48Z",
+   "result": "7 series, 1 failed",
+   "last_ok": "2026-11-13T21:03:48Z",
+   "seconds": 2.6,
+   "every_minutes": 30
+  },
+  "calendar": {
+   "last_try": "2026-11-13T21:03:48Z",
+   "result": "105 events, 0 high-impact still to come",
+   "last_ok": "2026-11-13T21:03:48Z",
+   "seconds": 0.1,
+   "every_minutes": 15
+  },
+  "news": {
+   "last_try": "2026-11-13T21:57:32Z",
+   "result": "0 new headlines from 15 feeds",
+   "last_ok": "2026-11-13T21:57:32Z",
+   "seconds": 2.7,
+   "every_minutes": 1
+  },
+  "sec_filings": {
+   "last_try": "2026-11-13T21:57:32Z",
+   "result": "22 new filings (0 with a red flag)",
+   "last_ok": "2026-11-13T21:57:32Z",
+   "seconds": 10.0,
+   "every_minutes": 2
+  },
+  "options": {
+   "last_try": "2026-11-13T21:13:46Z",
+   "result": "12 chains, put/call 0.962, 299 unusual",
+   "last_ok": "2026-11-13T21:13:46Z",
+   "seconds": 3.3,
+   "every_minutes": 5
+  },
+  "fear_greed": {
+   "last_try": "2026-11-13T21:13:46Z",
+   "result": "29.9 (Fear), 6 parts",
+   "last_ok": "2026-11-13T21:13:46Z",
+   "seconds": 0.9,
+   "every_minutes": 5
+  },
+  "stocktwits": {
+   "last_try": "2026-11-13T21:43:43Z",
+   "result": "30 trending",
+   "last_ok": "2026-11-13T21:43:43Z",
+   "seconds": 0.1,
+   "every_minutes": 15
+  },
+  "reddit_forums": {
+   "last_try": "2026-11-13T21:33:42Z",
+   "result": "5 forums",
+   "last_ok": "2026-11-13T21:33:42Z",
+   "seconds": 2.5,
+   "every_minutes": 30
+  },
+  "finnhub": {
+   "last_try": "2026-11-13T20:31:55Z",
+   "result": "skipped: add FINNHUB_KEY secret to switch on",
+   "last_ok": "2026-11-13T20:31:55Z",
+   "seconds": 0.0,
+   "every_minutes": 60
+  },
+  "crypto_sectors": {
+   "last_try": "2026-11-13T21:24:41Z",
+   "result": "383 sectors; best Binance Wallet IDO +14.1%, worst Ondo Tokenized Assets -21.0%",
+   "last_ok": "2026-11-13T21:24:41Z",
+   "seconds": 0.2,
+   "every_minutes": 60
+  },
+  "crypto_live": {
+   "last_try": "2026-11-13T21:57:32Z",
+   "result": "BTC 68304.35, ETH 1926.5, SOL 78.6 from 3 exchanges",
+   "last_ok": "2026-11-13T21:57:32Z",
+   "seconds": 1.1,
+   "every_minutes": 1
+  }
+ }
+}
