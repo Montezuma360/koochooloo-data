@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T00:01:19Z",
+ "updated": "2026-11-14T00:05:48Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,10 +11,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-14T00:01:19Z",
+   "last_try": "2026-11-14T00:05:48Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-14T00:01:19Z",
-   "seconds": 0.4,
+   "last_ok": "2026-11-14T00:05:48Z",
+   "seconds": 0.5,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -25,10 +25,10 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-14T00:01:19Z",
-   "result": "block 975725, 2 sat/vB",
-   "last_ok": "2026-11-14T00:01:19Z",
-   "seconds": 3.1,
+   "last_try": "2026-11-14T00:05:48Z",
+   "result": "block 975725, 3 sat/vB",
+   "last_ok": "2026-11-14T00:05:48Z",
+   "seconds": 3.8,
    "every_minutes": 5
   },
   "onchain_daily": {
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-14T00:01:19Z",
+   "last_try": "2026-11-14T00:05:48Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-14T00:01:19Z",
-   "seconds": 2.2,
+   "last_ok": "2026-11-14T00:05:48Z",
+   "seconds": 1.7,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -60,24 +60,24 @@
    "every_minutes": 30
   },
   "calendar": {
-   "last_try": "2026-11-13T23:05:46Z",
+   "last_try": "2026-11-14T00:05:48Z",
    "result": "106 events, 0 high-impact still to come",
-   "last_ok": "2026-11-13T23:05:46Z",
-   "seconds": 0.1,
+   "last_ok": "2026-11-14T00:05:48Z",
+   "seconds": 0.3,
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-14T00:01:19Z",
-   "result": "6 new headlines from 15 feeds",
-   "last_ok": "2026-11-14T00:01:19Z",
-   "seconds": 4.7,
+   "last_try": "2026-11-14T00:05:48Z",
+   "result": "0 new headlines from 15 feeds",
+   "last_ok": "2026-11-14T00:05:48Z",
+   "seconds": 5.4,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-14T00:01:19Z",
+   "last_try": "2026-11-14T00:05:48Z",
    "result": "20 new filings (0 with a red flag)",
-   "last_ok": "2026-11-14T00:01:19Z",
-   "seconds": 3.3,
+   "last_ok": "2026-11-14T00:05:48Z",
+   "seconds": 2.5,
    "every_minutes": 2
   },
   "options": {
@@ -102,10 +102,10 @@
    "every_minutes": 15
   },
   "reddit_forums": {
-   "last_try": "2026-11-13T23:35:59Z",
+   "last_try": "2026-11-14T00:05:48Z",
    "result": "5 forums",
-   "last_ok": "2026-11-13T23:35:59Z",
-   "seconds": 1.6,
+   "last_ok": "2026-11-14T00:05:48Z",
+   "seconds": 2.5,
    "every_minutes": 30
   },
   "finnhub": {
@@ -123,9 +123,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-14T00:01:19Z",
-   "result": "BTC 68320.0, ETH 1932.74, SOL 78.29 from 3 exchanges",
-   "last_ok": "2026-11-14T00:01:19Z",
+   "last_try": "2026-11-14T00:05:48Z",
+   "result": "BTC 68339.2, ETH 1933.0, SOL 78.3 from 3 exchanges",
+   "last_ok": "2026-11-14T00:05:48Z",
    "seconds": 1.1,
    "every_minutes": 1
   }
