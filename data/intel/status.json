@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T00:31:04Z",
+ "updated": "2026-11-14T00:36:02Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,9 +11,9 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-14T00:31:04Z",
+   "last_try": "2026-11-14T00:36:02Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-14T00:31:04Z",
+   "last_ok": "2026-11-14T00:36:02Z",
    "seconds": 0.2,
    "every_minutes": 1
   },
@@ -25,9 +25,9 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-14T00:31:04Z",
-   "result": "block 975725, 5 sat/vB",
-   "last_ok": "2026-11-14T00:31:04Z",
+   "last_try": "2026-11-14T00:36:02Z",
+   "result": "block 975725, 6 sat/vB",
+   "last_ok": "2026-11-14T00:36:02Z",
    "seconds": 3.5,
    "every_minutes": 5
   },
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-14T00:31:04Z",
+   "last_try": "2026-11-14T00:36:02Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-14T00:31:04Z",
-   "seconds": 1.4,
+   "last_ok": "2026-11-14T00:36:02Z",
+   "seconds": 1.3,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,17 +67,17 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-14T00:31:04Z",
+   "last_try": "2026-11-14T00:36:02Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-14T00:31:04Z",
-   "seconds": 2.9,
+   "last_ok": "2026-11-14T00:36:02Z",
+   "seconds": 3.4,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-14T00:31:04Z",
+   "last_try": "2026-11-14T00:36:02Z",
    "result": "20 new filings (0 with a red flag)",
-   "last_ok": "2026-11-14T00:31:04Z",
-   "seconds": 2.7,
+   "last_ok": "2026-11-14T00:36:02Z",
+   "seconds": 5.7,
    "every_minutes": 2
   },
   "options": {
@@ -102,10 +102,10 @@
    "every_minutes": 15
   },
   "reddit_forums": {
-   "last_try": "2026-11-14T00:05:48Z",
+   "last_try": "2026-11-14T00:36:02Z",
    "result": "5 forums",
-   "last_ok": "2026-11-14T00:05:48Z",
-   "seconds": 2.5,
+   "last_ok": "2026-11-14T00:36:02Z",
+   "seconds": 1.1,
    "every_minutes": 30
   },
   "finnhub": {
@@ -123,9 +123,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-14T00:31:04Z",
-   "result": "BTC 68233.67, ETH 1931.34, SOL 78.19 from 3 exchanges",
-   "last_ok": "2026-11-14T00:31:04Z",
+   "last_try": "2026-11-14T00:36:02Z",
+   "result": "BTC 68160.1, ETH 1927.71, SOL 78.0 from 3 exchanges",
+   "last_ok": "2026-11-14T00:36:02Z",
    "seconds": 1.0,
    "every_minutes": 1
   }
