@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T02:51:00Z",
+ "updated": "2026-11-14T02:52:25Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -8,7 +8,7 @@
  "feeds": {
   "prices": {
    "updated": "2026-11-14T02:50:51Z",
-   "age_hours": 0.0,
+   "age_hours": 0.03,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -18,7 +18,7 @@
   },
   "sec_insiders": {
    "updated": "2026-11-14T02:50:55Z",
-   "age_hours": 0.0,
+   "age_hours": 0.03,
    "stale_after_hours": 31,
    "stale": false,
    "failed_parts": {},
@@ -28,7 +28,7 @@
   },
   "signals": {
    "updated": "2026-11-14T02:50:59Z",
-   "age_hours": 0.0,
+   "age_hours": 0.02,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-14T02:25:44Z",
-   "age_hours": 0.42,
+   "age_hours": 0.44,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T00:02:08Z",
-   "age_hours": 2.81,
+   "age_hours": 2.84,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
@@ -54,7 +54,7 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 3.04,
+   "age_hours": 3.06,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
@@ -62,7 +62,7 @@
   },
   "intelligence": {
    "updated": "2026-11-14T02:50:56Z",
-   "age_hours": 0.0,
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -72,23 +72,17 @@
   }
  },
  "workflows": {
-  "Caesar's voice": {
-   "last": "skipped",
-   "at": "2026-11-14T02:49:22Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 50
-  },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-14T02:49:19Z",
+   "at": "2026-11-14T02:52:20Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 48
+   "runs_in_last_100": 49
   },
-  "Refresh signals and dashboard": {
-   "last": "success",
-   "at": "2026-11-14T02:03:05Z",
+  "Caesar's voice": {
+   "last": "skipped",
+   "at": "2026-11-14T02:51:22Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 1
+   "runs_in_last_100": 49
   }
  }
 }
