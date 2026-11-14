@@ -1,14 +1,17 @@
 {
- "updated": "2026-11-14T03:31:12Z",
- "healthy": true,
- "problems": [],
+ "updated": "2026-11-14T03:38:07Z",
+ "healthy": false,
+ "problems": [
+  "sec_insiders: 1 part(s) failed",
+  "intelligence: 1 part(s) failed"
+ ],
  "market_open": false,
  "warnings": [],
  "repo_size_mb": 87.8,
  "feeds": {
   "prices": {
-   "updated": "2026-11-14T03:31:01Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-14T03:35:38Z",
+   "age_hours": 0.04,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -17,17 +20,21 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-14T03:31:07Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-14T03:35:43Z",
+   "age_hours": 0.04,
    "stale_after_hours": 31,
    "stale": false,
-   "failed_parts": {},
-   "ok": true,
+   "failed_parts": {
+    "errors": [
+     "feed: TimeoutError: The read operation timed out"
+    ]
+   },
+   "ok": false,
    "target_minutes_when_market_open": 3,
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-14T03:31:11Z",
+   "updated": "2026-11-14T03:38:06Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -38,7 +45,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-14T03:20:51Z",
-   "age_hours": 0.17,
+   "age_hours": 0.29,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +53,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T00:02:08Z",
-   "age_hours": 3.48,
+   "age_hours": 3.6,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
@@ -54,19 +61,21 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 3.71,
+   "age_hours": 3.82,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-14T03:31:08Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-14T03:36:50Z",
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
-   "failed_parts": {},
-   "ok": true,
+   "failed_parts": {
+    "sec_filings": "TimeoutError: The read operation timed out"
+   },
+   "ok": false,
    "target_minutes_when_market_open": 3,
    "on_target": null
   }
@@ -74,13 +83,13 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-14T03:29:22Z",
+   "at": "2026-11-14T03:37:16Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 49
   },
   "Live market refresh": {
-   "last": "success",
-   "at": "2026-11-14T03:29:18Z",
+   "last": "cancelled",
+   "at": "2026-11-14T03:37:12Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 46
   },
