@@ -1,22 +1,20 @@
 {
- "updated": "2026-11-15T15:58:17Z",
+ "updated": "2026-11-15T16:01:28Z",
  "market_open": false,
- "failed": {
-  "sec_filings": "TimeoutError: The read operation timed out"
- },
+ "failed": {},
  "sources": {
   "crypto": {
-   "last_try": "2026-11-15T15:46:14Z",
+   "last_try": "2026-11-15T16:01:28Z",
    "result": "100 coins, 15 trending, 3 exchanges",
-   "last_ok": "2026-11-15T15:46:14Z",
-   "seconds": 1.1,
+   "last_ok": "2026-11-15T16:01:28Z",
+   "seconds": 1.4,
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-15T15:58:17Z",
+   "last_try": "2026-11-15T16:01:28Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-15T15:58:17Z",
-   "seconds": 0.5,
+   "last_ok": "2026-11-15T16:01:28Z",
+   "seconds": 0.2,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -27,10 +25,10 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-15T15:55:57Z",
+   "last_try": "2026-11-15T16:01:28Z",
    "result": "block 975982, 1 sat/vB",
-   "last_ok": "2026-11-15T15:55:57Z",
-   "seconds": 1.3,
+   "last_ok": "2026-11-15T16:01:28Z",
+   "seconds": 1.7,
    "every_minutes": 5
   },
   "onchain_daily": {
@@ -41,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-15T15:58:17Z",
+   "last_try": "2026-11-15T16:01:28Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-15T15:58:17Z",
-   "seconds": 1.9,
+   "last_ok": "2026-11-15T16:01:28Z",
+   "seconds": 1.4,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -69,19 +67,18 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-15T15:58:17Z",
+   "last_try": "2026-11-15T16:01:28Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-15T15:58:17Z",
-   "seconds": 3.4,
+   "last_ok": "2026-11-15T16:01:28Z",
+   "seconds": 2.9,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-15T15:58:17Z",
+   "last_try": "2026-11-15T16:01:28Z",
    "result": "11 new filings (0 with a red flag)",
-   "last_ok": "2026-11-15T15:55:57Z",
-   "seconds": 56.9,
-   "every_minutes": 2,
-   "error": "TimeoutError: The read operation timed out"
+   "last_ok": "2026-11-15T16:01:28Z",
+   "seconds": 16.1,
+   "every_minutes": 2
   },
   "options": {
    "last_try": "2026-11-15T09:15:53Z",
@@ -126,9 +123,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-15T15:58:17Z",
-   "result": "BTC 64707.39, ETH 1809.3, SOL 71.16 from 3 exchanges",
-   "last_ok": "2026-11-15T15:58:17Z",
+   "last_try": "2026-11-15T16:01:28Z",
+   "result": "BTC 64654.39, ETH 1807.45, SOL 71.06 from 3 exchanges",
+   "last_ok": "2026-11-15T16:01:28Z",
    "seconds": 1.2,
    "every_minutes": 1
   }
