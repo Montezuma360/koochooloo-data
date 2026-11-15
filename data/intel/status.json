@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T14:21:05Z",
+ "updated": "2026-11-15T14:25:50Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,24 +11,24 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-15T14:21:05Z",
+   "last_try": "2026-11-15T14:25:50Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-15T14:21:05Z",
-   "seconds": 0.4,
+   "last_ok": "2026-11-15T14:25:50Z",
+   "seconds": 0.6,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
-   "last_try": "2026-11-15T13:26:06Z",
+   "last_try": "2026-11-15T14:25:50Z",
    "result": "10 (Extreme Fear)",
-   "last_ok": "2026-11-15T13:26:06Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-15T14:25:50Z",
+   "seconds": 0.3,
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-15T14:21:05Z",
+   "last_try": "2026-11-15T14:25:50Z",
    "result": "block 975970, 1 sat/vB",
-   "last_ok": "2026-11-15T14:21:05Z",
-   "seconds": 3.5,
+   "last_ok": "2026-11-15T14:25:50Z",
+   "seconds": 1.7,
    "every_minutes": 5
   },
   "onchain_daily": {
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-15T14:21:05Z",
+   "last_try": "2026-11-15T14:25:50Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-15T14:21:05Z",
-   "seconds": 1.3,
+   "last_ok": "2026-11-15T14:25:50Z",
+   "seconds": 1.9,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,17 +67,17 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-15T14:21:05Z",
-   "result": "2 new headlines from 15 feeds",
-   "last_ok": "2026-11-15T14:21:05Z",
-   "seconds": 3.1,
+   "last_try": "2026-11-15T14:25:50Z",
+   "result": "1 new headlines from 15 feeds",
+   "last_ok": "2026-11-15T14:25:50Z",
+   "seconds": 3.5,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-15T14:21:05Z",
+   "last_try": "2026-11-15T14:25:50Z",
    "result": "11 new filings (0 with a red flag)",
-   "last_ok": "2026-11-15T14:21:05Z",
-   "seconds": 40.1,
+   "last_ok": "2026-11-15T14:25:50Z",
+   "seconds": 24.7,
    "every_minutes": 2
   },
   "options": {
@@ -116,17 +116,17 @@
    "every_minutes": 360
   },
   "crypto_sectors": {
-   "last_try": "2026-11-15T13:26:06Z",
-   "result": "384 sectors; best Venice Ecosystem +8.1%, worst Tokenized Exchange-Traded Funds (ETFs) -14.8%",
-   "last_ok": "2026-11-15T13:26:06Z",
+   "last_try": "2026-11-15T14:25:50Z",
+   "result": "384 sectors; best Venice Ecosystem +7.7%, worst Tokenized Exchange-Traded Product (ETPs) -18.8%",
+   "last_ok": "2026-11-15T14:25:50Z",
    "seconds": 0.2,
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-15T14:21:05Z",
-   "result": "BTC 65324.0, ETH 1823.26, SOL 72.26 from 3 exchanges",
-   "last_ok": "2026-11-15T14:21:05Z",
-   "seconds": 0.9,
+   "last_try": "2026-11-15T14:25:50Z",
+   "result": "BTC 65250.3, ETH 1819.8, SOL 72.03 from 3 exchanges",
+   "last_ok": "2026-11-15T14:25:50Z",
+   "seconds": 1.1,
    "every_minutes": 1
   }
  }
