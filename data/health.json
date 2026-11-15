@@ -1,14 +1,16 @@
 {
- "updated": "2026-11-15T19:06:12Z",
- "healthy": true,
- "problems": [],
+ "updated": "2026-11-15T19:06:36Z",
+ "healthy": false,
+ "problems": [
+  "intelligence: 1 part(s) failed"
+ ],
  "market_open": false,
  "warnings": [],
  "repo_size_mb": 80.2,
  "feeds": {
   "prices": {
-   "updated": "2026-11-15T18:55:54Z",
-   "age_hours": 0.17,
+   "updated": "2026-11-15T19:05:36Z",
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -17,8 +19,8 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-15T18:55:57Z",
-   "age_hours": 0.17,
+   "updated": "2026-11-15T19:05:40Z",
+   "age_hours": 0.02,
    "stale_after_hours": 55,
    "stale": false,
    "failed_parts": {},
@@ -27,8 +29,8 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-15T18:56:27Z",
-   "age_hours": 0.16,
+   "updated": "2026-11-15T19:06:35Z",
+   "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -38,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-15T18:31:17Z",
-   "age_hours": 0.58,
+   "age_hours": 0.59,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -54,19 +56,21 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 43.29,
+   "age_hours": 43.3,
    "stale_after_hours": 84,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-15T18:56:04Z",
-   "age_hours": 0.17,
+   "updated": "2026-11-15T19:05:47Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
-   "failed_parts": {},
-   "ok": true,
+   "failed_parts": {
+    "sec_filings": "TimeoutError: The read operation timed out"
+   },
+   "ok": false,
    "target_minutes_when_market_open": 3,
    "on_target": null
   }
