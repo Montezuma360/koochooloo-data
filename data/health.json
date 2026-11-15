@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T14:08:25Z",
+ "updated": "2026-11-15T14:09:31Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,8 +7,8 @@
  "repo_size_mb": 80.5,
  "feeds": {
   "prices": {
-   "updated": "2026-11-15T14:05:37Z",
-   "age_hours": 0.05,
+   "updated": "2026-11-15T14:08:21Z",
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -18,7 +18,7 @@
   },
   "sec_insiders": {
    "updated": "2026-11-15T14:05:43Z",
-   "age_hours": 0.05,
+   "age_hours": 0.06,
    "stale_after_hours": 55,
    "stale": false,
    "failed_parts": {},
@@ -27,8 +27,8 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-15T14:06:40Z",
-   "age_hours": 0.03,
+   "updated": "2026-11-15T14:09:31Z",
+   "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-15T13:31:02Z",
-   "age_hours": 0.62,
+   "age_hours": 0.64,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T14:37:36Z",
-   "age_hours": 23.51,
+   "age_hours": 23.53,
    "stale_after_hours": 84,
    "stale": false,
    "failed_parts": {},
@@ -54,15 +54,15 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 38.33,
+   "age_hours": 38.35,
    "stale_after_hours": 84,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-15T14:05:53Z",
-   "age_hours": 0.04,
+   "updated": "2026-11-15T14:08:25Z",
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -74,15 +74,27 @@
  "workflows": {
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-15T14:08:23Z",
+   "at": "2026-11-15T14:09:19Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 49
+   "runs_in_last_100": 48
   },
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-15T14:07:30Z",
+   "at": "2026-11-15T14:08:27Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 49
+   "runs_in_last_100": 47
+  },
+  "Refresh brain data": {
+   "last": "success",
+   "at": "2026-11-15T14:09:08Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 1
+  },
+  "Refresh signals and dashboard": {
+   "last": "success",
+   "at": "2026-11-15T14:08:50Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 1
   }
  }
 }
