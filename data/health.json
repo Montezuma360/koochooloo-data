@@ -1,14 +1,16 @@
 {
- "updated": "2026-11-15T21:45:36Z",
- "healthy": true,
- "problems": [],
+ "updated": "2026-11-15T21:46:21Z",
+ "healthy": false,
+ "problems": [
+  "intelligence: 1 part(s) failed"
+ ],
  "market_open": false,
  "warnings": [],
  "repo_size_mb": 81.0,
  "feeds": {
   "prices": {
-   "updated": "2026-11-15T21:40:51Z",
-   "age_hours": 0.08,
+   "updated": "2026-11-15T21:45:50Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -17,8 +19,8 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-15T21:40:56Z",
-   "age_hours": 0.08,
+   "updated": "2026-11-15T21:46:08Z",
+   "age_hours": 0.0,
    "stale_after_hours": 55,
    "stale": false,
    "failed_parts": {},
@@ -27,8 +29,8 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-15T21:41:01Z",
-   "age_hours": 0.08,
+   "updated": "2026-11-15T21:46:20Z",
+   "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -38,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-15T21:31:10Z",
-   "age_hours": 0.24,
+   "age_hours": 0.25,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T14:37:36Z",
-   "age_hours": 31.13,
+   "age_hours": 31.15,
    "stale_after_hours": 84,
    "stale": false,
    "failed_parts": {},
@@ -54,24 +56,32 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 45.95,
+   "age_hours": 45.96,
    "stale_after_hours": 84,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-15T21:40:57Z",
-   "age_hours": 0.08,
+   "updated": "2026-11-15T21:46:09Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
-   "failed_parts": {},
-   "ok": true,
+   "failed_parts": {
+    "stocktwits": "HTTPError: HTTP Error 403: Forbidden"
+   },
+   "ok": false,
    "target_minutes_when_market_open": 3,
    "on_target": null
   }
  },
  "workflows": {
+  "Refresh signals and dashboard": {
+   "last": "success",
+   "at": "2026-11-15T21:46:03Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 2
+  },
   "Caesar's voice": {
    "last": "skipped",
    "at": "2026-11-15T21:44:29Z",
@@ -82,13 +92,7 @@
    "last": "success",
    "at": "2026-11-15T21:44:23Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 47
-  },
-  "Refresh signals and dashboard": {
-   "last": "success",
-   "at": "2026-11-15T21:07:49Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 2
+   "runs_in_last_100": 46
   }
  }
 }
