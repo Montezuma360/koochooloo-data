@@ -1,14 +1,16 @@
 {
- "updated": "2026-11-15T16:32:38Z",
- "healthy": true,
- "problems": [],
+ "updated": "2026-11-15T16:36:33Z",
+ "healthy": false,
+ "problems": [
+  "intelligence: 1 part(s) failed"
+ ],
  "market_open": false,
  "warnings": [],
  "repo_size_mb": 81.7,
  "feeds": {
   "prices": {
-   "updated": "2026-11-15T16:30:59Z",
-   "age_hours": 0.03,
+   "updated": "2026-11-15T16:35:41Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -17,8 +19,8 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-15T16:31:06Z",
-   "age_hours": 0.03,
+   "updated": "2026-11-15T16:35:46Z",
+   "age_hours": 0.01,
    "stale_after_hours": 55,
    "stale": false,
    "failed_parts": {},
@@ -27,7 +29,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-15T16:32:37Z",
+   "updated": "2026-11-15T16:36:32Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -38,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-15T16:30:59Z",
-   "age_hours": 0.03,
+   "age_hours": 0.09,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T14:37:36Z",
-   "age_hours": 25.92,
+   "age_hours": 25.98,
    "stale_after_hours": 84,
    "stale": false,
    "failed_parts": {},
@@ -54,19 +56,21 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 40.73,
+   "age_hours": 40.8,
    "stale_after_hours": 84,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-15T16:32:05Z",
+   "updated": "2026-11-15T16:35:50Z",
    "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
-   "failed_parts": {},
-   "ok": true,
+   "failed_parts": {
+    "sec_filings": "TimeoutError: The read operation timed out"
+   },
+   "ok": false,
    "target_minutes_when_market_open": 3,
    "on_target": null
   }
@@ -74,13 +78,13 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-15T16:32:19Z",
+   "at": "2026-11-15T16:34:29Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 49
   },
   "Live market refresh": {
-   "last": "cancelled",
-   "at": "2026-11-15T16:32:17Z",
+   "last": "success",
+   "at": "2026-11-15T16:34:23Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 46
   },
