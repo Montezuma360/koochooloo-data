@@ -1,0 +1,852 @@
+{
+ "generated": "2026-11-02T01:41:46Z",
+ "rules": "Koochooloo research lab, round 2: better insider data, tests written down before the run,\nand an untouched holdout period.\n\nNew versus round 1:\n- Richer SEC data: the insider's job title (CEO/CFO), how much the purchase grows their holding,\n  and whether it was a pre-planned 10b5-1 trade (planned trades are excluded).\n- Price context known at the time of the signal: distance from the 52-week high and daily traded value.\n- Portfolios hold 50 slots, so rare big winners are not missed.\n- Design period 2014-2022, holdout 2023-2026. A strategy passes only if it meets PASS_RULE in both.\nSame trading rules as round 1: buy at the next open after the filing, costs 0.15% per side (0.40% under $10),\nskip stocks under $1 or trading under $1M a day, sell at the close after the holding period.\nWrites data/research/round2.json.",
+ "pass_rule": "Design 2014-2022: average excess return per trade above 0 with t-stat of 2 or more, AND the 50-slot portfolio beats SPY. Holdout 2023-2026: average excess above 0 AND the portfolio beats SPY.",
+ "stress_note": "stress_avg_excess_pct assumes every trade with no price data (delisted stocks) lost 10% against SPY.",
+ "strategies": {
+  "baseline_any_25k": {
+   "description": "any director or officer buys $25k+ (the reference point)",
+   "signals": 36120,
+   "holds": {
+    "20": {
+     "counts": {
+      "nodata": 11806,
+      "illiquid": 6873,
+      "done": 16153,
+      "noentry": 1288
+     },
+     "design": {
+      "n": 10189,
+      "nodata": 10820,
+      "win_pct": 53.1,
+      "beat_spy_pct": 47.6,
+      "avg_pct": 0.66,
+      "avg_excess_pct": -0.15,
+      "median_excess_pct": -0.45,
+      "t_stat": -1.16,
+      "stress_avg_excess_pct": -5.22
+     },
+     "holdout": {
+      "n": 5964,
+      "nodata": 986,
+      "win_pct": 51.5,
+      "beat_spy_pct": 44.9,
+      "avg_pct": 1.34,
+      "avg_excess_pct": 0.03,
+      "median_excess_pct": -1.03,
+      "t_stat": 0.15,
+      "stress_avg_excess_pct": -1.39
+     }
+    },
+    "60": {
+     "counts": {
+      "nodata": 11806,
+      "illiquid": 6873,
+      "done": 15811,
+      "noentry": 1288,
+      "open": 342
+     },
+     "design": {
+      "n": 10189,
+      "nodata": 10820,
+      "win_pct": 56.2,
+      "beat_spy_pct": 47.5,
+      "avg_pct": 3.91,
+      "avg_excess_pct": 0.63,
+      "median_excess_pct": -0.79,
+      "t_stat": 2.49,
+      "stress_avg_excess_pct": -4.84
+     },
+     "holdout": {
+      "n": 5622,
+      "nodata": 986,
+      "win_pct": 55.3,
+      "beat_spy_pct": 42.6,
+      "avg_pct": 4.74,
+      "avg_excess_pct": -0.63,
+      "median_excess_pct": -3.17,
+      "t_stat": -1.66,
+      "stress_avg_excess_pct": -2.02
+     }
+    },
+    "120": {
+     "counts": {
+      "nodata": 11806,
+      "illiquid": 6873,
+      "done": 15326,
+      "noentry": 1288,
+      "open": 827
+     },
+     "design": {
+      "n": 10189,
+      "nodata": 10820,
+      "win_pct": 56.0,
+      "beat_spy_pct": 45.1,
+      "avg_pct": 6.1,
+      "avg_excess_pct": 0.01,
+      "median_excess_pct": -2.27,
+      "t_stat": 0.03,
+      "stress_avg_excess_pct": -5.14
+     },
+     "holdout": {
+      "n": 5137,
+      "nodata": 986,
+      "win_pct": 57.5,
+      "beat_spy_pct": 39.9,
+      "avg_pct": 8.98,
+      "avg_excess_pct": -1.6,
+      "median_excess_pct": -6.1,
+      "t_stat": -2.65,
+      "stress_avg_excess_pct": -2.95
+     }
+    }
+   },
+   "portfolio_design": {
+    "start": "2014-03-03",
+    "end": "2022-12-30",
+    "cagr_pct": 9.5,
+    "spy_cagr_pct": 10.6,
+    "max_drawdown_pct": -45.0,
+    "spy_max_drawdown_pct": -33.7,
+    "avg_invested_pct": 96.3
+   },
+   "portfolio_holdout": {
+    "start": "2023-01-03",
+    "end": "2026-10-30",
+    "cagr_pct": 10.8,
+    "spy_cagr_pct": 21.1,
+    "max_drawdown_pct": -26.1,
+    "spy_max_drawdown_pct": -18.8,
+    "avg_invested_pct": 92.8
+   },
+   "verdict_60d": "fail"
+  },
+  "cluster2_25k_50slots": {
+   "description": "2+ directors or officers each buy $25k+ within 30 days",
+   "signals": 12116,
+   "holds": {
+    "20": {
+     "counts": {
+      "done": 5415,
+      "nodata": 4299,
+      "illiquid": 1924,
+      "noentry": 478
+     },
+     "design": {
+      "n": 3389,
+      "nodata": 3985,
+      "win_pct": 53.2,
+      "beat_spy_pct": 47.2,
+      "avg_pct": 0.95,
+      "avg_excess_pct": -0.2,
+      "median_excess_pct": -0.55,
+      "t_stat": -0.79,
+      "stress_avg_excess_pct": -5.5
+     },
+     "holdout": {
+      "n": 2026,
+      "nodata": 314,
+      "win_pct": 53.1,
+      "beat_spy_pct": 46.4,
+      "avg_pct": 1.89,
+      "avg_excess_pct": 0.51,
+      "median_excess_pct": -0.91,
+      "t_stat": 1.36,
+      "stress_avg_excess_pct": -0.9
+     }
+    },
+    "60": {
+     "counts": {
+      "done": 5292,
+      "nodata": 4299,
+      "illiquid": 1924,
+      "noentry": 478,
+      "open": 123
+     },
+     "design": {
+      "n": 3389,
+      "nodata": 3985,
+      "win_pct": 56.2,
+      "beat_spy_pct": 47.9,
+      "avg_pct": 6.02,
+      "avg_excess_pct": 1.9,
+      "median_excess_pct": -0.78,
+      "t_stat": 3.52,
+      "stress_avg_excess_pct": -4.53
+     },
+     "holdout": {
+      "n": 1903,
+      "nodata": 314,
+      "win_pct": 57.0,
+      "beat_spy_pct": 43.5,
+      "avg_pct": 5.78,
+      "avg_excess_pct": 0.1,
+      "median_excess_pct": -2.65,
+      "t_stat": 0.14,
+      "stress_avg_excess_pct": -1.33
+     }
+    },
+    "120": {
+     "counts": {
+      "done": 5122,
+      "nodata": 4299,
+      "illiquid": 1924,
+      "noentry": 478,
+      "open": 293
+     },
+     "design": {
+      "n": 3389,
+      "nodata": 3985,
+      "win_pct": 55.0,
+      "beat_spy_pct": 43.6,
+      "avg_pct": 7.56,
+      "avg_excess_pct": 0.42,
+      "median_excess_pct": -3.14,
+      "t_stat": 0.52,
+      "stress_avg_excess_pct": -5.21
+     },
+     "holdout": {
+      "n": 1733,
+      "nodata": 314,
+      "win_pct": 57.0,
+      "beat_spy_pct": 40.9,
+      "avg_pct": 10.08,
+      "avg_excess_pct": -0.7,
+      "median_excess_pct": -6.07,
+      "t_stat": -0.61,
+      "stress_avg_excess_pct": -2.13
+     }
+    }
+   },
+   "portfolio_design": {
+    "start": "2014-03-03",
+    "end": "2022-12-30",
+    "cagr_pct": 10.2,
+    "spy_cagr_pct": 10.6,
+    "max_drawdown_pct": -50.9,
+    "spy_max_drawdown_pct": -33.7,
+    "avg_invested_pct": 92.1
+   },
+   "portfolio_holdout": {
+    "start": "2023-01-03",
+    "end": "2026-10-30",
+    "cagr_pct": 16.5,
+    "spy_cagr_pct": 21.1,
+    "max_drawdown_pct": -27.3,
+    "spy_max_drawdown_pct": -18.8,
+    "avg_invested_pct": 88.0
+   },
+   "verdict_60d": "fail"
+  },
+  "conviction_buy": {
+   "description": "insider buys $100k+ that grows their holding by 20%+",
+   "signals": 13692,
+   "holds": {
+    "20": {
+     "counts": {
+      "illiquid": 1748,
+      "nodata": 4536,
+      "noentry": 536,
+      "done": 6872
+     },
+     "design": {
+      "n": 4368,
+      "nodata": 4143,
+      "win_pct": 53.8,
+      "beat_spy_pct": 48.0,
+      "avg_pct": 0.75,
+      "avg_excess_pct": -0.15,
+      "median_excess_pct": -0.36,
+      "t_stat": -0.75,
+      "stress_avg_excess_pct": -4.94
+     },
+     "holdout": {
+      "n": 2504,
+      "nodata": 393,
+      "win_pct": 50.8,
+      "beat_spy_pct": 45.5,
+      "avg_pct": 1.57,
+      "avg_excess_pct": 0.36,
+      "median_excess_pct": -0.98,
+      "t_stat": 1.01,
+      "stress_avg_excess_pct": -1.04
+     }
+    },
+    "60": {
+     "counts": {
+      "illiquid": 1748,
+      "nodata": 4536,
+      "noentry": 536,
+      "done": 6732,
+      "open": 140
+     },
+     "design": {
+      "n": 4368,
+      "nodata": 4143,
+      "win_pct": 55.6,
+      "beat_spy_pct": 48.0,
+      "avg_pct": 4.55,
+      "avg_excess_pct": 1.28,
+      "median_excess_pct": -0.64,
+      "t_stat": 2.94,
+      "stress_avg_excess_pct": -4.21
+     },
+     "holdout": {
+      "n": 2364,
+      "nodata": 393,
+      "win_pct": 54.9,
+      "beat_spy_pct": 43.1,
+      "avg_pct": 4.92,
+      "avg_excess_pct": -0.32,
+      "median_excess_pct": -2.86,
+      "t_stat": -0.48,
+      "stress_avg_excess_pct": -1.7
+     }
+    },
+    "120": {
+     "counts": {
+      "illiquid": 1748,
+      "nodata": 4536,
+      "noentry": 536,
+      "done": 6507,
+      "open": 365
+     },
+     "design": {
+      "n": 4368,
+      "nodata": 4143,
+      "win_pct": 56.0,
+      "beat_spy_pct": 45.3,
+      "avg_pct": 6.35,
+      "avg_excess_pct": 0.22,
+      "median_excess_pct": -2.21,
+      "t_stat": 0.34,
+      "stress_avg_excess_pct": -4.76
+     },
+     "holdout": {
+      "n": 2139,
+      "nodata": 393,
+      "win_pct": 56.4,
+      "beat_spy_pct": 40.2,
+      "avg_pct": 8.86,
+      "avg_excess_pct": -1.6,
+      "median_excess_pct": -6.61,
+      "t_stat": -1.6,
+      "stress_avg_excess_pct": -2.9
+     }
+    }
+   },
+   "portfolio_design": {
+    "start": "2014-03-03",
+    "end": "2022-12-30",
+    "cagr_pct": 10.4,
+    "spy_cagr_pct": 10.6,
+    "max_drawdown_pct": -47.0,
+    "spy_max_drawdown_pct": -33.7,
+    "avg_invested_pct": 92.9
+   },
+   "portfolio_holdout": {
+    "start": "2023-01-03",
+    "end": "2026-10-30",
+    "cagr_pct": 4.2,
+    "spy_cagr_pct": 21.1,
+    "max_drawdown_pct": -26.2,
+    "spy_max_drawdown_pct": -18.8,
+    "avg_invested_pct": 91.4
+   },
+   "verdict_60d": "fail"
+  },
+  "ceo_cfo_100k": {
+   "description": "the CEO, CFO or president buys $100k+",
+   "signals": 8490,
+   "holds": {
+    "20": {
+     "counts": {
+      "illiquid": 1131,
+      "nodata": 2751,
+      "done": 4298,
+      "noentry": 310
+     },
+     "design": {
+      "n": 2631,
+      "nodata": 2506,
+      "win_pct": 55.2,
+      "beat_spy_pct": 49.6,
+      "avg_pct": 0.75,
+      "avg_excess_pct": -0.13,
+      "median_excess_pct": -0.08,
+      "t_stat": -0.53,
+      "stress_avg_excess_pct": -4.95
+     },
+     "holdout": {
+      "n": 1667,
+      "nodata": 245,
+      "win_pct": 52.4,
+      "beat_spy_pct": 47.0,
+      "avg_pct": 1.91,
+      "avg_excess_pct": 0.52,
+      "median_excess_pct": -0.72,
+      "t_stat": 1.21,
+      "stress_avg_excess_pct": -0.83
+     }
+    },
+    "60": {
+     "counts": {
+      "illiquid": 1131,
+      "nodata": 2751,
+      "done": 4192,
+      "noentry": 310,
+      "open": 106
+     },
+     "design": {
+      "n": 2631,
+      "nodata": 2506,
+      "win_pct": 55.7,
+      "beat_spy_pct": 47.7,
+      "avg_pct": 4.73,
+      "avg_excess_pct": 1.23,
+      "median_excess_pct": -0.75,
+      "t_stat": 2.11,
+      "stress_avg_excess_pct": -4.25
+     },
+     "holdout": {
+      "n": 1561,
+      "nodata": 245,
+      "win_pct": 53.7,
+      "beat_spy_pct": 41.5,
+      "avg_pct": 4.67,
+      "avg_excess_pct": -0.74,
+      "median_excess_pct": -3.34,
+      "t_stat": -0.98,
+      "stress_avg_excess_pct": -1.99
+     }
+    },
+    "120": {
+     "counts": {
+      "illiquid": 1131,
+      "nodata": 2751,
+      "done": 4048,
+      "noentry": 310,
+      "open": 250
+     },
+     "design": {
+      "n": 2631,
+      "nodata": 2506,
+      "win_pct": 55.8,
+      "beat_spy_pct": 44.9,
+      "avg_pct": 6.29,
+      "avg_excess_pct": -0.11,
+      "median_excess_pct": -2.69,
+      "t_stat": -0.13,
+      "stress_avg_excess_pct": -4.93
+     },
+     "holdout": {
+      "n": 1417,
+      "nodata": 245,
+      "win_pct": 54.6,
+      "beat_spy_pct": 38.7,
+      "avg_pct": 8.85,
+      "avg_excess_pct": -1.74,
+      "median_excess_pct": -7.34,
+      "t_stat": -1.45,
+      "stress_avg_excess_pct": -2.96
+     }
+    }
+   },
+   "portfolio_design": {
+    "start": "2014-03-03",
+    "end": "2022-12-30",
+    "cagr_pct": 6.5,
+    "spy_cagr_pct": 10.6,
+    "max_drawdown_pct": -53.5,
+    "spy_max_drawdown_pct": -33.7,
+    "avg_invested_pct": 89.3
+   },
+   "portfolio_holdout": {
+    "start": "2023-01-03",
+    "end": "2026-10-30",
+    "cagr_pct": 11.2,
+    "spy_cagr_pct": 21.1,
+    "max_drawdown_pct": -29.4,
+    "spy_max_drawdown_pct": -18.8,
+    "avg_invested_pct": 88.8
+   },
+   "verdict_60d": "fail"
+  },
+  "contrarian_buy": {
+   "description": "insider buys $50k+ while the stock is 30%+ below its 52-week high",
+   "signals": 29218,
+   "holds": {
+    "20": {
+     "counts": {
+      "nodata": 9453,
+      "illiquid": 2119,
+      "filtered": 12223,
+      "done": 5422,
+      "noentry": 1
+     },
+     "design": {
+      "n": 3138,
+      "nodata": 8667,
+      "win_pct": 52.9,
+      "beat_spy_pct": 49.5,
+      "avg_pct": 1.64,
+      "avg_excess_pct": 0.29,
+      "median_excess_pct": -0.19,
+      "t_stat": 0.98,
+      "stress_avg_excess_pct": -7.26
+     },
+     "holdout": {
+      "n": 2284,
+      "nodata": 786,
+      "win_pct": 50.4,
+      "beat_spy_pct": 45.5,
+      "avg_pct": 1.65,
+      "avg_excess_pct": 0.28,
+      "median_excess_pct": -1.13,
+      "t_stat": 0.68,
+      "stress_avg_excess_pct": -2.35
+     }
+    },
+    "60": {
+     "counts": {
+      "nodata": 9453,
+      "illiquid": 2119,
+      "filtered": 12223,
+      "done": 5283,
+      "noentry": 1,
+      "open": 139
+     },
+     "design": {
+      "n": 3138,
+      "nodata": 8667,
+      "win_pct": 56.0,
+      "beat_spy_pct": 49.0,
+      "avg_pct": 6.81,
+      "avg_excess_pct": 2.28,
+      "median_excess_pct": -0.6,
+      "t_stat": 3.88,
+      "stress_avg_excess_pct": -6.74
+     },
+     "holdout": {
+      "n": 2145,
+      "nodata": 786,
+      "win_pct": 53.4,
+      "beat_spy_pct": 43.4,
+      "avg_pct": 6.17,
+      "avg_excess_pct": 0.3,
+      "median_excess_pct": -3.86,
+      "t_stat": 0.4,
+      "stress_avg_excess_pct": -2.46
+     }
+    },
+    "120": {
+     "counts": {
+      "nodata": 9453,
+      "illiquid": 2119,
+      "filtered": 12223,
+      "done": 5084,
+      "noentry": 1,
+      "open": 338
+     },
+     "design": {
+      "n": 3138,
+      "nodata": 8667,
+      "win_pct": 53.8,
+      "beat_spy_pct": 44.7,
+      "avg_pct": 9.27,
+      "avg_excess_pct": 1.79,
+      "median_excess_pct": -4.15,
+      "t_stat": 1.84,
+      "stress_avg_excess_pct": -6.87
+     },
+     "holdout": {
+      "n": 1946,
+      "nodata": 786,
+      "win_pct": 52.9,
+      "beat_spy_pct": 41.3,
+      "avg_pct": 11.35,
+      "avg_excess_pct": 0.31,
+      "median_excess_pct": -7.97,
+      "t_stat": 0.25,
+      "stress_avg_excess_pct": -2.66
+     }
+    }
+   },
+   "portfolio_design": {
+    "start": "2014-03-03",
+    "end": "2022-12-30",
+    "cagr_pct": 3.8,
+    "spy_cagr_pct": 10.6,
+    "max_drawdown_pct": -49.5,
+    "spy_max_drawdown_pct": -33.7,
+    "avg_invested_pct": 81.4
+   },
+   "portfolio_holdout": {
+    "start": "2023-01-03",
+    "end": "2026-10-30",
+    "cagr_pct": 9.7,
+    "spy_cagr_pct": 21.1,
+    "max_drawdown_pct": -26.8,
+    "spy_max_drawdown_pct": -18.8,
+    "avg_invested_pct": 88.8
+   },
+   "verdict_60d": "fail"
+  },
+  "conviction_contrarian": {
+   "description": "conviction buy while the stock is 30%+ below its 52-week high",
+   "signals": 13692,
+   "holds": {
+    "20": {
+     "counts": {
+      "illiquid": 842,
+      "filtered": 5585,
+      "nodata": 4536,
+      "done": 2728,
+      "noentry": 1
+     },
+     "design": {
+      "n": 1564,
+      "nodata": 4143,
+      "win_pct": 53.1,
+      "beat_spy_pct": 48.7,
+      "avg_pct": 1.7,
+      "avg_excess_pct": 0.29,
+      "median_excess_pct": -0.4,
+      "t_stat": 0.7,
+      "stress_avg_excess_pct": -7.18
+     },
+     "holdout": {
+      "n": 1164,
+      "nodata": 393,
+      "win_pct": 50.3,
+      "beat_spy_pct": 45.9,
+      "avg_pct": 2.52,
+      "avg_excess_pct": 1.13,
+      "median_excess_pct": -1.24,
+      "t_stat": 1.75,
+      "stress_avg_excess_pct": -1.68
+     }
+    },
+    "60": {
+     "counts": {
+      "illiquid": 842,
+      "filtered": 5585,
+      "nodata": 4536,
+      "done": 2666,
+      "noentry": 1,
+      "open": 62
+     },
+     "design": {
+      "n": 1564,
+      "nodata": 4143,
+      "win_pct": 55.7,
+      "beat_spy_pct": 49.2,
+      "avg_pct": 7.75,
+      "avg_excess_pct": 3.22,
+      "median_excess_pct": -0.43,
+      "t_stat": 3.74,
+      "stress_avg_excess_pct": -6.38
+     },
+     "holdout": {
+      "n": 1102,
+      "nodata": 393,
+      "win_pct": 53.9,
+      "beat_spy_pct": 44.0,
+      "avg_pct": 6.82,
+      "avg_excess_pct": 1.08,
+      "median_excess_pct": -3.32,
+      "t_stat": 0.93,
+      "stress_avg_excess_pct": -1.83
+     }
+    },
+    "120": {
+     "counts": {
+      "illiquid": 842,
+      "filtered": 5585,
+      "nodata": 4536,
+      "done": 2548,
+      "noentry": 1,
+      "open": 180
+     },
+     "design": {
+      "n": 1564,
+      "nodata": 4143,
+      "win_pct": 53.6,
+      "beat_spy_pct": 44.8,
+      "avg_pct": 9.95,
+      "avg_excess_pct": 2.52,
+      "median_excess_pct": -3.4,
+      "t_stat": 1.69,
+      "stress_avg_excess_pct": -6.57
+     },
+     "holdout": {
+      "n": 984,
+      "nodata": 393,
+      "win_pct": 53.8,
+      "beat_spy_pct": 40.9,
+      "avg_pct": 10.94,
+      "avg_excess_pct": -0.03,
+      "median_excess_pct": -7.95,
+      "t_stat": -0.02,
+      "stress_avg_excess_pct": -2.88
+     }
+    }
+   },
+   "portfolio_design": {
+    "start": "2014-03-03",
+    "end": "2022-12-30",
+    "cagr_pct": 4.1,
+    "spy_cagr_pct": 10.6,
+    "max_drawdown_pct": -49.7,
+    "spy_max_drawdown_pct": -33.7,
+    "avg_invested_pct": 59.1
+   },
+   "portfolio_holdout": {
+    "start": "2023-01-03",
+    "end": "2026-10-30",
+    "cagr_pct": 13.3,
+    "spy_cagr_pct": 21.1,
+    "max_drawdown_pct": -29.2,
+    "spy_max_drawdown_pct": -18.8,
+    "avg_invested_pct": 82.6
+   },
+   "verdict_60d": "fail"
+  },
+  "cluster2_smallcap": {
+   "description": "2+ insiders buy $25k+ in a stock trading $1M-$20M a day",
+   "signals": 12116,
+   "holds": {
+    "20": {
+     "counts": {
+      "done": 2814,
+      "nodata": 4299,
+      "illiquid": 1875,
+      "filtered": 3128
+     },
+     "design": {
+      "n": 1792,
+      "nodata": 3985,
+      "win_pct": 53.8,
+      "beat_spy_pct": 48.2,
+      "avg_pct": 1.22,
+      "avg_excess_pct": 0.03,
+      "median_excess_pct": -0.38,
+      "t_stat": 0.07,
+      "stress_avg_excess_pct": -6.89
+     },
+     "holdout": {
+      "n": 1022,
+      "nodata": 314,
+      "win_pct": 52.3,
+      "beat_spy_pct": 47.1,
+      "avg_pct": 2.34,
+      "avg_excess_pct": 0.93,
+      "median_excess_pct": -0.84,
+      "t_stat": 1.53,
+      "stress_avg_excess_pct": -1.64
+     }
+    },
+    "60": {
+     "counts": {
+      "done": 2760,
+      "nodata": 4299,
+      "illiquid": 1875,
+      "filtered": 3128,
+      "open": 54
+     },
+     "design": {
+      "n": 1792,
+      "nodata": 3985,
+      "win_pct": 57.2,
+      "beat_spy_pct": 48.5,
+      "avg_pct": 6.13,
+      "avg_excess_pct": 2.03,
+      "median_excess_pct": -0.51,
+      "t_stat": 3.22,
+      "stress_avg_excess_pct": -6.27
+     },
+     "holdout": {
+      "n": 968,
+      "nodata": 314,
+      "win_pct": 57.7,
+      "beat_spy_pct": 44.2,
+      "avg_pct": 7.94,
+      "avg_excess_pct": 2.15,
+      "median_excess_pct": -2.51,
+      "t_stat": 1.84,
+      "stress_avg_excess_pct": -0.83
+     }
+    },
+    "120": {
+     "counts": {
+      "done": 2682,
+      "nodata": 4299,
+      "illiquid": 1875,
+      "filtered": 3128,
+      "open": 132
+     },
+     "design": {
+      "n": 1792,
+      "nodata": 3985,
+      "win_pct": 56.4,
+      "beat_spy_pct": 45.0,
+      "avg_pct": 8.78,
+      "avg_excess_pct": 1.77,
+      "median_excess_pct": -2.51,
+      "t_stat": 1.43,
+      "stress_avg_excess_pct": -6.35
+     },
+     "holdout": {
+      "n": 890,
+      "nodata": 314,
+      "win_pct": 56.1,
+      "beat_spy_pct": 41.5,
+      "avg_pct": 12.28,
+      "avg_excess_pct": 1.41,
+      "median_excess_pct": -6.6,
+      "t_stat": 0.76,
+      "stress_avg_excess_pct": -1.56
+     }
+    }
+   },
+   "portfolio_design": {
+    "start": "2014-03-03",
+    "end": "2022-12-30",
+    "cagr_pct": 9.7,
+    "spy_cagr_pct": 10.6,
+    "max_drawdown_pct": -49.9,
+    "spy_max_drawdown_pct": -33.7,
+    "avg_invested_pct": 74.0
+   },
+   "portfolio_holdout": {
+    "start": "2023-01-03",
+    "end": "2026-10-30",
+    "cagr_pct": 26.9,
+    "spy_cagr_pct": 21.1,
+    "max_drawdown_pct": -25.0,
+    "spy_max_drawdown_pct": -18.8,
+    "avg_invested_pct": 83.2
+   },
+   "verdict_60d": "fail"
+  }
+ },
+ "runtime_min": 31.5,
+ "log": [
+  "insider purchases by directors/officers (not pre-planned): 155115 | with holding data: 155039 | CEO/CFO: 51616",
+  "signals baseline_any_25k 36120",
+  "signals cluster2_25k_50slots 12116",
+  "signals conviction_buy 13692",
+  "signals ceo_cfo_100k 8490",
+  "signals contrarian_buy 29218",
+  "signals conviction_contrarian 13692",
+  "signals cluster2_smallcap 12116",
+  "prices: cached 0 | known missing 0 | to fetch 7700",
+  "baseline_any_25k fail {\"n\": 10189, \"nodata\": 10820, \"win_pct\": 56.2, \"beat_spy_pct\": 47.5, \"avg_pct\": 3.91, \"avg_excess_pct\": 0.63, \"median_excess_pct\": -0.79, \"t_stat\": 2.49, \"stress_avg_excess_pct\": -4.84} {\"n\": 5622, \"nodata\": 986, \"win_pct\": 55.3, \"beat_spy_pct\": 42.6, \"avg_pct\": 4.74, \"avg_excess_pct\": -0.63, \"median_excess_pct\": -3.17, \"t_stat\": -1.66, \"stress_avg_excess_pct\": -2.02} {\"start\": \"2014-03-03\", \"end\": \"2022-12-30\", \"cagr_pct\": 9.5, \"spy_cagr_pct\": 10.6, \"max_drawdown_pct\": -45.0, \"spy_max_drawdown_pct\": -33.7, \"avg_invested_pct\": 96.3} {\"start\": \"2023-01-03\", \"end\": \"2026-10-30\", \"cagr_pct\": 10.8, \"spy_cagr_pct\": 21.1, \"max_drawdown_pct\": -26.1, \"spy_max_drawdown_pct\": -18.8, \"avg_invested_pct\": 92.8}",
+  "cluster2_25k_50slots fail {\"n\": 3389, \"nodata\": 3985, \"win_pct\": 56.2, \"beat_spy_pct\": 47.9, \"avg_pct\": 6.02, \"avg_excess_pct\": 1.9, \"median_excess_pct\": -0.78, \"t_stat\": 3.52, \"stress_avg_excess_pct\": -4.53} {\"n\": 1903, \"nodata\": 314, \"win_pct\": 57.0, \"beat_spy_pct\": 43.5, \"avg_pct\": 5.78, \"avg_excess_pct\": 0.1, \"median_excess_pct\": -2.65, \"t_stat\": 0.14, \"stress_avg_excess_pct\": -1.33} {\"start\": \"2014-03-03\", \"end\": \"2022-12-30\", \"cagr_pct\": 10.2, \"spy_cagr_pct\": 10.6, \"max_drawdown_pct\": -50.9, \"spy_max_drawdown_pct\": -33.7, \"avg_invested_pct\": 92.1} {\"start\": \"2023-01-03\", \"end\": \"2026-10-30\", \"cagr_pct\": 16.5, \"spy_cagr_pct\": 21.1, \"max_drawdown_pct\": -27.3, \"spy_max_drawdown_pct\": -18.8, \"avg_invested_pct\": 88.0}",
+  "conviction_buy fail {\"n\": 4368, \"nodata\": 4143, \"win_pct\": 55.6, \"beat_spy_pct\": 48.0, \"avg_pct\": 4.55, \"avg_excess_pct\": 1.28, \"median_excess_pct\": -0.64, \"t_stat\": 2.94, \"stress_avg_excess_pct\": -4.21} {\"n\": 2364, \"nodata\": 393, \"win_pct\": 54.9, \"beat_spy_pct\": 43.1, \"avg_pct\": 4.92, \"avg_excess_pct\": -0.32, \"median_excess_pct\": -2.86, \"t_stat\": -0.48, \"stress_avg_excess_pct\": -1.7} {\"start\": \"2014-03-03\", \"end\": \"2022-12-30\", \"cagr_pct\": 10.4, \"spy_cagr_pct\": 10.6, \"max_drawdown_pct\": -47.0, \"spy_max_drawdown_pct\": -33.7, \"avg_invested_pct\": 92.9} {\"start\": \"2023-01-03\", \"end\": \"2026-10-30\", \"cagr_pct\": 4.2, \"spy_cagr_pct\": 21.1, \"max_drawdown_pct\": -26.2, \"spy_max_drawdown_pct\": -18.8, \"avg_invested_pct\": 91.4}",
+  "ceo_cfo_100k fail {\"n\": 2631, \"nodata\": 2506, \"win_pct\": 55.7, \"beat_spy_pct\": 47.7, \"avg_pct\": 4.73, \"avg_excess_pct\": 1.23, \"median_excess_pct\": -0.75, \"t_stat\": 2.11, \"stress_avg_excess_pct\": -4.25} {\"n\": 1561, \"nodata\": 245, \"win_pct\": 53.7, \"beat_spy_pct\": 41.5, \"avg_pct\": 4.67, \"avg_excess_pct\": -0.74, \"median_excess_pct\": -3.34, \"t_stat\": -0.98, \"stress_avg_excess_pct\": -1.99} {\"start\": \"2014-03-03\", \"end\": \"2022-12-30\", \"cagr_pct\": 6.5, \"spy_cagr_pct\": 10.6, \"max_drawdown_pct\": -53.5, \"spy_max_drawdown_pct\": -33.7, \"avg_invested_pct\": 89.3} {\"start\": \"2023-01-03\", \"end\": \"2026-10-30\", \"cagr_pct\": 11.2, \"spy_cagr_pct\": 21.1, \"max_drawdown_pct\": -29.4, \"spy_max_drawdown_pct\": -18.8, \"avg_invested_pct\": 88.8}",
+  "contrarian_buy fail {\"n\": 3138, \"nodata\": 8667, \"win_pct\": 56.0, \"beat_spy_pct\": 49.0, \"avg_pct\": 6.81, \"avg_excess_pct\": 2.28, \"median_excess_pct\": -0.6, \"t_stat\": 3.88, \"stress_avg_excess_pct\": -6.74} {\"n\": 2145, \"nodata\": 786, \"win_pct\": 53.4, \"beat_spy_pct\": 43.4, \"avg_pct\": 6.17, \"avg_excess_pct\": 0.3, \"median_excess_pct\": -3.86, \"t_stat\": 0.4, \"stress_avg_excess_pct\": -2.46} {\"start\": \"2014-03-03\", \"end\": \"2022-12-30\", \"cagr_pct\": 3.8, \"spy_cagr_pct\": 10.6, \"max_drawdown_pct\": -49.5, \"spy_max_drawdown_pct\": -33.7, \"avg_invested_pct\": 81.4} {\"start\": \"2023-01-03\", \"end\": \"2026-10-30\", \"cagr_pct\": 9.7, \"spy_cagr_pct\": 21.1, \"max_drawdown_pct\": -26.8, \"spy_max_drawdown_pct\": -18.8, \"avg_invested_pct\": 88.8}",
+  "conviction_contrarian fail {\"n\": 1564, \"nodata\": 4143, \"win_pct\": 55.7, \"beat_spy_pct\": 49.2, \"avg_pct\": 7.75, \"avg_excess_pct\": 3.22, \"median_excess_pct\": -0.43, \"t_stat\": 3.74, \"stress_avg_excess_pct\": -6.38} {\"n\": 1102, \"nodata\": 393, \"win_pct\": 53.9, \"beat_spy_pct\": 44.0, \"avg_pct\": 6.82, \"avg_excess_pct\": 1.08, \"median_excess_pct\": -3.32, \"t_stat\": 0.93, \"stress_avg_excess_pct\": -1.83} {\"start\": \"2014-03-03\", \"end\": \"2022-12-30\", \"cagr_pct\": 4.1, \"spy_cagr_pct\": 10.6, \"max_drawdown_pct\": -49.7, \"spy_max_drawdown_pct\": -33.7, \"avg_invested_pct\": 59.1} {\"start\": \"2023-01-03\", \"end\": \"2026-10-30\", \"cagr_pct\": 13.3, \"spy_cagr_pct\": 21.1, \"max_drawdown_pct\": -29.2, \"spy_max_drawdown_pct\": -18.8, \"avg_invested_pct\": 82.6}",
+  "cluster2_smallcap fail {\"n\": 1792, \"nodata\": 3985, \"win_pct\": 57.2, \"beat_spy_pct\": 48.5, \"avg_pct\": 6.13, \"avg_excess_pct\": 2.03, \"median_excess_pct\": -0.51, \"t_stat\": 3.22, \"stress_avg_excess_pct\": -6.27} {\"n\": 968, \"nodata\": 314, \"win_pct\": 57.7, \"beat_spy_pct\": 44.2, \"avg_pct\": 7.94, \"avg_excess_pct\": 2.15, \"median_excess_pct\": -2.51, \"t_stat\": 1.84, \"stress_avg_excess_pct\": -0.83} {\"start\": \"2014-03-03\", \"end\": \"2022-12-30\", \"cagr_pct\": 9.7, \"spy_cagr_pct\": 10.6, \"max_drawdown_pct\": -49.9, \"spy_max_drawdown_pct\": -33.7, \"avg_invested_pct\": 74.0} {\"start\": \"2023-01-03\", \"end\": \"2026-10-30\", \"cagr_pct\": 26.9, \"spy_cagr_pct\": 21.1, \"max_drawdown_pct\": -25.0, \"spy_max_drawdown_pct\": -18.8, \"avg_invested_pct\": 83.2}"
+ ]
+}
