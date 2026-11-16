@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T03:47:37Z",
+ "updated": "2026-11-16T03:48:42Z",
  "market_open": false,
  "failed": {
   "stocktwits": "HTTPError: HTTP Error 403: Forbidden"
@@ -13,9 +13,9 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-16T03:47:37Z",
+   "last_try": "2026-11-16T03:48:42Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-16T03:47:37Z",
+   "last_ok": "2026-11-16T03:48:42Z",
    "seconds": 0.3,
    "every_minutes": 1
   },
@@ -41,9 +41,9 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-16T03:47:37Z",
+   "last_try": "2026-11-16T03:48:42Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-16T03:47:37Z",
+   "last_ok": "2026-11-16T03:48:42Z",
    "seconds": 2.1,
    "every_minutes": 1
   },
@@ -69,10 +69,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-16T03:47:37Z",
+   "last_try": "2026-11-16T03:48:42Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-16T03:47:37Z",
-   "seconds": 3.8,
+   "last_ok": "2026-11-16T03:48:42Z",
+   "seconds": 3.9,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -126,10 +126,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-16T03:47:37Z",
-   "result": "BTC 64865.31, ETH 1818.96, SOL 71.68 from 3 exchanges",
-   "last_ok": "2026-11-16T03:47:37Z",
-   "seconds": 1.2,
+   "last_try": "2026-11-16T03:48:42Z",
+   "result": "BTC 64832.1, ETH 1818.13, SOL 71.66 from 3 exchanges",
+   "last_ok": "2026-11-16T03:48:42Z",
+   "seconds": 1.0,
    "every_minutes": 1
   }
  }
