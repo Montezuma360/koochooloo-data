@@ -6,12 +6,14 @@
   "intelligence: 1 part(s) failed"
  ],
  "market_open": true,
- "warnings": [],
+ "warnings": [
+  "sec_insiders: 5 min since last update, target 3 (refresh running slow)"
+ ],
  "repo_size_mb": 108.3,
  "feeds": {
   "prices": {
-   "updated": "2026-11-16T19:51:23Z",
-   "age_hours": 0.04,
+   "updated": "2026-11-16T19:52:30Z",
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -20,8 +22,8 @@
    "on_target": true
   },
   "sec_insiders": {
-   "updated": "2026-11-16T19:51:26Z",
-   "age_hours": 0.04,
+   "updated": "2026-11-16T19:48:57Z",
+   "age_hours": 0.08,
    "stale_after_hours": 73,
    "stale": false,
    "failed_parts": {
@@ -31,7 +33,7 @@
    },
    "ok": false,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": false
   },
   "signals": {
    "updated": "2026-11-16T19:53:51Z",
@@ -68,7 +70,7 @@
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-16T19:52:32Z",
+   "updated": "2026-11-16T19:52:34Z",
    "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
@@ -98,12 +100,6 @@
    "at": "2026-11-16T19:53:26Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 2
-  },
-  "Caesar's voice": {
-   "last": "skipped",
-   "at": "2026-11-16T19:48:31Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 49
   },
   "Refresh signals and dashboard": {
    "last": "success",
