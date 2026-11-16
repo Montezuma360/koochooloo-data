@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T00:54:39Z",
+ "updated": "2026-11-16T00:55:47Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,7 +7,7 @@
  "repo_size_mb": 84.5,
  "feeds": {
   "prices": {
-   "updated": "2026-11-16T00:54:29Z",
+   "updated": "2026-11-16T00:55:39Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -17,7 +17,7 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-16T00:54:34Z",
+   "updated": "2026-11-16T00:55:43Z",
    "age_hours": 0.0,
    "stale_after_hours": 73,
    "stale": false,
@@ -27,7 +27,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-16T00:54:38Z",
+   "updated": "2026-11-16T00:55:47Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-16T00:21:50Z",
-   "age_hours": 0.55,
+   "age_hours": 0.57,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T14:37:36Z",
-   "age_hours": 34.28,
+   "age_hours": 34.3,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
@@ -54,14 +54,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 49.1,
+   "age_hours": 49.12,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-16T00:54:34Z",
+   "updated": "2026-11-16T00:55:44Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -74,15 +74,15 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-16T00:54:01Z",
+   "at": "2026-11-16T00:54:58Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 50
+   "runs_in_last_100": 49
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-16T00:53:57Z",
+   "at": "2026-11-16T00:54:46Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 46
+   "runs_in_last_100": 47
   },
   "Refresh signals and dashboard": {
    "last": "success",
