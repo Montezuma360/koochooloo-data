@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T00:41:05Z",
+ "updated": "2026-11-16T00:41:49Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,9 +11,9 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-16T00:41:05Z",
+   "last_try": "2026-11-16T00:41:49Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-16T00:41:05Z",
+   "last_ok": "2026-11-16T00:41:49Z",
    "seconds": 0.3,
    "every_minutes": 1
   },
@@ -39,9 +39,9 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-16T00:41:05Z",
+   "last_try": "2026-11-16T00:41:49Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-16T00:41:05Z",
+   "last_ok": "2026-11-16T00:41:49Z",
    "seconds": 1.1,
    "every_minutes": 1
   },
@@ -67,17 +67,17 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-16T00:41:05Z",
+   "last_try": "2026-11-16T00:41:49Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-16T00:41:05Z",
-   "seconds": 2.4,
+   "last_ok": "2026-11-16T00:41:49Z",
+   "seconds": 3.0,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-16T00:41:05Z",
+   "last_try": "2026-11-16T00:41:49Z",
    "result": "11 new filings (0 with a red flag)",
-   "last_ok": "2026-11-16T00:41:05Z",
-   "seconds": 2.4,
+   "last_ok": "2026-11-16T00:41:49Z",
+   "seconds": 2.0,
    "every_minutes": 2
   },
   "options": {
@@ -102,10 +102,10 @@
    "every_minutes": 15
   },
   "reddit_forums": {
-   "last_try": "2026-11-16T00:41:05Z",
+   "last_try": "2026-11-16T00:41:49Z",
    "result": "5 forums",
-   "last_ok": "2026-11-16T00:41:05Z",
-   "seconds": 1.5,
+   "last_ok": "2026-11-16T00:41:49Z",
+   "seconds": 1.3,
    "every_minutes": 30
   },
   "finnhub": {
@@ -123,9 +123,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-16T00:41:05Z",
-   "result": "BTC 64794.53, ETH 1811.42, SOL 71.61 from 3 exchanges",
-   "last_ok": "2026-11-16T00:41:05Z",
+   "last_try": "2026-11-16T00:41:49Z",
+   "result": "BTC 64773.4, ETH 1810.24, SOL 71.6 from 3 exchanges",
+   "last_ok": "2026-11-16T00:41:49Z",
    "seconds": 0.9,
    "every_minutes": 1
   }
