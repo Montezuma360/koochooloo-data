@@ -1,27 +1,30 @@
 {
- "updated": "2026-11-16T19:30:02Z",
+ "updated": "2026-11-16T19:31:54Z",
  "healthy": false,
  "problems": [
   "sec_insiders: 1 part(s) failed",
   "intelligence: 1 part(s) failed"
  ],
  "market_open": true,
- "warnings": [],
+ "warnings": [
+  "prices: 4 min since last update, target 3 (refresh running slow)",
+  "sec_insiders: 4 min since last update, target 3 (refresh running slow)"
+ ],
  "repo_size_mb": 108.3,
  "feeds": {
   "prices": {
    "updated": "2026-11-16T19:28:09Z",
-   "age_hours": 0.03,
+   "age_hours": 0.06,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": false
   },
   "sec_insiders": {
    "updated": "2026-11-16T19:28:13Z",
-   "age_hours": 0.03,
+   "age_hours": 0.06,
    "stale_after_hours": 73,
    "stale": false,
    "failed_parts": {
@@ -31,11 +34,11 @@
    },
    "ok": false,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": false
   },
   "signals": {
    "updated": "2026-11-16T19:30:02Z",
-   "age_hours": 0.0,
+   "age_hours": 0.03,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -45,7 +48,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-16T18:44:02Z",
-   "age_hours": 0.77,
+   "age_hours": 0.8,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -53,7 +56,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T14:37:36Z",
-   "age_hours": 52.87,
+   "age_hours": 52.91,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
@@ -61,7 +64,7 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 67.69,
+   "age_hours": 67.72,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
@@ -69,7 +72,7 @@
   },
   "intelligence": {
    "updated": "2026-11-16T19:29:19Z",
-   "age_hours": 0.01,
+   "age_hours": 0.04,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -83,15 +86,15 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-16T19:29:20Z",
+   "at": "2026-11-16T19:31:19Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 49
   },
   "Live market refresh": {
    "last": "cancelled",
-   "at": "2026-11-16T19:29:15Z",
+   "at": "2026-11-16T19:31:15Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 43
+   "runs_in_last_100": 42
   },
   "Refresh signals and dashboard": {
    "last": "success",
