@@ -1,36 +1,45 @@
 {
- "updated": "2026-11-16T15:35:28Z",
+ "updated": "2026-11-16T15:44:52Z",
  "source": "apewisdom.io (Reddit investing communities)",
  "top": [
   {
    "rank": 1,
    "symbol": "NVDA",
    "name": "NVIDIA",
-   "mentions": 808,
+   "mentions": 817,
    "mentions_24h_ago": 370,
    "rank_24h_ago": 1,
-   "upvotes": 7356
+   "upvotes": 7439
   },
   {
    "rank": 2,
    "symbol": "SPY",
    "name": "SPDR S&P 500 ETF Trust",
-   "mentions": 142,
+   "mentions": 144,
    "mentions_24h_ago": 70,
    "rank_24h_ago": 3,
-   "upvotes": 268
+   "upvotes": 272
   },
   {
    "rank": 3,
    "symbol": "QQQ",
    "name": "Invesco QQQ ETF",
-   "mentions": 110,
+   "mentions": 112,
    "mentions_24h_ago": 38,
    "rank_24h_ago": 5,
-   "upvotes": 277
+   "upvotes": 281
   },
   {
    "rank": 4,
+   "symbol": "NBIS",
+   "name": "Nebius Group",
+   "mentions": 74,
+   "mentions_24h_ago": 14,
+   "rank_24h_ago": 29,
+   "upvotes": 238
+  },
+  {
+   "rank": 5,
    "symbol": "MU",
    "name": "Micron Technology",
    "mentions": 71,
@@ -39,28 +48,19 @@
    "upvotes": 1391
   },
   {
-   "rank": 5,
-   "symbol": "NBIS",
-   "name": "Nebius Group",
-   "mentions": 71,
-   "mentions_24h_ago": 14,
-   "rank_24h_ago": 29,
-   "upvotes": 235
-  },
-  {
    "rank": 6,
    "symbol": "AMD",
    "name": "AMD",
    "mentions": 62,
    "mentions_24h_ago": 86,
    "rank_24h_ago": 2,
-   "upvotes": 224
+   "upvotes": 188
   },
   {
    "rank": 7,
    "symbol": "SNDK",
    "name": "Sandisk",
-   "mentions": 46,
+   "mentions": 47,
    "mentions_24h_ago": 17,
    "rank_24h_ago": 18,
    "upvotes": 100
@@ -72,7 +72,7 @@
    "mentions": 41,
    "mentions_24h_ago": 50,
    "rank_24h_ago": 4,
-   "upvotes": 256
+   "upvotes": 257
   },
   {
    "rank": 9,
@@ -81,52 +81,52 @@
    "mentions": 41,
    "mentions_24h_ago": 3,
    "rank_24h_ago": 66,
-   "upvotes": 195
+   "upvotes": 210
   },
   {
    "rank": 10,
-   "symbol": "MSFT",
-   "name": "Microsoft",
-   "mentions": 37,
-   "mentions_24h_ago": 16,
-   "rank_24h_ago": 15,
-   "upvotes": 90
+   "symbol": "GOOG",
+   "name": "Alphabet (Google)",
+   "mentions": 39,
+   "mentions_24h_ago": 13,
+   "rank_24h_ago": 28,
+   "upvotes": 496
   },
   {
    "rank": 11,
-   "symbol": "GOOG",
-   "name": "Alphabet (Google)",
-   "mentions": 34,
-   "mentions_24h_ago": 13,
-   "rank_24h_ago": 28,
-   "upvotes": 499
+   "symbol": "MSFT",
+   "name": "Microsoft",
+   "mentions": 38,
+   "mentions_24h_ago": 16,
+   "rank_24h_ago": 15,
+   "upvotes": 89
   },
   {
    "rank": 12,
    "symbol": "AAPL",
    "name": "Apple",
-   "mentions": 32,
+   "mentions": 33,
    "mentions_24h_ago": 10,
    "rank_24h_ago": 19,
-   "upvotes": 99
+   "upvotes": 100
   },
   {
    "rank": 13,
-   "symbol": "HR",
-   "name": "Healthcare Realty",
+   "symbol": "DTE",
+   "name": "DTE Energy",
    "mentions": 31,
-   "mentions_24h_ago": 14,
-   "rank_24h_ago": 21,
-   "upvotes": 106
+   "mentions_24h_ago": 22,
+   "rank_24h_ago": 8,
+   "upvotes": 111
   },
   {
    "rank": 14,
-   "symbol": "DTE",
-   "name": "DTE Energy",
-   "mentions": 29,
-   "mentions_24h_ago": 22,
-   "rank_24h_ago": 8,
-   "upvotes": 105
+   "symbol": "HR",
+   "name": "Healthcare Realty",
+   "mentions": 30,
+   "mentions_24h_ago": 14,
+   "rank_24h_ago": 21,
+   "upvotes": 92
   },
   {
    "rank": 15,
@@ -135,10 +135,19 @@
    "mentions": 29,
    "mentions_24h_ago": 22,
    "rank_24h_ago": 22,
-   "upvotes": 41
+   "upvotes": 39
   },
   {
    "rank": 16,
+   "symbol": "ASTS",
+   "name": "AST SpaceMobile",
+   "mentions": 29,
+   "mentions_24h_ago": 12,
+   "rank_24h_ago": 27,
+   "upvotes": 67
+  },
+  {
+   "rank": 17,
    "symbol": "CIA",
    "name": "Citizens Inc",
    "mentions": 28,
@@ -147,22 +156,13 @@
    "upvotes": 71
   },
   {
-   "rank": 17,
-   "symbol": "ASTS",
-   "name": "AST SpaceMobile",
-   "mentions": 28,
-   "mentions_24h_ago": 12,
-   "rank_24h_ago": 27,
-   "upvotes": 67
-  },
-  {
    "rank": 18,
    "symbol": "IT",
    "name": "Gartner",
-   "mentions": 26,
+   "mentions": 27,
    "mentions_24h_ago": 14,
    "rank_24h_ago": 20,
-   "upvotes": 68
+   "upvotes": 70
   },
   {
    "rank": 19,
@@ -171,16 +171,16 @@
    "mentions": 24,
    "mentions_24h_ago": 8,
    "rank_24h_ago": 38,
-   "upvotes": 55
+   "upvotes": 54
   },
   {
    "rank": 20,
    "symbol": "ET",
    "name": "Energy Transfer Partners",
-   "mentions": 22,
+   "mentions": 23,
    "mentions_24h_ago": 10,
    "rank_24h_ago": 32,
-   "upvotes": 205
+   "upvotes": 206
   },
   {
    "rank": 21,
@@ -189,7 +189,7 @@
    "mentions": 22,
    "mentions_24h_ago": 9,
    "rank_24h_ago": 34,
-   "upvotes": 63
+   "upvotes": 66
   },
   {
    "rank": 22,
@@ -198,19 +198,10 @@
    "mentions": 22,
    "mentions_24h_ago": 18,
    "rank_24h_ago": 13,
-   "upvotes": 163
+   "upvotes": 168
   },
   {
    "rank": 23,
-   "symbol": "TSLA",
-   "name": "Tesla",
-   "mentions": 21,
-   "mentions_24h_ago": 17,
-   "rank_24h_ago": 16,
-   "upvotes": 217
-  },
-  {
-   "rank": 24,
    "symbol": "TTWO",
    "name": "Take 2 Interactive",
    "mentions": 21,
@@ -219,13 +210,22 @@
    "upvotes": 38
   },
   {
-   "rank": 25,
+   "rank": 24,
    "symbol": "SOXL",
    "name": "Direxion Shares ETF Trust - Direxion Daily Semiconductor Bull 3X Share",
-   "mentions": 20,
+   "mentions": 21,
    "mentions_24h_ago": 6,
    "rank_24h_ago": 49,
-   "upvotes": 44
+   "upvotes": 45
+  },
+  {
+   "rank": 25,
+   "symbol": "TSLA",
+   "name": "Tesla",
+   "mentions": 20,
+   "mentions_24h_ago": 17,
+   "rank_24h_ago": 16,
+   "upvotes": 215
   },
   {
    "rank": 26,
@@ -238,15 +238,6 @@
   },
   {
    "rank": 27,
-   "symbol": "YOU",
-   "name": "CLEAR Secure",
-   "mentions": 19,
-   "mentions_24h_ago": 10,
-   "rank_24h_ago": 35,
-   "upvotes": 18
-  },
-  {
-   "rank": 28,
    "symbol": "IQ",
    "name": "iQIYI",
    "mentions": 18,
@@ -255,13 +246,22 @@
    "upvotes": 95
   },
   {
+   "rank": 28,
+   "symbol": "YOU",
+   "name": "CLEAR Secure",
+   "mentions": 18,
+   "mentions_24h_ago": 10,
+   "rank_24h_ago": 35,
+   "upvotes": 18
+  },
+  {
    "rank": 29,
    "symbol": "AMZN",
    "name": "Amazon",
    "mentions": 17,
    "mentions_24h_ago": 7,
    "rank_24h_ago": 39,
-   "upvotes": 64
+   "upvotes": 65
   },
   {
    "rank": 30,
@@ -270,25 +270,25 @@
    "mentions": 17,
    "mentions_24h_ago": 2,
    "rank_24h_ago": 76,
-   "upvotes": 439
+   "upvotes": 437
   },
   {
    "rank": 31,
    "symbol": "AM",
    "name": "Antero Midstream",
-   "mentions": 16,
+   "mentions": 17,
    "mentions_24h_ago": 4,
    "rank_24h_ago": 60,
-   "upvotes": 192
+   "upvotes": 193
   },
   {
    "rank": 32,
    "symbol": "IREN",
    "name": "Iris Energy",
-   "mentions": 16,
+   "mentions": 17,
    "mentions_24h_ago": 2,
    "rank_24h_ago": 121,
-   "upvotes": 33
+   "upvotes": 32
   },
   {
    "rank": 33,
@@ -297,7 +297,7 @@
    "mentions": 15,
    "mentions_24h_ago": 12,
    "rank_24h_ago": 26,
-   "upvotes": 319
+   "upvotes": 317
   },
   {
    "rank": 34,
@@ -315,7 +315,7 @@
    "mentions": 14,
    "mentions_24h_ago": 7,
    "rank_24h_ago": 43,
-   "upvotes": 18
+   "upvotes": 15
   },
   {
    "rank": 36,
@@ -360,7 +360,7 @@
    "mentions": 13,
    "mentions_24h_ago": 2,
    "rank_24h_ago": 123,
-   "upvotes": 42
+   "upvotes": 41
   },
   {
    "rank": 41,
@@ -396,7 +396,7 @@
    "mentions": 10,
    "mentions_24h_ago": 4,
    "rank_24h_ago": 89,
-   "upvotes": 19
+   "upvotes": 17
   },
   {
    "rank": 45,
@@ -405,7 +405,7 @@
    "mentions": 10,
    "mentions_24h_ago": 3,
    "rank_24h_ago": 92,
-   "upvotes": 52
+   "upvotes": 55
   },
   {
    "rank": 46,
@@ -441,7 +441,7 @@
    "mentions": 9,
    "mentions_24h_ago": 10,
    "rank_24h_ago": 30,
-   "upvotes": 19
+   "upvotes": 18
   },
   {
    "rank": 50,
@@ -461,10 +461,10 @@
    "mentions": 41,
    "mentions_24h_ago": 3,
    "rank_24h_ago": 66,
-   "upvotes": 195
+   "upvotes": 210
   },
   {
-   "rank": 24,
+   "rank": 23,
    "symbol": "TTWO",
    "name": "Take 2 Interactive",
    "mentions": 21,
@@ -488,16 +488,16 @@
    "mentions": 17,
    "mentions_24h_ago": 2,
    "rank_24h_ago": 76,
-   "upvotes": 439
+   "upvotes": 437
   },
   {
    "rank": 32,
    "symbol": "IREN",
    "name": "Iris Energy",
-   "mentions": 16,
+   "mentions": 17,
    "mentions_24h_ago": 2,
    "rank_24h_ago": 121,
-   "upvotes": 33
+   "upvotes": 32
   },
   {
    "rank": 40,
@@ -506,28 +506,28 @@
    "mentions": 13,
    "mentions_24h_ago": 2,
    "rank_24h_ago": 123,
-   "upvotes": 42
+   "upvotes": 41
   },
   {
-   "rank": 5,
+   "rank": 4,
    "symbol": "NBIS",
    "name": "Nebius Group",
-   "mentions": 71,
+   "mentions": 74,
    "mentions_24h_ago": 14,
    "rank_24h_ago": 29,
-   "upvotes": 235
+   "upvotes": 238
   },
   {
    "rank": 31,
    "symbol": "AM",
    "name": "Antero Midstream",
-   "mentions": 16,
+   "mentions": 17,
    "mentions_24h_ago": 4,
    "rank_24h_ago": 60,
-   "upvotes": 192
+   "upvotes": 193
   },
   {
-   "rank": 28,
+   "rank": 27,
    "symbol": "IQ",
    "name": "iQIYI",
    "mentions": 18,
@@ -536,7 +536,16 @@
    "upvotes": 95
   },
   {
-   "rank": 4,
+   "rank": 24,
+   "symbol": "SOXL",
+   "name": "Direxion Shares ETF Trust - Direxion Daily Semiconductor Bull 3X Share",
+   "mentions": 21,
+   "mentions_24h_ago": 6,
+   "rank_24h_ago": 49,
+   "upvotes": 45
+  },
+  {
+   "rank": 5,
    "symbol": "MU",
    "name": "Micron Technology",
    "mentions": 71,
@@ -545,22 +554,22 @@
    "upvotes": 1391
   },
   {
-   "rank": 25,
-   "symbol": "SOXL",
-   "name": "Direxion Shares ETF Trust - Direxion Daily Semiconductor Bull 3X Share",
-   "mentions": 20,
-   "mentions_24h_ago": 6,
-   "rank_24h_ago": 49,
-   "upvotes": 44
-  },
-  {
    "rank": 45,
    "symbol": "GOAT",
    "name": "VanEck Vectors ETF Trust - VanEck Vectors Morningstar Global Wide Moat",
    "mentions": 10,
    "mentions_24h_ago": 3,
    "rank_24h_ago": 92,
-   "upvotes": 52
+   "upvotes": 55
+  },
+  {
+   "rank": 12,
+   "symbol": "AAPL",
+   "name": "Apple",
+   "mentions": 33,
+   "mentions_24h_ago": 10,
+   "rank_24h_ago": 19,
+   "upvotes": 100
   },
   {
    "rank": 36,
@@ -572,22 +581,13 @@
    "upvotes": 20
   },
   {
-   "rank": 12,
-   "symbol": "AAPL",
-   "name": "Apple",
-   "mentions": 32,
-   "mentions_24h_ago": 10,
-   "rank_24h_ago": 19,
-   "upvotes": 99
-  },
-  {
-   "rank": 19,
-   "symbol": "CRWV",
-   "name": "CoreWeave",
-   "mentions": 24,
-   "mentions_24h_ago": 8,
-   "rank_24h_ago": 38,
-   "upvotes": 55
+   "rank": 10,
+   "symbol": "GOOG",
+   "name": "Alphabet (Google)",
+   "mentions": 39,
+   "mentions_24h_ago": 13,
+   "rank_24h_ago": 28,
+   "upvotes": 496
   }
  ]
 }
