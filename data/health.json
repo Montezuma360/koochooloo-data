@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T08:05:02Z",
+ "updated": "2026-11-16T08:05:56Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,7 +7,7 @@
  "repo_size_mb": 96.8,
  "feeds": {
   "prices": {
-   "updated": "2026-11-16T08:04:55Z",
+   "updated": "2026-11-16T08:05:49Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -17,21 +17,17 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-16T08:04:58Z",
+   "updated": "2026-11-16T08:05:53Z",
    "age_hours": 0.0,
    "stale_after_hours": 73,
    "stale": false,
-   "failed_parts": {
-    "errors": [
-     "feed: TimeoutError: The read operation timed out"
-    ]
-   },
-   "ok": false,
+   "failed_parts": {},
+   "ok": true,
    "target_minutes_when_market_open": 3,
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-16T08:05:01Z",
+   "updated": "2026-11-16T08:05:56Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -42,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-16T07:52:49Z",
-   "age_hours": 0.2,
+   "age_hours": 0.22,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -50,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T14:37:36Z",
-   "age_hours": 41.46,
+   "age_hours": 41.47,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
@@ -58,14 +54,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 56.27,
+   "age_hours": 56.29,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-16T08:04:59Z",
+   "updated": "2026-11-16T08:05:53Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -78,13 +74,13 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-16T08:04:30Z",
+   "at": "2026-11-16T08:05:17Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 50
   },
   "Live market refresh": {
-   "last": "cancelled",
-   "at": "2026-11-16T08:04:17Z",
+   "last": "success",
+   "at": "2026-11-16T08:05:13Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 49
   }
