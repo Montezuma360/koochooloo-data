@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T14:19:50Z",
+ "updated": "2026-11-16T14:21:48Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
@@ -9,8 +9,8 @@
  "repo_size_mb": 107.5,
  "feeds": {
   "prices": {
-   "updated": "2026-11-16T14:19:02Z",
-   "age_hours": 0.01,
+   "updated": "2026-11-16T14:20:42Z",
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -19,8 +19,8 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-16T14:19:05Z",
-   "age_hours": 0.01,
+   "updated": "2026-11-16T14:20:45Z",
+   "age_hours": 0.02,
    "stale_after_hours": 73,
    "stale": false,
    "failed_parts": {},
@@ -29,7 +29,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-16T14:19:50Z",
+   "updated": "2026-11-16T14:21:47Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -40,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-16T14:05:44Z",
-   "age_hours": 0.24,
+   "age_hours": 0.27,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T14:37:36Z",
-   "age_hours": 47.7,
+   "age_hours": 47.74,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
@@ -56,15 +56,15 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 62.52,
+   "age_hours": 62.55,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-16T14:19:06Z",
-   "age_hours": 0.01,
+   "updated": "2026-11-16T14:20:48Z",
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -78,13 +78,13 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-16T14:19:21Z",
+   "at": "2026-11-16T14:21:19Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 51
   },
   "Live market refresh": {
    "last": "cancelled",
-   "at": "2026-11-16T14:18:19Z",
+   "at": "2026-11-16T14:21:14Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 44
   },
