@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 26,
+ "runs": 27,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -376,6 +376,30 @@
      "signal": "2026-11-16",
      "event": "2026-11-12",
      "note": "5 insiders bought within 30 days"
+    },
+    {
+     "sym": "ADIG",
+     "signal": "2026-11-16",
+     "event": "2026-11-16",
+     "note": "6 insiders bought within 30 days"
+    },
+    {
+     "sym": "AOMR",
+     "signal": "2026-11-16",
+     "event": "2026-11-13",
+     "note": "4 insiders bought within 30 days"
+    },
+    {
+     "sym": "ALDX",
+     "signal": "2026-11-16",
+     "event": "2026-11-12",
+     "note": "3 insiders bought within 30 days"
+    },
+    {
+     "sym": "FPS",
+     "signal": "2026-11-16",
+     "event": "2026-11-16",
+     "note": "4 insiders bought within 30 days"
     }
    ],
    "closed": [],
@@ -455,7 +479,11 @@
     "CSQR": "2026-11-13",
     "KEEL": "2026-11-16",
     "NSLR": "2026-11-16",
-    "CATX": "2026-11-16"
+    "CATX": "2026-11-16",
+    "ADIG": "2026-11-16",
+    "AOMR": "2026-11-16",
+    "ALDX": "2026-11-16",
+    "FPS": "2026-11-16"
    },
    "events": [
     {
@@ -675,7 +703,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -0.81,
+   "drawdown_pct": -0.92,
    "paused": false
   },
   "insider_big_250k": {
@@ -1438,6 +1466,18 @@
      "signal": "2026-11-16",
      "event": "2026-11-12",
      "note": "Abbate Michael (Director) bought $464,542"
+    },
+    {
+     "sym": "CNH",
+     "signal": "2026-11-16",
+     "event": "2026-11-12",
+     "note": "Simonelli Lorenzo (Director) bought $566,585"
+    },
+    {
+     "sym": "FPS",
+     "signal": "2026-11-16",
+     "event": "2026-11-16",
+     "note": "Niederpruem Gary John (Chief Executive Officer) bought $316,186"
     }
    ],
    "closed": [],
@@ -1605,7 +1645,9 @@
     "NXGL": "2026-11-16",
     "IOND": "2026-11-16",
     "INDI": "2026-11-16",
-    "STWD": "2026-11-16"
+    "STWD": "2026-11-16",
+    "CNH": "2026-11-16",
+    "FPS": "2026-11-16"
    },
    "events": [
     {
@@ -2015,7 +2057,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -4.05,
+   "drawdown_pct": -4.09,
    "paused": false
   },
   "congress_cluster3": {
@@ -2161,7 +2203,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.0,
    "paused": false
   },
   "congress_big_100k": {
@@ -3099,6 +3141,24 @@
      "signal": "2026-11-16",
      "event": "2026-11-16",
      "note": "score 8: 2 insiders bought $349,910 in 30 days (last 2026-11-11); Director Patton Charles R. bought $249,920 on 2026-11-11"
+    },
+    {
+     "sym": "ADIG",
+     "signal": "2026-11-16",
+     "event": "2026-11-16",
+     "note": "score 20: 6 insiders bought $325,603 in 30 days (last 2026-11-16); President and CEO Aarnes Robert B bought $100,025 on 2026-11-13"
+    },
+    {
+     "sym": "FPS",
+     "signal": "2026-11-16",
+     "event": "2026-11-16",
+     "note": "score 20: 4 insiders bought $1,078,334 in 30 days (last 2026-11-16); Chief Legal Officer Hottinger Tyson bought $244,956 on 2026-11-16"
+    },
+    {
+     "sym": "AOMR",
+     "signal": "2026-11-16",
+     "event": "2026-11-16",
+     "note": "score 12: 4 insiders bought $166,996 in 30 days (last 2026-11-13)"
     }
    ],
    "closed": [],
@@ -3236,7 +3296,10 @@
     "TH": "2026-11-16",
     "KEEL": "2026-11-16",
     "NXGL": "2026-11-16",
-    "CTRI": "2026-11-16"
+    "CTRI": "2026-11-16",
+    "ADIG": "2026-11-16",
+    "FPS": "2026-11-16",
+    "AOMR": "2026-11-16"
    },
    "events": [
     {
@@ -4304,6 +4367,24 @@
      "signal": "2026-11-16",
      "event": "2026-11-12",
      "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "ADIG",
+     "signal": "2026-11-16",
+     "event": "2026-11-16",
+     "note": "5 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "AOMR",
+     "signal": "2026-11-16",
+     "event": "2026-11-13",
+     "note": "4 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "FPS",
+     "signal": "2026-11-16",
+     "event": "2026-11-16",
+     "note": "4 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -4422,7 +4503,10 @@
     "CACC": "2026-11-16",
     "CTRI": "2026-11-16",
     "NXGL": "2026-11-16",
-    "STWD": "2026-11-16"
+    "STWD": "2026-11-16",
+    "ADIG": "2026-11-16",
+    "AOMR": "2026-11-16",
+    "FPS": "2026-11-16"
    },
    "events": [
     {
@@ -4792,7 +4876,7 @@
     ]
    ],
    "started": "2026-11-02",
-   "drawdown_pct": -1.51,
+   "drawdown_pct": -1.47,
    "paused": false
   },
   "research_setup": {
@@ -5054,7 +5138,7 @@
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -0.45,
+   "drawdown_pct": -0.5,
    "paused": false
   },
   "research_setup_trend": {
@@ -5316,11 +5400,11 @@
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -0.45,
+   "drawdown_pct": -0.5,
    "paused": false
   }
  },
- "updated": "2026-11-16T22:28:00+00:00",
+ "updated": "2026-11-16T23:51:28+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -6029,6 +6113,22 @@
   "CTVA": {
    "sic": "01",
    "name": "Agricultural Production-Crops"
+  },
+  "AOMR": {
+   "sic": "65",
+   "name": "Real Estate"
+  },
+  "FPS": {
+   "sic": "36",
+   "name": "Electrical Industrial Apparatus"
+  },
+  "CNH": {
+   "sic": "35",
+   "name": "Construction Machinery & Equip"
+  },
+  "ADIG": {
+   "sic": "50",
+   "name": "Wholesale-Hardware"
   }
  }
 }
