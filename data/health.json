@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:10:32Z",
+ "updated": "2026-11-16T10:12:02Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,7 +7,7 @@
  "repo_size_mb": 94.0,
  "feeds": {
   "prices": {
-   "updated": "2026-11-16T10:09:31Z",
+   "updated": "2026-11-16T10:11:01Z",
    "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
@@ -17,7 +17,7 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-16T10:09:38Z",
+   "updated": "2026-11-16T10:11:08Z",
    "age_hours": 0.02,
    "stale_after_hours": 73,
    "stale": false,
@@ -27,7 +27,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-16T10:10:31Z",
+   "updated": "2026-11-16T10:12:02Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-16T09:44:41Z",
-   "age_hours": 0.43,
+   "age_hours": 0.46,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T14:37:36Z",
-   "age_hours": 43.55,
+   "age_hours": 43.57,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
@@ -54,14 +54,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 58.36,
+   "age_hours": 58.39,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-16T10:09:38Z",
+   "updated": "2026-11-16T10:11:08Z",
    "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
@@ -74,13 +74,13 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-16T10:09:20Z",
+   "at": "2026-11-16T10:10:48Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 49
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-16T10:09:17Z",
+   "at": "2026-11-16T10:10:43Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 46
   },
@@ -93,12 +93,6 @@
   "Refresh brain data": {
    "last": "success",
    "at": "2026-11-16T09:56:46Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 1
-  },
-  "Morning brief": {
-   "last": "success",
-   "at": "2026-11-16T09:22:55Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 1
   }
