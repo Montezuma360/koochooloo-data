@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T19:12:33Z",
+ "updated": "2026-11-16T19:14:54Z",
  "healthy": false,
  "problems": [
   "sec_insiders: 1 part(s) failed",
@@ -10,7 +10,7 @@
  "repo_size_mb": 108.3,
  "feeds": {
   "prices": {
-   "updated": "2026-11-16T19:10:40Z",
+   "updated": "2026-11-16T19:13:01Z",
    "age_hours": 0.03,
    "stale_after_hours": 2,
    "stale": false,
@@ -20,7 +20,7 @@
    "on_target": true
   },
   "sec_insiders": {
-   "updated": "2026-11-16T19:10:44Z",
+   "updated": "2026-11-16T19:13:05Z",
    "age_hours": 0.03,
    "stale_after_hours": 73,
    "stale": false,
@@ -34,7 +34,7 @@
    "on_target": true
   },
   "signals": {
-   "updated": "2026-11-16T19:12:33Z",
+   "updated": "2026-11-16T19:14:54Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -45,7 +45,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-16T18:44:02Z",
-   "age_hours": 0.48,
+   "age_hours": 0.51,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -53,7 +53,7 @@
   },
   "alt_data": {
    "updated": "2026-11-14T14:37:36Z",
-   "age_hours": 52.58,
+   "age_hours": 52.62,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
@@ -61,14 +61,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-13T23:48:47+00:00",
-   "age_hours": 67.4,
+   "age_hours": 67.44,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-16T19:11:51Z",
+   "updated": "2026-11-16T19:14:11Z",
    "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
@@ -83,13 +83,13 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-16T19:12:30Z",
+   "at": "2026-11-16T19:14:23Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 48
+   "runs_in_last_100": 49
   },
   "Live market refresh": {
    "last": "cancelled",
-   "at": "2026-11-16T19:12:18Z",
+   "at": "2026-11-16T19:14:19Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 43
   },
