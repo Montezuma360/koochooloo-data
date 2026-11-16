@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T00:39:41Z",
+ "updated": "2026-11-16T00:41:05Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,10 +11,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-16T00:39:41Z",
+   "last_try": "2026-11-16T00:41:05Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-16T00:39:41Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-16T00:41:05Z",
+   "seconds": 0.3,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-16T00:39:41Z",
+   "last_try": "2026-11-16T00:41:05Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-16T00:39:41Z",
-   "seconds": 1.2,
+   "last_ok": "2026-11-16T00:41:05Z",
+   "seconds": 1.1,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,17 +67,17 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-16T00:39:41Z",
+   "last_try": "2026-11-16T00:41:05Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-16T00:39:41Z",
-   "seconds": 3.6,
+   "last_ok": "2026-11-16T00:41:05Z",
+   "seconds": 2.4,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-16T00:38:39Z",
+   "last_try": "2026-11-16T00:41:05Z",
    "result": "11 new filings (0 with a red flag)",
-   "last_ok": "2026-11-16T00:38:39Z",
-   "seconds": 2.2,
+   "last_ok": "2026-11-16T00:41:05Z",
+   "seconds": 2.4,
    "every_minutes": 2
   },
   "options": {
@@ -102,10 +102,10 @@
    "every_minutes": 15
   },
   "reddit_forums": {
-   "last_try": "2026-11-16T00:11:40Z",
+   "last_try": "2026-11-16T00:41:05Z",
    "result": "5 forums",
-   "last_ok": "2026-11-16T00:11:40Z",
-   "seconds": 1.6,
+   "last_ok": "2026-11-16T00:41:05Z",
+   "seconds": 1.5,
    "every_minutes": 30
   },
   "finnhub": {
@@ -123,9 +123,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-16T00:39:41Z",
-   "result": "BTC 64842.91, ETH 1812.36, SOL 71.67 from 3 exchanges",
-   "last_ok": "2026-11-16T00:39:41Z",
+   "last_try": "2026-11-16T00:41:05Z",
+   "result": "BTC 64794.53, ETH 1811.42, SOL 71.61 from 3 exchanges",
+   "last_ok": "2026-11-16T00:41:05Z",
    "seconds": 0.9,
    "every_minutes": 1
   }
