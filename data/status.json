@@ -1,12 +1,13 @@
 {
-  "updated": "2026-11-16T05:02:02Z",
+  "updated": "2026-11-16T05:02:52Z",
   "ok": {
     "quotes": 55,
-    "intraday_5m": 3972,
-    "gainers": 87,
-    "losers": 100,
-    "most_active": 100
+    "intraday_5m": 3972
   },
-  "failed": {},
+  "failed": {
+    "gainers": "HTTPError: HTTP Error 500: ",
+    "losers": "HTTPError: HTTP Error 500: ",
+    "most_active": "HTTPError: HTTP Error 500: "
+  },
   "slow_last": "2026-11-16T04:09:58Z"
 }
