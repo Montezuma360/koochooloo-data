@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 28,
+ "runs": 29,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -462,6 +462,24 @@
      "signal": "2026-11-17",
      "event": "2026-11-16",
      "note": "3 insiders bought within 30 days"
+    },
+    {
+     "sym": "ATEC",
+     "signal": "2026-11-17",
+     "event": "2026-11-16",
+     "note": "3 insiders bought within 30 days"
+    },
+    {
+     "sym": "LCTX",
+     "signal": "2026-11-17",
+     "event": "2026-11-16",
+     "note": "3 insiders bought within 30 days"
+    },
+    {
+     "sym": "FISN",
+     "signal": "2026-11-17",
+     "event": "2026-11-16",
+     "note": "5 insiders bought within 30 days"
     }
    ],
    "closed": [],
@@ -554,7 +572,10 @@
     "ITG": "2026-11-17",
     "VISN": "2026-11-17",
     "CVV": "2026-11-17",
-    "HAWK": "2026-11-17"
+    "HAWK": "2026-11-17",
+    "ATEC": "2026-11-17",
+    "LCTX": "2026-11-17",
+    "FISN": "2026-11-17"
    },
    "events": [
     {
@@ -813,7 +834,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -1.83,
+   "drawdown_pct": -2.0,
    "paused": false
   },
   "insider_big_250k": {
@@ -1594,6 +1615,12 @@
      "signal": "2026-11-17",
      "event": "2026-11-13",
      "note": "Cardinale Gerald J. (Director) bought $500,576"
+    },
+    {
+     "sym": "STUB",
+     "signal": "2026-11-17",
+     "event": "2026-11-13",
+     "note": "Bhargava Sameer (Director) bought $1,499,171"
     }
    ],
    "closed": [],
@@ -1775,7 +1802,8 @@
     "CVV": "2026-11-17",
     "BRSP": "2026-11-17",
     "KURA": "2026-11-17",
-    "SKYD": "2026-11-17"
+    "SKYD": "2026-11-17",
+    "STUB": "2026-11-17"
    },
    "events": [
     {
@@ -3330,6 +3358,24 @@
      "signal": "2026-11-17",
      "event": "2026-11-17",
      "note": "score 9: 3 insiders bought $44,827 in 30 days (last 2026-11-17)"
+    },
+    {
+     "sym": "FISN",
+     "signal": "2026-11-17",
+     "event": "2026-11-17",
+     "note": "score 15: 5 insiders bought $79,387 in 30 days (last 2026-11-16)"
+    },
+    {
+     "sym": "STUB",
+     "signal": "2026-11-17",
+     "event": "2026-11-17",
+     "note": "score 12: 2 insiders bought $3,547,771 in 30 days (last 2026-11-16); Director Bhargava Sameer bought $1,499,171 on 2026-11-13"
+    },
+    {
+     "sym": "LCTX",
+     "signal": "2026-11-17",
+     "event": "2026-11-17",
+     "note": "score 9: 3 insiders bought $74,198 in 30 days (last 2026-11-16)"
     }
    ],
    "closed": [],
@@ -3477,7 +3523,10 @@
     "HAWK": "2026-11-17",
     "ETN": "2026-11-17",
     "NGS": "2026-11-17",
-    "LPTH": "2026-11-17"
+    "LPTH": "2026-11-17",
+    "FISN": "2026-11-17",
+    "STUB": "2026-11-17",
+    "LCTX": "2026-11-17"
    },
    "events": [
     {
@@ -4652,6 +4701,12 @@
      "signal": "2026-11-17",
      "event": "2026-11-17",
      "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "STUB",
+     "signal": "2026-11-17",
+     "event": "2026-11-16",
+     "note": "2 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -4782,7 +4837,8 @@
     "NGS": "2026-11-17",
     "ITG": "2026-11-17",
     "FRPH": "2026-11-17",
-    "BLX": "2026-11-17"
+    "BLX": "2026-11-17",
+    "STUB": "2026-11-17"
    },
    "events": [
     {
@@ -5191,7 +5247,7 @@
     ]
    ],
    "started": "2026-11-02",
-   "drawdown_pct": -2.0,
+   "drawdown_pct": -2.11,
    "paused": false
   },
   "research_setup": {
@@ -5773,7 +5829,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-17T22:32:36+00:00",
+ "updated": "2026-11-17T23:56:58+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -6586,6 +6642,18 @@
   "NSPR": {
    "sic": "38",
    "name": "Surgical & Medical Instruments & Apparatus"
+  },
+  "FISN": {
+   "sic": "49",
+   "name": "Electric Services"
+  },
+  "LCTX": {
+   "sic": "28",
+   "name": "Biological Products, (No Diagnostic Substances)"
+  },
+  "STUB": {
+   "sic": "79",
+   "name": "Services-Miscellaneous Amusement & Recreation"
   }
  }
 }
