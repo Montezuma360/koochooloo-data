@@ -1,1205 +1,2472 @@
 {
- "period": "202610a",
+ "period": "202610b",
  "note": "Half-month SEC file of shares sold but not delivered on settlement day. Large, persistent fails can signal heavy shorting or settlement stress.",
  "largest": [
   {
-   "symbol": "LQD",
-   "name": "ISHARES IBOXX $ INVESTMENT GRA",
-   "days": 9,
-   "max_qty": 6014418,
-   "max_value": 613651069
-  },
-  {
-   "symbol": "IVV",
-   "name": "ISHARES CORE S&P 500 ETF",
-   "days": 3,
-   "max_qty": 744499,
-   "max_value": 578676738
-  },
-  {
-   "symbol": "XLC",
-   "name": "SELECT SECTOR SPDR TR STATE ST",
-   "days": 8,
-   "max_qty": 3445659,
-   "max_value": 380125101
-  },
-  {
-   "symbol": "SCMB",
-   "name": "SCHWAB STRATEGIC TR MUN BD ETF",
-   "days": 8,
-   "max_qty": 14940427,
-   "max_value": 363500589
-  },
-  {
-   "symbol": "IYW",
-   "name": "ISHARES DJ US TECH ETF",
-   "days": 3,
-   "max_qty": 1327456,
-   "max_value": 355200676
-  },
-  {
-   "symbol": "BIL",
-   "name": "STATE STREET SPDR BLOOMBERG 1-",
-   "days": 8,
-   "max_qty": 2911560,
-   "max_value": 266815358
-  },
-  {
-   "symbol": "MMED",
-   "name": "MINIMED GROUP INC COM",
-   "days": 8,
-   "max_qty": 13100631,
-   "max_value": 241051610
-  },
-  {
-   "symbol": "VT",
-   "name": "VANGUARD TOTAL WORLD STK INDEX",
-   "days": 5,
-   "max_qty": 1443373,
-   "max_value": 230593270
-  },
-  {
-   "symbol": "AMD",
-   "name": "ADVANCED MICRO DEVICES",
-   "days": 6,
-   "max_qty": 319749,
-   "max_value": 202692089
-  },
-  {
-   "symbol": "KRE",
-   "name": "SPDR SER TR STATE STREET SPDR",
-   "days": 7,
-   "max_qty": 2631713,
-   "max_value": 181298709
-  },
-  {
-   "symbol": "SOXL",
-   "name": "DIREXION SHS ETF TR DIREXION D",
-   "days": 9,
-   "max_qty": 1357145,
-   "max_value": 174257418
+   "symbol": "SPY",
+   "name": "STATE STREET SPDR S&P 500 ETF",
+   "days": 12,
+   "max_qty": 2324860,
+   "max_value": 1766823854
   },
   {
    "symbol": "QQQ",
    "name": "INVESCO QQQ TR",
-   "days": 7,
-   "max_qty": 212112,
-   "max_value": 160723626
+   "days": 9,
+   "max_qty": 2409848,
+   "max_value": 1716293746
   },
   {
-   "symbol": "TDVG",
-   "name": "T ROWE PRICE EXCHANGE TRADED F",
-   "days": 5,
-   "max_qty": 2711101,
-   "max_value": 130891956
+   "symbol": "VT",
+   "name": "VANGUARD TOTAL WORLD STK INDEX",
+   "days": 9,
+   "max_qty": 3682932,
+   "max_value": 583044965
   },
   {
    "symbol": "ARKK",
    "name": "ARK ETF TR INNOVATION ETF (DE)",
-   "days": 8,
-   "max_qty": 1468104,
-   "max_value": 129222514
-  },
-  {
-   "symbol": "FXI",
-   "name": "ISHARES TR",
    "days": 9,
-   "max_qty": 3574790,
-   "max_value": 122043331
+   "max_qty": 4388914,
+   "max_value": 359847059
   },
   {
-   "symbol": "URTH",
-   "name": "ISHARES MSCI WORLD ETF",
-   "days": 2,
-   "max_qty": 567706,
-   "max_value": 117078008
-  },
-  {
-   "symbol": "IWM",
-   "name": "ISHARES RUSSELL 2000 ETF",
-   "days": 8,
-   "max_qty": 419165,
-   "max_value": 116347629
-  },
-  {
-   "symbol": "KORU",
-   "name": "DIREXION SHS ETF TR DIREXION D",
-   "days": 9,
-   "max_qty": 7267064,
-   "max_value": 114383587
-  },
-  {
-   "symbol": "TAFM",
-   "name": "AB ACTIVE ETFS INC TAX-AWARE I",
-   "days": 9,
-   "max_qty": 4778880,
-   "max_value": 114071866
-  },
-  {
-   "symbol": "HYD",
-   "name": "VANECK HIGH YIELD MUNI ETF",
-   "days": 9,
-   "max_qty": 2356989,
-   "max_value": 112381236
-  },
-  {
-   "symbol": "USFR",
-   "name": "WISDOMTREE FLOATING RATE TREAS",
-   "days": 2,
-   "max_qty": 2186149,
-   "max_value": 110160048
-  },
-  {
-   "symbol": "KNTK",
-   "name": "KINETIK HOLDINGS INC CL A",
-   "days": 4,
-   "max_qty": 1965703,
-   "max_value": 109194802
-  },
-  {
-   "symbol": "CGHM",
-   "name": "CAPITAL GROUP FIXED INCOME ETF",
-   "days": 8,
-   "max_qty": 4500298,
-   "max_value": 108367176
-  },
-  {
-   "symbol": "AVDE",
-   "name": "AMERICAN CENTY ETF TR AVANTIS",
-   "days": 4,
-   "max_qty": 1192581,
-   "max_value": 107463474
-  },
-  {
-   "symbol": "MINT",
-   "name": "PIMCO ETF TR ENHANCED SHT MATU",
+   "symbol": "MDT",
+   "name": "MEDTRONIC PLC ORD SHS (IRL)",
    "days": 7,
-   "max_qty": 1051599,
-   "max_value": 105591056
-  },
-  {
-   "symbol": "XBI",
-   "name": "SPDR SER TR STATE STREET SPDR",
-   "days": 9,
-   "max_qty": 679008,
-   "max_value": 104913526
-  },
-  {
-   "symbol": "TWLO",
-   "name": "TWILIO INC CL A (DE)",
-   "days": 3,
-   "max_qty": 332828,
-   "max_value": 100151273
+   "max_qty": 3122102,
+   "max_value": 294195671
   },
   {
    "symbol": "SMH",
    "name": "VANECK ETF TR SEMICONDUCTOR ET",
-   "days": 7,
-   "max_qty": 162604,
-   "max_value": 98744531
+   "days": 8,
+   "max_qty": 518860,
+   "max_value": 280075439
   },
   {
    "symbol": "SOXX",
    "name": "ISHARES SEMICONDUCTOR ETF",
    "days": 9,
-   "max_qty": 178876,
-   "max_value": 97290656
+   "max_qty": 528435,
+   "max_value": 274479708
   },
   {
-   "symbol": "MUU",
-   "name": "DIREXION SHS ETF TR DAILY MU B",
+   "symbol": "IWM",
+   "name": "ISHARES RUSSELL 2000 ETF",
+   "days": 12,
+   "max_qty": 981019,
+   "max_value": 271232133
+  },
+  {
+   "symbol": "IVV",
+   "name": "ISHARES CORE S&P 500 ETF",
+   "days": 4,
+   "max_qty": 340289,
+   "max_value": 261141181
+  },
+  {
+   "symbol": "SPCX",
+   "name": "SPACE EXPL TECHNOLOGIES CORP C",
    "days": 9,
-   "max_qty": 2631882,
-   "max_value": 96905895
+   "max_qty": 1770808,
+   "max_value": 258591092
+  },
+  {
+   "symbol": "TSLA",
+   "name": "TESLA INC COM STK (TX)",
+   "days": 9,
+   "max_qty": 604753,
+   "max_value": 214517984
+  },
+  {
+   "symbol": "SKYDWS",
+   "name": "SKYDANCE CORP WT PUR CL B EXP",
+   "days": 12,
+   "max_qty": 81840516,
+   "max_value": 204601290
+  },
+  {
+   "symbol": "VOLT",
+   "name": "TEMA ETF TR ELECTRIFICATION ET",
+   "days": 2,
+   "max_qty": 5886710,
+   "max_value": 194320297
+  },
+  {
+   "symbol": "VCSH",
+   "name": "VANGUARD SHT-TERM CORP BD ETF",
+   "days": 10,
+   "max_qty": 2456469,
+   "max_value": 189885054
+  },
+  {
+   "symbol": "GGLL",
+   "name": "DIREXION SHS ETF TR DAILY GOOG",
+   "days": 11,
+   "max_qty": 2095416,
+   "max_value": 184438516
+  },
+  {
+   "symbol": "SIXP",
+   "name": "AIM ETF PRODS TR ALLIANZIM U.S",
+   "days": 6,
+   "max_qty": 4654160,
+   "max_value": 161685518
+  },
+  {
+   "symbol": "BRKB",
+   "name": "BERKSHIRE HATHWY INC(HLDG CO)B",
+   "days": 8,
+   "max_qty": 297519,
+   "max_value": 161243397
+  },
+  {
+   "symbol": "GLD",
+   "name": "SPDR GOLD TR, SPDR GOLD SHS",
+   "days": 10,
+   "max_qty": 389235,
+   "max_value": 148964127
+  },
+  {
+   "symbol": "U",
+   "name": "UNITY SOFTWARE INC COM (DE)",
+   "days": 2,
+   "max_qty": 3547892,
+   "max_value": 146882729
+  },
+  {
+   "symbol": "SLV",
+   "name": "ISHARES SILVER TRUST",
+   "days": 9,
+   "max_qty": 2653585,
+   "max_value": 136686163
+  },
+  {
+   "symbol": "PAGP",
+   "name": "PLAINS GP HLDGS LPSHS CL A REP",
+   "days": 11,
+   "max_qty": 4727096,
+   "max_value": 136234907
+  },
+  {
+   "symbol": "META",
+   "name": "META PLATFORMS, INC. CLASS A C",
+   "days": 12,
+   "max_qty": 221735,
+   "max_value": 135810470
+  },
+  {
+   "symbol": "BINC",
+   "name": "BLACKROCK ETF TR II ISHARES FL",
+   "days": 11,
+   "max_qty": 2677290,
+   "max_value": 135711830
+  },
+  {
+   "symbol": "SCMB",
+   "name": "SCHWAB STRATEGIC TR MUN BD ETF",
+   "days": 10,
+   "max_qty": 5543342,
+   "max_value": 134758644
+  },
+  {
+   "symbol": "SKHY",
+   "name": "SK HYNIX INC SPONSORED ADS (KO",
+   "days": 10,
+   "max_qty": 898043,
+   "max_value": 131213063
+  },
+  {
+   "symbol": "GOOGL",
+   "name": "ALPHABET INC CAP STK CL A",
+   "days": 12,
+   "max_qty": 458467,
+   "max_value": 130122104
+  },
+  {
+   "symbol": "GS",
+   "name": "GOLDMAN SACHS GROUP INC",
+   "days": 6,
+   "max_qty": 147425,
+   "max_value": 129919756
+  },
+  {
+   "symbol": "GOOG",
+   "name": "ALPHABET INC CAP STK CL C",
+   "days": 7,
+   "max_qty": 416279,
+   "max_value": 117523887
+  },
+  {
+   "symbol": "GDX",
+   "name": "VANECK ETF TR GOLD MINERS ETF",
+   "days": 9,
+   "max_qty": 1306224,
+   "max_value": 114568907
+  },
+  {
+   "symbol": "XBI",
+   "name": "SPDR SER TR STATE STREET SPDR",
+   "days": 8,
+   "max_qty": 734046,
+   "max_value": 110451902
   }
  ],
  "watch": {
   "AAPL": {
    "symbol": "AAPL",
    "name": "APPLE INC;COM NPV",
+   "days": 5,
+   "max_qty": 224675,
+   "max_value": 78126238
+  },
+  "ABBV": {
+   "symbol": "ABBV",
+   "name": "ABBVIE INC COM STK (DE)",
+   "days": 9,
+   "max_qty": 20724,
+   "max_value": 5935146
+  },
+  "ABCL": {
+   "symbol": "ABCL",
+   "name": "ABCELLERA BIOLOGICS INC. (CAN)",
+   "days": 6,
+   "max_qty": 134413,
+   "max_value": 1586073
+  },
+  "ABEO": {
+   "symbol": "ABEO",
+   "name": "ABEONA THERAPEUTICS INC COM NE",
    "days": 8,
-   "max_qty": 156354,
-   "max_value": 51646853
+   "max_qty": 75205,
+   "max_value": 342935
   },
   "ABT": {
    "symbol": "ABT",
    "name": "ABBOTT LABS;COM NPV",
    "days": 5,
-   "max_qty": 789,
-   "max_value": 77898
+   "max_qty": 7085,
+   "max_value": 725858
   },
   "ACN": {
    "symbol": "ACN",
    "name": "ACCENTURE PLC CL-A ORDINARY SH",
-   "days": 4,
-   "max_qty": 16998,
-   "max_value": 3608675
+   "days": 5,
+   "max_qty": 32300,
+   "max_value": 7418664
   },
   "ADBE": {
    "symbol": "ADBE",
    "name": "ADOBE INC COM (DE)",
-   "days": 3,
-   "max_qty": 1541,
-   "max_value": 369748
+   "days": 4,
+   "max_qty": 2804,
+   "max_value": 739751
   },
-  "AGYS": {
-   "symbol": "AGYS",
-   "name": "AGILYSYS INC COM (DE)",
+  "ADIG": {
+   "symbol": "ADIG",
+   "name": "ADI GLOBAL DISTR INC COM",
+   "days": 6,
+   "max_qty": 29624,
+   "max_value": 512791
+  },
+  "ADTN": {
+   "symbol": "ADTN",
+   "name": "ADTRAN HLDGS INC COM",
+   "days": 3,
+   "max_qty": 1557,
+   "max_value": 9825
+  },
+  "AFCG": {
+   "symbol": "AFCG",
+   "name": "ADVANCED FLOWER CAPITAL INC. C",
+   "days": 2,
+   "max_qty": 833,
+   "max_value": 2507
+  },
+  "AGMB": {
+   "symbol": "AGMB",
+   "name": "AGOMAB THERAPEUTICS NV",
+   "days": 6,
+   "max_qty": 6734,
+   "max_value": 60943
+  },
+  "AGRO": {
+   "symbol": "AGRO",
+   "name": "ADECOAGRO S A COM SHS (LUX)",
+   "days": 6,
+   "max_qty": 41935,
+   "max_value": 420608
+  },
+  "AKAM": {
+   "symbol": "AKAM",
+   "name": "AKAMAI TECHNOLOGIES INC",
+   "days": 4,
+   "max_qty": 129296,
+   "max_value": 11353482
+  },
+  "ALDX": {
+   "symbol": "ALDX",
+   "name": "ALDEYRA THERAPEUTICS, INC. COM",
+   "days": 12,
+   "max_qty": 4326,
+   "max_value": 3042
+  },
+  "ALNY": {
+   "symbol": "ALNY",
+   "name": "ALYNLAM PHARMACEUTICALS INC",
    "days": 1,
-   "max_qty": 1436,
-   "max_value": 156897
+   "max_qty": 918,
+   "max_value": 206063
+  },
+  "ALT": {
+   "symbol": "ALT",
+   "name": "ALTIMMUNE INC COM NEW",
+   "days": 1,
+   "max_qty": 11386,
+   "max_value": 26871
   },
   "AMAT": {
    "symbol": "AMAT",
    "name": "APPLIED MATERIALS INC",
-   "days": 6,
-   "max_qty": 2700,
-   "max_value": 1458108
+   "days": 5,
+   "max_qty": 33863,
+   "max_value": 13859787
   },
   "AMD": {
    "symbol": "AMD",
    "name": "ADVANCED MICRO DEVICES",
-   "days": 6,
-   "max_qty": 319749,
-   "max_value": 202692089
+   "days": 11,
+   "max_qty": 15032,
+   "max_value": 7635204
+  },
+  "AMG": {
+   "symbol": "AMG",
+   "name": "AFFILIATED MANAGERS GROUP INC",
+   "days": 1,
+   "max_qty": 22,
+   "max_value": 8435
+  },
+  "AMPL": {
+   "symbol": "AMPL",
+   "name": "AMPLITUDE INC COM CL A",
+   "days": 1,
+   "max_qty": 135996,
+   "max_value": 2005941
   },
   "AMZN": {
    "symbol": "AMZN",
    "name": "AMAZON COM INC;COM USD0.01",
-   "days": 6,
-   "max_qty": 54801,
-   "max_value": 13653669
+   "days": 11,
+   "max_qty": 227760,
+   "max_value": 59775612
   },
-  "ANIX": {
-   "symbol": "ANIX",
-   "name": "ANIXA BIOSCIENCES, INC. COMMON",
-   "days": 8,
-   "max_qty": 12733,
-   "max_value": 37562
+  "AN": {
+   "symbol": "AN",
+   "name": "AUTONATION INC",
+   "days": 2,
+   "max_qty": 3219,
+   "max_value": 520609
   },
-  "APG": {
-   "symbol": "APG",
-   "name": "API GROUP CORP COM",
-   "days": 3,
-   "max_qty": 23324,
-   "max_value": 942056
-  },
-  "API": {
-   "symbol": "API",
-   "name": "AGORA INC ADS",
-   "days": 1,
-   "max_qty": 560,
-   "max_value": 2324
+  "AOMR": {
+   "symbol": "AOMR",
+   "name": "ANGEL OAK MORTGAGE REIT INC",
+   "days": 2,
+   "max_qty": 1853,
+   "max_value": 13675
   },
   "APP": {
    "symbol": "APP",
    "name": "APPLOVIN CORP COM CL A (DE)",
+   "days": 7,
+   "max_qty": 6811,
+   "max_value": 1902244
+  },
+  "AQST": {
+   "symbol": "AQST",
+   "name": "AQUESTIVE THERAPEUTICS INC COM",
+   "days": 6,
+   "max_qty": 45865,
+   "max_value": 173370
+  },
+  "ARE": {
+   "symbol": "ARE",
+   "name": "ALEXANDRIA REAL EST EQ INC",
+   "days": 4,
+   "max_qty": 12654,
+   "max_value": 514132
+  },
+  "ATLO": {
+   "symbol": "ATLO",
+   "name": "AMES NATIONAL CORPORATION",
+   "days": 5,
+   "max_qty": 669,
+   "max_value": 21508
+  },
+  "AUPH": {
+   "symbol": "AUPH",
+   "name": "AURINIA PHARMACEUTICALS INC OR",
    "days": 3,
-   "max_qty": 685,
-   "max_value": 185546
+   "max_qty": 4834,
+   "max_value": 83773
+  },
+  "AURA": {
+   "symbol": "AURA",
+   "name": "AURA BIOSCIENCES INC COM (DE)",
+   "days": 5,
+   "max_qty": 4015,
+   "max_value": 24773
   },
   "AVGO": {
    "symbol": "AVGO",
    "name": "BROADCOM INC COM (DE)",
-   "days": 7,
-   "max_qty": 10036,
-   "max_value": 3585963
+   "days": 9,
+   "max_qty": 4539,
+   "max_value": 1518704
   },
   "AXP": {
    "symbol": "AXP",
    "name": "AMERICAN EXPRESS COMPANY",
    "days": 3,
-   "max_qty": 28145,
-   "max_value": 8558894
+   "max_qty": 11108,
+   "max_value": 3479248
   },
-  "BLLN": {
-   "symbol": "BLLN",
-   "name": "BILLIONTOONE INC CL A",
+  "BA": {
+   "symbol": "BA",
+   "name": "BOEING CO;COM USD5",
+   "days": 12,
+   "max_qty": 2460,
+   "max_value": 468556
+  },
+  "BBT": {
+   "symbol": "BBT",
+   "name": "BEACON FINANCIAL CORPORATION",
    "days": 1,
-   "max_qty": 762,
-   "max_value": 81107
+   "max_qty": 2,
+   "max_value": 61
   },
-  "BROS": {
-   "symbol": "BROS",
-   "name": "DUTCH BROS INC CL A (DE)",
-   "days": 2,
-   "max_qty": 69655,
-   "max_value": 2770876
+  "BIVI": {
+   "symbol": "BIVI",
+   "name": "BIOVIE INC CL A PAR $0.0001 NE",
+   "days": 10,
+   "max_qty": 25697,
+   "max_value": 33408
   },
-  "BSRR": {
-   "symbol": "BSRR",
-   "name": "SIERRA BANCORP",
-   "days": 1,
-   "max_qty": 94,
-   "max_value": 3685
-  },
-  "BSX": {
-   "symbol": "BSX",
-   "name": "BOSTON SCIENTIFIC CORP",
-   "days": 4,
-   "max_qty": 12344,
-   "max_value": 520793
-  },
-  "CAKE": {
-   "symbol": "CAKE",
-   "name": "CHEESECAKE FACTORY INC",
+  "BKD": {
+   "symbol": "BKD",
+   "name": "BROOKDALE SENIOR LIVING INC CO",
    "days": 3,
-   "max_qty": 1450,
-   "max_value": 158094
+   "max_qty": 1049,
+   "max_value": 10469
+  },
+  "BLKB": {
+   "symbol": "BLKB",
+   "name": "BLACKBAUD INC",
+   "days": 1,
+   "max_qty": 3,
+   "max_value": 165
+  },
+  "BLMN": {
+   "symbol": "BLMN",
+   "name": "BLOOMIN BRANDS INC COM STK (DE",
+   "days": 2,
+   "max_qty": 185490,
+   "max_value": 1845625
+  },
+  "BNS": {
+   "symbol": "BNS",
+   "name": "BANK OF NOVA SCOTIA (F)",
+   "days": 6,
+   "max_qty": 957786,
+   "max_value": 86248629
+  },
+  "BOOT": {
+   "symbol": "BOOT",
+   "name": "BOOT BARN HLDGS INC COM STK (D",
+   "days": 4,
+   "max_qty": 54266,
+   "max_value": 6477190
+  },
+  "BOTJ": {
+   "symbol": "BOTJ",
+   "name": "BANK OF THE JAMES FINL GROUP I",
+   "days": 1,
+   "max_qty": 26,
+   "max_value": 695
+  },
+  "BSM": {
+   "symbol": "BSM",
+   "name": "BLACK STONE MINERALS L P COM U",
+   "days": 6,
+   "max_qty": 5612,
+   "max_value": 82553
+  },
+  "BXMT": {
+   "symbol": "BXMT",
+   "name": "BLACKSTONE MORTGATE TRUST INC",
+   "days": 2,
+   "max_qty": 48534,
+   "max_value": 513490
+  },
+  "CACC": {
+   "symbol": "CACC",
+   "name": "CREDIT ACCEPTANCE CORP (MICH)",
+   "days": 5,
+   "max_qty": 834,
+   "max_value": 443947
   },
   "CAT": {
    "symbol": "CAT",
    "name": "CATERPILLAR INC;COM USD1",
-   "days": 3,
-   "max_qty": 5954,
-   "max_value": 4920088
+   "days": 2,
+   "max_qty": 926,
+   "max_value": 676684
+  },
+  "CATX": {
+   "symbol": "CATX",
+   "name": "PERSPECTIVE THERAPEUTICS INC C",
+   "days": 5,
+   "max_qty": 59588,
+   "max_value": 70910
   },
   "CB": {
    "symbol": "CB",
    "name": "CHUBB LTD COM",
    "days": 1,
-   "max_qty": 2263,
-   "max_value": 757426
+   "max_qty": 51,
+   "max_value": 18169
   },
-  "CDW": {
-   "symbol": "CDW",
-   "name": "CDW COPR COM STK (DE)",
-   "days": 4,
-   "max_qty": 7239,
-   "max_value": 1040679
+  "CCI": {
+   "symbol": "CCI",
+   "name": "CROWN CASTLE INC.",
+   "days": 3,
+   "max_qty": 17071,
+   "max_value": 1493200
   },
-  "CFR": {
-   "symbol": "CFR",
-   "name": "CULLEN/FROST BANKERS INC",
-   "days": 5,
-   "max_qty": 5064,
-   "max_value": 768563
+  "CDNA": {
+   "symbol": "CDNA",
+   "name": "CAREDX INC COM",
+   "days": 2,
+   "max_qty": 324,
+   "max_value": 20960
   },
-  "CHRW": {
-   "symbol": "CHRW",
-   "name": "C.H. ROBINSON WORLDWIDE INC NE",
-   "days": 4,
-   "max_qty": 26534,
-   "max_value": 4184942
+  "CHCO": {
+   "symbol": "CHCO",
+   "name": "CITY HOLDINGS CO",
+   "days": 7,
+   "max_qty": 78,
+   "max_value": 11077
+  },
+  "CIA": {
+   "symbol": "CIA",
+   "name": "CITIZENS INC CL-A",
+   "days": 9,
+   "max_qty": 9119,
+   "max_value": 30731
   },
   "CINF": {
    "symbol": "CINF",
    "name": "CINCINNATI FINANCIAL CORP",
-   "days": 4,
-   "max_qty": 11063,
-   "max_value": 1791653
+   "days": 3,
+   "max_qty": 406,
+   "max_value": 73652
   },
   "CMG": {
    "symbol": "CMG",
    "name": "CHIPOLTE MEXICAN GRILL INC COM",
-   "days": 1,
-   "max_qty": 49,
-   "max_value": 1584
+   "days": 4,
+   "max_qty": 6897,
+   "max_value": 189805
+  },
+  "CMS": {
+   "symbol": "CMS",
+   "name": "CMS ENERGY CORP",
+   "days": 8,
+   "max_qty": 229682,
+   "max_value": 15779153
+  },
+  "CNH": {
+   "symbol": "CNH",
+   "name": "CNH INDUSTRIAL N V COM SHS (NL",
+   "days": 5,
+   "max_qty": 250000,
+   "max_value": 2812500
   },
   "COHR": {
    "symbol": "COHR",
    "name": "COHERENT CORP COM",
-   "days": 3,
-   "max_qty": 62546,
-   "max_value": 19964058
+   "days": 4,
+   "max_qty": 12510,
+   "max_value": 3294133
   },
-  "COIN": {
-   "symbol": "COIN",
-   "name": "COINBASE GLOBAL INC COM CL A (",
-   "days": 5,
-   "max_qty": 34324,
-   "max_value": 6191706
+  "CON": {
+   "symbol": "CON",
+   "name": "CONCENTRA GROUP HLDGS PARENT I",
+   "days": 1,
+   "max_qty": 6,
+   "max_value": 240
+  },
+  "COO": {
+   "symbol": "COO",
+   "name": "COOPER COS INC COM PAR",
+   "days": 2,
+   "max_qty": 72155,
+   "max_value": 4286729
   },
   "COST": {
    "symbol": "COST",
    "name": "COSTCO WHOLESALE CORP-NEW",
-   "days": 5,
-   "max_qty": 7194,
-   "max_value": 6902211
+   "days": 7,
+   "max_qty": 21898,
+   "max_value": 21779970
+  },
+  "CRBG": {
+   "symbol": "CRBG",
+   "name": "COREBRIDGE FINL INC COM",
+   "days": 4,
+   "max_qty": 127190,
+   "max_value": 4489807
+  },
+  "CRH": {
+   "symbol": "CRH",
+   "name": "CRH PLC SHS (IRL)",
+   "days": 4,
+   "max_qty": 237469,
+   "max_value": 20524446
   },
   "CRM": {
    "symbol": "CRM",
    "name": "SALESFORCE,INC",
-   "days": 5,
-   "max_qty": 47448,
-   "max_value": 11099036
+   "days": 6,
+   "max_qty": 8835,
+   "max_value": 2126584
   },
-  "CRWD": {
-   "symbol": "CRWD",
-   "name": "CROWDSTRIKE HLDGS INC CL A",
-   "days": 3,
-   "max_qty": 7335,
-   "max_value": 1929178
+  "CRMD": {
+   "symbol": "CRMD",
+   "name": "CORMEDIX INC COM NEW",
+   "days": 6,
+   "max_qty": 36938,
+   "max_value": 279621
+  },
+  "CRVL": {
+   "symbol": "CRVL",
+   "name": "CORVEL CORP",
+   "days": 1,
+   "max_qty": 731,
+   "max_value": 61309
   },
   "CSCO": {
    "symbol": "CSCO",
    "name": "CISCO SYSTEMS;COM USD0.001 (DE",
+   "days": 3,
+   "max_qty": 28533,
+   "max_value": 3064159
+  },
+  "CSQR": {
+   "symbol": "CSQR",
+   "name": "CSQUARE INC COM",
+   "days": 5,
+   "max_qty": 872174,
+   "max_value": 13039001
+  },
+  "CTEV": {
+   "symbol": "CTEV",
+   "name": "CLARITEV CORPORATION",
    "days": 2,
-   "max_qty": 500,
-   "max_value": 56100
+   "max_qty": 6816,
+   "max_value": 149679
+  },
+  "CTRI": {
+   "symbol": "CTRI",
+   "name": "CENTURI HLDGS INC COM",
+   "days": 3,
+   "max_qty": 1492,
+   "max_value": 29497
   },
   "CTSH": {
    "symbol": "CTSH",
    "name": "COGNIZANT TECH SOLUTIONS CORP",
    "days": 3,
-   "max_qty": 132676,
-   "max_value": 7762873
+   "max_qty": 214534,
+   "max_value": 14109901
   },
   "CTVA": {
    "symbol": "CTVA",
    "name": "CORTEVA INC COM",
-   "days": 7,
-   "max_qty": 373035,
-   "max_value": 5188917
+   "days": 6,
+   "max_qty": 193556,
+   "max_value": 2220087
+  },
+  "CVS": {
+   "symbol": "CVS",
+   "name": "CVS HEALTH CORPORATION (DE)",
+   "days": 5,
+   "max_qty": 1695,
+   "max_value": 160144
   },
   "CVX": {
    "symbol": "CVX",
    "name": "CHEVRON CORPORATION",
    "days": 7,
-   "max_qty": 152000,
-   "max_value": 33094960
+   "max_qty": 11977,
+   "max_value": 2716144
   },
-  "DASH": {
-   "symbol": "DASH",
-   "name": "DOORDASH INC CL A (NV)",
-   "days": 3,
-   "max_qty": 11256,
-   "max_value": 2157888
+  "DAIO": {
+   "symbol": "DAIO",
+   "name": "DATA I O CORP",
+   "days": 1,
+   "max_qty": 1851,
+   "max_value": 4665
+  },
+  "DBX": {
+   "symbol": "DBX",
+   "name": "DROPBOX INC CL A COM (NEVADA)",
+   "days": 4,
+   "max_qty": 33121,
+   "max_value": 1179770
   },
   "DDOG": {
    "symbol": "DDOG",
    "name": "DATADOG INC CL A",
-   "days": 4,
-   "max_qty": 62180,
-   "max_value": 17237540
+   "days": 5,
+   "max_qty": 55014,
+   "max_value": 14624922
   },
   "DIA": {
    "symbol": "DIA",
    "name": "STATE STR SPDR DOW JONES INDL",
    "days": 5,
-   "max_qty": 56386,
-   "max_value": 28814374
+   "max_qty": 52016,
+   "max_value": 27448843
   },
-  "DIS": {
-   "symbol": "DIS",
-   "name": "WALT DISNEY CO-DISNEY COMMON",
-   "days": 7,
-   "max_qty": 604065,
-   "max_value": 65535012
+  "DINO": {
+   "symbol": "DINO",
+   "name": "HF SINCLAIR CORPORATION COM (D",
+   "days": 3,
+   "max_qty": 1580,
+   "max_value": 197958
+  },
+  "DKNG": {
+   "symbol": "DKNG",
+   "name": "DRAFTKINGS INC NEW CL A(NV)",
+   "days": 4,
+   "max_qty": 21371,
+   "max_value": 437678
+  },
+  "DOLE": {
+   "symbol": "DOLE",
+   "name": "DOLE PLC SHS (IRL)",
+   "days": 2,
+   "max_qty": 1277,
+   "max_value": 17265
+  },
+  "DOX": {
+   "symbol": "DOX",
+   "name": "AMDOCS LTD ORD",
+   "days": 2,
+   "max_qty": 12804,
+   "max_value": 786294
+  },
+  "DPU": {
+   "symbol": "DPU",
+   "name": "NEXPU LTD NEW CL A ORD SHS US$",
+   "days": 5,
+   "max_qty": 1164,
+   "max_value": 1967
+  },
+  "DTI": {
+   "symbol": "DTI",
+   "name": "DRILLING TOOLS INTERNATIONAL C",
+   "days": 3,
+   "max_qty": 214,
+   "max_value": 387
   },
   "DUK": {
    "symbol": "DUK",
    "name": "DUKE ENERGY CORPORATION NEW CO",
-   "days": 3,
-   "max_qty": 49762,
-   "max_value": 5664906
+   "days": 4,
+   "max_qty": 40745,
+   "max_value": 5092310
   },
-  "ECL": {
-   "symbol": "ECL",
-   "name": "ECOLAB INC",
+  "DX": {
+   "symbol": "DX",
+   "name": "DYNEX CAPITAL INC COM PAR $",
+   "days": 8,
+   "max_qty": 204067,
+   "max_value": 2269225
+  },
+  "DYN": {
+   "symbol": "DYN",
+   "name": "DYNE THERAPEUTICS INC",
    "days": 3,
-   "max_qty": 1079,
-   "max_value": 306760
+   "max_qty": 41685,
+   "max_value": 594011
+  },
+  "ECOR": {
+   "symbol": "ECOR",
+   "name": "ELECTROCORE INC COM NEW (DE)",
+   "days": 6,
+   "max_qty": 2131,
+   "max_value": 17282
+  },
+  "EGBN": {
+   "symbol": "EGBN",
+   "name": "EAGLE BANCORP INC (MD)",
+   "days": 1,
+   "max_qty": 410,
+   "max_value": 13809
+  },
+  "ELF": {
+   "symbol": "ELF",
+   "name": "E L F BEAUTY INC COM (DE)",
+   "days": 2,
+   "max_qty": 2935,
+   "max_value": 333240
+  },
+  "EMO": {
+   "symbol": "EMO",
+   "name": "CLEARBRIDGE ENERGY MIDSTREAM O",
+   "days": 1,
+   "max_qty": 29,
+   "max_value": 1565
+  },
+  "EMR": {
+   "symbol": "EMR",
+   "name": "EMERSON ELECTRIC CO",
+   "days": 7,
+   "max_qty": 78359,
+   "max_value": 12781136
+  },
+  "ENPH": {
+   "symbol": "ENPH",
+   "name": "ENPHASE ENERGY, INC COM STK",
+   "days": 4,
+   "max_qty": 50085,
+   "max_value": 1251624
+  },
+  "EQPT": {
+   "symbol": "EQPT",
+   "name": "EQUIPMENTSHARECOM INC CL A",
+   "days": 4,
+   "max_qty": 159348,
+   "max_value": 2822053
   },
   "ES": {
    "symbol": "ES",
    "name": "EVERSOURCE ENERGY COM SHS",
-   "days": 4,
-   "max_qty": 34735,
-   "max_value": 2233808
+   "days": 3,
+   "max_qty": 128740,
+   "max_value": 8612706
   },
   "ETN": {
    "symbol": "ETN",
    "name": "EATON CORP PLC (IRL)",
+   "days": 2,
+   "max_qty": 12409,
+   "max_value": 4739990
+  },
+  "ETRA": {
+   "symbol": "ETRA",
+   "name": "ELECTRA THERAPEUTICS INC COM",
    "days": 4,
-   "max_qty": 500,
-   "max_value": 218055
+   "max_qty": 4484,
+   "max_value": 39235
+  },
+  "EVLV": {
+   "symbol": "EVLV",
+   "name": "EVOLV TECHNOLOGIES HLDGS INC C",
+   "days": 2,
+   "max_qty": 41079,
+   "max_value": 189785
   },
   "FAST": {
    "symbol": "FAST",
    "name": "FASTENAL CO",
-   "days": 2,
-   "max_qty": 743,
-   "max_value": 37514
+   "days": 1,
+   "max_qty": 575,
+   "max_value": 29584
   },
-  "FERG": {
-   "symbol": "FERG",
-   "name": "FERGUSON ENTERPRISES INC COM (",
-   "days": 6,
-   "max_qty": 4754,
-   "max_value": 1052963
+  "FBRT": {
+   "symbol": "FBRT",
+   "name": "FRANKLIN BSP RLTY TR INC COM (",
+   "days": 5,
+   "max_qty": 18231,
+   "max_value": 109751
+  },
+  "FF": {
+   "symbol": "FF",
+   "name": "FUTUREFUEL CORP COM STK",
+   "days": 1,
+   "max_qty": 3039,
+   "max_value": 16563
+  },
+  "FFIN": {
+   "symbol": "FFIN",
+   "name": "FIRST FINL BANKSHARES INC",
+   "days": 5,
+   "max_qty": 4811,
+   "max_value": 143223
+  },
+  "FIP": {
+   "symbol": "FIP",
+   "name": "FTAI INFRASTRUCTURE INC COM(DE",
+   "days": 2,
+   "max_qty": 7186,
+   "max_value": 19187
+  },
+  "FIS": {
+   "symbol": "FIS",
+   "name": "FIDELITY NATIONAL INFORMATION",
+   "days": 8,
+   "max_qty": 191648,
+   "max_value": 7317372
+  },
+  "FLOC": {
+   "symbol": "FLOC",
+   "name": "FLOWCO HLDGS INC CL A COM",
+   "days": 3,
+   "max_qty": 6125,
+   "max_value": 113190
+  },
+  "FLYW": {
+   "symbol": "FLYW",
+   "name": "FLYWIRE CORP COM VTG (DE)",
+   "days": 1,
+   "max_qty": 22692,
+   "max_value": 439090
+  },
+  "FOUR": {
+   "symbol": "FOUR",
+   "name": "SHIFT4 PAYMENTS, INC. CL A",
+   "days": 8,
+   "max_qty": 40428,
+   "max_value": 1541115
+  },
+  "FOXA": {
+   "symbol": "FOXA",
+   "name": "FOX CORP CL A (DE)",
+   "days": 5,
+   "max_qty": 439498,
+   "max_value": 29446366
+  },
+  "FPS": {
+   "symbol": "FPS",
+   "name": "FORGENT PWR SOLUTIONS INC CL A",
+   "days": 3,
+   "max_qty": 12340,
+   "max_value": 298875
+  },
+  "FUN": {
+   "symbol": "FUN",
+   "name": "SIX FLAGS ENTMT CORP DEL COM(D",
+   "days": 2,
+   "max_qty": 699,
+   "max_value": 6249
+  },
+  "FUNC": {
+   "symbol": "FUNC",
+   "name": "FIRST UNITED CORP",
+   "days": 5,
+   "max_qty": 14,
+   "max_value": 617
+  },
+  "GABC": {
+   "symbol": "GABC",
+   "name": "GERMAN AMERICAN BANCORP INC",
+   "days": 3,
+   "max_qty": 2926,
+   "max_value": 143959
   },
   "GDYN": {
    "symbol": "GDYN",
    "name": "GRID DYNAMICS HOLDINGS, INC. C",
    "days": 1,
-   "max_qty": 16,
-   "max_value": 124
+   "max_qty": 350,
+   "max_value": 3014
   },
   "GEHC": {
    "symbol": "GEHC",
    "name": "GE HEALTHCARE TECHNOLOGIES INC",
+   "days": 6,
+   "max_qty": 70000,
+   "max_value": 4977700
+  },
+  "GERN": {
+   "symbol": "GERN",
+   "name": "GERON CORP",
+   "days": 3,
+   "max_qty": 21245,
+   "max_value": 20183
+  },
+  "GFS": {
+   "symbol": "GFS",
+   "name": "GLOBALFOUNDRIES INC SHS (CYM)",
+   "days": 1,
+   "max_qty": 4774,
+   "max_value": 220129
+  },
+  "GILD": {
+   "symbol": "GILD",
+   "name": "GILEAD SCIENCES INC",
    "days": 2,
-   "max_qty": 42903,
-   "max_value": 2906249
+   "max_qty": 5930,
+   "max_value": 933204
   },
   "GLD": {
    "symbol": "GLD",
    "name": "SPDR GOLD TR, SPDR GOLD SHS",
-   "days": 5,
-   "max_qty": 125821,
-   "max_value": 47638347
+   "days": 10,
+   "max_qty": 389235,
+   "max_value": 148964127
   },
   "GLW": {
    "symbol": "GLW",
    "name": "CORNING INCORPORATED",
-   "days": 3,
-   "max_qty": 3019,
-   "max_value": 495690
+   "days": 6,
+   "max_qty": 5102,
+   "max_value": 669382
+  },
+  "GLXY": {
+   "symbol": "GLXY",
+   "name": "GALAXY DIGITAL INC CL A (DE)",
+   "days": 8,
+   "max_qty": 151975,
+   "max_value": 2724912
+  },
+  "GOOD": {
+   "symbol": "GOOD",
+   "name": "GLADSTONE COMMERCIAL CORP",
+   "days": 6,
+   "max_qty": 74648,
+   "max_value": 930861
   },
   "GOOGL": {
    "symbol": "GOOGL",
    "name": "ALPHABET INC CAP STK CL A",
-   "days": 8,
-   "max_qty": 6288,
-   "max_value": 2217903
+   "days": 12,
+   "max_qty": 458467,
+   "max_value": 130122104
   },
-  "GS": {
-   "symbol": "GS",
-   "name": "GOLDMAN SACHS GROUP INC",
-   "days": 3,
-   "max_qty": 1696,
-   "max_value": 1504708
-  },
-  "HAPN": {
-   "symbol": "HAPN",
-   "name": "HAPPEN, INC. COMMON STOCK",
+  "GPI": {
+   "symbol": "GPI",
+   "name": "GROUP 1 AUTOMOTIVE,INC",
    "days": 1,
-   "max_qty": 1112,
-   "max_value": 16435
+   "max_qty": 2,
+   "max_value": 457
+  },
+  "GSM": {
+   "symbol": "GSM",
+   "name": "FERROGLOBE PLC ORD SHS (GBR)",
+   "days": 1,
+   "max_qty": 1,
+   "max_value": 4
+  },
+  "GWRE": {
+   "symbol": "GWRE",
+   "name": "GUIDEWIRE SOFTWARE INC COM STK",
+   "days": 2,
+   "max_qty": 100,
+   "max_value": 16886
+  },
+  "GYRO": {
+   "symbol": "GYRO",
+   "name": "GYRODYNE LLC COM STK (NY)",
+   "days": 1,
+   "max_qty": 37,
+   "max_value": 163
+  },
+  "HAWK": {
+   "symbol": "HAWK",
+   "name": "HAWKEYE 360 INC CL A",
+   "days": 3,
+   "max_qty": 54253,
+   "max_value": 770935
+  },
+  "HBAN": {
+   "symbol": "HBAN",
+   "name": "HUNTINGTON BANCSHARES INC",
+   "days": 3,
+   "max_qty": 3102,
+   "max_value": 48794
   },
   "HD": {
    "symbol": "HD",
    "name": "HOME DEPOT INC",
-   "days": 8,
-   "max_qty": 5929,
-   "max_value": 1674705
+   "days": 12,
+   "max_qty": 895,
+   "max_value": 277119
   },
-  "HUBB": {
-   "symbol": "HUBB",
-   "name": "HUBBELL INC CL-B",
-   "days": 4,
-   "max_qty": 13169,
-   "max_value": 6149660
+  "HEI": {
+   "symbol": "HEI",
+   "name": "HEICO CORP",
+   "days": 1,
+   "max_qty": 8041,
+   "max_value": 2483302
+  },
+  "HGV": {
+   "symbol": "HGV",
+   "name": "HILTON GRAND VACATIONS INC COM",
+   "days": 2,
+   "max_qty": 4613,
+   "max_value": 164822
+  },
+  "HL": {
+   "symbol": "HL",
+   "name": "HECLA MINING CO",
+   "days": 3,
+   "max_qty": 709519,
+   "max_value": 10571833
+  },
+  "HOS": {
+   "symbol": "HOS",
+   "name": "HORNBECK OFFSHORE SERVICES INC",
+   "days": 1,
+   "max_qty": 268506,
+   "max_value": 1906393
+  },
+  "HUBS": {
+   "symbol": "HUBS",
+   "name": "HUBSPOT INC COM STK (DE)",
+   "days": 2,
+   "max_qty": 18391,
+   "max_value": 4913891
   },
   "HYG": {
    "symbol": "HYG",
    "name": "ISHARES TR",
-   "days": 6,
-   "max_qty": 773373,
-   "max_value": 59657993
+   "days": 9,
+   "max_qty": 261379,
+   "max_value": 20280397
   },
   "IBM": {
    "symbol": "IBM",
    "name": "INTL BUSINESS MACHINES CORP",
-   "days": 6,
-   "max_qty": 23496,
-   "max_value": 5199430
+   "days": 12,
+   "max_qty": 56408,
+   "max_value": 14302812
   },
-  "INTU": {
-   "symbol": "INTU",
-   "name": "INTUIT INC",
-   "days": 5,
-   "max_qty": 8120,
-   "max_value": 2484639
+  "ICLR": {
+   "symbol": "ICLR",
+   "name": "ICON PLC ADR",
+   "days": 1,
+   "max_qty": 4829,
+   "max_value": 821799
+  },
+  "IMRX": {
+   "symbol": "IMRX",
+   "name": "IMMUNEERING CORP CL A (DE)",
+   "days": 6,
+   "max_qty": 14833,
+   "max_value": 53992
+  },
+  "IMSR": {
+   "symbol": "IMSR",
+   "name": "TERRESTRIAL ENERGY INC COM",
+   "days": 8,
+   "max_qty": 304259,
+   "max_value": 1019268
+  },
+  "INTC": {
+   "symbol": "INTC",
+   "name": "INTEL CORP;COM USD0.001",
+   "days": 6,
+   "max_qty": 192606,
+   "max_value": 17660044
+  },
+  "IOND": {
+   "symbol": "IOND",
+   "name": "IONIC DIGITAL INC COM CL A",
+   "days": 3,
+   "max_qty": 183,
+   "max_value": 12321
   },
   "ISRG": {
    "symbol": "ISRG",
    "name": "INTUITIVE SURGICAL INC",
-   "days": 3,
-   "max_qty": 1217,
-   "max_value": 520438
+   "days": 7,
+   "max_qty": 1735,
+   "max_value": 729116
   },
   "ITW": {
    "symbol": "ITW",
    "name": "ILLINOIS TOOL WORKS",
-   "days": 5,
-   "max_qty": 2864,
-   "max_value": 747046
+   "days": 3,
+   "max_qty": 11374,
+   "max_value": 3072914
   },
   "IWM": {
    "symbol": "IWM",
    "name": "ISHARES RUSSELL 2000 ETF",
-   "days": 8,
-   "max_qty": 419165,
-   "max_value": 116347629
+   "days": 12,
+   "max_qty": 981019,
+   "max_value": 271232133
+  },
+  "JBLU": {
+   "symbol": "JBLU",
+   "name": "JETBLUE AIRWAYS CORPORATION",
+   "days": 5,
+   "max_qty": 254962,
+   "max_value": 670550
   },
   "JNJ": {
    "symbol": "JNJ",
    "name": "JOHNSON AND JOHNSON",
-   "days": 5,
-   "max_qty": 2175,
-   "max_value": 556865
+   "days": 10,
+   "max_qty": 4619,
+   "max_value": 1218538
   },
   "JPM": {
    "symbol": "JPM",
    "name": "JPMORGAN CHASE & CO COM STK",
-   "days": 5,
-   "max_qty": 2388,
-   "max_value": 791431
+   "days": 10,
+   "max_qty": 6405,
+   "max_value": 2150735
+  },
+  "KEEL": {
+   "symbol": "KEEL",
+   "name": "KEEL INFRASTRUCTURE CORP COM",
+   "days": 12,
+   "max_qty": 2864429,
+   "max_value": 7304294
+  },
+  "KMI": {
+   "symbol": "KMI",
+   "name": "KINDER MORGAN INC (DE)",
+   "days": 7,
+   "max_qty": 6652,
+   "max_value": 218319
+  },
+  "KO": {
+   "symbol": "KO",
+   "name": "COCA-COLA CO",
+   "days": 8,
+   "max_qty": 794,
+   "max_value": 74175
   },
   "KR": {
    "symbol": "KR",
    "name": "KROGER CO",
-   "days": 5,
-   "max_qty": 13627,
-   "max_value": 852505
+   "days": 4,
+   "max_qty": 68855,
+   "max_value": 4597448
   },
-  "LEN": {
-   "symbol": "LEN",
-   "name": "LENNAR CORP CL A COMMON",
+  "KYN": {
+   "symbol": "KYN",
+   "name": "KAYNE ANDERSON ENERGY INFRASTR",
+   "days": 2,
+   "max_qty": 395,
+   "max_value": 5506
+  },
+  "LBRT": {
+   "symbol": "LBRT",
+   "name": "LIBERTY ENERGY INC. CL A COM",
    "days": 3,
-   "max_qty": 6382,
-   "max_value": 524026
+   "max_qty": 1747,
+   "max_value": 28965
+  },
+  "LCTX": {
+   "symbol": "LCTX",
+   "name": "LINEAGE CELL THERAPEUTICS INC",
+   "days": 2,
+   "max_qty": 24893,
+   "max_value": 24644
+  },
+  "LEE": {
+   "symbol": "LEE",
+   "name": "LEE ENTERPRISES INC NEW",
+   "days": 11,
+   "max_qty": 8400,
+   "max_value": 51828
+  },
+  "LEGN": {
+   "symbol": "LEGN",
+   "name": "LEGEND BIOTECH CORP SPONSORED",
+   "days": 5,
+   "max_qty": 66772,
+   "max_value": 1271339
+  },
+  "LEO": {
+   "symbol": "LEO",
+   "name": "BNY MELLON STRATEGIC MUNS INC",
+   "days": 3,
+   "max_qty": 15811,
+   "max_value": 92336
+  },
+  "LFST": {
+   "symbol": "LFST",
+   "name": "LIFESTANCE HEALTH GROUP INC CO",
+   "days": 1,
+   "max_qty": 219,
+   "max_value": 2832
+  },
+  "LFVN": {
+   "symbol": "LFVN",
+   "name": "LIFEVANTAGE CORPORATION COMMON",
+   "days": 6,
+   "max_qty": 866,
+   "max_value": 5179
+  },
+  "LGND": {
+   "symbol": "LGND",
+   "name": "LIGAND PHARMACEUTICALS INC COM",
+   "days": 1,
+   "max_qty": 4,
+   "max_value": 1189
   },
   "LII": {
    "symbol": "LII",
    "name": "LENNOX INTL INC",
-   "days": 3,
-   "max_qty": 108,
-   "max_value": 39046
+   "days": 6,
+   "max_qty": 302,
+   "max_value": 110423
+  },
+  "LILA": {
+   "symbol": "LILA",
+   "name": "LIBERTY LATIN AMER LTD CL A (B",
+   "days": 5,
+   "max_qty": 650,
+   "max_value": 5362
   },
   "LIN": {
    "symbol": "LIN",
    "name": "LINDE PLC NEW SHS (IRL)",
-   "days": 5,
-   "max_qty": 15295,
-   "max_value": 7367602
+   "days": 6,
+   "max_qty": 25137,
+   "max_value": 12582828
+  },
+  "LITE": {
+   "symbol": "LITE",
+   "name": "LUMENTUM HLGDS INC COM STK",
+   "days": 4,
+   "max_qty": 6631,
+   "max_value": 4990093
   },
   "LLY": {
    "symbol": "LLY",
    "name": "ELI LILLY AND CO;COM NPV",
    "days": 3,
-   "max_qty": 4130,
-   "max_value": 4884221
+   "max_qty": 2847,
+   "max_value": 3654580
   },
-  "LOW": {
-   "symbol": "LOW",
-   "name": "LOWES COMPANIES INC",
-   "days": 2,
-   "max_qty": 485,
-   "max_value": 88454
+  "LPTH": {
+   "symbol": "LPTH",
+   "name": "LIGHTPATH TECHNOLOGIES INC",
+   "days": 7,
+   "max_qty": 167807,
+   "max_value": 1330710
+  },
+  "LRMR": {
+   "symbol": "LRMR",
+   "name": "LARIMAR THERAPEUTICS INC",
+   "days": 4,
+   "max_qty": 443,
+   "max_value": 1022
+  },
+  "LRN": {
+   "symbol": "LRN",
+   "name": "STRIDE INC COM",
+   "days": 4,
+   "max_qty": 563,
+   "max_value": 45423
+  },
+  "LSCC": {
+   "symbol": "LSCC",
+   "name": "LATTICE SEMICONDUCTOR CORP",
+   "days": 1,
+   "max_qty": 11,
+   "max_value": 1139
   },
   "LSTR": {
    "symbol": "LSTR",
    "name": "LANDSTAR SYSTEM INC",
    "days": 1,
-   "max_qty": 3,
-   "max_value": 508
+   "max_qty": 277,
+   "max_value": 39159
+  },
+  "LUMN": {
+   "symbol": "LUMN",
+   "name": "LUMEN TECHNOLOGIES, INC. COM (",
+   "days": 4,
+   "max_qty": 484245,
+   "max_value": 2358273
+  },
+  "LYEL": {
+   "symbol": "LYEL",
+   "name": "LYELL IMMUNOPHARMA INC COM",
+   "days": 4,
+   "max_qty": 1399,
+   "max_value": 11178
   },
   "MA": {
    "symbol": "MA",
    "name": "MASTERCARD INCORPORATED CL A C",
+   "days": 2,
+   "max_qty": 4300,
+   "max_value": 2654906
+  },
+  "MBGL": {
+   "symbol": "MBGL",
+   "name": "MOBILITY GLOBAL INC COM WI",
    "days": 4,
-   "max_qty": 33125,
-   "max_value": 19712356
+   "max_qty": 1763,
+   "max_value": 32933
   },
   "MCD": {
    "symbol": "MCD",
    "name": "MCDONALDS CORP",
-   "days": 8,
-   "max_qty": 54472,
-   "max_value": 12904417
+   "days": 11,
+   "max_qty": 15107,
+   "max_value": 3753485
   },
   "MCHP": {
    "symbol": "MCHP",
    "name": "MICROCHIP TECHNOLOGY INC",
    "days": 2,
-   "max_qty": 159852,
-   "max_value": 13026339
+   "max_qty": 1180,
+   "max_value": 87934
   },
   "META": {
    "symbol": "META",
    "name": "META PLATFORMS, INC. CLASS A C",
-   "days": 8,
-   "max_qty": 76235,
-   "max_value": 56639556
+   "days": 12,
+   "max_qty": 221735,
+   "max_value": 135810470
   },
-  "MLI": {
-   "symbol": "MLI",
-   "name": "MUELLER INDS INC",
+  "MGM": {
+   "symbol": "MGM",
+   "name": "MGM RESORTS INTERNATIONAL COM",
+   "days": 3,
+   "max_qty": 18179,
+   "max_value": 536280
+  },
+  "MNDY": {
+   "symbol": "MNDY",
+   "name": "MONDAY COM LTD SHS IRS",
+   "days": 2,
+   "max_qty": 613,
+   "max_value": 55397
+  },
+  "MOH": {
+   "symbol": "MOH",
+   "name": "MOLINA HEALTHCARE,INC.",
+   "days": 6,
+   "max_qty": 1098,
+   "max_value": 227681
+  },
+  "MP": {
+   "symbol": "MP",
+   "name": "MP MATLS CORP COM",
+   "days": 11,
+   "max_qty": 285428,
+   "max_value": 10694987
+  },
+  "MPB": {
+   "symbol": "MPB",
+   "name": "MID PENN BANCORP,INC",
    "days": 1,
-   "max_qty": 82,
-   "max_value": 4960
+   "max_qty": 132,
+   "max_value": 4542
   },
   "MRNA": {
    "symbol": "MRNA",
    "name": "MODERNA INC COM",
-   "days": 6,
-   "max_qty": 5344,
-   "max_value": 1015413
-  },
-  "MRVL": {
-   "symbol": "MRVL",
-   "name": "MARVELL TECHNOLOGY INC",
-   "days": 4,
-   "max_qty": 4427,
-   "max_value": 1260278
+   "days": 10,
+   "max_qty": 237161,
+   "max_value": 53669534
   },
   "MSFT": {
    "symbol": "MSFT",
    "name": "MICROSOFT CORP;COM USD0.000012",
-   "days": 9,
-   "max_qty": 135349,
-   "max_value": 70047168
+   "days": 7,
+   "max_qty": 21134,
+   "max_value": 11180943
   },
-  "NBIS": {
-   "symbol": "NBIS",
-   "name": "NEBIUS GROUP N.V. CLASS A ORDI",
-   "days": 4,
-   "max_qty": 75936,
-   "max_value": 18008222
+  "MSI": {
+   "symbol": "MSI",
+   "name": "MOTOROLA SOLUTIONS INC COM NEW",
+   "days": 3,
+   "max_qty": 1966,
+   "max_value": 947278
+  },
+  "MSM": {
+   "symbol": "MSM",
+   "name": "MSC INDUSTRIAL DIRECT CO CL-A",
+   "days": 2,
+   "max_qty": 1494,
+   "max_value": 177368
+  },
+  "MTDR": {
+   "symbol": "MTDR",
+   "name": "MATADOR RES CO COM STK (TX)",
+   "days": 5,
+   "max_qty": 22491,
+   "max_value": 1348560
+  },
+  "MU": {
+   "symbol": "MU",
+   "name": "MICRON TECHNOLOGY INC",
+   "days": 10,
+   "max_qty": 16893,
+   "max_value": 14846244
+  },
+  "MX": {
+   "symbol": "MX",
+   "name": "MAGNACHIP SEMICONDUCTOR CORP N",
+   "days": 3,
+   "max_qty": 7539,
+   "max_value": 19526
+  },
+  "MXF": {
+   "symbol": "MXF",
+   "name": "MEXICO FUND INC",
+   "days": 1,
+   "max_qty": 130,
+   "max_value": 2618
+  },
+  "NATR": {
+   "symbol": "NATR",
+   "name": "NATURE'S SUNSHINE PRODUCTS INC",
+   "days": 1,
+   "max_qty": 90,
+   "max_value": 1130
+  },
+  "NDAQ": {
+   "symbol": "NDAQ",
+   "name": "NASDAQ INC.COM STK",
+   "days": 2,
+   "max_qty": 34,
+   "max_value": 3548
   },
   "NEGG": {
    "symbol": "NEGG",
    "name": "NEWEGG COMM INC COM SHS NEW US",
    "days": 6,
-   "max_qty": 3437,
-   "max_value": 39010
+   "max_qty": 1109,
+   "max_value": 10757
+  },
+  "NET": {
+   "symbol": "NET",
+   "name": "CLOUDFLARE INC CLASS A (DE)",
+   "days": 1,
+   "max_qty": 5224,
+   "max_value": 1701614
   },
   "NFLX": {
    "symbol": "NFLX",
    "name": "NETFLIX COM INC",
-   "days": 9,
-   "max_qty": 37699,
-   "max_value": 2661926
+   "days": 11,
+   "max_qty": 1073893,
+   "max_value": 72004526
   },
-  "NTRA": {
-   "symbol": "NTRA",
-   "name": "NATERA INC COM",
+  "NLCP": {
+   "symbol": "NLCP",
+   "name": "NEWLAKE CAP PARTNERS INC",
+   "days": 3,
+   "max_qty": 13700,
+   "max_value": 188238
+  },
+  "NLY": {
+   "symbol": "NLY",
+   "name": "ANNALY CAPITAL MANAGEMENT, INC",
    "days": 1,
-   "max_qty": 6,
-   "max_value": 2374
+   "max_qty": 8,
+   "max_value": 147
+  },
+  "NMCO": {
+   "symbol": "NMCO",
+   "name": "NUVEEN MUN CR OPPORTUNITIES FD",
+   "days": 7,
+   "max_qty": 27462,
+   "max_value": 245510
+  },
+  "NOW": {
+   "symbol": "NOW",
+   "name": "SERVICENOW INC COM",
+   "days": 3,
+   "max_qty": 70011,
+   "max_value": 11128949
+  },
+  "NTHI": {
+   "symbol": "NTHI",
+   "name": "NEONC TECHNOLOGIES HLDGS INC C",
+   "days": 5,
+   "max_qty": 6859,
+   "max_value": 18519
+  },
+  "NTWK": {
+   "symbol": "NTWK",
+   "name": "NETSOL TECHNOLOGIES INC COM ST",
+   "days": 2,
+   "max_qty": 272,
+   "max_value": 1689
+  },
+  "NVA": {
+   "symbol": "NVA",
+   "name": "NOVA MINERALS CORP COM",
+   "days": 1,
+   "max_qty": 20,
+   "max_value": 63
   },
   "NVDA": {
    "symbol": "NVDA",
    "name": "NVIDIA CORP",
-   "days": 9,
-   "max_qty": 63726,
-   "max_value": 14908698
+   "days": 11,
+   "max_qty": 342927,
+   "max_value": 74737510
   },
-  "NXPI": {
-   "symbol": "NXPI",
-   "name": "NXP SEMICONDUCTORS N V",
-   "days": 4,
-   "max_qty": 55029,
-   "max_value": 12943921
+  "NXG": {
+   "symbol": "NXG",
+   "name": "NXG NEXTGEN INFRASTRUCTURE INC",
+   "days": 3,
+   "max_qty": 375,
+   "max_value": 18758
+  },
+  "NXGL": {
+   "symbol": "NXGL",
+   "name": "NEXGEL INC COM NEW",
+   "days": 11,
+   "max_qty": 41259,
+   "max_value": 225274
+  },
+  "NXST": {
+   "symbol": "NXST",
+   "name": "NEXSTAR MEDIA GROUP, INC. COMM",
+   "days": 6,
+   "max_qty": 17441,
+   "max_value": 2899741
+  },
+  "OBDC": {
+   "symbol": "OBDC",
+   "name": "BLUE OWL CAPITAL CORPORATION",
+   "days": 1,
+   "max_qty": 5578,
+   "max_value": 57732
+  },
+  "OBIO": {
+   "symbol": "OBIO",
+   "name": "ORCHESTRA BIOMED HOLDINGS, INC",
+   "days": 1,
+   "max_qty": 170,
+   "max_value": 959
   },
   "OCFC": {
    "symbol": "OCFC",
    "name": "OCEANFIRST FINC'L CORP",
    "days": 2,
-   "max_qty": 8751,
-   "max_value": 144041
+   "max_qty": 10396,
+   "max_value": 183801
+  },
+  "ODFL": {
+   "symbol": "ODFL",
+   "name": "OLD DOMINION FREIGHT LINES INC",
+   "days": 2,
+   "max_qty": 97789,
+   "max_value": 18356951
+  },
+  "OIG": {
+   "symbol": "OIG",
+   "name": "ORION180 INS GROUP INC CL A",
+   "days": 6,
+   "max_qty": 7518,
+   "max_value": 67211
+  },
+  "OKLO": {
+   "symbol": "OKLO",
+   "name": "OKLO INC.",
+   "days": 10,
+   "max_qty": 139981,
+   "max_value": 3915269
+  },
+  "OMC": {
+   "symbol": "OMC",
+   "name": "OMNICOM GROUP INC",
+   "days": 5,
+   "max_qty": 26955,
+   "max_value": 2175808
   },
   "ON": {
    "symbol": "ON",
    "name": "ON SEMICONDUCTOR CORP",
-   "days": 2,
-   "max_qty": 105613,
-   "max_value": 8026588
+   "days": 5,
+   "max_qty": 30017,
+   "max_value": 2361437
+  },
+  "OPAL": {
+   "symbol": "OPAL",
+   "name": "OPAL FUELS INC COM CL A",
+   "days": 5,
+   "max_qty": 11638,
+   "max_value": 17806
   },
   "ORCL": {
    "symbol": "ORCL",
    "name": "ORACLE CORPORATION",
-   "days": 7,
-   "max_qty": 31446,
-   "max_value": 4266908
+   "days": 12,
+   "max_qty": 30069,
+   "max_value": 3774862
   },
-  "OTIS": {
-   "symbol": "OTIS",
-   "name": "OTIS WORLDWIDE CORP COM",
-   "days": 7,
-   "max_qty": 223,
-   "max_value": 14743
+  "ORRF": {
+   "symbol": "ORRF",
+   "name": "ORRSTOWN FINL SVCS INC",
+   "days": 2,
+   "max_qty": 554,
+   "max_value": 24736
   },
-  "PACS": {
-   "symbol": "PACS",
-   "name": "PACS GROUP INC COM",
+  "OSW": {
+   "symbol": "OSW",
+   "name": "ONESPAWORLD HLDGS LTD COM SHS",
+   "days": 4,
+   "max_qty": 2963,
+   "max_value": 71023
+  },
+  "OTF": {
+   "symbol": "OTF",
+   "name": "BLUE OWL TECHNOLOGY FIN CORP C",
    "days": 1,
-   "max_qty": 245,
-   "max_value": 10498
+   "max_qty": 1,
+   "max_value": 9
+  },
+  "OWLS": {
+   "symbol": "OWLS",
+   "name": "OBOOK HLDGS INC SHS CL A (CYM)",
+   "days": 5,
+   "max_qty": 2287,
+   "max_value": 7590
+  },
+  "PAM": {
+   "symbol": "PAM",
+   "name": "PAMPA ENERGIA S.A. (AR)",
+   "days": 3,
+   "max_qty": 12132,
+   "max_value": 914631
+  },
+  "PANL": {
+   "symbol": "PANL",
+   "name": "PANGEA LOGISTICS SOLUTIONS LTD",
+   "days": 1,
+   "max_qty": 161,
+   "max_value": 1291
+  },
+  "PAYC": {
+   "symbol": "PAYC",
+   "name": "PAYCOM SOFTWARE INC COM STK (D",
+   "days": 1,
+   "max_qty": 500,
+   "max_value": 134125
+  },
+  "PCQ": {
+   "symbol": "PCQ",
+   "name": "PIMCO CAL MUNI INC",
+   "days": 9,
+   "max_qty": 9123,
+   "max_value": 71707
+  },
+  "PCT": {
+   "symbol": "PCT",
+   "name": "PURECYCLE TECHNOLOGIES INC",
+   "days": 12,
+   "max_qty": 1193014,
+   "max_value": 3781854
+  },
+  "PDFS": {
+   "symbol": "PDFS",
+   "name": "PDF SOLUTIONS INC",
+   "days": 3,
+   "max_qty": 1243,
+   "max_value": 49061
+  },
+  "PED": {
+   "symbol": "PED",
+   "name": "PEDEVCO CORP COM PAR .20",
+   "days": 1,
+   "max_qty": 260,
+   "max_value": 4267
   },
   "PEP": {
    "symbol": "PEP",
    "name": "PEPSICO INC;CAP USD0.016666",
-   "days": 5,
-   "max_qty": 224948,
-   "max_value": 28505411
+   "days": 8,
+   "max_qty": 6462,
+   "max_value": 849688
   },
   "PG": {
    "symbol": "PG",
    "name": "PROCTER & GAMBLE;COM NPV",
-   "days": 5,
-   "max_qty": 637,
-   "max_value": 95926
+   "days": 10,
+   "max_qty": 71037,
+   "max_value": 11763017
+  },
+  "PHIO": {
+   "symbol": "PHIO",
+   "name": "PHIO PHARMACEUTICALS CORP COM",
+   "days": 1,
+   "max_qty": 7290,
+   "max_value": 6926
+  },
+  "PKG": {
+   "symbol": "PKG",
+   "name": "PACKAGING CORP OF AMERICA",
+   "days": 2,
+   "max_qty": 4896,
+   "max_value": 1246179
   },
   "PLTR": {
    "symbol": "PLTR",
    "name": "PALANTIR TECHNOLOGIES INC CL A",
-   "days": 6,
-   "max_qty": 15601,
-   "max_value": 2944689
+   "days": 12,
+   "max_qty": 12214,
+   "max_value": 2403104
   },
-  "PWR": {
-   "symbol": "PWR",
-   "name": "QUANTA SERVICES INC",
+  "PMN": {
+   "symbol": "PMN",
+   "name": "PROMIS NEUROSCIENCES INC COM N",
+   "days": 5,
+   "max_qty": 3398,
+   "max_value": 32893
+  },
+  "PODD": {
+   "symbol": "PODD",
+   "name": "INSULET CORP COM STK (DE)",
+   "days": 2,
+   "max_qty": 15034,
+   "max_value": 2013504
+  },
+  "PRLB": {
+   "symbol": "PRLB",
+   "name": "PROTO LABS INC COM STK (MN)",
    "days": 1,
-   "max_qty": 392,
-   "max_value": 282068
+   "max_qty": 2200,
+   "max_value": 190102
   },
-  "PYPL": {
-   "symbol": "PYPL",
-   "name": "PAYPAL HLDGS INC COM",
-   "days": 3,
-   "max_qty": 587,
-   "max_value": 32256
+  "PSEC": {
+   "symbol": "PSEC",
+   "name": "PROSPECT CAPITAL CORP COM STK",
+   "days": 9,
+   "max_qty": 259898,
+   "max_value": 387248
   },
   "QCOM": {
    "symbol": "QCOM",
    "name": "QUALCOMM INC",
    "days": 4,
-   "max_qty": 53575,
-   "max_value": 9755472
+   "max_qty": 172894,
+   "max_value": 30844290
   },
   "QQQ": {
    "symbol": "QQQ",
    "name": "INVESCO QQQ TR",
-   "days": 7,
-   "max_qty": 212112,
-   "max_value": 160723626
+   "days": 9,
+   "max_qty": 2409848,
+   "max_value": 1716293746
+  },
+  "RAPP": {
+   "symbol": "RAPP",
+   "name": "RAPPORT THERAPEUTICS INC COM",
+   "days": 3,
+   "max_qty": 156377,
+   "max_value": 3518482
+  },
+  "RCL": {
+   "symbol": "RCL",
+   "name": "ROYAL CARIBBEAN GROUP",
+   "days": 3,
+   "max_qty": 79388,
+   "max_value": 22899469
+  },
+  "REAL": {
+   "symbol": "REAL",
+   "name": "THE REALREAL INC COM",
+   "days": 2,
+   "max_qty": 141247,
+   "max_value": 1467556
+  },
+  "REI": {
+   "symbol": "REI",
+   "name": "RING ENERGY, INC. COMMON STOCK",
+   "days": 1,
+   "max_qty": 2950,
+   "max_value": 3983
   },
   "RELL": {
    "symbol": "RELL",
    "name": "RICHARDSON ELECTRONICS LTD",
+   "days": 2,
+   "max_qty": 447,
+   "max_value": 8600
+  },
+  "RENT": {
+   "symbol": "RENT",
+   "name": "RENT THE RUNWAY INC",
+   "days": 8,
+   "max_qty": 430083,
+   "max_value": 1212834
+  },
+  "RMI": {
+   "symbol": "RMI",
+   "name": "RIVERNORTH OPPORTUNISTIC MUN",
+   "days": 4,
+   "max_qty": 2537,
+   "max_value": 35036
+  },
+  "ROK": {
+   "symbol": "ROK",
+   "name": "ROCKWELL AUTOMATION INC.",
    "days": 1,
-   "max_qty": 750,
-   "max_value": 14978
+   "max_qty": 1447,
+   "max_value": 618983
   },
-  "ROIV": {
-   "symbol": "ROIV",
-   "name": "ROIVANT SCIENCES LTD SHS (BMU)",
-   "days": 2,
-   "max_qty": 3373,
-   "max_value": 115390
-  },
-  "RSG": {
-   "symbol": "RSG",
-   "name": "REPUBLIC SERVICES INC",
-   "days": 2,
-   "max_qty": 500,
-   "max_value": 108420
-  },
-  "SE": {
-   "symbol": "SE",
-   "name": "SEA LTD ADR (CYM)",
+  "ROL": {
+   "symbol": "ROL",
+   "name": "ROLLINS INC",
    "days": 6,
-   "max_qty": 9820,
-   "max_value": 951067
+   "max_qty": 73077,
+   "max_value": 2580349
+  },
+  "ROOT": {
+   "symbol": "ROOT",
+   "name": "ROOT INC CL A NEW (DE)",
+   "days": 3,
+   "max_qty": 164,
+   "max_value": 8580
+  },
+  "SEI": {
+   "symbol": "SEI",
+   "name": "SOLARIS ENERGY INFRASTRUCTURE,",
+   "days": 9,
+   "max_qty": 455171,
+   "max_value": 29736321
+  },
+  "SEPN": {
+   "symbol": "SEPN",
+   "name": "SEPTERNA INC COM",
+   "days": 1,
+   "max_qty": 16428,
+   "max_value": 646442
+  },
+  "SEVN": {
+   "symbol": "SEVN",
+   "name": "SEVEN HILLS RLTY TR COM",
+   "days": 7,
+   "max_qty": 69522,
+   "max_value": 472054
+  },
+  "SHEN": {
+   "symbol": "SHEN",
+   "name": "SHENANDOAH TELECOMM CO.",
+   "days": 3,
+   "max_qty": 896,
+   "max_value": 9166
+  },
+  "SLQT": {
+   "symbol": "SLQT",
+   "name": "SELECTQUOTE, INC.",
+   "days": 3,
+   "max_qty": 386673,
+   "max_value": 131469
   },
   "SLV": {
    "symbol": "SLV",
    "name": "ISHARES SILVER TRUST",
-   "days": 6,
-   "max_qty": 220483,
-   "max_value": 12130975
+   "days": 9,
+   "max_qty": 2653585,
+   "max_value": 136686163
   },
   "SNOW": {
    "symbol": "SNOW",
    "name": "SNOWFLAKE INC COMMON STOCK (DE",
-   "days": 6,
-   "max_qty": 18882,
-   "max_value": 6804506
+   "days": 3,
+   "max_qty": 75856,
+   "max_value": 24244336
   },
   "SNPS": {
    "symbol": "SNPS",
    "name": "SYNOPSYS INC",
-   "days": 3,
-   "max_qty": 100,
-   "max_value": 48990
+   "days": 6,
+   "max_qty": 26396,
+   "max_value": 11151782
   },
-  "SPCX": {
-   "symbol": "SPCX",
-   "name": "SPACE EXPL TECHNOLOGIES CORP C",
-   "days": 7,
-   "max_qty": 550793,
-   "max_value": 83092632
+  "SONO": {
+   "symbol": "SONO",
+   "name": "SONOS INC COM",
+   "days": 1,
+   "max_qty": 9,
+   "max_value": 161
+  },
+  "SOPH": {
+   "symbol": "SOPH",
+   "name": "SOPHIA GENETICS SA SHS (CHE)",
+   "days": 5,
+   "max_qty": 1695,
+   "max_value": 11967
+  },
+  "SPCB": {
+   "symbol": "SPCB",
+   "name": "SUPERCOM LTD NEW ORD SH PAR VA",
+   "days": 3,
+   "max_qty": 1168,
+   "max_value": 11260
   },
   "SPGI": {
    "symbol": "SPGI",
    "name": "S&P GLOBAL INC. COM",
-   "days": 4,
-   "max_qty": 12464,
-   "max_value": 4925524
+   "days": 3,
+   "max_qty": 9606,
+   "max_value": 4080725
+  },
+  "SPXC": {
+   "symbol": "SPXC",
+   "name": "SPX TECHNOLOGIES INC COM",
+   "days": 1,
+   "max_qty": 12,
+   "max_value": 1924
   },
   "SPY": {
    "symbol": "SPY",
    "name": "STATE STREET SPDR S&P 500 ETF",
-   "days": 8,
-   "max_qty": 101039,
-   "max_value": 78529532
+   "days": 12,
+   "max_qty": 2324860,
+   "max_value": 1766823854
   },
-  "STKH": {
-   "symbol": "STKH",
-   "name": "STEAKHOLDER FOODS LTD SPONSORE",
+  "SRRK": {
+   "symbol": "SRRK",
+   "name": "SCHOLAR ROCK HLDG CORP",
+   "days": 3,
+   "max_qty": 24689,
+   "max_value": 993485
+  },
+  "STC": {
+   "symbol": "STC",
+   "name": "STEWART INFORMATION SVCS CORP",
+   "days": 1,
+   "max_qty": 3810,
+   "max_value": 200292
+  },
+  "STRZ": {
+   "symbol": "STRZ",
+   "name": "STARZ ENTMT CORP COM (CAN)",
    "days": 4,
-   "max_qty": 208911,
-   "max_value": 160861
+   "max_qty": 7213,
+   "max_value": 156811
   },
-  "STNG": {
-   "symbol": "STNG",
-   "name": "SCORPIO TANKERS INC COM NEW",
-   "days": 2,
-   "max_qty": 708,
-   "max_value": 62410
+  "STVN": {
+   "symbol": "STVN",
+   "name": "STEVANATO GROUP S P A HS USD (",
+   "days": 1,
+   "max_qty": 17873,
+   "max_value": 344055
+  },
+  "STWD": {
+   "symbol": "STWD",
+   "name": "STARWOOD PROPERTY TRUST, INC",
+   "days": 1,
+   "max_qty": 2890,
+   "max_value": 36356
+  },
+  "SUNS": {
+   "symbol": "SUNS",
+   "name": "SUNRISE RLTY TR INC COM",
+   "days": 3,
+   "max_qty": 560,
+   "max_value": 3819
   },
   "SYK": {
    "symbol": "SYK",
    "name": "STRYKER CORP",
-   "days": 1,
-   "max_qty": 1124,
-   "max_value": 309550
+   "days": 5,
+   "max_qty": 1728,
+   "max_value": 514253
   },
   "T": {
    "symbol": "T",
    "name": "AT&T INC. COM",
+   "days": 2,
+   "max_qty": 123896,
+   "max_value": 2911556
+  },
+  "TASK": {
+   "symbol": "TASK",
+   "name": "TASKUS INC CL A (DE)",
+   "days": 2,
+   "max_qty": 2642,
+   "max_value": 21876
+  },
+  "TBBK": {
+   "symbol": "TBBK",
+   "name": "THE BANCORP BANK",
    "days": 3,
-   "max_qty": 5627,
-   "max_value": 139943
+   "max_qty": 9024,
+   "max_value": 447590
+  },
+  "TBI": {
+   "symbol": "TBI",
+   "name": "TRUEBLUE, INC.",
+   "days": 1,
+   "max_qty": 168,
+   "max_value": 1391
+  },
+  "TCBX": {
+   "symbol": "TCBX",
+   "name": "THIRD COAST BANCSHARES INC COM",
+   "days": 1,
+   "max_qty": 96,
+   "max_value": 3879
+  },
+  "TEAM": {
+   "symbol": "TEAM",
+   "name": "ATLASSIAN CORP CL A(DE)",
+   "days": 4,
+   "max_qty": 13837,
+   "max_value": 2824132
   },
   "TEL": {
    "symbol": "TEL",
    "name": "TE CONNECTIVITY PLC ORD SHS",
+   "days": 3,
+   "max_qty": 53496,
+   "max_value": 11835455
+  },
+  "TENB": {
+   "symbol": "TENB",
+   "name": "TENABLE HLDGS INC COM (DE)",
+   "days": 5,
+   "max_qty": 47458,
+   "max_value": 2345272
+  },
+  "THM": {
+   "symbol": "THM",
+   "name": "INTERNATIONAL TOWER HILL MINES",
    "days": 4,
-   "max_qty": 828,
-   "max_value": 177449
+   "max_qty": 11903,
+   "max_value": 26068
+  },
+  "THRM": {
+   "symbol": "THRM",
+   "name": "GENTHERM INC COM STK (MI)",
+   "days": 8,
+   "max_qty": 2829,
+   "max_value": 82154
+  },
+  "TIMB": {
+   "symbol": "TIMB",
+   "name": "TIM S.A. SPONSORED ADR",
+   "days": 6,
+   "max_qty": 125858,
+   "max_value": 2315787
+  },
+  "TLSI": {
+   "symbol": "TLSI",
+   "name": "TRISALUS LIFE SCIENCES INC COM",
+   "days": 3,
+   "max_qty": 2643,
+   "max_value": 9330
   },
   "TLT": {
    "symbol": "TLT",
    "name": "ISHARES BARCLAYS 20+ YEAR TREA",
-   "days": 6,
-   "max_qty": 176564,
-   "max_value": 13733148
+   "days": 9,
+   "max_qty": 249454,
+   "max_value": 20203279
   },
   "TNDM": {
    "symbol": "TNDM",
    "name": "TANDEM DIABETES CARE INC COM N",
-   "days": 3,
-   "max_qty": 22161,
-   "max_value": 347484
+   "days": 5,
+   "max_qty": 305634,
+   "max_value": 5049074
+  },
+  "TRTX": {
+   "symbol": "TRTX",
+   "name": "TPG RE FIN TR INC COM STK (MD)",
+   "days": 1,
+   "max_qty": 20051,
+   "max_value": 125920
   },
   "TSCO": {
    "symbol": "TSCO",
    "name": "TRACTOR SUPPLY CO",
-   "days": 3,
-   "max_qty": 51608,
-   "max_value": 1726288
+   "days": 4,
+   "max_qty": 5382,
+   "max_value": 176583
   },
   "TSLA": {
    "symbol": "TSLA",
    "name": "TESLA INC COM STK (TX)",
-   "days": 8,
-   "max_qty": 219841,
-   "max_value": 81470876
+   "days": 9,
+   "max_qty": 604753,
+   "max_value": 214517984
   },
   "TSM": {
    "symbol": "TSM",
    "name": "TAIWAN SEMICON MFG LTD(5COMSH)",
-   "days": 6,
-   "max_qty": 7270,
-   "max_value": 3329587
+   "days": 4,
+   "max_qty": 17724,
+   "max_value": 7534118
   },
-  "TTD": {
-   "symbol": "TTD",
-   "name": "THE TRADE DESK INC COM CL A (N",
-   "days": 3,
-   "max_qty": 1900,
-   "max_value": 22648
+  "TTMI": {
+   "symbol": "TTMI",
+   "name": "TTM TECHNOLOGIES INC",
+   "days": 2,
+   "max_qty": 555,
+   "max_value": 48163
   },
-  "TYL": {
-   "symbol": "TYL",
-   "name": "TYLER TECHNOLOGIES INC",
-   "days": 7,
-   "max_qty": 39770,
-   "max_value": 13057286
+  "TWST": {
+   "symbol": "TWST",
+   "name": "TWIST BIOSCIENCE CORP COM (DE)",
+   "days": 2,
+   "max_qty": 314,
+   "max_value": 50193
   },
-  "UHALB": {
-   "symbol": "UHALB",
-   "name": "AMERCO COM SER N",
-   "days": 3,
-   "max_qty": 657,
-   "max_value": 34966
+  "UBER": {
+   "symbol": "UBER",
+   "name": "UBER TECHNOLOGIES INC COM (DE)",
+   "days": 12,
+   "max_qty": 693389,
+   "max_value": 48779916
   },
   "UNH": {
    "symbol": "UNH",
    "name": "UNITEDHEALTH GROUP INC",
-   "days": 4,
-   "max_qty": 6770,
-   "max_value": 2562580
+   "days": 5,
+   "max_qty": 8380,
+   "max_value": 3503594
   },
-  "USPH": {
-   "symbol": "USPH",
-   "name": "U.S.PHYSICAL THERAPY INC",
-   "days": 8,
-   "max_qty": 1886,
-   "max_value": 157726
+  "UNIT": {
+   "symbol": "UNIT",
+   "name": "UNITI GROUP INC NEW COM (MD)",
+   "days": 4,
+   "max_qty": 8666,
+   "max_value": 48876
+  },
+  "UPBD": {
+   "symbol": "UPBD",
+   "name": "UPBOUND GRP INC COM",
+   "days": 3,
+   "max_qty": 8344,
+   "max_value": 142516
+  },
+  "UTHR": {
+   "symbol": "UTHR",
+   "name": "UNITED THERAPEUTICS CORP",
+   "days": 5,
+   "max_qty": 81,
+   "max_value": 43183
   },
   "UXIN": {
    "symbol": "UXIN",
    "name": "UXIN LTD ADS NEW 2023",
-   "days": 2,
-   "max_qty": 761,
-   "max_value": 860
+   "days": 3,
+   "max_qty": 2294,
+   "max_value": 2363
   },
   "V": {
    "symbol": "V",
    "name": "VISA INC CLASS A COM",
-   "days": 7,
-   "max_qty": 2025,
-   "max_value": 788272
+   "days": 12,
+   "max_qty": 160728,
+   "max_value": 65985273
+  },
+  "VISN": {
+   "symbol": "VISN",
+   "name": "VISTANCE NETWORKS, INC. COMMON",
+   "days": 10,
+   "max_qty": 39208,
+   "max_value": 239169
+  },
+  "VRSK": {
+   "symbol": "VRSK",
+   "name": "VERISK ANALYTICS INC COM",
+   "days": 1,
+   "max_qty": 644,
+   "max_value": 121851
   },
   "VST": {
    "symbol": "VST",
    "name": "VISTRA CORP",
-   "days": 3,
-   "max_qty": 25778,
-   "max_value": 3609436
+   "days": 4,
+   "max_qty": 21281,
+   "max_value": 2982745
   },
   "VZ": {
    "symbol": "VZ",
    "name": "VERIZON COMMUNICATIONS",
-   "days": 7,
-   "max_qty": 264365,
-   "max_value": 11507808
-  },
-  "WDAY": {
-   "symbol": "WDAY",
-   "name": "WORKDAY INC COM STK CL A (DE)",
    "days": 5,
-   "max_qty": 1716,
-   "max_value": 323037
+   "max_qty": 48027,
+   "max_value": 2132399
+  },
+  "W": {
+   "symbol": "W",
+   "name": "WAYFAIR INC CL A COM STK (DE)",
+   "days": 2,
+   "max_qty": 1081,
+   "max_value": 120996
+  },
+  "WCC": {
+   "symbol": "WCC",
+   "name": "WESCO INTERNATIONAL INC",
+   "days": 1,
+   "max_qty": 110,
+   "max_value": 40338
   },
   "WDC": {
    "symbol": "WDC",
    "name": "WESTERN DIGITAL CORP",
+   "days": 3,
+   "max_qty": 3431,
+   "max_value": 1208433
+  },
+  "WEC": {
+   "symbol": "WEC",
+   "name": "WEC ENERGY GROUP INC COM STK (",
    "days": 4,
-   "max_qty": 150,
-   "max_value": 58996
+   "max_qty": 19210,
+   "max_value": 2202042
   },
   "WFC": {
    "symbol": "WFC",
    "name": "WELLS FARGO & CO(NEW)",
-   "days": 4,
-   "max_qty": 9106,
-   "max_value": 728935
+   "days": 5,
+   "max_qty": 37980,
+   "max_value": 3129172
   },
   "WMT": {
    "symbol": "WMT",
    "name": "WAL-MART INC (DE)",
+   "days": 8,
+   "max_qty": 103670,
+   "max_value": 12317033
+  },
+  "WSM": {
+   "symbol": "WSM",
+   "name": "WILLIAMS-SONOMA INC",
+   "days": 2,
+   "max_qty": 3357,
+   "max_value": 846065
+  },
+  "WTW": {
+   "symbol": "WTW",
+   "name": "WILLIS TOWERS WATSON PUB LTD C",
+   "days": 1,
+   "max_qty": 19937,
+   "max_value": 6187647
+  },
+  "WW": {
+   "symbol": "WW",
+   "name": "WW INTL INC COM NEW",
    "days": 4,
-   "max_qty": 127341,
-   "max_value": 14399720
+   "max_qty": 1230,
+   "max_value": 17368
   },
   "XLB": {
    "symbol": "XLB",
    "name": "SELECT SECTOR SPDR TR STATE ST",
-   "days": 5,
-   "max_qty": 255690,
-   "max_value": 12597846
+   "days": 3,
+   "max_qty": 158096,
+   "max_value": 8099258
   },
   "XLC": {
    "symbol": "XLC",
    "name": "SELECT SECTOR SPDR TR STATE ST",
-   "days": 8,
-   "max_qty": 3445659,
-   "max_value": 380125101
+   "days": 6,
+   "max_qty": 60958,
+   "max_value": 6431679
   },
   "XLE": {
    "symbol": "XLE",
    "name": "SELECT SECTOR SPDR TR STATE ST",
-   "days": 7,
-   "max_qty": 631346,
-   "max_value": 41675149
+   "days": 9,
+   "max_qty": 833461,
+   "max_value": 57783851
   },
   "XLF": {
    "symbol": "XLF",
    "name": "SELECT SECTOR SPDR TR STATE ST",
-   "days": 8,
-   "max_qty": 1420782,
-   "max_value": 75869759
+   "days": 10,
+   "max_qty": 1150566,
+   "max_value": 62728858
   },
   "XLI": {
    "symbol": "XLI",
    "name": "SELECT SECTOR SPDR TR STATE ST",
-   "days": 6,
-   "max_qty": 146365,
-   "max_value": 25113307
+   "days": 7,
+   "max_qty": 420804,
+   "max_value": 70594079
   },
   "XLK": {
    "symbol": "XLK",
    "name": "SELECT SECTOR SPDR TR STATE ST",
-   "days": 3,
-   "max_qty": 89,
-   "max_value": 17605
+   "days": 6,
+   "max_qty": 279111,
+   "max_value": 51758344
   },
   "XLP": {
    "symbol": "XLP",
    "name": "STATE STREET CONSUMER STAPLES",
-   "days": 7,
-   "max_qty": 361032,
-   "max_value": 29099179
+   "days": 9,
+   "max_qty": 966005,
+   "max_value": 84187336
   },
   "XLRE": {
    "symbol": "XLRE",
    "name": "SELECT SECTOR SPDR TR STATE ST",
    "days": 7,
-   "max_qty": 30730,
-   "max_value": 1288202
+   "max_qty": 39009,
+   "max_value": 1625505
   },
   "XLU": {
    "symbol": "XLU",
    "name": "SELECT SECTOR SPDR TR STATE ST",
-   "days": 4,
-   "max_qty": 24557,
-   "max_value": 968528
+   "days": 5,
+   "max_qty": 1643797,
+   "max_value": 69039474
   },
   "XLV": {
    "symbol": "XLV",
    "name": "SELECT SECTOR SPDR TR ST ST HE",
-   "days": 6,
-   "max_qty": 2344,
-   "max_value": 403145
+   "days": 8,
+   "max_qty": 230157,
+   "max_value": 40671043
   },
   "XLY": {
    "symbol": "XLY",
    "name": "STATE STREET CONSUMER DISCRETI",
-   "days": 3,
-   "max_qty": 625,
-   "max_value": 68775
+   "days": 5,
+   "max_qty": 6755,
+   "max_value": 763990
   },
   "XOM": {
    "symbol": "XOM",
    "name": "EXXONMOBIL HLDGS CORPORATION",
+   "days": 9,
+   "max_qty": 363533,
+   "max_value": 65065136
+  },
+  "XYL": {
+   "symbol": "XYL",
+   "name": "XYLEM INC COM STK",
    "days": 7,
-   "max_qty": 6670,
-   "max_value": 1115331
+   "max_qty": 25176,
+   "max_value": 2586582
+  },
+  "Z": {
+   "symbol": "Z",
+   "name": "ZILLOW GROUP INC CL C CAP STK",
+   "days": 2,
+   "max_qty": 30,
+   "max_value": 944
   },
   "ZTS": {
    "symbol": "ZTS",
    "name": "ZOETIS INC. CLASS A COM STK",
    "days": 3,
-   "max_qty": 572,
-   "max_value": 43272
+   "max_qty": 810,
+   "max_value": 64298
+  },
+  "ZYME": {
+   "symbol": "ZYME",
+   "name": "ZYMEWORKS INC COM(DE)",
+   "days": 1,
+   "max_qty": 2,
+   "max_value": 58
   }
  }
 }

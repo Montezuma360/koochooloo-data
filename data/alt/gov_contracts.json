@@ -1,17 +1,8 @@
 {
- "updated": "2026-11-14T14:37:36Z",
+ "updated": "2026-11-17T00:10:24Z",
  "window_days": 7,
  "note": "Largest federal contract awards with activity in the last 7 days (USAspending.gov). Amount is the award's total value, not this week's payment.",
  "awards": [
-  {
-   "award_id": "DENA0003525",
-   "recipient": "NATIONAL TECHNOLOGY & ENGINEERING SOLUTIONS OF SANDIA, LLC",
-   "ticker": null,
-   "amount": 44093914875.26,
-   "agency": "Department of Energy",
-   "start": "2017-01-18",
-   "description": "IGF::CL,CT::IGF CONTRACT AWARD DE-NA0003525 TO THE NATIONAL TECHNOLOGY&ENGINEERING SOLUTIONS OF SANDIA, LLC (NTESS) FOR THE MANAGEMENT AND OPERATION OF THE DEPA"
-  },
   {
    "award_id": "DEAC2701RV14136",
    "recipient": "BECHTEL NATIONAL, INC.",
@@ -31,13 +22,13 @@
    "description": "PERFORMANCE-BASED CONTRACT FOR MANAGEMENT AND OPERATION OF ARGONNE NATIONAL LABORATORY"
   },
   {
-   "award_id": "DEAC0276SF00515",
-   "recipient": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+   "award_id": "DENA0003624",
+   "recipient": "MISSION SUPPORT & TEST SERVICES LLC",
    "ticker": null,
-   "amount": 15120780108.84,
+   "amount": 7933559692.74,
    "agency": "Department of Energy",
-   "start": "1978-11-20",
-   "description": "OPERATION AND MAINTENANCE                                   LINEAR ACCELLERATOR"
+   "start": "2017-08-01",
+   "description": "IGF::CL,CT::IGF CONTRACT AWARD DE-NA0003624 TO THE MISSION SUPPORT AND TEST SERVICES LLC (MSTS) FOR THE MANAGEMENT AND OPERATION OF THE DEPARTMENT OF ENERGY NAT"
   },
   {
    "award_id": "70Z02326C93210001",
@@ -58,6 +49,24 @@
    "description": "DEBT MANAGEMENT AND COLLECTIONS SYSTEM (DMCS) IGF::CT::IGF"
   },
   {
+   "award_id": "DJJODT7C0003",
+   "recipient": "THE GEO GROUP, INC.",
+   "ticker": "GEO",
+   "amount": 811355480.94,
+   "agency": "Department of Justice",
+   "start": "2007-04-20",
+   "description": "DETENTION SERVICES - SAN DIEGO"
+  },
+  {
+   "award_id": "693KA923F00076",
+   "recipient": "PTSI MANAGED SERVICES INC",
+   "ticker": null,
+   "amount": 721181569.44,
+   "agency": "Department of Transportation",
+   "start": "2023-03-30",
+   "description": "THE T5 CONTRACT WILL SUPPORT IMPLEMENTATION OF THE FEDERAL AVIATION ADMINISTRATION AVIATION CIP AND CERTAIN REIMBURSABLE PROGRAMS INCLUDING THOSE ARISING FROM A"
+  },
+  {
    "award_id": "70B01C26F00000188",
    "recipient": "COCHRANE USA INC",
    "ticker": null,
@@ -76,24 +85,6 @@
    "description": "THE PURPOSE OF THIS CONTRACT IS TO ACQUIRE SCIENTIFIC RESEARCH SERVICES THAT CONCEIVES, DEVELOPS AND APPLIES SPACE, FIELD-DEPLOYED (I.E. AIRBORNE AND IN SITU) A"
   },
   {
-   "award_id": "36C10D23N0010",
-   "recipient": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
-   "ticker": "IBM",
-   "amount": 489179818.63,
-   "agency": "Department of Veterans Affairs",
-   "start": "2023-04-15",
-   "description": "BENEFITS TRANSFORMATION PLATFORM"
-  },
-  {
-   "award_id": "47QFCA19F0050",
-   "recipient": "CACI, INC. - FEDERAL",
-   "ticker": null,
-   "amount": 449655716.06,
-   "agency": "General Services Administration",
-   "start": "2019-07-22",
-   "description": "EXECUTE TASK ORDER FOR COMMERCIAL BASED TECHNOLOGY ANALYSIS (CBTA."
-  },
-  {
    "award_id": "36C10B24F0237",
    "recipient": "DELOITTE CONSULTING LLP",
    "ticker": null,
@@ -103,15 +94,6 @@
    "description": "THIS REQUIREMENT SHALL PROVIDE SUPPORT WHICH SHALL INCLUDE: CAPABILITY DELIVERY LIFECYCLE MANAGEMENT, ENHANCEMENT/DEVELOPMENT DELIVERY, CONFIGURATION, ADDITIONA"
   },
   {
-   "award_id": "75N91024F00011",
-   "recipient": "LEIDOS BIOMEDICAL RESEARCH INC",
-   "ticker": null,
-   "amount": 398925092.88,
-   "agency": "Department of Health and Human Services",
-   "start": "2024-09-28",
-   "description": "NCI FY25 OPERATIONAL TASK ORDER"
-  },
-  {
    "award_id": "36C10B22N10280026",
    "recipient": "VETERANS EZ INFO INC.",
    "ticker": null,
@@ -119,15 +101,6 @@
    "agency": "Department of Veterans Affairs",
    "start": "2022-09-28",
    "description": "THIS TO IS FOR HEALTH MIDDLEWARE AND DATA MANAGEMENT (HMDM) DEVELOPMENT, SECURITY, AND OPERATIONS (DEVSECOPS) SUPPORT"
-  },
-  {
-   "award_id": "47QFRA19F0014",
-   "recipient": "CGI FEDERAL INC.",
-   "ticker": null,
-   "amount": 334021572.04,
-   "agency": "General Services Administration",
-   "start": "2019-06-20",
-   "description": "DYNAMIC AND EVOLVING FEDERAL ENTERPRISE NETWORK DEFENSE GROUP C DEFEND C"
   },
   {
    "award_id": "75A50123F33006",
@@ -148,6 +121,15 @@
    "description": "THE PURPOSE OF DMCS IS TO MANAGE THE DEFAULT LOAN PORTFOLIO, AND STORE, MANAGE, PROTECT, AND PROVIDE STUDENT LOAN DEBTORS IN DEFAULT AVAILABLE INFORMATION UNDER"
   },
   {
+   "award_id": "47QFCA25F0033",
+   "recipient": "BOOZ ALLEN HAMILTON INC",
+   "ticker": "BAH",
+   "amount": 326922529.0,
+   "agency": "General Services Administration",
+   "start": "2025-09-12",
+   "description": "AFRL SHADOW RAPTOR"
+  },
+  {
    "award_id": "89303722FEM400210",
    "recipient": "SAVANNAH RIVER MISSION COMPLETION, LLC",
    "ticker": null,
@@ -155,6 +137,15 @@
    "agency": "Department of Energy",
    "start": "2022-06-27",
    "description": "THIS AWARD IS FOR THE SAVANNAH RIVER INTEGRATED MISSION COMPLETION CONTRACT - TASK ORDER 5 (SALTSTONE DISPOSAL UNITS 10-12)."
+  },
+  {
+   "award_id": "HHS0001",
+   "recipient": "PERATON ENTERPRISE SOLUTIONS LLC",
+   "ticker": null,
+   "amount": 317457831.44,
+   "agency": "Department of Health and Human Services",
+   "start": "2008-09-29",
+   "description": "EDS TO#3, CONTRACTOR OWNED, CONTRACTOR OPERATED HOSTED DATA CENTER"
   },
   {
    "award_id": "80TECH24CA002",
@@ -178,10 +169,19 @@
    "award_id": "70B04C23F00000074",
    "recipient": "ACCENTURE FEDERAL SERVICES LLC",
    "ticker": null,
-   "amount": 277857783.13,
+   "amount": 287757783.13,
    "agency": "Department of Homeland Security",
    "start": "2023-01-25",
    "description": "CBP'S DATA CENTER SUPPORT SERVICES (DCSS)."
+  },
+  {
+   "award_id": "47PH0825F0006",
+   "recipient": "BRASFIELD & GORRIE LLC",
+   "ticker": null,
+   "amount": 266966057.0,
+   "agency": "General Services Administration",
+   "start": "2024-12-13",
+   "description": "DESIGN BUILD CONSTRUCTION FOR GATEWAY LAND PORT OF ENTRY MODERNIZATION PROJECT, BROWNSVILLE, TX."
   },
   {
    "award_id": "80GSFC23CA052",
@@ -191,6 +191,15 @@
    "agency": "National Aeronautics and Space Administration",
    "start": "2023-09-15",
    "description": "THE PURPOSE OF THIS CONTRACT IS TO ACQUIRE REPAIRS, OPERATIONS & MAINTENANCE, AND ENGINEERING (ROME) AND RELATED SERVICES FOR THE GODDARD SPACE FLIGHT CENTER (G"
+  },
+  {
+   "award_id": "12445126C0001",
+   "recipient": "KIEWIT INFRASTRUCTURE SOUTH CO",
+   "ticker": null,
+   "amount": 260562774.7,
+   "agency": "Department of Agriculture",
+   "start": "2025-11-06",
+   "description": "MORATORIUM EXCEPTION\"  BLI DDVAK725 HURRICANE HELENE VCT DISASTER RECON DESIGN-BUILD HURRICANE HELENE IN VA"
   },
   {
    "award_id": "0008",
@@ -211,22 +220,31 @@
    "description": "DOI EIS DATA SERVICES"
   },
   {
-   "award_id": "75A50122C00061",
-   "recipient": "MAPP BIOPHARMACEUTICAL, INC.",
+   "award_id": "47QFCA20F0066",
+   "recipient": "INNOVATIVE MANAGEMENT CONCEPTS, INC",
    "ticker": null,
-   "amount": 220916161.58,
-   "agency": "Department of Health and Human Services",
-   "start": "2022-09-30",
-   "description": "PROCUREMENT OF THERAPEUTICS FOR EBOLA, SUDAN AND MARBURG VIRUSES"
+   "amount": 242256949.56,
+   "agency": "General Services Administration",
+   "start": "2020-09-17",
+   "description": "THE PURPOSE OF THIS TO IS TO PROVIDE MISSION CRITICAL C4 AND IT SYSTEM SUPPORT TO ESIM, ITS SUBORDINATE UNITS, AND ITS STRATEGIC AND OPERATIONAL PARTNERS."
   },
   {
-   "award_id": "36C10F23C0007",
-   "recipient": "WALSH CONSTRUCTION COMPANY II, LLC",
+   "award_id": "91003126F0022",
+   "recipient": "NELNET SERVICING LLC",
    "ticker": null,
-   "amount": 215862913.0,
-   "agency": "Department of Veterans Affairs",
-   "start": "2023-09-22",
-   "description": "CONSTRUCTION LONG TERM SPINAL CORD INJURY VAMC NORTH DALLAS, TX"
+   "amount": 210650841.99,
+   "agency": "Department of Education",
+   "start": "2026-04-01",
+   "description": "OPERATIONS AND MAINTENANCE (O&M) TASK ORDER FOR STUDENT LOAN SERVICING IN ACCORDANCE WITH THE REQUIREMENTS OF THE USDS CONTRACT. ALL WORK AND DELIVERABLES PROVI"
+  },
+  {
+   "award_id": "75FCMC22F0024",
+   "recipient": "A SQUARE GROUP LLC",
+   "ticker": null,
+   "amount": 208572278.63,
+   "agency": "Department of Health and Human Services",
+   "start": "2022-02-15",
+   "description": "NITAAC CIO-SP3 SMALL BUSINESS TASK ORDER OF RE-COMPETED WMS REQUIREMENT"
   },
   {
    "award_id": "HHSP233201500144G",
@@ -247,24 +265,6 @@
    "description": "INTERFACE REGION IMAGING SPECTROGRAPH (IRIS). THE CONTRACTOR SHALL REFINE AND EVOLVE THE CONTRACTOR'S COST ESTIMATE FOR PHASES B-F FOR THE INTERFACE REGION IMAG"
   },
   {
-   "award_id": "NNL14AA42T",
-   "recipient": "AMENTUM TECHNOLOGY, INC.",
-   "ticker": null,
-   "amount": 192334508.0,
-   "agency": "National Aeronautics and Space Administration",
-   "start": "2014-02-01",
-   "description": "IGF::CT::IGF THIS \"TASK ORDER\" HAS BEEN CREATED IN THE CONTRACT MANAGEMENT MODULE (CMM) SYSTEM FOR FUNDING PURPOSES ONLY AND IS NOT AN ACTUAL TASK ORDER WITH A "
-  },
-  {
-   "award_id": "89243323CFE000075",
-   "recipient": "KEYLOGIC, LLC",
-   "ticker": null,
-   "amount": 180315327.0,
-   "agency": "Department of Energy",
-   "start": "2023-02-01",
-   "description": "STRATEGIC ANALYSIS SUPPORT SERVICES"
-  },
-  {
    "award_id": "36C10B26F0121",
    "recipient": "BOOZ ALLEN HAMILTON INC",
    "ticker": "BAH",
@@ -281,15 +281,6 @@
    "agency": "General Services Administration",
    "start": "2017-09-06",
    "description": "RESEARCH AND DEVELOPMENT SUPPORT TO THE WDI DIRECTORATE IGF::OT::IGF"
-  },
-  {
-   "award_id": "70Z07923FISD20006",
-   "recipient": "KNIGHT POINT SYSTEMS, LLC",
-   "ticker": null,
-   "amount": 156102514.14,
-   "agency": "Department of Homeland Security",
-   "start": "2023-01-01",
-   "description": "THIS FIRST TASK ORDER UNDER THE USCG IMS BPA WILL STABILIZE AND SECURE THE USCG IT INFRASTRUCTURE, MODERNIZE THE USCG IT INFRASTRUCTURE, AND IMPROVE THE INTEGRA"
   },
   {
    "award_id": "89303321FEM400190",
@@ -319,6 +310,33 @@
    "description": "UNDER THIS CONTRACT, THE CONTRACTOR WILL PROVIDE THE PERSONNEL,  MATERIALS, EQUIPMENT, AND FACILITIES NECESSARY TO PRODUCE THE POLARIMETER TO UNIFY THE CORONA H"
   },
   {
+   "award_id": "140R2022C0007",
+   "recipient": "NW CONSTRUCTION, INC",
+   "ticker": null,
+   "amount": 136727998.87,
+   "agency": "Department of the Interior",
+   "start": "2022-04-27",
+   "description": "BF SISK SAFETY OF DAMS (SOD) MODIFICATIONS, PHASE I, THIS PHASE INCLUDES CONSTRUCTION OF SHEAR KEYS, STABILITY BERMS, AND SPILLWAY MODIFICATION. THE PROJECT WIL"
+  },
+  {
+   "award_id": "75FCMC20F0001",
+   "recipient": "SPARKSOFT CORPORATION",
+   "ticker": null,
+   "amount": 135732249.0,
+   "agency": "Department of Health and Human Services",
+   "start": "2019-12-23",
+   "description": "DATA SERVICES HUB (DSH)"
+  },
+  {
+   "award_id": "47QFHA24F0011",
+   "recipient": "KEARNEY & COMPANY, P.C.",
+   "ticker": null,
+   "amount": 132321308.59,
+   "agency": "General Services Administration",
+   "start": "2024-12-01",
+   "description": "PRISM DEAMS FMO SUPPORT TASK ORDER"
+  },
+  {
    "award_id": "15JPSS22F00000171",
    "recipient": "CGI FEDERAL INC.",
    "ticker": null,
@@ -328,76 +346,13 @@
    "description": "UFMS/UAMS OPERATIONS AND MAINTENANCE FOR JMD"
   },
   {
-   "award_id": "75FCMC24F0025",
-   "recipient": "SOFTRAMS LLC",
+   "award_id": "GS11P08MKC0080",
+   "recipient": "ZIMMER GUNSUL FRASCA ARCHITECTS LLP",
    "ticker": null,
-   "amount": 128223993.96,
-   "agency": "Department of Health and Human Services",
-   "start": "2024-02-21",
-   "description": "THE QUALITY PAYMENT PROGRAM COLLECTS MEASURES FROM ALL ELIGIBLE CLINICIANS, SCORE THEM, AND COMPARE THEIR PERFORMANCE TO OTHER CLINICIANS IN ORDER TO REWARD THE"
-  },
-  {
-   "award_id": "36C10B24F0430",
-   "recipient": "H2 TECHNOLOGY GROUP, LLC",
-   "ticker": null,
-   "amount": 126292766.94,
-   "agency": "Department of Veterans Affairs",
-   "start": "2024-09-30",
-   "description": "VETERANS HEALTH ADMINISTRATION FINANCE PRODUCT LINE DEVELOPMENT, SECURITY, AND OPERATIONS SUPPORT. THE CONTRACTOR SHALL PROVIDE PRODUCT, OPERATIONS SUPPORT, AND"
-  },
-  {
-   "award_id": "NNL17AA43T",
-   "recipient": "AMENTUM TECHNOLOGY, INC.",
-   "ticker": null,
-   "amount": 124353311.79,
-   "agency": "National Aeronautics and Space Administration",
-   "start": "2017-01-26",
-   "description": "IGF::CT::IGF THIS \"TASK ORDER\" HAS BEEN CREATED IN THE CONTRACT MANAGEMENT MODULE (CMM) SYSTEM FOR FUNDING PURPOSES ONLY AND IS NOT AN ACTUAL TASK ORDER WITH A "
-  },
-  {
-   "award_id": "HHSO100201000046C",
-   "recipient": "ACHAOGEN, INC.",
-   "ticker": null,
-   "amount": 124351718.07,
-   "agency": "Department of Health and Human Services",
-   "start": "2010-08-21",
-   "description": "TAS::75 0140::TAS"
-  },
-  {
-   "award_id": "47QFCA22F0031",
-   "recipient": "PRKK LLC",
-   "ticker": null,
-   "amount": 120623988.2,
+   "amount": 127766608.95,
    "agency": "General Services Administration",
-   "start": "2022-05-25",
-   "description": "GALLANT FOX TO AWARD# 47QFCA22F0031."
-  },
-  {
-   "award_id": "70B01C26F00000581",
-   "recipient": "JACOBS ENGINEERING GROUP INC.",
-   "ticker": null,
-   "amount": 119124286.45,
-   "agency": "Department of Homeland Security",
-   "start": "2026-08-07",
-   "description": "CONSTRUCTION MANAGEMENT AS ADVISOR (CMA)SERVICES FOR 11 DESIGN-BUILD CONSTRUCTION PROJECTS IMPACTING BORDER PATROL STATIONS IN ARIZONA, CALIFORNIA, NEW MEXICO, "
-  },
-  {
-   "award_id": "693KA726C00059",
-   "recipient": "L3HARRIS TECHNOLOGIES, INC.",
-   "ticker": null,
-   "amount": 116551233.35,
-   "agency": "Department of Transportation",
-   "start": "2026-03-31",
-   "description": "THE SURVEILLANCE AND BROADCAST SERVICES (SBS II) PROGRAM IS THE FOLLOW-ON TO SBS I WHICH WAS CREATED IN 2005 AND TASKED TO DEPLOY NEW SURVEILLANCE SERVICES ENAB"
-  },
-  {
-   "award_id": "80GSFC22CA049",
-   "recipient": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
-   "ticker": "SAIC",
-   "amount": 108941707.1,
-   "agency": "National Aeronautics and Space Administration",
-   "start": "2022-10-01",
-   "description": "SYSTEMS AND SOFTWARE ASSURANCE SERVICES 2 (SAS2) THE PRINCIPLE PURPOSE OF THIS CONTRACT IS TO ACQUIRE SYSTEMS AND SOFTWARE ASSURANCE SERVICES, INCLUDING IV&V AN"
+   "start": "2010-03-30",
+   "description": "RECOVERY ACT AWARD ARRA FUNDED CODE: TAS::47 4543::TAS  1) CONTRACTOR TO PROVIDE ARCHITECT-ENGINEER DESIGN SERVICES FOR THE DEPARTMENT OF HOMELAND SECURITY (DHS"
   },
   {
    "award_id": "70FA3021F00000470",
@@ -418,33 +373,6 @@
    "description": "CONSTRUCTION OF NEW 185FT ATCT AND TRACON FACILITY AT SAN JOSE MINETA INTERNATIONAL AIRPORT"
   },
   {
-   "award_id": "75D30126F20733",
-   "recipient": "FOUR SEASONS ENVIRONMENTAL INC",
-   "ticker": null,
-   "amount": 100263528.0,
-   "agency": "Department of Health and Human Services",
-   "start": "2025-12-04",
-   "description": "ATLANTA OM"
-  },
-  {
-   "award_id": "15F06724F0000863",
-   "recipient": "BL HARBERT INTERNATIONAL LLC",
-   "ticker": null,
-   "amount": 99832058.07,
-   "agency": "Department of Justice",
-   "start": "2024-05-23",
-   "description": "JEFFERSON DORM RENOVATION PROJECT."
-  },
-  {
-   "award_id": "GS11Q17BJP0005",
-   "recipient": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
-   "ticker": "IBM",
-   "amount": 99051037.64,
-   "agency": "General Services Administration",
-   "start": "2017-05-15",
-   "description": "IGF::OT::IGF GINNIE MAE IT INFRASTRUCTURE CONSOLIDATION"
-  },
-  {
    "award_id": "91003125F0304",
    "recipient": "F.H. CANN & ASSOCIATES, INC.",
    "ticker": null,
@@ -461,6 +389,15 @@
    "agency": "Department of Agriculture",
    "start": "2022-10-01",
    "description": "DISC IT SUPPORT SERVICES"
+  },
+  {
+   "award_id": "89233124CNA000365",
+   "recipient": "GENERAL ATOMICS",
+   "ticker": null,
+   "amount": 92366341.4,
+   "agency": "Department of Energy",
+   "start": "2024-10-01",
+   "description": "RESEARCH & DEVELOPMENT AND FABRICATION OF INERTIAL CONFINEMENT FUSION (ICF) TARGETS FOR THE OFFICE OF RTD&E NA-11, EXPERIMENTAL SCIENCES NA-113"
   },
   {
    "award_id": "89303026FIM000188",
@@ -490,6 +427,24 @@
    "description": "ENTERPRISE INFRASTRUCTURE SOLUTIONS (EIS) TASK ORDER PROVIDING CORE DATA SERVICES."
   },
   {
+   "award_id": "15JPSS26F00000725",
+   "recipient": "SOS INTERNATIONAL LLC",
+   "ticker": null,
+   "amount": 87037774.0,
+   "agency": "Department of Justice",
+   "start": "2026-02-01",
+   "description": "IN-PERSON, SCHEDULED TELEPHONIC, AND VRI INTERPRETER SERVICES FOR DOJ."
+  },
+  {
+   "award_id": "89303019FET400015",
+   "recipient": "BLUEWATER FEDERAL SOLUTIONS, INC.",
+   "ticker": null,
+   "amount": 85763310.69,
+   "agency": "Department of Energy",
+   "start": "2019-09-17",
+   "description": "LABOR PROGRAM MANAGEMENT/IT SUPPORT ENTERPRISE INFORMATION TECHNOLOGY SUPPORT SERVICES TO INCLUDE SOFTWARE DEVELOPMENT AND INTEGRATION, INFRASTRUCTURE ENGINEERI"
+  },
+  {
    "award_id": "70B02C22F00001100",
    "recipient": "SCIENCE AND ENGINEERING SERVICES, LLC",
    "ticker": null,
@@ -506,15 +461,6 @@
    "agency": "Department of Homeland Security",
    "start": "2023-04-10",
    "description": "COMPUTED TOMOGRAPHY (CT) SYSTEMS AND ALL ASSOCIATED SERVICES AND SUPPLIES TO SUPPORT THE CHECKPOINT PROPERTY SCREENING SYSTEM (CPSS)"
-  },
-  {
-   "award_id": "89233120FNA400255",
-   "recipient": "MELE ASSOCIATES INC",
-   "ticker": null,
-   "amount": 83866532.5,
-   "agency": "Department of Energy",
-   "start": "2019-12-16",
-   "description": "U.S. DEPARTMENT OF ENERGY (DOE), NATIONAL NUCLEAR SECURITY ADMINISTRATION (NNSA) TECHNICAL ENGINEERING AND PROGRAMMATIC SUPPORT (TEPS-2) BLANKET PURCHASE AGREEM"
   },
   {
    "award_id": "75N99022C00001",
@@ -535,6 +481,15 @@
    "description": "THIS FUNDING IS FOR THE AWARD OF THE NOTAM MODERNIZATION/NOTAM MANAGEMENT SERVICE (NMS) CONTRACT AS THE FOLLOW-ON TO THE NOTAM CHALLENGE-BASED ACQUISITION.  MOD"
   },
   {
+   "award_id": "75FCMC25FJ013",
+   "recipient": "SKYWARD DYNAMICS INFORMATION TECHNOLOGY, LLC",
+   "ticker": null,
+   "amount": 82340056.0,
+   "agency": "Department of Health and Human Services",
+   "start": "2024-12-19",
+   "description": "THE RESEARCH DATA DEVELOPMENT GROUP (RDDG) WITHIN THE OFFICE OF ENTERPRISE DATA AND ANALYTICS (OEDA) SUPPORTS THE AGENCY'S MISSION BY OPERATING AND MAINTAINING "
+  },
+  {
    "award_id": "47QFRA25F0001",
    "recipient": "ECS FEDERAL, LLC",
    "ticker": null,
@@ -553,13 +508,13 @@
    "description": "ELECTRICITY SERVICES"
   },
   {
-   "award_id": "70CDCR26FR0000112",
-   "recipient": "AKIMA INFRASTRUCTURE PROTECTION LLC",
+   "award_id": "75F40122F80332",
+   "recipient": "HUMANTOUCH LLC",
    "ticker": null,
-   "amount": 79901313.0,
-   "agency": "Department of Homeland Security",
-   "start": "2026-09-01",
-   "description": "THIS ACTION ESTABLISHES A NEW TASK ORDER FOR CONTINUED PROVISION OF DETENTION SERVICES AT KROME PROCESSING CENTER."
+   "amount": 78472517.46,
+   "agency": "Department of Health and Human Services",
+   "start": "2022-08-31",
+   "description": "HELP DESK BRIDGE CONTRACT"
   },
   {
    "award_id": "697DCK25F00858",
@@ -571,13 +526,31 @@
    "description": "PIH ATCT DESIGN-BUILD. THIS CONTRACT IS TO FOR THE DESIGN AND BUILD OF A NEW AIRPORT TRAFFIC CONTROL TOWER (ATCT) AT POCATELLO REGIONAL AIRPORT (PIH) IN POCATEL"
   },
   {
-   "award_id": "70FA3125F00000984",
-   "recipient": "MANHATTAN ASSOCIATES, INC.",
-   "ticker": "MANH",
-   "amount": 78295768.31,
-   "agency": "Department of Homeland Security",
-   "start": "2024-10-01",
-   "description": "ISSUE TASK ORDER AGAINST FOR LOGISTICS SUPPLY CHAIN MANAGEMENT SYSTEM CLOUD (LSCMS-C)"
+   "award_id": "693JJ324F00481N",
+   "recipient": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+   "ticker": "SAIC",
+   "amount": 77723882.64,
+   "agency": "Department of Transportation",
+   "start": "2024-07-01",
+   "description": "THIS IS NEW SAIC INFRASTRUCTURE TASK ORDER AND INCREMENTAL FUNDING IN THE AMOUNT OF $12,651,796.45 IS PROVIDED THROUGH 10/31/2024."
+  },
+  {
+   "award_id": "36C10B25F0313",
+   "recipient": "PALANTIR TECHNOLOGIES INC.",
+   "ticker": "PLTR",
+   "amount": 74703140.17,
+   "agency": "Department of Veterans Affairs",
+   "start": "2025-09-30",
+   "description": "NATIONAL CENTER FOR VETERANS ANALYSIS AND STATISTICS PLATFORM"
+  },
+  {
+   "award_id": "693KA818F00069",
+   "recipient": "LEIDOS, INC.",
+   "ticker": "LDOS",
+   "amount": 71939925.85,
+   "agency": "Department of Transportation",
+   "start": "2018-03-12",
+   "description": "TASK ORDER 2"
   },
   {
    "award_id": "36C77026N0007",
@@ -589,31 +562,22 @@
    "description": "MAIL MANIFESTING SERVICES"
   },
   {
-   "award_id": "1605JW21C0007",
-   "recipient": "ALEUT-ODLE TRAINING AND DEVELOPMENT, JV",
+   "award_id": "1605JE23C0001",
+   "recipient": "EDUCATION & TRAINING RESOURCES LLC",
    "ticker": null,
-   "amount": 63245383.69,
+   "amount": 69508532.79,
    "agency": "Department of Labor",
-   "start": "2021-01-08",
-   "description": "OPERATIONS FOR ALBUQUERQUE JCC AND OA/CTS"
+   "start": "2022-11-01",
+   "description": "WESTOVER JOB CORPS CENTER WITH OUTREACH AND ADMISSIONS AND CAREER TRANSITION SERVICES."
   },
   {
-   "award_id": "47QFCA20C0002",
-   "recipient": "LIFE SCIENCE LOGISTICS LLC",
+   "award_id": "1605JW20C0003",
+   "recipient": "SERRATO CORPORATION",
    "ticker": null,
-   "amount": 61595234.14,
-   "agency": "General Services Administration",
-   "start": "2019-11-18",
-   "description": "MANAGED SERVICES SUPPORT FOR GOVERNMENT-OWNED PHARMACEUTICAL, MEDICAL SUPPLIES, AND MEDICAL EQUIPMENT (SITE 2)"
-  },
-  {
-   "award_id": "70Z04726FPCNI0014",
-   "recipient": "TUTOR PERINI CORPORATION",
-   "ticker": "TPC",
-   "amount": 60000000.0,
-   "agency": "Department of Homeland Security",
-   "start": "2026-08-24",
-   "description": "FAST RESPONSE CUTTER/WATERWAYS COMMERCE CUTTER/ WATERFRONT MAINTENANCE WEAPONS DEPOT & STATION REBUILD ST. PETERSBURG, FL"
+   "amount": 66568926.31,
+   "agency": "Department of Labor",
+   "start": "2020-05-15",
+   "description": "FLINT GENESEE JOB CORPS CENTER WITH OA/CTS"
   },
   {
    "award_id": "0010",
@@ -625,13 +589,31 @@
    "description": "IGF::OT::IGF  NOBLIS ENGINEERING SUPPORT VIA EPICS UNRESTRICTED CONTRACT DTFAWA-17-D-00014"
   },
   {
-   "award_id": "47QFLA23F0151",
-   "recipient": "LINQUEST CORPORATION",
+   "award_id": "15F06722C0000662",
+   "recipient": "CREDENCE MANAGEMENT SOLUTIONS LIMITED LIABILITY COMPANY",
    "ticker": null,
-   "amount": 58882913.92,
-   "agency": "General Services Administration",
-   "start": "2023-08-04",
-   "description": "SBIR PHASE III IDEAAS TASK ORDER 1"
+   "amount": 58711780.89,
+   "agency": "Department of Justice",
+   "start": "2022-09-28",
+   "description": "ADMIN SERVICES"
+  },
+  {
+   "award_id": "70CDCR26FR0000101",
+   "recipient": "THE GEO GROUP, INC.",
+   "ticker": "GEO",
+   "amount": 58653711.99,
+   "agency": "Department of Homeland Security",
+   "start": "2026-07-09",
+   "description": "THIS CONTRACT PROVIDES DETENTION AND DETENTION RELATED SERVICES AT THE BIG HORN DETENTION FACILITY IN HUDSON, COLORADO. THIS TASK ORDER PROVIDES ESTABLISHES THE"
+  },
+  {
+   "award_id": "693KA726F00029",
+   "recipient": "PERATON INC.",
+   "ticker": null,
+   "amount": 58568298.0,
+   "agency": "Department of Transportation",
+   "start": "2026-08-26",
+   "description": "BRAND NEW AIR TRAFFIC CONTROL SYSTEM (BNATCS) ENTERPRISE NEEDS PACKAGE"
   },
   {
    "award_id": "70SBUR22F00000252",
@@ -643,22 +625,13 @@
    "description": "USCIS HAS A REQUIREMENT FOR ENTERPRISE CONTACT CENTER SERVICES WHICH WILL SUPPORT USCIS'S MISSION BY FACILITATING AND PROVIDING THE CRITICAL COMMUNICATION ABILI"
   },
   {
-   "award_id": "HHSN273201400022C",
-   "recipient": "RESEARCH TRIANGLE INSTITUTE",
+   "award_id": "36C77026N0004",
+   "recipient": "FEDEX SUPPLY CHAIN DISTRIBUTION SYSTEM, INC.",
    "ticker": null,
-   "amount": 57285845.34,
-   "agency": "Department of Health and Human Services",
-   "start": "2014-07-29",
-   "description": "IGF::OT::IGF CHEMISTRY SERVICES FOR THE NATIONAL TOXICOLOGY PROGRAM"
-  },
-  {
-   "award_id": "75ACF124F80023",
-   "recipient": "JBS INTERNATIONAL, INC.",
-   "ticker": null,
-   "amount": 56594518.15,
-   "agency": "Department of Health and Human Services",
-   "start": "2024-08-30",
-   "description": "NCWCIA PROVIDES TRAINING AND TECHNICAL ASSISTANCE SERVICES TO SUPPORT PUBLIC CHILD WELFARE AGENCIES RESPONSIBLE FOR FEDERAL CHILD WELFARE POLICIES AND PROGRAMS."
+   "amount": 56029967.83,
+   "agency": "Department of Veterans Affairs",
+   "start": "2025-10-01",
+   "description": "MAIL MANIFESTING SERVICES"
   },
   {
    "award_id": "47QFMA24F0007",
@@ -670,31 +643,13 @@
    "description": "COMMAND CONTROL COMMUNICATIONS COMPUTERS C4 CAPABILITIES DEVELOPMENT C4CD SERVICES-OY 1 TRANSFER"
   },
   {
-   "award_id": "70LGLY25CGLB00004",
-   "recipient": "T47 INTERNATIONAL, INC.",
+   "award_id": "1605JE21C0015",
+   "recipient": "EXCEED, LLC",
    "ticker": null,
-   "amount": 54921953.39,
-   "agency": "Department of Homeland Security",
-   "start": "2025-07-01",
-   "description": "DORM MANAGEMENT SERVICES"
-  },
-  {
-   "award_id": "75N99025F00001",
-   "recipient": "CLARK CONSTRUCTION GROUP LLC",
-   "ticker": null,
-   "amount": 54023351.0,
-   "agency": "Department of Health and Human Services",
-   "start": "2025-10-01",
-   "description": "C104688- CONSTRUCTION OF MULTIPLE LEVEL PARKING GARAGE AT NIH, BETHESDA. THE PROJECT IS ESSENTIAL TO ALIGN WITH THE NATIONAL CAPITAL PLANNING COMMISSION PARKING"
-  },
-  {
-   "award_id": "HHSN273201400020C",
-   "recipient": "MRIGLOBAL",
-   "ticker": null,
-   "amount": 52417032.84,
-   "agency": "Department of Health and Human Services",
-   "start": "2014-07-18",
-   "description": "IGF::OT::IGF CHEMISTRY SERVICES FOR THE NTP"
+   "amount": 54794831.27,
+   "agency": "Department of Labor",
+   "start": "2021-11-01",
+   "description": "PINELLAS COUNTY JOB CORPS CENTER OPERATIONS WITH OUTREACH AND ADMISSIONS AND CAREER TRANSITION SERVICES"
   },
   {
    "award_id": "89243223FNE400097",
@@ -706,13 +661,31 @@
    "description": "PROGRAM INFORMATION COLLECTION SYSTEM AD SUPPORT SERVICES (PICSSS) - UNDER THIS TASK ORDER CONTRACT, THE CONTRACTOR WILL PROVIDE EXPERTISE AND SERVICES TO IMPLE"
   },
   {
-   "award_id": "50310224F0124",
-   "recipient": "CASEPOINT, LLC",
+   "award_id": "693KA922F00134",
+   "recipient": "CSSI, LLC",
    "ticker": null,
-   "amount": 45047950.0,
-   "agency": "Securities and Exchange Commission",
-   "start": "2024-07-31",
-   "description": "ELECTRONIC DISCOVERY APPLICATION AND STORAGE ENVIRONMENT (EASE)"
+   "amount": 50235482.73,
+   "agency": "Department of Transportation",
+   "start": "2022-06-22",
+   "description": "EFAST PA 22-004-CS SAFETY SERVICES SUPPORT (S3)"
+  },
+  {
+   "award_id": "0003",
+   "recipient": "ADVANCED MANAGEMENT TECHNOLOGY, INC.",
+   "ticker": null,
+   "amount": 47938114.31,
+   "agency": "Department of Transportation",
+   "start": "2017-09-11",
+   "description": "PBN TASK ORDER IGF::CL,CT::IGF"
+  },
+  {
+   "award_id": "20341419F00036",
+   "recipient": "BOOZ ALLEN HAMILTON INC",
+   "ticker": "BAH",
+   "amount": 44258340.32,
+   "agency": "Department of the Treasury",
+   "start": "2019-06-16",
+   "description": "INFORMATION TECHNOLOGY PROGRAM MANAGEMENT SERVICES"
   },
   {
    "award_id": "6982AF25C000009",
@@ -742,31 +715,76 @@
    "description": "OPERATIONS OF THE SHRIVER JOB CORPS CENTER WITH OUTREACH AND ADMISSIONS AND CAREER TRANSITION SERVICES."
   },
   {
-   "award_id": "36C10B22N10240023",
-   "recipient": "CLEAR VANTAGE POINT SOLUTIONS LLC",
+   "award_id": "80LARC26FA020",
+   "recipient": "AMENTUM TECHNOLOGY, INC.",
    "ticker": null,
-   "amount": 40906559.86,
-   "agency": "Department of Veterans Affairs",
-   "start": "2022-09-30",
-   "description": "VETERANS BENEFITS ADMINISTRATION (VBA) SOLUTIONS DELIVERY CENTER OF EXCELLENCE (COE)"
+   "amount": 38667560.0,
+   "agency": "National Aeronautics and Space Administration",
+   "start": "2026-10-01",
+   "description": "CENTER MAINTENANCE, OPERATION AND ENGINEERING II (CMOE-II) SUPPORT SERVICES."
   },
   {
-   "award_id": "75A50124F61003",
-   "recipient": "ADVANCED TECHNOLOGY INTERNATIONAL",
+   "award_id": "75FCMC27F0004",
+   "recipient": "C&T TECHNOLOGIES LLC",
    "ticker": null,
-   "amount": 38000006.0,
+   "amount": 38648020.9,
    "agency": "Department of Health and Human Services",
-   "start": "2024-01-12",
-   "description": "DEVELOPMENT OF E-BEAM AND/OR X-RAY STERILIZATION CAPACITY FOR DOMESTIC STERILIZATION CAPACITY UNDER THE BIOMAP-CONSORTIUM"
+   "start": "2026-11-15",
+   "description": "SEE THE STATEMENT OF OBJECTIVES (SOO), INCLUDING ALL EXHIBITS/APPENDICES"
   },
   {
-   "award_id": "47PB5326F0007",
-   "recipient": "ROSS GROUP CONSTRUCTION CORPORATION, LLC",
+   "award_id": "20341422F00009",
+   "recipient": "SIKICH FEDERAL INC.",
    "ticker": null,
-   "amount": 36203180.0,
-   "agency": "General Services Administration",
-   "start": "2026-08-03",
-   "description": "PROVIDE FOR ALL LABOR AND MATERIALS REQUIRED TO COMPLETE THE WORK FOR THE RENOVATION OF THE PATHOLOGY LABORATORY IN BUILDING 5D LOCATED AT THE FOOD AND DRUG ADM"
+   "amount": 38322838.04,
+   "agency": "Department of the Treasury",
+   "start": "2022-01-16",
+   "description": "INFORMATION TECHNOLOGY SERVICES (ITS)"
+  },
+  {
+   "award_id": "75FCMC23F0001",
+   "recipient": "NEXT PHASE SOLUTIONS AND SERVICES, INC.",
+   "ticker": null,
+   "amount": 36487391.31,
+   "agency": "Department of Health and Human Services",
+   "start": "2023-02-27",
+   "description": "MASTER DATA MANAGEMENT (MDM) AND ENTERPRISE DATA LAKE (EDL)"
+  },
+  {
+   "award_id": "2033H622F00156",
+   "recipient": "UNISON SOFTWARE INC",
+   "ticker": null,
+   "amount": 36049087.63,
+   "agency": "Department of the Treasury",
+   "start": "2022-09-01",
+   "description": "PRISM CONTRACT-WRITING SYSTEM SOFTWARE LICENSE/MAINTENANCE/SUPPORT"
+  },
+  {
+   "award_id": "70US0924F2GSA2251",
+   "recipient": "AT&T ENTERPRISES, LLC",
+   "ticker": null,
+   "amount": 35535230.86,
+   "agency": "Department of Homeland Security",
+   "start": "2023-12-22",
+   "description": "USSS EIS TO1 DATA & VOICE SERVICES"
+  },
+  {
+   "award_id": "20341425F00022",
+   "recipient": "PLURIBUS DIGITAL, INC",
+   "ticker": null,
+   "amount": 35065183.65,
+   "agency": "Department of the Treasury",
+   "start": "2025-05-22",
+   "description": "DEVELOPMENT AND OPERATIONAL SOFTWARE DEVELOPMENT AND MAINTENANCE SERVICES"
+  },
+  {
+   "award_id": "15M30026CA3700024",
+   "recipient": "AERSALE, INC.",
+   "ticker": "ASLE",
+   "amount": 34975000.0,
+   "agency": "Department of Justice",
+   "start": "2026-06-22",
+   "description": "BOEING 737-800 AIRCRAFT MANUFACTURER SERIAL NUMBER (MSN) 30658"
   },
   {
    "award_id": "47QFLA22F0068",
@@ -778,6 +796,24 @@
    "description": "SBIR PHASE III TASK ORDER 2 ADIDRUS"
   },
   {
+   "award_id": "70CTD023FR0000013",
+   "recipient": "PROCENTRIX, LLC",
+   "ticker": null,
+   "amount": 34858524.99,
+   "agency": "Department of Homeland Security",
+   "start": "2023-04-01",
+   "description": "COLLABORATIVE SERVICES FOR THE ENTERPRISE PLATFORM SERVICES BRANCH (EPSB) PROJECTS TO INCLUDE OPLA CASE MANAGEMENT SYSTEM (OCMS), STUDENT AND EXCHANGE VISITOR P"
+  },
+  {
+   "award_id": "HSFLGL12F00020",
+   "recipient": "NORESCO, LLC",
+   "ticker": null,
+   "amount": 34834105.67,
+   "agency": "Department of Homeland Security",
+   "start": "2011-12-28",
+   "description": "ESPC"
+  },
+  {
    "award_id": "80SSC026F7001",
    "recipient": "ADVON CORPORATION",
    "ticker": null,
@@ -785,42 +821,6 @@
    "agency": "National Aeronautics and Space Administration",
    "start": "2026-02-17",
    "description": "DEMOLITION OF BUILDING 1100 CENTER SECTION AND WEST WING AT STENNIS SPACE CENTER, MS"
-  },
-  {
-   "award_id": "70Z04725FPCNI0007",
-   "recipient": "RQ CONSTRUCTION, LLC",
-   "ticker": null,
-   "amount": 34016253.0,
-   "agency": "Department of Homeland Security",
-   "start": "2025-08-11",
-   "description": "AWARD OF RECAPITALIZE RUNWAY 1-19 AT U.S. COAST GUARD BASE ELIZABETH CITY, NC."
-  },
-  {
-   "award_id": "89233121FNA400365",
-   "recipient": "MCLANE ADVANCED TECHNOLOGIES LLC",
-   "ticker": null,
-   "amount": 33731064.75,
-   "agency": "Department of Energy",
-   "start": "2021-03-31",
-   "description": "DOE/NNSA IT SUPPORT SERVICES NA-15- TOTAL SMALL-BUSINESS SET-ASIDE RFP."
-  },
-  {
-   "award_id": "75D30125C00123",
-   "recipient": "BERING STRAITS PROFESSIONAL SERVICES, LLC",
-   "ticker": null,
-   "amount": 33465406.88,
-   "agency": "Department of Health and Human Services",
-   "start": "2024-12-01",
-   "description": "NIOSH GUARD SERVICES"
-  },
-  {
-   "award_id": "15JPSS21F00000981",
-   "recipient": "UNISYS CORPORATION",
-   "ticker": "UIS",
-   "amount": 33431892.17,
-   "agency": "Department of Justice",
-   "start": "2021-09-01",
-   "description": "EXERCISING OY 4 (SAIC) FFP"
   },
   {
    "award_id": "70Z02325C93260002",
@@ -832,13 +832,13 @@
    "description": "CONTRACT TO PROVIDE SHIP MANAGEMENT AND TRAINING SUPPORT SERVICES FOR CGC STORIS."
   },
   {
-   "award_id": "75D30127F00019",
-   "recipient": "NATIONAL OPINION RESEARCH CENTER",
+   "award_id": "47QFPA22F0035",
+   "recipient": "TECOLOTE RESEARCH, INC.",
    "ticker": null,
-   "amount": 32559906.0,
-   "agency": "Department of Health and Human Services",
-   "start": "2026-12-01",
-   "description": "NIS-CHILD EO 14398"
+   "amount": 32445188.84,
+   "agency": "General Services Administration",
+   "start": "2022-06-22",
+   "description": "BASE AWARD FOR THE MOBILE USER OBJECTIVE SYSTEM (MUOS) PROGRAM MANAGEMENT SUPPORT SERVICE (PMSS)"
   },
   {
    "award_id": "15JPSS22F00000634",
@@ -848,6 +848,15 @@
    "agency": "Department of Justice",
    "start": "2022-10-01",
    "description": "FY23 EOUSA ORDER 0651"
+  },
+  {
+   "award_id": "68HERD24F0032",
+   "recipient": "VALIANT SOLUTIONS, LLC",
+   "ticker": null,
+   "amount": 31884869.95,
+   "agency": "Environmental Protection Agency",
+   "start": "2024-03-11",
+   "description": "OAQPS INFORMATION TECHNOLOGY SUPPORT CONTRACT"
   },
   {
    "award_id": "273FCC24F0052",
@@ -868,6 +877,24 @@
    "description": "AIR COMBAT COMMAND (ACC) A589"
   },
   {
+   "award_id": "75FCMC24F0207",
+   "recipient": "DELOITTE CONSULTING LLP",
+   "ticker": null,
+   "amount": 30884352.05,
+   "agency": "Department of Health and Human Services",
+   "start": "2024-09-27",
+   "description": "PPG INTEGRATED FINANCIAL AND ACTUARIAL CONTRACT RECOMPETE BASE YEAR"
+  },
+  {
+   "award_id": "68HE0723F0133",
+   "recipient": "EA ENGINEERING, SCIENCE, AND TECHNOLOGY, INC., PBC",
+   "ticker": null,
+   "amount": 30669871.64,
+   "agency": "Environmental Protection Agency",
+   "start": "2023-09-26",
+   "description": "R7 RES SOUTHWEST JEFFERSON COUNTY MINING SITE OU1  RESIDENTIAL YARDS REMEDIAL ACTION 02"
+  },
+  {
    "award_id": "HHSP23337002T",
    "recipient": "MDRC",
    "ticker": null,
@@ -875,44 +902,26 @@
    "agency": "Department of Health and Human Services",
    "start": "2016-09-30",
    "description": "IGF::OT::IGF VARIATIONS IN IMPLEMENTATION OF QUALITY INTERVENTIONS"
-  },
-  {
-   "award_id": "70CDCR24FR0000002",
-   "recipient": "DELOITTE CONSULTING LLP",
-   "ticker": null,
-   "amount": 30292672.63,
-   "agency": "Department of Homeland Security",
-   "start": "2023-12-01",
-   "description": "PROFESSIONAL ANALYTICAL SUPPORT SERVICES AT THE PACIFIC ENFORCEMENT RESPONSE CENTER"
-  },
-  {
-   "award_id": "75F40124F19001",
-   "recipient": "INTERNATIONAL CONSULTING ASSOCIATES, INC.",
-   "ticker": null,
-   "amount": 30265232.83,
-   "agency": "Department of Health and Human Services",
-   "start": "2024-09-04",
-   "description": "ALP 1279714 - SMALL BUSINESS SET-ASIDE GSA BPA SERVICES TASK ORDER REQUIREMENT FOR THE CENTER FOR DEVICES AND RADIOLOGICAL HEALTH (CDRH)"
-  },
-  {
-   "award_id": "693KA821C00009",
-   "recipient": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
-   "ticker": null,
-   "amount": 30195263.14,
-   "agency": "Department of Transportation",
-   "start": "2021-05-12",
-   "description": "THE PURPOSE IS TO AWARD A VOICE SWITCH MAINTENANCE CONTRACT."
   }
  ],
  "public_company_awards": [
   {
-   "award_id": "36C10D23N0010",
-   "recipient": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
-   "ticker": "IBM",
-   "amount": 489179818.63,
-   "agency": "Department of Veterans Affairs",
-   "start": "2023-04-15",
-   "description": "BENEFITS TRANSFORMATION PLATFORM"
+   "award_id": "DJJODT7C0003",
+   "recipient": "THE GEO GROUP, INC.",
+   "ticker": "GEO",
+   "amount": 811355480.94,
+   "agency": "Department of Justice",
+   "start": "2007-04-20",
+   "description": "DETENTION SERVICES - SAN DIEGO"
+  },
+  {
+   "award_id": "47QFCA25F0033",
+   "recipient": "BOOZ ALLEN HAMILTON INC",
+   "ticker": "BAH",
+   "amount": 326922529.0,
+   "agency": "General Services Administration",
+   "start": "2025-09-12",
+   "description": "AFRL SHADOW RAPTOR"
   },
   {
    "award_id": "HHSP233201500144G",
@@ -942,49 +951,58 @@
    "description": "BENEFITS ENTERPRISE SERVICES"
   },
   {
-   "award_id": "80GSFC22CA049",
+   "award_id": "693JJ324F00481N",
    "recipient": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
    "ticker": "SAIC",
-   "amount": 108941707.1,
-   "agency": "National Aeronautics and Space Administration",
-   "start": "2022-10-01",
-   "description": "SYSTEMS AND SOFTWARE ASSURANCE SERVICES 2 (SAS2) THE PRINCIPLE PURPOSE OF THIS CONTRACT IS TO ACQUIRE SYSTEMS AND SOFTWARE ASSURANCE SERVICES, INCLUDING IV&V AN"
+   "amount": 77723882.64,
+   "agency": "Department of Transportation",
+   "start": "2024-07-01",
+   "description": "THIS IS NEW SAIC INFRASTRUCTURE TASK ORDER AND INCREMENTAL FUNDING IN THE AMOUNT OF $12,651,796.45 IS PROVIDED THROUGH 10/31/2024."
   },
   {
-   "award_id": "GS11Q17BJP0005",
-   "recipient": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
-   "ticker": "IBM",
-   "amount": 99051037.64,
-   "agency": "General Services Administration",
-   "start": "2017-05-15",
-   "description": "IGF::OT::IGF GINNIE MAE IT INFRASTRUCTURE CONSOLIDATION"
+   "award_id": "36C10B25F0313",
+   "recipient": "PALANTIR TECHNOLOGIES INC.",
+   "ticker": "PLTR",
+   "amount": 74703140.17,
+   "agency": "Department of Veterans Affairs",
+   "start": "2025-09-30",
+   "description": "NATIONAL CENTER FOR VETERANS ANALYSIS AND STATISTICS PLATFORM"
   },
   {
-   "award_id": "70FA3125F00000984",
-   "recipient": "MANHATTAN ASSOCIATES, INC.",
-   "ticker": "MANH",
-   "amount": 78295768.31,
+   "award_id": "693KA818F00069",
+   "recipient": "LEIDOS, INC.",
+   "ticker": "LDOS",
+   "amount": 71939925.85,
+   "agency": "Department of Transportation",
+   "start": "2018-03-12",
+   "description": "TASK ORDER 2"
+  },
+  {
+   "award_id": "70CDCR26FR0000101",
+   "recipient": "THE GEO GROUP, INC.",
+   "ticker": "GEO",
+   "amount": 58653711.99,
    "agency": "Department of Homeland Security",
-   "start": "2024-10-01",
-   "description": "ISSUE TASK ORDER AGAINST FOR LOGISTICS SUPPLY CHAIN MANAGEMENT SYSTEM CLOUD (LSCMS-C)"
+   "start": "2026-07-09",
+   "description": "THIS CONTRACT PROVIDES DETENTION AND DETENTION RELATED SERVICES AT THE BIG HORN DETENTION FACILITY IN HUDSON, COLORADO. THIS TASK ORDER PROVIDES ESTABLISHES THE"
   },
   {
-   "award_id": "70Z04726FPCNI0014",
-   "recipient": "TUTOR PERINI CORPORATION",
-   "ticker": "TPC",
-   "amount": 60000000.0,
-   "agency": "Department of Homeland Security",
-   "start": "2026-08-24",
-   "description": "FAST RESPONSE CUTTER/WATERWAYS COMMERCE CUTTER/ WATERFRONT MAINTENANCE WEAPONS DEPOT & STATION REBUILD ST. PETERSBURG, FL"
+   "award_id": "20341419F00036",
+   "recipient": "BOOZ ALLEN HAMILTON INC",
+   "ticker": "BAH",
+   "amount": 44258340.32,
+   "agency": "Department of the Treasury",
+   "start": "2019-06-16",
+   "description": "INFORMATION TECHNOLOGY PROGRAM MANAGEMENT SERVICES"
   },
   {
-   "award_id": "15JPSS21F00000981",
-   "recipient": "UNISYS CORPORATION",
-   "ticker": "UIS",
-   "amount": 33431892.17,
+   "award_id": "15M30026CA3700024",
+   "recipient": "AERSALE, INC.",
+   "ticker": "ASLE",
+   "amount": 34975000.0,
    "agency": "Department of Justice",
-   "start": "2021-09-01",
-   "description": "EXERCISING OY 4 (SAIC) FFP"
+   "start": "2026-06-22",
+   "description": "BOEING 737-800 AIRCRAFT MANUFACTURER SERIAL NUMBER (MSN) 30658"
   }
  ]
 }
