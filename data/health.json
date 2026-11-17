@@ -1,44 +1,44 @@
 {
- "updated": "2026-11-17T20:59:00Z",
+ "updated": "2026-11-17T21:00:07Z",
  "healthy": true,
  "problems": [],
- "market_open": true,
+ "market_open": false,
  "warnings": [],
  "repo_size_mb": 145.8,
  "feeds": {
   "prices": {
-   "updated": "2026-11-17T20:58:33Z",
+   "updated": "2026-11-17T20:59:42Z",
    "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-17T20:58:37Z",
+   "updated": "2026-11-17T20:59:45Z",
    "age_hours": 0.01,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": null
   },
   "signals": {
-   "updated": "2026-11-17T20:59:00Z",
+   "updated": "2026-11-17T21:00:07Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": null
   },
   "treasury_rates": {
    "updated": "2026-11-17T20:19:01Z",
-   "age_hours": 0.67,
+   "age_hours": 0.69,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-17T00:10:24Z",
-   "age_hours": 20.81,
+   "age_hours": 20.83,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -54,33 +54,33 @@
   },
   "paper_trading": {
    "updated": "2026-11-16T23:51:28+00:00",
-   "age_hours": 21.13,
+   "age_hours": 21.14,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-17T20:58:40Z",
+   "updated": "2026-11-17T20:59:47Z",
    "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": null
   }
  },
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-17T20:58:16Z",
+   "at": "2026-11-17T20:59:20Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 49
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-17T20:58:12Z",
+   "at": "2026-11-17T20:59:08Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 45
   },
