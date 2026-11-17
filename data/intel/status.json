@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T06:04:43Z",
+ "updated": "2026-11-17T06:05:53Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,17 +11,17 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-17T06:04:43Z",
+   "last_try": "2026-11-17T06:05:53Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-17T06:04:43Z",
+   "last_ok": "2026-11-17T06:05:53Z",
    "seconds": 0.2,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
-   "last_try": "2026-11-17T05:05:49Z",
+   "last_try": "2026-11-17T06:05:53Z",
    "result": "12 (Extreme Fear)",
-   "last_ok": "2026-11-17T05:05:49Z",
-   "seconds": 0.3,
+   "last_ok": "2026-11-17T06:05:53Z",
+   "seconds": 0.2,
    "every_minutes": 60
   },
   "onchain": {
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-17T06:04:43Z",
+   "last_try": "2026-11-17T06:05:53Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-17T06:04:43Z",
-   "seconds": 1.3,
+   "last_ok": "2026-11-17T06:05:53Z",
+   "seconds": 1.2,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,10 +67,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-17T06:04:43Z",
+   "last_try": "2026-11-17T06:05:53Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-17T06:04:43Z",
-   "seconds": 1.8,
+   "last_ok": "2026-11-17T06:05:53Z",
+   "seconds": 1.7,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -102,10 +102,10 @@
    "every_minutes": 15
   },
   "reddit_forums": {
-   "last_try": "2026-11-17T05:36:35Z",
+   "last_try": "2026-11-17T06:05:53Z",
    "result": "5 forums",
-   "last_ok": "2026-11-17T05:36:35Z",
-   "seconds": 1.4,
+   "last_ok": "2026-11-17T06:05:53Z",
+   "seconds": 1.5,
    "every_minutes": 30
   },
   "finnhub": {
@@ -116,17 +116,17 @@
    "every_minutes": 360
   },
   "crypto_sectors": {
-   "last_try": "2026-11-17T05:05:49Z",
-   "result": "382 sectors; best Tokenized Assets +129.4%, worst Mobile Mining -4.6%",
-   "last_ok": "2026-11-17T05:05:49Z",
-   "seconds": 0.2,
+   "last_try": "2026-11-17T06:05:53Z",
+   "result": "382 sectors; best Tokenized Assets +129.7%, worst Mobile Mining -4.0%",
+   "last_ok": "2026-11-17T06:05:53Z",
+   "seconds": 0.1,
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-17T06:04:43Z",
-   "result": "BTC 64739.1, ETH 1832.67, SOL 72.57 from 3 exchanges",
-   "last_ok": "2026-11-17T06:04:43Z",
-   "seconds": 0.9,
+   "last_try": "2026-11-17T06:05:53Z",
+   "result": "BTC 64741.3, ETH 1833.31, SOL 72.6 from 3 exchanges",
+   "last_ok": "2026-11-17T06:05:53Z",
+   "seconds": 0.8,
    "every_minutes": 1
   }
  }
