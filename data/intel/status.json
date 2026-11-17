@@ -1,7 +1,9 @@
 {
- "updated": "2026-11-17T23:48:54Z",
+ "updated": "2026-11-17T23:49:44Z",
  "market_open": false,
- "failed": {},
+ "failed": {
+  "sec_filings": "TimeoutError: The read operation timed out"
+ },
  "sources": {
   "crypto": {
    "last_try": "2026-11-17T23:47:58Z",
@@ -11,10 +13,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-17T23:48:54Z",
+   "last_try": "2026-11-17T23:49:44Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-17T23:48:54Z",
-   "seconds": 0.1,
+   "last_ok": "2026-11-17T23:49:44Z",
+   "seconds": 0.2,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -39,10 +41,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-17T23:48:54Z",
+   "last_try": "2026-11-17T23:49:44Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-17T23:48:54Z",
-   "seconds": 1.3,
+   "last_ok": "2026-11-17T23:49:44Z",
+   "seconds": 1.4,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,18 +69,19 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-17T23:48:54Z",
+   "last_try": "2026-11-17T23:49:44Z",
    "result": "3 new headlines from 15 feeds",
-   "last_ok": "2026-11-17T23:48:54Z",
-   "seconds": 1.5,
+   "last_ok": "2026-11-17T23:49:44Z",
+   "seconds": 2.7,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-17T23:48:54Z",
+   "last_try": "2026-11-17T23:49:44Z",
    "result": "6 new filings (0 with a red flag)",
-   "last_ok": "2026-11-17T23:48:54Z",
-   "seconds": 19.6,
-   "every_minutes": 2
+   "last_ok": "2026-11-17T23:47:58Z",
+   "seconds": 53.9,
+   "every_minutes": 2,
+   "error": "TimeoutError: The read operation timed out"
   },
   "options": {
    "last_try": "2026-11-17T21:12:14Z",
@@ -123,10 +126,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-17T23:48:54Z",
-   "result": "BTC 64890.7, ETH 1822.81, SOL 75.0 from 3 exchanges",
-   "last_ok": "2026-11-17T23:48:54Z",
-   "seconds": 0.7,
+   "last_try": "2026-11-17T23:49:44Z",
+   "result": "BTC 64877.3, ETH 1822.38, SOL 74.96 from 3 exchanges",
+   "last_ok": "2026-11-17T23:49:44Z",
+   "seconds": 1.0,
    "every_minutes": 1
   }
  }
