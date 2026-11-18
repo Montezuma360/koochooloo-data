@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T22:19:47Z",
+ "updated": "2026-11-18T22:20:59Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,10 +11,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-18T22:19:47Z",
+   "last_try": "2026-11-18T22:20:59Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-18T22:19:47Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-18T22:20:59Z",
+   "seconds": 0.4,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -25,10 +25,10 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-18T22:15:42Z",
-   "result": "block 976492, 1 sat/vB",
-   "last_ok": "2026-11-18T22:15:42Z",
-   "seconds": 1.7,
+   "last_try": "2026-11-18T22:20:59Z",
+   "result": "block 976493, 1 sat/vB",
+   "last_ok": "2026-11-18T22:20:59Z",
+   "seconds": 1.5,
    "every_minutes": 5
   },
   "onchain_daily": {
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-18T22:19:47Z",
+   "last_try": "2026-11-18T22:20:59Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-18T22:19:47Z",
-   "seconds": 1.6,
+   "last_ok": "2026-11-18T22:20:59Z",
+   "seconds": 1.5,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,10 +67,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-18T22:19:47Z",
-   "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-18T22:19:47Z",
-   "seconds": 2.7,
+   "last_try": "2026-11-18T22:20:59Z",
+   "result": "1 new headlines from 15 feeds",
+   "last_ok": "2026-11-18T22:20:59Z",
+   "seconds": 3.1,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -123,9 +123,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-18T22:19:47Z",
-   "result": "BTC 62375.09, ETH 1762.88, SOL 72.88 from 3 exchanges",
-   "last_ok": "2026-11-18T22:19:47Z",
+   "last_try": "2026-11-18T22:20:59Z",
+   "result": "BTC 62381.48, ETH 1763.07, SOL 72.87 from 3 exchanges",
+   "last_ok": "2026-11-18T22:20:59Z",
    "seconds": 1.1,
    "every_minutes": 1
   }
