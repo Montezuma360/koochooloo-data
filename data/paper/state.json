@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 30,
+ "runs": 31,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -580,6 +580,12 @@
      "signal": "2026-11-18",
      "event": "2026-11-16",
      "note": "3 insiders bought within 30 days"
+    },
+    {
+     "sym": "BA",
+     "signal": "2026-11-18",
+     "event": "2026-11-17",
+     "note": "3 insiders bought within 30 days"
     }
    ],
    "closed": [],
@@ -684,7 +690,8 @@
     "FLNA": "2026-11-18",
     "WWB": "2026-11-18",
     "PAL": "2026-11-18",
-    "STWD": "2026-11-18"
+    "STWD": "2026-11-18",
+    "BA": "2026-11-18"
    },
    "events": [
     {
@@ -1002,7 +1009,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -1.86,
+   "drawdown_pct": -1.98,
    "paused": false
   },
   "insider_big_250k": {
@@ -3574,6 +3581,24 @@
      "signal": "2026-11-18",
      "event": "2026-11-18",
      "note": "score 10: 2 insiders bought $306,850 in 30 days (last 2026-11-18); Director Jones Cecil W. bought $199,690 on 2026-11-18"
+    },
+    {
+     "sym": "BH",
+     "signal": "2026-11-18",
+     "event": "2026-11-18",
+     "note": "score 14: Chairman and CEO BIGLARI, SARDAR bought $172,502 on 2026-11-17; Chairman and CEO BIGLARI, SARDAR bought $125,989 on 2026-11-17"
+    },
+    {
+     "sym": "ECC",
+     "signal": "2026-11-18",
+     "event": "2026-11-18",
+     "note": "score 10: 2 insiders bought $221,950 in 30 days (last 2026-11-18); Chief Executive Officer Majewski Thomas P. bought $118,000 on 2026-11-18"
+    },
+    {
+     "sym": "GLP",
+     "signal": "2026-11-18",
+     "event": "2026-11-18",
+     "note": "score 10: Insider Global GP LLC bought $107,513 on 2026-11-18; Insider Global GP LLC bought $106,711 on 2026-11-17"
     }
    ],
    "closed": [],
@@ -3732,7 +3757,10 @@
     "PAL": "2026-11-18",
     "CGON": "2026-11-18",
     "CRMD": "2026-11-18",
-    "OBK": "2026-11-18"
+    "OBK": "2026-11-18",
+    "BH": "2026-11-18",
+    "ECC": "2026-11-18",
+    "GLP": "2026-11-18"
    },
    "events": [
     {
@@ -5047,6 +5075,18 @@
      "signal": "2026-11-18",
      "event": "2026-11-16",
      "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "HAWK",
+     "signal": "2026-11-18",
+     "event": "2026-11-17",
+     "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "ECC",
+     "signal": "2026-11-18",
+     "event": "2026-11-18",
+     "note": "2 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -5189,7 +5229,9 @@
     "PAL": "2026-11-18",
     "CGON": "2026-11-18",
     "FFIN": "2026-11-18",
-    "FBRT": "2026-11-18"
+    "FBRT": "2026-11-18",
+    "HAWK": "2026-11-18",
+    "ECC": "2026-11-18"
    },
    "events": [
     {
@@ -5652,7 +5694,7 @@
     ]
    ],
    "started": "2026-11-02",
-   "drawdown_pct": -2.0,
+   "drawdown_pct": -1.97,
    "paused": false
   },
   "research_setup": {
@@ -6005,7 +6047,7 @@
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -0.41,
+   "drawdown_pct": -0.44,
    "paused": false
   },
   "research_setup_trend": {
@@ -6358,11 +6400,11 @@
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -0.41,
+   "drawdown_pct": -0.44,
    "paused": false
   }
  },
- "updated": "2026-11-18T22:30:51+00:00",
+ "updated": "2026-11-18T23:57:44+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -7239,6 +7281,14 @@
   "FLNA": {
    "sic": "28",
    "name": "Pharmaceutical Preparations"
+  },
+  "GLP": {
+   "sic": "51",
+   "name": "Wholesale-Petroleum Bulk Stations & Terminals"
+  },
+  "ECC": {
+   "sic": null,
+   "name": ""
   }
  }
 }
