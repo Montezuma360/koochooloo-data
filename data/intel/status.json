@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-18T07:17:44Z",
+ "updated": "2026-11-18T07:18:38Z",
  "market_open": false,
  "failed": {},
  "sources": {
   "crypto": {
-   "last_try": "2026-11-18T07:03:38Z",
+   "last_try": "2026-11-18T07:18:38Z",
    "result": "100 coins, 15 trending, 3 exchanges",
-   "last_ok": "2026-11-18T07:03:38Z",
-   "seconds": 1.4,
+   "last_ok": "2026-11-18T07:18:38Z",
+   "seconds": 1.0,
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-18T07:17:44Z",
+   "last_try": "2026-11-18T07:18:38Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-18T07:17:44Z",
+   "last_ok": "2026-11-18T07:18:38Z",
    "seconds": 0.2,
    "every_minutes": 1
   },
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-18T07:17:44Z",
+   "last_try": "2026-11-18T07:18:38Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-18T07:17:44Z",
-   "seconds": 1.0,
+   "last_ok": "2026-11-18T07:18:38Z",
+   "seconds": 1.3,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,10 +67,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-18T07:17:44Z",
+   "last_try": "2026-11-18T07:18:38Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-18T07:17:44Z",
-   "seconds": 5.5,
+   "last_ok": "2026-11-18T07:18:38Z",
+   "seconds": 1.8,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -95,10 +95,10 @@
    "every_minutes": 60
   },
   "stocktwits": {
-   "last_try": "2026-11-18T07:03:38Z",
+   "last_try": "2026-11-18T07:18:38Z",
    "result": "30 trending",
-   "last_ok": "2026-11-18T07:03:38Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-18T07:18:38Z",
+   "seconds": 0.1,
    "every_minutes": 15
   },
   "reddit_forums": {
@@ -123,9 +123,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-18T07:17:44Z",
-   "result": "BTC 64640.41, ETH 1812.81, SOL 74.98 from 3 exchanges",
-   "last_ok": "2026-11-18T07:17:44Z",
+   "last_try": "2026-11-18T07:18:38Z",
+   "result": "BTC 64668.41, ETH 1813.18, SOL 75.01 from 3 exchanges",
+   "last_ok": "2026-11-18T07:18:38Z",
    "seconds": 0.7,
    "every_minutes": 1
   }
