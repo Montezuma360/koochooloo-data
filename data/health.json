@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T17:30:04Z",
+ "updated": "2026-11-18T17:31:25Z",
  "healthy": true,
  "problems": [],
  "market_open": true,
@@ -8,7 +8,7 @@
  "feeds": {
   "prices": {
    "updated": "2026-11-18T17:29:29Z",
-   "age_hours": 0.01,
+   "age_hours": 0.03,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -18,7 +18,7 @@
   },
   "sec_insiders": {
    "updated": "2026-11-18T17:29:34Z",
-   "age_hours": 0.01,
+   "age_hours": 0.03,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
@@ -28,7 +28,7 @@
   },
   "signals": {
    "updated": "2026-11-18T17:30:03Z",
-   "age_hours": 0.0,
+   "age_hours": 0.02,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-18T16:53:14Z",
-   "age_hours": 0.61,
+   "age_hours": 0.64,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-18T00:15:37Z",
-   "age_hours": 17.24,
+   "age_hours": 17.26,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -54,7 +54,7 @@
   },
   "paper_trading": {
    "updated": "2026-11-17T23:56:58+00:00",
-   "age_hours": 17.55,
+   "age_hours": 17.57,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -62,7 +62,7 @@
   },
   "intelligence": {
    "updated": "2026-11-18T17:29:36Z",
-   "age_hours": 0.01,
+   "age_hours": 0.03,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -74,15 +74,15 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-18T17:29:18Z",
+   "at": "2026-11-18T17:30:25Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 49
+   "runs_in_last_100": 48
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-18T17:29:14Z",
+   "at": "2026-11-18T17:30:12Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 46
+   "runs_in_last_100": 45
   },
   "Refresh signals and dashboard": {
    "last": "success",
