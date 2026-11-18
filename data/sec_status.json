@@ -1,13 +1,16 @@
 {
-  "updated": "2026-11-18T21:15:42Z",
-  "filings_seen": 23,
-  "new_rows": 15,
+  "updated": "2026-11-18T21:17:13Z",
+  "filings_seen": 48,
+  "new_rows": 49,
   "errors": [],
   "pages_read": 1,
-  "filing_errors": [],
-  "total_rows": 15368,
+  "filing_errors": [
+    "0001591698-26-000165: HTTPError",
+    "0001193125-26-467116: HTTPError"
+  ],
+  "total_rows": 15410,
   "repeats_dropped": 8997,
   "history_from": "2026-08-20",
-  "clusters": 170,
-  "seconds": 3.2
+  "clusters": 171,
+  "seconds": 27.1
 }
