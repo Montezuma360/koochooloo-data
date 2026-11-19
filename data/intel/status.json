@@ -1,9 +1,7 @@
 {
- "updated": "2026-11-19T08:05:48Z",
+ "updated": "2026-11-19T08:06:37Z",
  "market_open": false,
- "failed": {
-  "crypto_derivatives": "HTTPError: HTTP Error 503: Service Unavailable"
- },
+ "failed": {},
  "sources": {
   "crypto": {
    "last_try": "2026-11-19T07:57:36Z",
@@ -13,12 +11,11 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-19T08:05:48Z",
+   "last_try": "2026-11-19T08:06:37Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-19T07:59:34Z",
-   "seconds": 2.5,
-   "every_minutes": 1,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "last_ok": "2026-11-19T08:06:37Z",
+   "seconds": 0.2,
+   "every_minutes": 1
   },
   "crypto_fear_greed": {
    "last_try": "2026-11-19T07:21:00Z",
@@ -28,10 +25,10 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-19T08:01:55Z",
-   "result": "block 976554, 1 sat/vB",
-   "last_ok": "2026-11-19T08:01:55Z",
-   "seconds": 3.6,
+   "last_try": "2026-11-19T08:06:37Z",
+   "result": "block 976555, 1 sat/vB",
+   "last_ok": "2026-11-19T08:06:37Z",
+   "seconds": 1.4,
    "every_minutes": 5
   },
   "onchain_daily": {
@@ -42,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-19T08:05:48Z",
+   "last_try": "2026-11-19T08:06:37Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-19T08:05:48Z",
-   "seconds": 2.0,
+   "last_ok": "2026-11-19T08:06:37Z",
+   "seconds": 1.9,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -70,10 +67,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-19T08:05:48Z",
-   "result": "9 new headlines from 15 feeds",
-   "last_ok": "2026-11-19T08:05:48Z",
-   "seconds": 3.5,
+   "last_try": "2026-11-19T08:06:37Z",
+   "result": "0 new headlines from 15 feeds",
+   "last_ok": "2026-11-19T08:06:37Z",
+   "seconds": 2.9,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -126,9 +123,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-19T08:05:48Z",
-   "result": "BTC 63598.22, ETH 1801.79, SOL 74.7 from 3 exchanges",
-   "last_ok": "2026-11-19T08:05:48Z",
+   "last_try": "2026-11-19T08:06:37Z",
+   "result": "BTC 63597.56, ETH 1801.76, SOL 74.68 from 3 exchanges",
+   "last_ok": "2026-11-19T08:06:37Z",
    "seconds": 0.9,
    "every_minutes": 1
   }
