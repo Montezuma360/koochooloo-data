@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T00:25:53Z",
+ "updated": "2026-11-19T00:26:58Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,10 +11,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-19T00:25:53Z",
+   "last_try": "2026-11-19T00:26:58Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-19T00:25:53Z",
-   "seconds": 0.3,
+   "last_ok": "2026-11-19T00:26:58Z",
+   "seconds": 0.4,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -25,24 +25,24 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-19T00:21:59Z",
+   "last_try": "2026-11-19T00:26:58Z",
    "result": "block 976506, 1 sat/vB",
-   "last_ok": "2026-11-19T00:21:59Z",
-   "seconds": 1.8,
+   "last_ok": "2026-11-19T00:26:58Z",
+   "seconds": 1.5,
    "every_minutes": 5
   },
   "onchain_daily": {
-   "last_try": "2026-11-18T18:26:42Z",
+   "last_try": "2026-11-19T00:26:58Z",
    "result": "5 charts",
-   "last_ok": "2026-11-18T18:26:42Z",
-   "seconds": 1.7,
+   "last_ok": "2026-11-19T00:26:58Z",
+   "seconds": 2.2,
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-19T00:25:53Z",
+   "last_try": "2026-11-19T00:26:58Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-19T00:25:53Z",
-   "seconds": 1.5,
+   "last_ok": "2026-11-19T00:26:58Z",
+   "seconds": 1.8,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,17 +67,17 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-19T00:25:53Z",
+   "last_try": "2026-11-19T00:26:58Z",
    "result": "1 new headlines from 15 feeds",
-   "last_ok": "2026-11-19T00:25:53Z",
-   "seconds": 3.1,
+   "last_ok": "2026-11-19T00:26:58Z",
+   "seconds": 3.3,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-19T00:25:53Z",
+   "last_try": "2026-11-19T00:26:58Z",
    "result": "2 new filings (0 with a red flag)",
-   "last_ok": "2026-11-19T00:25:53Z",
-   "seconds": 33.8,
+   "last_ok": "2026-11-19T00:26:58Z",
+   "seconds": 22.6,
    "every_minutes": 2
   },
   "options": {
@@ -123,9 +123,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-19T00:25:53Z",
-   "result": "BTC 62738.17, ETH 1772.4, SOL 73.28 from 3 exchanges",
-   "last_ok": "2026-11-19T00:25:53Z",
+   "last_try": "2026-11-19T00:26:58Z",
+   "result": "BTC 62773.21, ETH 1773.76, SOL 73.32 from 3 exchanges",
+   "last_ok": "2026-11-19T00:26:58Z",
    "seconds": 0.9,
    "every_minutes": 1
   }
