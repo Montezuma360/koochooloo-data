@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T23:32:13Z",
+ "updated": "2026-11-19T23:32:52Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,8 +7,8 @@
  "repo_size_mb": 222.6,
  "feeds": {
   "prices": {
-   "updated": "2026-11-19T23:31:55Z",
-   "age_hours": 0.01,
+   "updated": "2026-11-19T23:32:39Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -17,7 +17,7 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-19T23:32:01Z",
+   "updated": "2026-11-19T23:32:45Z",
    "age_hours": 0.0,
    "stale_after_hours": 1,
    "stale": false,
@@ -27,7 +27,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-19T23:32:13Z",
+   "updated": "2026-11-19T23:32:52Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-19T23:02:07Z",
-   "age_hours": 0.5,
+   "age_hours": 0.51,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-19T00:17:40Z",
-   "age_hours": 23.24,
+   "age_hours": 23.25,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -54,14 +54,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-19T22:29:33+00:00",
-   "age_hours": 1.04,
+   "age_hours": 1.06,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-19T23:32:02Z",
+   "updated": "2026-11-19T23:32:48Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -74,13 +74,13 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-19T23:31:47Z",
+   "at": "2026-11-19T23:32:31Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 48
+   "runs_in_last_100": 49
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-19T23:31:41Z",
+   "at": "2026-11-19T23:32:26Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 45
   },
