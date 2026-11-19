@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-19T11:40:28Z",
+  "updated": "2026-11-19T11:43:26Z",
   "filings_seen": 0,
   "new_rows": 0,
-  "errors": [],
-  "pages_read": 1,
-  "filing_errors": [],
+  "errors": [
+    "feed: TimeoutError: The read operation timed out"
+  ],
   "total_rows": 15942,
   "repeats_dropped": 8993,
   "history_from": "2026-08-21",
