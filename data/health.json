@@ -1,8 +1,7 @@
 {
- "updated": "2026-11-19T13:27:29Z",
+ "updated": "2026-11-19T13:29:23Z",
  "healthy": false,
  "problems": [
-  "sec_insiders: 1 part(s) failed",
   "intelligence: 1 part(s) failed"
  ],
  "market_open": false,
@@ -10,8 +9,8 @@
  "repo_size_mb": 202.7,
  "feeds": {
   "prices": {
-   "updated": "2026-11-19T13:25:34Z",
-   "age_hours": 0.03,
+   "updated": "2026-11-19T13:28:13Z",
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -20,21 +19,17 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-19T13:25:39Z",
-   "age_hours": 0.03,
+   "updated": "2026-11-19T13:28:17Z",
+   "age_hours": 0.02,
    "stale_after_hours": 1,
    "stale": false,
-   "failed_parts": {
-    "errors": [
-     "feed: TimeoutError: The read operation timed out"
-    ]
-   },
-   "ok": false,
+   "failed_parts": {},
+   "ok": true,
    "target_minutes_when_market_open": 3,
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-19T13:27:29Z",
+   "updated": "2026-11-19T13:29:23Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -45,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-19T12:38:07Z",
-   "age_hours": 0.82,
+   "age_hours": 0.85,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -53,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-19T00:17:40Z",
-   "age_hours": 13.16,
+   "age_hours": 13.2,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -61,14 +56,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-18T23:57:44+00:00",
-   "age_hours": 13.5,
+   "age_hours": 13.53,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-19T13:26:46Z",
+   "updated": "2026-11-19T13:28:40Z",
    "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
@@ -83,21 +78,15 @@
  "workflows": {
   "Caesar's voice": {
    "last": "cancelled",
-   "at": "2026-11-19T13:27:20Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 48
-  },
-  "Live market refresh": {
-   "last": "cancelled",
-   "at": "2026-11-19T13:27:15Z",
+   "at": "2026-11-19T13:29:15Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 47
   },
   "Caesar's voice": {
-   "last": "cancelled",
-   "at": "2026-11-19T13:24:24Z",
+   "last": "skipped",
+   "at": "2026-11-19T13:27:55Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 47
+   "runs_in_last_100": 49
   },
   "Refresh signals and dashboard": {
    "last": "success",
