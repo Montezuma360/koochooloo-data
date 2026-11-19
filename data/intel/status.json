@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T08:03:35Z",
+ "updated": "2026-11-19T08:04:43Z",
  "market_open": false,
  "failed": {
   "crypto_derivatives": "HTTPError: HTTP Error 503: Service Unavailable"
@@ -13,10 +13,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-19T08:03:35Z",
+   "last_try": "2026-11-19T08:04:43Z",
    "result": "3 perpetuals",
    "last_ok": "2026-11-19T07:59:34Z",
-   "seconds": 2.3,
+   "seconds": 2.2,
    "every_minutes": 1,
    "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
@@ -42,10 +42,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-19T08:03:35Z",
+   "last_try": "2026-11-19T08:04:43Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-19T08:03:35Z",
-   "seconds": 1.6,
+   "last_ok": "2026-11-19T08:04:43Z",
+   "seconds": 6.2,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -70,10 +70,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-19T08:03:35Z",
-   "result": "1 new headlines from 15 feeds",
-   "last_ok": "2026-11-19T08:03:35Z",
-   "seconds": 2.3,
+   "last_try": "2026-11-19T08:04:43Z",
+   "result": "0 new headlines from 15 feeds",
+   "last_ok": "2026-11-19T08:04:43Z",
+   "seconds": 1.4,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -126,10 +126,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-19T08:03:35Z",
-   "result": "BTC 63602.9, ETH 1803.07, SOL 74.77 from 3 exchanges",
-   "last_ok": "2026-11-19T08:03:35Z",
-   "seconds": 0.9,
+   "last_try": "2026-11-19T08:04:43Z",
+   "result": "BTC 63574.61, ETH 1801.83, SOL 74.71 from 3 exchanges",
+   "last_ok": "2026-11-19T08:04:43Z",
+   "seconds": 0.7,
    "every_minutes": 1
   }
  }
