@@ -1,15 +1,14 @@
 {
-  "updated": "2026-11-19T18:48:34Z",
-  "filings_seen": 43,
-  "new_rows": 33,
-  "errors": [],
-  "pages_read": 1,
-  "filing_errors": [
-    "0000072499-26-000197: HTTPError"
+  "updated": "2026-11-19T18:51:05Z",
+  "filings_seen": 0,
+  "new_rows": 0,
+  "errors": [
+    "feed: TimeoutError: The read operation timed out"
   ],
-  "total_rows": 16043,
+  "total_rows": 16042,
   "repeats_dropped": 8993,
   "history_from": "2026-08-21",
   "clusters": 184,
-  "seconds": 57.2
+  "filing_errors": [],
+  "seconds": 66.3
 }
