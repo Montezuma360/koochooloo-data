@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 32,
+ "runs": 33,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -1122,7 +1122,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -2.81,
+   "drawdown_pct": -2.95,
    "paused": false
   },
   "insider_big_250k": {
@@ -1562,7 +1562,7 @@
      "stop_pct": 0.0839,
      "industry": "49",
      "rsi": 38.2,
-     "last_value": 2089.8865053413247
+     "last_value": 2071.8931921355197
     },
     {
      "sym": "ROK",
@@ -1891,6 +1891,24 @@
      "signal": "2026-11-19",
      "event": "2026-11-18",
      "note": "EcoR1 Capital, LLC (Director) bought $6,427,111"
+    },
+    {
+     "sym": "IRTC",
+     "signal": "2026-11-19",
+     "event": "2026-11-19",
+     "note": "TALWALKAR ABHIJIT Y (Director) bought $763,706"
+    },
+    {
+     "sym": "CCB",
+     "signal": "2026-11-19",
+     "event": "2026-11-19",
+     "note": "HOVDE STEVEN D (Director) bought $550,000"
+    },
+    {
+     "sym": "LCTX",
+     "signal": "2026-11-19",
+     "event": "2026-11-17",
+     "note": "BROADWOOD PARTNERS, L.P. (Director) bought $770,700"
     }
    ],
    "closed": [],
@@ -2089,7 +2107,10 @@
     "ELTK": "2026-11-19",
     "USAR": "2026-11-19",
     "RMIX": "2026-11-19",
-    "ANAB": "2026-11-19"
+    "ANAB": "2026-11-19",
+    "IRTC": "2026-11-19",
+    "CCB": "2026-11-19",
+    "LCTX": "2026-11-19"
    },
    "events": [
     {
@@ -2652,11 +2673,11 @@
     ],
     [
      "2026-11-19",
-     95623.62
+     95605.63
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -6.41,
+   "drawdown_pct": -6.43,
    "paused": false
   },
   "congress_cluster3": {
@@ -3817,6 +3838,12 @@
      "signal": "2026-11-19",
      "event": "2026-11-19",
      "note": "score 10: 2 insiders bought $299,835 in 30 days (last 2026-11-17); CEO Van Nieuwenhuyse Rick bought $101,097 on 2026-11-17"
+    },
+    {
+     "sym": "FBIO",
+     "signal": "2026-11-19",
+     "event": "2026-11-19",
+     "note": "score 10: 2 insiders bought $340,398 in 30 days (last 2026-11-19); PRESIDENT, CEO & CHAIRMAN ROSENWALD LINDSAY A MD bought $104,233 on 2026-11-18"
     }
    ],
    "closed": [],
@@ -3984,7 +4011,8 @@
     "TLSI": "2026-11-19",
     "SRTS": "2026-11-19",
     "HMH": "2026-11-19",
-    "CTGO": "2026-11-19"
+    "CTGO": "2026-11-19",
+    "FBIO": "2026-11-19"
    },
    "events": [
     {
@@ -5434,6 +5462,12 @@
      "signal": "2026-11-19",
      "event": "2026-11-18",
      "note": "4 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "FBIO",
+     "signal": "2026-11-19",
+     "event": "2026-11-19",
+     "note": "2 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -5587,7 +5621,8 @@
     "CTGO": "2026-11-19",
     "TROX": "2026-11-19",
     "OIG": "2026-11-19",
-    "RMIX": "2026-11-19"
+    "RMIX": "2026-11-19",
+    "FBIO": "2026-11-19"
    },
    "events": [
     {
@@ -6119,7 +6154,7 @@
     ]
    ],
    "started": "2026-11-02",
-   "drawdown_pct": -2.91,
+   "drawdown_pct": -2.69,
    "paused": false
   },
   "research_setup": {
@@ -6543,7 +6578,7 @@
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -0.84,
+   "drawdown_pct": -0.7,
    "paused": false
   },
   "research_setup_trend": {
@@ -6967,11 +7002,11 @@
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -0.84,
+   "drawdown_pct": -0.7,
    "paused": false
   }
  },
- "updated": "2026-11-19T22:29:33+00:00",
+ "updated": "2026-11-19T23:53:28+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -7948,6 +7983,18 @@
   "PLD": {
    "sic": "67",
    "name": "Real Estate Investment Trusts"
+  },
+  "CCB": {
+   "sic": "60",
+   "name": "State Commercial Banks"
+  },
+  "FBIO": {
+   "sic": "28",
+   "name": "Pharmaceutical Preparations"
+  },
+  "IRTC": {
+   "sic": "38",
+   "name": "Surgical & Medical Instruments & Apparatus"
   }
  }
 }
