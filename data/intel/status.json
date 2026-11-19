@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T10:12:43Z",
+ "updated": "2026-11-19T10:13:36Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,10 +11,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-19T10:12:43Z",
+   "last_try": "2026-11-19T10:13:36Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-19T10:12:43Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-19T10:13:36Z",
+   "seconds": 0.3,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -39,10 +39,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-19T10:12:43Z",
+   "last_try": "2026-11-19T10:13:36Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-19T10:12:43Z",
-   "seconds": 1.1,
+   "last_ok": "2026-11-19T10:13:36Z",
+   "seconds": 1.9,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -67,10 +67,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-19T10:12:43Z",
+   "last_try": "2026-11-19T10:13:36Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-19T10:12:43Z",
-   "seconds": 5.2,
+   "last_ok": "2026-11-19T10:13:36Z",
+   "seconds": 3.6,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -88,10 +88,10 @@
    "every_minutes": 720
   },
   "fear_greed": {
-   "last_try": "2026-11-19T09:13:38Z",
-   "result": "16.4 (Extreme fear), 6 parts",
-   "last_ok": "2026-11-19T09:13:38Z",
-   "seconds": 0.8,
+   "last_try": "2026-11-19T10:13:36Z",
+   "result": "15.2 (Extreme fear), 6 parts",
+   "last_ok": "2026-11-19T10:13:36Z",
+   "seconds": 1.2,
    "every_minutes": 60
   },
   "stocktwits": {
@@ -123,10 +123,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-19T10:12:43Z",
-   "result": "BTC 63762.24, ETH 1806.16, SOL 74.48 from 3 exchanges",
-   "last_ok": "2026-11-19T10:12:43Z",
-   "seconds": 0.6,
+   "last_try": "2026-11-19T10:13:36Z",
+   "result": "BTC 63746.39, ETH 1805.78, SOL 74.44 from 3 exchanges",
+   "last_ok": "2026-11-19T10:13:36Z",
+   "seconds": 1.0,
    "every_minutes": 1
   }
  }
