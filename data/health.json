@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T21:28:38Z",
+ "updated": "2026-11-19T21:28:51Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,8 +7,8 @@
  "repo_size_mb": 216.5,
  "feeds": {
   "prices": {
-   "updated": "2026-11-19T21:27:37Z",
-   "age_hours": 0.02,
+   "updated": "2026-11-19T21:28:36Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -17,8 +17,8 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-19T21:27:41Z",
-   "age_hours": 0.02,
+   "updated": "2026-11-19T21:28:41Z",
+   "age_hours": 0.0,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
@@ -27,8 +27,8 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-19T21:27:45Z",
-   "age_hours": 0.01,
+   "updated": "2026-11-19T21:28:51Z",
+   "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-19T00:17:40Z",
-   "age_hours": 21.18,
+   "age_hours": 21.19,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -61,8 +61,8 @@
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-19T21:27:42Z",
-   "age_hours": 0.02,
+   "updated": "2026-11-19T21:28:43Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -72,6 +72,12 @@
   }
  },
  "workflows": {
+  "Refresh signals and dashboard": {
+   "last": "success",
+   "at": "2026-11-19T21:28:50Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 4
+  },
   "Caesar's voice": {
    "last": "skipped",
    "at": "2026-11-19T21:28:08Z",
@@ -83,12 +89,6 @@
    "at": "2026-11-19T21:27:53Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 44
-  },
-  "Refresh signals and dashboard": {
-   "last": "success",
-   "at": "2026-11-19T21:25:28Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 3
   },
   "Refresh brain data": {
    "last": "success",
