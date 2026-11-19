@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T13:59:23Z",
+ "updated": "2026-11-19T14:00:54Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,7 +7,7 @@
  "repo_size_mb": 208.4,
  "feeds": {
   "prices": {
-   "updated": "2026-11-19T13:58:41Z",
+   "updated": "2026-11-19T14:00:08Z",
    "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
@@ -17,7 +17,7 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-19T13:58:47Z",
+   "updated": "2026-11-19T14:00:11Z",
    "age_hours": 0.01,
    "stale_after_hours": 1,
    "stale": false,
@@ -27,7 +27,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-19T13:59:23Z",
+   "updated": "2026-11-19T14:00:54Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-19T13:36:29Z",
-   "age_hours": 0.38,
+   "age_hours": 0.41,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-19T00:17:40Z",
-   "age_hours": 13.7,
+   "age_hours": 13.72,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -54,21 +54,19 @@
   },
   "paper_trading": {
    "updated": "2026-11-18T23:57:44+00:00",
-   "age_hours": 14.03,
+   "age_hours": 14.05,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-19T13:59:02Z",
+   "updated": "2026-11-19T14:00:26Z",
    "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
-   "failed_parts": {
-    "sec_filings": "TimeoutError: The read operation timed out"
-   },
-   "ok": false,
+   "failed_parts": {},
+   "ok": true,
    "target_minutes_when_market_open": 3,
    "on_target": null
   }
@@ -76,15 +74,15 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-19T13:58:26Z",
+   "at": "2026-11-19T13:59:41Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 49
   },
   "Live market refresh": {
-   "last": "cancelled",
-   "at": "2026-11-19T13:58:18Z",
+   "last": "success",
+   "at": "2026-11-19T13:59:36Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 44
+   "runs_in_last_100": 45
   },
   "Refresh signals and dashboard": {
    "last": "success",
