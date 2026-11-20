@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T00:11:05Z",
+ "updated": "2026-11-20T00:11:42Z",
  "healthy": true,
  "problems": [],
  "market_open": false,
@@ -7,7 +7,7 @@
  "repo_size_mb": 225.4,
  "feeds": {
   "prices": {
-   "updated": "2026-11-20T00:10:50Z",
+   "updated": "2026-11-20T00:11:31Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -17,7 +17,7 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-20T00:10:55Z",
+   "updated": "2026-11-20T00:11:37Z",
    "age_hours": 0.0,
    "stale_after_hours": 1,
    "stale": false,
@@ -27,7 +27,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-20T00:11:04Z",
+   "updated": "2026-11-20T00:11:42Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -38,7 +38,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-19T23:57:36Z",
-   "age_hours": 0.22,
+   "age_hours": 0.24,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -46,7 +46,7 @@
   },
   "alt_data": {
    "updated": "2026-11-19T00:17:40Z",
-   "age_hours": 23.89,
+   "age_hours": 23.9,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -54,14 +54,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-19T23:53:28+00:00",
-   "age_hours": 0.29,
+   "age_hours": 0.3,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-20T00:10:56Z",
+   "updated": "2026-11-20T00:11:38Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -74,15 +74,15 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-20T00:09:52Z",
+   "at": "2026-11-20T00:11:22Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 48
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-20T00:09:46Z",
+   "at": "2026-11-20T00:11:12Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 45
+   "runs_in_last_100": 44
   },
   "Refresh signals and dashboard": {
    "last": "success",
