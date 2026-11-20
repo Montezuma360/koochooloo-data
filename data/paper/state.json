@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 34,
+ "runs": 35,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -1225,7 +1225,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -7.46,
+   "drawdown_pct": -7.73,
    "paused": false
   },
   "insider_big_250k": {
@@ -1982,6 +1982,12 @@
      "signal": "2026-11-20",
      "event": "2026-11-19",
      "note": "Massey Stewart R (Director) bought $320,900"
+    },
+    {
+     "sym": "HBCP",
+     "signal": "2026-11-20",
+     "event": "2026-11-20",
+     "note": "Hill Darren M (Chief Risk Officer) bought $315,013"
     }
    ],
    "closed": [],
@@ -2190,7 +2196,8 @@
     "PICS": "2026-11-20",
     "SAGT": "2026-11-20",
     "ELV": "2026-11-20",
-    "INOD": "2026-11-20"
+    "INOD": "2026-11-20",
+    "HBCP": "2026-11-20"
    },
    "events": [
     {
@@ -3043,7 +3050,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -0.12,
+   "drawdown_pct": -0.31,
    "paused": false
   },
   "congress_big_100k": {
@@ -3362,7 +3369,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.35,
    "paused": false
   },
   "terminal_top_signals": {
@@ -5865,6 +5872,18 @@
      "signal": "2026-11-20",
      "event": "2026-11-19",
      "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "REI",
+     "signal": "2026-11-20",
+     "event": "2026-11-19",
+     "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "LPCN",
+     "signal": "2026-11-20",
+     "event": "2026-11-20",
+     "note": "2 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -6029,7 +6048,9 @@
     "BCML": "2026-11-20",
     "NXG": "2026-11-20",
     "PICS": "2026-11-20",
-    "VTIX": "2026-11-20"
+    "VTIX": "2026-11-20",
+    "REI": "2026-11-20",
+    "LPCN": "2026-11-20"
    },
    "events": [
     {
@@ -6615,7 +6636,7 @@
     ]
    ],
    "started": "2026-11-02",
-   "drawdown_pct": -4.99,
+   "drawdown_pct": -5.34,
    "paused": false
   },
   "research_setup": {
@@ -6888,6 +6909,12 @@
      "signal": "2026-11-20",
      "event": "2026-11-18",
      "note": "research setup: 3 insiders bought $294,206 in total within 30 days (Gordon Gary B., Szela Mary T, Wahlstrom Mats); 2 officers or directors each bought $25k+"
+    },
+    {
+     "sym": "REI",
+     "signal": "2026-11-20",
+     "event": "2026-11-19",
+     "note": "research setup: 2 insiders bought $123,587 in total within 30 days (Johl Sundip Singh, Tharp Carla Todd); 2 officers or directors each bought $25k+"
     }
    ],
    "closed": [],
@@ -6917,7 +6944,8 @@
     "SRTS": "2026-11-19",
     "TROX": "2026-11-19",
     "BCML": "2026-11-20",
-    "TLSI": "2026-11-20"
+    "TLSI": "2026-11-20",
+    "REI": "2026-11-20"
    },
    "events": [
     {
@@ -7081,7 +7109,7 @@
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -1.87,
+   "drawdown_pct": -2.01,
    "paused": false
   },
   "research_setup_trend": {
@@ -7326,6 +7354,12 @@
      "signal": "2026-11-20",
      "event": "2026-11-18",
      "note": "research setup: 3 insiders bought $294,206 in total within 30 days (Gordon Gary B., Szela Mary T, Wahlstrom Mats); 2 officers or directors each bought $25k+"
+    },
+    {
+     "sym": "REI",
+     "signal": "2026-11-20",
+     "event": "2026-11-19",
+     "note": "research setup: 2 insiders bought $123,587 in total within 30 days (Johl Sundip Singh, Tharp Carla Todd); 2 officers or directors each bought $25k+"
     }
    ],
    "closed": [],
@@ -7355,7 +7389,8 @@
     "SRTS": "2026-11-19",
     "TROX": "2026-11-19",
     "BCML": "2026-11-20",
-    "TLSI": "2026-11-20"
+    "TLSI": "2026-11-20",
+    "REI": "2026-11-20"
    },
    "events": [
     {
@@ -7523,7 +7558,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-20T22:26:12+00:00",
+ "updated": "2026-11-20T23:56:20+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -8576,6 +8611,18 @@
   "FMBM": {
    "sic": "60",
    "name": "State Commercial Banks"
+  },
+  "LPCN": {
+   "sic": "28",
+   "name": "Pharmaceutical Preparations"
+  },
+  "HBCP": {
+   "sic": "60",
+   "name": "Savings Institutions, Not Federally Chartered"
+  },
+  "REI": {
+   "sic": "13",
+   "name": "Crude Petroleum & Natural Gas"
   }
  }
 }
