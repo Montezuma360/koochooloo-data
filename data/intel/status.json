@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T22:10:55Z",
+ "updated": "2026-11-20T22:15:53Z",
  "market_open": false,
  "failed": {
   "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
@@ -13,10 +13,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-20T22:10:55Z",
+   "last_try": "2026-11-20T22:15:53Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-20T22:10:55Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-20T22:15:53Z",
+   "seconds": 0.4,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -27,10 +27,10 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-20T22:10:55Z",
-   "result": "block 976789, 3 sat/vB",
-   "last_ok": "2026-11-20T22:10:55Z",
-   "seconds": 1.9,
+   "last_try": "2026-11-20T22:15:53Z",
+   "result": "block 976789, 4 sat/vB",
+   "last_ok": "2026-11-20T22:15:53Z",
+   "seconds": 1.7,
    "every_minutes": 5
   },
   "onchain_daily": {
@@ -41,10 +41,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-20T22:10:55Z",
+   "last_try": "2026-11-20T22:15:53Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-20T22:10:55Z",
-   "seconds": 1.7,
+   "last_ok": "2026-11-20T22:15:53Z",
+   "seconds": 1.5,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -69,17 +69,17 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-20T22:10:55Z",
-   "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-20T22:10:55Z",
-   "seconds": 2.3,
+   "last_try": "2026-11-20T22:15:53Z",
+   "result": "11 new headlines from 15 feeds",
+   "last_ok": "2026-11-20T22:15:53Z",
+   "seconds": 2.8,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-20T22:10:55Z",
-   "result": "7 new filings (0 with a red flag)",
-   "last_ok": "2026-11-20T22:10:55Z",
-   "seconds": 4.0,
+   "last_try": "2026-11-20T22:15:53Z",
+   "result": "18 new filings (2 with a red flag)",
+   "last_ok": "2026-11-20T22:15:53Z",
+   "seconds": 2.1,
    "every_minutes": 2
   },
   "options": {
@@ -91,11 +91,11 @@
    "error": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
   },
   "fear_greed": {
-   "last_try": "2026-11-20T21:11:47Z",
+   "last_try": "2026-11-20T22:15:53Z",
    "result": "2.6 (Extreme fear), 6 parts",
-   "last_ok": "2026-11-20T21:11:47Z",
-   "seconds": 1.7,
-   "every_minutes": 5
+   "last_ok": "2026-11-20T22:15:53Z",
+   "seconds": 1.2,
+   "every_minutes": 60
   },
   "stocktwits": {
    "last_try": "2026-11-20T22:10:55Z",
@@ -126,10 +126,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-20T22:10:55Z",
-   "result": "BTC 59038.6, ETH 1618.45, SOL 68.98 from 3 exchanges",
-   "last_ok": "2026-11-20T22:10:55Z",
-   "seconds": 1.0,
+   "last_try": "2026-11-20T22:15:53Z",
+   "result": "BTC 59111.0, ETH 1621.38, SOL 69.03 from 3 exchanges",
+   "last_ok": "2026-11-20T22:15:53Z",
+   "seconds": 0.9,
    "every_minutes": 1
   }
  }
