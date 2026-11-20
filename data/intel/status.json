@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T04:31:35Z",
+ "updated": "2026-11-20T04:32:37Z",
  "market_open": false,
  "failed": {},
  "sources": {
@@ -11,9 +11,9 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-20T04:31:35Z",
+   "last_try": "2026-11-20T04:32:37Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-20T04:31:35Z",
+   "last_ok": "2026-11-20T04:32:37Z",
    "seconds": 0.2,
    "every_minutes": 1
   },
@@ -39,9 +39,9 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-20T04:31:35Z",
+   "last_try": "2026-11-20T04:32:37Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-20T04:31:35Z",
+   "last_ok": "2026-11-20T04:32:37Z",
    "seconds": 1.5,
    "every_minutes": 1
   },
@@ -67,10 +67,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-20T04:31:35Z",
-   "result": "1 new headlines from 15 feeds",
-   "last_ok": "2026-11-20T04:31:35Z",
-   "seconds": 2.0,
+   "last_try": "2026-11-20T04:32:37Z",
+   "result": "0 new headlines from 15 feeds",
+   "last_ok": "2026-11-20T04:32:37Z",
+   "seconds": 2.6,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -102,10 +102,10 @@
    "every_minutes": 15
   },
   "reddit_forums": {
-   "last_try": "2026-11-20T04:02:49Z",
+   "last_try": "2026-11-20T04:32:37Z",
    "result": "5 forums",
-   "last_ok": "2026-11-20T04:02:49Z",
-   "seconds": 1.4,
+   "last_ok": "2026-11-20T04:32:37Z",
+   "seconds": 1.6,
    "every_minutes": 30
   },
   "finnhub": {
@@ -123,10 +123,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-20T04:31:35Z",
-   "result": "BTC 61569.9, ETH 1727.69, SOL 72.21 from 3 exchanges",
-   "last_ok": "2026-11-20T04:31:35Z",
-   "seconds": 0.8,
+   "last_try": "2026-11-20T04:32:37Z",
+   "result": "BTC 61532.8, ETH 1726.09, SOL 72.13 from 3 exchanges",
+   "last_ok": "2026-11-20T04:32:37Z",
+   "seconds": 0.6,
    "every_minutes": 1
   }
  }
