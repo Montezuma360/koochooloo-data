@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T04:35:48Z",
+ "updated": "2026-11-21T04:38:08Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
@@ -10,7 +10,7 @@
  "feeds": {
   "prices": {
    "updated": "2026-11-21T04:35:40Z",
-   "age_hours": 0.0,
+   "age_hours": 0.04,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -19,8 +19,8 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-21T04:35:44Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-21T04:37:18Z",
+   "age_hours": 0.01,
    "stale_after_hours": 31,
    "stale": false,
    "failed_parts": {},
@@ -29,7 +29,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-21T04:35:48Z",
+   "updated": "2026-11-21T04:38:08Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -40,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-21T04:05:38Z",
-   "age_hours": 0.5,
+   "age_hours": 0.54,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-21T00:13:48Z",
-   "age_hours": 4.37,
+   "age_hours": 4.41,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
@@ -56,7 +56,7 @@
   },
   "paper_trading": {
    "updated": "2026-11-20T23:56:20+00:00",
-   "age_hours": 4.66,
+   "age_hours": 4.7,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
@@ -64,7 +64,7 @@
   },
   "intelligence": {
    "updated": "2026-11-21T04:35:45Z",
-   "age_hours": 0.0,
+   "age_hours": 0.04,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -78,15 +78,21 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-21T04:34:23Z",
+   "at": "2026-11-21T04:37:23Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 49
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-21T04:34:20Z",
+   "at": "2026-11-21T04:37:17Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 48
+   "runs_in_last_100": 47
+  },
+  "Backfill SEC insider history": {
+   "last": "success",
+   "at": "2026-11-21T04:37:28Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 1
   },
   "Refresh signals and dashboard": {
    "last": "success",
