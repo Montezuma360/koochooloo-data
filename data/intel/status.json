@@ -1,0 +1,136 @@
+{
+ "updated": "2026-11-22T04:05:46Z",
+ "market_open": false,
+ "failed": {
+  "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
+ },
+ "sources": {
+  "crypto": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "100 coins, 15 trending, 3 exchanges",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 1.6,
+   "every_minutes": 15
+  },
+  "crypto_derivatives": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "3 perpetuals",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 0.7,
+   "every_minutes": 1
+  },
+  "crypto_fear_greed": {
+   "last_try": "2026-11-22T03:40:55Z",
+   "result": "11 (Extreme Fear)",
+   "last_ok": "2026-11-22T03:40:55Z",
+   "seconds": 0.1,
+   "every_minutes": 60
+  },
+  "onchain": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "block 976987, 1 sat/vB",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 54.8,
+   "every_minutes": 5
+  },
+  "onchain_daily": {
+   "last_try": "2026-11-22T00:35:43Z",
+   "result": "5 charts",
+   "last_ok": "2026-11-22T00:35:43Z",
+   "seconds": 1.8,
+   "every_minutes": 360
+  },
+  "futures_fx": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "31 quotes",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 2.0,
+   "every_minutes": 1
+  },
+  "ecb_fx": {
+   "last_try": "2026-11-22T02:35:42Z",
+   "result": "2026-11-20, 30 currencies",
+   "last_ok": "2026-11-22T02:35:42Z",
+   "seconds": 0.9,
+   "every_minutes": 120
+  },
+  "macro_global": {
+   "last_try": "2026-11-22T03:05:41Z",
+   "result": "7 series, 1 failed",
+   "last_ok": "2026-11-22T03:05:41Z",
+   "seconds": 2.5,
+   "every_minutes": 360
+  },
+  "calendar": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "126 events, 0 high-impact still to come",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 0.2,
+   "every_minutes": 60
+  },
+  "news": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "1 new headlines from 15 feeds",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 6.2,
+   "every_minutes": 1
+  },
+  "sec_filings": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "0 new filings (0 with a red flag)",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 2.1,
+   "every_minutes": 2
+  },
+  "options": {
+   "last_try": "2026-11-21T21:15:52Z",
+   "result": "7 chains, put/call 0.724, 58 unusual",
+   "last_ok": "2026-11-19T21:10:24Z",
+   "seconds": 0.7,
+   "every_minutes": 720,
+   "error": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
+  },
+  "fear_greed": {
+   "last_try": "2026-11-22T03:15:48Z",
+   "result": "2.6 (Extreme fear), 6 parts",
+   "last_ok": "2026-11-22T03:15:48Z",
+   "seconds": 1.2,
+   "every_minutes": 60
+  },
+  "stocktwits": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "30 trending",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 0.2,
+   "every_minutes": 15
+  },
+  "reddit_forums": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "5 forums",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 1.4,
+   "every_minutes": 30
+  },
+  "finnhub": {
+   "last_try": "2026-11-22T02:35:42Z",
+   "result": "skipped: add FINNHUB_KEY secret to switch on",
+   "last_ok": "2026-11-22T02:35:42Z",
+   "seconds": 0.0,
+   "every_minutes": 360
+  },
+  "crypto_sectors": {
+   "last_try": "2026-11-22T03:40:55Z",
+   "result": "384 sectors; best Venice Ecosystem +21.2%, worst Tokenized Exchange-Traded Product (ETPs) -7.6%",
+   "last_ok": "2026-11-22T03:40:55Z",
+   "seconds": 0.1,
+   "every_minutes": 60
+  },
+  "crypto_live": {
+   "last_try": "2026-11-22T04:05:46Z",
+   "result": "BTC 59376.7, ETH 1661.22, SOL 69.42 from 3 exchanges",
+   "last_ok": "2026-11-22T04:05:46Z",
+   "seconds": 0.9,
+   "every_minutes": 1
+  }
+ }
+}

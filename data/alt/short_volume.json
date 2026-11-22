@@ -1,0 +1,2030 @@
+{
+ "date": "2026-11-20",
+ "days_in_average": 20,
+ "market_short_ratio": 0.461,
+ "note": "Share of each stock's reported volume that was short selling (FINRA consolidated NMS). Above about 0.5 is high, but market makers short routinely, so compare a stock with its own 20-day average.",
+ "highest_ratio_liquid": [
+  {
+   "symbol": "SCHP",
+   "ratio": 0.948,
+   "avg20": 0.764,
+   "volume": 28666974
+  },
+  {
+   "symbol": "APG",
+   "ratio": 0.883,
+   "avg20": 0.646,
+   "volume": 4441782
+  },
+  {
+   "symbol": "BSP",
+   "ratio": 0.874,
+   "avg20": 0.82,
+   "volume": 2951658
+  },
+  {
+   "symbol": "VONV",
+   "ratio": 0.848,
+   "avg20": 0.681,
+   "volume": 2791462
+  },
+  {
+   "symbol": "NAVI",
+   "ratio": 0.819,
+   "avg20": 0.527,
+   "volume": 2270449
+  },
+  {
+   "symbol": "ONDL",
+   "ratio": 0.818,
+   "avg20": 0.647,
+   "volume": 2339080
+  },
+  {
+   "symbol": "WCMI",
+   "ratio": 0.807,
+   "avg20": 0.718,
+   "volume": 2264986
+  },
+  {
+   "symbol": "IBDW",
+   "ratio": 0.804,
+   "avg20": 0.561,
+   "volume": 2461964
+  },
+  {
+   "symbol": "DUHP",
+   "ratio": 0.794,
+   "avg20": 0.702,
+   "volume": 4041785
+  },
+  {
+   "symbol": "DFAE",
+   "ratio": 0.781,
+   "avg20": 0.754,
+   "volume": 2142224
+  },
+  {
+   "symbol": "VGIT",
+   "ratio": 0.777,
+   "avg20": 0.614,
+   "volume": 15530655
+  },
+  {
+   "symbol": "VCIT",
+   "ratio": 0.775,
+   "avg20": 0.607,
+   "volume": 11500557
+  },
+  {
+   "symbol": "AVUV",
+   "ratio": 0.775,
+   "avg20": 0.709,
+   "volume": 2410126
+  },
+  {
+   "symbol": "DFEM",
+   "ratio": 0.765,
+   "avg20": 0.698,
+   "volume": 3573827
+  },
+  {
+   "symbol": "VIK",
+   "ratio": 0.761,
+   "avg20": 0.522,
+   "volume": 2608740
+  },
+  {
+   "symbol": "XRT",
+   "ratio": 0.75,
+   "avg20": 0.802,
+   "volume": 3033017
+  },
+  {
+   "symbol": "VLY",
+   "ratio": 0.746,
+   "avg20": 0.646,
+   "volume": 3048759
+  },
+  {
+   "symbol": "AVLV",
+   "ratio": 0.738,
+   "avg20": 0.728,
+   "volume": 2165298
+  },
+  {
+   "symbol": "KRE",
+   "ratio": 0.738,
+   "avg20": 0.721,
+   "volume": 5448828
+  },
+  {
+   "symbol": "ITOT",
+   "ratio": 0.736,
+   "avg20": 0.652,
+   "volume": 3598568
+  },
+  {
+   "symbol": "SRLN",
+   "ratio": 0.733,
+   "avg20": 0.427,
+   "volume": 7290553
+  },
+  {
+   "symbol": "LWLG",
+   "ratio": 0.732,
+   "avg20": 0.641,
+   "volume": 2581288
+  },
+  {
+   "symbol": "IXUS",
+   "ratio": 0.729,
+   "avg20": 0.634,
+   "volume": 3483736
+  },
+  {
+   "symbol": "FLOT",
+   "ratio": 0.726,
+   "avg20": 0.38,
+   "volume": 2815033
+  },
+  {
+   "symbol": "NXPI",
+   "ratio": 0.726,
+   "avg20": 0.532,
+   "volume": 2271700
+  }
+ ],
+ "watch": {
+  "AAPL": {
+   "ratio": 0.503,
+   "avg20": 0.504,
+   "volume": 21590114
+  },
+  "ABBV": {
+   "ratio": 0.341,
+   "avg20": 0.308,
+   "volume": 2217083
+  },
+  "ABT": {
+   "ratio": 0.279,
+   "avg20": 0.371,
+   "volume": 2390136
+  },
+  "ACN": {
+   "ratio": 0.483,
+   "avg20": 0.552,
+   "volume": 2078280
+  },
+  "ACON": {
+   "ratio": 0.471,
+   "avg20": 0.371,
+   "volume": 34012
+  },
+  "ADBE": {
+   "ratio": 0.363,
+   "avg20": 0.467,
+   "volume": 1766877
+  },
+  "ADI": {
+   "ratio": 0.486,
+   "avg20": 0.415,
+   "volume": 1944939
+  },
+  "ADIG": {
+   "ratio": 0.499,
+   "avg20": 0.571,
+   "volume": 432864
+  },
+  "ADTN": {
+   "ratio": 0.412,
+   "avg20": 0.452,
+   "volume": 1207704
+  },
+  "AEON": {
+   "ratio": 0.591,
+   "avg20": 0.525,
+   "volume": 399191
+  },
+  "AFCG": {
+   "ratio": 0.159,
+   "avg20": 0.409,
+   "volume": 30391
+  },
+  "AIM": {
+   "ratio": 0.264,
+   "avg20": 0.35,
+   "volume": 790378
+  },
+  "AKAM": {
+   "ratio": 0.511,
+   "avg20": 0.552,
+   "volume": 3035770
+  },
+  "ALDX": {
+   "ratio": 0.532,
+   "avg20": 0.378,
+   "volume": 1767551
+  },
+  "ALNY": {
+   "ratio": 0.359,
+   "avg20": 0.23,
+   "volume": 815809
+  },
+  "ALT": {
+   "ratio": 0.542,
+   "avg20": 0.588,
+   "volume": 2219906
+  },
+  "AMAT": {
+   "ratio": 0.243,
+   "avg20": 0.312,
+   "volume": 3897499
+  },
+  "AMD": {
+   "ratio": 0.523,
+   "avg20": 0.561,
+   "volume": 30073204
+  },
+  "AMGN": {
+   "ratio": 0.54,
+   "avg20": 0.528,
+   "volume": 861235
+  },
+  "AMZN": {
+   "ratio": 0.404,
+   "avg20": 0.365,
+   "volume": 26559193
+  },
+  "AN": {
+   "ratio": 0.713,
+   "avg20": 0.683,
+   "volume": 219183
+  },
+  "ANET": {
+   "ratio": 0.369,
+   "avg20": 0.397,
+   "volume": 5574313
+  },
+  "ANNX": {
+   "ratio": 0.365,
+   "avg20": 0.423,
+   "volume": 1922132
+  },
+  "AOMR": {
+   "ratio": 0.738,
+   "avg20": 0.673,
+   "volume": 58224
+  },
+  "APP": {
+   "ratio": 0.397,
+   "avg20": 0.421,
+   "volume": 1869810
+  },
+  "ARE": {
+   "ratio": 0.49,
+   "avg20": 0.465,
+   "volume": 604771
+  },
+  "ARR": {
+   "ratio": 0.574,
+   "avg20": 0.575,
+   "volume": 1996412
+  },
+  "ASPE": {
+   "ratio": 0.467,
+   "avg20": 0.473,
+   "volume": 54213
+  },
+  "ATEC": {
+   "ratio": 0.487,
+   "avg20": 0.399,
+   "volume": 936881
+  },
+  "AVGO": {
+   "ratio": 0.333,
+   "avg20": 0.311,
+   "volume": 20588502
+  },
+  "AXP": {
+   "ratio": 0.46,
+   "avg20": 0.51,
+   "volume": 906536
+  },
+  "BA": {
+   "ratio": 0.268,
+   "avg20": 0.391,
+   "volume": 5322380
+  },
+  "BBIO": {
+   "ratio": 0.379,
+   "avg20": 0.556,
+   "volume": 585069
+  },
+  "BBT": {
+   "ratio": 0.693,
+   "avg20": 0.615,
+   "volume": 245749
+  },
+  "BCML": {
+   "ratio": 0.159,
+   "avg20": 0.372,
+   "volume": 72519
+  },
+  "BFH": {
+   "ratio": 0.782,
+   "avg20": 0.761,
+   "volume": 188618
+  },
+  "BH": {
+   "ratio": 0.604,
+   "avg20": 0.624,
+   "volume": 28711
+  },
+  "BHE": {
+   "ratio": 0.336,
+   "avg20": 0.352,
+   "volume": 120572
+  },
+  "BHRB": {
+   "ratio": 0.368,
+   "avg20": 0.629,
+   "volume": 61331
+  },
+  "BIIB": {
+   "ratio": 0.684,
+   "avg20": 0.588,
+   "volume": 352134
+  },
+  "BKD": {
+   "ratio": 0.522,
+   "avg20": 0.394,
+   "volume": 2471766
+  },
+  "BKKT": {
+   "ratio": 0.57,
+   "avg20": 0.57,
+   "volume": 971218
+  },
+  "BKR": {
+   "ratio": 0.281,
+   "avg20": 0.275,
+   "volume": 4529379
+  },
+  "BLMN": {
+   "ratio": 0.574,
+   "avg20": 0.596,
+   "volume": 675678
+  },
+  "BLX": {
+   "ratio": 0.331,
+   "avg20": 0.403,
+   "volume": 84604
+  },
+  "BNS": {
+   "ratio": 0.59,
+   "avg20": 0.44,
+   "volume": 327783
+  },
+  "BOOT": {
+   "ratio": 0.718,
+   "avg20": 0.622,
+   "volume": 211427
+  },
+  "BOTJ": {
+   "ratio": 0.575,
+   "avg20": 0.406,
+   "volume": 8153
+  },
+  "BPRE": {
+   "ratio": 0.192,
+   "avg20": 0.24,
+   "volume": 804405
+  },
+  "BRZE": {
+   "ratio": 0.519,
+   "avg20": 0.421,
+   "volume": 1602675
+  },
+  "BSM": {
+   "ratio": 0.485,
+   "avg20": 0.43,
+   "volume": 185415
+  },
+  "BW": {
+   "ratio": 0.426,
+   "avg20": 0.547,
+   "volume": 2329033
+  },
+  "BWB": {
+   "ratio": 0.508,
+   "avg20": 0.384,
+   "volume": 48480
+  },
+  "BXMT": {
+   "ratio": 0.639,
+   "avg20": 0.642,
+   "volume": 1182269
+  },
+  "C": {
+   "ratio": 0.262,
+   "avg20": 0.317,
+   "volume": 5991619
+  },
+  "CACC": {
+   "ratio": 0.554,
+   "avg20": 0.58,
+   "volume": 42178
+  },
+  "CAR": {
+   "ratio": 0.729,
+   "avg20": 0.716,
+   "volume": 158747
+  },
+  "CART": {
+   "ratio": 0.476,
+   "avg20": 0.448,
+   "volume": 896283
+  },
+  "CAT": {
+   "ratio": 0.42,
+   "avg20": 0.389,
+   "volume": 2090212
+  },
+  "CATX": {
+   "ratio": 0.57,
+   "avg20": 0.434,
+   "volume": 747702
+  },
+  "CB": {
+   "ratio": 0.477,
+   "avg20": 0.441,
+   "volume": 661351
+  },
+  "CBOE": {
+   "ratio": 0.657,
+   "avg20": 0.507,
+   "volume": 351231
+  },
+  "CBRS": {
+   "ratio": 0.422,
+   "avg20": 0.43,
+   "volume": 8587902
+  },
+  "CCI": {
+   "ratio": 0.626,
+   "avg20": 0.494,
+   "volume": 920787
+  },
+  "CDNS": {
+   "ratio": 0.567,
+   "avg20": 0.567,
+   "volume": 864002
+  },
+  "CGON": {
+   "ratio": 0.549,
+   "avg20": 0.534,
+   "volume": 692820
+  },
+  "CHCO": {
+   "ratio": 0.416,
+   "avg20": 0.592,
+   "volume": 26093
+  },
+  "CI": {
+   "ratio": 0.325,
+   "avg20": 0.446,
+   "volume": 767052
+  },
+  "CINF": {
+   "ratio": 0.592,
+   "avg20": 0.711,
+   "volume": 283765
+  },
+  "CION": {
+   "ratio": 0.438,
+   "avg20": 0.63,
+   "volume": 347475
+  },
+  "CLVT": {
+   "ratio": 0.492,
+   "avg20": 0.482,
+   "volume": 2079919
+  },
+  "CMCSA": {
+   "ratio": 0.509,
+   "avg20": 0.524,
+   "volume": 9572056
+  },
+  "CME": {
+   "ratio": 0.573,
+   "avg20": 0.424,
+   "volume": 803920
+  },
+  "CMG": {
+   "ratio": 0.183,
+   "avg20": 0.32,
+   "volume": 7897829
+  },
+  "CMS": {
+   "ratio": 0.753,
+   "avg20": 0.723,
+   "volume": 1772138
+  },
+  "COHR": {
+   "ratio": 0.402,
+   "avg20": 0.487,
+   "volume": 6547663
+  },
+  "COIN": {
+   "ratio": 0.502,
+   "avg20": 0.459,
+   "volume": 4673067
+  },
+  "COO": {
+   "ratio": 0.389,
+   "avg20": 0.318,
+   "volume": 777410
+  },
+  "COR": {
+   "ratio": 0.683,
+   "avg20": 0.457,
+   "volume": 350754
+  },
+  "COST": {
+   "ratio": 0.613,
+   "avg20": 0.527,
+   "volume": 1220865
+  },
+  "CRBG": {
+   "ratio": 0.53,
+   "avg20": 0.611,
+   "volume": 1064264
+  },
+  "CRCT": {
+   "ratio": 0.572,
+   "avg20": 0.58,
+   "volume": 484062
+  },
+  "CRESY": {
+   "ratio": 0.675,
+   "avg20": 0.666,
+   "volume": 114395
+  },
+  "CRH": {
+   "ratio": 0.384,
+   "avg20": 0.418,
+   "volume": 1472986
+  },
+  "CRM": {
+   "ratio": 0.397,
+   "avg20": 0.459,
+   "volume": 3398808
+  },
+  "CRMD": {
+   "ratio": 0.654,
+   "avg20": 0.64,
+   "volume": 1225183
+  },
+  "CSAI": {
+   "ratio": 0.127,
+   "avg20": 0.527,
+   "volume": 77058
+  },
+  "CSCO": {
+   "ratio": 0.52,
+   "avg20": 0.392,
+   "volume": 6614657
+  },
+  "CSQR": {
+   "ratio": 0.766,
+   "avg20": 0.604,
+   "volume": 732014
+  },
+  "CTEV": {
+   "ratio": 0.42,
+   "avg20": 0.437,
+   "volume": 78226
+  },
+  "CTGO": {
+   "ratio": 0.444,
+   "avg20": 0.473,
+   "volume": 446976
+  },
+  "CTSH": {
+   "ratio": 0.517,
+   "avg20": 0.405,
+   "volume": 1708800
+  },
+  "CTVA": {
+   "ratio": 0.267,
+   "avg20": 0.273,
+   "volume": 9209740
+  },
+  "CVS": {
+   "ratio": 0.236,
+   "avg20": 0.248,
+   "volume": 3393047
+  },
+  "CVV": {
+   "ratio": 0.53,
+   "avg20": 0.371,
+   "volume": 43160
+  },
+  "CVX": {
+   "ratio": 0.443,
+   "avg20": 0.49,
+   "volume": 2651486
+  },
+  "CWBC": {
+   "ratio": 0.374,
+   "avg20": 0.51,
+   "volume": 120660
+  },
+  "CWST": {
+   "ratio": 0.698,
+   "avg20": 0.591,
+   "volume": 298065
+  },
+  "DARE": {
+   "ratio": 0.231,
+   "avg20": 0.429,
+   "volume": 109553
+  },
+  "DBX": {
+   "ratio": 0.512,
+   "avg20": 0.648,
+   "volume": 1513521
+  },
+  "DDD": {
+   "ratio": 0.481,
+   "avg20": 0.539,
+   "volume": 2435728
+  },
+  "DDOG": {
+   "ratio": 0.492,
+   "avg20": 0.476,
+   "volume": 1643929
+  },
+  "DGICA": {
+   "ratio": 0.423,
+   "avg20": 0.397,
+   "volume": 24444
+  },
+  "DIA": {
+   "ratio": 0.604,
+   "avg20": 0.581,
+   "volume": 1685755
+  },
+  "DINO": {
+   "ratio": 0.45,
+   "avg20": 0.419,
+   "volume": 690490
+  },
+  "DIS": {
+   "ratio": 0.31,
+   "avg20": 0.368,
+   "volume": 4480259
+  },
+  "DK": {
+   "ratio": 0.375,
+   "avg20": 0.511,
+   "volume": 388762
+  },
+  "DKNG": {
+   "ratio": 0.395,
+   "avg20": 0.481,
+   "volume": 4783173
+  },
+  "DOLE": {
+   "ratio": 0.44,
+   "avg20": 0.496,
+   "volume": 420033
+  },
+  "DOX": {
+   "ratio": 0.488,
+   "avg20": 0.355,
+   "volume": 611032
+  },
+  "DSM": {
+   "ratio": 0.272,
+   "avg20": 0.339,
+   "volume": 57237
+  },
+  "DTI": {
+   "ratio": 0.738,
+   "avg20": 0.577,
+   "volume": 186050
+  },
+  "DUK": {
+   "ratio": 0.542,
+   "avg20": 0.579,
+   "volume": 1926873
+  },
+  "DX": {
+   "ratio": 0.588,
+   "avg20": 0.55,
+   "volume": 3615342
+  },
+  "ECC": {
+   "ratio": 0.338,
+   "avg20": 0.402,
+   "volume": 851670
+  },
+  "ECF": {
+   "ratio": 0.444,
+   "avg20": 0.289,
+   "volume": 65997
+  },
+  "ECL": {
+   "ratio": 0.35,
+   "avg20": 0.42,
+   "volume": 593443
+  },
+  "EDRY": {
+   "ratio": 0.629,
+   "avg20": 0.471,
+   "volume": 40415
+  },
+  "EFC": {
+   "ratio": 0.613,
+   "avg20": 0.6,
+   "volume": 1004429
+  },
+  "EGBN": {
+   "ratio": 0.398,
+   "avg20": 0.623,
+   "volume": 133189
+  },
+  "ELV": {
+   "ratio": 0.599,
+   "avg20": 0.451,
+   "volume": 515254
+  },
+  "ENPH": {
+   "ratio": 0.321,
+   "avg20": 0.416,
+   "volume": 2877286
+  },
+  "EQPT": {
+   "ratio": 0.579,
+   "avg20": 0.597,
+   "volume": 1525743
+  },
+  "ES": {
+   "ratio": 0.452,
+   "avg20": 0.371,
+   "volume": 783572
+  },
+  "ESEA": {
+   "ratio": 0.633,
+   "avg20": 0.527,
+   "volume": 18075
+  },
+  "ETN": {
+   "ratio": 0.32,
+   "avg20": 0.397,
+   "volume": 1855153
+  },
+  "ETRA": {
+   "ratio": 0.591,
+   "avg20": 0.432,
+   "volume": 162900
+  },
+  "FAST": {
+   "ratio": 0.585,
+   "avg20": 0.581,
+   "volume": 3311553
+  },
+  "FBIO": {
+   "ratio": 0.576,
+   "avg20": 0.538,
+   "volume": 496139
+  },
+  "FBRT": {
+   "ratio": 0.663,
+   "avg20": 0.524,
+   "volume": 576192
+  },
+  "FEAM": {
+   "ratio": 0.378,
+   "avg20": 0.375,
+   "volume": 232718
+  },
+  "FF": {
+   "ratio": 0.452,
+   "avg20": 0.522,
+   "volume": 260007
+  },
+  "FFIN": {
+   "ratio": 0.339,
+   "avg20": 0.339,
+   "volume": 234618
+  },
+  "FIG": {
+   "ratio": 0.278,
+   "avg20": 0.41,
+   "volume": 5847674
+  },
+  "FIS": {
+   "ratio": 0.301,
+   "avg20": 0.341,
+   "volume": 4233247
+  },
+  "FISN": {
+   "ratio": 0.481,
+   "avg20": 0.611,
+   "volume": 608604
+  },
+  "FLNA": {
+   "ratio": 0.397,
+   "avg20": 0.415,
+   "volume": 716677
+  },
+  "FLOC": {
+   "ratio": 0.568,
+   "avg20": 0.509,
+   "volume": 174174
+  },
+  "FMBM": {
+   "ratio": 0.581,
+   "avg20": 0.3,
+   "volume": 1985
+  },
+  "FOXA": {
+   "ratio": 0.315,
+   "avg20": 0.515,
+   "volume": 1621616
+  },
+  "FPS": {
+   "ratio": 0.166,
+   "avg20": 0.342,
+   "volume": 6481549
+  },
+  "FROG": {
+   "ratio": 0.373,
+   "avg20": 0.508,
+   "volume": 1079227
+  },
+  "FRPH": {
+   "ratio": 0.671,
+   "avg20": 0.489,
+   "volume": 57859
+  },
+  "FUN": {
+   "ratio": 0.535,
+   "avg20": 0.503,
+   "volume": 960353
+  },
+  "FUNC": {
+   "ratio": 0.812,
+   "avg20": 0.526,
+   "volume": 3461
+  },
+  "GABC": {
+   "ratio": 0.731,
+   "avg20": 0.662,
+   "volume": 44007
+  },
+  "GEHC": {
+   "ratio": 0.614,
+   "avg20": 0.479,
+   "volume": 1062630
+  },
+  "GFF": {
+   "ratio": 0.603,
+   "avg20": 0.542,
+   "volume": 72636
+  },
+  "GFS": {
+   "ratio": 0.398,
+   "avg20": 0.336,
+   "volume": 1562038
+  },
+  "GH": {
+   "ratio": 0.411,
+   "avg20": 0.514,
+   "volume": 1406572
+  },
+  "GLD": {
+   "ratio": 0.528,
+   "avg20": 0.588,
+   "volume": 8234777
+  },
+  "GLW": {
+   "ratio": 0.294,
+   "avg20": 0.402,
+   "volume": 6692159
+  },
+  "GLXY": {
+   "ratio": 0.415,
+   "avg20": 0.46,
+   "volume": 5059171
+  },
+  "GM": {
+   "ratio": 0.438,
+   "avg20": 0.427,
+   "volume": 2113870
+  },
+  "GOOD": {
+   "ratio": 0.614,
+   "avg20": 0.65,
+   "volume": 497188
+  },
+  "GOOGL": {
+   "ratio": 0.281,
+   "avg20": 0.339,
+   "volume": 20598634
+  },
+  "GPI": {
+   "ratio": 0.473,
+   "avg20": 0.693,
+   "volume": 79670
+  },
+  "GRAB": {
+   "ratio": 0.244,
+   "avg20": 0.34,
+   "volume": 58748354
+  },
+  "GS": {
+   "ratio": 0.334,
+   "avg20": 0.477,
+   "volume": 1592456
+  },
+  "GSM": {
+   "ratio": 0.486,
+   "avg20": 0.49,
+   "volume": 804232
+  },
+  "HAWK": {
+   "ratio": 0.339,
+   "avg20": 0.475,
+   "volume": 692380
+  },
+  "HBAN": {
+   "ratio": 0.354,
+   "avg20": 0.402,
+   "volume": 9359881
+  },
+  "HBCP": {
+   "ratio": 0.649,
+   "avg20": 0.497,
+   "volume": 28882
+  },
+  "HD": {
+   "ratio": 0.542,
+   "avg20": 0.423,
+   "volume": 2522539
+  },
+  "HEI": {
+   "ratio": 0.721,
+   "avg20": 0.62,
+   "volume": 138817
+  },
+  "HFRO": {
+   "ratio": 0.46,
+   "avg20": 0.349,
+   "volume": 180143
+  },
+  "HMH": {
+   "ratio": 0.465,
+   "avg20": 0.35,
+   "volume": 199874
+  },
+  "HPP": {
+   "ratio": 0.478,
+   "avg20": 0.434,
+   "volume": 363283
+  },
+  "HYG": {
+   "ratio": 0.606,
+   "avg20": 0.481,
+   "volume": 26079343
+  },
+  "IBKR": {
+   "ratio": 0.345,
+   "avg20": 0.361,
+   "volume": 1705858
+  },
+  "IBM": {
+   "ratio": 0.57,
+   "avg20": 0.418,
+   "volume": 2335067
+  },
+  "IBP": {
+   "ratio": 0.52,
+   "avg20": 0.697,
+   "volume": 113085
+  },
+  "ICHR": {
+   "ratio": 0.336,
+   "avg20": 0.589,
+   "volume": 929746
+  },
+  "ICUI": {
+   "ratio": 0.686,
+   "avg20": 0.657,
+   "volume": 77003
+  },
+  "IMMX": {
+   "ratio": 0.557,
+   "avg20": 0.539,
+   "volume": 588335
+  },
+  "IMSR": {
+   "ratio": 0.407,
+   "avg20": 0.541,
+   "volume": 1126219
+  },
+  "INOD": {
+   "ratio": 0.345,
+   "avg20": 0.517,
+   "volume": 730559
+  },
+  "INTC": {
+   "ratio": 0.38,
+   "avg20": 0.356,
+   "volume": 73128222
+  },
+  "IRS": {
+   "ratio": 0.576,
+   "avg20": 0.663,
+   "volume": 112572
+  },
+  "ISRG": {
+   "ratio": 0.409,
+   "avg20": 0.415,
+   "volume": 811653
+  },
+  "ITG": {
+   "ratio": 0.806,
+   "avg20": 0.591,
+   "volume": 220722
+  },
+  "ITW": {
+   "ratio": 0.7,
+   "avg20": 0.673,
+   "volume": 418190
+  },
+  "IWM": {
+   "ratio": 0.598,
+   "avg20": 0.621,
+   "volume": 16521305
+  },
+  "JBLU": {
+   "ratio": 0.526,
+   "avg20": 0.543,
+   "volume": 9862990
+  },
+  "JNJ": {
+   "ratio": 0.291,
+   "avg20": 0.312,
+   "volume": 3537303
+  },
+  "JPM": {
+   "ratio": 0.239,
+   "avg20": 0.388,
+   "volume": 4303053
+  },
+  "KEEL": {
+   "ratio": 0.389,
+   "avg20": 0.422,
+   "volume": 14049979
+  },
+  "KGS": {
+   "ratio": 0.447,
+   "avg20": 0.464,
+   "volume": 1185443
+  },
+  "KLAC": {
+   "ratio": 0.355,
+   "avg20": 0.302,
+   "volume": 6286147
+  },
+  "KMI": {
+   "ratio": 0.693,
+   "avg20": 0.558,
+   "volume": 5199301
+  },
+  "KO": {
+   "ratio": 0.482,
+   "avg20": 0.5,
+   "volume": 7607788
+  },
+  "KR": {
+   "ratio": 0.22,
+   "avg20": 0.54,
+   "volume": 3160836
+  },
+  "KYN": {
+   "ratio": 0.351,
+   "avg20": 0.351,
+   "volume": 378400
+  },
+  "LBRT": {
+   "ratio": 0.517,
+   "avg20": 0.361,
+   "volume": 2863841
+  },
+  "LCTX": {
+   "ratio": 0.427,
+   "avg20": 0.559,
+   "volume": 1060965
+  },
+  "LEGN": {
+   "ratio": 0.461,
+   "avg20": 0.535,
+   "volume": 1360282
+  },
+  "LEO": {
+   "ratio": 0.336,
+   "avg20": 0.315,
+   "volume": 107776
+  },
+  "LIFE": {
+   "ratio": 0.494,
+   "avg20": 0.325,
+   "volume": 573475
+  },
+  "LII": {
+   "ratio": 0.744,
+   "avg20": 0.625,
+   "volume": 294372
+  },
+  "LILA": {
+   "ratio": 0.551,
+   "avg20": 0.544,
+   "volume": 75233
+  },
+  "LIN": {
+   "ratio": 0.593,
+   "avg20": 0.516,
+   "volume": 776890
+  },
+  "LITE": {
+   "ratio": 0.311,
+   "avg20": 0.398,
+   "volume": 2753720
+  },
+  "LKQ": {
+   "ratio": 0.311,
+   "avg20": 0.301,
+   "volume": 1142779
+  },
+  "LLY": {
+   "ratio": 0.358,
+   "avg20": 0.349,
+   "volume": 983039
+  },
+  "LNT": {
+   "ratio": 0.473,
+   "avg20": 0.475,
+   "volume": 773727
+  },
+  "LPCN": {
+   "ratio": 0.15,
+   "avg20": 0.31,
+   "volume": 44340
+  },
+  "LPTH": {
+   "ratio": 0.264,
+   "avg20": 0.425,
+   "volume": 1905062
+  },
+  "LRMR": {
+   "ratio": 0.544,
+   "avg20": 0.519,
+   "volume": 567011
+  },
+  "LRN": {
+   "ratio": 0.588,
+   "avg20": 0.582,
+   "volume": 230475
+  },
+  "LSCC": {
+   "ratio": 0.371,
+   "avg20": 0.428,
+   "volume": 1452563
+  },
+  "LSTR": {
+   "ratio": 0.436,
+   "avg20": 0.417,
+   "volume": 116979
+  },
+  "LUMN": {
+   "ratio": 0.483,
+   "avg20": 0.532,
+   "volume": 9039084
+  },
+  "MA": {
+   "ratio": 0.433,
+   "avg20": 0.418,
+   "volume": 1277114
+  },
+  "MBGL": {
+   "ratio": 0.417,
+   "avg20": 0.532,
+   "volume": 1471607
+  },
+  "MCD": {
+   "ratio": 0.287,
+   "avg20": 0.289,
+   "volume": 1513976
+  },
+  "MCHP": {
+   "ratio": 0.487,
+   "avg20": 0.539,
+   "volume": 8187367
+  },
+  "MDGL": {
+   "ratio": 0.394,
+   "avg20": 0.545,
+   "volume": 168262
+  },
+  "MED": {
+   "ratio": 0.509,
+   "avg20": 0.476,
+   "volume": 66230
+  },
+  "MET": {
+   "ratio": 0.561,
+   "avg20": 0.522,
+   "volume": 1355867
+  },
+  "META": {
+   "ratio": 0.307,
+   "avg20": 0.397,
+   "volume": 9885749
+  },
+  "MGM": {
+   "ratio": 0.538,
+   "avg20": 0.563,
+   "volume": 1967649
+  },
+  "MGNI": {
+   "ratio": 0.384,
+   "avg20": 0.262,
+   "volume": 1314022
+  },
+  "MP": {
+   "ratio": 0.397,
+   "avg20": 0.474,
+   "volume": 4128672
+  },
+  "MPB": {
+   "ratio": 0.528,
+   "avg20": 0.537,
+   "volume": 78239
+  },
+  "MRBK": {
+   "ratio": 0.409,
+   "avg20": 0.344,
+   "volume": 18952
+  },
+  "MRNA": {
+   "ratio": 0.515,
+   "avg20": 0.557,
+   "volume": 4395292
+  },
+  "MSFT": {
+   "ratio": 0.347,
+   "avg20": 0.342,
+   "volume": 12156898
+  },
+  "MSI": {
+   "ratio": 0.498,
+   "avg20": 0.484,
+   "volume": 425643
+  },
+  "MSM": {
+   "ratio": 0.493,
+   "avg20": 0.593,
+   "volume": 703254
+  },
+  "MTDR": {
+   "ratio": 0.392,
+   "avg20": 0.626,
+   "volume": 409419
+  },
+  "MU": {
+   "ratio": 0.288,
+   "avg20": 0.31,
+   "volume": 27987144
+  },
+  "MX": {
+   "ratio": 0.452,
+   "avg20": 0.468,
+   "volume": 620516
+  },
+  "MXF": {
+   "ratio": 0.164,
+   "avg20": 0.349,
+   "volume": 54404
+  },
+  "NET": {
+   "ratio": 0.385,
+   "avg20": 0.474,
+   "volume": 1980674
+  },
+  "NFLX": {
+   "ratio": 0.165,
+   "avg20": 0.292,
+   "volume": 28128071
+  },
+  "NGS": {
+   "ratio": 0.383,
+   "avg20": 0.389,
+   "volume": 65992
+  },
+  "NLY": {
+   "ratio": 0.388,
+   "avg20": 0.519,
+   "volume": 5375642
+  },
+  "NMCO": {
+   "ratio": 0.487,
+   "avg20": 0.354,
+   "volume": 305603
+  },
+  "NOW": {
+   "ratio": 0.176,
+   "avg20": 0.304,
+   "volume": 8835270
+  },
+  "NPB": {
+   "ratio": 0.386,
+   "avg20": 0.505,
+   "volume": 58905
+  },
+  "NPCE": {
+   "ratio": 0.509,
+   "avg20": 0.539,
+   "volume": 132188
+  },
+  "NRG": {
+   "ratio": 0.269,
+   "avg20": 0.258,
+   "volume": 1655010
+  },
+  "NRXS": {
+   "ratio": 0.405,
+   "avg20": 0.43,
+   "volume": 64058
+  },
+  "NSLR": {
+   "ratio": 0.41,
+   "avg20": 0.46,
+   "volume": 282821
+  },
+  "NSPR": {
+   "ratio": 0.624,
+   "avg20": 0.534,
+   "volume": 203449
+  },
+  "NTB": {
+   "ratio": 0.425,
+   "avg20": 0.555,
+   "volume": 58504
+  },
+  "NTHI": {
+   "ratio": 0.382,
+   "avg20": 0.568,
+   "volume": 120136
+  },
+  "NVA": {
+   "ratio": 0.388,
+   "avg20": 0.579,
+   "volume": 637637
+  },
+  "NVDA": {
+   "ratio": 0.257,
+   "avg20": 0.303,
+   "volume": 275723618
+  },
+  "NXG": {
+   "ratio": 0.459,
+   "avg20": 0.441,
+   "volume": 89063
+  },
+  "NXPI": {
+   "ratio": 0.726,
+   "avg20": 0.532,
+   "volume": 2271700
+  },
+  "OBIO": {
+   "ratio": 0.34,
+   "avg20": 0.464,
+   "volume": 150545
+  },
+  "OBK": {
+   "ratio": 0.489,
+   "avg20": 0.495,
+   "volume": 36613
+  },
+  "OCFC": {
+   "ratio": 0.689,
+   "avg20": 0.515,
+   "volume": 304760
+  },
+  "OFRM": {
+   "ratio": 0.551,
+   "avg20": 0.399,
+   "volume": 734754
+  },
+  "OIG": {
+   "ratio": 0.619,
+   "avg20": 0.451,
+   "volume": 115069
+  },
+  "ON": {
+   "ratio": 0.559,
+   "avg20": 0.391,
+   "volume": 3904353
+  },
+  "OPAL": {
+   "ratio": 0.292,
+   "avg20": 0.498,
+   "volume": 194880
+  },
+  "ORCL": {
+   "ratio": 0.323,
+   "avg20": 0.321,
+   "volume": 18654432
+  },
+  "OWLS": {
+   "ratio": 0.554,
+   "avg20": 0.464,
+   "volume": 25455
+  },
+  "PAL": {
+   "ratio": 0.714,
+   "avg20": 0.424,
+   "volume": 240628
+  },
+  "PAM": {
+   "ratio": 0.726,
+   "avg20": 0.674,
+   "volume": 116336
+  },
+  "PEBK": {
+   "ratio": 0.39,
+   "avg20": 0.251,
+   "volume": 48886
+  },
+  "PEP": {
+   "ratio": 0.409,
+   "avg20": 0.482,
+   "volume": 3335164
+  },
+  "PG": {
+   "ratio": 0.426,
+   "avg20": 0.412,
+   "volume": 2879666
+  },
+  "PICS": {
+   "ratio": 0.592,
+   "avg20": 0.421,
+   "volume": 504455
+  },
+  "PLD": {
+   "ratio": 0.322,
+   "avg20": 0.454,
+   "volume": 1438785
+  },
+  "PLTR": {
+   "ratio": 0.47,
+   "avg20": 0.522,
+   "volume": 13722637
+  },
+  "PMN": {
+   "ratio": 0.568,
+   "avg20": 0.534,
+   "volume": 43561
+  },
+  "PODD": {
+   "ratio": 0.499,
+   "avg20": 0.539,
+   "volume": 690894
+  },
+  "PRLB": {
+   "ratio": 0.426,
+   "avg20": 0.549,
+   "volume": 96675
+  },
+  "PRMB": {
+   "ratio": 0.41,
+   "avg20": 0.31,
+   "volume": 2900536
+  },
+  "PSEC": {
+   "ratio": 0.603,
+   "avg20": 0.503,
+   "volume": 6671747
+  },
+  "PTON": {
+   "ratio": 0.521,
+   "avg20": 0.482,
+   "volume": 8371106
+  },
+  "PUBM": {
+   "ratio": 0.55,
+   "avg20": 0.589,
+   "volume": 230385
+  },
+  "QCOM": {
+   "ratio": 0.537,
+   "avg20": 0.528,
+   "volume": 4717223
+  },
+  "QQQ": {
+   "ratio": 0.625,
+   "avg20": 0.573,
+   "volume": 47106444
+  },
+  "RAPP": {
+   "ratio": 0.557,
+   "avg20": 0.597,
+   "volume": 133221
+  },
+  "REI": {
+   "ratio": 0.389,
+   "avg20": 0.485,
+   "volume": 1500757
+  },
+  "RENT": {
+   "ratio": 0.506,
+   "avg20": 0.591,
+   "volume": 137681
+  },
+  "RMIX": {
+   "ratio": 0.529,
+   "avg20": 0.525,
+   "volume": 362909
+  },
+  "ROK": {
+   "ratio": 0.633,
+   "avg20": 0.522,
+   "volume": 536087
+  },
+  "ROL": {
+   "ratio": 0.535,
+   "avg20": 0.61,
+   "volume": 1613980
+  },
+  "ROLR": {
+   "ratio": 0.629,
+   "avg20": 0.478,
+   "volume": 31335
+  },
+  "RSKD": {
+   "ratio": 0.544,
+   "avg20": 0.352,
+   "volume": 847350
+  },
+  "RYTM": {
+   "ratio": 0.355,
+   "avg20": 0.548,
+   "volume": 563641
+  },
+  "SAGT": {
+   "ratio": 0.465,
+   "avg20": 0.511,
+   "volume": 303189
+  },
+  "SAIL": {
+   "ratio": 0.727,
+   "avg20": 0.619,
+   "volume": 1839435
+  },
+  "SEI": {
+   "ratio": 0.498,
+   "avg20": 0.596,
+   "volume": 2222501
+  },
+  "SEVN": {
+   "ratio": 0.487,
+   "avg20": 0.469,
+   "volume": 51944
+  },
+  "SG": {
+   "ratio": 0.286,
+   "avg20": 0.393,
+   "volume": 1587955
+  },
+  "SHEN": {
+   "ratio": 0.314,
+   "avg20": 0.435,
+   "volume": 187558
+  },
+  "SJT": {
+   "ratio": 0.344,
+   "avg20": 0.416,
+   "volume": 152615
+  },
+  "SLGN": {
+   "ratio": 0.425,
+   "avg20": 0.5,
+   "volume": 301653
+  },
+  "SLQT": {
+   "ratio": 0.591,
+   "avg20": 0.584,
+   "volume": 48402
+  },
+  "SLV": {
+   "ratio": 0.448,
+   "avg20": 0.495,
+   "volume": 15549153
+  },
+  "SMG": {
+   "ratio": 0.525,
+   "avg20": 0.528,
+   "volume": 416664
+  },
+  "SMTC": {
+   "ratio": 0.266,
+   "avg20": 0.377,
+   "volume": 1595851
+  },
+  "SMWB": {
+   "ratio": 0.406,
+   "avg20": 0.324,
+   "volume": 190673
+  },
+  "SNOW": {
+   "ratio": 0.453,
+   "avg20": 0.523,
+   "volume": 2095924
+  },
+  "SNPS": {
+   "ratio": 0.51,
+   "avg20": 0.478,
+   "volume": 791418
+  },
+  "SOPH": {
+   "ratio": 0.42,
+   "avg20": 0.296,
+   "volume": 343415
+  },
+  "SPGI": {
+   "ratio": 0.521,
+   "avg20": 0.447,
+   "volume": 623511
+  },
+  "SPXC": {
+   "ratio": 0.424,
+   "avg20": 0.496,
+   "volume": 220116
+  },
+  "SPY": {
+   "ratio": 0.642,
+   "avg20": 0.545,
+   "volume": 56442699
+  },
+  "SRRK": {
+   "ratio": 0.6,
+   "avg20": 0.603,
+   "volume": 905771
+  },
+  "SRTS": {
+   "ratio": 0.146,
+   "avg20": 0.595,
+   "volume": 63262
+  },
+  "STC": {
+   "ratio": 0.533,
+   "avg20": 0.298,
+   "volume": 277593
+  },
+  "STRZ": {
+   "ratio": 0.5,
+   "avg20": 0.459,
+   "volume": 93603
+  },
+  "STUB": {
+   "ratio": 0.374,
+   "avg20": 0.499,
+   "volume": 2544013
+  },
+  "STVN": {
+   "ratio": 0.604,
+   "avg20": 0.27,
+   "volume": 316126
+  },
+  "STWD": {
+   "ratio": 0.306,
+   "avg20": 0.454,
+   "volume": 3106546
+  },
+  "SWX": {
+   "ratio": 0.528,
+   "avg20": 0.592,
+   "volume": 207109
+  },
+  "SYK": {
+   "ratio": 0.493,
+   "avg20": 0.491,
+   "volume": 891095
+  },
+  "T": {
+   "ratio": 0.286,
+   "avg20": 0.335,
+   "volume": 20820803
+  },
+  "TBBK": {
+   "ratio": 0.527,
+   "avg20": 0.509,
+   "volume": 161520
+  },
+  "TDUP": {
+   "ratio": 0.58,
+   "avg20": 0.621,
+   "volume": 516220
+  },
+  "TEAM": {
+   "ratio": 0.45,
+   "avg20": 0.38,
+   "volume": 1499930
+  },
+  "TEL": {
+   "ratio": 0.665,
+   "avg20": 0.503,
+   "volume": 753590
+  },
+  "TGEN": {
+   "ratio": 0.219,
+   "avg20": 0.361,
+   "volume": 138686
+  },
+  "TGT": {
+   "ratio": 0.706,
+   "avg20": 0.596,
+   "volume": 2163568
+  },
+  "TH": {
+   "ratio": 0.656,
+   "avg20": 0.355,
+   "volume": 560534
+  },
+  "THRM": {
+   "ratio": 0.676,
+   "avg20": 0.623,
+   "volume": 401906
+  },
+  "TISI": {
+   "ratio": 0.458,
+   "avg20": 0.309,
+   "volume": 12403
+  },
+  "TJX": {
+   "ratio": 0.503,
+   "avg20": 0.404,
+   "volume": 3093767
+  },
+  "TLSI": {
+   "ratio": 0.58,
+   "avg20": 0.533,
+   "volume": 237774
+  },
+  "TLT": {
+   "ratio": 0.666,
+   "avg20": 0.558,
+   "volume": 23398652
+  },
+  "TMS": {
+   "ratio": 0.659,
+   "avg20": 0.557,
+   "volume": 25083
+  },
+  "TNDM": {
+   "ratio": 0.79,
+   "avg20": 0.588,
+   "volume": 1151679
+  },
+  "TNET": {
+   "ratio": 0.625,
+   "avg20": 0.529,
+   "volume": 110794
+  },
+  "TRMB": {
+   "ratio": 0.293,
+   "avg20": 0.383,
+   "volume": 1277087
+  },
+  "TRTX": {
+   "ratio": 0.739,
+   "avg20": 0.598,
+   "volume": 516875
+  },
+  "TSCO": {
+   "ratio": 0.451,
+   "avg20": 0.448,
+   "volume": 5157812
+  },
+  "TSLA": {
+   "ratio": 0.519,
+   "avg20": 0.536,
+   "volume": 18612752
+  },
+  "TSM": {
+   "ratio": 0.191,
+   "avg20": 0.24,
+   "volume": 13860012
+  },
+  "TTMI": {
+   "ratio": 0.211,
+   "avg20": 0.315,
+   "volume": 3616349
+  },
+  "TXN": {
+   "ratio": 0.559,
+   "avg20": 0.517,
+   "volume": 3357348
+  },
+  "TXO": {
+   "ratio": 0.319,
+   "avg20": 0.393,
+   "volume": 74318
+  },
+  "UAVS": {
+   "ratio": 0.395,
+   "avg20": 0.37,
+   "volume": 663376
+  },
+  "UMH": {
+   "ratio": 0.677,
+   "avg20": 0.666,
+   "volume": 239630
+  },
+  "UNH": {
+   "ratio": 0.304,
+   "avg20": 0.318,
+   "volume": 4917592
+  },
+  "UPBD": {
+   "ratio": 0.674,
+   "avg20": 0.485,
+   "volume": 445485
+  },
+  "UPST": {
+   "ratio": 0.365,
+   "avg20": 0.448,
+   "volume": 2608074
+  },
+  "UPWK": {
+   "ratio": 0.444,
+   "avg20": 0.595,
+   "volume": 1875023
+  },
+  "UXIN": {
+   "ratio": 0.408,
+   "avg20": 0.407,
+   "volume": 47980
+  },
+  "V": {
+   "ratio": 0.298,
+   "avg20": 0.317,
+   "volume": 2965645
+  },
+  "VANI": {
+   "ratio": 0.432,
+   "avg20": 0.486,
+   "volume": 247550
+  },
+  "VICI": {
+   "ratio": 0.444,
+   "avg20": 0.507,
+   "volume": 3615407
+  },
+  "VISN": {
+   "ratio": 0.679,
+   "avg20": 0.581,
+   "volume": 3189861
+  },
+  "VST": {
+   "ratio": 0.227,
+   "avg20": 0.337,
+   "volume": 3335370
+  },
+  "VTIX": {
+   "ratio": 0.523,
+   "avg20": 0.562,
+   "volume": 181569
+  },
+  "VZ": {
+   "ratio": 0.389,
+   "avg20": 0.453,
+   "volume": 10690834
+  },
+  "WCC": {
+   "ratio": 0.407,
+   "avg20": 0.431,
+   "volume": 447159
+  },
+  "WEX": {
+   "ratio": 0.858,
+   "avg20": 0.57,
+   "volume": 207875
+  },
+  "WFC": {
+   "ratio": 0.533,
+   "avg20": 0.515,
+   "volume": 4376696
+  },
+  "WMB": {
+   "ratio": 0.203,
+   "avg20": 0.327,
+   "volume": 3024583
+  },
+  "WMT": {
+   "ratio": 0.545,
+   "avg20": 0.459,
+   "volume": 12217522
+  },
+  "WSM": {
+   "ratio": 0.701,
+   "avg20": 0.76,
+   "volume": 806056
+  },
+  "WW": {
+   "ratio": 0.584,
+   "avg20": 0.49,
+   "volume": 195275
+  },
+  "WWB": {
+   "ratio": 0.753,
+   "avg20": 0.613,
+   "volume": 72926
+  },
+  "XLB": {
+   "ratio": 0.619,
+   "avg20": 0.665,
+   "volume": 4382379
+  },
+  "XLC": {
+   "ratio": 0.419,
+   "avg20": 0.563,
+   "volume": 3200447
+  },
+  "XLE": {
+   "ratio": 0.53,
+   "avg20": 0.55,
+   "volume": 10111281
+  },
+  "XLF": {
+   "ratio": 0.637,
+   "avg20": 0.622,
+   "volume": 21392312
+  },
+  "XLI": {
+   "ratio": 0.656,
+   "avg20": 0.595,
+   "volume": 4132787
+  },
+  "XLK": {
+   "ratio": 0.352,
+   "avg20": 0.45,
+   "volume": 12459812
+  },
+  "XLP": {
+   "ratio": 0.674,
+   "avg20": 0.641,
+   "volume": 8169976
+  },
+  "XLRE": {
+   "ratio": 0.605,
+   "avg20": 0.689,
+   "volume": 2566509
+  },
+  "XLU": {
+   "ratio": 0.419,
+   "avg20": 0.532,
+   "volume": 9002532
+  },
+  "XLV": {
+   "ratio": 0.494,
+   "avg20": 0.573,
+   "volume": 5055187
+  },
+  "XLY": {
+   "ratio": 0.491,
+   "avg20": 0.605,
+   "volume": 2965285
+  },
+  "XOM": {
+   "ratio": 0.334,
+   "avg20": 0.393,
+   "volume": 4622707
+  },
+  "XYL": {
+   "ratio": 0.293,
+   "avg20": 0.359,
+   "volume": 955385
+  },
+  "ZTS": {
+   "ratio": 0.259,
+   "avg20": 0.382,
+   "volume": 2291347
+  }
+ }
+}

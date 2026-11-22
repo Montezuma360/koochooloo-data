@@ -1,0 +1,91 @@
+name: Live market refresh
+
+# One short run per timer tick (every minute in the extended US day, every 5 minutes otherwise): prices, SEC insider filings, Reddit mentions (at most hourly),
+# the intelligence feeds (each at its own pace), signals/dashboard, the health check and the brain, then one commit. Started by an outside timer (cron-job.org) calling GitHub's
+# workflow_dispatch API, because GitHub's own 5-minute schedules ran only about once an hour (measured 2 Nov 2026).
+# The older scheduled workflows stay on as a backup and for the hours outside the market.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: live
+  cancel-in-progress: false
+
+jobs:
+  # The outside timer may fire every minute, all day. A full run happens every minute whenever a major market trades:
+  # Sunday 18:00 to Friday 17:00 New York time (CME futures and FX, which covers Asia, Europe and the US day and night).
+  # Over the weekend only crypto trades, so runs happen every 5th minute and the repo does not fill with near-empty commits.
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        run: |
+          d=$(TZ=America/New_York date +%u); h=$(TZ=America/New_York date +%-H); m=$(date -u +%-M)
+          if [ "$d" -le 4 ] || { [ "$d" -eq 5 ] && [ "$h" -lt 17 ]; } || { [ "$d" -eq 7 ] && [ "$h" -ge 18 ]; }; then go=true; elif [ $((m % 5)) -eq 0 ]; then go=true; else go=false; fi
+          echo "New York day $d hour $h, minute $m -> run: $go"
+          echo "go=$go" >> "$GITHUB_OUTPUT"
+  live:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install (uv is a faster installer)
+        run: |
+          python -m pip install -q uv
+          uv pip install --system -q yfinance pandas
+      - name: Prices
+        run: python refresh.py
+      - name: SEC insider filings
+        if: always()
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python refresh_sec.py
+      - name: Reddit mentions (at most hourly)
+        if: always()
+        run: python refresh_alt.py reddit
+      - name: Intelligence feeds (crypto, on-chain, futures, FX, macro, calendar, news, SEC filings, options, fear & greed, sentiment)
+        if: always()
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+          FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+          ETHERSCAN_KEY: ${{ secrets.ETHERSCAN_KEY }}
+          COINGECKO_KEY: ${{ secrets.COINGECKO_KEY }}
+        run: python refresh_intel.py
+      - name: Signals and dashboard
+        if: always()
+        run: python refresh_signals.py
+      - name: Data health check
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python health.py
+      - name: Brain (one consolidated file for the terminal and Setareh)
+        if: always()
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+          BRAIN_FAST: "1"   # stock prices and SEC figures are refreshed by the 5-minute signals run, off this minute's path
+        run: python brain.py
+      - name: Commit changes
+        if: always()
+        run: |
+          git config user.name "koochooloo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git diff --staged --quiet && exit 0
+          git commit -q -m "Live refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q 2>/dev/null && exit 0   # usually nothing else has pushed: no need to fetch first
+          for i in 1 2 3 4 5 6 7 8; do git pull --rebase -X theirs -q && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((2 + RANDOM % 8)); done  # random wait: runs every minute can collide
+          exit 1
