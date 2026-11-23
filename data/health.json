@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T21:23:41Z",
+ "updated": "2026-11-23T21:24:19Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
@@ -9,8 +9,8 @@
  "repo_size_mb": 123.4,
  "feeds": {
   "prices": {
-   "updated": "2026-11-23T21:23:29Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-23T21:23:41Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -20,7 +20,7 @@
   },
   "sec_insiders": {
    "updated": "2026-11-23T21:23:34Z",
-   "age_hours": 0.0,
+   "age_hours": 0.01,
    "stale_after_hours": 73,
    "stale": false,
    "failed_parts": {},
@@ -29,7 +29,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-23T21:23:40Z",
+   "updated": "2026-11-23T21:24:18Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -40,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-23T20:48:35Z",
-   "age_hours": 0.59,
+   "age_hours": 0.6,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-21T14:46:20Z",
-   "age_hours": 54.62,
+   "age_hours": 54.63,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
@@ -56,15 +56,15 @@
   },
   "paper_trading": {
    "updated": "2026-11-20T23:56:20+00:00",
-   "age_hours": 69.46,
+   "age_hours": 69.47,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-23T21:23:37Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-23T21:23:47Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -78,27 +78,27 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-23T21:22:57Z",
+   "at": "2026-11-23T21:24:05Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 48
   },
+  "Refresh brain data": {
+   "last": "success",
+   "at": "2026-11-23T21:23:57Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 2
+  },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-23T21:22:53Z",
+   "at": "2026-11-23T21:23:49Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 46
+   "runs_in_last_100": 45
   },
   "Refresh signals and dashboard": {
    "last": "success",
    "at": "2026-11-23T21:12:25Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 2
-  },
-  "Refresh brain data": {
-   "last": "success",
-   "at": "2026-11-23T21:11:25Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 1
   },
   "Refresh SEC insider data": {
    "last": "success",
