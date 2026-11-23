@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T21:24:50Z",
+ "updated": "2026-11-23T21:36:17Z",
  "market_open": false,
  "failed": {
   "onchain": "URLError: <urlopen error [Errno 101] Network is unreachable>",
@@ -7,17 +7,17 @@
  },
  "sources": {
   "crypto": {
-   "last_try": "2026-11-23T21:17:34Z",
+   "last_try": "2026-11-23T21:36:17Z",
    "result": "100 coins, 15 trending, 3 exchanges",
-   "last_ok": "2026-11-23T21:17:34Z",
+   "last_ok": "2026-11-23T21:36:17Z",
    "seconds": 1.3,
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-23T21:24:50Z",
+   "last_try": "2026-11-23T21:36:17Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-23T21:24:50Z",
-   "seconds": 0.1,
+   "last_ok": "2026-11-23T21:36:17Z",
+   "seconds": 0.4,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -28,12 +28,11 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-23T21:24:50Z",
-   "result": "block 977274, 1 sat/vB",
-   "last_ok": "2026-11-23T21:19:33Z",
-   "seconds": 642.6,
-   "every_minutes": 5,
-   "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+   "last_try": "2026-11-23T21:36:17Z",
+   "result": "block 977278, 1 sat/vB",
+   "last_ok": "2026-11-23T21:36:17Z",
+   "seconds": 1.7,
+   "every_minutes": 5
   },
   "onchain_daily": {
    "last_try": "2026-11-23T18:36:41Z",
@@ -43,10 +42,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-23T21:24:50Z",
+   "last_try": "2026-11-23T21:36:17Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-23T21:24:50Z",
-   "seconds": 1.4,
+   "last_ok": "2026-11-23T21:36:17Z",
+   "seconds": 2.1,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -71,17 +70,17 @@
    "every_minutes": 15
   },
   "news": {
-   "last_try": "2026-11-23T21:24:50Z",
-   "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-23T21:24:50Z",
-   "seconds": 2.0,
+   "last_try": "2026-11-23T21:36:17Z",
+   "result": "13 new headlines from 15 feeds",
+   "last_ok": "2026-11-23T21:36:17Z",
+   "seconds": 2.4,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-23T21:24:50Z",
-   "result": "29 new filings (0 with a red flag)",
-   "last_ok": "2026-11-23T21:24:50Z",
-   "seconds": 3.0,
+   "last_try": "2026-11-23T21:36:17Z",
+   "result": "54 new filings (0 with a red flag)",
+   "last_ok": "2026-11-23T21:36:17Z",
+   "seconds": 1.8,
    "every_minutes": 2
   },
   "options": {
@@ -100,18 +99,18 @@
    "every_minutes": 5
   },
   "stocktwits": {
-   "last_try": "2026-11-23T21:12:41Z",
+   "last_try": "2026-11-23T21:36:17Z",
    "result": "30 trending",
-   "last_ok": "2026-11-23T21:12:41Z",
-   "seconds": 0.2,
-   "every_minutes": 5
+   "last_ok": "2026-11-23T21:36:17Z",
+   "seconds": 0.1,
+   "every_minutes": 15
   },
   "reddit_forums": {
-   "last_try": "2026-11-23T21:02:55Z",
+   "last_try": "2026-11-23T21:36:17Z",
    "result": "5 forums",
-   "last_ok": "2026-11-23T21:02:55Z",
-   "seconds": 1.6,
-   "every_minutes": 15
+   "last_ok": "2026-11-23T21:36:17Z",
+   "seconds": 2.0,
+   "every_minutes": 30
   },
   "finnhub": {
    "last_try": "2026-11-23T20:31:48Z",
@@ -128,10 +127,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-23T21:24:50Z",
-   "result": "BTC 61235.66, ETH 1717.98, SOL 72.4 from 3 exchanges",
-   "last_ok": "2026-11-23T21:24:50Z",
-   "seconds": 0.8,
+   "last_try": "2026-11-23T21:36:17Z",
+   "result": "BTC 61352.14, ETH 1722.94, SOL 72.62 from 3 exchanges",
+   "last_ok": "2026-11-23T21:36:17Z",
+   "seconds": 1.0,
    "every_minutes": 1
   }
  }
