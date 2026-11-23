@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-23T19:15:59Z",
+  "updated": "2026-11-23T19:16:43Z",
   "ok": {
+    "congress_source": 5000,
+    "congress_trades": 3145,
     "congress_clusters": 88,
     "signals": 100,
-    "dashboard_bytes": 68275
+    "dashboard_bytes": 75048
   },
-  "failed": {
-    "congress_source": "HTTPError: HTTP Error 503: Backend.max_conn reached"
-  },
+  "failed": {},
   "dashboard_changed": true,
   "layers": {
     "gainers": 100,
