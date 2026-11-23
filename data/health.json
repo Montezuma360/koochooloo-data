@@ -1,7 +1,8 @@
 {
- "updated": "2026-11-23T15:34:47Z",
+ "updated": "2026-11-23T15:34:41Z",
  "healthy": false,
  "problems": [
+  "signals: 1 part(s) failed",
   "intelligence: 1 part(s) failed"
  ],
  "market_open": true,
@@ -9,8 +10,8 @@
  "repo_size_mb": 107.3,
  "feeds": {
   "prices": {
-   "updated": "2026-11-23T15:34:33Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-23T15:33:50Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -19,8 +20,8 @@
    "on_target": true
   },
   "sec_insiders": {
-   "updated": "2026-11-23T15:34:37Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-23T15:33:37Z",
+   "age_hours": 0.02,
    "stale_after_hours": 73,
    "stale": false,
    "failed_parts": {},
@@ -29,12 +30,14 @@
    "on_target": true
   },
   "signals": {
-   "updated": "2026-11-23T15:34:47Z",
+   "updated": "2026-11-23T15:34:40Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
-   "failed_parts": {},
-   "ok": true,
+   "failed_parts": {
+    "congress_source": "HTTPError: HTTP Error 503: Backend.max_conn reached"
+   },
+   "ok": false,
    "target_minutes_when_market_open": 3,
    "on_target": true
   },
@@ -63,8 +66,8 @@
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-23T15:34:38Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-23T15:33:57Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
