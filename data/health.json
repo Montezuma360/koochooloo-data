@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T22:12:43Z",
+ "updated": "2026-11-23T22:12:25Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
@@ -19,8 +19,8 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-23T22:12:38Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-23T22:11:41Z",
+   "age_hours": 0.01,
    "stale_after_hours": 73,
    "stale": false,
    "failed_parts": {},
@@ -29,7 +29,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-23T22:12:43Z",
+   "updated": "2026-11-23T22:12:25Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -63,8 +63,8 @@
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-23T22:12:39Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-23T22:11:45Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -76,17 +76,17 @@
   }
  },
  "workflows": {
-  "Caesar's voice": {
-   "last": "skipped",
-   "at": "2026-11-23T22:12:24Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 49
-  },
   "Refresh brain data": {
    "last": "success",
    "at": "2026-11-23T22:12:02Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 1
+  },
+  "Caesar's voice": {
+   "last": "skipped",
+   "at": "2026-11-23T22:12:24Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 48
   },
   "Live market refresh": {
    "last": "success",
