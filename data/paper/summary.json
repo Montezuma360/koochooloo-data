@@ -1,30 +1,30 @@
 {
- "updated": "2026-11-20T23:56:20+00:00",
- "priced_to": "2026-11-20",
+ "updated": "2026-11-23T22:30:50+00:00",
+ "priced_to": "2026-11-23",
  "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\n- Two strategies were added on 4 Nov 2026 and follow every rule above: \"research_setup\" (smaller company, 2+ insiders at $25k+, cash flow above\n  profit) and \"research_setup_trend\" (the same, but no new entries while the S&P 500 is below its 200-day average). The older strategies are unchanged.\n- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies\n  are ranked by their margin over the S&P 500; summary.json \"goal\" shows what GBP 100 has become in each and how long\n  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
  "market_stress": false,
- "market_note": "calm (VIX 24.56, high-yield spread 3.47)",
+ "market_note": "calm (VIX 28.44, high-yield spread 3.52)",
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
    "hold_days": 60,
    "started": "2026-11-01",
-   "value": 92559.16,
+   "value": 95827.23,
    "paused": false,
-   "drawdown_pct": -7.73,
+   "drawdown_pct": -4.38,
    "max_drawdown_pct": -7.73,
    "stops_hit": 0,
-   "return_pct": -7.44,
-   "cash": 11176.77,
+   "return_pct": -4.17,
+   "cash": 1583.77,
    "open": [
     {
      "symbol": "OCFC",
      "since": "2026-11-04",
-     "value": 1840.66,
-     "return_pct": -7.97,
+     "value": 1860.98,
+     "return_pct": -6.95,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 1.62,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": -1.62,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": "National Commercial Banks"
@@ -32,11 +32,11 @@
     {
      "symbol": "FFIN",
      "since": "2026-11-04",
-     "value": 1824.93,
-     "return_pct": -8.76,
+     "value": 1835.58,
+     "return_pct": -8.23,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 0.83,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": -2.9,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": "State Commercial Banks"
@@ -44,11 +44,11 @@
     {
      "symbol": "TRTX",
      "since": "2026-11-04",
-     "value": 1809.49,
-     "return_pct": -9.51,
+     "value": 1800.96,
+     "return_pct": -9.93,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 0.08,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": -4.6,
      "size_x": 1.0,
      "stop_pct": 8.8,
      "industry": "Real Estate Investment Trusts"
@@ -56,11 +56,11 @@
     {
      "symbol": "TBBK",
      "since": "2026-11-05",
-     "value": 1815.86,
-     "return_pct": -9.08,
+     "value": 1883.82,
+     "return_pct": -5.68,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": 0.8,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": -0.04,
      "size_x": 1.0,
      "stop_pct": 9.2,
      "industry": "National Commercial Banks"
@@ -68,11 +68,11 @@
     {
      "symbol": "UMH",
      "since": "2026-11-05",
-     "value": 1816.13,
-     "return_pct": -9.04,
+     "value": 1850.06,
+     "return_pct": -7.34,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": 0.85,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": -1.7,
      "size_x": 1.0,
      "stop_pct": 6.2,
      "industry": "Real Estate Investment Trusts"
@@ -80,11 +80,11 @@
     {
      "symbol": "FUNC",
      "since": "2026-11-05",
-     "value": 1831.68,
-     "return_pct": -8.21,
+     "value": 1854.18,
+     "return_pct": -7.08,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": 1.67,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": -1.44,
      "size_x": 1.0,
      "stop_pct": 7.1,
      "industry": "National Commercial Banks"
@@ -92,11 +92,11 @@
     {
      "symbol": "AN",
      "since": "2026-11-06",
-     "value": 1896.47,
-     "return_pct": -4.77,
+     "value": 1945.64,
+     "return_pct": -2.3,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": 1.36,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -0.59,
      "size_x": 1.0,
      "stop_pct": 11.2,
      "industry": "Retail-Auto Dealers & Gasoline Stations"
@@ -104,11 +104,11 @@
     {
      "symbol": "LBRT",
      "since": "2026-11-06",
-     "value": 1787.38,
-     "return_pct": -10.24,
+     "value": 1938.55,
+     "return_pct": -2.65,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": -4.12,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -0.95,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Oil & Gas Field Services, NEC"
@@ -116,11 +116,11 @@
     {
      "symbol": "MTDR",
      "since": "2026-11-09",
-     "value": 1964.15,
-     "return_pct": -1.63,
+     "value": 1916.89,
+     "return_pct": -4.0,
      "why": "4 insiders bought within 30 days",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": 5.39,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": -1.35,
      "size_x": 1.0,
      "stop_pct": 12.5,
      "industry": "Crude Petroleum & Natural Gas"
@@ -128,11 +128,11 @@
     {
      "symbol": "LKQ",
      "since": "2026-11-09",
-     "value": 1870.08,
-     "return_pct": -6.35,
+     "value": 1928.68,
+     "return_pct": -3.41,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": 0.68,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": -0.76,
      "size_x": 1.0,
      "stop_pct": 15.7,
      "industry": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
@@ -140,11 +140,11 @@
     {
      "symbol": "SHEN",
      "since": "2026-11-10",
-     "value": 1781.6,
-     "return_pct": -10.63,
+     "value": 1805.04,
+     "return_pct": -9.46,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -2.86,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -6.03,
      "size_x": 1.0,
      "stop_pct": 12.8,
      "industry": "Telephone Communications (No Radiotelephone)"
@@ -155,8 +155,8 @@
      "value": 1803.74,
      "return_pct": -9.56,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -1.79,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -6.13,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -164,11 +164,11 @@
     {
      "symbol": "TTMI",
      "since": "2026-11-10",
-     "value": 1547.18,
-     "return_pct": -22.4,
+     "value": 1802.73,
+     "return_pct": -9.58,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -14.62,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -6.15,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Printed Circuit Boards"
@@ -176,11 +176,11 @@
     {
      "symbol": "OBIO",
      "since": "2026-11-10",
-     "value": 2239.79,
-     "return_pct": 12.41,
+     "value": 2297.66,
+     "return_pct": 15.32,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": 20.19,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 18.75,
      "size_x": 1.0,
      "stop_pct": 17.1,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -188,11 +188,11 @@
     {
      "symbol": "FUN",
      "since": "2026-11-11",
-     "value": 1993.59,
-     "return_pct": -0.33,
+     "value": 2018.82,
+     "return_pct": 0.93,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": 8.52,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": 5.49,
      "size_x": 1.0,
      "stop_pct": 18.5,
      "industry": "Services-Amusement & Recreation Services"
@@ -200,11 +200,11 @@
     {
      "symbol": "MP",
      "since": "2026-11-13",
-     "value": 1819.89,
-     "return_pct": -9.22,
+     "value": 1905.13,
+     "return_pct": -4.96,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 0.03,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 0.01,
      "size_x": 1.0,
      "stop_pct": 17.4,
      "industry": "Metal Mining"
@@ -212,11 +212,11 @@
     {
      "symbol": "GOOD",
      "since": "2026-11-13",
-     "value": 1853.6,
-     "return_pct": -7.6,
+     "value": 1906.56,
+     "return_pct": -4.96,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 1.64,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 0.01,
      "size_x": 1.0,
      "stop_pct": 9.5,
      "industry": "Lessors of  Real Property, NEC"
@@ -224,11 +224,11 @@
     {
      "symbol": "DOX",
      "since": "2026-11-13",
-     "value": 1851.21,
-     "return_pct": -7.72,
+     "value": 1865.6,
+     "return_pct": -7.01,
      "why": "5 insiders bought within 30 days",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 1.52,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": -2.04,
      "size_x": 1.0,
      "stop_pct": 18.6,
      "industry": "Services-Computer Programming Services"
@@ -236,11 +236,11 @@
     {
      "symbol": "LRMR",
      "since": "2026-11-13",
-     "value": 2084.59,
-     "return_pct": 3.9,
+     "value": 2071.31,
+     "return_pct": 3.24,
      "why": "6 insiders bought within 30 days",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 13.15,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 8.21,
      "size_x": 1.0,
      "stop_pct": 23.6,
      "industry": "Pharmaceutical Preparations"
@@ -248,11 +248,11 @@
     {
      "symbol": "ALT",
      "since": "2026-11-16",
-     "value": 1607.47,
-     "return_pct": -19.23,
+     "value": 1643.73,
+     "return_pct": -17.4,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -11.24,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -13.75,
      "size_x": 1.0,
      "stop_pct": 22.0,
      "industry": "Pharmaceutical Preparations"
@@ -260,11 +260,11 @@
     {
      "symbol": "BW",
      "since": "2026-11-16",
-     "value": 1630.09,
-     "return_pct": -18.0,
+     "value": 1910.98,
+     "return_pct": -3.87,
      "why": "4 insiders bought within 30 days",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -10.02,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -0.22,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Heating Equipment, Except Electric & Warm Air Furnaces"
@@ -272,11 +272,11 @@
     {
      "symbol": "FF",
      "since": "2026-11-16",
-     "value": 1824.5,
-     "return_pct": -8.23,
+     "value": 1768.45,
+     "return_pct": -11.05,
      "why": "4 insiders bought within 30 days",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -0.25,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -7.4,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Industrial Organic Chemicals"
@@ -284,11 +284,11 @@
     {
      "symbol": "HPP",
      "since": "2026-11-16",
-     "value": 1636.37,
-     "return_pct": -17.64,
+     "value": 1748.39,
+     "return_pct": -12.01,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -9.66,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -8.36,
      "size_x": 1.0,
      "stop_pct": 24.1,
      "industry": "Real Estate"
@@ -296,11 +296,11 @@
     {
      "symbol": "KGS",
      "since": "2026-11-16",
-     "value": 1828.43,
-     "return_pct": -8.07,
+     "value": 1888.81,
+     "return_pct": -5.04,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -0.09,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -1.39,
      "size_x": 1.0,
      "stop_pct": 16.6,
      "industry": "Natural Gas Transmission"
@@ -308,11 +308,11 @@
     {
      "symbol": "CSQR",
      "since": "2026-11-16",
-     "value": 1713.08,
-     "return_pct": -13.85,
+     "value": 1811.01,
+     "return_pct": -8.93,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -5.87,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -5.28,
      "size_x": 1.0,
      "stop_pct": 19.8,
      "industry": "Services-Computer Programming, Data Processing, Etc."
@@ -320,11 +320,11 @@
     {
      "symbol": "KEEL",
      "since": "2026-11-17",
-     "value": 1559.09,
-     "return_pct": -20.84,
+     "value": 1814.21,
+     "return_pct": -7.88,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -6.58,
-     "excess_pct": -14.26,
+     "spy_same_days_pct": -2.18,
+     "excess_pct": -5.7,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Finance Services"
@@ -332,11 +332,11 @@
     {
      "symbol": "NSLR",
      "since": "2026-11-17",
-     "value": 1703.66,
-     "return_pct": -13.5,
+     "value": 1746.08,
+     "return_pct": -11.35,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -6.58,
-     "excess_pct": -6.92,
+     "spy_same_days_pct": -2.18,
+     "excess_pct": -9.17,
      "size_x": 1.0,
      "stop_pct": 18.4,
      "industry": ""
@@ -344,11 +344,11 @@
     {
      "symbol": "ADIG",
      "since": "2026-11-17",
-     "value": 1765.79,
-     "return_pct": -10.31,
+     "value": 1893.89,
+     "return_pct": -3.8,
      "why": "6 insiders bought within 30 days",
-     "spy_same_days_pct": -6.58,
-     "excess_pct": -3.73,
+     "spy_same_days_pct": -2.18,
+     "excess_pct": -1.62,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Wholesale-Hardware"
@@ -356,11 +356,11 @@
     {
      "symbol": "FPS",
      "since": "2026-11-17",
-     "value": 1644.09,
-     "return_pct": -16.4,
+     "value": 1854.16,
+     "return_pct": -5.72,
      "why": "4 insiders bought within 30 days",
-     "spy_same_days_pct": -6.58,
-     "excess_pct": -9.83,
+     "spy_same_days_pct": -2.18,
+     "excess_pct": -3.54,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Electrical Industrial Apparatus"
@@ -368,11 +368,11 @@
     {
      "symbol": "DKNG",
      "since": "2026-11-18",
-     "value": 1706.26,
-     "return_pct": -13.34,
+     "value": 1701.94,
+     "return_pct": -13.56,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": -7.4,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": -12.05,
      "size_x": 1.0,
      "stop_pct": 20.5,
      "industry": "Services-Miscellaneous Amusement & Recreation"
@@ -380,11 +380,11 @@
     {
      "symbol": "TH",
      "since": "2026-11-18",
-     "value": 1806.92,
-     "return_pct": -8.2,
+     "value": 1988.74,
+     "return_pct": 1.04,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": -2.26,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 2.55,
      "size_x": 1.0,
      "stop_pct": 23.2,
      "industry": "Hotels, Rooming Houses, Camps & Other Lodging Places"
@@ -392,11 +392,11 @@
     {
      "symbol": "NGS",
      "since": "2026-11-18",
-     "value": 1919.32,
-     "return_pct": -2.48,
+     "value": 1971.29,
+     "return_pct": 0.16,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 3.46,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 1.67,
      "size_x": 1.0,
      "stop_pct": 14.2,
      "industry": "Oil & Gas Field Services, NEC"
@@ -404,11 +404,11 @@
     {
      "symbol": "LPTH",
      "since": "2026-11-18",
-     "value": 1561.23,
-     "return_pct": -20.7,
+     "value": 1743.75,
+     "return_pct": -11.43,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": -14.76,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": -9.92,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Semiconductors & Related Devices"
@@ -416,11 +416,11 @@
     {
      "symbol": "ITG",
      "since": "2026-11-18",
-     "value": 1814.96,
-     "return_pct": -7.74,
+     "value": 1893.73,
+     "return_pct": -3.74,
      "why": "5 insiders bought within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": -1.8,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": -2.23,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Water, Sewer, Pipeline, Comm & Power Line Construction"
@@ -428,11 +428,11 @@
     {
      "symbol": "HAWK",
      "since": "2026-11-18",
-     "value": 1721.11,
-     "return_pct": -12.56,
+     "value": 1778.7,
+     "return_pct": -9.63,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": -6.62,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": -8.12,
      "size_x": 1.0,
      "stop_pct": 17.6,
      "industry": "Services-Computer Processing & Data Preparation"
@@ -440,11 +440,11 @@
     {
      "symbol": "ATEC",
      "since": "2026-11-18",
-     "value": 1881.34,
-     "return_pct": -4.41,
+     "value": 1940.49,
+     "return_pct": -1.4,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 1.53,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 0.11,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -452,11 +452,11 @@
     {
      "symbol": "FISN",
      "since": "2026-11-18",
-     "value": 2002.03,
-     "return_pct": 1.7,
+     "value": 2033.09,
+     "return_pct": 3.28,
      "why": "5 insiders bought within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 7.64,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 4.79,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Electric Services"
@@ -464,11 +464,11 @@
     {
      "symbol": "NPCE",
      "since": "2026-11-19",
-     "value": 1844.71,
-     "return_pct": -5.4,
+     "value": 1946.81,
+     "return_pct": -0.16,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 1.06,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 1.9,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -476,11 +476,11 @@
     {
      "symbol": "OFRM",
      "since": "2026-11-19",
-     "value": 1968.51,
-     "return_pct": 1.01,
+     "value": 1900.58,
+     "return_pct": -2.47,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 7.47,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": -0.42,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Food and Kindred Products"
@@ -488,11 +488,11 @@
     {
      "symbol": "PAL",
      "since": "2026-11-19",
-     "value": 1825.1,
-     "return_pct": -6.4,
+     "value": 1952.12,
+     "return_pct": 0.11,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 0.06,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 2.17,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Transportation Services"
@@ -500,11 +500,11 @@
     {
      "symbol": "STWD",
      "since": "2026-11-19",
-     "value": 1848.4,
-     "return_pct": -5.14,
+     "value": 1877.41,
+     "return_pct": -3.65,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 1.32,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": -1.6,
      "size_x": 1.0,
      "stop_pct": 10.3,
      "industry": "Real Estate Investment Trusts"
@@ -512,11 +512,11 @@
     {
      "symbol": "BA",
      "since": "2026-11-19",
-     "value": 1851.18,
-     "return_pct": -4.97,
+     "value": 1928.37,
+     "return_pct": -1.01,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 1.49,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 1.05,
      "size_x": 1.0,
      "stop_pct": 7.3,
      "industry": "Aircraft"
@@ -524,11 +524,11 @@
     {
      "symbol": "SRTS",
      "since": "2026-11-20",
-     "value": 1748.7,
-     "return_pct": -5.82,
+     "value": 1717.75,
+     "return_pct": -7.48,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": -2.49,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -8.71,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -536,11 +536,11 @@
     {
      "symbol": "RMIX",
      "since": "2026-11-20",
-     "value": 1728.92,
-     "return_pct": -6.77,
+     "value": 2069.26,
+     "return_pct": 11.58,
      "why": "6 insiders bought within 30 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": -3.45,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": 10.35,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Concrete Products, Except Block & Brick"
@@ -548,31 +548,91 @@
     {
      "symbol": "EQPT",
      "since": "2026-11-20",
-     "value": 1809.06,
-     "return_pct": -2.32,
+     "value": 1931.01,
+     "return_pct": 4.26,
      "why": "3 insiders bought within 30 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 1.01,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": 3.04,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Services-Equipment Rental & Leasing, NEC"
+    },
+    {
+     "symbol": "ARR",
+     "since": "2026-11-23",
+     "value": 1952.2,
+     "return_pct": 1.76,
+     "why": "3 insiders bought within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": 2.04,
+     "size_x": 1.0,
+     "stop_pct": 10.0,
+     "industry": "Real Estate Investment Trusts"
+    },
+    {
+     "symbol": "SEI",
+     "since": "2026-11-23",
+     "value": 1886.99,
+     "return_pct": -1.68,
+     "why": "4 insiders bought within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": -1.39,
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Oil & Gas Field Machinery & Equipment"
+    },
+    {
+     "symbol": "CRMD",
+     "since": "2026-11-23",
+     "value": 1942.67,
+     "return_pct": 1.26,
+     "why": "4 insiders bought within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": 1.54,
+     "size_x": 1.0,
+     "stop_pct": 18.5,
+     "industry": "Pharmaceutical Preparations"
+    },
+    {
+     "symbol": "PICS",
+     "since": "2026-11-23",
+     "value": 1864.78,
+     "return_pct": -2.82,
+     "why": "3 insiders bought within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": -2.54,
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Personal Credit Institutions"
+    },
+    {
+     "symbol": "CTGO",
+     "since": "2026-11-23",
+     "value": 1850.14,
+     "return_pct": -3.53,
+     "why": "3 insiders bought within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": -3.25,
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Gold and Silver Ores"
     }
    ],
-   "invested_pct": 87.9,
-   "open_excess_pct": -0.63,
-   "skill_vs_spy_pct": -1.13,
-   "trades_measured": 45,
-   "trades_beating_spy_pct": 53.3,
+   "invested_pct": 98.3,
+   "open_excess_pct": -1.27,
+   "skill_vs_spy_pct": -1.59,
+   "trades_measured": 50,
+   "trades_beating_spy_pct": 32.0,
    "pending": [
-    "FMBM",
-    "AEON",
-    "ARR",
-    "CWBC",
-    "SEI",
-    "UAVS",
-    "CRMD",
-    "PICS",
-    "CTGO"
+    "BULL",
+    "KYN",
+    "ZOMDF",
+    "PCT",
+    "CCAP",
+    "CTVA",
+    "APC",
+    "TROX",
+    "GNL"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -644,54 +704,13 @@
     [
      "2026-11-20",
      92559.16
+    ],
+    [
+     "2026-11-23",
+     95827.23
     ]
    ],
    "events": [
-    {
-     "date": "2026-11-19",
-     "sym": "OPAL",
-     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "OFRM",
-     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,948 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 12.03; RSI 42 is neutral"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "MSGM",
-     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "FLNA",
-     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "WWB",
-     "what": "NO_TRADE: not enough price history to judge momentum, so the default is no trade"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "PAL",
-     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,949 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 2.90; RSI 49 is neutral"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "STWD",
-     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,948 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 11.40; RSI 33 is neutral"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "BA",
-     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,948 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 163.80; RSI 30 is oversold, but insiders buying with their own money is the contrarian reason"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "SRTS",
-     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,856 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 2.39; RSI 38 is neutral"
-    },
     {
      "date": "2026-11-20",
      "sym": "TGEN",
@@ -721,10 +740,55 @@
      "date": "2026-11-20",
      "sym": "EQPT",
      "what": "TRADE: 3 insiders bought within 30 days. Bought $1,852 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 13.80; RSI 43 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "FMBM",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "AEON",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "ARR",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,918 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 10.99; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "CWBC",
+     "what": "NO_TRADE: already 4 positions in the same industry (State Commercial Banks)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "SEI",
+     "what": "TRADE: 4 insiders bought within 30 days. Bought $1,919 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 62.18; RSI 40 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "UAVS",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "CRMD",
+     "what": "TRADE: 4 insiders bought within 30 days. Bought $1,918 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 5.40; RSI 40 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "PICS",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,918 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 5.34; RSI 30 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "CTGO",
+     "what": "TRADE: 3 insiders bought within 30 days. Bought $1,917 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 10.33; RSI 25 is oversold, but insiders buying with their own money is the contrarian reason"
     }
    ],
-   "margin_vs_spy_pct": 1.87,
-   "gbp100_now": 92.56,
+   "margin_vs_spy_pct": 0.87,
+   "gbp100_now": 95.83,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -732,22 +796,22 @@
    "label": "A director or officer buys $250k+ on the open market",
    "hold_days": 60,
    "started": "2026-11-01",
-   "value": 91866.35,
+   "value": 95565.89,
    "paused": false,
-   "drawdown_pct": -10.09,
+   "drawdown_pct": -6.47,
    "max_drawdown_pct": -10.09,
    "stops_hit": 0,
-   "return_pct": -8.13,
+   "return_pct": -4.43,
    "cash": 0.0,
    "open": [
     {
      "symbol": "RAPP",
      "since": "2026-11-02",
-     "value": 1838.26,
-     "return_pct": -8.09,
+     "value": 1893.02,
+     "return_pct": -5.35,
      "why": "HEALY JAMES (Director) bought $19,999,980",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": 1.08,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": -0.46,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Pharmaceutical Preparations"
@@ -755,11 +819,11 @@
     {
      "symbol": "LSTR",
      "since": "2026-11-03",
-     "value": 1990.29,
-     "return_pct": -0.5,
+     "value": 2046.36,
+     "return_pct": 2.3,
      "why": "Lonegro Frank A (President & CEO) bought $714,619",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 7.85,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 6.34,
      "size_x": 1.0,
      "stop_pct": 11.1,
      "industry": "Trucking (No Local)"
@@ -767,11 +831,11 @@
     {
      "symbol": "ATEC",
      "since": "2026-11-03",
-     "value": 1799.37,
-     "return_pct": -10.09,
+     "value": 1855.94,
+     "return_pct": -7.26,
      "why": "Demski David M (Director) bought $408,600",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -1.73,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -3.22,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -779,11 +843,11 @@
     {
      "symbol": "ENPH",
      "since": "2026-11-03",
-     "value": 1387.24,
-     "return_pct": -30.69,
+     "value": 1474.87,
+     "return_pct": -26.31,
      "why": "Kothandaraman Badrinarayanan (President & CEO) bought $267,514",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -22.33,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -22.27,
      "size_x": 1.0,
      "stop_pct": 19.2,
      "industry": "Semiconductors & Related Devices"
@@ -791,11 +855,11 @@
     {
      "symbol": "XYL",
      "since": "2026-11-03",
-     "value": 1949.0,
-     "return_pct": -2.77,
+     "value": 1992.03,
+     "return_pct": -0.62,
      "why": "KOCH D CHRISTIAN (Director) bought $985,600",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 5.59,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 3.42,
      "size_x": 1.0,
      "stop_pct": 10.1,
      "industry": "Pumps & Pumping Equipment"
@@ -803,11 +867,11 @@
     {
      "symbol": "DINO",
      "since": "2026-11-03",
-     "value": 1581.18,
-     "return_pct": -21.1,
+     "value": 1574.85,
+     "return_pct": -21.42,
      "why": "MYERS FRANKLIN (CEO) bought $1,108,000",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -12.74,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -17.37,
      "size_x": 1.0,
      "stop_pct": 12.0,
      "industry": "Pipe Lines (No Natural Gas)"
@@ -815,11 +879,11 @@
     {
      "symbol": "JBLU",
      "since": "2026-11-03",
-     "value": 2021.12,
-     "return_pct": 0.81,
+     "value": 2209.84,
+     "return_pct": 10.23,
      "why": "BONEPARTH PETER (Director) bought $300,000",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 9.17,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 14.27,
      "size_x": 1.0,
      "stop_pct": 24.4,
      "industry": "Air Transportation, Scheduled"
@@ -827,11 +891,11 @@
     {
      "symbol": "LKQ",
      "since": "2026-11-04",
-     "value": 1869.94,
-     "return_pct": -7.14,
+     "value": 1928.53,
+     "return_pct": -4.23,
      "why": "CLARKE ANDREW C (Director) bought $400,030",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 2.46,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": 1.11,
      "size_x": 1.0,
      "stop_pct": 15.1,
      "industry": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
@@ -839,11 +903,11 @@
     {
      "symbol": "TRTX",
      "since": "2026-11-04",
-     "value": 1823.45,
-     "return_pct": -9.51,
+     "value": 1814.85,
+     "return_pct": -9.93,
      "why": "SILVERSTEIN WENDY (Director) bought $253,239",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 0.08,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": -4.6,
      "size_x": 1.0,
      "stop_pct": 8.8,
      "industry": "Real Estate Investment Trusts"
@@ -851,11 +915,11 @@
     {
      "symbol": "CAT",
      "since": "2026-11-04",
-     "value": 1686.26,
-     "return_pct": -16.37,
+     "value": 1807.13,
+     "return_pct": -10.38,
      "why": "Fish James C Jr (Director) bought $620,390",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": -6.78,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": -5.04,
      "size_x": 1.0,
      "stop_pct": 11.7,
      "industry": "Construction Machinery & Equip"
@@ -863,11 +927,11 @@
     {
      "symbol": "MGM",
      "since": "2026-11-04",
-     "value": 2018.91,
-     "return_pct": 0.19,
+     "value": 2101.89,
+     "return_pct": 4.31,
      "why": "Meister Keith A. (Director) bought $44,746,261",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 9.78,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": 9.64,
      "size_x": 1.0,
      "stop_pct": 9.6,
      "industry": "Hotels & Motels"
@@ -875,11 +939,11 @@
     {
      "symbol": "LSCC",
      "since": "2026-11-05",
-     "value": 1922.16,
-     "return_pct": -3.69,
+     "value": 2208.4,
+     "return_pct": 10.66,
      "why": "Tamer Ford (President & CEO) bought $585,045",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": 6.2,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": 16.3,
      "size_x": 1.0,
      "stop_pct": 15.9,
      "industry": "Semiconductors & Related Devices"
@@ -887,11 +951,11 @@
     {
      "symbol": "INTC",
      "since": "2026-11-05",
-     "value": 1806.88,
-     "return_pct": -9.39,
+     "value": 2102.16,
+     "return_pct": 5.42,
      "why": "TAN LIP BU (CEO) bought $9,709,680",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": 0.49,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": 11.06,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Semiconductors & Related Devices"
@@ -899,11 +963,11 @@
     {
      "symbol": "SPXC",
      "since": "2026-11-06",
-     "value": 1859.85,
-     "return_pct": -6.69,
+     "value": 1983.75,
+     "return_pct": -0.47,
      "why": "Deck Brian A (Director) bought $493,020",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": -0.56,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": 1.23,
      "size_x": 1.0,
      "stop_pct": 13.7,
      "industry": "Metalworkg Machinery & Equipment"
@@ -911,11 +975,11 @@
     {
      "symbol": "GLXY",
      "since": "2026-11-06",
-     "value": 1558.08,
-     "return_pct": -21.79,
+     "value": 1742.77,
+     "return_pct": -12.52,
      "why": "Novogratz Michael (Chief Executive Officer) bought $3,152,305",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": -15.67,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -10.82,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Security Brokers, Dealers & Flotation Companies"
@@ -923,11 +987,11 @@
     {
      "symbol": "BKR",
      "since": "2026-11-06",
-     "value": 1925.08,
-     "return_pct": -3.28,
+     "value": 1977.93,
+     "return_pct": -0.62,
      "why": "RICE JOHN G (Director) bought $531,000",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": 2.85,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": 1.08,
      "size_x": 1.0,
      "stop_pct": 12.6,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -935,11 +999,11 @@
     {
      "symbol": "FBRT",
      "since": "2026-11-06",
-     "value": 1875.03,
-     "return_pct": -5.85,
+     "value": 1909.12,
+     "return_pct": -4.14,
      "why": "Byrne Richard J (Chairman and CEO) bought $998,364",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": 0.28,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -2.43,
      "size_x": 1.0,
      "stop_pct": 9.8,
      "industry": "Real Estate Investment Trusts"
@@ -947,11 +1011,11 @@
     {
      "symbol": "AN",
      "since": "2026-11-06",
-     "value": 1895.17,
-     "return_pct": -4.77,
+     "value": 1944.31,
+     "return_pct": -2.3,
      "why": "Manley Michael Mark (CEO and Director) bought $349,350",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": 1.36,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -0.59,
      "size_x": 1.0,
      "stop_pct": 11.2,
      "industry": "Retail-Auto Dealers & Gasoline Stations"
@@ -959,11 +1023,11 @@
     {
      "symbol": "CACC",
      "since": "2026-11-06",
-     "value": 1793.18,
-     "return_pct": -9.89,
+     "value": 1847.55,
+     "return_pct": -7.16,
      "why": "TRYFOROS THOMAS N (Director) bought $1,455,600",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": -3.77,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -5.45,
      "size_x": 1.0,
      "stop_pct": 12.6,
      "industry": "Personal Credit Institutions"
@@ -971,11 +1035,11 @@
     {
      "symbol": "LBRT",
      "since": "2026-11-06",
-     "value": 1787.12,
-     "return_pct": -10.24,
+     "value": 1938.26,
+     "return_pct": -2.65,
      "why": "Gusek Ron (CEO and President) bought $377,335",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": -4.12,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -0.95,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Oil & Gas Field Services, NEC"
@@ -983,11 +1047,11 @@
     {
      "symbol": "BXMT",
      "since": "2026-11-06",
-     "value": 1771.72,
-     "return_pct": -11.01,
+     "value": 1782.1,
+     "return_pct": -10.49,
      "why": "Johnson Timothy Steven (Chief Executive Officer) bought $1,035,351",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": -4.89,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -8.79,
      "size_x": 1.0,
      "stop_pct": 9.5,
      "industry": "Real Estate Investment Trusts"
@@ -995,11 +1059,11 @@
     {
      "symbol": "KYN",
      "since": "2026-11-09",
-     "value": 1986.73,
-     "return_pct": -1.59,
+     "value": 1979.07,
+     "return_pct": -1.97,
      "why": "Baker James C (President) bought $331,085",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": 5.44,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": 0.68,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": ""
@@ -1007,11 +1071,11 @@
     {
      "symbol": "CVS",
      "since": "2026-11-09",
-     "value": 1926.68,
-     "return_pct": -4.59,
+     "value": 1898.32,
+     "return_pct": -5.99,
      "why": "Shah Prem S (EVP and Group President) bought $2,001,315",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": 2.44,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": -3.34,
      "size_x": 1.0,
      "stop_pct": 9.9,
      "industry": "Retail-Drug Stores and Proprietary Stores"
@@ -1019,11 +1083,11 @@
     {
      "symbol": "MDGL",
      "since": "2026-11-09",
-     "value": 1857.77,
-     "return_pct": -8.01,
+     "value": 1954.65,
+     "return_pct": -3.21,
      "why": "BAKER BROS. ADVISORS LP (Director) bought $793,220",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": -0.98,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": -0.56,
      "size_x": 1.0,
      "stop_pct": 15.6,
      "industry": "Pharmaceutical Preparations"
@@ -1031,11 +1095,11 @@
     {
      "symbol": "DKNG",
      "since": "2026-11-10",
-     "value": 1700.89,
-     "return_pct": -15.32,
+     "value": 1696.59,
+     "return_pct": -15.53,
      "why": "Ellingson Alan Wayne (Chief Financial Officer) bought $349,987",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -7.55,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -12.1,
      "size_x": 1.0,
      "stop_pct": 18.5,
      "industry": "Services-Miscellaneous Amusement & Recreation"
@@ -1043,11 +1107,11 @@
     {
      "symbol": "NLY",
      "since": "2026-11-10",
-     "value": 1801.54,
-     "return_pct": -10.37,
+     "value": 1834.73,
+     "return_pct": -8.72,
      "why": "Wede Scott (Director) bought $940,000",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -2.6,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -5.29,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Real Estate Investment Trusts"
@@ -1055,11 +1119,11 @@
     {
      "symbol": "GFS",
      "since": "2026-11-10",
-     "value": 1784.62,
-     "return_pct": -11.21,
+     "value": 1954.75,
+     "return_pct": -2.75,
      "why": "LAZAR JACK R (Director) bought $380,000",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -3.44,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 0.68,
      "size_x": 1.0,
      "stop_pct": 16.7,
      "industry": "Semiconductors & Related Devices"
@@ -1067,11 +1131,11 @@
     {
      "symbol": "MTDR",
      "since": "2026-11-10",
-     "value": 1998.06,
-     "return_pct": -0.62,
+     "value": 1949.99,
+     "return_pct": -3.01,
      "why": "Foran Joseph Wm (Chairman and CEO) bought $256,800",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": 7.15,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 0.42,
      "size_x": 1.0,
      "stop_pct": 12.6,
      "industry": "Crude Petroleum & Natural Gas"
@@ -1079,11 +1143,11 @@
     {
      "symbol": "WCC",
      "since": "2026-11-10",
-     "value": 1775.66,
-     "return_pct": -11.73,
+     "value": 1908.0,
+     "return_pct": -5.15,
      "why": "Dev Indraneel (EVP & CFO) bought $503,527",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -3.96,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -1.72,
      "size_x": 1.0,
      "stop_pct": 17.3,
      "industry": "Wholesale-Electrical Apparatus & Equipment, Wiring Supplies "
@@ -1091,11 +1155,11 @@
     {
      "symbol": "LUMN",
      "since": "2026-11-10",
-     "value": 1724.17,
-     "return_pct": -14.28,
+     "value": 1755.69,
+     "return_pct": -12.71,
      "why": "Johnson Kathleen E (Chief Executive Officer) bought $396,890",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -6.5,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -9.28,
      "size_x": 1.0,
      "stop_pct": 18.4,
      "industry": "Telephone Communications (No Radiotelephone)"
@@ -1103,11 +1167,11 @@
     {
      "symbol": "KMI",
      "since": "2026-11-10",
-     "value": 2023.24,
-     "return_pct": 0.48,
+     "value": 2037.24,
+     "return_pct": 1.17,
      "why": "KINDER RICHARD D (Executive Chairman) bought $14,994,200",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": 8.25,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 4.6,
      "size_x": 1.0,
      "stop_pct": 8.4,
      "industry": "Natural Gas Transmission"
@@ -1115,11 +1179,11 @@
     {
      "symbol": "ROK",
      "since": "2026-11-10",
-     "value": 1864.31,
-     "return_pct": -7.47,
+     "value": 1970.12,
+     "return_pct": -2.22,
      "why": "Moret Blake D. (President and CEO) bought $931,731",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": 0.3,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 1.21,
      "size_x": 1.0,
      "stop_pct": 11.5,
      "industry": "Measuring & Controlling Devices, NEC"
@@ -1127,11 +1191,11 @@
     {
      "symbol": "BSM",
      "since": "2026-11-11",
-     "value": 1963.36,
-     "return_pct": -3.96,
+     "value": 1923.72,
+     "return_pct": -5.9,
      "why": "Carter Thomas L Jr (Executive Chairman) bought $686,290",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": 4.89,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": -1.34,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Crude Petroleum & Natural Gas"
@@ -1139,11 +1203,11 @@
     {
      "symbol": "PSEC",
      "since": "2026-11-11",
-     "value": 1690.23,
-     "return_pct": -17.33,
+     "value": 1796.7,
+     "return_pct": -12.12,
      "why": "Barry John F (CHIEF EXECUTIVE OFFICER) bought $1,727,314",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": -8.47,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": -7.56,
      "size_x": 1.0,
      "stop_pct": 17.8,
      "industry": ""
@@ -1151,11 +1215,11 @@
     {
      "symbol": "STVN",
      "since": "2026-11-11",
-     "value": 2291.0,
-     "return_pct": 12.1,
+     "value": 2339.3,
+     "return_pct": 14.46,
      "why": "MOREL DONALD E JR (Director) bought $326,750",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": 20.95,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": 19.02,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -1163,11 +1227,11 @@
     {
      "symbol": "TXO",
      "since": "2026-11-11",
-     "value": 1852.38,
-     "return_pct": -9.36,
+     "value": 1838.83,
+     "return_pct": -10.02,
      "why": "SIMPSON BOB R (Director) bought $1,170,505",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": -0.5,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": -5.46,
      "size_x": 1.0,
      "stop_pct": 10.0,
      "industry": "Crude Petroleum & Natural Gas"
@@ -1175,11 +1239,11 @@
     {
      "symbol": "CRH",
      "since": "2026-11-11",
-     "value": 1879.91,
-     "return_pct": -8.0,
+     "value": 1970.01,
+     "return_pct": -3.59,
      "why": "FEARON RICHARD H (Director) bought $569,700",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": 0.85,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": 0.97,
      "size_x": 1.0,
      "stop_pct": 9.3,
      "industry": "Cement, Hydraulic"
@@ -1187,11 +1251,11 @@
     {
      "symbol": "FUN",
      "since": "2026-11-11",
-     "value": 2036.67,
-     "return_pct": -0.33,
+     "value": 2062.45,
+     "return_pct": 0.93,
      "why": "JAFFER REHAN (Director) bought $4,128,000",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": 8.52,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": 5.49,
      "size_x": 1.0,
      "stop_pct": 18.5,
      "industry": "Services-Amusement & Recreation Services"
@@ -1199,11 +1263,11 @@
     {
      "symbol": "MP",
      "since": "2026-11-13",
-     "value": 1828.61,
-     "return_pct": -9.22,
+     "value": 1914.25,
+     "return_pct": -4.96,
      "why": "Rosenthal Michael Stuart (Chief Operating Officer) bought $372,000",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 0.03,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 0.01,
      "size_x": 1.0,
      "stop_pct": 17.4,
      "industry": "Metal Mining"
@@ -1211,11 +1275,11 @@
     {
      "symbol": "LILA",
      "since": "2026-11-13",
-     "value": 1881.39,
-     "return_pct": -6.66,
+     "value": 1801.98,
+     "return_pct": -10.6,
      "why": "DE ANGOITIA ALFONSO (Director) bought $4,983,488",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 2.58,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": -5.63,
      "size_x": 1.0,
      "stop_pct": 12.2,
      "industry": "Cable & Other Pay Television Services"
@@ -1223,11 +1287,11 @@
     {
      "symbol": "TH",
      "since": "2026-11-13",
-     "value": 1878.04,
-     "return_pct": -6.82,
+     "value": 2067.02,
+     "return_pct": 2.56,
      "why": "Archer James Bradley (Director and CEO and President) bought $312,675",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 2.43,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 7.53,
      "size_x": 1.0,
      "stop_pct": 23.1,
      "industry": "Hotels, Rooming Houses, Camps & Other Lodging Places"
@@ -1235,11 +1299,11 @@
     {
      "symbol": "TEAM",
      "since": "2026-11-13",
-     "value": 1755.63,
-     "return_pct": -12.83,
+     "value": 1819.91,
+     "return_pct": -9.64,
      "why": "Cannon-Brookes Michael (CEO, Co-Founder) bought $1,497,212",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": -3.59,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": -4.67,
      "size_x": 1.0,
      "stop_pct": 18.8,
      "industry": "Services-Prepackaged Software"
@@ -1247,11 +1311,11 @@
     {
      "symbol": "EQPT",
      "since": "2026-11-13",
-     "value": 1653.48,
-     "return_pct": -17.86,
+     "value": 1764.93,
+     "return_pct": -12.32,
      "why": "HILL W BRYAN (Director) bought $554,116",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": -8.61,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": -7.35,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Services-Equipment Rental & Leasing, NEC"
@@ -1259,11 +1323,11 @@
     {
      "symbol": "BOOT",
      "since": "2026-11-13",
-     "value": 1970.36,
-     "return_pct": -1.99,
+     "value": 1925.75,
+     "return_pct": -4.21,
      "why": "Watkins James M (CFO & SECRETARY) bought $270,740",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 7.25,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 0.76,
      "size_x": 1.0,
      "stop_pct": 13.7,
      "industry": "Retail-Shoe Stores"
@@ -1271,11 +1335,11 @@
     {
      "symbol": "ALNY",
      "since": "2026-11-13",
-     "value": 1813.62,
-     "return_pct": -9.78,
+     "value": 1966.97,
+     "return_pct": -2.15,
      "why": "SCHULMAN AMY W (Director) bought $299,526",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": -0.54,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 2.82,
      "size_x": 1.0,
      "stop_pct": 20.2,
      "industry": "Pharmaceutical Preparations"
@@ -1283,11 +1347,11 @@
     {
      "symbol": "COHR",
      "since": "2026-11-13",
-     "value": 1636.79,
-     "return_pct": -18.63,
+     "value": 1886.74,
+     "return_pct": -6.21,
      "why": "ANDERSON JAMES ROBERT (CEO) bought $997,400",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": -9.39,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": -1.24,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Optical Instruments & Lenses"
@@ -1295,11 +1359,11 @@
     {
      "symbol": "BLMN",
      "since": "2026-11-13",
-     "value": 1910.7,
-     "return_pct": -4.92,
+     "value": 1983.53,
+     "return_pct": -1.29,
      "why": "Spanos Mike (CEO) bought $502,000",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 4.33,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 3.68,
      "size_x": 1.0,
      "stop_pct": 18.1,
      "industry": "Retail-Eating  Places"
@@ -1307,11 +1371,11 @@
     {
      "symbol": "BKD",
      "since": "2026-11-13",
-     "value": 1912.56,
-     "return_pct": -4.81,
+     "value": 1988.11,
+     "return_pct": -1.04,
      "why": "WINKLE C CHRISTIAN (Director) bought $358,068",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 4.44,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 3.93,
      "size_x": 1.0,
      "stop_pct": 16.5,
      "industry": "Services-Nursing & Personal Care Facilities"
@@ -1319,11 +1383,11 @@
     {
      "symbol": "KGS",
      "since": "2026-11-16",
-     "value": 1802.34,
-     "return_pct": -8.07,
+     "value": 1861.86,
+     "return_pct": -5.04,
      "why": "Darden Alexander Newsom (Director) bought $449,900",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -0.09,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -1.39,
      "size_x": 1.0,
      "stop_pct": 16.6,
      "industry": "Natural Gas Transmission"
@@ -1331,31 +1395,28 @@
     {
      "symbol": "AKAM",
      "since": "2026-11-16",
-     "value": 1506.31,
-     "return_pct": -0.19,
+     "value": 1579.05,
+     "return_pct": 4.63,
      "why": "LEIGHTON F THOMSON (Chief Executive Officer) bought $2,552,400",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": 7.8,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": 8.29,
      "size_x": 1.0,
      "stop_pct": 14.5,
      "industry": "Services-Business Services, NEC"
     }
    ],
    "invested_pct": 100.0,
-   "open_excess_pct": 0.64,
-   "skill_vs_spy_pct": 0.12,
+   "open_excess_pct": 0.05,
+   "skill_vs_spy_pct": -0.49,
    "trades_measured": 50,
-   "trades_beating_spy_pct": 56.0,
+   "trades_beating_spy_pct": 48.0,
    "pending": [
     "HRNG",
-    "NTB",
-    "SEI",
-    "MED",
-    "PICS",
-    "SAGT",
-    "ELV",
-    "INOD",
-    "HBCP"
+    "SCOR",
+    "SUNS",
+    "BG",
+    "TMS",
+    "WMB"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -1427,49 +1488,13 @@
     [
      "2026-11-20",
      91866.35
+    ],
+    [
+     "2026-11-23",
+     95565.89
     ]
    ],
    "events": [
-    {
-     "date": "2026-11-19",
-     "sym": "CGON",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "OFRM",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "GPRK",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "CWBC",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "HMH",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "EFC",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "PLD",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "APC",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
     {
      "date": "2026-11-20",
      "sym": "ITT",
@@ -1504,10 +1529,50 @@
      "date": "2026-11-20",
      "sym": "LCTX",
      "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "NTB",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "SEI",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "MED",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "PICS",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "SAGT",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "ELV",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "INOD",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "HBCP",
+     "what": "NO_TRADE: all 50 slots are full"
     }
    ],
-   "margin_vs_spy_pct": 1.18,
-   "gbp100_now": 91.87,
+   "margin_vs_spy_pct": 0.61,
+   "gbp100_now": 95.57,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -1515,22 +1580,22 @@
    "label": "3+ members of Congress disclose buying the same stock within 60 days",
    "hold_days": 60,
    "started": "2026-11-01",
-   "value": 99808.27,
+   "value": 100086.09,
    "paused": false,
-   "drawdown_pct": -0.31,
+   "drawdown_pct": -0.03,
    "max_drawdown_pct": -0.31,
    "stops_hit": 0,
-   "return_pct": -0.19,
+   "return_pct": 0.09,
    "cash": 90002.26,
    "open": [
     {
      "symbol": "T",
      "since": "2026-11-02",
-     "value": 2111.52,
-     "return_pct": 5.58,
+     "value": 2110.57,
+     "return_pct": 5.53,
      "why": "3 members bought within 60 days",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": 14.75,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": 10.42,
      "size_x": 1.0,
      "stop_pct": 9.0,
      "industry": "Telephone Communications (No Radiotelephone)"
@@ -1538,11 +1603,11 @@
     {
      "symbol": "LLY",
      "since": "2026-11-13",
-     "value": 1883.23,
-     "return_pct": -5.93,
+     "value": 1907.68,
+     "return_pct": -4.71,
      "why": "3 members bought within 60 days",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 3.31,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 0.26,
      "size_x": 1.0,
      "stop_pct": 8.9,
      "industry": "Pharmaceutical Preparations"
@@ -1550,11 +1615,11 @@
     {
      "symbol": "CMS",
      "since": "2026-11-20",
-     "value": 1990.61,
-     "return_pct": -0.46,
+     "value": 1997.99,
+     "return_pct": -0.09,
      "why": "3 members bought within 60 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 2.87,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -1.32,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Electric & Other Services Combined"
@@ -1562,11 +1627,11 @@
     {
      "symbol": "GLW",
      "since": "2026-11-20",
-     "value": 1827.62,
-     "return_pct": -8.6,
+     "value": 2097.37,
+     "return_pct": 4.89,
      "why": "3 members bought within 60 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": -5.28,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": 3.66,
      "size_x": 1.0,
      "stop_pct": 20.1,
      "industry": "Drawing & Insulating of  Nonferrous Wire"
@@ -1574,21 +1639,21 @@
     {
      "symbol": "KO",
      "since": "2026-11-20",
-     "value": 1993.03,
-     "return_pct": -0.16,
+     "value": 1970.22,
+     "return_pct": -1.3,
      "why": "3 members bought within 60 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 3.17,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -2.53,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Beverages"
     }
    ],
-   "invested_pct": 9.8,
-   "open_excess_pct": 4.05,
-   "skill_vs_spy_pct": 3.76,
+   "invested_pct": 10.1,
+   "open_excess_pct": 2.24,
+   "skill_vs_spy_pct": 2.1,
    "trades_measured": 5,
-   "trades_beating_spy_pct": 80.0,
+   "trades_beating_spy_pct": 60.0,
    "pending": [],
    "closed_trades": 0,
    "win_pct": null,
@@ -1660,6 +1725,10 @@
     [
      "2026-11-20",
      99808.27
+    ],
+    [
+     "2026-11-23",
+     100086.09
     ]
    ],
    "events": [
@@ -1689,8 +1758,8 @@
      "what": "TRADE: 3 members bought within 60 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 97.00; RSI 55 is neutral"
     }
    ],
-   "margin_vs_spy_pct": 9.12,
-   "gbp100_now": 99.81,
+   "margin_vs_spy_pct": 5.13,
+   "gbp100_now": 100.09,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -1698,22 +1767,22 @@
    "label": "A member of Congress discloses a $100k+ purchase",
    "hold_days": 60,
    "started": "2026-11-01",
-   "value": 99654.81,
+   "value": 100129.97,
    "paused": false,
-   "drawdown_pct": -0.35,
+   "drawdown_pct": 0.0,
    "max_drawdown_pct": -0.35,
    "stops_hit": 0,
-   "return_pct": -0.35,
+   "return_pct": 0.13,
    "cash": 88021.22,
    "open": [
     {
      "symbol": "ORCL",
      "since": "2026-11-20",
-     "value": 1862.88,
-     "return_pct": -6.86,
+     "value": 2092.73,
+     "return_pct": 4.64,
      "why": "Donald J Trump disclosed about $175,000",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": -3.53,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": 3.41,
      "size_x": 1.0,
      "stop_pct": 18.5,
      "industry": "Services-Prepackaged Software"
@@ -1721,11 +1790,11 @@
     {
      "symbol": "AAPL",
      "since": "2026-11-20",
-     "value": 1937.31,
-     "return_pct": -3.0,
+     "value": 1972.84,
+     "return_pct": -1.22,
      "why": "Donald J Trump disclosed about $175,000",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 0.33,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -2.45,
      "size_x": 1.0,
      "stop_pct": 6.5,
      "industry": "Electronic Computers"
@@ -1733,11 +1802,11 @@
     {
      "symbol": "ROL",
      "since": "2026-11-20",
-     "value": 1966.03,
-     "return_pct": -1.5,
+     "value": 1984.23,
+     "return_pct": -0.59,
      "why": "Donald J Trump disclosed about $175,000",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 1.82,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -1.82,
      "size_x": 1.0,
      "stop_pct": 8.1,
      "industry": "Services-To Dwellings & Other Buildings"
@@ -1745,11 +1814,11 @@
     {
      "symbol": "CME",
      "since": "2026-11-20",
-     "value": 1973.85,
-     "return_pct": -1.08,
+     "value": 1953.64,
+     "return_pct": -2.1,
      "why": "Donald J Trump disclosed about $175,000",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 2.25,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -3.32,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Security & Commodity Brokers, Dealers, Exchanges & Services"
@@ -1757,11 +1826,11 @@
     {
      "symbol": "PEP",
      "since": "2026-11-20",
-     "value": 1992.46,
-     "return_pct": -0.13,
+     "value": 1989.48,
+     "return_pct": -0.28,
      "why": "Donald J Trump disclosed about $175,000",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 3.2,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -1.5,
      "size_x": 1.0,
      "stop_pct": 6.6,
      "industry": "Beverages"
@@ -1769,21 +1838,21 @@
     {
      "symbol": "NRG",
      "since": "2026-11-20",
-     "value": 1901.04,
-     "return_pct": -4.71,
+     "value": 2115.83,
+     "return_pct": 6.06,
      "why": "Donald J Trump disclosed about $375,000",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": -1.38,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": 4.83,
      "size_x": 1.0,
      "stop_pct": 14.0,
      "industry": "Electric Services"
     }
    ],
-   "invested_pct": 11.7,
-   "open_excess_pct": 0.5,
-   "skill_vs_spy_pct": 0.45,
+   "invested_pct": 12.1,
+   "open_excess_pct": -0.04,
+   "skill_vs_spy_pct": -0.14,
    "trades_measured": 6,
-   "trades_beating_spy_pct": 66.7,
+   "trades_beating_spy_pct": 33.3,
    "pending": [],
    "closed_trades": 0,
    "win_pct": null,
@@ -1855,6 +1924,10 @@
     [
      "2026-11-20",
      99654.81
+    ],
+    [
+     "2026-11-23",
+     100129.97
     ]
    ],
    "events": [
@@ -1889,8 +1962,8 @@
      "what": "TRADE: Donald J Trump disclosed about $375,000. Bought $1,994 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 92.00; RSI 47 is neutral"
     }
    ],
-   "margin_vs_spy_pct": 8.96,
-   "gbp100_now": 99.65,
+   "margin_vs_spy_pct": 5.17,
+   "gbp100_now": 100.13,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -1898,22 +1971,22 @@
    "label": "The terminal's own signal score reaches 8+",
    "hold_days": 20,
    "started": "2026-11-01",
-   "value": 90649.15,
+   "value": 93774.49,
    "paused": false,
-   "drawdown_pct": -10.44,
+   "drawdown_pct": -7.35,
    "max_drawdown_pct": -10.44,
    "stops_hit": 0,
-   "return_pct": -9.35,
+   "return_pct": -6.23,
    "cash": 388.91,
    "open": [
     {
      "symbol": "MSFT",
      "since": "2026-11-02",
-     "value": 1850.04,
-     "return_pct": -7.5,
+     "value": 1880.51,
+     "return_pct": -5.97,
      "why": "score 12: 6 politicians bought (~$5,561,500, last filed 2026-10-12); heavy trading today: -1.6%",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": 1.67,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": -1.08,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Services-Prepackaged Software"
@@ -1921,11 +1994,11 @@
     {
      "symbol": "NVDA",
      "since": "2026-11-02",
-     "value": 1207.12,
-     "return_pct": -39.6,
+     "value": 1587.15,
+     "return_pct": -20.59,
      "why": "score 10: 5 politicians bought (~$1,955,500, last filed 2026-10-22); heavy trading today: -4.2%",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": -30.43,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": -15.7,
      "size_x": 1.0,
      "stop_pct": 8.0,
      "industry": "Semiconductors & Related Devices"
@@ -1933,11 +2006,11 @@
     {
      "symbol": "NFLX",
      "since": "2026-11-02",
-     "value": 1819.12,
-     "return_pct": -8.93,
+     "value": 1863.05,
+     "return_pct": -6.73,
      "why": "score 8: 4 politicians bought (~$3,306,000, last filed 2026-10-08); heavy trading today: +0.0%",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": 0.24,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": -1.84,
      "size_x": 1.0,
      "stop_pct": 8.5,
      "industry": "Services-Video Tape Rental"
@@ -1945,11 +2018,11 @@
     {
      "symbol": "PG",
      "since": "2026-11-02",
-     "value": 2082.21,
-     "return_pct": 4.24,
+     "value": 2085.04,
+     "return_pct": 4.38,
      "why": "score 8: 4 politicians bought (~$504,000, last filed 2026-10-08)",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": 13.41,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": 9.27,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
@@ -1957,11 +2030,11 @@
     {
      "symbol": "AVGO",
      "since": "2026-11-02",
-     "value": 1849.27,
-     "return_pct": -7.44,
+     "value": 1904.79,
+     "return_pct": -4.66,
      "why": "score 8: 4 politicians bought (~$464,000, last filed 2026-10-08); heavy trading today: -5.5%",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": 1.73,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": 0.24,
      "size_x": 1.0,
      "stop_pct": 10.0,
      "industry": "Semiconductors & Related Devices"
@@ -1969,11 +2042,11 @@
     {
      "symbol": "BRK.B",
      "since": "2026-11-02",
-     "value": 2085.48,
-     "return_pct": 4.43,
+     "value": 2094.11,
+     "return_pct": 4.86,
      "why": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-14)",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": 13.6,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": 9.76,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Fire, Marine & Casualty Insurance"
@@ -1981,11 +2054,11 @@
     {
      "symbol": "HD",
      "since": "2026-11-02",
-     "value": 2024.38,
-     "return_pct": 1.33,
+     "value": 2066.29,
+     "return_pct": 3.43,
      "why": "score 8: 4 politicians bought (~$439,500, last filed 2026-10-07)",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": 10.5,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": 8.32,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Retail-Lumber & Other Building Materials Dealers"
@@ -1993,11 +2066,11 @@
     {
      "symbol": "CSCO",
      "since": "2026-11-02",
-     "value": 1715.77,
-     "return_pct": -14.15,
+     "value": 1832.37,
+     "return_pct": -8.31,
      "why": "score 8: 4 politicians bought (~$423,500, last filed 2026-10-27); heavy trading today: -3.8%",
-     "spy_same_days_pct": -9.17,
-     "excess_pct": -4.98,
+     "spy_same_days_pct": -4.89,
+     "excess_pct": -3.42,
      "size_x": 1.0,
      "stop_pct": 7.6,
      "industry": "Computer Communications Equipment"
@@ -2005,11 +2078,11 @@
     {
      "symbol": "TSM",
      "since": "2026-11-03",
-     "value": 1571.73,
-     "return_pct": -21.42,
+     "value": 1793.11,
+     "return_pct": -10.35,
      "why": "score 96: 30 insiders bought $121,468 in 30 days (last 2026-10-07); 3 politicians bought (~$24,000, last filed 2026-10-22)",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -13.06,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -6.31,
      "size_x": 1.0,
      "stop_pct": 9.4,
      "industry": "Semiconductors & Related Devices"
@@ -2017,11 +2090,11 @@
     {
      "symbol": "GPI",
      "since": "2026-11-03",
-     "value": 1888.25,
-     "return_pct": -5.59,
+     "value": 1920.23,
+     "return_pct": -4.0,
      "why": "score 48: 10% owner Conifer Management, L.L.C. bought $119,117 on 2026-10-22; 10% owner Conifer Management, L.L.C. bought $452,783 on 2026-10-22",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 2.76,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 0.05,
      "size_x": 1.0,
      "stop_pct": 12.5,
      "industry": "Retail-Auto Dealers & Gasoline Stations"
@@ -2029,11 +2102,11 @@
     {
      "symbol": "RAPP",
      "since": "2026-11-03",
-     "value": 1821.04,
-     "return_pct": -8.92,
+     "value": 1875.3,
+     "return_pct": -6.21,
      "why": "score 33: 7 insiders bought $22,023,905 in 30 days (last 2026-10-28); Director HEALY JAMES bought $145,593 on 2026-10-28",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -0.56,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -2.16,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Pharmaceutical Preparations"
@@ -2041,11 +2114,11 @@
     {
      "symbol": "HEI",
      "since": "2026-11-03",
-     "value": 1901.23,
-     "return_pct": -4.91,
+     "value": 1979.56,
+     "return_pct": -0.99,
      "why": "score 24: 8 insiders bought $1,400,595 in 30 days (last 2026-10-08)",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 3.45,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 3.05,
      "size_x": 1.0,
      "stop_pct": 7.5,
      "industry": "Aircraft Engines & Engine Parts"
@@ -2053,11 +2126,11 @@
     {
      "symbol": "BPRE",
      "since": "2026-11-03",
-     "value": 1863.18,
-     "return_pct": -6.8,
+     "value": 1866.42,
+     "return_pct": -6.64,
      "why": "score 23: 3 insiders bought $25,364,808 in 30 days (last 2026-10-27); Director KAMFAR RAMIN bought $869,506 on 2026-10-27",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 1.56,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -2.6,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": ""
@@ -2065,11 +2138,11 @@
     {
      "symbol": "NPB",
      "since": "2026-11-03",
-     "value": 1816.07,
-     "return_pct": -9.17,
+     "value": 1849.89,
+     "return_pct": -7.48,
      "why": "score 18: 4 insiders bought $1,819,350 in 30 days (last 2026-10-28); Director Boer Carrie L bought $184,762 on 2026-10-23",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -0.81,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -3.44,
      "size_x": 1.0,
      "stop_pct": 10.5,
      "industry": "State Commercial Banks"
@@ -2077,11 +2150,11 @@
     {
      "symbol": "CRBG",
      "since": "2026-11-03",
-     "value": 1827.56,
-     "return_pct": -8.57,
+     "value": 1899.94,
+     "return_pct": -4.95,
      "why": "score 18: 10% owner NIPPON LIFE INSURANCE CO bought $8,671,495 on 2026-10-28; 10% owner NIPPON LIFE INSURANCE CO bought $6,259,186 on 2026-10-27",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -0.21,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -0.91,
      "size_x": 1.0,
      "stop_pct": 7.6,
      "industry": "Life Insurance"
@@ -2089,11 +2162,11 @@
     {
      "symbol": "STC",
      "since": "2026-11-03",
-     "value": 1947.44,
-     "return_pct": -2.58,
+     "value": 2006.53,
+     "return_pct": 0.38,
      "why": "score 17: 5 insiders bought $460,970 in 30 days (last 2026-10-26); Chief Executive Officer EPPINGER FREDERICK H bought $133,350 on 2026-10-26",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 5.78,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 4.42,
      "size_x": 1.0,
      "stop_pct": 12.7,
      "industry": "Title Insurance"
@@ -2101,11 +2174,11 @@
     {
      "symbol": "RENT",
      "since": "2026-11-03",
-     "value": 1634.18,
-     "return_pct": -18.22,
+     "value": 1670.7,
+     "return_pct": -16.39,
      "why": "score 15: 3 insiders bought $6,120,516 in 30 days (last 2026-10-21); Director STORY3 Capital Partners, LLC bought $2,246,873 on 2026-10-21",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -9.86,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -12.35,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Retail-Retail Stores, NEC"
@@ -2113,11 +2186,11 @@
     {
      "symbol": "NMCO",
      "since": "2026-11-03",
-     "value": 1918.94,
-     "return_pct": -4.02,
+     "value": 1955.1,
+     "return_pct": -2.21,
      "why": "score 14: 4 insiders bought $279,675 in 30 days (last 2026-10-23); Insider Robert Young L bought $248,883 on 2026-10-23",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 4.34,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 1.83,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": ""
@@ -2125,11 +2198,11 @@
     {
      "symbol": "CHCO",
      "since": "2026-11-03",
-     "value": 1882.07,
-     "return_pct": -5.86,
+     "value": 1903.79,
+     "return_pct": -4.78,
      "why": "score 12: 4 insiders bought $68,222 in 30 days (last 2026-10-23)",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 2.49,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -0.73,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "National Commercial Banks"
@@ -2137,11 +2210,11 @@
     {
      "symbol": "MSM",
      "since": "2026-11-03",
-     "value": 1725.4,
-     "return_pct": -13.67,
+     "value": 1778.43,
+     "return_pct": -11.02,
      "why": "score 12: 2 insiders bought $29,034,300 in 30 days (last 2026-10-23); Director JACOBSON MITCHELL bought $6,348,018 on 2026-10-23",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -5.31,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -6.97,
      "size_x": 1.0,
      "stop_pct": 10.5,
      "industry": "Wholesale-Industrial Machinery & Equipment"
@@ -2149,11 +2222,11 @@
     {
      "symbol": "DSM",
      "since": "2026-11-03",
-     "value": 1936.55,
-     "return_pct": -3.11,
+     "value": 1983.43,
+     "return_pct": -0.76,
      "why": "score 12: 2 insiders bought $1,555,905 in 30 days (last 2026-10-28); 10% owner Saba Capital Management, L.P. bought $111,326 on 2026-10-26",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 5.25,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 3.28,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": ""
@@ -2161,11 +2234,11 @@
     {
      "symbol": "TTMI",
      "since": "2026-11-03",
-     "value": 1483.62,
-     "return_pct": -25.76,
+     "value": 1728.67,
+     "return_pct": -13.5,
      "why": "score 12: 2 insiders bought $1,342,811 in 30 days (last 2026-10-28); President and CEO Roks Edwin bought $440,350 on 2026-10-28",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -17.4,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -9.45,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Printed Circuit Boards"
@@ -2173,11 +2246,11 @@
     {
      "symbol": "NXG",
      "since": "2026-11-03",
-     "value": 1658.9,
-     "return_pct": -17.04,
+     "value": 1793.35,
+     "return_pct": -10.31,
      "why": "score 11: 3 insiders bought $525,575 in 30 days (last 2026-10-23); See Remarks Swank Jerry V bought $439,493 on 2026-10-23",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -8.68,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -6.27,
      "size_x": 1.0,
      "stop_pct": 13.3,
      "industry": ""
@@ -2185,11 +2258,11 @@
     {
      "symbol": "DX",
      "since": "2026-11-03",
-     "value": 1862.54,
-     "return_pct": -6.87,
+     "value": 1849.29,
+     "return_pct": -7.53,
      "why": "score 11: 3 insiders bought $267,230 in 30 days (last 2026-10-20); Co-CEO and President Popenoe Smriti Laxman bought $106,200 on 2026-10-20",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 1.49,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -3.49,
      "size_x": 1.0,
      "stop_pct": 7.2,
      "industry": "Real Estate Investment Trusts"
@@ -2197,11 +2270,11 @@
     {
      "symbol": "ROL",
      "since": "2026-11-03",
-     "value": 2079.24,
-     "return_pct": 4.0,
+     "value": 2098.48,
+     "return_pct": 4.96,
      "why": "score 10: 2 insiders bought $99,913,330 in 30 days (last 2026-10-29); 10% owner R. Randall Rollins Voting Trust U/A dated August 25, 1994 bought $49,956,665 on 2026-10-29",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 12.36,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 9.0,
      "size_x": 1.0,
      "stop_pct": 8.2,
      "industry": "Services-To Dwellings & Other Buildings"
@@ -2209,11 +2282,11 @@
     {
      "symbol": "LEO",
      "since": "2026-11-03",
-     "value": 1911.68,
-     "return_pct": -4.42,
+     "value": 1972.15,
+     "return_pct": -1.4,
      "why": "score 10: 2 insiders bought $2,661,149 in 30 days (last 2026-10-26); 10% owner Saba Capital Management, L.P. bought $369,200 on 2026-10-23",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 3.93,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 2.64,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": ""
@@ -2221,11 +2294,11 @@
     {
      "symbol": "THRM",
      "since": "2026-11-03",
-     "value": 1780.54,
-     "return_pct": -10.97,
+     "value": 1893.21,
+     "return_pct": -5.34,
      "why": "score 10: 2 insiders bought $662,600 in 30 days (last 2026-10-23); Director MASCARENAS PAUL ANTHONY bought $532,600 on 2026-10-23",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -2.61,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -1.3,
      "size_x": 1.0,
      "stop_pct": 15.4,
      "industry": "Motor Vehicle Parts & Accessories"
@@ -2233,11 +2306,11 @@
     {
      "symbol": "HBAN",
      "since": "2026-11-03",
-     "value": 1779.76,
-     "return_pct": -10.94,
+     "value": 1834.6,
+     "return_pct": -8.2,
      "why": "score 10: 2 insiders bought $453,554 in 30 days (last 2026-10-27); Director TORGOW GARY bought $199,834 on 2026-10-27",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -2.58,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -4.15,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "National Commercial Banks"
@@ -2245,11 +2318,11 @@
     {
      "symbol": "IMSR",
      "since": "2026-11-03",
-     "value": 1452.12,
-     "return_pct": -27.32,
+     "value": 1526.08,
+     "return_pct": -23.62,
      "why": "score 9: 3 insiders bought $112,279 in 30 days (last 2026-10-14)",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -18.96,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -19.57,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Fabricated Plate Work (Boiler Shops)"
@@ -2257,11 +2330,11 @@
     {
      "symbol": "NVA",
      "since": "2026-11-03",
-     "value": 846.15,
-     "return_pct": -57.62,
+     "value": 973.07,
+     "return_pct": -51.26,
      "why": "score 9: 3 insiders bought $46,934 in 30 days (last 2026-10-26)",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -49.26,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -47.22,
      "size_x": 1.0,
      "stop_pct": 19.9,
      "industry": "Gold and Silver Ores"
@@ -2269,11 +2342,11 @@
     {
      "symbol": "GABC",
      "since": "2026-11-03",
-     "value": 1912.74,
-     "return_pct": -4.35,
+     "value": 1926.73,
+     "return_pct": -3.65,
      "why": "score 9: 3 insiders bought $17,300 in 30 days (last 2026-10-15)",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 4.01,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 0.39,
      "size_x": 1.0,
      "stop_pct": 6.1,
      "industry": "State Commercial Banks"
@@ -2281,11 +2354,11 @@
     {
      "symbol": "NRXS",
      "since": "2026-11-03",
-     "value": 1267.38,
-     "return_pct": -36.6,
+     "value": 1498.63,
+     "return_pct": -25.04,
      "why": "score 9: 3 insiders bought $12,260 in 30 days (last 2026-10-08)",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": -28.25,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": -20.99,
      "size_x": 1.0,
      "stop_pct": 18.7,
      "industry": "Electromedical & Electrotherapeutic Apparatus"
@@ -2293,11 +2366,11 @@
     {
      "symbol": "SRRK",
      "since": "2026-11-03",
-     "value": 2214.75,
-     "return_pct": 10.81,
+     "value": 2333.93,
+     "return_pct": 16.77,
      "why": "score 8: Director AKKARAJU SRINIVAS bought $4,075,071 on 2026-10-26; Director AKKARAJU SRINIVAS bought $2,037,411 on 2026-10-26",
-     "spy_same_days_pct": -8.36,
-     "excess_pct": 19.17,
+     "spy_same_days_pct": -4.04,
+     "excess_pct": 20.82,
      "size_x": 1.0,
      "stop_pct": 10.1,
      "industry": "Biological Products, (No Diagnostic Substances)"
@@ -2305,11 +2378,11 @@
     {
      "symbol": "TRTX",
      "since": "2026-11-04",
-     "value": 1828.52,
-     "return_pct": -9.51,
+     "value": 1819.89,
+     "return_pct": -9.93,
      "why": "score 11: 3 insiders bought $298,699 in 30 days (last 2026-10-30); Director SILVERSTEIN WENDY bought $253,239 on 2026-10-30",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 0.08,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": -4.6,
      "size_x": 1.0,
      "stop_pct": 8.8,
      "industry": "Real Estate Investment Trusts"
@@ -2317,11 +2390,11 @@
     {
      "symbol": "STRZ",
      "since": "2026-11-04",
-     "value": 1883.68,
-     "return_pct": -6.84,
+     "value": 1933.11,
+     "return_pct": -4.39,
      "why": "score 11: 3 insiders bought $176,706 in 30 days (last 2026-11-02); President and CEO Hirsch Jeffrey bought $110,650 on 2026-11-02",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 2.75,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": 0.94,
      "size_x": 1.0,
      "stop_pct": 23.2,
      "industry": "Services-Motion Picture & Video Tape Production"
@@ -2329,11 +2402,11 @@
     {
      "symbol": "LKQ",
      "since": "2026-11-04",
-     "value": 1878.62,
-     "return_pct": -7.14,
+     "value": 1937.48,
+     "return_pct": -4.23,
      "why": "score 10: 2 insiders bought $591,530 in 30 days (last 2026-11-02); Director Powell Michael Scott bought $191,500 on 2026-11-02",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 2.46,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": 1.11,
      "size_x": 1.0,
      "stop_pct": 15.1,
      "industry": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
@@ -2341,11 +2414,11 @@
     {
      "symbol": "LRN",
      "since": "2026-11-05",
-     "value": 1817.8,
-     "return_pct": -7.2,
+     "value": 1863.87,
+     "return_pct": -4.85,
      "why": "score 20: Director Haggart Dylan G. bought $2,353,029 on 2026-11-03; Director Haggart Dylan G. bought $370,350 on 2026-11-03",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": 2.68,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": 0.79,
      "size_x": 1.0,
      "stop_pct": 10.3,
      "industry": "Services-Educational Services"
@@ -2353,11 +2426,11 @@
     {
      "symbol": "BA",
      "since": "2026-11-05",
-     "value": 1721.91,
-     "return_pct": -11.98,
+     "value": 1793.71,
+     "return_pct": -8.31,
      "why": "score 10: 2 insiders bought $1,508,848 in 30 days (last 2026-10-30); Director Buckley Mortimer J bought $998,421 on 2026-10-30",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": -2.09,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": -2.67,
      "size_x": 1.0,
      "stop_pct": 8.5,
      "industry": "Aircraft"
@@ -2365,11 +2438,11 @@
     {
      "symbol": "UMH",
      "since": "2026-11-05",
-     "value": 1778.54,
-     "return_pct": -9.04,
+     "value": 1811.76,
+     "return_pct": -7.34,
      "why": "score 9: 3 insiders bought $29,188 in 30 days (last 2026-11-04)",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": 0.85,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": -1.7,
      "size_x": 1.0,
      "stop_pct": 6.2,
      "industry": "Real Estate Investment Trusts"
@@ -2377,11 +2450,11 @@
     {
      "symbol": "JBLU",
      "since": "2026-11-05",
-     "value": 1723.2,
-     "return_pct": -11.82,
+     "value": 1884.1,
+     "return_pct": -3.59,
      "why": "score 12: 2 insiders bought $623,844 in 30 days (last 2026-11-03); Director Mittal Nik bought $222,588 on 2026-11-03",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": -1.94,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": 2.05,
      "size_x": 1.0,
      "stop_pct": 22.4,
      "industry": "Air Transportation, Scheduled"
@@ -2389,11 +2462,11 @@
     {
      "symbol": "DOLE",
      "since": "2026-11-05",
-     "value": 1733.31,
-     "return_pct": -11.17,
+     "value": 1713.88,
+     "return_pct": -12.17,
      "why": "score 8: 10% owner Pale Fire Capital SE bought $9,832,264 on 2026-11-03; 10% owner Pale Fire Capital SE bought $3,053,054 on 2026-11-02",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": -1.29,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": -6.53,
      "size_x": 1.0,
      "stop_pct": 6.0,
      "industry": "Agricultural Production-Crops"
@@ -2401,11 +2474,11 @@
     {
      "symbol": "AN",
      "since": "2026-11-06",
-     "value": 1863.61,
-     "return_pct": -4.77,
+     "value": 1911.93,
+     "return_pct": -2.3,
      "why": "score 17: 3 insiders bought $1,431,864 in 30 days (last 2026-11-03); CEO and Director Manley Michael Mark bought $349,350 on 2026-11-02",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": 1.36,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -0.59,
      "size_x": 1.0,
      "stop_pct": 11.2,
      "industry": "Retail-Auto Dealers & Gasoline Stations"
@@ -2413,11 +2486,11 @@
     {
      "symbol": "FBRT",
      "since": "2026-11-06",
-     "value": 1842.45,
-     "return_pct": -5.85,
+     "value": 1875.95,
+     "return_pct": -4.14,
      "why": "score 8: 2 insiders bought $1,024,108 in 30 days (last 2026-11-03); Chairman and CEO Byrne Richard J bought $998,364 on 2026-11-03",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": 0.28,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": -2.43,
      "size_x": 1.0,
      "stop_pct": 9.8,
      "industry": "Real Estate Investment Trusts"
@@ -2425,11 +2498,11 @@
     {
      "symbol": "ETRA",
      "since": "2026-11-06",
-     "value": 2046.06,
-     "return_pct": 4.63,
+     "value": 2028.4,
+     "return_pct": 3.73,
      "why": "score 38: 2 insiders bought $7,210,232 in 30 days (last 2026-11-05); Director GORDON CARL L bought $915,212 on 2026-11-05",
-     "spy_same_days_pct": -6.13,
-     "excess_pct": 10.76,
+     "spy_same_days_pct": -1.71,
+     "excess_pct": 5.43,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Biological Products, (No Diagnostic Substances)"
@@ -2437,11 +2510,11 @@
     {
      "symbol": "MTDR",
      "since": "2026-11-09",
-     "value": 1972.15,
-     "return_pct": -1.63,
+     "value": 1924.7,
+     "return_pct": -4.0,
      "why": "score 14: 4 insiders bought $223,705 in 30 days (last 2026-11-05); EVP and CFO Calvert Christopher P bought $105,140 on 2026-11-05",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": 5.39,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": -1.35,
      "size_x": 1.0,
      "stop_pct": 12.5,
      "industry": "Crude Petroleum & Natural Gas"
@@ -2449,11 +2522,11 @@
     {
      "symbol": "KYN",
      "since": "2026-11-09",
-     "value": 1973.12,
-     "return_pct": -1.59,
+     "value": 1965.52,
+     "return_pct": -1.97,
      "why": "score 8: 2 insiders bought $382,623 in 30 days (last 2026-11-05); President Baker James C bought $331,085 on 2026-11-05",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": 5.44,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": 0.68,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": ""
@@ -2461,11 +2534,11 @@
     {
      "symbol": "OBIO",
      "since": "2026-11-10",
-     "value": 2229.21,
-     "return_pct": 12.41,
+     "value": 2286.8,
+     "return_pct": 15.32,
      "why": "score 16: 4 insiders bought $230,000 in 30 days (last 2026-11-09); Director Fain Eric S bought $100,000 on 2026-11-09",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": 20.19,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 18.75,
      "size_x": 1.0,
      "stop_pct": 17.1,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -2476,8 +2549,8 @@
      "value": 1792.74,
      "return_pct": -9.56,
      "why": "score 15: 3 insiders bought $1,104,342 in 30 days (last 2026-11-05); President and CEO EDWARDS JOSEPH R bought $496,194 on 2026-11-05",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -1.79,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -6.13,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -2485,11 +2558,11 @@
     {
      "symbol": "SOPH",
      "since": "2026-11-10",
-     "value": 1556.4,
-     "return_pct": -21.45,
+     "value": 1616.36,
+     "return_pct": -18.43,
      "why": "score 10: 2 insiders bought $278,388 in 30 days (last 2026-11-06); Chief Financial Officer CARDOZA GEORGE bought $141,200 on 2026-11-06",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -13.68,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -15.0,
      "size_x": 1.0,
      "stop_pct": 17.5,
      "industry": "Services-Computer Processing & Data Preparation"
@@ -2497,31 +2570,30 @@
     {
      "symbol": "DGICA",
      "since": "2026-11-10",
-     "value": 2002.48,
-     "return_pct": 1.08,
+     "value": 2001.43,
+     "return_pct": 1.02,
      "why": "score 10: 10% owner DONEGAL MUTUAL INSURANCE CO bought $140,531 on 2026-11-06; 10% owner DONEGAL MUTUAL INSURANCE CO bought $142,286 on 2026-11-05",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": 8.85,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 4.45,
      "size_x": 1.0,
      "stop_pct": 7.9,
      "industry": "Fire, Marine & Casualty Insurance"
     }
    ],
    "invested_pct": 99.6,
-   "open_excess_pct": 0.7,
-   "skill_vs_spy_pct": -0.9,
+   "open_excess_pct": -0.99,
+   "skill_vs_spy_pct": -2.07,
    "trades_measured": 50,
-   "trades_beating_spy_pct": 60.0,
+   "trades_beating_spy_pct": 42.0,
    "pending": [
-    "TGEN",
-    "SEI",
-    "BFH",
-    "PICS",
-    "OPAL",
-    "CWBC",
-    "TISI",
-    "BHRB",
-    "DDD"
+    "GNL",
+    "HOS",
+    "UPST",
+    "CCAP",
+    "UAVS",
+    "BOLT",
+    "PCT",
+    "APC"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -2593,54 +2665,13 @@
     [
      "2026-11-20",
      90649.15
+    ],
+    [
+     "2026-11-23",
+     93774.49
     ]
    ],
    "events": [
-    {
-     "date": "2026-11-19",
-     "sym": "FLNA",
-     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "PAL",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "CGON",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "CRMD",
-     "what": "NO_TRADE: RSI 25 is below 30: oversold with no strong contrarian reason"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "OBK",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "BH",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "ECC",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "GLP",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "RMIX",
-     "what": "NO_TRADE: all 50 slots are full"
-    },
     {
      "date": "2026-11-20",
      "sym": "EFC",
@@ -2670,10 +2701,55 @@
      "date": "2026-11-20",
      "sym": "FBIO",
      "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "TGEN",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "SEI",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "BFH",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "PICS",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "OPAL",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "CWBC",
+     "what": "NO_TRADE: RSI 30 is below 30: oversold with no strong contrarian reason"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "TISI",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "BHRB",
+     "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "DDD",
+     "what": "NO_TRADE: RSI 24 is below 30: oversold with no strong contrarian reason"
     }
    ],
-   "margin_vs_spy_pct": -0.04,
-   "gbp100_now": 90.65,
+   "margin_vs_spy_pct": -1.19,
+   "gbp100_now": 93.77,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -2681,19 +2757,19 @@
    "label": "Buy and hold the S&P 500 (SPY), the bar to beat",
    "hold_days": null,
    "started": "2026-11-01",
-   "value": 90693.96,
+   "value": 94964.32,
    "paused": false,
-   "drawdown_pct": -10.04,
+   "drawdown_pct": -5.81,
    "max_drawdown_pct": -10.04,
    "stops_hit": 0,
-   "return_pct": -9.31,
+   "return_pct": -5.04,
    "cash": 0.0,
    "open": [
     {
      "symbol": "SPY",
      "since": "2026-11-02",
-     "value": 90693.96,
-     "return_pct": -9.31,
+     "value": 94964.32,
+     "return_pct": -5.04,
      "why": "benchmark",
      "spy_same_days_pct": null,
      "excess_pct": null,
@@ -2778,6 +2854,10 @@
     [
      "2026-11-20",
      90693.96
+    ],
+    [
+     "2026-11-23",
+     94964.32
     ]
    ],
    "events": [
@@ -2788,7 +2868,7 @@
     }
    ],
    "margin_vs_spy_pct": null,
-   "gbp100_now": 90.69,
+   "gbp100_now": 94.96,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -2796,22 +2876,22 @@
    "label": "2+ insiders each buy $25k+ within 30 days in a smaller company ($1M-$20M traded a day)",
    "hold_days": 60,
    "started": "2026-11-02",
-   "value": 94804.42,
+   "value": 96839.74,
    "paused": false,
-   "drawdown_pct": -5.34,
+   "drawdown_pct": -3.19,
    "max_drawdown_pct": -5.34,
    "stops_hit": 0,
-   "return_pct": -5.2,
-   "cash": 29153.55,
+   "return_pct": -3.16,
+   "cash": 19455.15,
    "open": [
     {
      "symbol": "STRZ",
      "since": "2026-11-04",
-     "value": 1863.25,
-     "return_pct": -6.84,
+     "value": 1912.14,
+     "return_pct": -4.39,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 2.75,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": 0.94,
      "size_x": 1.0,
      "stop_pct": 23.2,
      "industry": "Services-Motion Picture & Video Tape Production"
@@ -2819,11 +2899,11 @@
     {
      "symbol": "TRTX",
      "since": "2026-11-04",
-     "value": 1810.8,
-     "return_pct": -9.51,
+     "value": 1802.26,
+     "return_pct": -9.93,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 0.08,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": -4.6,
      "size_x": 1.0,
      "stop_pct": 8.8,
      "industry": "Real Estate Investment Trusts"
@@ -2831,11 +2911,11 @@
     {
      "symbol": "SEVN",
      "since": "2026-11-04",
-     "value": 1894.03,
-     "return_pct": -5.41,
+     "value": 1861.58,
+     "return_pct": -7.03,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -9.59,
-     "excess_pct": 4.18,
+     "spy_same_days_pct": -5.33,
+     "excess_pct": -1.7,
      "size_x": 1.0,
      "stop_pct": 8.7,
      "industry": "Real Estate Investment Trusts"
@@ -2843,11 +2923,11 @@
     {
      "symbol": "PRLB",
      "since": "2026-11-05",
-     "value": 1705.52,
-     "return_pct": -14.69,
+     "value": 1822.94,
+     "return_pct": -8.81,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": -4.8,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": -3.17,
      "size_x": 1.0,
      "stop_pct": 19.6,
      "industry": "Fabricated Structural Metal Products"
@@ -2855,11 +2935,11 @@
     {
      "symbol": "KYN",
      "since": "2026-11-09",
-     "value": 1969.1,
-     "return_pct": -1.59,
+     "value": 1961.51,
+     "return_pct": -1.97,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": 5.44,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": 0.68,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": ""
@@ -2867,11 +2947,11 @@
     {
      "symbol": "PMN",
      "since": "2026-11-09",
-     "value": 1485.65,
-     "return_pct": -25.77,
+     "value": 1490.35,
+     "return_pct": -25.53,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": -18.74,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": -22.89,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Pharmaceutical Preparations"
@@ -2879,11 +2959,11 @@
     {
      "symbol": "SOPH",
      "since": "2026-11-10",
-     "value": 1569.09,
-     "return_pct": -21.45,
+     "value": 1629.54,
+     "return_pct": -18.43,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -13.68,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -15.0,
      "size_x": 1.0,
      "stop_pct": 17.5,
      "industry": "Services-Computer Processing & Data Preparation"
@@ -2894,8 +2974,8 @@
      "value": 1806.41,
      "return_pct": -9.56,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -1.79,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -6.13,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -2903,11 +2983,11 @@
     {
      "symbol": "OBIO",
      "since": "2026-11-10",
-     "value": 2244.49,
-     "return_pct": 12.41,
+     "value": 2302.48,
+     "return_pct": 15.32,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": 20.19,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 18.75,
      "size_x": 1.0,
      "stop_pct": 17.1,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -2915,11 +2995,11 @@
     {
      "symbol": "GOOD",
      "since": "2026-11-11",
-     "value": 1820.33,
-     "return_pct": -8.84,
+     "value": 1872.34,
+     "return_pct": -6.24,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": 0.01,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": -1.68,
      "size_x": 1.0,
      "stop_pct": 9.6,
      "industry": "Lessors of  Real Property, NEC"
@@ -2927,11 +3007,11 @@
     {
      "symbol": "ADTN",
      "since": "2026-11-11",
-     "value": 1763.6,
-     "return_pct": -11.69,
+     "value": 1958.08,
+     "return_pct": -1.95,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": -2.84,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": 2.61,
      "size_x": 1.0,
      "stop_pct": 24.6,
      "industry": "Telephone & Telegraph Apparatus"
@@ -2939,11 +3019,11 @@
     {
      "symbol": "WW",
      "since": "2026-11-11",
-     "value": 1043.38,
-     "return_pct": -47.79,
+     "value": 1161.64,
+     "return_pct": -41.87,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": -38.94,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": -37.31,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Services-Personal Services"
@@ -2951,11 +3031,11 @@
     {
      "symbol": "MX",
      "since": "2026-11-12",
-     "value": 1499.57,
-     "return_pct": -24.76,
+     "value": 1670.95,
+     "return_pct": -16.16,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -8.51,
-     "excess_pct": -16.25,
+     "spy_same_days_pct": -4.2,
+     "excess_pct": -11.96,
      "size_x": 1.0,
      "stop_pct": 18.7,
      "industry": "Semiconductors & Related Devices"
@@ -2963,11 +3043,11 @@
     {
      "symbol": "NSLR",
      "since": "2026-11-13",
-     "value": 1571.77,
-     "return_pct": -21.04,
+     "value": 1610.91,
+     "return_pct": -19.07,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": -11.8,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": -14.1,
      "size_x": 1.0,
      "stop_pct": 14.6,
      "industry": ""
@@ -2975,11 +3055,11 @@
     {
      "symbol": "EGBN",
      "since": "2026-11-13",
-     "value": 1901.25,
-     "return_pct": -4.45,
+     "value": 1931.52,
+     "return_pct": -2.93,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 4.79,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 2.04,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": "State Commercial Banks"
@@ -2987,11 +3067,11 @@
     {
      "symbol": "STVN",
      "since": "2026-11-13",
-     "value": 2119.86,
-     "return_pct": 6.52,
+     "value": 2164.56,
+     "return_pct": 8.77,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 15.76,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 13.74,
      "size_x": 1.0,
      "stop_pct": 23.8,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -2999,11 +3079,11 @@
     {
      "symbol": "LRMR",
      "since": "2026-11-13",
-     "value": 2070.87,
-     "return_pct": 3.9,
+     "value": 2057.68,
+     "return_pct": 3.24,
      "why": "3 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 13.15,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 8.21,
      "size_x": 1.0,
      "stop_pct": 23.6,
      "industry": "Pharmaceutical Preparations"
@@ -3011,11 +3091,11 @@
     {
      "symbol": "FF",
      "since": "2026-11-16",
-     "value": 1810.43,
-     "return_pct": -8.23,
+     "value": 1754.82,
+     "return_pct": -11.05,
      "why": "4 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -0.25,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -7.4,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Industrial Organic Chemicals"
@@ -3023,11 +3103,11 @@
     {
      "symbol": "HPP",
      "since": "2026-11-16",
-     "value": 1623.75,
-     "return_pct": -17.64,
+     "value": 1734.91,
+     "return_pct": -12.01,
      "why": "3 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -9.66,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -8.36,
      "size_x": 1.0,
      "stop_pct": 24.1,
      "industry": "Real Estate"
@@ -3035,11 +3115,11 @@
     {
      "symbol": "ADIG",
      "since": "2026-11-17",
-     "value": 1760.59,
-     "return_pct": -10.31,
+     "value": 1888.31,
+     "return_pct": -3.8,
      "why": "5 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -6.58,
-     "excess_pct": -3.73,
+     "spy_same_days_pct": -2.18,
+     "excess_pct": -1.62,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Wholesale-Hardware"
@@ -3047,11 +3127,11 @@
     {
      "symbol": "NPCE",
      "since": "2026-11-18",
-     "value": 1815.8,
-     "return_pct": -7.5,
+     "value": 1916.29,
+     "return_pct": -2.38,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": -1.56,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": -0.87,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -3059,11 +3139,11 @@
     {
      "symbol": "NGS",
      "since": "2026-11-18",
-     "value": 1912.62,
-     "return_pct": -2.48,
+     "value": 1964.41,
+     "return_pct": 0.16,
      "why": "3 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 3.46,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 1.67,
      "size_x": 1.0,
      "stop_pct": 14.2,
      "industry": "Oil & Gas Field Services, NEC"
@@ -3071,11 +3151,11 @@
     {
      "symbol": "ITG",
      "since": "2026-11-18",
-     "value": 1810.1,
-     "return_pct": -7.74,
+     "value": 1888.66,
+     "return_pct": -3.74,
      "why": "4 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": -1.8,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": -2.23,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Water, Sewer, Pipeline, Comm & Power Line Construction"
@@ -3083,11 +3163,11 @@
     {
      "symbol": "FRPH",
      "since": "2026-11-18",
-     "value": 1917.39,
-     "return_pct": -2.32,
+     "value": 1940.36,
+     "return_pct": -1.15,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 3.62,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 0.36,
      "size_x": 1.0,
      "stop_pct": 10.7,
      "industry": "Real Estate"
@@ -3095,11 +3175,11 @@
     {
      "symbol": "BLX",
      "since": "2026-11-18",
-     "value": 1884.55,
-     "return_pct": -4.02,
+     "value": 1911.07,
+     "return_pct": -2.67,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 1.92,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": -1.16,
      "size_x": 1.0,
      "stop_pct": 7.8,
      "industry": "Commercial Banks, NEC"
@@ -3107,11 +3187,11 @@
     {
      "symbol": "OBK",
      "since": "2026-11-19",
-     "value": 1893.52,
-     "return_pct": -2.64,
+     "value": 1930.55,
+     "return_pct": -0.73,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 3.82,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 1.32,
      "size_x": 1.0,
      "stop_pct": 8.9,
      "industry": "State Commercial Banks"
@@ -3119,11 +3199,11 @@
     {
      "symbol": "OFRM",
      "since": "2026-11-19",
-     "value": 1963.59,
-     "return_pct": 1.01,
+     "value": 1895.83,
+     "return_pct": -2.47,
      "why": "3 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 7.47,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": -0.42,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Food and Kindred Products"
@@ -3131,11 +3211,11 @@
     {
      "symbol": "CRMD",
      "since": "2026-11-19",
-     "value": 2233.98,
-     "return_pct": 14.86,
+     "value": 2327.23,
+     "return_pct": 19.65,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 21.32,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 21.71,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Pharmaceutical Preparations"
@@ -3143,11 +3223,11 @@
     {
      "symbol": "PAL",
      "since": "2026-11-19",
-     "value": 1824.44,
-     "return_pct": -6.4,
+     "value": 1951.42,
+     "return_pct": 0.11,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 0.06,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 2.17,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Transportation Services"
@@ -3155,11 +3235,11 @@
     {
      "symbol": "FBRT",
      "since": "2026-11-19",
-     "value": 1911.67,
-     "return_pct": -1.86,
+     "value": 1946.43,
+     "return_pct": -0.08,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 4.6,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 1.98,
      "size_x": 1.0,
      "stop_pct": 9.7,
      "industry": "Real Estate Investment Trusts"
@@ -3167,11 +3247,11 @@
     {
      "symbol": "ECC",
      "since": "2026-11-19",
-     "value": 1997.35,
-     "return_pct": 2.57,
+     "value": 2104.64,
+     "return_pct": 8.08,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 9.03,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 10.13,
      "size_x": 1.0,
      "stop_pct": 16.5,
      "industry": ""
@@ -3179,11 +3259,11 @@
     {
      "symbol": "SRTS",
      "since": "2026-11-20",
-     "value": 1792.39,
-     "return_pct": -5.82,
+     "value": 1760.66,
+     "return_pct": -7.48,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": -2.49,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -8.71,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -3191,11 +3271,11 @@
     {
      "symbol": "HMH",
      "since": "2026-11-20",
-     "value": 1869.1,
-     "return_pct": -1.67,
+     "value": 1934.4,
+     "return_pct": 1.76,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 1.66,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": 0.54,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -3203,11 +3283,11 @@
     {
      "symbol": "CTGO",
      "since": "2026-11-20",
-     "value": 1876.73,
-     "return_pct": -1.24,
+     "value": 1986.19,
+     "return_pct": 4.52,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 2.09,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": 3.3,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Gold and Silver Ores"
@@ -3215,11 +3295,11 @@
     {
      "symbol": "OIG",
      "since": "2026-11-20",
-     "value": 1843.88,
-     "return_pct": -2.94,
+     "value": 1834.73,
+     "return_pct": -3.42,
      "why": "2 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 0.39,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -4.65,
      "size_x": 1.0,
      "stop_pct": 18.9,
      "industry": "Insurance Agents, Brokers & Service"
@@ -3227,33 +3307,92 @@
     {
      "symbol": "RMIX",
      "since": "2026-11-20",
-     "value": 1770.04,
-     "return_pct": -6.77,
+     "value": 2118.47,
+     "return_pct": 11.58,
      "why": "4 insiders each bought $25k+ within 30 days",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": -3.45,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": 10.35,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Concrete Products, Except Block & Brick"
+    },
+    {
+     "symbol": "DDD",
+     "since": "2026-11-23",
+     "value": 1996.69,
+     "return_pct": 2.96,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": 3.25,
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Services-Prepackaged Software"
+    },
+    {
+     "symbol": "BCML",
+     "since": "2026-11-23",
+     "value": 1935.49,
+     "return_pct": -0.25,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": 0.03,
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "State Commercial Banks"
+    },
+    {
+     "symbol": "NXG",
+     "since": "2026-11-23",
+     "value": 1920.32,
+     "return_pct": -1.03,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": -0.75,
+     "size_x": 1.0,
+     "stop_pct": 15.0,
+     "industry": ""
+    },
+    {
+     "symbol": "PICS",
+     "since": "2026-11-23",
+     "value": 1885.06,
+     "return_pct": -2.82,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": -2.54,
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Personal Credit Institutions"
+    },
+    {
+     "symbol": "REI",
+     "since": "2026-11-23",
+     "value": 1840.77,
+     "return_pct": -5.05,
+     "why": "2 insiders each bought $25k+ within 30 days",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": -4.77,
+     "size_x": 1.0,
+     "stop_pct": 18.0,
+     "industry": "Crude Petroleum & Natural Gas"
     }
    ],
-   "invested_pct": 69.2,
-   "open_excess_pct": 1.09,
-   "skill_vs_spy_pct": -0.17,
-   "trades_measured": 36,
-   "trades_beating_spy_pct": 58.3,
+   "invested_pct": 79.9,
+   "open_excess_pct": -0.38,
+   "skill_vs_spy_pct": -1.42,
+   "trades_measured": 41,
+   "trades_beating_spy_pct": 46.3,
    "pending": [
-    "LEGN",
-    "BFH",
-    "ARR",
-    "DDD",
-    "SEI",
-    "BCML",
-    "NXG",
-    "PICS",
-    "VTIX",
-    "REI",
-    "LPCN"
+    "BULL",
+    "ECVT",
+    "SUNS",
+    "TMS",
+    "HOS",
+    "CCAP",
+    "APC",
+    "GNL",
+    "EAF",
+    "UPST"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -3325,64 +3464,13 @@
     [
      "2026-11-20",
      94804.42
+    ],
+    [
+     "2026-11-23",
+     96839.74
     ]
    ],
    "events": [
-    {
-     "date": "2026-11-19",
-     "sym": "CGON",
-     "what": "NO_TRADE: not a smaller company (trades $137M a day)"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "FFIN",
-     "what": "NO_TRADE: not a smaller company (trades $28M a day)"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "FBRT",
-     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,947 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 6.14; RSI 45 is neutral"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "HAWK",
-     "what": "NO_TRADE: not a smaller company (trades $33M a day)"
-    },
-    {
-     "date": "2026-11-19",
-     "sym": "ECC",
-     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,947 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 2.35; RSI 41 is neutral"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "SRTS",
-     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,903 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 2.39; RSI 38 is neutral"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "TLSI",
-     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "HMH",
-     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,900 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 11.15; RSI 30 is neutral"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "EFC",
-     "what": "NO_TRADE: not a smaller company (trades $23M a day)"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "LCTX",
-     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
-    },
-    {
-     "date": "2026-11-20",
-     "sym": "CTGO",
-     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,900 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 9.51; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
-    },
     {
      "date": "2026-11-20",
      "sym": "TROX",
@@ -3402,10 +3490,65 @@
      "date": "2026-11-20",
      "sym": "FBIO",
      "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "LEGN",
+     "what": "NO_TRADE: not a smaller company (trades $56M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "BFH",
+     "what": "NO_TRADE: not a smaller company (trades $61M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "ARR",
+     "what": "NO_TRADE: not a smaller company (trades $56M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "DDD",
+     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,939 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.48; RSI 24 is oversold, but insiders buying with their own money is the contrarian reason"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "SEI",
+     "what": "NO_TRADE: not a smaller company (trades $178M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "BCML",
+     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,940 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 29.93; RSI 35 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "NXG",
+     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,940 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 42.12; RSI 31 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "PICS",
+     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,939 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 5.34; RSI 30 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "VTIX",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "REI",
+     "what": "TRADE: 2 insiders each bought $25k+ within 30 days. Bought $1,938 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.07; RSI 30 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "LPCN",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
     }
    ],
-   "margin_vs_spy_pct": 4.11,
-   "gbp100_now": 94.8,
+   "margin_vs_spy_pct": 1.88,
+   "gbp100_now": 96.84,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -3413,22 +3556,22 @@
    "label": "Research setup: a smaller company, 2+ insiders each buying $25k+ within 30 days, operating cash flow above profit (added 4 Nov 2026)",
    "hold_days": 60,
    "started": "2026-11-04",
-   "value": 97989.65,
+   "value": 98756.72,
    "paused": false,
-   "drawdown_pct": -2.01,
+   "drawdown_pct": -1.02,
    "max_drawdown_pct": -2.01,
    "stops_hit": 0,
-   "return_pct": -2.01,
-   "cash": 64162.08,
+   "return_pct": -1.24,
+   "cash": 58226.01,
    "open": [
     {
      "symbol": "PRLB",
      "since": "2026-11-05",
-     "value": 1706.29,
-     "return_pct": -14.69,
+     "value": 1823.76,
+     "return_pct": -8.81,
      "why": "research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": -4.8,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": -3.17,
      "size_x": 1.0,
      "stop_pct": 19.6,
      "industry": "Fabricated Structural Metal Products"
@@ -3436,11 +3579,11 @@
     {
      "symbol": "PMN",
      "since": "2026-11-09",
-     "value": 1485.34,
-     "return_pct": -25.77,
+     "value": 1490.04,
+     "return_pct": -25.53,
      "why": "research setup: 2 insiders bought $134,746 in total within 30 days (Cashman Neil, Williams Eugene); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": -18.74,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": -22.89,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Pharmaceutical Preparations"
@@ -3451,8 +3594,8 @@
      "value": 1806.74,
      "return_pct": -9.56,
      "why": "research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -1.79,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -6.13,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -3460,11 +3603,11 @@
     {
      "symbol": "OBIO",
      "since": "2026-11-10",
-     "value": 2244.9,
-     "return_pct": 12.41,
+     "value": 2302.9,
+     "return_pct": 15.32,
      "why": "research setup: 4 insiders bought $230,000 in total within 30 days (Fain Eric S, Hochman David P, Pacitti David, Taylor Andrew Lawrence); 2 officers or dire",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": 20.19,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 18.75,
      "size_x": 1.0,
      "stop_pct": 17.1,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -3472,11 +3615,11 @@
     {
      "symbol": "ADTN",
      "since": "2026-11-11",
-     "value": 1763.7,
-     "return_pct": -11.69,
+     "value": 1958.2,
+     "return_pct": -1.95,
      "why": "research setup: 2 insiders bought $675,088 in total within 30 days (STANTON THOMAS R, Santo Timothy P); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": -2.84,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": 2.61,
      "size_x": 1.0,
      "stop_pct": 24.6,
      "industry": "Telephone & Telegraph Apparatus"
@@ -3484,11 +3627,11 @@
     {
      "symbol": "GOOD",
      "since": "2026-11-11",
-     "value": 1821.87,
-     "return_pct": -8.84,
+     "value": 1873.92,
+     "return_pct": -6.24,
      "why": "research setup: 2 insiders bought $186,263 in total within 30 days (Cooper Arthur S., Gerson Gary); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": 0.01,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": -1.68,
      "size_x": 1.0,
      "stop_pct": 9.6,
      "industry": "Lessors of  Real Property, NEC"
@@ -3496,11 +3639,11 @@
     {
      "symbol": "MX",
      "since": "2026-11-12",
-     "value": 1502.96,
-     "return_pct": -24.76,
+     "value": 1674.73,
+     "return_pct": -16.16,
      "why": "research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -8.51,
-     "excess_pct": -16.25,
+     "spy_same_days_pct": -4.2,
+     "excess_pct": -11.96,
      "size_x": 1.0,
      "stop_pct": 18.7,
      "industry": "Semiconductors & Related Devices"
@@ -3508,11 +3651,11 @@
     {
      "symbol": "EGBN",
      "since": "2026-11-13",
-     "value": 1910.15,
-     "return_pct": -4.45,
+     "value": 1940.56,
+     "return_pct": -2.93,
      "why": "research setup: 2 insiders bought $199,430 in total within 30 days (Curley Stephen Russell, Newell Eric R); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 4.79,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 2.04,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": "State Commercial Banks"
@@ -3520,11 +3663,11 @@
     {
      "symbol": "LRMR",
      "since": "2026-11-13",
-     "value": 2077.43,
-     "return_pct": 3.9,
+     "value": 2064.2,
+     "return_pct": 3.24,
      "why": "research setup: 6 insiders bought $195,004 in total within 30 days (BEN-MAIMON CAROLE, Celano Michael, Harlow John B. Jr., Shankar Gopi); 3 officers or dire",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 13.15,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 8.21,
      "size_x": 1.0,
      "stop_pct": 23.6,
      "industry": "Pharmaceutical Preparations"
@@ -3532,11 +3675,11 @@
     {
      "symbol": "FF",
      "since": "2026-11-16",
-     "value": 1827.21,
-     "return_pct": -8.23,
+     "value": 1771.08,
+     "return_pct": -11.05,
      "why": "research setup: 4 insiders bought $307,781 in total within 30 days (Bedell Donald C., Butcher Pamela R, Polet Roeland, SPARKS ROSE); 4 officers or directors",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -0.25,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -7.4,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Industrial Organic Chemicals"
@@ -3544,11 +3687,11 @@
     {
      "symbol": "FRPH",
      "since": "2026-11-18",
-     "value": 1945.54,
-     "return_pct": -2.32,
+     "value": 1968.85,
+     "return_pct": -1.15,
      "why": "research setup: 2 insiders bought $203,501 in total within 30 days (BAKER JOHN D II, Baker John D. III); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 3.62,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 0.36,
      "size_x": 1.0,
      "stop_pct": 10.7,
      "industry": "Real Estate"
@@ -3556,11 +3699,11 @@
     {
      "symbol": "NGS",
      "since": "2026-11-18",
-     "value": 1942.85,
-     "return_pct": -2.48,
+     "value": 1995.45,
+     "return_pct": 0.16,
      "why": "research setup: 3 insiders bought $192,962 in total within 30 days (JACKSON JOHN EARL, Jacobs Justin, TRINGALI DONALD J); 3 officers or directors each bough",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 3.46,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 1.67,
      "size_x": 1.0,
      "stop_pct": 14.2,
      "industry": "Oil & Gas Field Services, NEC"
@@ -3568,11 +3711,11 @@
     {
      "symbol": "NPCE",
      "since": "2026-11-18",
-     "value": 1843.55,
-     "return_pct": -7.5,
+     "value": 1945.59,
+     "return_pct": -2.38,
      "why": "research setup: 2 insiders bought $198,441 in total within 30 days (Becker Joel, Williams Patrick F.); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": -1.56,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": -0.87,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -3580,11 +3723,11 @@
     {
      "symbol": "CRMD",
      "since": "2026-11-19",
-     "value": 2277.84,
-     "return_pct": 14.86,
+     "value": 2372.93,
+     "return_pct": 19.65,
      "why": "research setup: 2 insiders bought $513,200 in total within 30 days (Kaplan Myron, Todisco Joseph); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 21.32,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 21.71,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Pharmaceutical Preparations"
@@ -3592,11 +3735,11 @@
     {
      "symbol": "FBRT",
      "since": "2026-11-19",
-     "value": 1950.5,
-     "return_pct": -1.86,
+     "value": 1985.96,
+     "return_pct": -0.08,
      "why": "research setup: 2 insiders bought $1,146,000 in total within 30 days (Byrne Richard J, ORTALE BUFORD H); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 4.6,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 1.98,
      "size_x": 1.0,
      "stop_pct": 9.7,
      "industry": "Real Estate Investment Trusts"
@@ -3604,11 +3747,11 @@
     {
      "symbol": "OBK",
      "since": "2026-11-19",
-     "value": 1934.5,
-     "return_pct": -2.64,
+     "value": 1972.33,
+     "return_pct": -0.73,
      "why": "research setup: 2 insiders bought $306,850 in total within 30 days (Crotwell Jim, Jones Cecil W.); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 3.82,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 1.32,
      "size_x": 1.0,
      "stop_pct": 8.9,
      "industry": "State Commercial Banks"
@@ -3616,11 +3759,11 @@
     {
      "symbol": "CTGO",
      "since": "2026-11-20",
-     "value": 1938.27,
-     "return_pct": -1.24,
+     "value": 2051.32,
+     "return_pct": 4.52,
      "why": "research setup: 2 insiders bought $299,835 in total within 30 days (JUNEAU JOHN B, Van Nieuwenhuyse Rick); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": 2.09,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": 3.3,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Gold and Silver Ores"
@@ -3628,25 +3771,61 @@
     {
      "symbol": "SRTS",
      "since": "2026-11-20",
-     "value": 1847.93,
-     "return_pct": -5.82,
+     "value": 1815.22,
+     "return_pct": -7.48,
      "why": "research setup: 3 insiders bought $260,097 in total within 30 days (Cornish Megan, Sachetta Eric, Sardano Joseph C); 2 officers or directors each bought $25",
-     "spy_same_days_pct": -3.33,
-     "excess_pct": -2.49,
+     "spy_same_days_pct": 1.22,
+     "excess_pct": -8.71,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+     "symbol": "BCML",
+     "since": "2026-11-23",
+     "value": 1974.57,
+     "return_pct": -0.25,
+     "why": "research setup: 2 insiders bought $189,870 in total within 30 days (Laverne Robert G., PERDUE MICHAEL J); 2 officers or directors each bought $25k+",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": 0.03,
+     "size_x": 1.0,
+     "stop_pct": 6.0,
+     "industry": "State Commercial Banks"
+    },
+    {
+     "symbol": "TLSI",
+     "since": "2026-11-23",
+     "value": 1865.15,
+     "return_pct": -5.77,
+     "why": "research setup: 3 insiders bought $294,206 in total within 30 days (Gordon Gary B., Szela Mary T, Wahlstrom Mats); 2 officers or directors each bought $25k+",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": -5.49,
+     "size_x": 1.0,
+     "stop_pct": 25.0,
+     "industry": "Surgical & Medical Instruments & Apparatus"
+    },
+    {
+     "symbol": "REI",
+     "since": "2026-11-23",
+     "value": 1877.2,
+     "return_pct": -5.05,
+     "why": "research setup: 2 insiders bought $123,587 in total within 30 days (Johl Sundip Singh, Tharp Carla Todd); 2 officers or directors each bought $25k+",
+     "spy_same_days_pct": -0.28,
+     "excess_pct": -4.77,
+     "size_x": 1.0,
+     "stop_pct": 18.0,
+     "industry": "Crude Petroleum & Natural Gas"
     }
    ],
-   "invested_pct": 34.5,
-   "open_excess_pct": 2.6,
-   "skill_vs_spy_pct": 1.57,
-   "trades_measured": 18,
-   "trades_beating_spy_pct": 55.6,
+   "invested_pct": 41.0,
+   "open_excess_pct": 0.35,
+   "skill_vs_spy_pct": -0.53,
+   "trades_measured": 21,
+   "trades_beating_spy_pct": 52.4,
    "pending": [
-    "BCML",
-    "TLSI",
-    "REI"
+    "CCAP",
+    "EAF",
+    "ECVT"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -3706,24 +3885,13 @@
     [
      "2026-11-20",
      97989.65
+    ],
+    [
+     "2026-11-23",
+     98756.72
     ]
    ],
    "events": [
-    {
-     "date": "2026-11-12",
-     "sym": "MX",
-     "what": "TRADE: research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-12 open, 2.78; RSI 58 is neutral"
-    },
-    {
-     "date": "2026-11-13",
-     "sym": "EGBN",
-     "what": "TRADE: research setup: 2 insiders bought $199,430 in total within 30 days (Curley Stephen Russell, Newell Eric R); 2 officers or directors each bought $25k+. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-13 open, 34.13; RSI 70 is neutral"
-    },
-    {
-     "date": "2026-11-13",
-     "sym": "LRMR",
-     "what": "TRADE: research setup: 6 insiders bought $195,004 in total within 30 days (BEN-MAIMON CAROLE, Celano Michael, Harlow John B. Jr., Shankar Gopi); 3 officers or dire. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-13 open, 3.01; RSI 52 is neutral"
-    },
     {
      "date": "2026-11-16",
      "sym": "FF",
@@ -3783,10 +3951,25 @@
      "date": "2026-11-20",
      "sym": "TROX",
      "what": "NO_TRADE: already 4 positions in the same industry (Industrial Inorganic Chemicals)"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "BCML",
+     "what": "TRADE: research setup: 2 insiders bought $189,870 in total within 30 days (Laverne Robert G., PERDUE MICHAEL J); 2 officers or directors each bought $25k+. Bought $1,979 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 29.93; RSI 35 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "TLSI",
+     "what": "TRADE: research setup: 3 insiders bought $294,206 in total within 30 days (Gordon Gary B., Szela Mary T, Wahlstrom Mats); 2 officers or directors each bought $25k+. Bought $1,979 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 2.41; RSI 32 is neutral"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "REI",
+     "what": "TRADE: research setup: 2 insiders bought $123,587 in total within 30 days (Johl Sundip Singh, Tharp Carla Todd); 2 officers or directors each bought $25k+. Bought $1,977 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.07; RSI 30 is neutral"
     }
    ],
-   "margin_vs_spy_pct": 7.3,
-   "gbp100_now": 97.99,
+   "margin_vs_spy_pct": 3.8,
+   "gbp100_now": 98.76,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -3794,22 +3977,22 @@
    "label": "Research setup, but no new entries while the S&P 500 is below its 200-day average (added 4 Nov 2026)",
    "hold_days": 60,
    "started": "2026-11-04",
-   "value": 98128.09,
+   "value": 99033.96,
    "paused": false,
-   "drawdown_pct": -1.87,
+   "drawdown_pct": -0.97,
    "max_drawdown_pct": -1.87,
    "stops_hit": 0,
-   "return_pct": -1.87,
+   "return_pct": -0.97,
    "cash": 68086.72,
    "open": [
     {
      "symbol": "PRLB",
      "since": "2026-11-05",
-     "value": 1706.29,
-     "return_pct": -14.69,
+     "value": 1823.76,
+     "return_pct": -8.81,
      "why": "research setup: 2 insiders bought $101,230 in total within 30 days (Gawlick Rainer, Krishna Suresh); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -9.88,
-     "excess_pct": -4.8,
+     "spy_same_days_pct": -5.64,
+     "excess_pct": -3.17,
      "size_x": 1.0,
      "stop_pct": 19.6,
      "industry": "Fabricated Structural Metal Products"
@@ -3817,11 +4000,11 @@
     {
      "symbol": "PMN",
      "since": "2026-11-09",
-     "value": 1485.34,
-     "return_pct": -25.77,
+     "value": 1490.04,
+     "return_pct": -25.53,
      "why": "research setup: 2 insiders bought $134,746 in total within 30 days (Cashman Neil, Williams Eugene); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -7.03,
-     "excess_pct": -18.74,
+     "spy_same_days_pct": -2.65,
+     "excess_pct": -22.89,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Pharmaceutical Preparations"
@@ -3832,8 +4015,8 @@
      "value": 1806.74,
      "return_pct": -9.56,
      "why": "research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": -1.79,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": -6.13,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -3841,11 +4024,11 @@
     {
      "symbol": "OBIO",
      "since": "2026-11-10",
-     "value": 2244.9,
-     "return_pct": 12.41,
+     "value": 2302.9,
+     "return_pct": 15.32,
      "why": "research setup: 4 insiders bought $230,000 in total within 30 days (Fain Eric S, Hochman David P, Pacitti David, Taylor Andrew Lawrence); 2 officers or dire",
-     "spy_same_days_pct": -7.77,
-     "excess_pct": 20.19,
+     "spy_same_days_pct": -3.43,
+     "excess_pct": 18.75,
      "size_x": 1.0,
      "stop_pct": 17.1,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -3853,11 +4036,11 @@
     {
      "symbol": "ADTN",
      "since": "2026-11-11",
-     "value": 1763.7,
-     "return_pct": -11.69,
+     "value": 1958.2,
+     "return_pct": -1.95,
      "why": "research setup: 2 insiders bought $675,088 in total within 30 days (STANTON THOMAS R, Santo Timothy P); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": -2.84,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": 2.61,
      "size_x": 1.0,
      "stop_pct": 24.6,
      "industry": "Telephone & Telegraph Apparatus"
@@ -3865,11 +4048,11 @@
     {
      "symbol": "GOOD",
      "since": "2026-11-11",
-     "value": 1821.87,
-     "return_pct": -8.84,
+     "value": 1873.92,
+     "return_pct": -6.24,
      "why": "research setup: 2 insiders bought $186,263 in total within 30 days (Cooper Arthur S., Gerson Gary); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -8.85,
-     "excess_pct": 0.01,
+     "spy_same_days_pct": -4.56,
+     "excess_pct": -1.68,
      "size_x": 1.0,
      "stop_pct": 9.6,
      "industry": "Lessors of  Real Property, NEC"
@@ -3877,11 +4060,11 @@
     {
      "symbol": "MX",
      "since": "2026-11-12",
-     "value": 1502.96,
-     "return_pct": -24.76,
+     "value": 1674.73,
+     "return_pct": -16.16,
      "why": "research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -8.51,
-     "excess_pct": -16.25,
+     "spy_same_days_pct": -4.2,
+     "excess_pct": -11.96,
      "size_x": 1.0,
      "stop_pct": 18.7,
      "industry": "Semiconductors & Related Devices"
@@ -3889,11 +4072,11 @@
     {
      "symbol": "EGBN",
      "since": "2026-11-13",
-     "value": 1910.15,
-     "return_pct": -4.45,
+     "value": 1940.56,
+     "return_pct": -2.93,
      "why": "research setup: 2 insiders bought $199,430 in total within 30 days (Curley Stephen Russell, Newell Eric R); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 4.79,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 2.04,
      "size_x": 1.0,
      "stop_pct": 6.4,
      "industry": "State Commercial Banks"
@@ -3901,11 +4084,11 @@
     {
      "symbol": "LRMR",
      "since": "2026-11-13",
-     "value": 2077.43,
-     "return_pct": 3.9,
+     "value": 2064.2,
+     "return_pct": 3.24,
      "why": "research setup: 6 insiders bought $195,004 in total within 30 days (BEN-MAIMON CAROLE, Celano Michael, Harlow John B. Jr., Shankar Gopi); 3 officers or dire",
-     "spy_same_days_pct": -9.24,
-     "excess_pct": 13.15,
+     "spy_same_days_pct": -4.97,
+     "excess_pct": 8.21,
      "size_x": 1.0,
      "stop_pct": 23.6,
      "industry": "Pharmaceutical Preparations"
@@ -3913,11 +4096,11 @@
     {
      "symbol": "FF",
      "since": "2026-11-16",
-     "value": 1827.21,
-     "return_pct": -8.23,
+     "value": 1771.08,
+     "return_pct": -11.05,
      "why": "research setup: 4 insiders bought $307,781 in total within 30 days (Bedell Donald C., Butcher Pamela R, Polet Roeland, SPARKS ROSE); 4 officers or directors",
-     "spy_same_days_pct": -7.98,
-     "excess_pct": -0.25,
+     "spy_same_days_pct": -3.65,
+     "excess_pct": -7.4,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Industrial Organic Chemicals"
@@ -3925,11 +4108,11 @@
     {
      "symbol": "FRPH",
      "since": "2026-11-18",
-     "value": 1945.54,
-     "return_pct": -2.32,
+     "value": 1968.85,
+     "return_pct": -1.15,
      "why": "research setup: 2 insiders bought $203,501 in total within 30 days (BAKER JOHN D II, Baker John D. III); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 3.62,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 0.36,
      "size_x": 1.0,
      "stop_pct": 10.7,
      "industry": "Real Estate"
@@ -3937,11 +4120,11 @@
     {
      "symbol": "NGS",
      "since": "2026-11-18",
-     "value": 1942.85,
-     "return_pct": -2.48,
+     "value": 1995.45,
+     "return_pct": 0.16,
      "why": "research setup: 3 insiders bought $192,962 in total within 30 days (JACKSON JOHN EARL, Jacobs Justin, TRINGALI DONALD J); 3 officers or directors each bough",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": 3.46,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": 1.67,
      "size_x": 1.0,
      "stop_pct": 14.2,
      "industry": "Oil & Gas Field Services, NEC"
@@ -3949,11 +4132,11 @@
     {
      "symbol": "NPCE",
      "since": "2026-11-18",
-     "value": 1843.55,
-     "return_pct": -7.5,
+     "value": 1945.59,
+     "return_pct": -2.38,
      "why": "research setup: 2 insiders bought $198,441 in total within 30 days (Becker Joel, Williams Patrick F.); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -5.94,
-     "excess_pct": -1.56,
+     "spy_same_days_pct": -1.51,
+     "excess_pct": -0.87,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Surgical & Medical Instruments & Apparatus"
@@ -3961,11 +4144,11 @@
     {
      "symbol": "CRMD",
      "since": "2026-11-19",
-     "value": 2277.84,
-     "return_pct": 14.86,
+     "value": 2372.93,
+     "return_pct": 19.65,
      "why": "research setup: 2 insiders bought $513,200 in total within 30 days (Kaplan Myron, Todisco Joseph); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 21.32,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 21.71,
      "size_x": 1.0,
      "stop_pct": 25.0,
      "industry": "Pharmaceutical Preparations"
@@ -3973,11 +4156,11 @@
     {
      "symbol": "FBRT",
      "since": "2026-11-19",
-     "value": 1950.5,
-     "return_pct": -1.86,
+     "value": 1985.96,
+     "return_pct": -0.08,
      "why": "research setup: 2 insiders bought $1,146,000 in total within 30 days (Byrne Richard J, ORTALE BUFORD H); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 4.6,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 1.98,
      "size_x": 1.0,
      "stop_pct": 9.7,
      "industry": "Real Estate Investment Trusts"
@@ -3985,25 +4168,25 @@
     {
      "symbol": "OBK",
      "since": "2026-11-19",
-     "value": 1934.5,
-     "return_pct": -2.64,
+     "value": 1972.33,
+     "return_pct": -0.73,
      "why": "research setup: 2 insiders bought $306,850 in total within 30 days (Crotwell Jim, Jones Cecil W.); 2 officers or directors each bought $25k+",
-     "spy_same_days_pct": -6.46,
-     "excess_pct": 3.82,
+     "spy_same_days_pct": -2.06,
+     "excess_pct": 1.32,
      "size_x": 1.0,
      "stop_pct": 8.9,
      "industry": "State Commercial Banks"
     }
    ],
-   "invested_pct": 30.6,
-   "open_excess_pct": 2.95,
-   "skill_vs_spy_pct": 1.8,
+   "invested_pct": 31.2,
+   "open_excess_pct": 1.37,
+   "skill_vs_spy_pct": 0.29,
    "trades_measured": 16,
    "trades_beating_spy_pct": 56.2,
    "pending": [
-    "BCML",
-    "TLSI",
-    "REI"
+    "CCAP",
+    "EAF",
+    "ECVT"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -4063,24 +4246,13 @@
     [
      "2026-11-20",
      98128.09
+    ],
+    [
+     "2026-11-23",
+     99033.96
     ]
    ],
    "events": [
-    {
-     "date": "2026-11-12",
-     "sym": "MX",
-     "what": "TRADE: research setup: 2 insiders bought $1,526,506 in total within 30 days (Amoruso Cristiano, LEE CHAE); 2 officers or directors each bought $25k+. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-12 open, 2.78; RSI 58 is neutral"
-    },
-    {
-     "date": "2026-11-13",
-     "sym": "EGBN",
-     "what": "TRADE: research setup: 2 insiders bought $199,430 in total within 30 days (Curley Stephen Russell, Newell Eric R); 2 officers or directors each bought $25k+. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-13 open, 34.13; RSI 70 is neutral"
-    },
-    {
-     "date": "2026-11-13",
-     "sym": "LRMR",
-     "what": "TRADE: research setup: 6 insiders bought $195,004 in total within 30 days (BEN-MAIMON CAROLE, Celano Michael, Harlow John B. Jr., Shankar Gopi); 3 officers or dire. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-13 open, 3.01; RSI 52 is neutral"
-    },
     {
      "date": "2026-11-16",
      "sym": "FF",
@@ -4140,97 +4312,112 @@
      "date": "2026-11-20",
      "sym": "TROX",
      "what": "NO_TRADE: trend brake: the S&P 500 (716) is below its 200-day average (730), so no new entries"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "BCML",
+     "what": "NO_TRADE: trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "TLSI",
+     "what": "NO_TRADE: trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
+    },
+    {
+     "date": "2026-11-23",
+     "sym": "REI",
+     "what": "NO_TRADE: trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
     }
    ],
-   "margin_vs_spy_pct": 7.44,
-   "gbp100_now": 98.13,
+   "margin_vs_spy_pct": 4.07,
+   "gbp100_now": 99.03,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   }
  },
- "spy_since_start_pct": -9.31,
+ "spy_since_start_pct": -5.04,
  "goal": {
   "aim": "Beat the S&P 500 by the largest possible margin after costs; turn GBP 100 into GBP 10,000 (100x)",
   "leaderboard": [
    {
     "strategy": "congress_cluster3",
-    "skill_vs_spy_pct": 3.76,
+    "skill_vs_spy_pct": 2.1,
     "trades_measured": 5,
-    "trades_beating_spy_pct": 80.0,
-    "invested_pct": 9.8,
-    "margin_vs_spy_pct": 9.12,
-    "gbp100_now": 99.81,
-    "days_live": 19
+    "trades_beating_spy_pct": 60.0,
+    "invested_pct": 10.1,
+    "margin_vs_spy_pct": 5.13,
+    "gbp100_now": 100.09,
+    "days_live": 22
    },
    {
     "strategy": "research_setup_trend",
-    "skill_vs_spy_pct": 1.8,
+    "skill_vs_spy_pct": 0.29,
     "trades_measured": 16,
     "trades_beating_spy_pct": 56.2,
-    "invested_pct": 30.6,
-    "margin_vs_spy_pct": 7.44,
-    "gbp100_now": 98.13,
-    "days_live": 16
-   },
-   {
-    "strategy": "research_setup",
-    "skill_vs_spy_pct": 1.57,
-    "trades_measured": 18,
-    "trades_beating_spy_pct": 55.6,
-    "invested_pct": 34.5,
-    "margin_vs_spy_pct": 7.3,
-    "gbp100_now": 97.99,
-    "days_live": 16
-   },
-   {
-    "strategy": "congress_big_100k",
-    "skill_vs_spy_pct": 0.45,
-    "trades_measured": 6,
-    "trades_beating_spy_pct": 66.7,
-    "invested_pct": 11.7,
-    "margin_vs_spy_pct": 8.96,
-    "gbp100_now": 99.65,
+    "invested_pct": 31.2,
+    "margin_vs_spy_pct": 4.07,
+    "gbp100_now": 99.03,
     "days_live": 19
    },
    {
+    "strategy": "congress_big_100k",
+    "skill_vs_spy_pct": -0.14,
+    "trades_measured": 6,
+    "trades_beating_spy_pct": 33.3,
+    "invested_pct": 12.1,
+    "margin_vs_spy_pct": 5.17,
+    "gbp100_now": 100.13,
+    "days_live": 22
+   },
+   {
     "strategy": "insider_big_250k",
-    "skill_vs_spy_pct": 0.12,
+    "skill_vs_spy_pct": -0.49,
     "trades_measured": 50,
-    "trades_beating_spy_pct": 56.0,
+    "trades_beating_spy_pct": 48.0,
     "invested_pct": 100.0,
-    "margin_vs_spy_pct": 1.18,
-    "gbp100_now": 91.87,
+    "margin_vs_spy_pct": 0.61,
+    "gbp100_now": 95.57,
+    "days_live": 22
+   },
+   {
+    "strategy": "research_setup",
+    "skill_vs_spy_pct": -0.53,
+    "trades_measured": 21,
+    "trades_beating_spy_pct": 52.4,
+    "invested_pct": 41.0,
+    "margin_vs_spy_pct": 3.8,
+    "gbp100_now": 98.76,
     "days_live": 19
    },
    {
     "strategy": "insider_cluster2_smallcap",
-    "skill_vs_spy_pct": -0.17,
-    "trades_measured": 36,
-    "trades_beating_spy_pct": 58.3,
-    "invested_pct": 69.2,
-    "margin_vs_spy_pct": 4.11,
-    "gbp100_now": 94.8,
-    "days_live": 18
-   },
-   {
-    "strategy": "terminal_top_signals",
-    "skill_vs_spy_pct": -0.9,
-    "trades_measured": 50,
-    "trades_beating_spy_pct": 60.0,
-    "invested_pct": 99.6,
-    "margin_vs_spy_pct": -0.04,
-    "gbp100_now": 90.65,
-    "days_live": 19
+    "skill_vs_spy_pct": -1.42,
+    "trades_measured": 41,
+    "trades_beating_spy_pct": 46.3,
+    "invested_pct": 79.9,
+    "margin_vs_spy_pct": 1.88,
+    "gbp100_now": 96.84,
+    "days_live": 21
    },
    {
     "strategy": "insider_cluster3",
-    "skill_vs_spy_pct": -1.13,
-    "trades_measured": 45,
-    "trades_beating_spy_pct": 53.3,
-    "invested_pct": 87.9,
-    "margin_vs_spy_pct": 1.87,
-    "gbp100_now": 92.56,
-    "days_live": 19
+    "skill_vs_spy_pct": -1.59,
+    "trades_measured": 50,
+    "trades_beating_spy_pct": 32.0,
+    "invested_pct": 98.3,
+    "margin_vs_spy_pct": 0.87,
+    "gbp100_now": 95.83,
+    "days_live": 22
+   },
+   {
+    "strategy": "terminal_top_signals",
+    "skill_vs_spy_pct": -2.07,
+    "trades_measured": 50,
+    "trades_beating_spy_pct": 42.0,
+    "invested_pct": 99.6,
+    "margin_vs_spy_pct": -1.19,
+    "gbp100_now": 93.77,
+    "days_live": 22
    }
   ],
   "leader": "congress_cluster3",
@@ -4250,350 +4437,6 @@
   "note": "Virtual money only. Rankings mean little before 90 days of live trading. Not financial advice."
  },
  "latest_decisions": [
-  {
-   "date": "2026-11-19",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "ECC",
-   "decision": "TRADE",
-   "rsi": "41.5",
-   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,947 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 2.35; RSI 41 is neutral"
-  },
-  {
-   "date": "2026-11-19",
-   "strategy": "research_setup",
-   "symbol": "CRMD",
-   "decision": "TRADE",
-   "rsi": "24.7",
-   "reason": "research setup: 2 insiders bought $513,200 in total within 30 days (Kaplan Myron, Todisco Joseph); 2 officers or directors each bought $25k+. Bought $1,983 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 4.57; RSI 25 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-19",
-   "strategy": "research_setup",
-   "symbol": "FBRT",
-   "decision": "TRADE",
-   "rsi": "45.3",
-   "reason": "research setup: 2 insiders bought $1,146,000 in total within 30 days (Byrne Richard J, ORTALE BUFORD H); 2 officers or directors each bought $25k+. Bought $1,987 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 6.14; RSI 45 is neutral"
-  },
-  {
-   "date": "2026-11-19",
-   "strategy": "research_setup",
-   "symbol": "OBK",
-   "decision": "TRADE",
-   "rsi": "47.1",
-   "reason": "research setup: 2 insiders bought $306,850 in total within 30 days (Crotwell Jim, Jones Cecil W.); 2 officers or directors each bought $25k+. Bought $1,986 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 52.97; RSI 47 is neutral"
-  },
-  {
-   "date": "2026-11-19",
-   "strategy": "research_setup_trend",
-   "symbol": "CRMD",
-   "decision": "TRADE",
-   "rsi": "24.7",
-   "reason": "research setup: 2 insiders bought $513,200 in total within 30 days (Kaplan Myron, Todisco Joseph); 2 officers or directors each bought $25k+. Bought $1,983 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 4.57; RSI 25 is oversold, but insiders buying with their own money is the contrarian reason"
-  },
-  {
-   "date": "2026-11-19",
-   "strategy": "research_setup_trend",
-   "symbol": "FBRT",
-   "decision": "TRADE",
-   "rsi": "45.3",
-   "reason": "research setup: 2 insiders bought $1,146,000 in total within 30 days (Byrne Richard J, ORTALE BUFORD H); 2 officers or directors each bought $25k+. Bought $1,987 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 6.14; RSI 45 is neutral"
-  },
-  {
-   "date": "2026-11-19",
-   "strategy": "research_setup_trend",
-   "symbol": "OBK",
-   "decision": "TRADE",
-   "rsi": "47.1",
-   "reason": "research setup: 2 insiders bought $306,850 in total within 30 days (Crotwell Jim, Jones Cecil W.); 2 officers or directors each bought $25k+. Bought $1,986 (2.0% of the portfolio, the 2% cap) at the 2026-11-19 open, 52.97; RSI 47 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_cluster3",
-   "symbol": "SRTS",
-   "decision": "TRADE",
-   "rsi": "37.8",
-   "reason": "3 insiders bought within 30 days. Bought $1,856 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 2.39; RSI 38 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_cluster3",
-   "symbol": "TGEN",
-   "decision": "NO_TRADE",
-   "rsi": "41.5",
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_cluster3",
-   "symbol": "OBK",
-   "decision": "NO_TRADE",
-   "rsi": "43.8",
-   "reason": "already 4 positions in the same industry (State Commercial Banks)"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_cluster3",
-   "symbol": "TLSI",
-   "decision": "NO_TRADE",
-   "rsi": "28.1",
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_cluster3",
-   "symbol": "STXS",
-   "decision": "NO_TRADE",
-   "rsi": "51.6",
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_cluster3",
-   "symbol": "RMIX",
-   "decision": "TRADE",
-   "rsi": "35.4",
-   "reason": "6 insiders bought within 30 days. Bought $1,854 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 6.25; RSI 35 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_cluster3",
-   "symbol": "EQPT",
-   "decision": "TRADE",
-   "rsi": "43.4",
-   "reason": "3 insiders bought within 30 days. Bought $1,852 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 13.80; RSI 43 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "CWBC",
-   "decision": "NO_TRADE",
-   "rsi": "30.8",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "HMH",
-   "decision": "NO_TRADE",
-   "rsi": "30.4",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "EFC",
-   "decision": "NO_TRADE",
-   "rsi": "40.3",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "PLD",
-   "decision": "NO_TRADE",
-   "rsi": "35.8",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "APC",
-   "decision": "NO_TRADE",
-   "rsi": "30.0",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "ITT",
-   "decision": "NO_TRADE",
-   "rsi": "51.1",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "USAR",
-   "decision": "NO_TRADE",
-   "rsi": "31.9",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "RMIX",
-   "decision": "NO_TRADE",
-   "rsi": "35.4",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "ANAB",
-   "decision": "NO_TRADE",
-   "rsi": "48.3",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "IRTC",
-   "decision": "NO_TRADE",
-   "rsi": "39.5",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "CCB",
-   "decision": "NO_TRADE",
-   "rsi": "32.3",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_big_250k",
-   "symbol": "LCTX",
-   "decision": "NO_TRADE",
-   "rsi": "37.0",
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "congress_cluster3",
-   "symbol": "CMS",
-   "decision": "TRADE",
-   "rsi": "54.3",
-   "reason": "3 members bought within 60 days. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 70.34; RSI 54 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "congress_cluster3",
-   "symbol": "GLW",
-   "decision": "TRADE",
-   "rsi": "36.6",
-   "reason": "3 members bought within 60 days. Bought $1,999 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 103.11; RSI 37 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "congress_cluster3",
-   "symbol": "KO",
-   "decision": "TRADE",
-   "rsi": "54.8",
-   "reason": "3 members bought within 60 days. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 97.00; RSI 55 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "congress_big_100k",
-   "symbol": "ORCL",
-   "decision": "TRADE",
-   "rsi": "37.2",
-   "reason": "Donald J Trump disclosed about $175,000. Bought $2,000 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 108.47; RSI 37 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "congress_big_100k",
-   "symbol": "AAPL",
-   "decision": "TRADE",
-   "rsi": "53.2",
-   "reason": "Donald J Trump disclosed about $175,000. Bought $1,997 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 352.63; RSI 53 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "congress_big_100k",
-   "symbol": "ROL",
-   "decision": "TRADE",
-   "rsi": "60.1",
-   "reason": "Donald J Trump disclosed about $175,000. Bought $1,996 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 38.34; RSI 60 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "congress_big_100k",
-   "symbol": "CME",
-   "decision": "TRADE",
-   "rsi": "54.2",
-   "reason": "Donald J Trump disclosed about $175,000. Bought $1,995 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 310.46; RSI 54 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "congress_big_100k",
-   "symbol": "PEP",
-   "decision": "TRADE",
-   "rsi": "50.3",
-   "reason": "Donald J Trump disclosed about $175,000. Bought $1,995 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 140.51; RSI 50 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "congress_big_100k",
-   "symbol": "NRG",
-   "decision": "TRADE",
-   "rsi": "47.1",
-   "reason": "Donald J Trump disclosed about $375,000. Bought $1,994 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 92.00; RSI 47 is neutral"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "terminal_top_signals",
-   "symbol": "RMIX",
-   "decision": "NO_TRADE",
-   "rsi": "35.4",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "terminal_top_signals",
-   "symbol": "EFC",
-   "decision": "NO_TRADE",
-   "rsi": "40.3",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "terminal_top_signals",
-   "symbol": "TLSI",
-   "decision": "NO_TRADE",
-   "rsi": "28.1",
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "terminal_top_signals",
-   "symbol": "SRTS",
-   "decision": "NO_TRADE",
-   "rsi": "37.8",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "terminal_top_signals",
-   "symbol": "HMH",
-   "decision": "NO_TRADE",
-   "rsi": "30.4",
-   "reason": "all 50 slots are full"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "terminal_top_signals",
-   "symbol": "CTGO",
-   "decision": "NO_TRADE",
-   "rsi": "27.0",
-   "reason": "RSI 27 is below 30: oversold with no strong contrarian reason"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "terminal_top_signals",
-   "symbol": "FBIO",
-   "decision": "NO_TRADE",
-   "rsi": "40.9",
-   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
-  },
-  {
-   "date": "2026-11-20",
-   "strategy": "insider_cluster2_smallcap",
-   "symbol": "SRTS",
-   "decision": "TRADE",
-   "rsi": "37.8",
-   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,903 (2.0% of the portfolio, the 2% cap) at the 2026-11-20 open, 2.39; RSI 38 is neutral"
-  },
   {
    "date": "2026-11-20",
    "strategy": "insider_cluster2_smallcap",
@@ -4729,6 +4572,350 @@
    "decision": "NO_TRADE",
    "rsi": "23.5",
    "reason": "trend brake: the S&P 500 (716) is below its 200-day average (730), so no new entries"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster3",
+   "symbol": "FMBM",
+   "decision": "NO_TRADE",
+   "rsi": "89.3",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster3",
+   "symbol": "AEON",
+   "decision": "NO_TRADE",
+   "rsi": "31.6",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster3",
+   "symbol": "ARR",
+   "decision": "TRADE",
+   "rsi": "26.8",
+   "reason": "3 insiders bought within 30 days. Bought $1,918 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 10.99; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster3",
+   "symbol": "CWBC",
+   "decision": "NO_TRADE",
+   "rsi": "30.0",
+   "reason": "already 4 positions in the same industry (State Commercial Banks)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster3",
+   "symbol": "SEI",
+   "decision": "TRADE",
+   "rsi": "40.0",
+   "reason": "4 insiders bought within 30 days. Bought $1,919 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 62.18; RSI 40 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster3",
+   "symbol": "UAVS",
+   "decision": "NO_TRADE",
+   "rsi": "21.0",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster3",
+   "symbol": "CRMD",
+   "decision": "TRADE",
+   "rsi": "40.4",
+   "reason": "4 insiders bought within 30 days. Bought $1,918 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 5.40; RSI 40 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster3",
+   "symbol": "PICS",
+   "decision": "TRADE",
+   "rsi": "30.2",
+   "reason": "3 insiders bought within 30 days. Bought $1,918 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 5.34; RSI 30 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster3",
+   "symbol": "CTGO",
+   "decision": "TRADE",
+   "rsi": "25.5",
+   "reason": "3 insiders bought within 30 days. Bought $1,917 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 10.33; RSI 25 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_big_250k",
+   "symbol": "NTB",
+   "decision": "NO_TRADE",
+   "rsi": "33.6",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_big_250k",
+   "symbol": "SEI",
+   "decision": "NO_TRADE",
+   "rsi": "40.0",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_big_250k",
+   "symbol": "MED",
+   "decision": "NO_TRADE",
+   "rsi": "39.5",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_big_250k",
+   "symbol": "PICS",
+   "decision": "NO_TRADE",
+   "rsi": "30.2",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_big_250k",
+   "symbol": "SAGT",
+   "decision": "NO_TRADE",
+   "rsi": "69.4",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_big_250k",
+   "symbol": "ELV",
+   "decision": "NO_TRADE",
+   "rsi": "38.6",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_big_250k",
+   "symbol": "INOD",
+   "decision": "NO_TRADE",
+   "rsi": "24.3",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_big_250k",
+   "symbol": "HBCP",
+   "decision": "NO_TRADE",
+   "rsi": "37.4",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "terminal_top_signals",
+   "symbol": "TGEN",
+   "decision": "NO_TRADE",
+   "rsi": "37.7",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "terminal_top_signals",
+   "symbol": "SEI",
+   "decision": "NO_TRADE",
+   "rsi": "40.0",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "terminal_top_signals",
+   "symbol": "BFH",
+   "decision": "NO_TRADE",
+   "rsi": "31.8",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "terminal_top_signals",
+   "symbol": "PICS",
+   "decision": "NO_TRADE",
+   "rsi": "30.2",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "terminal_top_signals",
+   "symbol": "OPAL",
+   "decision": "NO_TRADE",
+   "rsi": "42.0",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "terminal_top_signals",
+   "symbol": "CWBC",
+   "decision": "NO_TRADE",
+   "rsi": "30.0",
+   "reason": "RSI 30 is below 30: oversold with no strong contrarian reason"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "terminal_top_signals",
+   "symbol": "TISI",
+   "decision": "NO_TRADE",
+   "rsi": "60.0",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "terminal_top_signals",
+   "symbol": "BHRB",
+   "decision": "NO_TRADE",
+   "rsi": "39.6",
+   "reason": "all 50 slots are full"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "terminal_top_signals",
+   "symbol": "DDD",
+   "decision": "NO_TRADE",
+   "rsi": "23.7",
+   "reason": "RSI 24 is below 30: oversold with no strong contrarian reason"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "LEGN",
+   "decision": "NO_TRADE",
+   "rsi": "31.5",
+   "reason": "not a smaller company (trades $56M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "BFH",
+   "decision": "NO_TRADE",
+   "rsi": "31.8",
+   "reason": "not a smaller company (trades $61M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "ARR",
+   "decision": "NO_TRADE",
+   "rsi": "26.8",
+   "reason": "not a smaller company (trades $56M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "DDD",
+   "decision": "TRADE",
+   "rsi": "23.7",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,939 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.48; RSI 24 is oversold, but insiders buying with their own money is the contrarian reason"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "SEI",
+   "decision": "NO_TRADE",
+   "rsi": "40.0",
+   "reason": "not a smaller company (trades $178M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "BCML",
+   "decision": "TRADE",
+   "rsi": "35.3",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,940 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 29.93; RSI 35 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "NXG",
+   "decision": "TRADE",
+   "rsi": "31.2",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,940 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 42.12; RSI 31 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "PICS",
+   "decision": "TRADE",
+   "rsi": "30.2",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,939 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 5.34; RSI 30 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "VTIX",
+   "decision": "NO_TRADE",
+   "rsi": "25.3",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "REI",
+   "decision": "TRADE",
+   "rsi": "30.1",
+   "reason": "2 insiders each bought $25k+ within 30 days. Bought $1,938 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.07; RSI 30 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "insider_cluster2_smallcap",
+   "symbol": "LPCN",
+   "decision": "NO_TRADE",
+   "rsi": "40.3",
+   "reason": "penny stock or too thinly traded (under $1 or under $1M a day)"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "research_setup",
+   "symbol": "BCML",
+   "decision": "TRADE",
+   "rsi": "35.3",
+   "reason": "research setup: 2 insiders bought $189,870 in total within 30 days (Laverne Robert G., PERDUE MICHAEL J); 2 officers or directors each bought $25k+. Bought $1,979 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 29.93; RSI 35 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "research_setup",
+   "symbol": "TLSI",
+   "decision": "TRADE",
+   "rsi": "32.4",
+   "reason": "research setup: 3 insiders bought $294,206 in total within 30 days (Gordon Gary B., Szela Mary T, Wahlstrom Mats); 2 officers or directors each bought $25k+. Bought $1,979 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 2.41; RSI 32 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "research_setup",
+   "symbol": "REI",
+   "decision": "TRADE",
+   "rsi": "30.1",
+   "reason": "research setup: 2 insiders bought $123,587 in total within 30 days (Johl Sundip Singh, Tharp Carla Todd); 2 officers or directors each bought $25k+. Bought $1,977 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.07; RSI 30 is neutral"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "research_setup_trend",
+   "symbol": "BCML",
+   "decision": "NO_TRADE",
+   "rsi": "35.3",
+   "reason": "trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "research_setup_trend",
+   "symbol": "TLSI",
+   "decision": "NO_TRADE",
+   "rsi": "32.4",
+   "reason": "trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
+  },
+  {
+   "date": "2026-11-23",
+   "strategy": "research_setup_trend",
+   "symbol": "REI",
+   "decision": "NO_TRADE",
+   "rsi": "30.1",
+   "reason": "trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
   }
  ]
 }

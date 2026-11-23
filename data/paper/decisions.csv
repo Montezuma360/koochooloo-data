@@ -501,3 +501,46 @@ date,strategy,symbol,decision,rsi,reason
 2026-11-20,research_setup_trend,LCTX,NO_TRADE,37.0,penny stock or too thinly traded (under $1 or under $1M a day)
 2026-11-20,research_setup_trend,SRTS,NO_TRADE,37.8,"trend brake: the S&P 500 (716) is below its 200-day average (730), so no new entries"
 2026-11-20,research_setup_trend,TROX,NO_TRADE,23.5,"trend brake: the S&P 500 (716) is below its 200-day average (730), so no new entries"
+2026-11-23,insider_cluster3,FMBM,NO_TRADE,89.3,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-23,insider_cluster3,AEON,NO_TRADE,31.6,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-23,insider_cluster3,ARR,TRADE,26.8,"3 insiders bought within 30 days. Bought $1,918 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 10.99; RSI 27 is oversold, but insiders buying with their own money is the contrarian reason"
+2026-11-23,insider_cluster3,CWBC,NO_TRADE,30.0,already 4 positions in the same industry (State Commercial Banks)
+2026-11-23,insider_cluster3,SEI,TRADE,40.0,"4 insiders bought within 30 days. Bought $1,919 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 62.18; RSI 40 is neutral"
+2026-11-23,insider_cluster3,UAVS,NO_TRADE,21.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-23,insider_cluster3,CRMD,TRADE,40.4,"4 insiders bought within 30 days. Bought $1,918 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 5.40; RSI 40 is neutral"
+2026-11-23,insider_cluster3,PICS,TRADE,30.2,"3 insiders bought within 30 days. Bought $1,918 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 5.34; RSI 30 is neutral"
+2026-11-23,insider_cluster3,CTGO,TRADE,25.5,"3 insiders bought within 30 days. Bought $1,917 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 10.33; RSI 25 is oversold, but insiders buying with their own money is the contrarian reason"
+2026-11-23,insider_big_250k,NTB,NO_TRADE,33.6,all 50 slots are full
+2026-11-23,insider_big_250k,SEI,NO_TRADE,40.0,all 50 slots are full
+2026-11-23,insider_big_250k,MED,NO_TRADE,39.5,all 50 slots are full
+2026-11-23,insider_big_250k,PICS,NO_TRADE,30.2,all 50 slots are full
+2026-11-23,insider_big_250k,SAGT,NO_TRADE,69.4,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-23,insider_big_250k,ELV,NO_TRADE,38.6,all 50 slots are full
+2026-11-23,insider_big_250k,INOD,NO_TRADE,24.3,all 50 slots are full
+2026-11-23,insider_big_250k,HBCP,NO_TRADE,37.4,all 50 slots are full
+2026-11-23,terminal_top_signals,TGEN,NO_TRADE,37.7,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-23,terminal_top_signals,SEI,NO_TRADE,40.0,all 50 slots are full
+2026-11-23,terminal_top_signals,BFH,NO_TRADE,31.8,all 50 slots are full
+2026-11-23,terminal_top_signals,PICS,NO_TRADE,30.2,all 50 slots are full
+2026-11-23,terminal_top_signals,OPAL,NO_TRADE,42.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-23,terminal_top_signals,CWBC,NO_TRADE,30.0,RSI 30 is below 30: oversold with no strong contrarian reason
+2026-11-23,terminal_top_signals,TISI,NO_TRADE,60.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-23,terminal_top_signals,BHRB,NO_TRADE,39.6,all 50 slots are full
+2026-11-23,terminal_top_signals,DDD,NO_TRADE,23.7,RSI 24 is below 30: oversold with no strong contrarian reason
+2026-11-23,insider_cluster2_smallcap,LEGN,NO_TRADE,31.5,not a smaller company (trades $56M a day)
+2026-11-23,insider_cluster2_smallcap,BFH,NO_TRADE,31.8,not a smaller company (trades $61M a day)
+2026-11-23,insider_cluster2_smallcap,ARR,NO_TRADE,26.8,not a smaller company (trades $56M a day)
+2026-11-23,insider_cluster2_smallcap,DDD,TRADE,23.7,"2 insiders each bought $25k+ within 30 days. Bought $1,939 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.48; RSI 24 is oversold, but insiders buying with their own money is the contrarian reason"
+2026-11-23,insider_cluster2_smallcap,SEI,NO_TRADE,40.0,not a smaller company (trades $178M a day)
+2026-11-23,insider_cluster2_smallcap,BCML,TRADE,35.3,"2 insiders each bought $25k+ within 30 days. Bought $1,940 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 29.93; RSI 35 is neutral"
+2026-11-23,insider_cluster2_smallcap,NXG,TRADE,31.2,"2 insiders each bought $25k+ within 30 days. Bought $1,940 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 42.12; RSI 31 is neutral"
+2026-11-23,insider_cluster2_smallcap,PICS,TRADE,30.2,"2 insiders each bought $25k+ within 30 days. Bought $1,939 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 5.34; RSI 30 is neutral"
+2026-11-23,insider_cluster2_smallcap,VTIX,NO_TRADE,25.3,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-23,insider_cluster2_smallcap,REI,TRADE,30.1,"2 insiders each bought $25k+ within 30 days. Bought $1,938 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.07; RSI 30 is neutral"
+2026-11-23,insider_cluster2_smallcap,LPCN,NO_TRADE,40.3,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-23,research_setup,BCML,TRADE,35.3,"research setup: 2 insiders bought $189,870 in total within 30 days (Laverne Robert G., PERDUE MICHAEL J); 2 officers or directors each bought $25k+. Bought $1,979 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 29.93; RSI 35 is neutral"
+2026-11-23,research_setup,TLSI,TRADE,32.4,"research setup: 3 insiders bought $294,206 in total within 30 days (Gordon Gary B., Szela Mary T, Wahlstrom Mats); 2 officers or directors each bought $25k+. Bought $1,979 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 2.41; RSI 32 is neutral"
+2026-11-23,research_setup,REI,TRADE,30.1,"research setup: 2 insiders bought $123,587 in total within 30 days (Johl Sundip Singh, Tharp Carla Todd); 2 officers or directors each bought $25k+. Bought $1,977 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.07; RSI 30 is neutral"
+2026-11-23,research_setup_trend,BCML,NO_TRADE,35.3,"trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
+2026-11-23,research_setup_trend,TLSI,NO_TRADE,32.4,"trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
+2026-11-23,research_setup_trend,REI,NO_TRADE,30.1,"trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
