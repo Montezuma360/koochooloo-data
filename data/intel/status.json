@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T20:29:36Z",
+ "updated": "2026-11-23T20:31:09Z",
  "market_open": true,
  "failed": {
   "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
@@ -13,10 +13,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-23T20:29:36Z",
+   "last_try": "2026-11-23T20:31:09Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-23T20:29:36Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-23T20:31:09Z",
+   "seconds": 0.4,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -27,10 +27,10 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-23T20:28:43Z",
+   "last_try": "2026-11-23T20:31:09Z",
    "result": "block 977269, 1 sat/vB",
-   "last_ok": "2026-11-23T20:28:43Z",
-   "seconds": 1.4,
+   "last_ok": "2026-11-23T20:31:09Z",
+   "seconds": 1.1,
    "every_minutes": 2
   },
   "onchain_daily": {
@@ -41,17 +41,17 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-23T20:29:36Z",
+   "last_try": "2026-11-23T20:31:09Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-23T20:29:36Z",
-   "seconds": 1.9,
+   "last_ok": "2026-11-23T20:31:09Z",
+   "seconds": 2.1,
    "every_minutes": 1
   },
   "ecb_fx": {
-   "last_try": "2026-11-23T19:31:51Z",
+   "last_try": "2026-11-23T20:31:09Z",
    "result": "2026-11-23, 30 currencies",
-   "last_ok": "2026-11-23T19:31:51Z",
-   "seconds": 0.5,
+   "last_ok": "2026-11-23T20:31:09Z",
+   "seconds": 0.7,
    "every_minutes": 60
   },
   "macro_global": {
@@ -69,17 +69,17 @@
    "every_minutes": 15
   },
   "news": {
-   "last_try": "2026-11-23T20:29:36Z",
+   "last_try": "2026-11-23T20:31:09Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-23T20:29:36Z",
-   "seconds": 2.3,
+   "last_ok": "2026-11-23T20:31:09Z",
+   "seconds": 3.1,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-23T20:29:36Z",
+   "last_try": "2026-11-23T20:31:09Z",
    "result": "26 new filings (0 with a red flag)",
-   "last_ok": "2026-11-23T20:29:36Z",
-   "seconds": 1.5,
+   "last_ok": "2026-11-23T20:31:09Z",
+   "seconds": 2.4,
    "every_minutes": 1
   },
   "options": {
@@ -112,9 +112,9 @@
    "every_minutes": 15
   },
   "finnhub": {
-   "last_try": "2026-11-23T19:31:51Z",
+   "last_try": "2026-11-23T20:31:09Z",
    "result": "skipped: add FINNHUB_KEY secret to switch on",
-   "last_ok": "2026-11-23T19:31:51Z",
+   "last_ok": "2026-11-23T20:31:09Z",
    "seconds": 0.0,
    "every_minutes": 60
   },
@@ -126,9 +126,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-23T20:29:36Z",
-   "result": "BTC 61118.4, ETH 1726.74, SOL 73.02 from 3 exchanges",
-   "last_ok": "2026-11-23T20:29:36Z",
+   "last_try": "2026-11-23T20:31:09Z",
+   "result": "BTC 61212.8, ETH 1728.28, SOL 73.05 from 3 exchanges",
+   "last_ok": "2026-11-23T20:31:09Z",
    "seconds": 0.9,
    "every_minutes": 1
   }
