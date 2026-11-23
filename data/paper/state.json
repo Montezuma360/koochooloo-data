@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 36,
+ "runs": 37,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -173,7 +173,7 @@
      "stop_pct": 0.1413,
      "industry": "35",
      "rsi": 61.7,
-     "last_value": 1803.738415319296
+     "last_value": 1873.2594385700318
     },
     {
      "sym": "TTMI",
@@ -762,6 +762,12 @@
      "signal": "2026-11-23",
      "event": "2026-11-20",
      "note": "6 insiders bought within 30 days"
+    },
+    {
+     "sym": "TMS",
+     "signal": "2026-11-23",
+     "event": "2026-11-20",
+     "note": "3 insiders bought within 30 days"
     }
    ],
    "closed": [],
@@ -893,7 +899,8 @@
     "CTVA": "2026-11-23",
     "APC": "2026-11-23",
     "TROX": "2026-11-23",
-    "GNL": "2026-11-23"
+    "GNL": "2026-11-23",
+    "TMS": "2026-11-23"
    },
    "events": [
     {
@@ -1349,11 +1356,11 @@
     ],
     [
      "2026-11-23",
-     95827.23
+     95896.75
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -4.38,
+   "drawdown_pct": -4.4,
    "paused": false
   },
   "insider_big_250k": {
@@ -2098,6 +2105,12 @@
      "signal": "2026-11-23",
      "event": "2026-11-20",
      "note": "Turner Robb E (Director) bought $646,500"
+    },
+    {
+     "sym": "ANT",
+     "signal": "2026-11-23",
+     "event": "2026-11-20",
+     "note": "LIDDELL CHRISTOPHER P (Director) bought $1,999,968"
     }
    ],
    "closed": [],
@@ -2312,7 +2325,8 @@
     "SUNS": "2026-11-23",
     "BG": "2026-11-23",
     "TMS": "2026-11-23",
-    "WMB": "2026-11-23"
+    "WMB": "2026-11-23",
+    "ANT": "2026-11-23"
    },
    "events": [
     {
@@ -4214,7 +4228,7 @@
      "stop_pct": 0.1413,
      "industry": "35",
      "rsi": 61.7,
-     "last_value": 1792.7402025172844
+     "last_value": 1861.8373244963996
     },
     {
      "sym": "SOPH",
@@ -4293,6 +4307,24 @@
      "signal": "2026-11-23",
      "event": "2026-11-23",
      "note": "score 11: 3 insiders bought $402,040 in 30 days (last 2026-11-20); Director HEYER ANDREW R bought $279,000 on 2026-11-18"
+    },
+    {
+     "sym": "FMBM",
+     "signal": "2026-11-23",
+     "event": "2026-11-23",
+     "note": "score 12: 4 insiders bought $20,962 in 30 days (last 2026-11-19)"
+    },
+    {
+     "sym": "ANAB",
+     "signal": "2026-11-23",
+     "event": "2026-11-23",
+     "note": "score 12: Director EcoR1 Capital, LLC bought $331,354 on 2026-11-23; Director EcoR1 Capital, LLC bought $1,014,984 on 2026-11-20"
+    },
+    {
+     "sym": "TMS",
+     "signal": "2026-11-23",
+     "event": "2026-11-23",
+     "note": "score 11: 3 insiders bought $924,055 in 30 days (last 2026-11-20); Chief Executive Officer Brown Michael Ashby Sutherland bought $652,500 on 2026-11-19"
     }
    ],
    "closed": [],
@@ -4478,7 +4510,10 @@
     "UAVS": "2026-11-23",
     "BOLT": "2026-11-23",
     "PCT": "2026-11-23",
-    "APC": "2026-11-23"
+    "APC": "2026-11-23",
+    "FMBM": "2026-11-23",
+    "ANAB": "2026-11-23",
+    "TMS": "2026-11-23"
    },
    "events": [
     {
@@ -5419,11 +5454,11 @@
     ],
     [
      "2026-11-23",
-     93774.49
+     93843.59
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -7.35,
+   "drawdown_pct": -7.29,
    "paused": false
   },
   "spy_benchmark": {
@@ -5645,7 +5680,7 @@
      "stop_pct": 0.1413,
      "industry": "35",
      "rsi": 61.7,
-     "last_value": 1806.4098529596088
+     "last_value": 1876.0338407404158
     },
     {
      "sym": "OBIO",
@@ -6987,11 +7022,11 @@
     ],
     [
      "2026-11-23",
-     96839.74
+     96909.36
     ]
    ],
    "started": "2026-11-02",
-   "drawdown_pct": -3.19,
+   "drawdown_pct": -3.24,
    "paused": false
   },
   "research_setup": {
@@ -7039,7 +7074,7 @@
      "stop_pct": 0.1413,
      "industry": "35",
      "rsi": 61.7,
-     "last_value": 1806.7406884948862
+     "last_value": 1876.3774275841672
     },
     {
      "sym": "OBIO",
@@ -7524,11 +7559,11 @@
     ],
     [
      "2026-11-23",
-     98756.72
+     98826.36
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -1.02,
+   "drawdown_pct": -1.17,
    "paused": false
   },
   "research_setup_trend": {
@@ -7576,7 +7611,7 @@
      "stop_pct": 0.1413,
      "industry": "35",
      "rsi": 61.7,
-     "last_value": 1806.7406884948862
+     "last_value": 1876.3774275841672
     },
     {
      "sym": "OBIO",
@@ -7991,15 +8026,15 @@
     ],
     [
      "2026-11-23",
-     99033.96
+     99103.6
     ]
    ],
    "started": "2026-11-04",
-   "drawdown_pct": -0.97,
+   "drawdown_pct": -0.9,
    "paused": false
   }
  },
- "updated": "2026-11-23T22:30:50+00:00",
+ "updated": "2026-11-23T23:58:13+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -9112,6 +9147,10 @@
   "BULL": {
    "sic": "62",
    "name": "Security Brokers, Dealers & Flotation Companies"
+  },
+  "ANT": {
+   "sic": "73",
+   "name": "Services-Prepackaged Software"
   }
  }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T22:30:50+00:00",
+ "updated": "2026-11-23T23:58:13+00:00",
  "priced_to": "2026-11-23",
  "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\n- Two strategies were added on 4 Nov 2026 and follow every rule above: \"research_setup\" (smaller company, 2+ insiders at $25k+, cash flow above\n  profit) and \"research_setup_trend\" (the same, but no new entries while the S&P 500 is below its 200-day average). The older strategies are unchanged.\n- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies\n  are ranked by their margin over the S&P 500; summary.json \"goal\" shows what GBP 100 has become in each and how long\n  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
  "market_stress": false,
@@ -9,12 +9,12 @@
    "label": "3+ company insiders buy the same stock within 30 days",
    "hold_days": 60,
    "started": "2026-11-01",
-   "value": 95827.23,
+   "value": 95896.75,
    "paused": false,
-   "drawdown_pct": -4.38,
+   "drawdown_pct": -4.4,
    "max_drawdown_pct": -7.73,
    "stops_hit": 0,
-   "return_pct": -4.17,
+   "return_pct": -4.1,
    "cash": 1583.77,
    "open": [
     {
@@ -152,11 +152,11 @@
     {
      "symbol": "FLOC",
      "since": "2026-11-10",
-     "value": 1803.74,
-     "return_pct": -9.56,
+     "value": 1873.26,
+     "return_pct": -6.07,
      "why": "3 insiders bought within 30 days",
      "spy_same_days_pct": -3.43,
-     "excess_pct": -6.13,
+     "excess_pct": -2.64,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -619,8 +619,8 @@
     }
    ],
    "invested_pct": 98.3,
-   "open_excess_pct": -1.27,
-   "skill_vs_spy_pct": -1.59,
+   "open_excess_pct": -1.21,
+   "skill_vs_spy_pct": -1.52,
    "trades_measured": 50,
    "trades_beating_spy_pct": 32.0,
    "pending": [
@@ -632,7 +632,8 @@
     "CTVA",
     "APC",
     "TROX",
-    "GNL"
+    "GNL",
+    "TMS"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -707,7 +708,7 @@
     ],
     [
      "2026-11-23",
-     95827.23
+     95896.75
     ]
    ],
    "events": [
@@ -787,8 +788,8 @@
      "what": "TRADE: 3 insiders bought within 30 days. Bought $1,917 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 10.33; RSI 25 is oversold, but insiders buying with their own money is the contrarian reason"
     }
    ],
-   "margin_vs_spy_pct": 0.87,
-   "gbp100_now": 95.83,
+   "margin_vs_spy_pct": 0.94,
+   "gbp100_now": 95.9,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -1416,7 +1417,8 @@
     "SUNS",
     "BG",
     "TMS",
-    "WMB"
+    "WMB",
+    "ANT"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -1971,12 +1973,12 @@
    "label": "The terminal's own signal score reaches 8+",
    "hold_days": 20,
    "started": "2026-11-01",
-   "value": 93774.49,
+   "value": 93843.59,
    "paused": false,
-   "drawdown_pct": -7.35,
+   "drawdown_pct": -7.29,
    "max_drawdown_pct": -10.44,
    "stops_hit": 0,
-   "return_pct": -6.23,
+   "return_pct": -6.16,
    "cash": 388.91,
    "open": [
     {
@@ -2546,11 +2548,11 @@
     {
      "symbol": "FLOC",
      "since": "2026-11-10",
-     "value": 1792.74,
-     "return_pct": -9.56,
+     "value": 1861.84,
+     "return_pct": -6.07,
      "why": "score 15: 3 insiders bought $1,104,342 in 30 days (last 2026-11-05); President and CEO EDWARDS JOSEPH R bought $496,194 on 2026-11-05",
      "spy_same_days_pct": -3.43,
-     "excess_pct": -6.13,
+     "excess_pct": -2.64,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -2581,8 +2583,8 @@
     }
    ],
    "invested_pct": 99.6,
-   "open_excess_pct": -0.99,
-   "skill_vs_spy_pct": -2.07,
+   "open_excess_pct": -0.92,
+   "skill_vs_spy_pct": -2.0,
    "trades_measured": 50,
    "trades_beating_spy_pct": 42.0,
    "pending": [
@@ -2593,7 +2595,10 @@
     "UAVS",
     "BOLT",
     "PCT",
-    "APC"
+    "APC",
+    "FMBM",
+    "ANAB",
+    "TMS"
    ],
    "closed_trades": 0,
    "win_pct": null,
@@ -2668,7 +2673,7 @@
     ],
     [
      "2026-11-23",
-     93774.49
+     93843.59
     ]
    ],
    "events": [
@@ -2748,8 +2753,8 @@
      "what": "NO_TRADE: RSI 24 is below 30: oversold with no strong contrarian reason"
     }
    ],
-   "margin_vs_spy_pct": -1.19,
-   "gbp100_now": 93.77,
+   "margin_vs_spy_pct": -1.12,
+   "gbp100_now": 93.84,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -2876,12 +2881,12 @@
    "label": "2+ insiders each buy $25k+ within 30 days in a smaller company ($1M-$20M traded a day)",
    "hold_days": 60,
    "started": "2026-11-02",
-   "value": 96839.74,
+   "value": 96909.36,
    "paused": false,
-   "drawdown_pct": -3.19,
+   "drawdown_pct": -3.24,
    "max_drawdown_pct": -5.34,
    "stops_hit": 0,
-   "return_pct": -3.16,
+   "return_pct": -3.09,
    "cash": 19455.15,
    "open": [
     {
@@ -2971,11 +2976,11 @@
     {
      "symbol": "FLOC",
      "since": "2026-11-10",
-     "value": 1806.41,
-     "return_pct": -9.56,
+     "value": 1876.03,
+     "return_pct": -6.07,
      "why": "2 insiders each bought $25k+ within 30 days",
      "spy_same_days_pct": -3.43,
-     "excess_pct": -6.13,
+     "excess_pct": -2.64,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -3378,8 +3383,8 @@
     }
    ],
    "invested_pct": 79.9,
-   "open_excess_pct": -0.38,
-   "skill_vs_spy_pct": -1.42,
+   "open_excess_pct": -0.31,
+   "skill_vs_spy_pct": -1.33,
    "trades_measured": 41,
    "trades_beating_spy_pct": 46.3,
    "pending": [
@@ -3467,7 +3472,7 @@
     ],
     [
      "2026-11-23",
-     96839.74
+     96909.36
     ]
    ],
    "events": [
@@ -3547,8 +3552,8 @@
      "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
     }
    ],
-   "margin_vs_spy_pct": 1.88,
-   "gbp100_now": 96.84,
+   "margin_vs_spy_pct": 1.95,
+   "gbp100_now": 96.91,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -3556,12 +3561,12 @@
    "label": "Research setup: a smaller company, 2+ insiders each buying $25k+ within 30 days, operating cash flow above profit (added 4 Nov 2026)",
    "hold_days": 60,
    "started": "2026-11-04",
-   "value": 98756.72,
+   "value": 98826.36,
    "paused": false,
-   "drawdown_pct": -1.02,
+   "drawdown_pct": -1.17,
    "max_drawdown_pct": -2.01,
    "stops_hit": 0,
-   "return_pct": -1.24,
+   "return_pct": -1.17,
    "cash": 58226.01,
    "open": [
     {
@@ -3591,11 +3596,11 @@
     {
      "symbol": "FLOC",
      "since": "2026-11-10",
-     "value": 1806.74,
-     "return_pct": -9.56,
+     "value": 1876.38,
+     "return_pct": -6.07,
      "why": "research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e",
      "spy_same_days_pct": -3.43,
-     "excess_pct": -6.13,
+     "excess_pct": -2.64,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -3817,9 +3822,9 @@
      "industry": "Crude Petroleum & Natural Gas"
     }
    ],
-   "invested_pct": 41.0,
-   "open_excess_pct": 0.35,
-   "skill_vs_spy_pct": -0.53,
+   "invested_pct": 41.1,
+   "open_excess_pct": 0.5,
+   "skill_vs_spy_pct": -0.36,
    "trades_measured": 21,
    "trades_beating_spy_pct": 52.4,
    "pending": [
@@ -3888,7 +3893,7 @@
     ],
     [
      "2026-11-23",
-     98756.72
+     98826.36
     ]
    ],
    "events": [
@@ -3968,8 +3973,8 @@
      "what": "TRADE: research setup: 2 insiders bought $123,587 in total within 30 days (Johl Sundip Singh, Tharp Carla Todd); 2 officers or directors each bought $25k+. Bought $1,977 (2.0% of the portfolio, the 2% cap) at the 2026-11-23 open, 1.07; RSI 30 is neutral"
     }
    ],
-   "margin_vs_spy_pct": 3.8,
-   "gbp100_now": 98.76,
+   "margin_vs_spy_pct": 3.87,
+   "gbp100_now": 98.83,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -3977,12 +3982,12 @@
    "label": "Research setup, but no new entries while the S&P 500 is below its 200-day average (added 4 Nov 2026)",
    "hold_days": 60,
    "started": "2026-11-04",
-   "value": 99033.96,
+   "value": 99103.6,
    "paused": false,
-   "drawdown_pct": -0.97,
+   "drawdown_pct": -0.9,
    "max_drawdown_pct": -1.87,
    "stops_hit": 0,
-   "return_pct": -0.97,
+   "return_pct": -0.9,
    "cash": 68086.72,
    "open": [
     {
@@ -4012,11 +4017,11 @@
     {
      "symbol": "FLOC",
      "since": "2026-11-10",
-     "value": 1806.74,
-     "return_pct": -9.56,
+     "value": 1876.38,
+     "return_pct": -6.07,
      "why": "research setup: 3 insiders bought $1,104,342 in total within 30 days (Chmelev Alexander, EDWARDS JOSEPH R, Fairbanks Jonathan B.); 2 officers or directors e",
      "spy_same_days_pct": -3.43,
-     "excess_pct": -6.13,
+     "excess_pct": -2.64,
      "size_x": 1.0,
      "stop_pct": 14.1,
      "industry": "Oil & Gas Field Machinery & Equipment"
@@ -4178,9 +4183,9 @@
      "industry": "State Commercial Banks"
     }
    ],
-   "invested_pct": 31.2,
-   "open_excess_pct": 1.37,
-   "skill_vs_spy_pct": 0.29,
+   "invested_pct": 31.3,
+   "open_excess_pct": 1.56,
+   "skill_vs_spy_pct": 0.5,
    "trades_measured": 16,
    "trades_beating_spy_pct": 56.2,
    "pending": [
@@ -4249,7 +4254,7 @@
     ],
     [
      "2026-11-23",
-     99033.96
+     99103.6
     ]
    ],
    "events": [
@@ -4329,8 +4334,8 @@
      "what": "NO_TRADE: trend brake: the S&P 500 (690) is below its 200-day average (730), so no new entries"
     }
    ],
-   "margin_vs_spy_pct": 4.07,
-   "gbp100_now": 99.03,
+   "margin_vs_spy_pct": 4.14,
+   "gbp100_now": 99.1,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   }
@@ -4351,12 +4356,12 @@
    },
    {
     "strategy": "research_setup_trend",
-    "skill_vs_spy_pct": 0.29,
+    "skill_vs_spy_pct": 0.5,
     "trades_measured": 16,
     "trades_beating_spy_pct": 56.2,
-    "invested_pct": 31.2,
-    "margin_vs_spy_pct": 4.07,
-    "gbp100_now": 99.03,
+    "invested_pct": 31.3,
+    "margin_vs_spy_pct": 4.14,
+    "gbp100_now": 99.1,
     "days_live": 19
    },
    {
@@ -4370,6 +4375,16 @@
     "days_live": 22
    },
    {
+    "strategy": "research_setup",
+    "skill_vs_spy_pct": -0.36,
+    "trades_measured": 21,
+    "trades_beating_spy_pct": 52.4,
+    "invested_pct": 41.1,
+    "margin_vs_spy_pct": 3.87,
+    "gbp100_now": 98.83,
+    "days_live": 19
+   },
+   {
     "strategy": "insider_big_250k",
     "skill_vs_spy_pct": -0.49,
     "trades_measured": 50,
@@ -4380,43 +4395,33 @@
     "days_live": 22
    },
    {
-    "strategy": "research_setup",
-    "skill_vs_spy_pct": -0.53,
-    "trades_measured": 21,
-    "trades_beating_spy_pct": 52.4,
-    "invested_pct": 41.0,
-    "margin_vs_spy_pct": 3.8,
-    "gbp100_now": 98.76,
-    "days_live": 19
-   },
-   {
     "strategy": "insider_cluster2_smallcap",
-    "skill_vs_spy_pct": -1.42,
+    "skill_vs_spy_pct": -1.33,
     "trades_measured": 41,
     "trades_beating_spy_pct": 46.3,
     "invested_pct": 79.9,
-    "margin_vs_spy_pct": 1.88,
-    "gbp100_now": 96.84,
+    "margin_vs_spy_pct": 1.95,
+    "gbp100_now": 96.91,
     "days_live": 21
    },
    {
     "strategy": "insider_cluster3",
-    "skill_vs_spy_pct": -1.59,
+    "skill_vs_spy_pct": -1.52,
     "trades_measured": 50,
     "trades_beating_spy_pct": 32.0,
     "invested_pct": 98.3,
-    "margin_vs_spy_pct": 0.87,
-    "gbp100_now": 95.83,
+    "margin_vs_spy_pct": 0.94,
+    "gbp100_now": 95.9,
     "days_live": 22
    },
    {
     "strategy": "terminal_top_signals",
-    "skill_vs_spy_pct": -2.07,
+    "skill_vs_spy_pct": -2.0,
     "trades_measured": 50,
     "trades_beating_spy_pct": 42.0,
     "invested_pct": 99.6,
-    "margin_vs_spy_pct": -1.19,
-    "gbp100_now": 93.77,
+    "margin_vs_spy_pct": -1.12,
+    "gbp100_now": 93.84,
     "days_live": 22
    }
   ],
