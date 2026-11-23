@@ -1,48 +1,48 @@
-# Koochooloo Morning Brief · Fri 20 Nov 2026
+# Koochooloo Morning Brief · Mon 23 Nov 2026
 
 ## The market in one line
-Risk-off. S&P 500 -2.0% against its 200-day average; VIX 28.44; Fear & Greed 5.3 (Extreme fear).
+Risk-off. S&P 500 -5.5% against its 200-day average; VIX 35.89; Fear & Greed 2.6 (Extreme fear).
 
 ## Insider-buying setups the data flags today
 Smaller companies where two or more officers or directors each bought $25,000+ of their own stock within 30 days, and the business makes more cash than its reported profit. In our 2014–2026 tests this pattern beat the S&P 500 by about 2.5% per trade on average over 60 days. That is an average, not a promise: many such trades lost.
 
 | Stock | Price | 1 month | RSI | Who bought |
 |---|---|---|---|---|
-| FF | $3.0 | -46.0% | 20.2 (oversold) | 5 insiders bought $591,781 in total within 30 days |
-| LCTX | $0.82 | -13.7% | 37.0 | 5 insiders bought $870,998 in total within 30 days |
-| OBIO | $7.0 | +20.6% | 61.8 | 5 insiders bought $6,230,000 in total within 30 days |
-| ADTN | $4.44 | -33.6% | 32.1 | 2 insiders bought $847,008 in total within 30 days |
-| CATX | $0.78 | -66.1% | 25.7 (oversold) | 5 insiders bought $175,385 in total within 30 days |
-| CRMD | $5.08 | -34.8% | 37.0 | 2 insiders bought $513,200 in total within 30 days |
+| CRMD | $5.27 | -34.9% | 40.4 | 4 insiders bought $588,195 in total within 30 days |
+| FF | $2.93 | -46.9% | 19.6 (oversold) | 5 insiders bought $591,781 in total within 30 days |
+| LCTX | $0.77 | -22.2% | 33.8 | 5 insiders bought $870,998 in total within 30 days |
+| OBIO | $6.58 | +20.3% | 54.9 | 5 insiders bought $6,230,000 in total within 30 days |
+| CATX | $0.75 | -66.8% | 25.0 (oversold) | 5 insiders bought $175,385 in total within 30 days |
+| LRMR | $3.14 | +38.3% | 60.6 | 9 insiders bought $402,143 in total within 30 days |
 
 RSI above 70 or below 30 means the price has moved fast; our own paper rules skip those until it settles.
 
 ## Warning signs filed with the SEC
-- **OZVN** (OZ VISION INC.): Past results no longer reliable
-- **NHTC** (NATURAL HEALTH TRENDS CORP): Delisting warning
-- **FTHM** (Fathom Holdings Inc.): Delisting warning
-- **ONFO** (Onfolio Holdings, Inc): Delisting warning
+- **AIMD** (Ainos, Inc.): Delisting warning
+- **TRUG** (TruGolf Holdings, Inc.): Auditor changed
+- **CMPX** (Compass Therapeutics, Inc.): Delisting warning
+- **SXTP** (60 DEGREES PHARMACEUTICALS, INC.): Delisting warning
 
 ## Our public paper-trading scorecard
 Virtual money, real rules: every trade is compared with the S&P 500 over the same days, so sitting in cash earns no credit.
 
 | Strategy | Average per trade vs S&P | Trades beating S&P | Trades measured |
 |---|---|---|---|
-| Congress buying together | +4.65% | 100.0% | 2 |
-| Research setup | +1.97% | 68.8% | 16 |
-| Research setup + trend brake | +1.97% | 68.8% | 16 |
-| Insiders buying together | +0.86% | 47.6% | 42 |
-| Big insider buys | +0.42% | 52.0% | 50 |
-| Small-company insider buying | +0.12% | 61.3% | 31 |
-| Terminal top signals | -1.13% | 46.0% | 50 |
-| Big Congress buys | n/a | n/a | 0 |
+| Congress buying together | +3.76% | 80.0% | 5 |
+| Research setup + trend brake | +1.80% | 56.2% | 16 |
+| Research setup | +1.57% | 55.6% | 18 |
+| Big Congress buys | +0.45% | 66.7% | 6 |
+| Big insider buys | +0.12% | 56.0% | 50 |
+| Small-company insider buying | -0.17% | 58.3% | 36 |
+| Terminal top signals | -0.90% | 60.0% | 50 |
+| Insiders buying together | -1.13% | 53.3% | 45 |
 
 Started 1 November 2026. Rankings mean little before 90 days.
 
 ## Headlines
-- [Denmark’s economy grows 0.8% in third quarter of 2026](https://www.investing.com/news/economic-indicators/denmarks-economy-grows-08-in-third-quarter-of-2026-93CH-5040840) · Investing.com
-- [Earnings call transcript: HAV Group posts weak Q3 2026 as delays hit profit](https://www.investing.com/news/transcripts/earnings-call-transcript-hav-group-posts-weak-q3-2026-as-delays-hit-profit-93CH-5040839) · Investing.com
-- [German producer prices surge 8.1% in October](https://www.investing.com/news/economic-indicators/german-producer-prices-surge-81-in-october-93CH-5040838) · Investing.com
+- [Hilbert Group Q3 2026 slides: assets surge 55% as costs fall](https://www.investing.com/news/company-news/hilbert-group-q3-2026-slides-assets-surge-55-as-costs-fall-93CH-5044598) · Investing.com
+- [Morgan Stanley upgrades Evercore stock rating on quality franchise](https://www.investing.com/news/analyst-ratings/morgan-stanley-upgrades-evercore-stock-rating-on-quality-franchise-93CH-5044596) · Investing.com
+- [Morgan Stanley initiates South State stock coverage with Equalweight rating](https://www.investing.com/news/analyst-ratings/morgan-stanley-initiates-south-state-stock-coverage-with-equalweight-rating-93CH-5044595) · Investing.com
 
 ---
 *This is general research produced automatically from public data (SEC and Congress filings, market prices). It is not personal advice or a recommendation to buy or sell anything. Prices can fall as well as rise; many trades that match these patterns lose money. Do your own research and, if needed, take regulated advice.*
