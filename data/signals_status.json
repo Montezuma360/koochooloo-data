@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-23T15:34:40Z",
+  "updated": "2026-11-23T15:35:51Z",
   "ok": {
+    "congress_source": 5000,
+    "congress_trades": 3164,
     "congress_clusters": 88,
     "signals": 100,
-    "dashboard_bytes": 67928
+    "dashboard_bytes": 74810
   },
-  "failed": {
-    "congress_source": "HTTPError: HTTP Error 503: Backend.max_conn reached"
-  },
+  "failed": {},
   "dashboard_changed": true,
   "layers": {
     "gainers": 100,
-    "most_active": 90,
-    "quotes": 55,
+    "most_active": 92,
+    "quotes": 54,
     "sector_board": 11,
     "insider_trades_unique": 17222
   }

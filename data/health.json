@@ -1,8 +1,7 @@
 {
- "updated": "2026-11-23T15:34:41Z",
+ "updated": "2026-11-23T15:35:51Z",
  "healthy": false,
  "problems": [
-  "signals: 1 part(s) failed",
   "intelligence: 1 part(s) failed"
  ],
  "market_open": true,
@@ -10,8 +9,8 @@
  "repo_size_mb": 107.3,
  "feeds": {
   "prices": {
-   "updated": "2026-11-23T15:33:50Z",
-   "age_hours": 0.01,
+   "updated": "2026-11-23T15:35:38Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -20,8 +19,8 @@
    "on_target": true
   },
   "sec_insiders": {
-   "updated": "2026-11-23T15:33:37Z",
-   "age_hours": 0.02,
+   "updated": "2026-11-23T15:35:43Z",
+   "age_hours": 0.0,
    "stale_after_hours": 73,
    "stale": false,
    "failed_parts": {},
@@ -30,20 +29,18 @@
    "on_target": true
   },
   "signals": {
-   "updated": "2026-11-23T15:34:40Z",
+   "updated": "2026-11-23T15:35:51Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
-   "failed_parts": {
-    "congress_source": "HTTPError: HTTP Error 503: Backend.max_conn reached"
-   },
-   "ok": false,
+   "failed_parts": {},
+   "ok": true,
    "target_minutes_when_market_open": 3,
    "on_target": true
   },
   "treasury_rates": {
    "updated": "2026-11-23T15:14:44Z",
-   "age_hours": 0.33,
+   "age_hours": 0.35,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -51,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-21T14:46:20Z",
-   "age_hours": 48.81,
+   "age_hours": 48.83,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
@@ -59,15 +56,15 @@
   },
   "paper_trading": {
    "updated": "2026-11-20T23:56:20+00:00",
-   "age_hours": 63.64,
+   "age_hours": 63.66,
    "stale_after_hours": 102,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-23T15:33:57Z",
-   "age_hours": 0.01,
+   "updated": "2026-11-23T15:35:47Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -79,29 +76,29 @@
   }
  },
  "workflows": {
+  "Caesar's voice": {
+   "last": "cancelled",
+   "at": "2026-11-23T15:35:26Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 47
+  },
+  "Refresh signals and dashboard": {
+   "last": "success",
+   "at": "2026-11-23T15:35:20Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 2
+  },
+  "Live market refresh": {
+   "last": "success",
+   "at": "2026-11-23T15:34:58Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 46
+  },
   "Refresh brain data": {
    "last": "success",
    "at": "2026-11-23T15:34:18Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 2
-  },
-  "Caesar's voice": {
-   "last": "cancelled",
-   "at": "2026-11-23T15:34:03Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 47
-  },
-  "Live market refresh": {
-   "last": "success",
-   "at": "2026-11-23T15:33:56Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 46
-  },
-  "Refresh signals and dashboard": {
-   "last": "success",
-   "at": "2026-11-23T15:29:14Z",
-   "failures_in_last_100": 0,
-   "runs_in_last_100": 1
   }
  }
 }
