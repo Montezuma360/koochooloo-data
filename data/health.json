@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T18:31:23Z",
+ "updated": "2026-11-24T18:32:22Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
@@ -9,7 +9,7 @@
  "repo_size_mb": 150.1,
  "feeds": {
   "prices": {
-   "updated": "2026-11-24T18:31:05Z",
+   "updated": "2026-11-24T18:31:48Z",
    "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
@@ -19,8 +19,8 @@
    "on_target": true
   },
   "sec_insiders": {
-   "updated": "2026-11-24T18:31:12Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-24T18:31:54Z",
+   "age_hours": 0.01,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
@@ -29,7 +29,7 @@
    "on_target": true
   },
   "signals": {
-   "updated": "2026-11-24T18:31:23Z",
+   "updated": "2026-11-24T18:32:22Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -40,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-24T18:09:27Z",
-   "age_hours": 0.37,
+   "age_hours": 0.38,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-24T00:16:04Z",
-   "age_hours": 18.26,
+   "age_hours": 18.27,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -56,15 +56,15 @@
   },
   "paper_trading": {
    "updated": "2026-11-23T23:58:13+00:00",
-   "age_hours": 18.55,
+   "age_hours": 18.57,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-24T18:31:13Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-24T18:31:59Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -78,13 +78,13 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-24T18:30:07Z",
+   "at": "2026-11-24T18:31:38Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 48
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-24T18:29:59Z",
+   "at": "2026-11-24T18:31:31Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 43
   },
