@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 38,
+ "runs": 39,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -750,6 +750,12 @@
      "signal": "2026-11-24",
      "event": "2026-11-23",
      "note": "3 insiders bought within 30 days"
+    },
+    {
+     "sym": "CTSO",
+     "signal": "2026-11-24",
+     "event": "2026-11-20",
+     "note": "7 insiders bought within 30 days"
     }
    ],
    "closed": [],
@@ -890,7 +896,8 @@
     "KMT": "2026-11-24",
     "COHR": "2026-11-24",
     "OVBC": "2026-11-24",
-    "ENOV": "2026-11-24"
+    "ENOV": "2026-11-24",
+    "CTSO": "2026-11-24"
    },
    "events": [
     {
@@ -2173,6 +2180,18 @@
      "signal": "2026-11-24",
      "event": "2026-11-20",
      "note": "Casdin Partners Master Fund, L.P. (Director) bought $739,197"
+    },
+    {
+     "sym": "CTSO",
+     "signal": "2026-11-24",
+     "event": "2026-11-20",
+     "note": "Chan Phillip P. (Chief Executive Officer) bought $355,001"
+    },
+    {
+     "sym": "SNDA",
+     "signal": "2026-11-24",
+     "event": "2026-11-24",
+     "note": "Simanovsky Michael (Director) bought $496,050"
     }
    ],
    "closed": [],
@@ -2398,7 +2417,9 @@
     "ASTS": "2026-11-24",
     "AMCI": "2026-11-24",
     "FRMI": "2026-11-24",
-    "LAB": "2026-11-24"
+    "LAB": "2026-11-24",
+    "CTSO": "2026-11-24",
+    "SNDA": "2026-11-24"
    },
    "events": [
     {
@@ -3337,7 +3358,7 @@
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": 0.0,
+   "drawdown_pct": -0.0,
    "paused": false
   },
   "congress_big_100k": {
@@ -4397,6 +4418,12 @@
      "signal": "2026-11-24",
      "event": "2026-11-24",
      "note": "score 12: 2 insiders bought $1,196,972 in 30 days (last 2026-11-23); Director Casdin Partners Master Fund, L.P. bought $205,704 on 2026-11-23"
+    },
+    {
+     "sym": "CTSO",
+     "signal": "2026-11-24",
+     "event": "2026-11-24",
+     "note": "score 23: 7 insiders bought $499,982 in 30 days (last 2026-11-20); Chief Executive Officer Chan Phillip P. bought $355,001 on 2026-11-20"
     }
    ],
    "closed": [],
@@ -4589,7 +4616,8 @@
     "PED": "2026-11-24",
     "MNR": "2026-11-24",
     "XGPU": "2026-11-24",
-    "LAB": "2026-11-24"
+    "LAB": "2026-11-24",
+    "CTSO": "2026-11-24"
    },
    "events": [
     {
@@ -6326,6 +6354,12 @@
      "signal": "2026-11-24",
      "event": "2026-11-23",
      "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "CTSO",
+     "signal": "2026-11-24",
+     "event": "2026-11-20",
+     "note": "4 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -6510,7 +6544,8 @@
     "ALDX": "2026-11-24",
     "USEA": "2026-11-24",
     "ENOV": "2026-11-24",
-    "LAB": "2026-11-24"
+    "LAB": "2026-11-24",
+    "CTSO": "2026-11-24"
    },
    "events": [
     {
@@ -8247,7 +8282,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-24T22:37:28+00:00",
+ "updated": "2026-11-24T23:56:49+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
@@ -9432,6 +9467,14 @@
   "PED": {
    "sic": "13",
    "name": "Crude Petroleum & Natural Gas"
+  },
+  "SNDA": {
+   "sic": "80",
+   "name": "Services-Nursing & Personal Care Facilities"
+  },
+  "CTSO": {
+   "sic": "38",
+   "name": "Surgical & Medical Instruments & Apparatus"
   }
  }
 }
