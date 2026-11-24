@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-24T21:12:55Z",
+ "updated": "2026-11-24T21:14:33Z",
  "healthy": false,
  "problems": [
-  "intelligence: 1 part(s) failed"
+  "intelligence: 2 part(s) failed"
  ],
  "market_open": false,
  "warnings": [],
  "repo_size_mb": 157.3,
  "feeds": {
   "prices": {
-   "updated": "2026-11-24T21:02:03Z",
-   "age_hours": 0.18,
+   "updated": "2026-11-24T21:13:34Z",
+   "age_hours": 0.02,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -19,8 +19,8 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-24T21:02:06Z",
-   "age_hours": 0.18,
+   "updated": "2026-11-24T21:13:51Z",
+   "age_hours": 0.01,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
@@ -29,7 +29,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-24T21:12:55Z",
+   "updated": "2026-11-24T21:14:32Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -40,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-24T20:55:39Z",
-   "age_hours": 0.29,
+   "age_hours": 0.32,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-24T00:16:04Z",
-   "age_hours": 20.95,
+   "age_hours": 20.97,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -56,19 +56,20 @@
   },
   "paper_trading": {
    "updated": "2026-11-23T23:58:13+00:00",
-   "age_hours": 21.25,
+   "age_hours": 21.27,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-24T21:02:11Z",
-   "age_hours": 0.18,
+   "updated": "2026-11-24T21:14:17Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
-    "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
+    "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr",
+    "stocktwits": "HTTPError: HTTP Error 403: Forbidden"
    },
    "ok": false,
    "target_minutes_when_market_open": 3,
@@ -78,21 +79,21 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-24T21:12:24Z",
+   "at": "2026-11-24T21:14:21Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 49
+   "runs_in_last_100": 50
   },
   "Live market refresh": {
    "last": "cancelled",
-   "at": "2026-11-24T21:12:16Z",
+   "at": "2026-11-24T21:14:17Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 44
+   "runs_in_last_100": 45
   },
   "Refresh signals and dashboard": {
    "last": "success",
    "at": "2026-11-24T20:57:32Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 3
+   "runs_in_last_100": 2
   },
   "Refresh SEC insider data": {
    "last": "success",
