@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 40,
+ "runs": 41,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -2146,12 +2146,6 @@
    ],
    "pending": [
     {
-     "sym": "AMCI",
-     "signal": "2026-11-24",
-     "event": "2026-11-20",
-     "note": "Da Shengwei (Sean) (CEO) bought $263,575"
-    },
-    {
      "sym": "KDK",
      "signal": "2026-11-25",
      "event": "2026-11-24",
@@ -3094,6 +3088,11 @@
      "date": "2026-11-25",
      "sym": "SNDA",
      "what": "NO_TRADE: all 50 slots are full"
+    },
+    {
+     "date": "2026-11-25",
+     "sym": "AMCI",
+     "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
     }
    ],
    "equity": [
@@ -4543,6 +4542,12 @@
      "signal": "2026-11-25",
      "event": "2026-11-25",
      "note": "score 12: 2 insiders bought $1,629,991 in 30 days (last 2026-11-24); Director Turner Robb E bought $324,750 on 2026-11-24"
+    },
+    {
+     "sym": "BG",
+     "signal": "2026-11-25",
+     "event": "2026-11-25",
+     "note": "score 13: 2 insiders bought $1,391,606 in 30 days (last 2026-11-24); Director Zenuk Mark N bought $229,956 on 2026-11-24"
     }
    ],
    "closed": [],
@@ -4741,7 +4746,8 @@
     "TROX": "2026-11-25",
     "PLBY": "2026-11-25",
     "VANI": "2026-11-25",
-    "WMB": "2026-11-25"
+    "WMB": "2026-11-25",
+    "BG": "2026-11-25"
    },
    "events": [
     {
@@ -6499,6 +6505,18 @@
      "signal": "2026-11-25",
      "event": "2026-11-24",
      "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "BG",
+     "signal": "2026-11-25",
+     "event": "2026-11-24",
+     "note": "2 insiders each bought $25k+ within 30 days"
+    },
+    {
+     "sym": "HBCP",
+     "signal": "2026-11-25",
+     "event": "2026-11-23",
+     "note": "2 insiders each bought $25k+ within 30 days"
     }
    ],
    "closed": [],
@@ -6689,7 +6707,9 @@
     "PRE": "2026-11-25",
     "AVEX": "2026-11-25",
     "SCM": "2026-11-25",
-    "UMH": "2026-11-25"
+    "UMH": "2026-11-25",
+    "BG": "2026-11-25",
+    "HBCP": "2026-11-25"
    },
    "events": [
     {
@@ -7747,6 +7767,12 @@
      "signal": "2026-11-25",
      "event": "2026-11-24",
      "note": "research setup: 5 insiders bought $140,703 in total within 30 days (Carus Jeffrey A, HIRSCH MATTHEW I, Miller Kevin S., Mitchell William Edward); 2 officers"
+    },
+    {
+     "sym": "HBCP",
+     "signal": "2026-11-25",
+     "event": "2026-11-23",
+     "note": "research setup: 2 insiders bought $345,638 in total within 30 days (Hill Darren M, RADER CHRIS P); 2 officers or directors each bought $25k+"
     }
    ],
    "closed": [],
@@ -7784,7 +7810,8 @@
     "PCT": "2026-11-24",
     "OXSQ": "2026-11-24",
     "BSM": "2026-11-25",
-    "UMH": "2026-11-25"
+    "UMH": "2026-11-25",
+    "HBCP": "2026-11-25"
    },
    "events": [
     {
@@ -8245,6 +8272,12 @@
      "signal": "2026-11-25",
      "event": "2026-11-24",
      "note": "research setup: 5 insiders bought $140,703 in total within 30 days (Carus Jeffrey A, HIRSCH MATTHEW I, Miller Kevin S., Mitchell William Edward); 2 officers"
+    },
+    {
+     "sym": "HBCP",
+     "signal": "2026-11-25",
+     "event": "2026-11-23",
+     "note": "research setup: 2 insiders bought $345,638 in total within 30 days (Hill Darren M, RADER CHRIS P); 2 officers or directors each bought $25k+"
     }
    ],
    "closed": [],
@@ -8282,7 +8315,8 @@
     "PCT": "2026-11-24",
     "OXSQ": "2026-11-24",
     "BSM": "2026-11-25",
-    "UMH": "2026-11-25"
+    "UMH": "2026-11-25",
+    "HBCP": "2026-11-25"
    },
    "events": [
     {
@@ -8502,7 +8536,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-25T22:33:57+00:00",
+ "updated": "2026-11-25T23:57:24+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",
