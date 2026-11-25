@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T22:01:30Z",
+ "updated": "2026-11-25T22:02:10Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
@@ -9,8 +9,8 @@
  "repo_size_mb": 191.6,
  "feeds": {
   "prices": {
-   "updated": "2026-11-25T22:01:09Z",
-   "age_hours": 0.01,
+   "updated": "2026-11-25T22:01:56Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -19,7 +19,7 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-25T22:01:13Z",
+   "updated": "2026-11-25T22:02:03Z",
    "age_hours": 0.0,
    "stale_after_hours": 1,
    "stale": false,
@@ -29,7 +29,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-25T22:01:30Z",
+   "updated": "2026-11-25T22:02:10Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -40,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-25T21:59:35Z",
-   "age_hours": 0.03,
+   "age_hours": 0.04,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-25T00:14:47Z",
-   "age_hours": 21.78,
+   "age_hours": 21.79,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -56,14 +56,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-24T23:56:49+00:00",
-   "age_hours": 22.08,
+   "age_hours": 22.09,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-25T22:01:17Z",
+   "updated": "2026-11-25T22:02:06Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -78,13 +78,13 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-25T22:00:11Z",
+   "at": "2026-11-25T22:01:44Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 48
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-25T22:00:07Z",
+   "at": "2026-11-25T22:01:38Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 43
   },
