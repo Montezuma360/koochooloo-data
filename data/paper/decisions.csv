@@ -587,3 +587,39 @@ date,strategy,symbol,decision,rsi,reason
 2026-11-24,research_setup_trend,CCAP,NO_TRADE,57.3,skipped: market stress (VIX 35.9 above 30)
 2026-11-24,research_setup_trend,EAF,NO_TRADE,42.4,skipped: market stress (VIX 35.9 above 30)
 2026-11-24,research_setup_trend,ECVT,NO_TRADE,37.1,skipped: market stress (VIX 35.9 above 30)
+2026-11-25,insider_cluster3,LFT,NO_TRADE,30.1,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster3,NMAD,NO_TRADE,45.2,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster3,XGPU,NO_TRADE,40.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster3,LCNB,NO_TRADE,55.5,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster3,KMT,NO_TRADE,35.7,all 50 slots are full
+2026-11-25,insider_cluster3,COHR,NO_TRADE,43.1,all 50 slots are full
+2026-11-25,insider_cluster3,OVBC,NO_TRADE,36.4,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster3,CTSO,NO_TRADE,46.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_big_250k,HRNG,NO_TRADE,,"no price data for a week, so the order was dropped"
+2026-11-25,insider_big_250k,VANI,NO_TRADE,70.1,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_big_250k,PRE,NO_TRADE,28.9,all 50 slots are full
+2026-11-25,insider_big_250k,SNEX,NO_TRADE,23.8,all 50 slots are full
+2026-11-25,insider_big_250k,XGPU,NO_TRADE,40.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_big_250k,OTF,NO_TRADE,46.0,all 50 slots are full
+2026-11-25,insider_big_250k,TEN,NO_TRADE,43.5,all 50 slots are full
+2026-11-25,insider_big_250k,ASTS,NO_TRADE,31.0,all 50 slots are full
+2026-11-25,insider_big_250k,LAB,NO_TRADE,50.7,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_big_250k,CTSO,NO_TRADE,46.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_big_250k,SNDA,NO_TRADE,46.1,all 50 slots are full
+2026-11-25,terminal_top_signals,PED,NO_TRADE,24.4,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,terminal_top_signals,MNR,NO_TRADE,16.8,RSI 17 is below 30: oversold with no strong contrarian reason
+2026-11-25,terminal_top_signals,XGPU,NO_TRADE,40.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,terminal_top_signals,LAB,NO_TRADE,50.7,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,terminal_top_signals,CTSO,NO_TRADE,46.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster2_smallcap,SNEX,NO_TRADE,23.8,not a smaller company (trades $68M a day)
+2026-11-25,insider_cluster2_smallcap,XGPU,NO_TRADE,40.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster2_smallcap,PED,NO_TRADE,24.4,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster2_smallcap,OXSQ,NO_TRADE,29.2,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster2_smallcap,ALDX,NO_TRADE,68.5,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster2_smallcap,USEA,NO_TRADE,62.8,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster2_smallcap,LAB,NO_TRADE,50.7,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,insider_cluster2_smallcap,CTSO,NO_TRADE,46.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,research_setup,PCT,NO_TRADE,28.2,"already 4 positions in the same industry (Plastic Materials, Synth Resins & Nonvulcan Elastomers)"
+2026-11-25,research_setup,OXSQ,NO_TRADE,29.2,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-25,research_setup_trend,PCT,NO_TRADE,28.2,"trend brake: the S&P 500 (719) is below its 200-day average (731), so no new entries"
+2026-11-25,research_setup_trend,OXSQ,NO_TRADE,29.2,penny stock or too thinly traded (under $1 or under $1M a day)
