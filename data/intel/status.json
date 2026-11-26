@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T07:40:53Z",
+ "updated": "2026-11-26T07:41:34Z",
  "market_open": false,
  "failed": {
   "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
@@ -13,10 +13,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-26T07:40:53Z",
+   "last_try": "2026-11-26T07:41:34Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-26T07:40:53Z",
-   "seconds": 0.3,
+   "last_ok": "2026-11-26T07:41:34Z",
+   "seconds": 0.4,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -41,9 +41,9 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-26T07:40:53Z",
+   "last_try": "2026-11-26T07:41:34Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-26T07:40:53Z",
+   "last_ok": "2026-11-26T07:41:34Z",
    "seconds": 1.4,
    "every_minutes": 1
   },
@@ -69,10 +69,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-26T07:40:53Z",
+   "last_try": "2026-11-26T07:41:34Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-26T07:40:53Z",
-   "seconds": 2.5,
+   "last_ok": "2026-11-26T07:41:34Z",
+   "seconds": 2.9,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -126,9 +126,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-26T07:40:53Z",
-   "result": "BTC 60558.7, ETH 1691.19, SOL 70.92 from 3 exchanges",
-   "last_ok": "2026-11-26T07:40:53Z",
+   "last_try": "2026-11-26T07:41:34Z",
+   "result": "BTC 60568.0, ETH 1690.86, SOL 70.92 from 3 exchanges",
+   "last_ok": "2026-11-26T07:41:34Z",
    "seconds": 0.8,
    "every_minutes": 1
   }
