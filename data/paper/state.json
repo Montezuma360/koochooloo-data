@@ -1,6 +1,6 @@
 {
  "created": "2026-11-01T23:04:15+00:00",
- "runs": 41,
+ "runs": 42,
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -1917,7 +1917,7 @@
      "stop_pct": 0.1777,
      "industry": null,
      "rsi": 40.7,
-     "last_value": 1903.1677545747586
+     "last_value": 1951.2622152172482
     },
     {
      "sym": "STVN",
@@ -3170,11 +3170,11 @@
     ],
     [
      "2026-11-25",
-     96225.78
+     96273.88
     ]
    ],
    "started": "2026-11-01",
-   "drawdown_pct": -5.82,
+   "drawdown_pct": -5.77,
    "paused": false
   },
   "congress_cluster3": {
@@ -8536,7 +8536,7 @@
    "paused": false
   }
  },
- "updated": "2026-11-25T23:57:24+00:00",
+ "updated": "2026-11-26T22:35:42+00:00",
  "sic": {
   "NVDA": {
    "sic": "36",

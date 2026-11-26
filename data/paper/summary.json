@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-25T23:57:24+00:00",
+ "updated": "2026-11-26T22:35:42+00:00",
  "priced_to": "2026-11-25",
  "rules": "Each strategy starts with $100,000 and follows fixed rules:\n- A signal counts from the first run that sees it, and only if it is at most 4 days old (no hindsight).\n- Orders fill at the open of the next trading day after the signal; sells happen at the close once the holding period ends.\n- Costs per side: 0.15% for stocks priced $10+, 0.40% below $10. Stocks under $1 or trading under $1M a day are skipped.\n- 50 equal slots of 2% per strategy, so no single trade can lose more than 2% of the portfolio. A volatility size (0.5x-1.5x) and a stop-loss distance (2.5x average daily range, 6-25%) are recorded\n  for every position but NOT applied: in round 3 research the stop-loss halved returns in both test periods, and volatility\n  sizing cut returns by more than it cut risk. Switch on with USE_STOP / USE_VOL_SIZE if later research says otherwise.\n- No new entries while a strategy is 15%+ below its own peak value, or while markets are stressed (VIX above 30, or high-yield credit spreads up 1+ point in a month).\n- At most 4 positions in the same industry (SEC 2-digit SIC code) per strategy.\n- Trading rules: only at regular-session prices (9:30 open, 4:00 close ET); no new trade when RSI(14) is above 70 (overbought) or\n  below 30 (oversold) unless there is a strong contrarian reason (insiders buying their own stock after a fall); when the\n  data is in doubt (stale feeds or too little price history) the default is NO_TRADE. Every decision is logged with its\n  reason in plain language in data/paper/decisions.csv.\n- Two strategies were added on 4 Nov 2026 and follow every rule above: \"research_setup\" (smaller company, 2+ insiders at $25k+, cash flow above\n  profit) and \"research_setup_trend\" (the same, but no new entries while the S&P 500 is below its 200-day average). The older strategies are unchanged.\n- Goal: beat the S&P 500 by the largest possible margin after costs, and turn a virtual GBP 100 into GBP 10,000. Strategies\n  are ranked by their margin over the S&P 500; summary.json \"goal\" shows what GBP 100 has become in each and how long\n  GBP 10,000 would take at the live pace (after 90 days) and at the paces measured in research.\nWrites data/paper/state.json, data/paper/summary.json, data/paper/decisions.csv and appends closed trades to data/paper/trades.csv.",
  "market_stress": false,
- "market_note": "calm (VIX 26.62, high-yield spread 3.63)",
+ "market_note": "calm (VIX 26.36, high-yield spread 3.72)",
  "strategies": {
   "insider_cluster3": {
    "label": "3+ company insiders buy the same stock within 30 days",
@@ -799,12 +799,12 @@
    "label": "A director or officer buys $250k+ on the open market",
    "hold_days": 60,
    "started": "2026-11-01",
-   "value": 96225.78,
+   "value": 96273.88,
    "paused": false,
-   "drawdown_pct": -5.82,
+   "drawdown_pct": -5.77,
    "max_drawdown_pct": -10.09,
    "stops_hit": 0,
-   "return_pct": -3.77,
+   "return_pct": -3.73,
    "cash": 0.0,
    "open": [
     {
@@ -1206,11 +1206,11 @@
     {
      "symbol": "PSEC",
      "since": "2026-11-11",
-     "value": 1903.17,
-     "return_pct": -6.91,
+     "value": 1951.26,
+     "return_pct": -4.56,
      "why": "Barry John F (CHIEF EXECUTIVE OFFICER) bought $1,727,314",
      "spy_same_days_pct": -5.3,
-     "excess_pct": -1.61,
+     "excess_pct": 0.74,
      "size_x": 1.0,
      "stop_pct": 17.8,
      "industry": ""
@@ -1409,10 +1409,10 @@
     }
    ],
    "invested_pct": 100.0,
-   "open_excess_pct": 1.44,
-   "skill_vs_spy_pct": 0.9,
+   "open_excess_pct": 1.49,
+   "skill_vs_spy_pct": 0.95,
    "trades_measured": 50,
-   "trades_beating_spy_pct": 64.0,
+   "trades_beating_spy_pct": 66.0,
    "pending": [
     "KDK",
     "AFCG",
@@ -1500,7 +1500,7 @@
     ],
     [
      "2026-11-25",
-     96225.78
+     96273.88
     ]
    ],
    "events": [
@@ -1580,8 +1580,8 @@
      "what": "NO_TRADE: penny stock or too thinly traded (under $1 or under $1M a day)"
     }
    ],
-   "margin_vs_spy_pct": 2.0,
-   "gbp100_now": 96.23,
+   "margin_vs_spy_pct": 2.04,
+   "gbp100_now": 96.27,
    "yearly_pace_pct": null,
    "years_to_10000_at_pace": null
   },
@@ -4417,7 +4417,7 @@
     "invested_pct": 10.1,
     "margin_vs_spy_pct": 5.87,
     "gbp100_now": 100.1,
-    "days_live": 24
+    "days_live": 25
    },
    {
     "strategy": "research_setup_trend",
@@ -4427,17 +4427,17 @@
     "invested_pct": 31.4,
     "margin_vs_spy_pct": 5.04,
     "gbp100_now": 99.27,
-    "days_live": 21
+    "days_live": 22
    },
    {
     "strategy": "insider_big_250k",
-    "skill_vs_spy_pct": 0.9,
+    "skill_vs_spy_pct": 0.95,
     "trades_measured": 50,
-    "trades_beating_spy_pct": 64.0,
+    "trades_beating_spy_pct": 66.0,
     "invested_pct": 100.0,
-    "margin_vs_spy_pct": 2.0,
-    "gbp100_now": 96.23,
-    "days_live": 24
+    "margin_vs_spy_pct": 2.04,
+    "gbp100_now": 96.27,
+    "days_live": 25
    },
    {
     "strategy": "research_setup",
@@ -4447,7 +4447,7 @@
     "invested_pct": 41.1,
     "margin_vs_spy_pct": 4.68,
     "gbp100_now": 98.91,
-    "days_live": 21
+    "days_live": 22
    },
    {
     "strategy": "terminal_top_signals",
@@ -4457,7 +4457,7 @@
     "invested_pct": 99.6,
     "margin_vs_spy_pct": 0.64,
     "gbp100_now": 94.87,
-    "days_live": 24
+    "days_live": 25
    },
    {
     "strategy": "insider_cluster3",
@@ -4467,7 +4467,7 @@
     "invested_pct": 98.4,
     "margin_vs_spy_pct": 2.14,
     "gbp100_now": 96.37,
-    "days_live": 24
+    "days_live": 25
    },
    {
     "strategy": "insider_cluster2_smallcap",
@@ -4477,7 +4477,7 @@
     "invested_pct": 80.0,
     "margin_vs_spy_pct": 2.83,
     "gbp100_now": 97.06,
-    "days_live": 23
+    "days_live": 24
    },
    {
     "strategy": "congress_big_100k",
@@ -4487,7 +4487,7 @@
     "invested_pct": 12.0,
     "margin_vs_spy_pct": 5.75,
     "gbp100_now": 99.98,
-    "days_live": 24
+    "days_live": 25
    }
   ],
   "leader": "congress_cluster3",
