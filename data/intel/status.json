@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T00:47:42Z",
+ "updated": "2026-11-26T00:48:44Z",
  "market_open": false,
  "failed": {
   "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
@@ -13,10 +13,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-26T00:47:42Z",
+   "last_try": "2026-11-26T00:48:44Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-26T00:47:42Z",
-   "seconds": 0.3,
+   "last_ok": "2026-11-26T00:48:44Z",
+   "seconds": 0.2,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -41,10 +41,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-26T00:47:42Z",
+   "last_try": "2026-11-26T00:48:44Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-26T00:47:42Z",
-   "seconds": 2.2,
+   "last_ok": "2026-11-26T00:48:44Z",
+   "seconds": 2.0,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -69,16 +69,16 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-26T00:47:42Z",
-   "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-26T00:47:42Z",
-   "seconds": 3.1,
+   "last_try": "2026-11-26T00:48:44Z",
+   "result": "1 new headlines from 15 feeds",
+   "last_ok": "2026-11-26T00:48:44Z",
+   "seconds": 3.6,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-26T00:46:38Z",
+   "last_try": "2026-11-26T00:48:44Z",
    "result": "1 new filings (0 with a red flag)",
-   "last_ok": "2026-11-26T00:46:38Z",
+   "last_ok": "2026-11-26T00:48:44Z",
    "seconds": 1.8,
    "every_minutes": 2
   },
@@ -126,10 +126,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-26T00:47:42Z",
-   "result": "BTC 60490.1, ETH 1693.17, SOL 70.74 from 3 exchanges",
-   "last_ok": "2026-11-26T00:47:42Z",
-   "seconds": 1.2,
+   "last_try": "2026-11-26T00:48:44Z",
+   "result": "BTC 60460.8, ETH 1693.13, SOL 70.71 from 3 exchanges",
+   "last_ok": "2026-11-26T00:48:44Z",
+   "seconds": 0.8,
    "every_minutes": 1
   }
  }
