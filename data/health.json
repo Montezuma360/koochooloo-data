@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T21:12:28Z",
+ "updated": "2026-11-26T21:12:59Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
@@ -9,8 +9,8 @@
  "repo_size_mb": 227.0,
  "feeds": {
   "prices": {
-   "updated": "2026-11-26T21:09:35Z",
-   "age_hours": 0.05,
+   "updated": "2026-11-26T21:12:49Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
@@ -19,8 +19,8 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-26T21:09:39Z",
-   "age_hours": 0.05,
+   "updated": "2026-11-26T21:12:53Z",
+   "age_hours": 0.0,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
@@ -29,7 +29,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-26T21:12:28Z",
+   "updated": "2026-11-26T21:12:59Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -40,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-26T20:22:35Z",
-   "age_hours": 0.83,
+   "age_hours": 0.84,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-26T00:17:13Z",
-   "age_hours": 20.92,
+   "age_hours": 20.93,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -56,15 +56,15 @@
   },
   "paper_trading": {
    "updated": "2026-11-25T23:57:24+00:00",
-   "age_hours": 21.25,
+   "age_hours": 21.26,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-26T21:09:44Z",
-   "age_hours": 0.05,
+   "updated": "2026-11-26T21:12:55Z",
+   "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -78,9 +78,15 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-26T21:12:21Z",
+   "at": "2026-11-26T21:12:40Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 48
+  },
+  "Live market refresh": {
+   "last": "cancelled",
+   "at": "2026-11-26T21:12:16Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 46
   },
   "Live market refresh": {
    "last": "cancelled",
