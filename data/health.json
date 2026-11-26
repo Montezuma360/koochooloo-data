@@ -1,39 +1,35 @@
 {
- "updated": "2026-11-26T18:01:34Z",
+ "updated": "2026-11-26T18:02:15Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
  ],
  "market_open": true,
- "warnings": [
-  "prices: 7 min since last update, target 3 (refresh running slow)",
-  "sec_insiders: 6 min since last update, target 3 (refresh running slow)",
-  "intelligence: 6 min since last update, target 3 (refresh running slow)"
- ],
+ "warnings": [],
  "repo_size_mb": 225.0,
  "feeds": {
   "prices": {
-   "updated": "2026-11-26T18:01:22Z",
+   "updated": "2026-11-26T18:02:00Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": false
+   "on_target": true
   },
   "sec_insiders": {
-   "updated": "2026-11-26T18:01:26Z",
+   "updated": "2026-11-26T18:02:04Z",
    "age_hours": 0.0,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": false
+   "on_target": true
   },
   "signals": {
-   "updated": "2026-11-26T18:01:33Z",
+   "updated": "2026-11-26T18:02:14Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -44,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-26T17:31:36Z",
-   "age_hours": 0.5,
+   "age_hours": 0.51,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -52,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-26T00:17:13Z",
-   "age_hours": 17.74,
+   "age_hours": 17.75,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -60,14 +56,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-25T23:57:24+00:00",
-   "age_hours": 18.07,
+   "age_hours": 18.08,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-26T18:01:28Z",
+   "updated": "2026-11-26T18:02:06Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -76,19 +72,19 @@
    },
    "ok": false,
    "target_minutes_when_market_open": 3,
-   "on_target": false
+   "on_target": true
   }
  },
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-26T18:01:13Z",
+   "at": "2026-11-26T18:01:55Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 48
+   "runs_in_last_100": 49
   },
   "Live market refresh": {
-   "last": "cancelled",
-   "at": "2026-11-26T18:00:54Z",
+   "last": "success",
+   "at": "2026-11-26T18:01:46Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 45
   },
@@ -96,7 +92,7 @@
    "last": "success",
    "at": "2026-11-26T17:34:08Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 3
+   "runs_in_last_100": 2
   },
   "Refresh SEC insider data": {
    "last": "success",
