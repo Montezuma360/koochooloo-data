@@ -624,3 +624,39 @@ date,strategy,symbol,decision,rsi,reason
 2026-11-25,research_setup_trend,PCT,NO_TRADE,28.2,"trend brake: the S&P 500 (719) is below its 200-day average (731), so no new entries"
 2026-11-25,research_setup_trend,OXSQ,NO_TRADE,29.2,penny stock or too thinly traded (under $1 or under $1M a day)
 2026-11-25,insider_big_250k,AMCI,NO_TRADE,40.0,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-27,insider_cluster3,GLXY,NO_TRADE,37.4,all 50 slots are full
+2026-11-27,insider_cluster3,PRE,NO_TRADE,28.6,all 50 slots are full
+2026-11-27,insider_cluster3,ICU,NO_TRADE,27.1,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-27,insider_cluster3,TRIN,NO_TRADE,53.2,all 50 slots are full
+2026-11-27,insider_big_250k,KDK,NO_TRADE,48.8,all 50 slots are full
+2026-11-27,insider_big_250k,AFCG,NO_TRADE,59.7,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-27,insider_big_250k,PATK,NO_TRADE,65.8,all 50 slots are full
+2026-11-27,insider_big_250k,TMC,NO_TRADE,41.0,all 50 slots are full
+2026-11-27,congress_cluster3,TXN,TRADE,43.8,"3 members bought within 60 days. Bought $2,004 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 273.62; RSI 44 is neutral"
+2026-11-27,congress_cluster3,ISRG,TRADE,48.4,"3 members bought within 60 days. Bought $2,005 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 430.92; RSI 48 is neutral"
+2026-11-27,congress_cluster3,PLD,TRADE,48.5,"3 members bought within 60 days. Bought $2,005 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 127.59; RSI 49 is neutral"
+2026-11-27,congress_cluster3,MU,TRADE,35.7,"3 members bought within 60 days. Bought $2,005 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 630.28; RSI 36 is neutral"
+2026-11-27,congress_cluster3,CCI,TRADE,48.5,"3 members bought within 60 days. Bought $2,006 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 83.71; RSI 48 is neutral"
+2026-11-27,congress_cluster3,C,TRADE,36.0,"3 members bought within 60 days. Bought $2,006 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 115.64; RSI 36 is neutral"
+2026-11-27,congress_cluster3,KLAC,TRADE,40.7,"3 members bought within 60 days. Bought $2,006 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 138.93; RSI 41 is neutral"
+2026-11-27,congress_cluster3,TSLA,TRADE,50.3,"3 members bought within 60 days. Bought $2,006 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 391.33; RSI 50 is neutral"
+2026-11-27,congress_cluster3,COST,NO_TRADE,70.2,"RSI 70 is above 70: overbought, buying now risks chasing a spike"
+2026-11-27,terminal_top_signals,PRE,NO_TRADE,28.6,RSI 29 is below 30: oversold with no strong contrarian reason
+2026-11-27,terminal_top_signals,TROX,NO_TRADE,38.1,all 50 slots are full
+2026-11-27,terminal_top_signals,PLBY,NO_TRADE,46.3,all 50 slots are full
+2026-11-27,terminal_top_signals,VANI,NO_TRADE,68.8,penny stock or too thinly traded (under $1 or under $1M a day)
+2026-11-27,terminal_top_signals,WMB,NO_TRADE,43.6,all 50 slots are full
+2026-11-27,terminal_top_signals,BG,NO_TRADE,34.8,all 50 slots are full
+2026-11-27,insider_cluster2_smallcap,BSM,TRADE,40.4,"2 insiders each bought $25k+ within 30 days. Bought $1,971 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 13.60; RSI 40 is neutral"
+2026-11-27,insider_cluster2_smallcap,PRE,NO_TRADE,28.6,already 4 positions in the same industry (Pharmaceutical Preparations)
+2026-11-27,insider_cluster2_smallcap,AVEX,NO_TRADE,49.5,not a smaller company (trades $22M a day)
+2026-11-27,insider_cluster2_smallcap,SCM,TRADE,32.0,"2 insiders each bought $25k+ within 30 days. Bought $1,970 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 6.25; RSI 32 is neutral"
+2026-11-27,insider_cluster2_smallcap,UMH,TRADE,47.9,"2 insiders each bought $25k+ within 30 days. Bought $1,971 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 14.43; RSI 48 is neutral"
+2026-11-27,insider_cluster2_smallcap,BG,NO_TRADE,34.8,not a smaller company (trades $187M a day)
+2026-11-27,insider_cluster2_smallcap,HBCP,NO_TRADE,47.9,"already 4 positions in the same industry (Savings Institutions, Not Federally Chartered)"
+2026-11-27,research_setup,BSM,TRADE,40.4,"research setup: 2 insiders bought $1,319,137 in total within 30 days (Carter Thomas L Jr, DeWalch D Mark); 2 officers or directors each bought $25k+. Bought $1,989 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 13.60; RSI 40 is neutral"
+2026-11-27,research_setup,UMH,TRADE,47.9,"research setup: 5 insiders bought $140,703 in total within 30 days (Carus Jeffrey A, HIRSCH MATTHEW I, Miller Kevin S., Mitchell William Edward); 2 officers. Bought $1,989 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 14.43; RSI 48 is neutral"
+2026-11-27,research_setup,HBCP,TRADE,47.9,"research setup: 2 insiders bought $345,638 in total within 30 days (Hill Darren M, RADER CHRIS P); 2 officers or directors each bought $25k+. Bought $1,989 (2.0% of the portfolio, the 2% cap) at the 2026-11-27 open, 62.49; RSI 48 is neutral"
+2026-11-27,research_setup_trend,BSM,NO_TRADE,40.4,"trend brake: the S&P 500 (717) is below its 200-day average (731), so no new entries"
+2026-11-27,research_setup_trend,UMH,NO_TRADE,47.9,"trend brake: the S&P 500 (717) is below its 200-day average (731), so no new entries"
+2026-11-27,research_setup_trend,HBCP,NO_TRADE,47.9,"trend brake: the S&P 500 (717) is below its 200-day average (731), so no new entries"
