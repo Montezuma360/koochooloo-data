@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T02:32:36Z",
+ "updated": "2026-11-27T02:33:33Z",
  "market_open": false,
  "failed": {
   "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
@@ -13,9 +13,9 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-27T02:32:36Z",
+   "last_try": "2026-11-27T02:33:33Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-27T02:32:36Z",
+   "last_ok": "2026-11-27T02:33:33Z",
    "seconds": 0.2,
    "every_minutes": 1
   },
@@ -41,10 +41,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-27T02:32:36Z",
+   "last_try": "2026-11-27T02:33:33Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-27T02:32:36Z",
-   "seconds": 1.1,
+   "last_ok": "2026-11-27T02:33:33Z",
+   "seconds": 1.6,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -69,17 +69,17 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-27T02:32:36Z",
+   "last_try": "2026-11-27T02:33:33Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-27T02:32:36Z",
-   "seconds": 3.7,
+   "last_ok": "2026-11-27T02:33:33Z",
+   "seconds": 2.1,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-27T02:31:42Z",
+   "last_try": "2026-11-27T02:33:33Z",
    "result": "0 new filings (0 with a red flag)",
-   "last_ok": "2026-11-27T02:31:42Z",
-   "seconds": 1.8,
+   "last_ok": "2026-11-27T02:33:33Z",
+   "seconds": 1.4,
    "every_minutes": 2
   },
   "options": {
@@ -126,9 +126,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-27T02:32:36Z",
-   "result": "BTC 61625.35, ETH 1728.76, SOL 72.71 from 3 exchanges",
-   "last_ok": "2026-11-27T02:32:36Z",
+   "last_try": "2026-11-27T02:33:33Z",
+   "result": "BTC 61614.9, ETH 1732.07, SOL 72.68 from 3 exchanges",
+   "last_ok": "2026-11-27T02:33:33Z",
    "seconds": 0.9,
    "every_minutes": 1
   }
