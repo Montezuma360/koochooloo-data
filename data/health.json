@@ -1,46 +1,46 @@
 {
- "updated": "2026-11-27T20:58:47Z",
+ "updated": "2026-11-27T21:00:01Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
  ],
- "market_open": true,
+ "market_open": false,
  "warnings": [],
  "repo_size_mb": 261.9,
  "feeds": {
   "prices": {
-   "updated": "2026-11-27T20:58:40Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-27T20:59:29Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-27T20:58:43Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-27T20:59:32Z",
+   "age_hours": 0.01,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": null
   },
   "signals": {
-   "updated": "2026-11-27T20:58:47Z",
+   "updated": "2026-11-27T21:00:00Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": null
   },
   "treasury_rates": {
    "updated": "2026-11-27T20:32:32Z",
-   "age_hours": 0.44,
+   "age_hours": 0.46,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-27T00:23:54Z",
-   "age_hours": 20.58,
+   "age_hours": 20.6,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -56,15 +56,15 @@
   },
   "paper_trading": {
    "updated": "2026-11-27T00:04:46+00:00",
-   "age_hours": 20.9,
+   "age_hours": 20.92,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-27T20:58:44Z",
-   "age_hours": 0.0,
+   "updated": "2026-11-27T20:59:33Z",
+   "age_hours": 0.01,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
@@ -72,19 +72,19 @@
    },
    "ok": false,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": null
   }
  },
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-27T20:57:59Z",
+   "at": "2026-11-27T20:59:07Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 49
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-27T20:57:56Z",
+   "at": "2026-11-27T20:58:55Z",
    "failures_in_last_100": 0,
    "runs_in_last_100": 45
   },
