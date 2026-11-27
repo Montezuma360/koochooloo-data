@@ -1,22 +1,22 @@
 {
- "updated": "2026-11-27T00:22:40Z",
+ "updated": "2026-11-27T00:23:42Z",
  "market_open": false,
  "failed": {
   "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
  },
  "sources": {
   "crypto": {
-   "last_try": "2026-11-27T00:08:36Z",
+   "last_try": "2026-11-27T00:23:42Z",
    "result": "100 coins, 15 trending, 3 exchanges",
-   "last_ok": "2026-11-27T00:08:36Z",
-   "seconds": 1.2,
+   "last_ok": "2026-11-27T00:23:42Z",
+   "seconds": 0.8,
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-27T00:22:40Z",
+   "last_try": "2026-11-27T00:23:42Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-27T00:22:40Z",
-   "seconds": 0.3,
+   "last_ok": "2026-11-27T00:23:42Z",
+   "seconds": 0.1,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -41,10 +41,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-27T00:22:40Z",
+   "last_try": "2026-11-27T00:23:42Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-27T00:22:40Z",
-   "seconds": 1.7,
+   "last_ok": "2026-11-27T00:23:42Z",
+   "seconds": 1.3,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -69,10 +69,10 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-27T00:22:40Z",
+   "last_try": "2026-11-27T00:23:42Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-27T00:22:40Z",
-   "seconds": 3.0,
+   "last_ok": "2026-11-27T00:23:42Z",
+   "seconds": 1.0,
    "every_minutes": 1
   },
   "sec_filings": {
@@ -126,9 +126,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-27T00:22:40Z",
-   "result": "BTC 60568.2, ETH 1690.49, SOL 71.13 from 3 exchanges",
-   "last_ok": "2026-11-27T00:22:40Z",
+   "last_try": "2026-11-27T00:23:42Z",
+   "result": "BTC 60575.6, ETH 1690.54, SOL 71.13 from 3 exchanges",
+   "last_ok": "2026-11-27T00:23:42Z",
    "seconds": 0.8,
    "every_minutes": 1
   }
