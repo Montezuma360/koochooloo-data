@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T15:23:52Z",
+ "updated": "2026-11-27T15:35:10Z",
  "market_open": true,
  "failed": {
   "onchain": "URLError: <urlopen error [Errno 101] Network is unreachable>",
@@ -7,16 +7,16 @@
  },
  "sources": {
   "crypto": {
-   "last_try": "2026-11-27T15:11:48Z",
+   "last_try": "2026-11-27T15:35:10Z",
    "result": "100 coins, 15 trending, 3 exchanges",
-   "last_ok": "2026-11-27T15:11:48Z",
-   "seconds": 1.3,
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 1.1,
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-27T15:23:52Z",
+   "last_try": "2026-11-27T15:35:10Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-27T15:23:52Z",
+   "last_ok": "2026-11-27T15:35:10Z",
    "seconds": 0.2,
    "every_minutes": 1
   },
@@ -28,12 +28,11 @@
    "every_minutes": 60
   },
   "onchain": {
-   "last_try": "2026-11-27T15:23:52Z",
-   "result": "block 977818, 4 sat/vB",
-   "last_ok": "2026-11-27T15:22:36Z",
-   "seconds": 642.6,
-   "every_minutes": 2,
-   "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+   "last_try": "2026-11-27T15:35:10Z",
+   "result": "block 977818, 5 sat/vB",
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 1.3,
+   "every_minutes": 2
   },
   "onchain_daily": {
    "last_try": "2026-11-27T12:41:41Z",
@@ -43,49 +42,49 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-27T15:23:52Z",
+   "last_try": "2026-11-27T15:35:10Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-27T15:23:52Z",
-   "seconds": 1.5,
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 1.3,
    "every_minutes": 1
   },
   "ecb_fx": {
-   "last_try": "2026-11-27T14:31:48Z",
-   "result": "2026-11-26, 30 currencies",
-   "last_ok": "2026-11-27T14:31:48Z",
+   "last_try": "2026-11-27T15:35:10Z",
+   "result": "2026-11-27, 30 currencies",
+   "last_ok": "2026-11-27T15:35:10Z",
    "seconds": 0.6,
    "every_minutes": 60
   },
   "macro_global": {
-   "last_try": "2026-11-27T15:02:18Z",
+   "last_try": "2026-11-27T15:35:10Z",
    "result": "7 series, 1 failed",
-   "last_ok": "2026-11-27T15:02:18Z",
-   "seconds": 2.1,
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 4.8,
    "every_minutes": 30
   },
   "calendar": {
-   "last_try": "2026-11-27T15:16:41Z",
+   "last_try": "2026-11-27T15:35:10Z",
    "result": "77 events, 0 high-impact still to come",
-   "last_ok": "2026-11-27T15:16:41Z",
+   "last_ok": "2026-11-27T15:35:10Z",
    "seconds": 0.1,
    "every_minutes": 15
   },
   "news": {
-   "last_try": "2026-11-27T15:23:52Z",
-   "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-27T15:23:52Z",
-   "seconds": 1.9,
+   "last_try": "2026-11-27T15:35:10Z",
+   "result": "15 new headlines from 15 feeds",
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 3.5,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-27T15:23:52Z",
-   "result": "3 new filings (0 with a red flag)",
-   "last_ok": "2026-11-27T15:23:52Z",
-   "seconds": 14.1,
+   "last_try": "2026-11-27T15:35:10Z",
+   "result": "4 new filings (0 with a red flag)",
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 5.6,
    "every_minutes": 1
   },
   "options": {
-   "last_try": "2026-11-27T15:22:36Z",
+   "last_try": "2026-11-27T15:35:10Z",
    "result": "7 chains, put/call 0.724, 58 unusual",
    "last_ok": "2026-11-19T21:10:24Z",
    "seconds": 1.0,
@@ -93,30 +92,30 @@
    "error": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
   },
   "fear_greed": {
-   "last_try": "2026-11-27T15:22:36Z",
-   "result": "12.9 (Extreme fear), 6 parts",
-   "last_ok": "2026-11-27T15:22:36Z",
-   "seconds": 1.2,
+   "last_try": "2026-11-27T15:35:10Z",
+   "result": "13.5 (Extreme fear), 6 parts",
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 1.1,
    "every_minutes": 5
   },
   "stocktwits": {
-   "last_try": "2026-11-27T15:22:36Z",
+   "last_try": "2026-11-27T15:35:10Z",
    "result": "30 trending",
-   "last_ok": "2026-11-27T15:22:36Z",
-   "seconds": 0.1,
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 0.2,
    "every_minutes": 5
   },
   "reddit_forums": {
-   "last_try": "2026-11-27T15:16:41Z",
+   "last_try": "2026-11-27T15:35:10Z",
    "result": "5 forums",
-   "last_ok": "2026-11-27T15:16:41Z",
-   "seconds": 1.7,
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 1.6,
    "every_minutes": 15
   },
   "finnhub": {
-   "last_try": "2026-11-27T14:31:48Z",
+   "last_try": "2026-11-27T15:35:10Z",
    "result": "skipped: add FINNHUB_KEY secret to switch on",
-   "last_ok": "2026-11-27T14:31:48Z",
+   "last_ok": "2026-11-27T15:35:10Z",
    "seconds": 0.0,
    "every_minutes": 60
   },
@@ -128,10 +127,10 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-27T15:23:52Z",
-   "result": "BTC 59666.97, ETH 1663.14, SOL 71.44 from 3 exchanges",
-   "last_ok": "2026-11-27T15:23:52Z",
-   "seconds": 0.7,
+   "last_try": "2026-11-27T15:35:10Z",
+   "result": "BTC 59859.7, ETH 1664.81, SOL 71.81 from 3 exchanges",
+   "last_ok": "2026-11-27T15:35:10Z",
+   "seconds": 0.6,
    "every_minutes": 1
   }
  }
