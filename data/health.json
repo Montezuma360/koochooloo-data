@@ -1,18 +1,19 @@
 {
- "updated": "2026-11-27T15:33:16Z",
+ "updated": "2026-11-27T15:34:35Z",
  "healthy": false,
  "problems": [
-  "intelligence: 1 part(s) failed"
+  "intelligence: 2 part(s) failed"
  ],
  "market_open": true,
  "warnings": [
   "prices: 11 min since last update, target 3 (refresh running slow)",
+  "sec_insiders: 11 min since last update, target 3 (refresh running slow)",
   "intelligence: 11 min since last update, target 3 (refresh running slow)"
  ],
  "repo_size_mb": 255.5,
  "feeds": {
   "prices": {
-   "updated": "2026-11-27T15:22:31Z",
+   "updated": "2026-11-27T15:23:37Z",
    "age_hours": 0.18,
    "stale_after_hours": 2,
    "stale": false,
@@ -22,17 +23,17 @@
    "on_target": false
   },
   "sec_insiders": {
-   "updated": "2026-11-27T15:32:33Z",
-   "age_hours": 0.01,
+   "updated": "2026-11-27T15:23:41Z",
+   "age_hours": 0.18,
    "stale_after_hours": 1,
    "stale": false,
    "failed_parts": {},
    "ok": true,
    "target_minutes_when_market_open": 3,
-   "on_target": true
+   "on_target": false
   },
   "signals": {
-   "updated": "2026-11-27T15:33:15Z",
+   "updated": "2026-11-27T15:34:34Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -43,7 +44,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-27T14:59:29Z",
-   "age_hours": 0.56,
+   "age_hours": 0.59,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -51,7 +52,7 @@
   },
   "alt_data": {
    "updated": "2026-11-27T00:23:54Z",
-   "age_hours": 15.16,
+   "age_hours": 15.18,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
@@ -59,18 +60,19 @@
   },
   "paper_trading": {
    "updated": "2026-11-27T00:04:46+00:00",
-   "age_hours": 15.48,
+   "age_hours": 15.5,
    "stale_after_hours": 30,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-27T15:22:36Z",
+   "updated": "2026-11-27T15:23:52Z",
    "age_hours": 0.18,
    "stale_after_hours": 2,
    "stale": false,
    "failed_parts": {
+    "onchain": "URLError: <urlopen error [Errno 101] Network is unreachable>",
     "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
    },
    "ok": false,
@@ -87,21 +89,27 @@
   },
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-27T15:32:24Z",
+   "at": "2026-11-27T15:34:31Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 47
+   "runs_in_last_100": 48
   },
   "Live market refresh": {
    "last": "cancelled",
-   "at": "2026-11-27T15:33:14Z",
+   "at": "2026-11-27T15:34:16Z",
    "failures_in_last_100": 1,
-   "runs_in_last_100": 44
+   "runs_in_last_100": 43
   },
   "Refresh signals and dashboard": {
    "last": "success",
-   "at": "2026-11-27T15:21:44Z",
+   "at": "2026-11-27T15:33:50Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 3
+   "runs_in_last_100": 4
+  },
+  "Refresh SEC insider data": {
+   "last": "success",
+   "at": "2026-11-27T15:32:47Z",
+   "failures_in_last_100": 0,
+   "runs_in_last_100": 1
   },
   "Refresh brain data": {
    "last": "success",
