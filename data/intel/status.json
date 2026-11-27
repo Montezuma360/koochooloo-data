@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T01:16:37Z",
+ "updated": "2026-11-27T01:17:35Z",
  "market_open": false,
  "failed": {
   "options": "RuntimeError: all option chains failed: {'SPY': \"<HTTPError 403: 'Forbidden'>\", 'QQQ': \"<HTTPError 403: 'Forbidden'>\", 'IWM': \"<HTTPError 403: 'Forbidden'>\", 'AAPL': \"<HTTPError 403: 'Forbidden'>\", 'NVDA': \"<HTTPEr"
@@ -13,10 +13,10 @@
    "every_minutes": 15
   },
   "crypto_derivatives": {
-   "last_try": "2026-11-27T01:16:37Z",
+   "last_try": "2026-11-27T01:17:35Z",
    "result": "3 perpetuals",
-   "last_ok": "2026-11-27T01:16:37Z",
-   "seconds": 0.2,
+   "last_ok": "2026-11-27T01:17:35Z",
+   "seconds": 0.4,
    "every_minutes": 1
   },
   "crypto_fear_greed": {
@@ -41,10 +41,10 @@
    "every_minutes": 360
   },
   "futures_fx": {
-   "last_try": "2026-11-27T01:16:37Z",
+   "last_try": "2026-11-27T01:17:35Z",
    "result": "31 quotes",
-   "last_ok": "2026-11-27T01:16:37Z",
-   "seconds": 2.1,
+   "last_ok": "2026-11-27T01:17:35Z",
+   "seconds": 1.5,
    "every_minutes": 1
   },
   "ecb_fx": {
@@ -69,17 +69,17 @@
    "every_minutes": 60
   },
   "news": {
-   "last_try": "2026-11-27T01:16:37Z",
+   "last_try": "2026-11-27T01:17:35Z",
    "result": "0 new headlines from 15 feeds",
-   "last_ok": "2026-11-27T01:16:37Z",
-   "seconds": 3.9,
+   "last_ok": "2026-11-27T01:17:35Z",
+   "seconds": 2.1,
    "every_minutes": 1
   },
   "sec_filings": {
-   "last_try": "2026-11-27T01:15:58Z",
+   "last_try": "2026-11-27T01:17:35Z",
    "result": "0 new filings (0 with a red flag)",
-   "last_ok": "2026-11-27T01:15:58Z",
-   "seconds": 4.0,
+   "last_ok": "2026-11-27T01:17:35Z",
+   "seconds": 4.7,
    "every_minutes": 2
   },
   "options": {
@@ -126,9 +126,9 @@
    "every_minutes": 60
   },
   "crypto_live": {
-   "last_try": "2026-11-27T01:16:37Z",
-   "result": "BTC 60763.9, ETH 1701.12, SOL 71.43 from 3 exchanges",
-   "last_ok": "2026-11-27T01:16:37Z",
+   "last_try": "2026-11-27T01:17:35Z",
+   "result": "BTC 60710.5, ETH 1699.08, SOL 71.33 from 3 exchanges",
+   "last_ok": "2026-11-27T01:17:35Z",
    "seconds": 0.9,
    "every_minutes": 1
   }
