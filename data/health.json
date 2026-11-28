@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T14:51:02Z",
+ "updated": "2026-11-28T14:55:50Z",
  "healthy": false,
  "problems": [
   "intelligence: 1 part(s) failed"
@@ -9,7 +9,7 @@
  "repo_size_mb": 258.2,
  "feeds": {
   "prices": {
-   "updated": "2026-11-28T14:50:49Z",
+   "updated": "2026-11-28T14:55:41Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -19,7 +19,7 @@
    "on_target": null
   },
   "sec_insiders": {
-   "updated": "2026-11-28T14:50:57Z",
+   "updated": "2026-11-28T14:55:45Z",
    "age_hours": 0.0,
    "stale_after_hours": 31,
    "stale": false,
@@ -29,7 +29,7 @@
    "on_target": null
   },
   "signals": {
-   "updated": "2026-11-28T14:51:01Z",
+   "updated": "2026-11-28T14:55:49Z",
    "age_hours": 0.0,
    "stale_after_hours": 3,
    "stale": false,
@@ -40,7 +40,7 @@
   },
   "treasury_rates": {
    "updated": "2026-11-28T14:50:49Z",
-   "age_hours": 0.0,
+   "age_hours": 0.08,
    "stale_after_hours": 26,
    "stale": false,
    "failed_parts": {},
@@ -48,7 +48,7 @@
   },
   "alt_data": {
    "updated": "2026-11-28T14:44:38Z",
-   "age_hours": 0.11,
+   "age_hours": 0.19,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
@@ -56,14 +56,14 @@
   },
   "paper_trading": {
    "updated": "2026-11-27T23:59:10+00:00",
-   "age_hours": 14.86,
+   "age_hours": 14.94,
    "stale_after_hours": 60,
    "stale": false,
    "failed_parts": {},
    "ok": true
   },
   "intelligence": {
-   "updated": "2026-11-28T14:50:58Z",
+   "updated": "2026-11-28T14:55:46Z",
    "age_hours": 0.0,
    "stale_after_hours": 2,
    "stale": false,
@@ -78,15 +78,15 @@
  "workflows": {
   "Caesar's voice": {
    "last": "skipped",
-   "at": "2026-11-28T14:49:23Z",
+   "at": "2026-11-28T14:54:25Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 50
+   "runs_in_last_100": 49
   },
   "Live market refresh": {
    "last": "success",
-   "at": "2026-11-28T14:49:19Z",
+   "at": "2026-11-28T14:54:22Z",
    "failures_in_last_100": 0,
-   "runs_in_last_100": 48
+   "runs_in_last_100": 49
   },
   "Refresh alternative data": {
    "last": "success",
